@@ -17,12 +17,10 @@ Use the link below in your IPTV player (TiviMate, OTT Navigator, VLC, IPTV Smart
 
 Add the `url-tvg` link to your M3U header and match the `tvg-id` with the corresponding EPG channel ID:
 
-```text
-#EXTM3U url-tvg="[https://sulthanpamenan.github.io/epg-repository/epg.xml](https://sulthanpamenan.github.io/epg-repository/epg.xml)"
+#EXTM3U url-tvg="https://sulthanpamenan.github.io/epg-repository/epg.xml"
 
 #EXTINF:-1 tvg-id="PadangTV.id" tvg-name="Padang TV" tvg-logo="https://..." group-title="Local",Padang TV
-[https://...stream](https://...stream).m3u8...
-```
+https://example.com/stream.m3u8
 
 ---
 
@@ -38,15 +36,13 @@ Add the `url-tvg` link to your M3U header and match the `tvg-id` with the corres
 
 To register a new channel schedule, add its target configuration to `EPG_TARGET_SOURCES` inside `generate_epg.py`:
 
-```python
     {
         "id": "ChannelID.country",
         "name": "Channel Name",
-        "url": "[https://website.com/schedule](https://website.com/schedule)",
+        "url": "https://website.com/schedule",
         "icon": "",
         "utc_offset": "+0700"
     }
-```
 
 ---
 
