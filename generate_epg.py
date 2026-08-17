@@ -57,6 +57,44 @@ def extract_website_icon(soup, target_url):
     domain = target_url.split("//")[-1].split("/")[0]
     return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
 
+def fetch_epg_redbull(target):
+    """Mengambil jadwal EPG presisi langsung dari API internal Red Bull TV."""
+    epg_id = target["id"]
+    programmes = []
+    icon_url = "https://www.google.com/s2/favicons?domain=redbull.tv&sz=128"
+    
+    url = "https://api.redbull.tv/v3/epg/live"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    }
+
+    try:
+        response = requests.get(url, headers=headers, timeout=15)
+        if response.status_code == 200:
+            data = response.json()
+            for item in data.get("items", []):
+                title = item.get("title") or item.get("label", "Red Bull TV Live")
+                desc = item.get("description", f"Program {title} di Red Bull TV")
+                
+                start_iso = item.get("start_time")
+                end_iso = item.get("end_time")
+                
+                if start_iso and end_iso:
+                    start_dt = datetime.fromisoformat(start_iso.replace('Z', '+00:00'))
+                    end_dt = datetime.fromisoformat(end_iso.replace('Z', '+00:00'))
+                    
+                    programmes.append({
+                        "channel": epg_id,
+                        "start": format_xmltv_date(start_dt, "+0000"),
+                        "stop": format_xmltv_date(end_dt, "+0000"),
+                        "title": title,
+                        "desc": desc
+                    })
+    except Exception as e:
+        print(f"[!] Gagal mengambil EPG Red Bull TV via API: {e}")
+
+    return programmes, icon_url
+
 def auto_scrape_epg(target):
     """Fungsi universal untuk mengekstrak jam & judul dari URL manapun."""
     epg_id = target["id"]
@@ -148,7 +186,12 @@ def generate_xmltv():
     for target in EPG_TARGET_SOURCES:
         print(f"[*] Scraping EPG: {target['name']} ({target['id']})...")
         
-        progs, icon_url = auto_scrape_epg(target)
+        # Pengecekan khusus Red Bull TV (Menggunakan API internal)
+        if "redbull" in target["url"].lower() or target["id"] == "RedBullTV.global":
+            progs, icon_url = fetch_epg_redbull(target)
+        else:
+            progs, icon_url = auto_scrape_epg(target)
+
         all_programmes.extend(progs)
 
         channel_elem = ET.SubElement(tv_elem, "channel", id=target["id"])
