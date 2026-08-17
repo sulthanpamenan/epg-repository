@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<tv generator-info-name="Universal IPTV EPG Generator" generator-info-url="https://github.com/sulthanpamenan">
+  <channel id="PadangTV.id">
+    <display-name>Padang TV</display-name>
+    <icon src="https://padangtv.id/wp-content/uploads/2025/10/cropped-Desain-tanpa-judul-11-32x32.png"/>
+  </channel>
+  <channel id="RedBullTV.global">
+    <display-name>Red Bull TV</display-name>
+    <icon src="https://www.google.com/s2/favicons?domain=www.redbull.tv&amp;sz=128"/>
+  </channel>
+</tv>
