@@ -19,7 +19,7 @@ Add the `url-tvg` link to your M3U header and match the `tvg-id` with the corres
 
 #EXTM3U url-tvg="https://sulthanpamenan.github.io/epg-repository/epg.xml"
 
-#EXTINF:-1 tvg-id="ChannelID.country" tvg-name="Channel Name" tvg-logo="https://..." group-title="Category",ChannelName
+#EXTINF:-1 tvg-id="ChannelID.country" tvg-name="Channel Name" tvg-logo="https://..." group-title="Category",Channel
 https://example.com/stream.m3u8
 
 ---
