@@ -25,6 +25,13 @@ EPG_TARGET_SOURCES = [
         "url": "https://www.redbull.tv/en/epg",
         "icon": "",
         "utc_offset": "+0000"  # UTC Global
+    },
+    {
+        "id": "MNCVision.all",
+        "name": "MNC Vision All Channels",
+        "url": "https://www.mncvision.id/channel",
+        "icon": "",
+        "utc_offset": "+0700"
     }
 ]
 
@@ -57,16 +64,17 @@ def extract_website_icon(soup, target_url):
     domain = target_url.split("//")[-1].split("/")[0]
     return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
 
+# =========================================================================
+# SCRAPER 1: RED BULL TV (VIA API)
+# =========================================================================
 def fetch_epg_redbull(target):
     """Mengambil jadwal EPG presisi langsung dari API internal Red Bull TV."""
     epg_id = target["id"]
     programmes = []
-    icon_url = "https://www.google.com/s2/favicons?domain=redbull.tv&sz=128"
+    channels = [{"id": epg_id, "name": target["name"], "icon": "https://www.google.com/s2/favicons?domain=redbull.tv&sz=128"}]
     
     url = "https://api.redbull.tv/v3/epg/live"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-    }
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
     try:
         response = requests.get(url, headers=headers, timeout=15)
@@ -93,8 +101,101 @@ def fetch_epg_redbull(target):
     except Exception as e:
         print(f"[!] Gagal mengambil EPG Red Bull TV via API: {e}")
 
-    return programmes, icon_url
+    return channels, programmes
 
+# =========================================================================
+# SCRAPER 2: MNC VISION (ALL CHANNELS)
+# =========================================================================
+def fetch_epg_mncvision(target):
+    """Mengambil EPG seluruh channel resmi dari MNC Vision secara otomatis."""
+    programmes = []
+    channels = []
+    base_url = "https://www.mncvision.id"
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    
+    try:
+        response = requests.get(target["url"], headers=headers, timeout=15)
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            channel_links = soup.find_all('a', href=re.compile(r'/channel/detail/'))
+            visited_channels = set()
+            today = datetime.now()
+            time_pattern = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
+
+            for link in channel_links:
+                href = link.get('href')
+                if href in visited_channels:
+                    continue
+                visited_channels.add(href)
+                
+                full_ch_url = urljoin(base_url, href)
+                parts = href.strip('/').split('/')
+                if len(parts) >= 3:
+                    ch_number = parts[2]
+                    ch_name_slug = parts[3] if len(parts) > 3 else f"channel-{ch_number}"
+                    clean_name = ch_name_slug.replace('-', ' ').title()
+                    epg_id = f"{clean_name.replace(' ', '')}.mnc"
+                    
+                    channels.append({
+                        "id": epg_id,
+                        "name": f"{clean_name} (MNC)",
+                        "icon": "https://www.google.com/s2/favicons?domain=mncvision.id&sz=128"
+                    })
+                else:
+                    continue
+
+                try:
+                    ch_res = requests.get(full_ch_url, headers=headers, timeout=10)
+                    if ch_res.status_code != 200:
+                        continue
+                        
+                    ch_soup = BeautifulSoup(ch_res.text, 'html.parser')
+                    extracted_items = []
+                    
+                    for row in ch_soup.find_all(['tr', 'li', 'p', 'div']):
+                        text = row.get_text(strip=True)
+                        if len(text) > 150:
+                            continue
+                        match = time_pattern.search(text)
+                        if match:
+                            time_str = match.group(1).replace('.', ':')
+                            if len(time_str.split(':')[0]) == 1:
+                                time_str = "0" + time_str
+                            title = text[match.end():].strip(" -–:\t\n\r[]")
+                            if title and len(title) > 2:
+                                extracted_items.append((time_str, title))
+
+                    for i in range(len(extracted_items)):
+                        time_str, title = extracted_items[i]
+                        start_dt = datetime.strptime(f"{today.strftime('%Y-%m-%d')} {time_str}", "%Y-%m-%d %H:%M")
+                        
+                        if i + 1 < len(extracted_items):
+                            next_time_str = extracted_items[i+1][0]
+                            stop_dt = datetime.strptime(f"{today.strftime('%Y-%m-%d')} {next_time_str}", "%Y-%m-%d %H:%M")
+                            if stop_dt <= start_dt:
+                                stop_dt += timedelta(days=1)
+                        else:
+                            stop_dt = start_dt + timedelta(hours=1)
+
+                        programmes.append({
+                            "channel": epg_id,
+                            "start": format_xmltv_date(start_dt, "+0700"),
+                            "stop": format_xmltv_date(stop_dt, "+0700"),
+                            "title": title,
+                            "desc": f"Program {title} di MNC Vision Channel {ch_number}"
+                        })
+                except Exception:
+                    continue
+
+    except Exception as e:
+        print(f"[!] Gagal mengekstrak EPG MNC Vision: {e}")
+
+    return channels, programmes
+
+# =========================================================================
+# SCRAPER 3: UNIVERSAL PARSER (SINGLE CHANNEL WEB)
+# =========================================================================
 def auto_scrape_epg(target):
     """Fungsi universal untuk mengekstrak jam & judul dari URL manapun."""
     epg_id = target["id"]
@@ -103,15 +204,13 @@ def auto_scrape_epg(target):
     programmes = []
     extracted_icon = target.get("icon", "")
 
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
-    }
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
     try:
         response = requests.get(url, headers=headers, timeout=15)
         if response.status_code != 200:
             print(f"[!] HTTP Error {response.status_code} saat mengakses {url}")
-            return programmes, extracted_icon
+            return [{"id": epg_id, "name": target["name"], "icon": extracted_icon}], programmes
 
         soup = BeautifulSoup(response.text, 'html.parser')
         
@@ -168,7 +267,8 @@ def auto_scrape_epg(target):
     except Exception as e:
         print(f"[!] Gagal mengekstrak EPG dari {url}: {e}")
 
-    return programmes, extracted_icon
+    channels = [{"id": epg_id, "name": target["name"], "icon": extracted_icon}]
+    return channels, programmes
 
 # =========================================================================
 # GENERATOR UTAMA XMLTV
@@ -181,45 +281,51 @@ def generate_xmltv():
         "generator-info-url": "https://github.com/sulthanpamenan"
     })
 
+    all_channels = []
     all_programmes = []
 
     for target in EPG_TARGET_SOURCES:
         print(f"[*] Scraping EPG: {target['name']} ({target['id']})...")
         
-        # Pengecekan khusus Red Bull TV (Menggunakan API internal)
-        if "redbull" in target["url"].lower() or target["id"] == "RedBullTV.global":
-            progs, icon_url = fetch_epg_redbull(target)
+        # Routing handler
+        if "mncvision" in target["url"].lower():
+            ch_list, progs = fetch_epg_mncvision(target)
+        elif "redbull" in target["url"].lower() or target["id"] == "RedBullTV.global":
+            ch_list, progs = fetch_epg_redbull(target)
         else:
-            progs, icon_url = auto_scrape_epg(target)
+            ch_list, progs = auto_scrape_epg(target)
 
+        all_channels.extend(ch_list)
         all_programmes.extend(progs)
+        print(f"[✓] Ditemukan {len(ch_list)} channel & {len(progs)} acara untuk {target['name']}")
 
-        channel_elem = ET.SubElement(tv_elem, "channel", id=target["id"])
+    # 1. Menulis tag <channel>
+    for ch in all_channels:
+        channel_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
         display_name = ET.SubElement(channel_elem, "display-name")
-        display_name.text = target["name"]
-        if icon_url:
-            ET.SubElement(channel_elem, "icon", src=icon_url)
+        display_name.text = ch["name"]
+        if ch.get("icon"):
+            ET.SubElement(channel_elem, "icon", src=ch["icon"])
 
-        print(f"[✓] Ditemukan {len(progs)} acara untuk {target['name']}")
-
+    # 2. Menulis tag <programme>
     for prog in all_programmes:
         prog_elem = ET.SubElement(tv_elem, "programme", {
             "start": prog["start"],
             "stop": prog["stop"],
             "channel": prog["channel"]
         })
-        title_elem = ET.SubElement(prog_elem, "title", lang="en")
+        title_elem = ET.SubElement(prog_elem, "title", lang="id")
         title_elem.text = prog["title"]
         
         if prog.get("desc"):
-            desc_elem = ET.SubElement(prog_elem, "desc", lang="en")
+            desc_elem = ET.SubElement(prog_elem, "desc", lang="id")
             desc_elem.text = prog["desc"]
 
     pretty_xml = indent_xml(tv_elem)
     with open("epg.xml", "w", encoding="utf-8") as f:
         f.write(pretty_xml)
         
-    print(f"\n[SUCCESS] Selesai! `epg.xml` berhasil diperbarui dengan total {len(all_programmes)} acara.")
+    print(f"\n[SUCCESS] Selesai! `epg.xml` berhasil diperbarui dengan total {len(all_channels)} channel & {len(all_programmes)} acara.")
 
 if __name__ == "__main__":
     generate_xmltv()
