@@ -129,22 +129,26 @@ def fetch_epg_mncvision(target):
                     continue
                 visited_channels.add(href)
                 
-                full_ch_url = urljoin(base_url, href)
-                parts = href.strip('/').split('/')
-                if len(parts) >= 3:
-                    ch_number = parts[2]
-                    ch_name_slug = parts[3] if len(parts) > 3 else f"channel-{ch_number}"
-                    clean_name = ch_name_slug.replace('-', ' ').title()
-                    epg_id = f"{clean_name.replace(' ', '')}.mnc"
-                    
-                    channels.append({
-                        "id": epg_id,
-                        "name": f"{clean_name} (MNC)",
-                        "icon": "https://www.google.com/s2/favicons?domain=mncvision.id&sz=128"
-                    })
-                else:
-                    continue
+                # PERBAIKAN: Ambil nama channel langsung dari teks link
+                raw_name = link.get_text(strip=True)
+                if not raw_name:
+                    parts = href.strip('/').split('/')
+                    raw_name = parts[-1] if len(parts) > 0 else "Unknown"
 
+                # Bersihkan karakter & buat ID unik berdasarkan nama channel
+                clean_name = re.sub(r'[^a-zA-Z0-9]', '', raw_name)
+                if not clean_name:
+                    continue
+                
+                epg_id = f"{clean_name}.mnc"
+                
+                channels.append({
+                    "id": epg_id,
+                    "name": f"{raw_name} (MNC)",
+                    "icon": "https://www.google.com/s2/favicons?domain=mncvision.id&sz=128"
+                })
+
+                full_ch_url = urljoin(base_url, href)
                 try:
                     ch_res = requests.get(full_ch_url, headers=headers, timeout=10)
                     if ch_res.status_code != 200:
@@ -183,7 +187,7 @@ def fetch_epg_mncvision(target):
                             "start": format_xmltv_date(start_dt, "+0700"),
                             "stop": format_xmltv_date(stop_dt, "+0700"),
                             "title": title,
-                            "desc": f"Program {title} di MNC Vision Channel {ch_number}"
+                            "desc": f"Program {title} di {raw_name}"
                         })
                 except Exception:
                     continue
