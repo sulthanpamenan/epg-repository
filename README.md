@@ -1,61 +1,64 @@
 # 📺 Universal IPTV EPG Generator & Repository
 
-Automated XMLTV Electronic Program Guide (`epg.xml`) generated from official television schedule sources. Refreshed automatically every 6 hours via GitHub Actions.
+[![Auto Update EPG](https://github.com/sulthanpamenan/epg-repository/actions/workflows/auto_update.yml/badge.svg)](https://github.com/sulthanpamenan/epg-repository/actions/workflows/auto_update.yml)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Active-success?logo=github)](https://sulthanpamenan.github.io/epg-repository/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+An automated XMLTV Electronic Program Guide (`epg.xml`) provider for multiple live television sources. Designed for seamless integration with all major IPTV applications.
 
 ---
 
-## 🔗 EPG Import Link
+## 🔗 Live EPG URL
 
-Use the link below in your IPTV player (TiviMate, OTT Navigator, VLC, IPTV Smarters, etc.):
+Import this link directly into your preferred IPTV player (TiviMate, OTT Navigator, VLC, Televizo, etc.):
 
-* **XMLTV EPG URL**:
-  `https://sulthanpamenan.github.io/epg-repository/epg.xml`
-
----
-
-## 📺 M3U Playlist Integration
-
-Add the `url-tvg` link to your M3U header and match the `tvg-id` with the corresponding EPG channel ID:
-
-#EXTM3U url-tvg="https://sulthanpamenan.github.io/epg-repository/epg.xml"
-
-#EXTINF:-1 tvg-id="ChannelID.country" tvg-name="ChannelName" tvg-logo="https://..." group-title="Category",Channel
-https://example.com/stream.m3u8
+| Content | URL | Description |
+| :--- | :--- | :--- |
+| **EPG (XMLTV)** | `https://sulthanpamenan.github.io/epg-repository/epg.xml` | Complete Electronic Program Guide containing broadcast schedules for all registered channels |
 
 ---
 
-## ⚡ Key Features
+## ✨ Key Features
 
-* **Automated 24/7 Updates**: Refreshes every **6 hours** via GitHub Actions.
-* **Auto Timezone Alignment**: Configured with standard ISO 8601 UTC offsets (`+0700`, `+0800`, `+0000`) so your IPTV player automatically converts program times to your local device timezone.
-* **Standard XMLTV Format**: Compatible with all major M3U/XMLTV-supported IPTV applications.
+- **Automated Background Updates:** Refreshed automatically every **6 hours** via GitHub Actions to ensure up-to-date timelines.
+- **Timezone Alignment:** Configured with standard ISO 8601 UTC offsets so IPTV players automatically convert program times to local device time zones.
+- **Universal Compatibility:** Fully standardized XMLTV format for all M3U & XMLTV supported IPTV applications.
+- **Multi-Source Aggregation:** Combines multiple television schedules into a single centralized guide.
 
 ---
 
-## 🛠️ Adding New Channels
+## 🚀 Quick Setup Guide
 
-To register a new channel schedule, add its target configuration to `EPG_TARGET_SOURCES` inside `generate_epg.py`:
+1. Open your IPTV application (e.g., **TiviMate** or **OTT Navigator**).
+2. Go to your playlist settings or **EPG Sources**.
+3. Add a new EPG source and enter the URL:
+   `https://sulthanpamenan.github.io/epg-repository/epg.xml`
+4. Reload your TV guide to synchronize the schedules.
 
-    {
-        "id": "ChannelID.country",
-        "name": "Channel Name",
-        "url": "https://website.com/schedule",
-        "icon": "",
-        "utc_offset": "+0700"
-    }
+---
+
+## ⚠️ Disclaimer
+
+This repository only generates metadata and electronic program guide (EPG) schedules. It does not host, stream, or broadcast any media content. All schedule data and trademarks belong to their respective copyright owners.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
 ## ☕ Support the Developer
 
-If this project is helpful to you, consider supporting the developer to keep this repository maintained!
+If this project is helpful to you, consider supporting the developer to keep this service maintained and running!
 
 <div align="center">
 
 ### 🇮🇩 Local Donation (QRIS / E-Wallet / Mobile Banking)
 
 <a href="https://saweria.co/sulthanpamenan" target="_blank">
-  <img width="290" height="290" alt="Saweria QRIS" src="https://github.com/user-attachments/assets/f2846d1f-a391-4daf-9ce5-a48aadc992a0" />
+  <img width="290" height="290" alt="Saweria" src="https://github.com/user-attachments/assets/f2846d1f-a391-4daf-9ce5-a48aadc992a0" />
 </a>
 
 <br>
@@ -77,15 +80,3 @@ If this project is helpful to you, consider supporting the developer to keep thi
 </a>
 
 </div>
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## ⚠️ Disclaimer
-
-This repository only generates metadata and electronic program guide (EPG) schedules. It does not host, stream, or broadcast any media content. All schedule data belongs to its respective copyright owners.
