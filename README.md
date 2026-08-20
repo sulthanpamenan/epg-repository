@@ -1,6 +1,6 @@
 # 📺 Universal IPTV EPG Generator & Repository
 
-[![Auto Update EPG](https://github.com/sulthanpamenan/epg-repository/actions/workflows/auto_update.yml/badge.svg)](https://github.com/sulthanpamenan/epg-repository/actions/workflows/auto_update.yml)
+[![Auto Update EPG](https://github.com/sulthanpamenan/epg-repository/actions/workflows/generate-epg.yml/badge.svg)](https://github.com/sulthanpamenan/epg-repository/actions/workflows/auto_update.yml)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Active-success?logo=github)](https://sulthanpamenan.github.io/epg-repository/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
