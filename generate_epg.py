@@ -9,25 +9,25 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-from concurrent.futures import ThreadPoolExecutor  # Modul multithreading
+from concurrent.futures import ThreadPoolExecutor
 
 # =========================================================================
-# 🎯 DAFTAR TARGET EPG (TAMBAHKAN SAKLAR URL & METADATA DI SINI)
+# EPG TARGET SOURCES LIST
 # =========================================================================
 EPG_TARGET_SOURCES = [
     {
         "id": "PadangTV.id",
         "name": "Padang TV",
         "url": "https://padangtv.id/schedule/",
-        "icon": "",  # Auto-fetch jika dikosongkan
-        "utc_offset": "+0700"  # WIB
+        "icon": "",  # Auto-fetch if left empty
+        "utc_offset": "+0700"
     },
     {
         "id": "RedBullTV.global",
         "name": "Red Bull TV",
         "url": "https://www.redbull.tv/en/epg",
         "icon": "",
-        "utc_offset": "+0000"  # UTC Global
+        "utc_offset": "+0000"
     },
     {
         "id": "MNCVision.all",
@@ -50,7 +50,7 @@ def indent_xml(elem):
     return reparsed.toprettyxml(indent="  ")
 
 def extract_website_icon(soup, target_url):
-    """Mengambil favicon/logo dari meta tag website target."""
+    """Fetch favicon/logo from target website meta tags."""
     try:
         icon_tag = soup.find("link", rel=lambda r: r and ('icon' in r.lower() or 'shortcut' in r.lower()))
         if icon_tag and icon_tag.get("href"):
@@ -71,7 +71,7 @@ def extract_website_icon(soup, target_url):
 # SCRAPER 1: RED BULL TV (VIA API)
 # =========================================================================
 def fetch_epg_redbull(target):
-    """Mengambil jadwal EPG presisi langsung dari API internal Red Bull TV."""
+    """Fetch precise EPG schedule directly from Red Bull TV internal API."""
     epg_id = target["id"]
     programmes = []
     channels = [{"id": epg_id, "name": target["name"], "icon": "https://www.google.com/s2/favicons?domain=redbull.tv&sz=128"}]
@@ -85,7 +85,7 @@ def fetch_epg_redbull(target):
             data = response.json()
             for item in data.get("items", []):
                 title = item.get("title") or item.get("label", "Red Bull TV Live")
-                desc = item.get("description", f"Program {title} di Red Bull TV")
+                desc = item.get("description", f"Show {title} on Red Bull TV")
                 
                 start_iso = item.get("start_time")
                 end_iso = item.get("end_time")
@@ -102,15 +102,15 @@ def fetch_epg_redbull(target):
                         "desc": desc
                     })
     except Exception as e:
-        print(f"[!] Gagal mengambil EPG Red Bull TV via API: {e}")
+        print(f"[!] Failed to fetch Red Bull TV EPG via API: {e}")
 
     return channels, programmes
 
 # =========================================================================
-# SCRAPER 2: MNC VISION (PARALEL / MULTITHREADING)
+# SCRAPER 2: MNC VISION (PARALLEL / MULTITHREADING)
 # =========================================================================
 def fetch_single_mnc_channel(args):
-    """Worker function untuk mengekstrak 1 detail channel MNC Vision secara paralel."""
+    """Worker function to extract 1 MNC Vision channel details in parallel."""
     href, raw_name, base_url, headers, today = args
     programmes = []
     
@@ -129,7 +129,6 @@ def fetch_single_mnc_channel(args):
     time_pattern = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
 
     try:
-        # Delay acak tipis (0.2 - 0.5 detik) agar tidak membanjiri server sekaligus
         time.sleep(random.uniform(0.2, 0.5))
         
         ch_res = requests.get(full_ch_url, headers=headers, timeout=10)
@@ -167,7 +166,7 @@ def fetch_single_mnc_channel(args):
                     "start": format_xmltv_date(start_dt, "+0700"),
                     "stop": format_xmltv_date(stop_dt, "+0700"),
                     "title": title,
-                    "desc": f"Program {title} di {raw_name}"
+                    "desc": f"Broadcast of {title} on {raw_name}"
                 })
     except Exception:
         pass
@@ -176,7 +175,7 @@ def fetch_single_mnc_channel(args):
 
 
 def fetch_epg_mncvision(target):
-    """Mengambil EPG seluruh channel MNC Vision menggunakan ThreadPoolExecutor."""
+    """Fetch EPG for all MNC Vision channels using ThreadPoolExecutor."""
     programmes = []
     channels = []
     base_url = "https://www.mncvision.id"
@@ -205,7 +204,6 @@ def fetch_epg_mncvision(target):
 
                 tasks.append((href, raw_name, base_url, headers, today))
 
-            # Proses hingga 5 channel sekaligus dalam satu waktu
             with ThreadPoolExecutor(max_workers=5) as executor:
                 results = executor.map(fetch_single_mnc_channel, tasks)
 
@@ -215,7 +213,7 @@ def fetch_epg_mncvision(target):
                     programmes.extend(progs)
 
     except Exception as e:
-        print(f"[!] Gagal mengekstrak EPG MNC Vision: {e}")
+        print(f"[!] Failed to extract MNC Vision EPG: {e}")
 
     return channels, programmes
 
@@ -223,7 +221,7 @@ def fetch_epg_mncvision(target):
 # SCRAPER 3: UNIVERSAL PARSER (SINGLE CHANNEL WEB)
 # =========================================================================
 def auto_scrape_epg(target):
-    """Fungsi universal untuk mengekstrak jam & judul dari URL manapun."""
+    """Universal function to extract time and title from any URL."""
     epg_id = target["id"]
     url = target["url"]
     utc_offset = target.get("utc_offset", "+0700")
@@ -235,7 +233,7 @@ def auto_scrape_epg(target):
     try:
         response = requests.get(url, headers=headers, timeout=15)
         if response.status_code != 200:
-            print(f"[!] HTTP Error {response.status_code} saat mengakses {url}")
+            print(f"[!] HTTP Error {response.status_code} while accessing {url}")
             return [{"id": epg_id, "name": target["name"], "icon": extracted_icon}], programmes
 
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -285,22 +283,22 @@ def auto_scrape_epg(target):
                     "start": format_xmltv_date(start_dt, utc_offset),
                     "stop": format_xmltv_date(stop_dt, utc_offset),
                     "title": title,
-                    "desc": f"Program {title} di {target['name']}"
+                    "desc": f"Broadcast of {title} on {target['name']}"
                 })
             except Exception:
                 continue
 
     except Exception as e:
-        print(f"[!] Gagal mengekstrak EPG dari {url}: {e}")
+        print(f"[!] Failed to extract EPG from {url}: {e}")
 
     channels = [{"id": epg_id, "name": target["name"], "icon": extracted_icon}]
     return channels, programmes
 
 # =========================================================================
-# GENERATOR UTAMA XMLTV
+# MAIN XMLTV GENERATOR
 # =========================================================================
 def generate_xmltv():
-    print("[*] Memproses EPG dari seluruh daftar URL target...")
+    print("[*] Processing EPG from all target URLs...")
     
     tv_elem = ET.Element("tv", {
         "generator-info-name": "Universal IPTV EPG Generator",
@@ -313,7 +311,6 @@ def generate_xmltv():
     for target in EPG_TARGET_SOURCES:
         print(f"[*] Scraping EPG: {target['name']} ({target['id']})...")
         
-        # Routing handler
         if "mncvision" in target["url"].lower():
             ch_list, progs = fetch_epg_mncvision(target)
         elif "redbull" in target["url"].lower() or target["id"] == "RedBullTV.global":
@@ -323,9 +320,9 @@ def generate_xmltv():
 
         all_channels.extend(ch_list)
         all_programmes.extend(progs)
-        print(f"[✓] Ditemukan {len(ch_list)} channel & {len(progs)} acara untuk {target['name']}")
+        print(f"[✓] Found {len(ch_list)} channels & {len(progs)} shows for {target['name']}")
 
-    # 1. Menulis tag <channel>
+    # 1. Write <channel> tags
     for ch in all_channels:
         channel_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
         display_name = ET.SubElement(channel_elem, "display-name")
@@ -333,25 +330,25 @@ def generate_xmltv():
         if ch.get("icon"):
             ET.SubElement(channel_elem, "icon", src=ch["icon"])
 
-    # 2. Menulis tag <programme>
+    # 2. Write <programme> tags
     for prog in all_programmes:
         prog_elem = ET.SubElement(tv_elem, "programme", {
             "start": prog["start"],
             "stop": prog["stop"],
             "channel": prog["channel"]
         })
-        title_elem = ET.SubElement(prog_elem, "title", lang="id")
+        title_elem = ET.SubElement(prog_elem, "title", lang="en")
         title_elem.text = prog["title"]
         
         if prog.get("desc"):
-            desc_elem = ET.SubElement(prog_elem, "desc", lang="id")
+            desc_elem = ET.SubElement(prog_elem, "desc", lang="en")
             desc_elem.text = prog["desc"]
 
     pretty_xml = indent_xml(tv_elem)
     with open("epg.xml", "w", encoding="utf-8") as f:
         f.write(pretty_xml)
         
-    print(f"\n[SUCCESS] Selesai! `epg.xml` berhasil diperbarui dengan total {len(all_channels)} channel & {len(all_programmes)} acara.")
+    print(f"\n[SUCCESS] Completed! File `epg.xml` updated successfully with {len(all_channels)} channels & {len(all_programmes)} shows.")
 
 if __name__ == "__main__":
     generate_xmltv()
