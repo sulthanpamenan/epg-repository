@@ -35,6 +35,13 @@ EPG_TARGET_SOURCES = [
         "url": "https://www.mncvision.id/channel",
         "icon": "",
         "utc_offset": "+0700"
+    },
+    {
+        "id": "CLTV36.ph",
+        "name": "CLTV36",
+        "url": "https://cltv36.tv/tv-programs/",
+        "icon": "",
+        "utc_offset": "+0800"
     }
 ]
 
