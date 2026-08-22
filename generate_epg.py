@@ -227,59 +227,67 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK SCRAPER (PROXIED VIA CLOUDFLARE WORKER)
+# 4. QAZAQSTAN NETWORK SCRAPER (FIXED: API FETCH VIA WORKER PROXY)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*"
     }
     
     icon = target.get("icon") or get_auto_icon(target["url"])
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     programmes = []
     
-    # URL Worker milikmu sebagai Proxy Bypass Geoblock
+    # Mapping ID Saluran ke ID API Internal Qazaqstan
+    channel_api_ids = {
+        "Qazaqstan.kz": 1, "QazaqstanInt.kz": 1, "Balapan.kz": 2, "AbaiTV.kz": 3,
+        "Qazsport.kz": 4, "AqjaiyqTV.kz": 5, "AqtobeTV.kz": 6, "AltaiTV.kz": 7,
+        "AtyrauTV.kz": 8, "ErtisTV.kz": 9, "JambylTV.kz": 10, "KoksheTV.kz": 11,
+        "MangystauTV.kz": 12, "OntustikTV.kz": 13, "QostanaiTV.kz": 14, "QyzyljarTV.kz": 15,
+        "QyzylordaTV.kz": 16, "SaryarqaTV.kz": 17, "SemeiTV.kz": 18
+    }
+    
+    internal_id = channel_api_ids.get(epg_id, 1)
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    
+    # Endpoint API JSON Resmi yang ditembak LEWAT WORKER PROXY milikmu
+    direct_api_url = f"https://qazaqstan.tv/api/v1/schedule?channel_id={internal_id}&date={today_str}"
     WORKER_PROXY = "https://qazaqstan-playlist.sulthan-pamenan.workers.dev/?url="
-    proxied_url = f"{WORKER_PROXY}{target['url']}"
+    proxied_api_url = f"{WORKER_PROXY}{encode_url(direct_api_url)}"
     
     try:
-        # Request HTML lewat Cloudflare Worker
-        res = HTTP_SESSION.get(proxied_url, headers=headers, timeout=20)
+        res = HTTP_SESSION.get(proxied_api_url, headers=headers, timeout=15)
         
         if res.status_code == 200:
-            soup = BeautifulSoup(res.text, 'html.parser')
-            today_str = datetime.now().strftime("%Y-%m-%d")
+            data = res.json()
+            items = data.get("data", []) or data.get("schedule", []) or (data if isinstance(data, list) else [])
             
             raw_progs = []
-            time_pattern = re.compile(r'(\b[0-2]?\d:[0-5]\d\b)')
+            if isinstance(items, list):
+                for item in items:
+                    title = item.get("title") or item.get("name") or item.get("program_name")
+                    time_start = item.get("time") or item.get("start_time") or item.get("begin")
+                    
+                    if not title or not time_start: 
+                        continue
+                        
+                    time_start = str(time_start).strip()
+                    if len(time_start.split(':')[0]) == 1: 
+                        time_start = "0" + time_start
+                    
+                    try:
+                        start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
+                        raw_progs.append({
+                            "start_dt": start_dt,
+                            "title": str(title).strip(),
+                            "desc": str(item.get("description") or f"Program {title} di {target['name']}").strip()
+                        })
+                    except Exception:
+                        continue
             
-            # Extract EPG dari HTML yang berhasil diambil oleh Worker
-            for container in soup.find_all(['div', 'tr', 'li']):
-                text = container.get_text(" ", strip=True)
-                if 5 < len(text) < 200:
-                    match = time_pattern.search(text)
-                    if match:
-                        time_start = match.group(1)
-                        if len(time_start.split(':')[0]) == 1:
-                            time_start = "0" + time_start
-                            
-                        title_part = text[match.end():].strip(" -–:\t\n\r[]")
-                        for ignore_word in ["LIVE", "ЭФИРДЕ", "Бағдарлама", "Драма", "Көркем фильм", "Телехикая", "Шоу"]:
-                            title_part = title_part.replace(ignore_word, "").strip()
-                            
-                        if title_part and len(title_part) > 2 and not title_part.startswith("http"):
-                            try:
-                                start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
-                                if not any(p["start_dt"] == start_dt for p in raw_progs):
-                                    raw_progs.append({
-                                        "start_dt": start_dt,
-                                        "title": title_part,
-                                        "desc": f"Program {title_part} di {target['name']}"
-                                    })
-                            except Exception:
-                                continue
-
+            # Urutkan jadwal & hitung waktu selesai
             raw_progs.sort(key=lambda x: x["start_dt"])
             
             for i in range(len(raw_progs)):
@@ -288,7 +296,7 @@ def fetch_epg_qazaqstan(target):
                 
                 if i + 1 < len(raw_progs):
                     stop_dt = raw_progs[i+1]["start_dt"]
-                    if stop_dt <= start_dt:
+                    if stop_dt <= start_dt: 
                         stop_dt += timedelta(days=1)
                 else:
                     stop_dt = start_dt + timedelta(hours=1)
@@ -306,9 +314,13 @@ def fetch_epg_qazaqstan(target):
                 return channels, programmes
 
     except Exception as e:
-        print(f"[!] Worker Proxy EPG Error [{target['name']}]: {e}")
+        print(f"[!] Qazaqstan API Error via Worker [{target['name']}]: {e}")
 
     return auto_scrape_epg(target)
+
+def encode_url(url_str):
+    from urllib.parse import quote
+    return quote(url_str, safe='')
 
 # =========================================================================
 # 5. UNIVERSAL SCRAPER
