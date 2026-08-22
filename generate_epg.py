@@ -227,7 +227,7 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK SCRAPER (GEOBLOCK BYPASS VIA PROXY RELAY)
+# 4. QAZAQSTAN NETWORK SCRAPER (PROXIED VIA CLOUDFLARE WORKER)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
@@ -239,11 +239,14 @@ def fetch_epg_qazaqstan(target):
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     programmes = []
     
-    # Gunakan AllOrigins / CORS Proxy untuk menembus Geoblock dari luar Kazakhstan
-    bypass_url = f"https://api.allorigins.win/raw?url={target['url']}"
+    # URL Worker milikmu sebagai Proxy Bypass Geoblock
+    WORKER_PROXY = "https://qazaqstan-playlist.sulthan-pamenan.workers.dev/?url="
+    proxied_url = f"{WORKER_PROXY}{target['url']}"
     
     try:
-        res = requests.get(bypass_url, headers=headers, timeout=20)
+        # Request HTML lewat Cloudflare Worker
+        res = HTTP_SESSION.get(proxied_url, headers=headers, timeout=20)
+        
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             today_str = datetime.now().strftime("%Y-%m-%d")
@@ -251,6 +254,7 @@ def fetch_epg_qazaqstan(target):
             raw_progs = []
             time_pattern = re.compile(r'(\b[0-2]?\d:[0-5]\d\b)')
             
+            # Extract EPG dari HTML yang berhasil diambil oleh Worker
             for container in soup.find_all(['div', 'tr', 'li']):
                 text = container.get_text(" ", strip=True)
                 if 5 < len(text) < 200:
@@ -302,7 +306,7 @@ def fetch_epg_qazaqstan(target):
                 return channels, programmes
 
     except Exception as e:
-        print(f"[!] Geoblock Bypass Error [{target['name']}]: {e}")
+        print(f"[!] Worker Proxy EPG Error [{target['name']}]: {e}")
 
     return auto_scrape_epg(target)
 
