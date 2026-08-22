@@ -1060,13 +1060,9 @@
     <title lang="en">11:15Trans7</title>
     <desc lang="en">Broadcast of 11:15Trans7 on Channel19Thrill</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822052000 +0700" channel="Channel20CelestialMovies.mnc">
-    <title lang="en">05:20</title>
-    <desc lang="en">Broadcast of 05:20 on Channel20Celestial Movies</desc>
-  </programme>
   <programme start="20260822052000 +0700" stop="20260822070000 +0700" channel="Channel20CelestialMovies.mnc">
-    <title lang="en">07:00Kungfu Stuntmen</title>
-    <desc lang="en">Broadcast of 07:00Kungfu Stuntmen on Channel20Celestial Movies</desc>
+    <title lang="en">07:00</title>
+    <desc lang="en">Broadcast of 07:00 on Channel20Celestial Movies</desc>
   </programme>
   <programme start="20260822070000 +0700" stop="20260822084500 +0700" channel="Channel20CelestialMovies.mnc">
     <title lang="en">08:45Legend Of The Fist: Chen Zhen</title>
@@ -1096,9 +1092,13 @@
     <title lang="en">18:30Cop Shop Babes</title>
     <desc lang="en">Broadcast of 18:30Cop Shop Babes on Channel20Celestial Movies</desc>
   </programme>
-  <programme start="20260822183000 +0700" stop="20260822193000 +0700" channel="Channel20CelestialMovies.mnc">
+  <programme start="20260822183000 +0700" stop="20260822200000 +0700" channel="Channel20CelestialMovies.mnc">
     <title lang="en">20:00Teenage Dreamers</title>
     <desc lang="en">Broadcast of 20:00Teenage Dreamers on Channel20Celestial Movies</desc>
+  </programme>
+  <programme start="20260822200000 +0700" stop="20260822210000 +0700" channel="Channel20CelestialMovies.mnc">
+    <title lang="en">21:50That Demon Within</title>
+    <desc lang="en">Broadcast of 21:50That Demon Within on Channel20Celestial Movies</desc>
   </programme>
   <programme start="20260822045500 +0700" stop="20260822064000 +0700" channel="Channel22CCM.mnc">
     <title lang="en">06:40</title>
@@ -1180,13 +1180,9 @@
     <title lang="en">06:00Auron Mein Kahan Dum Tha</title>
     <desc lang="en">Broadcast of 06:00Auron Mein Kahan Dum Tha on Channel23Zee Bioskop</desc>
   </programme>
-  <programme start="20260822031000 +0700" stop="20260822052000 +0700" channel="Channel25tvNMovies.mnc">
-    <title lang="en">05:20</title>
-    <desc lang="en">Broadcast of 05:20 on Channel25tvN Movies</desc>
-  </programme>
   <programme start="20260822052000 +0700" stop="20260822072000 +0700" channel="Channel25tvNMovies.mnc">
-    <title lang="en">07:20Love 911</title>
-    <desc lang="en">Broadcast of 07:20Love 911 on Channel25tvN Movies</desc>
+    <title lang="en">07:20</title>
+    <desc lang="en">Broadcast of 07:20 on Channel25tvN Movies</desc>
   </programme>
   <programme start="20260822072000 +0700" stop="20260822085500 +0700" channel="Channel25tvNMovies.mnc">
     <title lang="en">08:55Escape</title>
@@ -1216,9 +1212,13 @@
     <title lang="en">21:00Noryang: Deadly Sea</title>
     <desc lang="en">Broadcast of 21:00Noryang: Deadly Sea on Channel25tvN Movies</desc>
   </programme>
-  <programme start="20260822210000 +0700" stop="20260822220000 +0700" channel="Channel25tvNMovies.mnc">
+  <programme start="20260822210000 +0700" stop="20260822230500 +0700" channel="Channel25tvNMovies.mnc">
     <title lang="en">23:05A Melody To Remember</title>
     <desc lang="en">Broadcast of 23:05A Melody To Remember on Channel25tvN Movies</desc>
+  </programme>
+  <programme start="20260822230500 +0700" stop="20260823000500 +0700" channel="Channel25tvNMovies.mnc">
+    <title lang="en">00:55Cafe Midnight</title>
+    <desc lang="en">Broadcast of 00:55Cafe Midnight on Channel25tvN Movies</desc>
   </programme>
   <programme start="20260822041500 +0700" stop="20260822060000 +0700" channel="Channel26StudioUniversal.mnc">
     <title lang="en">06:00</title>
@@ -1260,13 +1260,9 @@
     <title lang="en">22:55Robin Hood</title>
     <desc lang="en">Broadcast of 22:55Robin Hood on Channel26Studio Universal</desc>
   </programme>
-  <programme start="20260822045500 +0700" stop="20260822052000 +0700" channel="Channel37NickelodeonJr.mnc">
-    <title lang="en">05:20</title>
-    <desc lang="en">Broadcast of 05:20 on Channel37Nickelodeon Jr</desc>
-  </programme>
   <programme start="20260822052000 +0700" stop="20260822054000 +0700" channel="Channel37NickelodeonJr.mnc">
-    <title lang="en">05:40Rubble &amp; Crew</title>
-    <desc lang="en">Broadcast of 05:40Rubble &amp; Crew on Channel37Nickelodeon Jr</desc>
+    <title lang="en">05:40</title>
+    <desc lang="en">Broadcast of 05:40 on Channel37Nickelodeon Jr</desc>
   </programme>
   <programme start="20260822054000 +0700" stop="20260822060500 +0700" channel="Channel37NickelodeonJr.mnc">
     <title lang="en">06:05Rubble &amp; Crew</title>
@@ -1296,17 +1292,17 @@
     <title lang="en">08:20Rubble &amp; Crew</title>
     <desc lang="en">Broadcast of 08:20Rubble &amp; Crew on Channel37Nickelodeon Jr</desc>
   </programme>
-  <programme start="20260822082000 +0700" stop="20260822092000 +0700" channel="Channel37NickelodeonJr.mnc">
+  <programme start="20260822082000 +0700" stop="20260822084500 +0700" channel="Channel37NickelodeonJr.mnc">
     <title lang="en">08:45Santiago Of The Seas</title>
     <desc lang="en">Broadcast of 08:45Santiago Of The Seas on Channel37Nickelodeon Jr</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822051500 +0700" channel="Channel39Zoomoo.mnc">
-    <title lang="en">05:15</title>
-    <desc lang="en">Broadcast of 05:15 on Channel39Zoomoo</desc>
+  <programme start="20260822084500 +0700" stop="20260822094500 +0700" channel="Channel37NickelodeonJr.mnc">
+    <title lang="en">09:05Dora</title>
+    <desc lang="en">Broadcast of 09:05Dora on Channel37Nickelodeon Jr</desc>
   </programme>
   <programme start="20260822051500 +0700" stop="20260822053000 +0700" channel="Channel39Zoomoo.mnc">
-    <title lang="en">05:30ZooMoo's Got Brains S2, Ep 29</title>
-    <desc lang="en">Broadcast of 05:30ZooMoo's Got Brains S2, Ep 29 on Channel39Zoomoo</desc>
+    <title lang="en">05:30</title>
+    <desc lang="en">Broadcast of 05:30 on Channel39Zoomoo</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822054500 +0700" channel="Channel39Zoomoo.mnc">
     <title lang="en">05:45ZooMoo's Got Brains S2, Ep 30</title>
@@ -1336,17 +1332,17 @@
     <title lang="en">07:15Jelly Jamm S1, Ep 27</title>
     <desc lang="en">Broadcast of 07:15Jelly Jamm S1, Ep 27 on Channel39Zoomoo</desc>
   </programme>
-  <programme start="20260822071500 +0700" stop="20260822081500 +0700" channel="Channel39Zoomoo.mnc">
+  <programme start="20260822071500 +0700" stop="20260822073000 +0700" channel="Channel39Zoomoo.mnc">
     <title lang="en">07:30Jelly Jamm S1, Ep 28</title>
     <desc lang="en">Broadcast of 07:30Jelly Jamm S1, Ep 28 on Channel39Zoomoo</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822052600 +0700" channel="Channel40Moonbug.mnc">
-    <title lang="en">05:26</title>
-    <desc lang="en">Broadcast of 05:26 on Channel40Moonbug</desc>
+  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel39Zoomoo.mnc">
+    <title lang="en">07:45Jelly Jamm S1, Ep 29</title>
+    <desc lang="en">Broadcast of 07:45Jelly Jamm S1, Ep 29 on Channel39Zoomoo</desc>
   </programme>
   <programme start="20260822052600 +0700" stop="20260822060000 +0700" channel="Channel40Moonbug.mnc">
-    <title lang="en">06:00Oddbods</title>
-    <desc lang="en">Broadcast of 06:00Oddbods on Channel40Moonbug</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel40Moonbug</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063200 +0700" channel="Channel40Moonbug.mnc">
     <title lang="en">06:32Little Angel</title>
@@ -1376,25 +1372,17 @@
     <title lang="en">09:14Cody Time</title>
     <desc lang="en">Broadcast of 09:14Cody Time on Channel40Moonbug</desc>
   </programme>
-  <programme start="20260822091400 +0700" stop="20260822101400 +0700" channel="Channel40Moonbug.mnc">
+  <programme start="20260822091400 +0700" stop="20260822093300 +0700" channel="Channel40Moonbug.mnc">
     <title lang="en">09:33CoComelon</title>
     <desc lang="en">Broadcast of 09:33CoComelon on Channel40Moonbug</desc>
   </programme>
-  <programme start="20260822050700 +0700" stop="20260822051400 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">05:14</title>
-    <desc lang="en">Broadcast of 05:14 on Channel41CBeebies</desc>
-  </programme>
-  <programme start="20260822051400 +0700" stop="20260822052000 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">05:20Hey Duggee S5, Ep 4</title>
-    <desc lang="en">Broadcast of 05:20Hey Duggee S5, Ep 4 on Channel41CBeebies</desc>
-  </programme>
-  <programme start="20260822052000 +0700" stop="20260822052700 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">05:27Hey Duggee S5, Ep 5</title>
-    <desc lang="en">Broadcast of 05:27Hey Duggee S5, Ep 5 on Channel41CBeebies</desc>
+  <programme start="20260822093300 +0700" stop="20260822103300 +0700" channel="Channel40Moonbug.mnc">
+    <title lang="en">09:59Dance Party</title>
+    <desc lang="en">Broadcast of 09:59Dance Party on Channel40Moonbug</desc>
   </programme>
   <programme start="20260822052700 +0700" stop="20260822053500 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">05:35Hey Duggee S5, Ep 6</title>
-    <desc lang="en">Broadcast of 05:35Hey Duggee S5, Ep 6 on Channel41CBeebies</desc>
+    <title lang="en">05:35</title>
+    <desc lang="en">Broadcast of 05:35 on Channel41CBeebies</desc>
   </programme>
   <programme start="20260822053500 +0700" stop="20260822054200 +0700" channel="Channel41CBeebies.mnc">
     <title lang="en">05:42Hey Duggee's Squirrel..., Ep 24</title>
@@ -1416,9 +1404,21 @@
     <title lang="en">06:10Hey Duggee's Squirrel..., Ep 15</title>
     <desc lang="en">Broadcast of 06:10Hey Duggee's Squirrel..., Ep 15 on Channel41CBeebies</desc>
   </programme>
-  <programme start="20260822061000 +0700" stop="20260822071000 +0700" channel="Channel41CBeebies.mnc">
+  <programme start="20260822061000 +0700" stop="20260822062000 +0700" channel="Channel41CBeebies.mnc">
     <title lang="en">06:20Teletubbies S1, Ep 68</title>
     <desc lang="en">Broadcast of 06:20Teletubbies S1, Ep 68 on Channel41CBeebies</desc>
+  </programme>
+  <programme start="20260822062000 +0700" stop="20260822062500 +0700" channel="Channel41CBeebies.mnc">
+    <title lang="en">06:25Teletubbies Ready... S1, Ep 2</title>
+    <desc lang="en">Broadcast of 06:25Teletubbies Ready... S1, Ep 2 on Channel41CBeebies</desc>
+  </programme>
+  <programme start="20260822062500 +0700" stop="20260822063200 +0700" channel="Channel41CBeebies.mnc">
+    <title lang="en">06:32Bluey S3, Ep 9</title>
+    <desc lang="en">Broadcast of 06:32Bluey S3, Ep 9 on Channel41CBeebies</desc>
+  </programme>
+  <programme start="20260822063200 +0700" stop="20260822073200 +0700" channel="Channel41CBeebies.mnc">
+    <title lang="en">06:39Bluey S3, Ep 10</title>
+    <desc lang="en">Broadcast of 06:39Bluey S3, Ep 10 on Channel41CBeebies</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel46KidsTV.mnc">
     <title lang="en">05:30</title>
@@ -1460,13 +1460,9 @@
     <title lang="en">11:30O Iya Ya</title>
     <desc lang="en">Broadcast of 11:30O Iya Ya on Channel46Kids TV</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822052500 +0700" channel="Channel47Dreamworks.mnc">
-    <title lang="en">05:25</title>
-    <desc lang="en">Broadcast of 05:25 on Channel47Dreamworks</desc>
-  </programme>
   <programme start="20260822052500 +0700" stop="20260822055000 +0700" channel="Channel47Dreamworks.mnc">
-    <title lang="en">05:50Dew Drops Diaries</title>
-    <desc lang="en">Broadcast of 05:50Dew Drops Diaries on Channel47Dreamworks</desc>
+    <title lang="en">05:50</title>
+    <desc lang="en">Broadcast of 05:50 on Channel47Dreamworks</desc>
   </programme>
   <programme start="20260822055000 +0700" stop="20260822061500 +0700" channel="Channel47Dreamworks.mnc">
     <title lang="en">06:15Gabby's Dollhouse</title>
@@ -1496,17 +1492,17 @@
     <title lang="en">08:45Go, Dog. Go!</title>
     <desc lang="en">Broadcast of 08:45Go, Dog. Go! on Channel47Dreamworks</desc>
   </programme>
-  <programme start="20260822084500 +0700" stop="20260822094500 +0700" channel="Channel47Dreamworks.mnc">
+  <programme start="20260822084500 +0700" stop="20260822091000 +0700" channel="Channel47Dreamworks.mnc">
     <title lang="en">09:10Go, Dog. Go!</title>
     <desc lang="en">Broadcast of 09:10Go, Dog. Go! on Channel47Dreamworks</desc>
   </programme>
-  <programme start="20260822044500 +0700" stop="20260822051000 +0700" channel="Channel49Nickelodeon.mnc">
-    <title lang="en">05:10</title>
-    <desc lang="en">Broadcast of 05:10 on Channel49Nickelodeon</desc>
+  <programme start="20260822091000 +0700" stop="20260822101000 +0700" channel="Channel47Dreamworks.mnc">
+    <title lang="en">09:35Dawn Of The Croods</title>
+    <desc lang="en">Broadcast of 09:35Dawn Of The Croods on Channel47Dreamworks</desc>
   </programme>
   <programme start="20260822051000 +0700" stop="20260822053500 +0700" channel="Channel49Nickelodeon.mnc">
-    <title lang="en">05:35The Marsupilamis</title>
-    <desc lang="en">Broadcast of 05:35The Marsupilamis on Channel49Nickelodeon</desc>
+    <title lang="en">05:35</title>
+    <desc lang="en">Broadcast of 05:35 on Channel49Nickelodeon</desc>
   </programme>
   <programme start="20260822053500 +0700" stop="20260822055500 +0700" channel="Channel49Nickelodeon.mnc">
     <title lang="en">05:55Best And Bester</title>
@@ -1536,9 +1532,13 @@
     <title lang="en">08:05The Thundermans: Undercover</title>
     <desc lang="en">Broadcast of 08:05The Thundermans: Undercover on Channel49Nickelodeon</desc>
   </programme>
-  <programme start="20260822080500 +0700" stop="20260822090500 +0700" channel="Channel49Nickelodeon.mnc">
+  <programme start="20260822080500 +0700" stop="20260822083000 +0700" channel="Channel49Nickelodeon.mnc">
     <title lang="en">08:30Danger Force</title>
     <desc lang="en">Broadcast of 08:30Danger Force on Channel49Nickelodeon</desc>
+  </programme>
+  <programme start="20260822083000 +0700" stop="20260822093000 +0700" channel="Channel49Nickelodeon.mnc">
+    <title lang="en">08:55Henry Danger</title>
+    <desc lang="en">Broadcast of 08:55Henry Danger on Channel49Nickelodeon</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822060000 +0700" channel="Channel78Indosiar.mnc">
     <title lang="en">06:00</title>
@@ -3220,13 +3220,9 @@
     <title lang="en">12:00Man Eats Wild S1, Ep 6</title>
     <desc lang="en">Broadcast of 12:00Man Eats Wild S1, Ep 6 on Channel202Outdoor Channel</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822052500 +0700" channel="Channel204LoveNature.mnc">
-    <title lang="en">05:25</title>
-    <desc lang="en">Broadcast of 05:25 on Channel204Love Nature</desc>
-  </programme>
   <programme start="20260822052500 +0700" stop="20260822062000 +0700" channel="Channel204LoveNature.mnc">
-    <title lang="en">06:20Reef Wrecks S1, Ep 5</title>
-    <desc lang="en">Broadcast of 06:20Reef Wrecks S1, Ep 5 on Channel204Love Nature</desc>
+    <title lang="en">06:20</title>
+    <desc lang="en">Broadcast of 06:20 on Channel204Love Nature</desc>
   </programme>
   <programme start="20260822062000 +0700" stop="20260822071500 +0700" channel="Channel204LoveNature.mnc">
     <title lang="en">07:15The Enchanted Forests S1, Ep 1</title>
@@ -3256,9 +3252,13 @@
     <title lang="en">12:35Wild Pacific Rescue S1, Ep 1</title>
     <desc lang="en">Broadcast of 12:35Wild Pacific Rescue S1, Ep 1 on Channel204Love Nature</desc>
   </programme>
-  <programme start="20260822123500 +0700" stop="20260822133500 +0700" channel="Channel204LoveNature.mnc">
+  <programme start="20260822123500 +0700" stop="20260822133000 +0700" channel="Channel204LoveNature.mnc">
     <title lang="en">13:30Wild Pacific Rescue S1, Ep 2</title>
     <desc lang="en">Broadcast of 13:30Wild Pacific Rescue S1, Ep 2 on Channel204Love Nature</desc>
+  </programme>
+  <programme start="20260822133000 +0700" stop="20260822143000 +0700" channel="Channel204LoveNature.mnc">
+    <title lang="en">14:25Wild Pacific Rescue S1, Ep 3</title>
+    <desc lang="en">Broadcast of 14:25Wild Pacific Rescue S1, Ep 3 on Channel204Love Nature</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel205CGTNDocumentary.mnc">
     <title lang="en">06:00</title>
@@ -3300,13 +3300,9 @@
     <title lang="en">15:00Remarkable Construction, Ep 6</title>
     <desc lang="en">Broadcast of 15:00Remarkable Construction, Ep 6 on Channel205CGTN Documentary</desc>
   </programme>
-  <programme start="20260822041500 +0700" stop="20260822051000 +0700" channel="Channel206History.mnc">
-    <title lang="en">05:10</title>
-    <desc lang="en">Broadcast of 05:10 on Channel206History</desc>
-  </programme>
   <programme start="20260822051000 +0700" stop="20260822060500 +0700" channel="Channel206History.mnc">
-    <title lang="en">06:05The Bermuda Triangle S2, Ep 7</title>
-    <desc lang="en">Broadcast of 06:05The Bermuda Triangle S2, Ep 7 on Channel206History</desc>
+    <title lang="en">06:05</title>
+    <desc lang="en">Broadcast of 06:05 on Channel206History</desc>
   </programme>
   <programme start="20260822060500 +0700" stop="20260822070000 +0700" channel="Channel206History.mnc">
     <title lang="en">07:00Lost U-Boats Of WW2, Ep 1</title>
@@ -3336,17 +3332,17 @@
     <title lang="en">12:35The Bermuda Triangle S2, Ep 7</title>
     <desc lang="en">Broadcast of 12:35The Bermuda Triangle S2, Ep 7 on Channel206History</desc>
   </programme>
-  <programme start="20260822123500 +0700" stop="20260822133500 +0700" channel="Channel206History.mnc">
+  <programme start="20260822123500 +0700" stop="20260822133000 +0700" channel="Channel206History.mnc">
     <title lang="en">13:30Lost U-Boats Of WW2, Ep 1</title>
     <desc lang="en">Broadcast of 13:30Lost U-Boats Of WW2, Ep 1 on Channel206History</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822052500 +0700" channel="Channel207CrimeInvestigation.mnc">
-    <title lang="en">05:25</title>
-    <desc lang="en">Broadcast of 05:25 on Channel207Crime Investigation</desc>
+  <programme start="20260822133000 +0700" stop="20260822143000 +0700" channel="Channel206History.mnc">
+    <title lang="en">14:25WW2 With Tom Hanks, Ep 5</title>
+    <desc lang="en">Broadcast of 14:25WW2 With Tom Hanks, Ep 5 on Channel206History</desc>
   </programme>
   <programme start="20260822052500 +0700" stop="20260822055000 +0700" channel="Channel207CrimeInvestigation.mnc">
-    <title lang="en">05:50Court Cam S6, Ep 160</title>
-    <desc lang="en">Broadcast of 05:50Court Cam S6, Ep 160 on Channel207Crime Investigation</desc>
+    <title lang="en">05:50</title>
+    <desc lang="en">Broadcast of 05:50 on Channel207Crime Investigation</desc>
   </programme>
   <programme start="20260822055000 +0700" stop="20260822061500 +0700" channel="Channel207CrimeInvestigation.mnc">
     <title lang="en">06:15My Strange Arrest S3, Ep 12</title>
@@ -3376,17 +3372,17 @@
     <title lang="en">11:20Alaska State Troopers S9, Ep 10</title>
     <desc lang="en">Broadcast of 11:20Alaska State Troopers S9, Ep 10 on Channel207Crime Investigation</desc>
   </programme>
-  <programme start="20260822112000 +0700" stop="20260822122000 +0700" channel="Channel207CrimeInvestigation.mnc">
+  <programme start="20260822112000 +0700" stop="20260822121500 +0700" channel="Channel207CrimeInvestigation.mnc">
     <title lang="en">12:15Crime In Progress, Ep 7</title>
     <desc lang="en">Broadcast of 12:15Crime In Progress, Ep 7 on Channel207Crime Investigation</desc>
   </programme>
-  <programme start="20260822044000 +0700" stop="20260822052500 +0700" channel="Channel240RockEntertainment.mnc">
-    <title lang="en">05:25</title>
-    <desc lang="en">Broadcast of 05:25 on Channel240Rock Entertainment</desc>
+  <programme start="20260822121500 +0700" stop="20260822131500 +0700" channel="Channel207CrimeInvestigation.mnc">
+    <title lang="en">13:10Evil Up Close S6, Ep 10</title>
+    <desc lang="en">Broadcast of 13:10Evil Up Close S6, Ep 10 on Channel207Crime Investigation</desc>
   </programme>
   <programme start="20260822052500 +0700" stop="20260822061000 +0700" channel="Channel240RockEntertainment.mnc">
-    <title lang="en">06:10Next Level Chef S4, Ep 2</title>
-    <desc lang="en">Broadcast of 06:10Next Level Chef S4, Ep 2 on Channel240Rock Entertainment</desc>
+    <title lang="en">06:10</title>
+    <desc lang="en">Broadcast of 06:10 on Channel240Rock Entertainment</desc>
   </programme>
   <programme start="20260822061000 +0700" stop="20260822065500 +0700" channel="Channel240RockEntertainment.mnc">
     <title lang="en">06:55Next Level Chef S4, Ep 3</title>
@@ -3416,9 +3412,13 @@
     <title lang="en">11:25Next Level Chef S4, Ep 9</title>
     <desc lang="en">Broadcast of 11:25Next Level Chef S4, Ep 9 on Channel240Rock Entertainment</desc>
   </programme>
-  <programme start="20260822112500 +0700" stop="20260822122500 +0700" channel="Channel240RockEntertainment.mnc">
+  <programme start="20260822112500 +0700" stop="20260822121000 +0700" channel="Channel240RockEntertainment.mnc">
     <title lang="en">12:10Next Level Chef S4, Ep 10</title>
     <desc lang="en">Broadcast of 12:10Next Level Chef S4, Ep 10 on Channel240Rock Entertainment</desc>
+  </programme>
+  <programme start="20260822121000 +0700" stop="20260822131000 +0700" channel="Channel240RockEntertainment.mnc">
+    <title lang="en">12:55Next Level Chef S4, Ep 11</title>
+    <desc lang="en">Broadcast of 12:55Next Level Chef S4, Ep 11 on Channel240Rock Entertainment</desc>
   </programme>
   <programme start="20260822041500 +0700" stop="20260822054500 +0700" channel="Channel248RockAction.mnc">
     <title lang="en">05:45</title>
@@ -4140,17 +4140,9 @@
     <title lang="en">10:00Simply K-Pop 2026</title>
     <desc lang="en">Broadcast of 10:00Simply K-Pop 2026 on Channel351Arirang</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822051500 +0700" channel="Channel352France24English.mnc">
-    <title lang="en">05:15</title>
-    <desc lang="en">Broadcast of 05:15 on Channel352France 24 English</desc>
-  </programme>
-  <programme start="20260822051500 +0700" stop="20260822052100 +0700" channel="Channel352France24English.mnc">
-    <title lang="en">05:21French Connections</title>
-    <desc lang="en">Broadcast of 05:21French Connections on Channel352France 24 English</desc>
-  </programme>
   <programme start="20260822052100 +0700" stop="20260822053000 +0700" channel="Channel352France24English.mnc">
-    <title lang="en">05:30Entre Nous</title>
-    <desc lang="en">Broadcast of 05:30Entre Nous on Channel352France 24 English</desc>
+    <title lang="en">05:30</title>
+    <desc lang="en">Broadcast of 05:30 on Channel352France 24 English</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822054500 +0700" channel="Channel352France24English.mnc">
     <title lang="en">05:45Bulletin (L)</title>
@@ -4176,9 +4168,17 @@
     <title lang="en">06:45Bulletin (L)</title>
     <desc lang="en">Broadcast of 06:45Bulletin (L) on Channel352France 24 English</desc>
   </programme>
-  <programme start="20260822064500 +0700" stop="20260822074500 +0700" channel="Channel352France24English.mnc">
+  <programme start="20260822064500 +0700" stop="20260822070000 +0700" channel="Channel352France24English.mnc">
     <title lang="en">07:00Arts24</title>
     <desc lang="en">Broadcast of 07:00Arts24 on Channel352France 24 English</desc>
+  </programme>
+  <programme start="20260822070000 +0700" stop="20260822071200 +0700" channel="Channel352France24English.mnc">
+    <title lang="en">07:12News (L)</title>
+    <desc lang="en">Broadcast of 07:12News (L) on Channel352France 24 English</desc>
+  </programme>
+  <programme start="20260822071200 +0700" stop="20260822081200 +0700" channel="Channel352France24English.mnc">
+    <title lang="en">07:30Paris Des Arts</title>
+    <desc lang="en">Broadcast of 07:30Paris Des Arts on Channel352France 24 English</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel353CGTN.mnc">
     <title lang="en">06:00</title>
@@ -4260,13 +4260,9 @@
     <title lang="en">08:00Mini Program</title>
     <desc lang="en">Broadcast of 08:00Mini Program on Channel354NHK World Premium</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822051000 +0700" channel="Channel355NHKWorld.mnc">
-    <title lang="en">05:10</title>
-    <desc lang="en">Broadcast of 05:10 on Channel355NHK World</desc>
-  </programme>
   <programme start="20260822051000 +0700" stop="20260822054000 +0700" channel="Channel355NHKWorld.mnc">
-    <title lang="en">05:40Samurai Wisdom</title>
-    <desc lang="en">Broadcast of 05:40Samurai Wisdom on Channel355NHK World</desc>
+    <title lang="en">05:40</title>
+    <desc lang="en">Broadcast of 05:40 on Channel355NHK World</desc>
   </programme>
   <programme start="20260822054000 +0700" stop="20260822054500 +0700" channel="Channel355NHKWorld.mnc">
     <title lang="en">05:45Ukiyoe Edo-Life: Late Summer</title>
@@ -4296,9 +4292,13 @@
     <title lang="en">07:50The Atomic Bomb On Trial</title>
     <desc lang="en">Broadcast of 07:50The Atomic Bomb On Trial on Channel355NHK World</desc>
   </programme>
-  <programme start="20260822075000 +0700" stop="20260822085000 +0700" channel="Channel355NHKWorld.mnc">
+  <programme start="20260822075000 +0700" stop="20260822080000 +0700" channel="Channel355NHKWorld.mnc">
     <title lang="en">08:00Across Continents</title>
     <desc lang="en">Broadcast of 08:00Across Continents on Channel355NHK World</desc>
+  </programme>
+  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel355NHKWorld.mnc">
+    <title lang="en">08:10NHK Newsline</title>
+    <desc lang="en">Broadcast of 08:10NHK Newsline on Channel355NHK World</desc>
   </programme>
   <programme start="20260822050300 +0700" stop="20260822060000 +0700" channel="Channel357DWEnglish.mnc">
     <title lang="en">06:00</title>
@@ -4620,13 +4620,9 @@
     <title lang="en">03:30Cat People</title>
     <desc lang="en">Broadcast of 03:30Cat People on Channel409HITS MOVIES HD</desc>
   </programme>
-  <programme start="20260822031000 +0700" stop="20260822052000 +0700" channel="Channel415tvNMoviesHD.mnc">
-    <title lang="en">05:20</title>
-    <desc lang="en">Broadcast of 05:20 on Channel415tvN Movies HD</desc>
-  </programme>
   <programme start="20260822052000 +0700" stop="20260822072000 +0700" channel="Channel415tvNMoviesHD.mnc">
-    <title lang="en">07:20Love 911</title>
-    <desc lang="en">Broadcast of 07:20Love 911 on Channel415tvN Movies HD</desc>
+    <title lang="en">07:20</title>
+    <desc lang="en">Broadcast of 07:20 on Channel415tvN Movies HD</desc>
   </programme>
   <programme start="20260822072000 +0700" stop="20260822085500 +0700" channel="Channel415tvNMoviesHD.mnc">
     <title lang="en">08:55Escape</title>
@@ -4656,9 +4652,13 @@
     <title lang="en">21:00Noryang: Deadly Sea</title>
     <desc lang="en">Broadcast of 21:00Noryang: Deadly Sea on Channel415tvN Movies HD</desc>
   </programme>
-  <programme start="20260822210000 +0700" stop="20260822220000 +0700" channel="Channel415tvNMoviesHD.mnc">
+  <programme start="20260822210000 +0700" stop="20260822230500 +0700" channel="Channel415tvNMoviesHD.mnc">
     <title lang="en">23:05A Melody To Remember</title>
     <desc lang="en">Broadcast of 23:05A Melody To Remember on Channel415tvN Movies HD</desc>
+  </programme>
+  <programme start="20260822230500 +0700" stop="20260823000500 +0700" channel="Channel415tvNMoviesHD.mnc">
+    <title lang="en">00:55Cafe Midnight</title>
+    <desc lang="en">Broadcast of 00:55Cafe Midnight on Channel415tvN Movies HD</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel417beINSports1HD.mnc">
     <title lang="en">05:30</title>
@@ -5660,13 +5660,9 @@
     <title lang="en">12:55Air Warriors S11, Ep 8</title>
     <desc lang="en">Broadcast of 12:55Air Warriors S11, Ep 8 on Channel462Global Trekker HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822052500 +0700" channel="Channel463LoveNatureHD.mnc">
-    <title lang="en">05:25</title>
-    <desc lang="en">Broadcast of 05:25 on Channel463Love Nature HD</desc>
-  </programme>
   <programme start="20260822052500 +0700" stop="20260822062000 +0700" channel="Channel463LoveNatureHD.mnc">
-    <title lang="en">06:20Reef Wrecks S1, Ep 5</title>
-    <desc lang="en">Broadcast of 06:20Reef Wrecks S1, Ep 5 on Channel463Love Nature HD</desc>
+    <title lang="en">06:20</title>
+    <desc lang="en">Broadcast of 06:20 on Channel463Love Nature HD</desc>
   </programme>
   <programme start="20260822062000 +0700" stop="20260822071500 +0700" channel="Channel463LoveNatureHD.mnc">
     <title lang="en">07:15The Enchanted Forests S1, Ep 1</title>
@@ -5696,9 +5692,13 @@
     <title lang="en">12:35Wild Pacific Rescue S1, Ep 1</title>
     <desc lang="en">Broadcast of 12:35Wild Pacific Rescue S1, Ep 1 on Channel463Love Nature HD</desc>
   </programme>
-  <programme start="20260822123500 +0700" stop="20260822133500 +0700" channel="Channel463LoveNatureHD.mnc">
+  <programme start="20260822123500 +0700" stop="20260822133000 +0700" channel="Channel463LoveNatureHD.mnc">
     <title lang="en">13:30Wild Pacific Rescue S1, Ep 2</title>
     <desc lang="en">Broadcast of 13:30Wild Pacific Rescue S1, Ep 2 on Channel463Love Nature HD</desc>
+  </programme>
+  <programme start="20260822133000 +0700" stop="20260822143000 +0700" channel="Channel463LoveNatureHD.mnc">
+    <title lang="en">14:25Wild Pacific Rescue S1, Ep 3</title>
+    <desc lang="en">Broadcast of 14:25Wild Pacific Rescue S1, Ep 3 on Channel463Love Nature HD</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel471KidsTVHD.mnc">
     <title lang="en">05:30</title>
@@ -5740,13 +5740,9 @@
     <title lang="en">11:30O Iya Ya</title>
     <desc lang="en">Broadcast of 11:30O Iya Ya on Channel471Kids TV HD</desc>
   </programme>
-  <programme start="20260822045500 +0700" stop="20260822052000 +0700" channel="Channel472NickJrHD.mnc">
-    <title lang="en">05:20</title>
-    <desc lang="en">Broadcast of 05:20 on Channel472Nick Jr. HD</desc>
-  </programme>
   <programme start="20260822052000 +0700" stop="20260822054000 +0700" channel="Channel472NickJrHD.mnc">
-    <title lang="en">05:40Rubble &amp; Crew</title>
-    <desc lang="en">Broadcast of 05:40Rubble &amp; Crew on Channel472Nick Jr. HD</desc>
+    <title lang="en">05:40</title>
+    <desc lang="en">Broadcast of 05:40 on Channel472Nick Jr. HD</desc>
   </programme>
   <programme start="20260822054000 +0700" stop="20260822060500 +0700" channel="Channel472NickJrHD.mnc">
     <title lang="en">06:05Rubble &amp; Crew</title>
@@ -5776,17 +5772,17 @@
     <title lang="en">08:20Rubble &amp; Crew</title>
     <desc lang="en">Broadcast of 08:20Rubble &amp; Crew on Channel472Nick Jr. HD</desc>
   </programme>
-  <programme start="20260822082000 +0700" stop="20260822092000 +0700" channel="Channel472NickJrHD.mnc">
+  <programme start="20260822082000 +0700" stop="20260822084500 +0700" channel="Channel472NickJrHD.mnc">
     <title lang="en">08:45Santiago Of The Seas</title>
     <desc lang="en">Broadcast of 08:45Santiago Of The Seas on Channel472Nick Jr. HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822052500 +0700" channel="Channel473DreamworksHD.mnc">
-    <title lang="en">05:25</title>
-    <desc lang="en">Broadcast of 05:25 on Channel473Dreamworks HD</desc>
+  <programme start="20260822084500 +0700" stop="20260822094500 +0700" channel="Channel472NickJrHD.mnc">
+    <title lang="en">09:05Dora</title>
+    <desc lang="en">Broadcast of 09:05Dora on Channel472Nick Jr. HD</desc>
   </programme>
   <programme start="20260822052500 +0700" stop="20260822055000 +0700" channel="Channel473DreamworksHD.mnc">
-    <title lang="en">05:50Dew Drops Diaries</title>
-    <desc lang="en">Broadcast of 05:50Dew Drops Diaries on Channel473Dreamworks HD</desc>
+    <title lang="en">05:50</title>
+    <desc lang="en">Broadcast of 05:50 on Channel473Dreamworks HD</desc>
   </programme>
   <programme start="20260822055000 +0700" stop="20260822061500 +0700" channel="Channel473DreamworksHD.mnc">
     <title lang="en">06:15Gabby's Dollhouse</title>
@@ -5816,9 +5812,13 @@
     <title lang="en">08:45Go, Dog. Go!</title>
     <desc lang="en">Broadcast of 08:45Go, Dog. Go! on Channel473Dreamworks HD</desc>
   </programme>
-  <programme start="20260822084500 +0700" stop="20260822094500 +0700" channel="Channel473DreamworksHD.mnc">
+  <programme start="20260822084500 +0700" stop="20260822091000 +0700" channel="Channel473DreamworksHD.mnc">
     <title lang="en">09:10Go, Dog. Go!</title>
     <desc lang="en">Broadcast of 09:10Go, Dog. Go! on Channel473Dreamworks HD</desc>
+  </programme>
+  <programme start="20260822091000 +0700" stop="20260822101000 +0700" channel="Channel473DreamworksHD.mnc">
+    <title lang="en">09:35Dawn Of The Croods</title>
+    <desc lang="en">Broadcast of 09:35Dawn Of The Croods on Channel473Dreamworks HD</desc>
   </programme>
   <programme start="20260822170000 +0800" stop="20260822180000 +0800" channel="CLTV36.ph">
     <title lang="en">Top Stories:</title>
@@ -5920,13 +5920,213 @@
     <title lang="en">Monday – Friday, 9:00 AM – 12:00 PM; 1:00 – 6:00 PM</title>
     <desc lang="en">Broadcast of Monday – Friday, 9:00 AM – 12:00 PM; 1:00 – 6:00 PM on CLTV36</desc>
   </programme>
+  <programme start="20260822003000 +0500" stop="20260822004500 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Арнайы жоба</title>
+    <desc lang="kk">Program Арнайы жоба di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822004500 +0500" stop="20260822010500 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Ізгілік формуласы</title>
+    <desc lang="kk">Program Ізгілік формуласы di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822010500 +0500" stop="20260822014000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Деректі фильмТұлға</title>
+    <desc lang="kk">Program Деректі фильмТұлға di Qazaqstan TV</desc>
+  </programme>
   <programme start="20260822014000 +0500" stop="20260822024000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Жанталас</title>
     <desc lang="kk">Program Жанталас di Qazaqstan TV</desc>
   </programme>
+  <programme start="20260822024000 +0500" stop="20260822024500 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Әнұран</title>
+    <desc lang="kk">Program Әнұран di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822024500 +0500" stop="20260822030000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Арнайы жоба</title>
+    <desc lang="kk">Program Арнайы жоба di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822030000 +0500" stop="20260822050500 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">«Жан анам» концерті</title>
+    <desc lang="kk">Program «Жан анам» концерті di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822050500 +0500" stop="20260822053000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Prime Era</title>
+    <desc lang="kk">Program Prime Era di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822053000 +0500" stop="20260822053500 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Әнұран</title>
+    <desc lang="kk">Program Әнұран di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822053500 +0500" stop="20260822055000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Көңіл толқыны</title>
+    <desc lang="kk">Program Көңіл толқыны di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822055000 +0500" stop="20260822060500 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">МультхикаяДисней ұсынады:«Кішкентай су перісі Ариэль»</title>
+    <desc lang="kk">Program МультхикаяДисней ұсынады:«Кішкентай су перісі Ариэль» di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822060500 +0500" stop="20260822072000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Көңіл толқыны</title>
+    <desc lang="kk">Program Көңіл толқыны di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822072000 +0500" stop="20260822080000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Деректі фильмТұлға</title>
+    <desc lang="kk">Program Деректі фильмТұлға di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822080000 +0500" stop="20260822090000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">МультхикаяСақшы арыстан</title>
+    <desc lang="kk">Program МультхикаяСақшы арыстан di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822090000 +0500" stop="20260822100000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Жоғалған жылдар</title>
+    <desc lang="kk">Program Жоғалған жылдар di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822100000 +0500" stop="20260822120000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Сезім мен серт</title>
+    <desc lang="kk">Program Сезім мен серт di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822120000 +0500" stop="20260822122000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Ізгілік формуласы</title>
+    <desc lang="kk">Program Ізгілік формуласы di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822122000 +0500" stop="20260822150000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">«Жан анам» концерті</title>
+    <desc lang="kk">Program «Жан анам» концерті di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822150000 +0500" stop="20260822161000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">МультфильмДисней ұсынады: Кішкентай су перісі Ариэль</title>
+    <desc lang="kk">Program МультфильмДисней ұсынады: Кішкентай су перісі Ариэль di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822161000 +0500" stop="20260822180000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Байдың баласы</title>
+    <desc lang="kk">Program Байдың баласы di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822180000 +0500" stop="20260822200000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Сезім мен серт</title>
+    <desc lang="kk">Program Сезім мен серт di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822200000 +0500" stop="20260822201500 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">ЖаңалықтарАқпарат</title>
+    <desc lang="kk">Program ЖаңалықтарАқпарат di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822201500 +0500" stop="20260822203000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Арнайы жоба</title>
+    <desc lang="kk">Program Арнайы жоба di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822203000 +0500" stop="20260822212500 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Әулет құпиясы</title>
+    <desc lang="kk">Program Әулет құпиясы di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822212500 +0500" stop="20260822225000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Шөмішбай Сариевтің шығармашылығына арналған кешӘн болып туған өлеңдер</title>
+    <desc lang="kk">Program Шөмішбай Сариевтің шығармашылығына арналған кешӘн болып туған өлеңдер di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822225000 +0500" stop="20260822235000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Байдың баласы</title>
+    <desc lang="kk">Program Байдың баласы di Qazaqstan TV</desc>
+  </programme>
+  <programme start="20260822003000 +0500" stop="20260822004500 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Арнайы жоба</title>
+    <desc lang="kk">Program Арнайы жоба di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822004500 +0500" stop="20260822010500 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Ізгілік формуласы</title>
+    <desc lang="kk">Program Ізгілік формуласы di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822010500 +0500" stop="20260822014000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Деректі фильмТұлға</title>
+    <desc lang="kk">Program Деректі фильмТұлға di Qazaqstan International</desc>
+  </programme>
   <programme start="20260822014000 +0500" stop="20260822024000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Жанталас</title>
     <desc lang="kk">Program Жанталас di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822024000 +0500" stop="20260822024500 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Әнұран</title>
+    <desc lang="kk">Program Әнұран di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822024500 +0500" stop="20260822030000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Арнайы жоба</title>
+    <desc lang="kk">Program Арнайы жоба di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822030000 +0500" stop="20260822050500 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">«Жан анам» концерті</title>
+    <desc lang="kk">Program «Жан анам» концерті di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822050500 +0500" stop="20260822053000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Prime Era</title>
+    <desc lang="kk">Program Prime Era di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822053000 +0500" stop="20260822053500 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Әнұран</title>
+    <desc lang="kk">Program Әнұран di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822053500 +0500" stop="20260822055000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Көңіл толқыны</title>
+    <desc lang="kk">Program Көңіл толқыны di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822055000 +0500" stop="20260822060500 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">МультхикаяДисней ұсынады:«Кішкентай су перісі Ариэль»</title>
+    <desc lang="kk">Program МультхикаяДисней ұсынады:«Кішкентай су перісі Ариэль» di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822060500 +0500" stop="20260822072000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Көңіл толқыны</title>
+    <desc lang="kk">Program Көңіл толқыны di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822072000 +0500" stop="20260822080000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Деректі фильмТұлға</title>
+    <desc lang="kk">Program Деректі фильмТұлға di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822080000 +0500" stop="20260822090000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">МультхикаяСақшы арыстан</title>
+    <desc lang="kk">Program МультхикаяСақшы арыстан di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822090000 +0500" stop="20260822100000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Жоғалған жылдар</title>
+    <desc lang="kk">Program Жоғалған жылдар di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822100000 +0500" stop="20260822120000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Сезім мен серт</title>
+    <desc lang="kk">Program Сезім мен серт di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822120000 +0500" stop="20260822122000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Ізгілік формуласы</title>
+    <desc lang="kk">Program Ізгілік формуласы di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822122000 +0500" stop="20260822150000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">«Жан анам» концерті</title>
+    <desc lang="kk">Program «Жан анам» концерті di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822150000 +0500" stop="20260822161000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">МультфильмДисней ұсынады: Кішкентай су перісі Ариэль</title>
+    <desc lang="kk">Program МультфильмДисней ұсынады: Кішкентай су перісі Ариэль di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822161000 +0500" stop="20260822180000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Байдың баласы</title>
+    <desc lang="kk">Program Байдың баласы di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822180000 +0500" stop="20260822200000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Сезім мен серт</title>
+    <desc lang="kk">Program Сезім мен серт di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822200000 +0500" stop="20260822201500 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">ЖаңалықтарАқпарат</title>
+    <desc lang="kk">Program ЖаңалықтарАқпарат di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822201500 +0500" stop="20260822203000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Арнайы жоба</title>
+    <desc lang="kk">Program Арнайы жоба di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822203000 +0500" stop="20260822212500 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Әулет құпиясы</title>
+    <desc lang="kk">Program Әулет құпиясы di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822212500 +0500" stop="20260822225000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Шөмішбай Сариевтің шығармашылығына арналған кешӘн болып туған өлеңдер</title>
+    <desc lang="kk">Program Шөмішбай Сариевтің шығармашылығына арналған кешӘн болып туған өлеңдер di Qazaqstan International</desc>
+  </programme>
+  <programme start="20260822225000 +0500" stop="20260822235000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Байдың баласы</title>
+    <desc lang="kk">Program Байдың баласы di Qazaqstan International</desc>
   </programme>
   <programme start="20260822070000 +0500" stop="20260822070500 +0500" channel="Balapan.kz">
     <title lang="kk">Әнұран</title>
@@ -6136,13 +6336,149 @@
     <title lang="kk">Әнұран</title>
     <desc lang="kk">Program Әнұран di Balapan TV</desc>
   </programme>
-  <programme start="20260822235500 +0500" stop="20260823005500 +0500" channel="AbaiTV.kz">
-    <title lang="kk">Әнұран Онлайн қарау</title>
-    <desc lang="kk">Program Әнұран Онлайн қарау di Abai TV</desc>
+  <programme start="20260822070000 +0500" stop="20260822070500 +0500" channel="AbaiTV.kz">
+    <title lang="kk">Әнұран</title>
+    <desc lang="kk">Program Әнұран di Abai TV</desc>
   </programme>
-  <programme start="20260822022000 +0500" stop="20260822032000 +0500" channel="Qazsport.kz">
+  <programme start="20260822070500 +0500" stop="20260822080000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. 6-бағдарлама«Ұлы дала сазы». 6-бағдарлама</title>
+    <desc lang="kk">Program . 6-бағдарлама«Ұлы дала сазы». 6-бағдарлама di Abai TV</desc>
+  </programme>
+  <programme start="20260822080000 +0500" stop="20260822083000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. 4-бөлімФильм</title>
+    <desc lang="kk">Program . 4-бөлімФильм di Abai TV</desc>
+  </programme>
+  <programme start="20260822083000 +0500" stop="20260822091000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. Түрік тілі мен жазуыТүркі әлемі</title>
+    <desc lang="kk">Program . Түрік тілі мен жазуыТүркі әлемі di Abai TV</desc>
+  </programme>
+  <programme start="20260822091000 +0500" stop="20260822100000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. Шәріп ОмаровБірегей</title>
+    <desc lang="kk">Program . Шәріп ОмаровБірегей di Abai TV</desc>
+  </programme>
+  <programme start="20260822100000 +0500" stop="20260822110000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. Ақын әлеміФильм</title>
+    <desc lang="kk">Program . Ақын әлеміФильм di Abai TV</desc>
+  </programme>
+  <programme start="20260822110000 +0500" stop="20260822112500 +0500" channel="AbaiTV.kz">
+    <title lang="kk">Программа. Альбрехт ДюрерPro art</title>
+    <desc lang="kk">Program Программа. Альбрехт ДюрерPro art di Abai TV</desc>
+  </programme>
+  <programme start="20260822112500 +0500" stop="20260822115500 +0500" channel="AbaiTV.kz">
+    <title lang="kk">Программа. Керқұла атты Кендебай. Путешествие в иной мир - Продолжение сказки посвящено пути героя, символике мирового пути, волшебному помощнику и поиску мира периЭпос</title>
+    <desc lang="kk">Program Программа. Керқұла атты Кендебай. Путешествие в иной мир - Продолжение сказки посвящено пути героя, символике мирового пути, волшебному помощнику и поиску мира периЭпос di Abai TV</desc>
+  </programme>
+  <programme start="20260822115500 +0500" stop="20260822125000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. 25 бағдарламаАлтын қақпа</title>
+    <desc lang="kk">Program . 25 бағдарламаАлтын қақпа di Abai TV</desc>
+  </programme>
+  <programme start="20260822125000 +0500" stop="20260822135000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">Программа. Еділ ҚұсайыновПока все вместе</title>
+    <desc lang="kk">Program Программа. Еділ ҚұсайыновПока все вместе di Abai TV</desc>
+  </programme>
+  <programme start="20260822135000 +0500" stop="20260822145500 +0500" channel="AbaiTV.kz">
+    <title lang="kk">«Падиша өнер» концертіКонцерт</title>
+    <desc lang="kk">Program «Падиша өнер» концертіКонцерт di Abai TV</desc>
+  </programme>
+  <programme start="20260822145500 +0500" stop="20260822173500 +0500" channel="AbaiTV.kz">
+    <title lang="kk">«Шоқан Уалиханов». . 1,2 бөлімдеріФильм</title>
+    <desc lang="kk">Program «Шоқан Уалиханов». . 1,2 бөлімдеріФильм di Abai TV</desc>
+  </programme>
+  <programme start="20260822173500 +0500" stop="20260822180000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. Топырақ деградациясыҒылым мен ғалам</title>
+    <desc lang="kk">Program . Топырақ деградациясыҒылым мен ғалам di Abai TV</desc>
+  </programme>
+  <programme start="20260822180000 +0500" stop="20260822193000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. «Жүрекке жылы әуендер»  концерттік бағдарлама туралыҰмытпаймыз</title>
+    <desc lang="kk">Program . «Жүрекке жылы әуендер»  концерттік бағдарлама туралыҰмытпаймыз di Abai TV</desc>
+  </programme>
+  <programme start="20260822193000 +0500" stop="20260822200000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. Әли БекмұханбетАқын әлемі</title>
+    <desc lang="kk">Program . Әли БекмұханбетАқын әлемі di Abai TV</desc>
+  </programme>
+  <programme start="20260822200000 +0500" stop="20260822210000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">Программа. Кристина БекмурзаеваВечные ценности</title>
+    <desc lang="kk">Program Программа. Кристина БекмурзаеваВечные ценности di Abai TV</desc>
+  </programme>
+  <programme start="20260822210000 +0500" stop="20260822220000 +0500" channel="AbaiTV.kz">
+    <title lang="kk">. Қазақтың жаңашыл суретшілеріЗАМАН-АРТ</title>
+    <desc lang="kk">Program . Қазақтың жаңашыл суретшілеріЗАМАН-АРТ di Abai TV</desc>
+  </programme>
+  <programme start="20260822220000 +0500" stop="20260822231500 +0500" channel="AbaiTV.kz">
+    <title lang="kk">«Несібелі» көркем фильміФильм</title>
+    <desc lang="kk">Program «Несібелі» көркем фильміФильм di Abai TV</desc>
+  </programme>
+  <programme start="20260822231500 +0500" stop="20260822235500 +0500" channel="AbaiTV.kz">
+    <title lang="kk">«Ақылды қалалар». Жапония. Деректі фильмФильм</title>
+    <desc lang="kk">Program «Ақылды қалалар». Жапония. Деректі фильмФильм di Abai TV</desc>
+  </programme>
+  <programme start="20260822235500 +0500" stop="20260823005500 +0500" channel="AbaiTV.kz">
+    <title lang="kk">Әнұран</title>
+    <desc lang="kk">Program Әнұран di Abai TV</desc>
+  </programme>
+  <programme start="20260822015500 +0500" stop="20260822022000 +0500" channel="Qazsport.kz">
+    <title lang="kk">ФутболУЕФА Чемпиондар Лигасының шолуы</title>
+    <desc lang="kk">Program ФутболУЕФА Чемпиондар Лигасының шолуы di Qazsport</desc>
+  </programme>
+  <programme start="20260822022000 +0500" stop="20260822065000 +0500" channel="Qazsport.kz">
     <title lang="kk">Әнұран</title>
     <desc lang="kk">Program Әнұран di Qazsport</desc>
+  </programme>
+  <programme start="20260822065000 +0500" stop="20260822065500 +0500" channel="Qazsport.kz">
+    <title lang="kk">Әнұран</title>
+    <desc lang="kk">Program Әнұран di Qazsport</desc>
+  </programme>
+  <programme start="20260822065500 +0500" stop="20260822085500 +0500" channel="Qazsport.kz">
+    <title lang="kk">Волейбол. Азия чемпионаты (Әйелдер)Вьетнам – Оңтүстік  Корея</title>
+    <desc lang="kk">Program Волейбол. Азия чемпионаты (Әйелдер)Вьетнам – Оңтүстік  Корея di Qazsport</desc>
+  </programme>
+  <programme start="20260822085500 +0500" stop="20260822092000 +0500" channel="Qazsport.kz">
+    <title lang="kk">Ақпараттық-сараптамалық бағдарламаSport Review</title>
+    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарламаSport Review di Qazsport</desc>
+  </programme>
+  <programme start="20260822092000 +0500" stop="20260822111000 +0500" channel="Qazsport.kz">
+    <title lang="kk">Футбол. УЕФА Чемпиондар Лигасы. Плей-офф кезеңіФенербахче (Түркия) – Лион (Франция)</title>
+    <desc lang="kk">Program Футбол. УЕФА Чемпиондар Лигасы. Плей-офф кезеңіФенербахче (Түркия) – Лион (Франция) di Qazsport</desc>
+  </programme>
+  <programme start="20260822111000 +0500" stop="20260822115500 +0500" channel="Qazsport.kz">
+    <title lang="kk">QAZSPORT алаңы ток-шоуыҚазақстан гимнастикасының жаңа межесі</title>
+    <desc lang="kk">Program QAZSPORT алаңы ток-шоуыҚазақстан гимнастикасының жаңа межесі di Qazsport</desc>
+  </programme>
+  <programme start="20260822115500 +0500" stop="20260822140000 +0500" channel="Qazsport.kz">
+    <title lang="kk">Волейбол. Азия чемпионаты (Әйелдер)Қазақстан – Индонезия</title>
+    <desc lang="kk">Program Волейбол. Азия чемпионаты (Әйелдер)Қазақстан – Индонезия di Qazsport</desc>
+  </programme>
+  <programme start="20260822140000 +0500" stop="20260822142500 +0500" channel="Qazsport.kz">
+    <title lang="kk">Ақпараттық-сараптамалық бағдарламаSport Review</title>
+    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарламаSport Review di Qazsport</desc>
+  </programme>
+  <programme start="20260822142500 +0500" stop="20260822162500 +0500" channel="Qazsport.kz">
+    <title lang="kk">Еркін күресАзия чемпионаты. Финал (57, 65, 70, 79, 97 кг.)</title>
+    <desc lang="kk">Program Еркін күресАзия чемпионаты. Финал (57, 65, 70, 79, 97 кг.) di Qazsport</desc>
+  </programme>
+  <programme start="20260822162500 +0500" stop="20260822183000 +0500" channel="Qazsport.kz">
+    <title lang="kk">Волейбол. Азия чемпионаты (Әйелдер)Қытай - Ирак</title>
+    <desc lang="kk">Program Волейбол. Азия чемпионаты (Әйелдер)Қытай - Ирак di Qazsport</desc>
+  </programme>
+  <programme start="20260822183000 +0500" stop="20260822185500 +0500" channel="Qazsport.kz">
+    <title lang="kk">Специальный  репортажПульс будущего</title>
+    <desc lang="kk">Program Специальный  репортажПульс будущего di Qazsport</desc>
+  </programme>
+  <programme start="20260822185500 +0500" stop="20260822192500 +0500" channel="Qazsport.kz">
+    <title lang="kk">ФутболУЕФА Чемпиондар Лигасының шолуы</title>
+    <desc lang="kk">Program ФутболУЕФА Чемпиондар Лигасының шолуы di Qazsport</desc>
+  </programme>
+  <programme start="20260822192500 +0500" stop="20260822215500 +0500" channel="Qazsport.kz">
+    <title lang="kk">ДзюдоGrand Prix</title>
+    <desc lang="kk">Program ДзюдоGrand Prix di Qazsport</desc>
+  </programme>
+  <programme start="20260822215500 +0500" stop="20260822223500 +0500" channel="Qazsport.kz">
+    <title lang="kk">Ақпараттық-сараптамалық бағдарламаSport Review</title>
+    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарламаSport Review di Qazsport</desc>
+  </programme>
+  <programme start="20260822223500 +0500" stop="20260822233500 +0500" channel="Qazsport.kz">
+    <title lang="kk">Футбол. УЕФА Чемпиондар Лигасы. Плей-офф кезеңіХапоэль Беэр-Шева (Израиль) - Сабах (Әзербайжан)</title>
+    <desc lang="kk">Program Футбол. УЕФА Чемпиондар Лигасы. Плей-офф кезеңіХапоэль Беэр-Шева (Израиль) - Сабах (Әзербайжан) di Qazsport</desc>
   </programme>
   <programme start="20260822000000 +0500" stop="20260822070000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">ӘНҰРАН</title>
@@ -6157,16 +6493,16 @@
     <desc lang="kk">Program "ЖӘДІГЕР" di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822073500 +0500" stop="20260822090000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">ТЕЛЕХИКАЯСЫ "ҮМІТ" ТЕЛЕХИКАЯСЫ</title>
-    <desc lang="kk">Program ТЕЛЕХИКАЯСЫ "ҮМІТ" ТЕЛЕХИКАЯСЫ di Aqjaiyq TV</desc>
+    <title lang="kk">ТЕЛЕХИКАЯСЫ"ҮМІТ" ТЕЛЕХИКАЯСЫ</title>
+    <desc lang="kk">Program ТЕЛЕХИКАЯСЫ"ҮМІТ" ТЕЛЕХИКАЯСЫ di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260822093000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">Ақпараттық бағдарлама. Қайталау "AQJAIYQ AQPARAT". Ақпараттық бағдарлама. Қайталау</title>
-    <desc lang="kk">Program Ақпараттық бағдарлама. Қайталау "AQJAIYQ AQPARAT". Ақпараттық бағдарлама. Қайталау di Aqjaiyq TV</desc>
+    <title lang="kk">Ақпараттық бағдарлама. Қайталау"AQJAIYQ AQPARAT". Ақпараттық бағдарлама. Қайталау</title>
+    <desc lang="kk">Program Ақпараттық бағдарлама. Қайталау"AQJAIYQ AQPARAT". Ақпараттық бағдарлама. Қайталау di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822093000 +0500" stop="20260822100000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">Информационная программа. Повтор "AQJAIYQ AQPARAT". Информационная программа. Повтор</title>
-    <desc lang="kk">Program Информационная программа. Повтор "AQJAIYQ AQPARAT". Информационная программа. Повтор di Aqjaiyq TV</desc>
+    <title lang="kk">Информационная программа. Повтор"AQJAIYQ AQPARAT". Информационная программа. Повтор</title>
+    <desc lang="kk">Program Информационная программа. Повтор"AQJAIYQ AQPARAT". Информационная программа. Повтор di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260822104500 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">ТЕЛЕХИКАЯ</title>
@@ -6193,132 +6529,132 @@
     <desc lang="kk">Program 14:00-17:00 Техникалық үзіліс di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260822183000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">Концерттік бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</title>
-    <desc lang="kk">Program Концерттік бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама di Aqjaiyq TV</desc>
+    <title lang="kk">Концерттік бағдарлама"ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</title>
+    <desc lang="kk">Program Концерттік бағдарлама"ШАЛҚАР ШАБЫТ". Концерттік бағдарлама di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822183000 +0500" stop="20260822183500 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"ЖАНСАРАЙ"</title>
     <desc lang="kk">Program "ЖАНСАРАЙ" di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822183500 +0500" stop="20260822185500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">Танымдық бағдарлама "ТОПЖАРҒАН". Танымдық бағдарлама</title>
-    <desc lang="kk">Program Танымдық бағдарлама "ТОПЖАРҒАН". Танымдық бағдарлама di Aqjaiyq TV</desc>
+    <title lang="kk">Танымдық бағдарлама"ТОПЖАРҒАН". Танымдық бағдарлама</title>
+    <desc lang="kk">Program Танымдық бағдарлама"ТОПЖАРҒАН". Танымдық бағдарлама di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822185500 +0500" stop="20260822192000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"АЛДАСПАН"</title>
     <desc lang="kk">Program "АЛДАСПАН" di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822192000 +0500" stop="20260822200000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">Мәдени-танымдық хабар "ЖАНЫМНЫҢ ЖАҒАЛАУЫ". Мәдени-танымдық хабар</title>
-    <desc lang="kk">Program Мәдени-танымдық хабар "ЖАНЫМНЫҢ ЖАҒАЛАУЫ". Мәдени-танымдық хабар di Aqjaiyq TV</desc>
+    <title lang="kk">Мәдени-танымдық хабар"ЖАНЫМНЫҢ ЖАҒАЛАУЫ". Мәдени-танымдық хабар</title>
+    <desc lang="kk">Program Мәдени-танымдық хабар"ЖАНЫМНЫҢ ЖАҒАЛАУЫ". Мәдени-танымдық хабар di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260822210000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"АТАМЕКЕН АЯСЫНДА". ЖАҢАҚАЛА АУДАНЫ</title>
     <desc lang="kk">Program "АТАМЕКЕН АЯСЫНДА". ЖАҢАҚАЛА АУДАНЫ di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822210000 +0500" stop="20260822220000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">Концерттік бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</title>
-    <desc lang="kk">Program Концерттік бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама di Aqjaiyq TV</desc>
+    <title lang="kk">Концерттік бағдарлама"ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</title>
+    <desc lang="kk">Program Концерттік бағдарлама"ШАЛҚАР ШАБЫТ". Концерттік бағдарлама di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822220000 +0500" stop="20260822230000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">ТЕЛЕХИКАЯСЫ "ҮМІТ" ТЕЛЕХИКАЯСЫ</title>
-    <desc lang="kk">Program ТЕЛЕХИКАЯСЫ "ҮМІТ" ТЕЛЕХИКАЯСЫ di Aqjaiyq TV</desc>
+    <title lang="kk">ТЕЛЕХИКАЯСЫ"ҮМІТ" ТЕЛЕХИКАЯСЫ</title>
+    <desc lang="kk">Program ТЕЛЕХИКАЯСЫ"ҮМІТ" ТЕЛЕХИКАЯСЫ di Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822070000 +0500" stop="20260822070500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Әнұран ӘНҰРАН</title>
-    <desc lang="kk">Program Әнұран ӘНҰРАН di Aqtobe TV</desc>
+    <title lang="kk">ӘнұранӘНҰРАН</title>
+    <desc lang="kk">Program ӘнұранӘНҰРАН di Aqtobe TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260822080000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Концерт "МӘҢГІЛІК ЕЛДІҢ МҰРАСЫ"</title>
-    <desc lang="kk">Program Концерт "МӘҢГІЛІК ЕЛДІҢ МҰРАСЫ" di Aqtobe TV</desc>
+    <title lang="kk">Концерт"МӘҢГІЛІК ЕЛДІҢ МҰРАСЫ"</title>
+    <desc lang="kk">Program Концерт"МӘҢГІЛІК ЕЛДІҢ МҰРАСЫ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822080000 +0500" stop="20260822083000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-сараптамалық бағдарлама ЖАҢАЛЫҚТАР</title>
-    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарлама ЖАҢАЛЫҚТАР di Aqtobe TV</desc>
+    <title lang="kk">Ақпараттық-сараптамалық бағдарламаЖАҢАЛЫҚТАР</title>
+    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарламаЖАҢАЛЫҚТАР di Aqtobe TV</desc>
   </programme>
   <programme start="20260822083000 +0500" stop="20260822090000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-сараптамалық бағдарлама НОВОСТИ</title>
-    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарлама НОВОСТИ di Aqtobe TV</desc>
+    <title lang="kk">Ақпараттық-сараптамалық бағдарламаНОВОСТИ</title>
+    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарламаНОВОСТИ di Aqtobe TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260822103000 +0500" channel="AqtobeTV.kz">
     <title lang="kk">"ТОПЫРАҚ ПЕН ХАУА"</title>
     <desc lang="kk">Program "ТОПЫРАҚ ПЕН ХАУА" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822103000 +0500" stop="20260822113000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Қоғамдық-саяси-әлеуметтік хабар "ҚОҒАМ ҮНІ"</title>
-    <desc lang="kk">Program Қоғамдық-саяси-әлеуметтік хабар "ҚОҒАМ ҮНІ" di Aqtobe TV</desc>
+    <title lang="kk">Қоғамдық-саяси-әлеуметтік хабар"ҚОҒАМ ҮНІ"</title>
+    <desc lang="kk">Program Қоғамдық-саяси-әлеуметтік хабар"ҚОҒАМ ҮНІ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822113000 +0500" stop="20260822115000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Балалар бағдарламасы "ЖАС ДАРЫН"</title>
-    <desc lang="kk">Program Балалар бағдарламасы "ЖАС ДАРЫН" di Aqtobe TV</desc>
+    <title lang="kk">Балалар бағдарламасы"ЖАС ДАРЫН"</title>
+    <desc lang="kk">Program Балалар бағдарламасы"ЖАС ДАРЫН" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822115000 +0500" stop="20260822121500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Авторлық бағдарлама "УМАЙ"</title>
-    <desc lang="kk">Program Авторлық бағдарлама "УМАЙ" di Aqtobe TV</desc>
+    <title lang="kk">Авторлық бағдарлама"УМАЙ"</title>
+    <desc lang="kk">Program Авторлық бағдарлама"УМАЙ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822121500 +0500" stop="20260822123000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-танымдық хабар "АДАЛ ЕҢБЕК"</title>
-    <desc lang="kk">Program Ақпараттық-танымдық хабар "АДАЛ ЕҢБЕК" di Aqtobe TV</desc>
+    <title lang="kk">Ақпараттық-танымдық хабар"АДАЛ ЕҢБЕК"</title>
+    <desc lang="kk">Program Ақпараттық-танымдық хабар"АДАЛ ЕҢБЕК" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822123000 +0500" stop="20260822130000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-танымдық хабар "СӘТІ  ТҮСКЕН  СҰХБАТ"</title>
-    <desc lang="kk">Program Ақпараттық-танымдық хабар "СӘТІ  ТҮСКЕН  СҰХБАТ" di Aqtobe TV</desc>
+    <title lang="kk">Ақпараттық-танымдық хабар"СӘТІ  ТҮСКЕН  СҰХБАТ"</title>
+    <desc lang="kk">Program Ақпараттық-танымдық хабар"СӘТІ  ТҮСКЕН  СҰХБАТ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822130000 +0500" stop="20260822131500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Танымдық хабар "АКТРИСА. МАЙГҮЛ МҰЗБАЕВА"</title>
-    <desc lang="kk">Program Танымдық хабар "АКТРИСА. МАЙГҮЛ МҰЗБАЕВА" di Aqtobe TV</desc>
+    <title lang="kk">Танымдық хабар"АКТРИСА. МАЙГҮЛ МҰЗБАЕВА"</title>
+    <desc lang="kk">Program Танымдық хабар"АКТРИСА. МАЙГҮЛ МҰЗБАЕВА" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822131500 +0500" stop="20260822140000 +0500" channel="AqtobeTV.kz">
     <title lang="kk">"ЫНТЫМАҚ АУЫЛЫ"</title>
     <desc lang="kk">Program "ЫНТЫМАҚ АУЫЛЫ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822140000 +0500" stop="20260822170000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС 14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-    <desc lang="kk">Program 14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС 14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС di Aqtobe TV</desc>
+    <title lang="kk">14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
+    <desc lang="kk">Program 14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС di Aqtobe TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260822180000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-саяси-сараптамалық хабар "АҚПАРАТТЫҚ САҒАТ"</title>
-    <desc lang="kk">Program Ақпараттық-саяси-сараптамалық хабар "АҚПАРАТТЫҚ САҒАТ" di Aqtobe TV</desc>
+    <title lang="kk">Ақпараттық-саяси-сараптамалық хабар"АҚПАРАТТЫҚ САҒАТ"</title>
+    <desc lang="kk">Program Ақпараттық-саяси-сараптамалық хабар"АҚПАРАТТЫҚ САҒАТ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260822183000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Танымдық хабар "ҰЛЫ ДАЛА МҰРАСЫ"</title>
-    <desc lang="kk">Program Танымдық хабар "ҰЛЫ ДАЛА МҰРАСЫ" di Aqtobe TV</desc>
+    <title lang="kk">Танымдық хабар"ҰЛЫ ДАЛА МҰРАСЫ"</title>
+    <desc lang="kk">Program Танымдық хабар"ҰЛЫ ДАЛА МҰРАСЫ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822183000 +0500" stop="20260822190000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Танымдық хабар «БЕЙНЕ»</title>
-    <desc lang="kk">Program Танымдық хабар «БЕЙНЕ» di Aqtobe TV</desc>
+    <title lang="kk">Танымдық хабар«БЕЙНЕ»</title>
+    <desc lang="kk">Program Танымдық хабар«БЕЙНЕ» di Aqtobe TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260822191000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Танымдық хабар "ТЕАТР ТЫНЫСЫ"</title>
-    <desc lang="kk">Program Танымдық хабар "ТЕАТР ТЫНЫСЫ" di Aqtobe TV</desc>
+    <title lang="kk">Танымдық хабар"ТЕАТР ТЫНЫСЫ"</title>
+    <desc lang="kk">Program Танымдық хабар"ТЕАТР ТЫНЫСЫ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822191000 +0500" stop="20260822191500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Сазды бағдарлама "САЗДЫ СӘЛЕМ"</title>
-    <desc lang="kk">Program Сазды бағдарлама "САЗДЫ СӘЛЕМ" di Aqtobe TV</desc>
+    <title lang="kk">Сазды бағдарлама"САЗДЫ СӘЛЕМ"</title>
+    <desc lang="kk">Program Сазды бағдарлама"САЗДЫ СӘЛЕМ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822191500 +0500" stop="20260822200500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-әлеуметтік  хабар "ЖЕЛІДЕ 103"</title>
-    <desc lang="kk">Program Ақпараттық-әлеуметтік  хабар "ЖЕЛІДЕ 103" di Aqtobe TV</desc>
+    <title lang="kk">Ақпараттық-әлеуметтік  хабар"ЖЕЛІДЕ 103"</title>
+    <desc lang="kk">Program Ақпараттық-әлеуметтік  хабар"ЖЕЛІДЕ 103" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822200500 +0500" stop="20260822205500 +0500" channel="AqtobeTV.kz">
     <title lang="kk">"ЫНТЫМАҚ АУЫЛЫ"</title>
     <desc lang="kk">Program "ЫНТЫМАҚ АУЫЛЫ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822205500 +0500" stop="20260822215500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-танымдық хабар "ҚАЗАҚША PODCAST"</title>
-    <desc lang="kk">Program Ақпараттық-танымдық хабар "ҚАЗАҚША PODCAST" di Aqtobe TV</desc>
+    <title lang="kk">Ақпараттық-танымдық хабар"ҚАЗАҚША PODCAST"</title>
+    <desc lang="kk">Program Ақпараттық-танымдық хабар"ҚАЗАҚША PODCAST" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822215500 +0500" stop="20260822233000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Музыкалық бағдарлама "ЖАРҚЫН ЖҮЗДЕСУ"</title>
-    <desc lang="kk">Program Музыкалық бағдарлама "ЖАРҚЫН ЖҮЗДЕСУ" di Aqtobe TV</desc>
+    <title lang="kk">Музыкалық бағдарлама"ЖАРҚЫН ЖҮЗДЕСУ"</title>
+    <desc lang="kk">Program Музыкалық бағдарлама"ЖАРҚЫН ЖҮЗДЕСУ" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822233000 +0500" stop="20260822235500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Танымдық бағдарлама "ӘНДІGROUND"</title>
-    <desc lang="kk">Program Танымдық бағдарлама "ӘНДІGROUND" di Aqtobe TV</desc>
+    <title lang="kk">Танымдық бағдарлама"ӘНДІGROUND"</title>
+    <desc lang="kk">Program Танымдық бағдарлама"ӘНДІGROUND" di Aqtobe TV</desc>
   </programme>
   <programme start="20260822235500 +0500" stop="20260823005500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Әнұран ӘНҰРАН</title>
-    <desc lang="kk">Program Әнұран ӘНҰРАН di Aqtobe TV</desc>
+    <title lang="kk">ӘнұранӘНҰРАН</title>
+    <desc lang="kk">Program ӘнұранӘНҰРАН di Aqtobe TV</desc>
   </programme>
   <programme start="20260822000000 +0500" stop="20260822070000 +0500" channel="AltaiTV.kz">
     <title lang="kk">Эфирдің жабылуы</title>
@@ -6525,128 +6861,128 @@
     <desc lang="kk">Program Аңдатпа, Әнұран di Atyrau TV</desc>
   </programme>
   <programme start="20260822070000 +0500" stop="20260822070200 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Арнаның ашылуы. Әнұран</title>
-    <desc lang="kk">Program Арнаның ашылуы. Әнұран di Ertis TV</desc>
+    <title lang="kk">Арнаның ашылуы.Әнұран</title>
+    <desc lang="kk">Program Арнаның ашылуы.Әнұран di Ertis TV</desc>
   </programme>
   <programme start="20260822070200 +0500" stop="20260822090000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Қ. Махан концерті. Өмірімнің көктемі</title>
-    <desc lang="kk">Program Қ. Махан концерті. Өмірімнің көктемі di Ertis TV</desc>
+    <title lang="kk">Қ. Махан концерті.Өмірімнің көктемі</title>
+    <desc lang="kk">Program Қ. Махан концерті.Өмірімнің көктемі di Ertis TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260822100000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Ақпаратты-сазды бағдарлама. Сәлем, әлем!</title>
-    <desc lang="kk">Program Ақпаратты-сазды бағдарлама. Сәлем, әлем! di Ertis TV</desc>
+    <title lang="kk">Ақпаратты-сазды бағдарлама.Сәлем, әлем!</title>
+    <desc lang="kk">Program Ақпаратты-сазды бағдарлама.Сәлем, әлем! di Ertis TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260822105000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">. Бақыттың кілті</title>
-    <desc lang="kk">Program . Бақыттың кілті di Ertis TV</desc>
+    <title lang="kk">.Бақыттың кілті</title>
+    <desc lang="kk">Program .Бақыттың кілті di Ertis TV</desc>
   </programme>
   <programme start="20260822105000 +0500" stop="20260822110000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Мультхикая. Балапан және оның достары</title>
-    <desc lang="kk">Program Мультхикая. Балапан және оның достары di Ertis TV</desc>
+    <title lang="kk">Мультхикая.Балапан және оның достары</title>
+    <desc lang="kk">Program Мультхикая.Балапан және оның достары di Ertis TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260822112000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Қоғамдық-саяси бағдарлама. 1 студия</title>
-    <desc lang="kk">Program Қоғамдық-саяси бағдарлама. 1 студия di Ertis TV</desc>
+    <title lang="kk">Қоғамдық-саяси бағдарлама.1 студия</title>
+    <desc lang="kk">Program Қоғамдық-саяси бағдарлама.1 студия di Ertis TV</desc>
   </programme>
   <programme start="20260822112000 +0500" stop="20260822113500 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Танымдық бағдарлама. Мой Казахстан</title>
-    <desc lang="kk">Program Танымдық бағдарлама. Мой Казахстан di Ertis TV</desc>
+    <title lang="kk">Танымдық бағдарлама.Мой Казахстан</title>
+    <desc lang="kk">Program Танымдық бағдарлама.Мой Казахстан di Ertis TV</desc>
   </programme>
   <programme start="20260822113500 +0500" stop="20260822120000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">. Көрікті мекен</title>
-    <desc lang="kk">Program . Көрікті мекен di Ertis TV</desc>
+    <title lang="kk">.Көрікті мекен</title>
+    <desc lang="kk">Program .Көрікті мекен di Ertis TV</desc>
   </programme>
   <programme start="20260822120000 +0500" stop="20260822122000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Общественно-политическая программа. 1 студия</title>
-    <desc lang="kk">Program Общественно-политическая программа. 1 студия di Ertis TV</desc>
+    <title lang="kk">Общественно-политическая программа.1 студия</title>
+    <desc lang="kk">Program Общественно-политическая программа.1 студия di Ertis TV</desc>
   </programme>
   <programme start="20260822122000 +0500" stop="20260822124500 +0500" channel="ErtisTV.kz">
-    <title lang="kk">. Абысындар</title>
-    <desc lang="kk">Program . Абысындар di Ertis TV</desc>
+    <title lang="kk">.Абысындар</title>
+    <desc lang="kk">Program .Абысындар di Ertis TV</desc>
   </programme>
   <programme start="20260822124500 +0500" stop="20260822130000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Діни-танымдық бағдарлама. Руханият</title>
-    <desc lang="kk">Program Діни-танымдық бағдарлама. Руханият di Ertis TV</desc>
+    <title lang="kk">Діни-танымдық бағдарлама.Руханият</title>
+    <desc lang="kk">Program Діни-танымдық бағдарлама.Руханият di Ertis TV</desc>
   </programme>
   <programme start="20260822130000 +0500" stop="20260822131500 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Танымдық бағдарлама. ТВ назарда</title>
-    <desc lang="kk">Program Танымдық бағдарлама. ТВ назарда di Ertis TV</desc>
+    <title lang="kk">Танымдық бағдарлама.ТВ назарда</title>
+    <desc lang="kk">Program Танымдық бағдарлама.ТВ назарда di Ertis TV</desc>
   </programme>
   <programme start="20260822131500 +0500" stop="20260822143500 +0500" channel="ErtisTV.kz">
-    <title lang="kk">. Арманға 20 қадам</title>
-    <desc lang="kk">Program . Арманға 20 қадам di Ertis TV</desc>
+    <title lang="kk">.Арманға 20 қадам</title>
+    <desc lang="kk">Program .Арманға 20 қадам di Ertis TV</desc>
   </programme>
   <programme start="20260822143500 +0500" stop="20260822150000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Мәдени-танымдық бағдарлама. Мұра</title>
-    <desc lang="kk">Program Мәдени-танымдық бағдарлама. Мұра di Ertis TV</desc>
+    <title lang="kk">Мәдени-танымдық бағдарлама.Мұра</title>
+    <desc lang="kk">Program Мәдени-танымдық бағдарлама.Мұра di Ertis TV</desc>
   </programme>
   <programme start="20260822150000 +0500" stop="20260822180000 +0500" channel="ErtisTV.kz">
     <title lang="kk">Техникалық үзіліс</title>
     <desc lang="kk">Program Техникалық үзіліс di Ertis TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260822183000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Ток-шоу. ОйLike</title>
-    <desc lang="kk">Program Ток-шоу. ОйLike di Ertis TV</desc>
+    <title lang="kk">Ток-шоу.ОйLike</title>
+    <desc lang="kk">Program Ток-шоу.ОйLike di Ertis TV</desc>
   </programme>
   <programme start="20260822183000 +0500" stop="20260822190000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Мәдени-танымдық бағдарлама. Ат үстіндегі әңгіме</title>
-    <desc lang="kk">Program Мәдени-танымдық бағдарлама. Ат үстіндегі әңгіме di Ertis TV</desc>
+    <title lang="kk">Мәдени-танымдық бағдарлама.Ат үстіндегі әңгіме</title>
+    <desc lang="kk">Program Мәдени-танымдық бағдарлама.Ат үстіндегі әңгіме di Ertis TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260822205000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">. Балуан Шолақ</title>
-    <desc lang="kk">Program . Балуан Шолақ di Ertis TV</desc>
+    <title lang="kk">.Балуан Шолақ</title>
+    <desc lang="kk">Program .Балуан Шолақ di Ertis TV</desc>
   </programme>
   <programme start="20260822205000 +0500" stop="20260822230500 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Н.Керменбаевтың концерті. Қара бала</title>
-    <desc lang="kk">Program Н.Керменбаевтың концерті. Қара бала di Ertis TV</desc>
+    <title lang="kk">Н.Керменбаевтың концерті.Қара бала</title>
+    <desc lang="kk">Program Н.Керменбаевтың концерті.Қара бала di Ertis TV</desc>
   </programme>
   <programme start="20260822230500 +0500" stop="20260823000500 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Мәдени-танымдық бағдарлама. Дәуір даналары</title>
-    <desc lang="kk">Program Мәдени-танымдық бағдарлама. Дәуір даналары di Ertis TV</desc>
+    <title lang="kk">Мәдени-танымдық бағдарлама.Дәуір даналары</title>
+    <desc lang="kk">Program Мәдени-танымдық бағдарлама.Дәуір даналары di Ertis TV</desc>
   </programme>
   <programme start="20260822070000 +0500" stop="20260822070500 +0500" channel="JambylTV.kz">
-    <title lang="kk">Әнұран Арнаның ашылуы.</title>
-    <desc lang="kk">Program Әнұран Арнаның ашылуы. di Jambyl TV</desc>
+    <title lang="kk">ӘнұранАрнаның ашылуы.</title>
+    <desc lang="kk">Program ӘнұранАрнаның ашылуы. di Jambyl TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260822090000 +0500" channel="JambylTV.kz">
-    <title lang="kk">телехикая 188,189-бөлімі түпнұсқа) ТОПЫРАҚ ПЕН ХАУА</title>
-    <desc lang="kk">Program телехикая 188,189-бөлімі түпнұсқа) ТОПЫРАҚ ПЕН ХАУА di Jambyl TV</desc>
+    <title lang="kk">телехикая 188,189-бөлімі түпнұсқа)ТОПЫРАҚ ПЕН ХАУА</title>
+    <desc lang="kk">Program телехикая 188,189-бөлімі түпнұсқа)ТОПЫРАҚ ПЕН ХАУА di Jambyl TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260822093000 +0500" channel="JambylTV.kz">
-    <title lang="kk">мәдени-танымдық бағдарлама (түпнұсқа) СӨЗ ПАТШАСЫ</title>
-    <desc lang="kk">Program мәдени-танымдық бағдарлама (түпнұсқа) СӨЗ ПАТШАСЫ di Jambyl TV</desc>
+    <title lang="kk">мәдени-танымдық бағдарлама (түпнұсқа)СӨЗ ПАТШАСЫ</title>
+    <desc lang="kk">Program мәдени-танымдық бағдарлама (түпнұсқа)СӨЗ ПАТШАСЫ di Jambyl TV</desc>
   </programme>
   <programme start="20260822093000 +0500" stop="20260822100000 +0500" channel="JambylTV.kz">
-    <title lang="kk">мультфильм (түпнұсқа) КҮЛКІ ІЗДЕГЕН КҮНЕКЕЙ</title>
-    <desc lang="kk">Program мультфильм (түпнұсқа) КҮЛКІ ІЗДЕГЕН КҮНЕКЕЙ di Jambyl TV</desc>
+    <title lang="kk">мультфильм (түпнұсқа)КҮЛКІ ІЗДЕГЕН КҮНЕКЕЙ</title>
+    <desc lang="kk">Program мультфильм (түпнұсқа)КҮЛКІ ІЗДЕГЕН КҮНЕКЕЙ di Jambyl TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260822101500 +0500" channel="JambylTV.kz">
-    <title lang="kk">әскери-патриоттық бағдарлама (түпнұсқа) ПАТРИОТ</title>
-    <desc lang="kk">Program әскери-патриоттық бағдарлама (түпнұсқа) ПАТРИОТ di Jambyl TV</desc>
+    <title lang="kk">әскери-патриоттық бағдарлама (түпнұсқа)ПАТРИОТ</title>
+    <desc lang="kk">Program әскери-патриоттық бағдарлама (түпнұсқа)ПАТРИОТ di Jambyl TV</desc>
   </programme>
   <programme start="20260822101500 +0500" stop="20260822110000 +0500" channel="JambylTV.kz">
-    <title lang="kk">телехикая 17-бөлімі (қайталау) НАҒЫЗ ӘКЕ</title>
-    <desc lang="kk">Program телехикая 17-бөлімі (қайталау) НАҒЫЗ ӘКЕ di Jambyl TV</desc>
+    <title lang="kk">телехикая 17-бөлімі (қайталау)НАҒЫЗ ӘКЕ</title>
+    <desc lang="kk">Program телехикая 17-бөлімі (қайталау)НАҒЫЗ ӘКЕ di Jambyl TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260822114000 +0500" channel="JambylTV.kz">
-    <title lang="kk">мәдени-танымдық бағдарлама (түпнұсқа) ЖӘДІГЕР</title>
-    <desc lang="kk">Program мәдени-танымдық бағдарлама (түпнұсқа) ЖӘДІГЕР di Jambyl TV</desc>
+    <title lang="kk">мәдени-танымдық бағдарлама (түпнұсқа)ЖӘДІГЕР</title>
+    <desc lang="kk">Program мәдени-танымдық бағдарлама (түпнұсқа)ЖӘДІГЕР di Jambyl TV</desc>
   </programme>
   <programme start="20260822114000 +0500" stop="20260822123000 +0500" channel="JambylTV.kz">
-    <title lang="kk">телехикая 139-бөлімі (түпнұсқа) ФАЗИЛЕТ ХАНЫМ ЖӘНЕ ОНЫҢ ҚЫЗДАРЫ</title>
-    <desc lang="kk">Program телехикая 139-бөлімі (түпнұсқа) ФАЗИЛЕТ ХАНЫМ ЖӘНЕ ОНЫҢ ҚЫЗДАРЫ di Jambyl TV</desc>
+    <title lang="kk">телехикая 139-бөлімі (түпнұсқа)ФАЗИЛЕТ ХАНЫМ ЖӘНЕ ОНЫҢ ҚЫЗДАРЫ</title>
+    <desc lang="kk">Program телехикая 139-бөлімі (түпнұсқа)ФАЗИЛЕТ ХАНЫМ ЖӘНЕ ОНЫҢ ҚЫЗДАРЫ di Jambyl TV</desc>
   </programme>
   <programme start="20260822123000 +0500" stop="20260822130000 +0500" channel="JambylTV.kz">
-    <title lang="kk">общественно-политическая программа (повтор) ВАЖНЫЙ РАЗГОВОР</title>
-    <desc lang="kk">Program общественно-политическая программа (повтор) ВАЖНЫЙ РАЗГОВОР di Jambyl TV</desc>
+    <title lang="kk">общественно-политическая программа (повтор)ВАЖНЫЙ РАЗГОВОР</title>
+    <desc lang="kk">Program общественно-политическая программа (повтор)ВАЖНЫЙ РАЗГОВОР di Jambyl TV</desc>
   </programme>
   <programme start="20260822130000 +0500" stop="20260822133000 +0500" channel="JambylTV.kz">
-    <title lang="kk">діни - қоғамдық бағдарлама (қайталау) КӘУСАР</title>
-    <desc lang="kk">Program діни - қоғамдық бағдарлама (қайталау) КӘУСАР di Jambyl TV</desc>
+    <title lang="kk">діни - қоғамдық бағдарлама (қайталау)КӘУСАР</title>
+    <desc lang="kk">Program діни - қоғамдық бағдарлама (қайталау)КӘУСАР di Jambyl TV</desc>
   </programme>
   <programme start="20260822133000 +0500" stop="20260822140000 +0500" channel="JambylTV.kz">
-    <title lang="kk">медициналық-сауықтыру бағдарлама (қайталау) ҰЛТ САУЛЫҒЫ</title>
-    <desc lang="kk">Program медициналық-сауықтыру бағдарлама (қайталау) ҰЛТ САУЛЫҒЫ di Jambyl TV</desc>
+    <title lang="kk">медициналық-сауықтыру бағдарлама (қайталау)ҰЛТ САУЛЫҒЫ</title>
+    <desc lang="kk">Program медициналық-сауықтыру бағдарлама (қайталау)ҰЛТ САУЛЫҒЫ di Jambyl TV</desc>
   </programme>
   <programme start="20260822140000 +0500" stop="20260822170000 +0500" channel="JambylTV.kz">
     <title lang="kk">ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
@@ -6657,44 +6993,44 @@
     <desc lang="kk">Program Аңдатпа di Jambyl TV</desc>
   </programme>
   <programme start="20260822170500 +0500" stop="20260822180000 +0500" channel="JambylTV.kz">
-    <title lang="kk">телехикая 190-бөлімі (түпнұсқа) ТОПЫРАҚ ПЕН ХАУА</title>
-    <desc lang="kk">Program телехикая 190-бөлімі (түпнұсқа) ТОПЫРАҚ ПЕН ХАУА di Jambyl TV</desc>
+    <title lang="kk">телехикая 190-бөлімі (түпнұсқа)ТОПЫРАҚ ПЕН ХАУА</title>
+    <desc lang="kk">Program телехикая 190-бөлімі (түпнұсқа)ТОПЫРАҚ ПЕН ХАУА di Jambyl TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260822183000 +0500" channel="JambylTV.kz">
-    <title lang="kk">балалар мен жасөспірімдерге арналған бағдарлама (түпнұсқа) ТӘУЕКЕЛ</title>
-    <desc lang="kk">Program балалар мен жасөспірімдерге арналған бағдарлама (түпнұсқа) ТӘУЕКЕЛ di Jambyl TV</desc>
+    <title lang="kk">балалар мен жасөспірімдерге арналған бағдарлама (түпнұсқа)ТӘУЕКЕЛ</title>
+    <desc lang="kk">Program балалар мен жасөспірімдерге арналған бағдарлама (түпнұсқа)ТӘУЕКЕЛ di Jambyl TV</desc>
   </programme>
   <programme start="20260822183000 +0500" stop="20260822190000 +0500" channel="JambylTV.kz">
-    <title lang="kk">танымдық бағдарлама (түпнұсқа) СЕН ДЕ БІР КІРПІШ ДҮНИЕГЕ...</title>
-    <desc lang="kk">Program танымдық бағдарлама (түпнұсқа) СЕН ДЕ БІР КІРПІШ ДҮНИЕГЕ... di Jambyl TV</desc>
+    <title lang="kk">танымдық бағдарлама (түпнұсқа)СЕН ДЕ БІР КІРПІШ ДҮНИЕГЕ...</title>
+    <desc lang="kk">Program танымдық бағдарлама (түпнұсқа)СЕН ДЕ БІР КІРПІШ ДҮНИЕГЕ... di Jambyl TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260822193000 +0500" channel="JambylTV.kz">
-    <title lang="kk">танымдық бағдарлама (түпнұсқа) МҮМКІН ЕМЕС</title>
-    <desc lang="kk">Program танымдық бағдарлама (түпнұсқа) МҮМКІН ЕМЕС di Jambyl TV</desc>
+    <title lang="kk">танымдық бағдарлама (түпнұсқа)МҮМКІН ЕМЕС</title>
+    <desc lang="kk">Program танымдық бағдарлама (түпнұсқа)МҮМКІН ЕМЕС di Jambyl TV</desc>
   </programme>
   <programme start="20260822193000 +0500" stop="20260822200000 +0500" channel="JambylTV.kz">
-    <title lang="kk">танымдық бағдарлама (қайталау) ТАРАЗ. ТҰЛҒА. ТАЛАНТ</title>
-    <desc lang="kk">Program танымдық бағдарлама (қайталау) ТАРАЗ. ТҰЛҒА. ТАЛАНТ di Jambyl TV</desc>
+    <title lang="kk">танымдық бағдарлама (қайталау)ТАРАЗ. ТҰЛҒА. ТАЛАНТ</title>
+    <desc lang="kk">Program танымдық бағдарлама (қайталау)ТАРАЗ. ТҰЛҒА. ТАЛАНТ di Jambyl TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260822203000 +0500" channel="JambylTV.kz">
-    <title lang="kk">отбасы-танымдық бағдарлама (қайталау) БАҚЫТ МЕКЕНІ</title>
-    <desc lang="kk">Program отбасы-танымдық бағдарлама (қайталау) БАҚЫТ МЕКЕНІ di Jambyl TV</desc>
+    <title lang="kk">отбасы-танымдық бағдарлама (қайталау)БАҚЫТ МЕКЕНІ</title>
+    <desc lang="kk">Program отбасы-танымдық бағдарлама (қайталау)БАҚЫТ МЕКЕНІ di Jambyl TV</desc>
   </programme>
   <programme start="20260822203000 +0500" stop="20260822213000 +0500" channel="JambylTV.kz">
-    <title lang="kk">танымдық бағдарлама (түпнұсқа) ЖАРҚЫН ЖҮЗДЕСУ</title>
-    <desc lang="kk">Program танымдық бағдарлама (түпнұсқа) ЖАРҚЫН ЖҮЗДЕСУ di Jambyl TV</desc>
+    <title lang="kk">танымдық бағдарлама (түпнұсқа)ЖАРҚЫН ЖҮЗДЕСУ</title>
+    <desc lang="kk">Program танымдық бағдарлама (түпнұсқа)ЖАРҚЫН ЖҮЗДЕСУ di Jambyl TV</desc>
   </programme>
   <programme start="20260822213000 +0500" stop="20260822221000 +0500" channel="JambylTV.kz">
-    <title lang="kk">телехикая 18-бөлімі (түпнұсқа) НАҒЫЗ ӘКЕ</title>
-    <desc lang="kk">Program телехикая 18-бөлімі (түпнұсқа) НАҒЫЗ ӘКЕ di Jambyl TV</desc>
+    <title lang="kk">телехикая 18-бөлімі (түпнұсқа)НАҒЫЗ ӘКЕ</title>
+    <desc lang="kk">Program телехикая 18-бөлімі (түпнұсқа)НАҒЫЗ ӘКЕ di Jambyl TV</desc>
   </programme>
   <programme start="20260822221000 +0500" stop="20260822235500 +0500" channel="JambylTV.kz">
-    <title lang="kk">телехикая 140, 141-бөлімі (түпнұсқа) ФАЗИЛЕТ ХАНЫМ ЖӘНЕ ОНЫҢ ҚЫЗДАРЫ</title>
-    <desc lang="kk">Program телехикая 140, 141-бөлімі (түпнұсқа) ФАЗИЛЕТ ХАНЫМ ЖӘНЕ ОНЫҢ ҚЫЗДАРЫ di Jambyl TV</desc>
+    <title lang="kk">телехикая 140, 141-бөлімі (түпнұсқа)ФАЗИЛЕТ ХАНЫМ ЖӘНЕ ОНЫҢ ҚЫЗДАРЫ</title>
+    <desc lang="kk">Program телехикая 140, 141-бөлімі (түпнұсқа)ФАЗИЛЕТ ХАНЫМ ЖӘНЕ ОНЫҢ ҚЫЗДАРЫ di Jambyl TV</desc>
   </programme>
   <programme start="20260822235500 +0500" stop="20260823005500 +0500" channel="JambylTV.kz">
-    <title lang="kk">арнаның жабылуы Әнұран</title>
-    <desc lang="kk">Program арнаның жабылуы Әнұран di Jambyl TV</desc>
+    <title lang="kk">арнаның жабылуыӘнұран</title>
+    <desc lang="kk">Program арнаның жабылуыӘнұран di Jambyl TV</desc>
   </programme>
   <programme start="20260822000000 +0500" stop="20260822070000 +0500" channel="KoksheTV.kz">
     <title lang="kk">Әнұран</title>
@@ -6837,120 +7173,120 @@
     <desc lang="kk">Program "В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама di Kokshe TV</desc>
   </programme>
   <programme start="20260822070000 +0500" stop="20260822070500 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Әнұран Әнұран</title>
-    <desc lang="kk">Program Әнұран Әнұран di Mangystau TV</desc>
+    <title lang="kk">ӘнұранӘнұран</title>
+    <desc lang="kk">Program ӘнұранӘнұран di Mangystau TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260822071000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Ақпараттық Инфомикс</title>
-    <desc lang="kk">Program Ақпараттық Инфомикс di Mangystau TV</desc>
+    <title lang="kk">АқпараттықИнфомикс</title>
+    <desc lang="kk">Program АқпараттықИнфомикс di Mangystau TV</desc>
   </programme>
   <programme start="20260822071000 +0500" stop="20260822080000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">, ІІ-амусым 7-бөлім "Топырақ пен Хауа</title>
-    <desc lang="kk">Program , ІІ-амусым 7-бөлім "Топырақ пен Хауа di Mangystau TV</desc>
+    <title lang="kk">, ІІ-амусым 7-бөлім"Топырақ пен Хауа</title>
+    <desc lang="kk">Program , ІІ-амусым 7-бөлім"Топырақ пен Хауа di Mangystau TV</desc>
   </programme>
   <programme start="20260822080000 +0500" stop="20260822090000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Таңғы ақпаратты-сазды бағдарлама "Сәлем, Маңғыстау!</title>
-    <desc lang="kk">Program Таңғы ақпаратты-сазды бағдарлама "Сәлем, Маңғыстау! di Mangystau TV</desc>
+    <title lang="kk">Таңғы ақпаратты-сазды бағдарлама"Сәлем, Маңғыстау!</title>
+    <desc lang="kk">Program Таңғы ақпаратты-сазды бағдарлама"Сәлем, Маңғыстау! di Mangystau TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260822093000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Жаңалықтар /қайталау/ "MAŃǴYSTAU AQPARAT"</title>
-    <desc lang="kk">Program Жаңалықтар /қайталау/ "MAŃǴYSTAU AQPARAT" di Mangystau TV</desc>
+    <title lang="kk">Жаңалықтар /қайталау/"MAŃǴYSTAU AQPARAT"</title>
+    <desc lang="kk">Program Жаңалықтар /қайталау/"MAŃǴYSTAU AQPARAT" di Mangystau TV</desc>
   </programme>
   <programme start="20260822093000 +0500" stop="20260822100000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Новости  /повтор/ "MAŃǴYSTAU AQPARAT"</title>
-    <desc lang="kk">Program Новости  /повтор/ "MAŃǴYSTAU AQPARAT" di Mangystau TV</desc>
+    <title lang="kk">Новости  /повтор/"MAŃǴYSTAU AQPARAT"</title>
+    <desc lang="kk">Program Новости  /повтор/"MAŃǴYSTAU AQPARAT" di Mangystau TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260822110000 +0500" channel="MangystauTV.kz">
     <title lang="kk">Aқтау Life</title>
     <desc lang="kk">Program Aқтау Life di Mangystau TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260822123000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">75,76-бөлімдері "Фазилет ханым"</title>
-    <desc lang="kk">Program 75,76-бөлімдері "Фазилет ханым" di Mangystau TV</desc>
+    <title lang="kk">75,76-бөлімдері"Фазилет ханым"</title>
+    <desc lang="kk">Program 75,76-бөлімдері"Фазилет ханым" di Mangystau TV</desc>
   </programme>
   <programme start="20260822123000 +0500" stop="20260822133000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Ақпараттық-сараптамалық сұхбат "Өзекті мәселе"</title>
-    <desc lang="kk">Program Ақпараттық-сараптамалық сұхбат "Өзекті мәселе" di Mangystau TV</desc>
+    <title lang="kk">Ақпараттық-сараптамалық сұхбат"Өзекті мәселе"</title>
+    <desc lang="kk">Program Ақпараттық-сараптамалық сұхбат"Өзекті мәселе" di Mangystau TV</desc>
   </programme>
   <programme start="20260822133000 +0500" stop="20260822140000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Жаңа жоба AraLike</title>
-    <desc lang="kk">Program Жаңа жоба AraLike di Mangystau TV</desc>
+    <title lang="kk">Жаңа жобаAraLike</title>
+    <desc lang="kk">Program Жаңа жобаAraLike di Mangystau TV</desc>
   </programme>
   <programme start="20260822140000 +0500" stop="20260822143000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Жаңа жоба "Теңіз тарландары"</title>
-    <desc lang="kk">Program Жаңа жоба "Теңіз тарландары" di Mangystau TV</desc>
+    <title lang="kk">Жаңа жоба"Теңіз тарландары"</title>
+    <desc lang="kk">Program Жаңа жоба"Теңіз тарландары" di Mangystau TV</desc>
   </programme>
   <programme start="20260822143000 +0500" stop="20260822180000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Ақпараттық "Халық үні"</title>
-    <desc lang="kk">Program Ақпараттық "Халық үні" di Mangystau TV</desc>
+    <title lang="kk">Ақпараттық"Халық үні"</title>
+    <desc lang="kk">Program Ақпараттық"Халық үні" di Mangystau TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260822190000 +0500" channel="MangystauTV.kz">
     <title lang="kk">Aқтау Life</title>
     <desc lang="kk">Program Aқтау Life di Mangystau TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260822203000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Ақпараттық "Елге қызмет"</title>
-    <desc lang="kk">Program Ақпараттық "Елге қызмет" di Mangystau TV</desc>
+    <title lang="kk">Ақпараттық"Елге қызмет"</title>
+    <desc lang="kk">Program Ақпараттық"Елге қызмет" di Mangystau TV</desc>
   </programme>
   <programme start="20260822203000 +0500" stop="20260822213000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Оқышуларға арналған "Білімді ұлт"</title>
-    <desc lang="kk">Program Оқышуларға арналған "Білімді ұлт" di Mangystau TV</desc>
+    <title lang="kk">Оқышуларға арналған"Білімді ұлт"</title>
+    <desc lang="kk">Program Оқышуларға арналған"Білімді ұлт" di Mangystau TV</desc>
   </programme>
   <programme start="20260822213000 +0500" stop="20260822220000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Жаңа жоба "Теңіз тарландары"</title>
-    <desc lang="kk">Program Жаңа жоба "Теңіз тарландары" di Mangystau TV</desc>
+    <title lang="kk">Жаңа жоба"Теңіз тарландары"</title>
+    <desc lang="kk">Program Жаңа жоба"Теңіз тарландары" di Mangystau TV</desc>
   </programme>
   <programme start="20260822220000 +0500" stop="20260822223000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Жаңа жоба AraLike</title>
-    <desc lang="kk">Program Жаңа жоба AraLike di Mangystau TV</desc>
+    <title lang="kk">Жаңа жобаAraLike</title>
+    <desc lang="kk">Program Жаңа жобаAraLike di Mangystau TV</desc>
   </programme>
   <programme start="20260822223000 +0500" stop="20260822230000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">75,76-бөлімдері /қайталау/ "Фазилет ханым"</title>
-    <desc lang="kk">Program 75,76-бөлімдері /қайталау/ "Фазилет ханым" di Mangystau TV</desc>
+    <title lang="kk">75,76-бөлімдері /қайталау/"Фазилет ханым"</title>
+    <desc lang="kk">Program 75,76-бөлімдері /қайталау/"Фазилет ханым" di Mangystau TV</desc>
   </programme>
   <programme start="20260822230000 +0500" stop="20260823000000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Әнұран Әнұран</title>
-    <desc lang="kk">Program Әнұран Әнұран di Mangystau TV</desc>
+    <title lang="kk">ӘнұранӘнұран</title>
+    <desc lang="kk">Program ӘнұранӘнұран di Mangystau TV</desc>
   </programme>
   <programme start="20260822070000 +0500" stop="20260822070500 +0500" channel="OntustikTV.kz">
     <title lang="kk">Арнаның ашылуы.Гимн.</title>
     <desc lang="kk">Program Арнаның ашылуы.Гимн. di Ontustik TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260822091000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">музыкалық бағдарлама «Ән шашу»</title>
-    <desc lang="kk">Program музыкалық бағдарлама «Ән шашу» di Ontustik TV</desc>
+    <title lang="kk">музыкалық бағдарлама«Ән шашу»</title>
+    <desc lang="kk">Program музыкалық бағдарлама«Ән шашу» di Ontustik TV</desc>
   </programme>
   <programme start="20260822091000 +0500" stop="20260822100000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">мәдени-танымдық бағдарлама «Риясыз»</title>
-    <desc lang="kk">Program мәдени-танымдық бағдарлама «Риясыз» di Ontustik TV</desc>
+    <title lang="kk">мәдени-танымдық бағдарлама«Риясыз»</title>
+    <desc lang="kk">Program мәдени-танымдық бағдарлама«Риясыз» di Ontustik TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260822104500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">интеллектуалдық бағдарлама «Ойна да, ойлан»</title>
-    <desc lang="kk">Program интеллектуалдық бағдарлама «Ойна да, ойлан» di Ontustik TV</desc>
+    <title lang="kk">интеллектуалдық бағдарлама«Ойна да, ойлан»</title>
+    <desc lang="kk">Program интеллектуалдық бағдарлама«Ойна да, ойлан» di Ontustik TV</desc>
   </programme>
   <programme start="20260822104500 +0500" stop="20260822110000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">әскери-патриоттық бағдарлама «Сарбаз»</title>
-    <desc lang="kk">Program әскери-патриоттық бағдарлама «Сарбаз» di Ontustik TV</desc>
+    <title lang="kk">әскери-патриоттық бағдарлама«Сарбаз»</title>
+    <desc lang="kk">Program әскери-патриоттық бағдарлама«Сарбаз» di Ontustik TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260822114000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">танымдық бағдарлама «Технократтар талқысы»</title>
-    <desc lang="kk">Program танымдық бағдарлама «Технократтар талқысы» di Ontustik TV</desc>
+    <title lang="kk">танымдық бағдарлама«Технократтар талқысы»</title>
+    <desc lang="kk">Program танымдық бағдарлама«Технократтар талқысы» di Ontustik TV</desc>
   </programme>
   <programme start="20260822114000 +0500" stop="20260822122000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">қоғамдық бағдарлама «Күміс көмей»</title>
-    <desc lang="kk">Program қоғамдық бағдарлама «Күміс көмей» di Ontustik TV</desc>
+    <title lang="kk">қоғамдық бағдарлама«Күміс көмей»</title>
+    <desc lang="kk">Program қоғамдық бағдарлама«Күміс көмей» di Ontustik TV</desc>
   </programme>
   <programme start="20260822122000 +0500" stop="20260822125000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">қоғамдық бағдарлама «Бүгінгі әңгіме»</title>
-    <desc lang="kk">Program қоғамдық бағдарлама «Бүгінгі әңгіме» di Ontustik TV</desc>
+    <title lang="kk">қоғамдық бағдарлама«Бүгінгі әңгіме»</title>
+    <desc lang="kk">Program қоғамдық бағдарлама«Бүгінгі әңгіме» di Ontustik TV</desc>
   </programme>
   <programme start="20260822125000 +0500" stop="20260822141500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">музыкалық бағдарлама «Ән шашу»</title>
-    <desc lang="kk">Program музыкалық бағдарлама «Ән шашу» di Ontustik TV</desc>
+    <title lang="kk">музыкалық бағдарлама«Ән шашу»</title>
+    <desc lang="kk">Program музыкалық бағдарлама«Ән шашу» di Ontustik TV</desc>
   </programme>
   <programme start="20260822141500 +0500" stop="20260822150000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">интеллектуалдық бағдарлама «Жастар алаңы»</title>
-    <desc lang="kk">Program интеллектуалдық бағдарлама «Жастар алаңы» di Ontustik TV</desc>
+    <title lang="kk">интеллектуалдық бағдарлама«Жастар алаңы»</title>
+    <desc lang="kk">Program интеллектуалдық бағдарлама«Жастар алаңы» di Ontustik TV</desc>
   </programme>
   <programme start="20260822150000 +0500" stop="20260822170000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Техникалық үзіліс» 15:00 - 17:00</title>
@@ -6961,40 +7297,40 @@
     <desc lang="kk">Program Арнаның ашылуы di Ontustik TV</desc>
   </programme>
   <programme start="20260822170500 +0500" stop="20260822173000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">мәдени-танымдық бағдарлама «Ғұмырдария»</title>
-    <desc lang="kk">Program мәдени-танымдық бағдарлама «Ғұмырдария» di Ontustik TV</desc>
+    <title lang="kk">мәдени-танымдық бағдарлама«Ғұмырдария»</title>
+    <desc lang="kk">Program мәдени-танымдық бағдарлама«Ғұмырдария» di Ontustik TV</desc>
   </programme>
   <programme start="20260822173000 +0500" stop="20260822180000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">мәдени-танымдық бағдарлама «Iyirtimiz jamoli»</title>
-    <desc lang="kk">Program мәдени-танымдық бағдарлама «Iyirtimiz jamoli» di Ontustik TV</desc>
+    <title lang="kk">мәдени-танымдық бағдарлама«Iyirtimiz jamoli»</title>
+    <desc lang="kk">Program мәдени-танымдық бағдарлама«Iyirtimiz jamoli» di Ontustik TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260822182500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">танымдық балалар бағдарламасы «Балдәурен»</title>
-    <desc lang="kk">Program танымдық балалар бағдарламасы «Балдәурен» di Ontustik TV</desc>
+    <title lang="kk">танымдық балалар бағдарламасы«Балдәурен»</title>
+    <desc lang="kk">Program танымдық балалар бағдарламасы«Балдәурен» di Ontustik TV</desc>
   </programme>
   <programme start="20260822182500 +0500" stop="20260822191000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">танымдық бағдарлама «Өнерлі өлке»</title>
-    <desc lang="kk">Program танымдық бағдарлама «Өнерлі өлке» di Ontustik TV</desc>
+    <title lang="kk">танымдық бағдарлама«Өнерлі өлке»</title>
+    <desc lang="kk">Program танымдық бағдарлама«Өнерлі өлке» di Ontustik TV</desc>
   </programme>
   <programme start="20260822191000 +0500" stop="20260822200000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">музыкалық бағдарлама «Ән шашу»</title>
-    <desc lang="kk">Program музыкалық бағдарлама «Ән шашу» di Ontustik TV</desc>
+    <title lang="kk">музыкалық бағдарлама«Ән шашу»</title>
+    <desc lang="kk">Program музыкалық бағдарлама«Ән шашу» di Ontustik TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260822203500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">сараптамалық бағдарлама «Түйін»</title>
-    <desc lang="kk">Program сараптамалық бағдарлама «Түйін» di Ontustik TV</desc>
+    <title lang="kk">сараптамалық бағдарлама«Түйін»</title>
+    <desc lang="kk">Program сараптамалық бағдарлама«Түйін» di Ontustik TV</desc>
   </programme>
   <programme start="20260822203500 +0500" stop="20260822211000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">танымдық бағдарлама «Сұхбат live»</title>
-    <desc lang="kk">Program танымдық бағдарлама «Сұхбат live» di Ontustik TV</desc>
+    <title lang="kk">танымдық бағдарлама«Сұхбат live»</title>
+    <desc lang="kk">Program танымдық бағдарлама«Сұхбат live» di Ontustik TV</desc>
   </programme>
   <programme start="20260822211000 +0500" stop="20260822222500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">мәдени-танымдық бағдарлама «Гауһартас»</title>
-    <desc lang="kk">Program мәдени-танымдық бағдарлама «Гауһартас» di Ontustik TV</desc>
+    <title lang="kk">мәдени-танымдық бағдарлама«Гауһартас»</title>
+    <desc lang="kk">Program мәдени-танымдық бағдарлама«Гауһартас» di Ontustik TV</desc>
   </programme>
   <programme start="20260822222500 +0500" stop="20260822235500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">телехикая. 1,2-бөлім «Жаным менің»</title>
-    <desc lang="kk">Program телехикая. 1,2-бөлім «Жаным менің» di Ontustik TV</desc>
+    <title lang="kk">телехикая. 1,2-бөлім«Жаным менің»</title>
+    <desc lang="kk">Program телехикая. 1,2-бөлім«Жаным менің» di Ontustik TV</desc>
   </programme>
   <programme start="20260822235500 +0500" stop="20260823005500 +0500" channel="OntustikTV.kz">
     <title lang="kk">Арнаның жабылуы.Гимн</title>
@@ -7137,8 +7473,8 @@
     <desc lang="kk">Program 17:00-ге дейін техникалық үзіліс di Qyzylorda TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260822180000 +0500" channel="QyzylordaTV.kz">
-    <title lang="kk">ге дейін техникалық үзіліс</title>
-    <desc lang="kk">Program ге дейін техникалық үзіліс di Qyzylorda TV</desc>
+    <title lang="kk">"Саған сенемін" т/с. /6-сер/</title>
+    <desc lang="kk">Program "Саған сенемін" т/с. /6-сер/ di Qyzylorda TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260822191000 +0500" channel="QyzylordaTV.kz">
     <title lang="kk">"ҚҰДАЙЫ ҚОНАҚ"</title>
@@ -7181,40 +7517,40 @@
     <desc lang="kk">Program Әнұран di Saryarqa TV</desc>
   </programme>
   <programme start="20260822070000 +0500" stop="20260822074500 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Жаңалықтар (каз., рус.) «Арқа ақпарат»</title>
-    <desc lang="kk">Program Жаңалықтар (каз., рус.) «Арқа ақпарат» di Saryarqa TV</desc>
+    <title lang="kk">Жаңалықтар (каз., рус.)«Арқа ақпарат»</title>
+    <desc lang="kk">Program Жаңалықтар (каз., рус.)«Арқа ақпарат» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822074500 +0500" stop="20260822080000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Ақпараттық бағдарлама «Өзекті»</title>
-    <desc lang="kk">Program Ақпараттық бағдарлама «Өзекті» di Saryarqa TV</desc>
+    <title lang="kk">Ақпараттық бағдарлама«Өзекті»</title>
+    <desc lang="kk">Program Ақпараттық бағдарлама«Өзекті» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822080000 +0500" stop="20260822092000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Махаббат бекеті»</title>
     <desc lang="kk">Program «Махаббат бекеті» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822092000 +0500" stop="20260822100000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Мәдени-танымдық кеш «Күй-керуен»</title>
-    <desc lang="kk">Program Мәдени-танымдық кеш «Күй-керуен» di Saryarqa TV</desc>
+    <title lang="kk">Мәдени-танымдық кеш«Күй-керуен»</title>
+    <desc lang="kk">Program Мәдени-танымдық кеш«Күй-керуен» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260822104500 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Жаңалықтар (каз., рус.) «Арқа ақпарат»</title>
-    <desc lang="kk">Program Жаңалықтар (каз., рус.) «Арқа ақпарат» di Saryarqa TV</desc>
+    <title lang="kk">Жаңалықтар (каз., рус.)«Арқа ақпарат»</title>
+    <desc lang="kk">Program Жаңалықтар (каз., рус.)«Арқа ақпарат» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822104500 +0500" stop="20260822110000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Ақпараттық бағдарлама «Өзекті»</title>
-    <desc lang="kk">Program Ақпараттық бағдарлама «Өзекті» di Saryarqa TV</desc>
+    <title lang="kk">Ақпараттық бағдарлама«Өзекті»</title>
+    <desc lang="kk">Program Ақпараттық бағдарлама«Өзекті» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260822114500 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Топырақ пен Хауа-2»</title>
     <desc lang="kk">Program «Топырақ пен Хауа-2» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822114500 +0500" stop="20260822120000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Ақпараттық бағдарлама «Таразыда тәртіп»</title>
-    <desc lang="kk">Program Ақпараттық бағдарлама «Таразыда тәртіп» di Saryarqa TV</desc>
+    <title lang="kk">Ақпараттық бағдарлама«Таразыда тәртіп»</title>
+    <desc lang="kk">Program Ақпараттық бағдарлама«Таразыда тәртіп» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822120000 +0500" stop="20260822140500 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Музыкалық бағдарлама «Беу». Заманауи әндер кеші</title>
-    <desc lang="kk">Program Музыкалық бағдарлама «Беу». Заманауи әндер кеші di Saryarqa TV</desc>
+    <title lang="kk">Музыкалық бағдарлама«Беу». Заманауи әндер кеші</title>
+    <desc lang="kk">Program Музыкалық бағдарлама«Беу». Заманауи әндер кеші di Saryarqa TV</desc>
   </programme>
   <programme start="20260822140500 +0500" stop="20260822170000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
@@ -7225,36 +7561,36 @@
     <desc lang="kk">Program «Біздің дәрігер» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260822184000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Ақпараттық-танымдық бағдарлама «АуылTIMES»</title>
-    <desc lang="kk">Program Ақпараттық-танымдық бағдарлама «АуылTIMES» di Saryarqa TV</desc>
+    <title lang="kk">Ақпараттық-танымдық бағдарлама«АуылTIMES»</title>
+    <desc lang="kk">Program Ақпараттық-танымдық бағдарлама«АуылTIMES» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822184000 +0500" stop="20260822193000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Мәдени-танымдық кеш «Күміс көмей»</title>
-    <desc lang="kk">Program Мәдени-танымдық кеш «Күміс көмей» di Saryarqa TV</desc>
+    <title lang="kk">Мәдени-танымдық кеш«Күміс көмей»</title>
+    <desc lang="kk">Program Мәдени-танымдық кеш«Күміс көмей» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822193000 +0500" stop="20260822195000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Ақпараттық-сараптамалық бағдарлама «Егемен ел. 35 белес». «Қарағанды-Жезқазған» автожолы»</title>
-    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарлама «Егемен ел. 35 белес». «Қарағанды-Жезқазған» автожолы» di Saryarqa TV</desc>
+    <title lang="kk">Ақпараттық-сараптамалық бағдарлама«Егемен ел. 35 белес». «Қарағанды-Жезқазған» автожолы»</title>
+    <desc lang="kk">Program Ақпараттық-сараптамалық бағдарлама«Егемен ел. 35 белес». «Қарағанды-Жезқазған» автожолы» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822195000 +0500" stop="20260822200000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Музыкалық бағдарлама Бейнеклип</title>
-    <desc lang="kk">Program Музыкалық бағдарлама Бейнеклип di Saryarqa TV</desc>
+    <title lang="kk">Музыкалық бағдарламаБейнеклип</title>
+    <desc lang="kk">Program Музыкалық бағдарламаБейнеклип di Saryarqa TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260822204500 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Общественно-политическое ток-шоу «Главная студия»</title>
-    <desc lang="kk">Program Общественно-политическое ток-шоу «Главная студия» di Saryarqa TV</desc>
+    <title lang="kk">Общественно-политическое ток-шоу«Главная студия»</title>
+    <desc lang="kk">Program Общественно-политическое ток-шоу«Главная студия» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822204500 +0500" stop="20260822210500 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Ақпараттық бағдарлама «Таза Қазақстан»</title>
-    <desc lang="kk">Program Ақпараттық бағдарлама «Таза Қазақстан» di Saryarqa TV</desc>
+    <title lang="kk">Ақпараттық бағдарлама«Таза Қазақстан»</title>
+    <desc lang="kk">Program Ақпараттық бағдарлама«Таза Қазақстан» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822210500 +0500" stop="20260822221000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Мәдени-танымдық кеш «Гауһартас»</title>
-    <desc lang="kk">Program Мәдени-танымдық кеш «Гауһартас» di Saryarqa TV</desc>
+    <title lang="kk">Мәдени-танымдық кеш«Гауһартас»</title>
+    <desc lang="kk">Program Мәдени-танымдық кеш«Гауһартас» di Saryarqa TV</desc>
   </programme>
   <programme start="20260822221000 +0500" stop="20260822230000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Деректі фильм «Дәуір даналары». Құнанбай Өскенбайұлы</title>
-    <desc lang="kk">Program Деректі фильм «Дәуір даналары». Құнанбай Өскенбайұлы di Saryarqa TV</desc>
+    <title lang="kk">Деректі фильм«Дәуір даналары». Құнанбай Өскенбайұлы</title>
+    <desc lang="kk">Program Деректі фильм«Дәуір даналары». Құнанбай Өскенбайұлы di Saryarqa TV</desc>
   </programme>
   <programme start="20260822230000 +0500" stop="20260823000000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Топырақ пен Хауа-2»</title>
