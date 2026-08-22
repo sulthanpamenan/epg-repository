@@ -2,13 +2,15 @@
 <tv generator-info-name="Universal IPTV EPG Generator" generator-info-url="https://github.com/sulthanpamenan">
   <channel id="PadangTV.id">
     <display-name>Padang TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=https://padangtv.id/schedule/&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=padangtv.id&amp;sz=128"/>
   </channel>
   <channel id="RedBullTV.global">
     <display-name>Red Bull TV</display-name>
+    <icon src="https://www.google.com/s2/favicons?domain=www.redbull.tv&amp;sz=128"/>
   </channel>
   <channel id="CLTV36.ph">
     <display-name>CLTV36</display-name>
+    <icon src="https://www.google.com/s2/favicons?domain=cltv36.tv&amp;sz=128"/>
   </channel>
   <programme start="20260822170000 +0800" stop="20260822180000 +0800" channel="CLTV36.ph">
     <title lang="en">Top Stories:</title>
