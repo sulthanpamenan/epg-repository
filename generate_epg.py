@@ -227,14 +227,19 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK SCRAPER (JSON ENGINE)
+# 4. QAZAQSTAN NETWORK SCRAPER (FIXED FOR CLOUDFLARE & API 403)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
-        "Referer": "https://qazaqstan.tv/"
+        "Accept-Language": "kk,ru;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Referer": "https://qazaqstan.tv/program",
+        "Origin": "https://qazaqstan.tv",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin"
     }
     
     icon = target.get("icon") or get_auto_icon(target["url"])
@@ -249,59 +254,129 @@ def fetch_epg_qazaqstan(target):
     }
     
     internal_id = channel_api_ids.get(epg_id, 1)
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now()
+    today_str = today.strftime("%Y-%m-%d")
+    
+    # Endpoint API Resmi Qazaqstan
     api_url = f"https://qazaqstan.tv/api/v1/schedule?channel_id={internal_id}&date={today_str}"
     
+    programmes = []
     try:
+        # Step 1: Warmup session untuk bypass cookie check
+        HTTP_SESSION.get("https://qazaqstan.tv/program", headers=headers, timeout=10)
+        
+        # Step 2: Fetch data dari API internal
         res = HTTP_SESSION.get(api_url, headers=headers, timeout=12)
+        
         if res.status_code == 200:
             data = res.json()
             items = data.get("data", []) or data.get("schedule", []) or (data if isinstance(data, list) else [])
             
-            if isinstance(items, list):
-                raw_progs = []
-                for item in items:
-                    title = item.get("title") or item.get("name") or item.get("program_name")
-                    time_start = item.get("time") or item.get("start_time") or item.get("begin")
+            raw_progs = []
+            for item in items:
+                title = item.get("title") or item.get("name") or item.get("program_name")
+                time_start = item.get("time") or item.get("start_time") or item.get("begin")
+                
+                if not title or not time_start: 
+                    continue
                     
-                    if not title or not time_start: continue
-                    time_start = time_start.strip()
-                    if len(time_start.split(':')[0]) == 1: time_start = "0" + time_start
-                    
+                time_start = time_start.strip()
+                if len(time_start.split(':')[0]) == 1: 
+                    time_start = "0" + time_start
+                
+                try:
                     start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
                     raw_progs.append({
                         "start_dt": start_dt,
-                        "title": title.strip(),
-                        "desc": item.get("description") or f"Program {title.strip()} di {target['name']}"
+                        "title": str(title).strip(),
+                        "desc": str(item.get("description") or f"Program {title} di {target['name']}").strip()
                     })
+                except Exception:
+                    continue
+            
+            # Step 3: Urutkan & hitung waktu stop
+            raw_progs.sort(key=lambda x: x["start_dt"])
+            
+            for i in range(len(raw_progs)):
+                curr = raw_progs[i]
+                start_dt = curr["start_dt"]
                 
-                raw_progs.sort(key=lambda x: x["start_dt"])
-                
-                final_programmes = []
-                for i in range(len(raw_progs)):
-                    curr = raw_progs[i]
-                    start_dt = curr["start_dt"]
+                if i + 1 < len(raw_progs):
+                    stop_dt = raw_progs[i+1]["start_dt"]
+                    if stop_dt <= start_dt: 
+                        stop_dt += timedelta(days=1)
+                else:
+                    stop_dt = start_dt + timedelta(hours=1)
                     
-                    if i + 1 < len(raw_progs):
-                        stop_dt = raw_progs[i+1]["start_dt"]
+                programmes.append({
+                    "channel": epg_id,
+                    "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0500")),
+                    "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0500")),
+                    "title": curr["title"],
+                    "desc": curr["desc"],
+                    "lang": "kk"
+                })
+                
+            if programmes:
+                return channels, programmes
+
+    except Exception as e:
+        print(f"[!] API Error [{target['name']}]: {e}")
+
+    # Fallback jika API gagal/terblokir: Scrape langsung HTML menggunakan regex waktu
+    return fallback_html_qazaqstan_scraper(target, headers)
+
+def fallback_html_qazaqstan_scraper(target, headers):
+    epg_id = target["id"]
+    programmes = []
+    icon = target.get("icon") or get_auto_icon(target["url"])
+    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
+    
+    try:
+        res = HTTP_SESSION.get(target["url"], headers=headers, timeout=12)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, 'html.parser')
+            today = datetime.now()
+            today_str = today.strftime("%Y-%m-%d")
+            
+            # Cari tag jam di dalam HTML (format HH:MM)
+            time_pattern = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
+            extracted = []
+
+            for elem in soup.find_all(['tr', 'li', 'div', 'p']):
+                text = elem.get_text(" ", strip=True)
+                if len(text) > 150: continue
+                match = time_pattern.search(text)
+                if match:
+                    t_str = match.group(1).replace('.', ':')
+                    if len(t_str.split(':')[0]) == 1: t_str = "0" + t_str
+                    title = text[match.end():].strip(" -–:\t\n\r[]")
+                    if title and len(title) > 2 and not title.startswith("http"):
+                        extracted.append((t_str, title))
+
+            for i in range(len(extracted)):
+                t_str, title = extracted[i]
+                try:
+                    start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+                    if i + 1 < len(extracted):
+                        stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
                         if stop_dt <= start_dt: stop_dt += timedelta(days=1)
                     else:
                         stop_dt = start_dt + timedelta(hours=1)
-                        
-                    final_programmes.append({
+
+                    programmes.append({
                         "channel": epg_id,
                         "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0500")),
                         "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0500")),
-                        "title": curr["title"],
-                        "desc": curr["desc"],
+                        "title": title,
+                        "desc": f"Program {title} di {target['name']}",
                         "lang": "kk"
                     })
-                
-                return channels, final_programmes
+                except Exception: continue
     except Exception as e:
-        print(f"[!] Qazaqstan API Error for {target['name']}: {e}")
+        print(f"[!] Fallback Scraper Error [{target['name']}]: {e}")
 
-    return auto_scrape_epg(target)
+    return channels, programmes
 
 # =========================================================================
 # 5. UNIVERSAL SCRAPER
