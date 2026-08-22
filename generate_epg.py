@@ -227,83 +227,72 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK SCRAPER (FIXED FOR CLOUDFLARE & API 403)
+# 4. QAZAQSTAN NETWORK SCRAPER (REAL HTML DOM SCRAPER)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "kk,ru;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Referer": "https://qazaqstan.tv/program",
-        "Origin": "https://qazaqstan.tv",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin"
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "kk,ru;q=0.9,en;q=0.8"
     }
     
     icon = target.get("icon") or get_auto_icon(target["url"])
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
-    
-    channel_api_ids = {
-        "Qazaqstan.kz": 1, "QazaqstanInt.kz": 1, "Balapan.kz": 2, "AbaiTV.kz": 3,
-        "Qazsport.kz": 4, "AqjaiyqTV.kz": 5, "AqtobeTV.kz": 6, "AltaiTV.kz": 7,
-        "AtyrauTV.kz": 8, "ErtisTV.kz": 9, "JambylTV.kz": 10, "KoksheTV.kz": 11,
-        "MangystauTV.kz": 12, "OntustikTV.kz": 13, "QostanaiTV.kz": 14, "QyzyljarTV.kz": 15,
-        "QyzylordaTV.kz": 16, "SaryarqaTV.kz": 17, "SemeiTV.kz": 18
-    }
-    
-    internal_id = channel_api_ids.get(epg_id, 1)
-    today = datetime.now()
-    today_str = today.strftime("%Y-%m-%d")
-    
-    # Endpoint API Resmi Qazaqstan
-    api_url = f"https://qazaqstan.tv/api/v1/schedule?channel_id={internal_id}&date={today_str}"
-    
     programmes = []
+    
     try:
-        # Step 1: Warmup session untuk bypass cookie check
-        HTTP_SESSION.get("https://qazaqstan.tv/program", headers=headers, timeout=10)
-        
-        # Step 2: Fetch data dari API internal
-        res = HTTP_SESSION.get(api_url, headers=headers, timeout=12)
-        
+        res = HTTP_SESSION.get(target["url"], headers=headers, timeout=15)
         if res.status_code == 200:
-            data = res.json()
-            items = data.get("data", []) or data.get("schedule", []) or (data if isinstance(data, list) else [])
+            soup = BeautifulSoup(res.text, 'html.parser')
+            today_str = datetime.now().strftime("%Y-%m-%d")
             
+            # Cari seluruh baris/kontainer jadwal di halaman
             raw_progs = []
-            for item in items:
-                title = item.get("title") or item.get("name") or item.get("program_name")
-                time_start = item.get("time") or item.get("start_time") or item.get("begin")
-                
-                if not title or not time_start: 
-                    continue
-                    
-                time_start = time_start.strip()
-                if len(time_start.split(':')[0]) == 1: 
-                    time_start = "0" + time_start
-                
-                try:
-                    start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
-                    raw_progs.append({
-                        "start_dt": start_dt,
-                        "title": str(title).strip(),
-                        "desc": str(item.get("description") or f"Program {title} di {target['name']}").strip()
-                    })
-                except Exception:
-                    continue
             
-            # Step 3: Urutkan & hitung waktu stop
+            # Pattern Regex untuk mencocokkan Format Jam HH:MM (seperti di screenshot F12)
+            time_pattern = re.compile(r'(\b[0-2]?\d:[0-5]\d\b)')
+            
+            for container in soup.find_all(['div', 'tr', 'li']):
+                text = container.get_text(" ", strip=True)
+                # Filter elemen pendek yang berisi jam tayang & judul
+                if 5 < len(text) < 200:
+                    match = time_pattern.search(text)
+                    if match:
+                        time_start = match.group(1)
+                        if len(time_start.split(':')[0]) == 1:
+                            time_start = "0" + time_start
+                            
+                        # Ambil teks setelah jam sebagai Judul Acara
+                        title_part = text[match.end():].strip(" -–:\t\n\r[]")
+                        
+                        # Bersihkan kata-kata sampah
+                        for ignore_word in ["LIVE", "ЭФИРДЕ", "Бағдарлама", "Драма", "Көркем фильм", "Телехикая", "Шоу"]:
+                            title_part = title_part.replace(ignore_word, "").strip()
+                            
+                        if title_part and len(title_part) > 2 and not title_part.startswith("http"):
+                            try:
+                                start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
+                                if not any(p["start_dt"] == start_dt for p in raw_progs):
+                                    raw_progs.append({
+                                        "start_dt": start_dt,
+                                        "title": title_part,
+                                        "desc": f"Program {title_part} di {target['name']}"
+                                    })
+                            except Exception:
+                                continue
+
+            # Urutkan berdasarkan waktu mulai
             raw_progs.sort(key=lambda x: x["start_dt"])
             
+            # Hitung waktu selesai (stop_dt)
             for i in range(len(raw_progs)):
                 curr = raw_progs[i]
                 start_dt = curr["start_dt"]
                 
                 if i + 1 < len(raw_progs):
                     stop_dt = raw_progs[i+1]["start_dt"]
-                    if stop_dt <= start_dt: 
+                    if stop_dt <= start_dt:
                         stop_dt += timedelta(days=1)
                 else:
                     stop_dt = start_dt + timedelta(hours=1)
@@ -316,67 +305,14 @@ def fetch_epg_qazaqstan(target):
                     "desc": curr["desc"],
                     "lang": "kk"
                 })
-                
+
             if programmes:
                 return channels, programmes
 
     except Exception as e:
-        print(f"[!] API Error [{target['name']}]: {e}")
+        print(f"[!] HTML Scraper Error for {target['name']}: {e}")
 
-    # Fallback jika API gagal/terblokir: Scrape langsung HTML menggunakan regex waktu
-    return fallback_html_qazaqstan_scraper(target, headers)
-
-def fallback_html_qazaqstan_scraper(target, headers):
-    epg_id = target["id"]
-    programmes = []
-    icon = target.get("icon") or get_auto_icon(target["url"])
-    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
-    
-    try:
-        res = HTTP_SESSION.get(target["url"], headers=headers, timeout=12)
-        if res.status_code == 200:
-            soup = BeautifulSoup(res.text, 'html.parser')
-            today = datetime.now()
-            today_str = today.strftime("%Y-%m-%d")
-            
-            # Cari tag jam di dalam HTML (format HH:MM)
-            time_pattern = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
-            extracted = []
-
-            for elem in soup.find_all(['tr', 'li', 'div', 'p']):
-                text = elem.get_text(" ", strip=True)
-                if len(text) > 150: continue
-                match = time_pattern.search(text)
-                if match:
-                    t_str = match.group(1).replace('.', ':')
-                    if len(t_str.split(':')[0]) == 1: t_str = "0" + t_str
-                    title = text[match.end():].strip(" -–:\t\n\r[]")
-                    if title and len(title) > 2 and not title.startswith("http"):
-                        extracted.append((t_str, title))
-
-            for i in range(len(extracted)):
-                t_str, title = extracted[i]
-                try:
-                    start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-                    if i + 1 < len(extracted):
-                        stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
-                        if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                    else:
-                        stop_dt = start_dt + timedelta(hours=1)
-
-                    programmes.append({
-                        "channel": epg_id,
-                        "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0500")),
-                        "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0500")),
-                        "title": title,
-                        "desc": f"Program {title} di {target['name']}",
-                        "lang": "kk"
-                    })
-                except Exception: continue
-    except Exception as e:
-        print(f"[!] Fallback Scraper Error [{target['name']}]: {e}")
-
-    return channels, programmes
+    return auto_scrape_epg(target)
 
 # =========================================================================
 # 5. UNIVERSAL SCRAPER
