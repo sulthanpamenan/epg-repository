@@ -6,11 +6,9 @@
   </channel>
   <channel id="RedBullTV.global">
     <display-name>Red Bull TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=redbull.tv&amp;sz=128"/>
   </channel>
   <channel id="CLTV36.ph">
     <display-name>CLTV36</display-name>
-    <icon src="https://cltv36.tv/wp-content/uploads/2021/02/cltv36-logo.png"/>
   </channel>
   <programme start="20260822170000 +0800" stop="20260822180000 +0800" channel="CLTV36.ph">
     <title lang="en">Top Stories:</title>
