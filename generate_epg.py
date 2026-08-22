@@ -6,7 +6,6 @@ import random
 import requests
 from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from concurrent.futures import ThreadPoolExecutor
@@ -19,6 +18,8 @@ EPG_TARGET_SOURCES = [
     {"id": "RedBullTV.global", "name": "Red Bull TV", "url": "https://www.redbull.tv/en/epg", "icon": "", "utc_offset": "+0000"},
     {"id": "MNCVision.all", "name": "MNC Vision All Channels", "url": "https://www.mncvision.id/channel", "icon": "", "utc_offset": "+0700"},
     {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "icon": "", "utc_offset": "+0800"},
+    
+    # --- QAZAQSTAN NETWORK CHANNELS ---
     {"id": "Qazaqstan.kz", "name": "Qazaqstan TV", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
     {"id": "QazaqstanInt.kz", "name": "Qazaqstan International", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
     {"id": "Balapan.kz", "name": "Balapan TV", "url": "https://balapan.tv/program", "icon": "", "utc_offset": "+0500"},
@@ -43,15 +44,12 @@ EPG_TARGET_SOURCES = [
 def format_xmltv_date(dt_obj, utc_offset="+0700"):
     return dt_obj.strftime(f"%Y%m%d%H%M%S {utc_offset}")
 
-def indent_xml(elem):
-    rough_string = ET.tostring(elem, 'utf-8')
-    reparsed = minidom.parseString(rough_string)
-    return reparsed.toprettyxml(indent="  ")
-
 def get_auto_icon(target_url):
-    """Helper function to fetch domain favicon automatically"""
     domain = target_url.split("//")[-1].split("/")[0]
     return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
+
+# Session global untuk efisiensi koneksi TCP (Connection Reuse)
+HTTP_SESSION = requests.Session()
 
 # =========================================================================
 # 1. RED BULL TV SCRAPER
@@ -66,7 +64,7 @@ def fetch_epg_redbull(target):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
     try:
-        response = requests.get(url, headers=headers, timeout=15)
+        response = HTTP_SESSION.get(url, headers=headers, timeout=15)
         if response.status_code == 200:
             data = response.json()
             items = data.get("items", []) or data.get("data", [])
@@ -108,8 +106,7 @@ def fetch_single_mnc(args):
     ch_info = {"id": epg_id, "name": f"{raw_name} (MNC)", "icon": default_icon}
     
     try:
-        time.sleep(0.1)
-        res = requests.get(urljoin(base_url, href), headers=headers, timeout=10)
+        res = HTTP_SESSION.get(urljoin(base_url, href), headers=headers, timeout=10)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             time_pattern = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
@@ -152,7 +149,7 @@ def fetch_epg_mncvision(target):
     default_icon = target.get("icon") or get_auto_icon(target["url"])
     
     try:
-        res = requests.get(target["url"], headers=headers, timeout=15)
+        res = HTTP_SESSION.get(target["url"], headers=headers, timeout=15)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             links = soup.find_all('a', href=re.compile(r'/channel/detail/'))
@@ -187,7 +184,7 @@ def fetch_epg_cltv36(target):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     
     try:
-        res = requests.get(target["url"], headers=headers, timeout=15)
+        res = HTTP_SESSION.get(target["url"], headers=headers, timeout=15)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             today = datetime.now()
@@ -230,11 +227,10 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK SCRAPER
+# 4. QAZAQSTAN NETWORK SCRAPER (JSON ENGINE)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
-    programmes = []
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
@@ -254,47 +250,41 @@ def fetch_epg_qazaqstan(target):
     
     internal_id = channel_api_ids.get(epg_id, 1)
     today_str = datetime.now().strftime("%Y-%m-%d")
-    
     api_url = f"https://qazaqstan.tv/api/v1/schedule?channel_id={internal_id}&date={today_str}"
     
     try:
-        res = requests.get(api_url, headers=headers, timeout=15)
+        res = HTTP_SESSION.get(api_url, headers=headers, timeout=12)
         if res.status_code == 200:
             data = res.json()
-            items = data.get("data", []) or data.get("schedule", []) or data
+            items = data.get("data", []) or data.get("schedule", []) or (data if isinstance(data, list) else [])
             
             if isinstance(items, list):
+                raw_progs = []
                 for item in items:
                     title = item.get("title") or item.get("name") or item.get("program_name")
                     time_start = item.get("time") or item.get("start_time") or item.get("begin")
                     
-                    if not title or not time_start:
-                        continue
-                        
+                    if not title or not time_start: continue
                     time_start = time_start.strip()
-                    if len(time_start.split(':')[0]) == 1:
-                        time_start = "0" + time_start
-                        
-                    start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
+                    if len(time_start.split(':')[0]) == 1: time_start = "0" + time_start
                     
-                    programmes.append({
-                        "channel": epg_id,
+                    start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
+                    raw_progs.append({
                         "start_dt": start_dt,
                         "title": title.strip(),
                         "desc": item.get("description") or f"Program {title.strip()} di {target['name']}"
                     })
                 
-                programmes.sort(key=lambda x: x["start_dt"])
+                raw_progs.sort(key=lambda x: x["start_dt"])
                 
                 final_programmes = []
-                for i in range(len(programmes)):
-                    curr = programmes[i]
+                for i in range(len(raw_progs)):
+                    curr = raw_progs[i]
                     start_dt = curr["start_dt"]
                     
-                    if i + 1 < len(programmes):
-                        stop_dt = programmes[i+1]["start_dt"]
-                        if stop_dt <= start_dt:
-                            stop_dt += timedelta(days=1)
+                    if i + 1 < len(raw_progs):
+                        stop_dt = raw_progs[i+1]["start_dt"]
+                        if stop_dt <= start_dt: stop_dt += timedelta(days=1)
                     else:
                         stop_dt = start_dt + timedelta(hours=1)
                         
@@ -308,9 +298,8 @@ def fetch_epg_qazaqstan(target):
                     })
                 
                 return channels, final_programmes
-
     except Exception as e:
-        print(f"[!] Qazaqstan API Scraper Error for {target['name']}: {e}")
+        print(f"[!] Qazaqstan API Error for {target['name']}: {e}")
 
     return auto_scrape_epg(target)
 
@@ -323,7 +312,7 @@ def auto_scrape_epg(target):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     
     try:
-        res = requests.get(target["url"], headers=headers, timeout=15)
+        res = HTTP_SESSION.get(target["url"], headers=headers, timeout=15)
         soup = BeautifulSoup(res.text, 'html.parser')
         icon = target.get("icon") or get_auto_icon(target["url"])
         channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
@@ -368,6 +357,26 @@ def auto_scrape_epg(target):
 
     return channels, programmes
 
+# Helper routing per target
+def process_single_target(target):
+    qazaqstan_domains = [
+        "qazaqstan.tv", "balapan.tv", "abaitv.kz", "qazsporttv.kz", "aqjaiyqtv.kz",
+        "aqtobetv.kz", "altaitv.kz", "atyrautv.kz", "ertistv.kz", "jambyltv.kz",
+        "kokshetv.kz", "mangystautv.kz", "ontustiktv.kz", "qostanaitv.kz", "qyzyljartv.kz",
+        "qyzylordatv.kz", "saryarqatv.kz", "semeitv.kz"
+    ]
+    
+    if "mncvision" in target["url"].lower():
+        return fetch_epg_mncvision(target)
+    elif "redbull" in target["url"].lower() or target["id"] == "RedBullTV.global":
+        return fetch_epg_redbull(target)
+    elif "cltv36" in target["url"].lower() or target["id"] == "CLTV36.ph":
+        return fetch_epg_cltv36(target)
+    elif any(domain in target["url"].lower() for domain in qazaqstan_domains) or target["id"].endswith(".kz"):
+        return fetch_epg_qazaqstan(target)
+    else:
+        return auto_scrape_epg(target)
+
 # =========================================================================
 # MAIN GENERATOR LOGIC
 # =========================================================================
@@ -381,29 +390,13 @@ def generate_xmltv():
     all_channels = []
     all_programmes = []
 
-    qazaqstan_domains = [
-        "qazaqstan.tv", "balapan.tv", "abaitv.kz", "qazsporttv.kz", "aqjaiyqtv.kz",
-        "aqtobetv.kz", "altaitv.kz", "atyrautv.kz", "ertistv.kz", "jambyltv.kz",
-        "kokshetv.kz", "mangystautv.kz", "ontustiktv.kz", "qostanaitv.kz", "qyzyljartv.kz",
-        "qyzylordatv.kz", "saryarqatv.kz", "semeitv.kz"
-    ]
-    
-    for target in EPG_TARGET_SOURCES:
-        print(f"[*] Scraping: {target['name']}...")
-        if "mncvision" in target["url"].lower():
-            ch_list, progs = fetch_epg_mncvision(target)
-        elif "redbull" in target["url"].lower() or target["id"] == "RedBullTV.global":
-            ch_list, progs = fetch_epg_redbull(target)
-        elif "cltv36" in target["url"].lower() or target["id"] == "CLTV36.ph":
-            ch_list, progs = fetch_epg_cltv36(target)
-        elif any(domain in target["url"].lower() for domain in qazaqstan_domains) or target["id"].endswith(".kz"):
-            ch_list, progs = fetch_epg_qazaqstan(target)
-        else:
-            ch_list, progs = auto_scrape_epg(target)
+    # BATCH PARALLEL SCRAPING (Multi-threading)
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        results = executor.map(process_single_target, EPG_TARGET_SOURCES)
 
+    for ch_list, progs in results:
         all_channels.extend(ch_list)
         all_programmes.extend(progs)
-        print(f"[✓] Successfully added {len(ch_list)} channel(s) & {len(progs)} show(s) for {target['name']}")
 
     # 1. Write <channel> Tags
     for ch in all_channels:
@@ -426,10 +419,11 @@ def generate_xmltv():
             d_elem = ET.SubElement(p_elem, "desc", lang=prog.get("lang", "en"))
             d_elem.text = prog["desc"]
 
-    pretty_xml = indent_xml(tv_elem)
-    with open("epg.xml", "w", encoding="utf-8") as f:
-        f.write(pretty_xml)
-        
+    # Native XML Indentation (Fast & Low Memory)
+    ET.indent(tv_elem, space="  ")
+    tree = ET.ElementTree(tv_elem)
+    tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
+
     print(f"\n[SUCCESS] `epg.xml` file successfully updated with {len(all_channels)} channels and {len(all_programmes)} programs!")
 
 if __name__ == "__main__":
