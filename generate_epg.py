@@ -12,7 +12,7 @@ from urllib.parse import urljoin
 from concurrent.futures import ThreadPoolExecutor
 
 # =========================================================================
-# EPG TARGET SOURCES LIST
+# EPG TARGET SOURCES LIST (Icon left empty "" for auto-fetch)
 # =========================================================================
 EPG_TARGET_SOURCES = [
     {
@@ -53,14 +53,19 @@ def indent_xml(elem):
     reparsed = minidom.parseString(rough_string)
     return reparsed.toprettyxml(indent="  ")
 
+def get_auto_icon(target_url):
+    """Helper function to fetch domain favicon automatically"""
+    domain = target_url.split("//")[-1].split("/")[0]
+    return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
+
 # =========================================================================
 # 1. RED BULL TV SCRAPER
 # =========================================================================
 def fetch_epg_redbull(target):
     epg_id = target["id"]
     programmes = []
-    icon = target.get("icon") or f"https://www.google.com/s2/favicons?domain={target['url']}&sz=128"
-    channels = [{"id": epg_id, "name": target["name"], "icon": target["icon"]}]
+    icon = target.get("icon") or get_auto_icon(target["url"])
+    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     
     url = "https://api.redbull.tv/v3/epg/live"
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
@@ -97,14 +102,14 @@ def fetch_epg_redbull(target):
 # 2. MNC VISION SCRAPER
 # =========================================================================
 def fetch_single_mnc(args):
-    href, raw_name, base_url, headers, today = args
+    href, raw_name, base_url, headers, today, default_icon = args
     programmes = []
     clean_name = re.sub(r'[^a-zA-Z0-9]', '', raw_name)
     if not clean_name:
         return None, []
         
     epg_id = f"{clean_name}.mnc"
-    ch_info = {"id": epg_id, "name": f"{raw_name} (MNC)", "icon": "https://www.google.com/s2/favicons?domain=mncvision.id&sz=128"}
+    ch_info = {"id": epg_id, "name": f"{raw_name} (MNC)", "icon": default_icon}
     
     try:
         time.sleep(0.1)
@@ -147,6 +152,8 @@ def fetch_single_mnc(args):
 def fetch_epg_mncvision(target):
     channels, programmes = [], []
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+    default_icon = target.get("icon") or get_auto_icon(target["url"])
+    
     try:
         res = requests.get(target["url"], headers=headers, timeout=15)
         if res.status_code == 200:
@@ -159,7 +166,7 @@ def fetch_epg_mncvision(target):
                 if href in visited: continue
                 visited.add(href)
                 raw_name = l.get_text(strip=True) or href.split('/')[-1]
-                tasks.append((href, raw_name, "https://www.mncvision.id", headers, today))
+                tasks.append((href, raw_name, "https://www.mncvision.id", headers, today, default_icon))
 
             with ThreadPoolExecutor(max_workers=5) as executor:
                 results = executor.map(fetch_single_mnc, tasks)
@@ -178,8 +185,8 @@ def fetch_epg_mncvision(target):
 def fetch_epg_cltv36(target):
     epg_id = target["id"]
     programmes = []
-    icon = target.get("icon") or f"https://www.google.com/s2/favicons?domain={target['url']}&sz=128"
-    channels = [{"id": epg_id, "name": target["name"], "icon": target["icon"]}]
+    icon = target.get("icon") or get_auto_icon(target["url"])
+    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     
     try:
@@ -235,7 +242,7 @@ def auto_scrape_epg(target):
     try:
         res = requests.get(target["url"], headers=headers, timeout=15)
         soup = BeautifulSoup(res.text, 'html.parser')
-        icon = target.get("icon") or f"https://www.google.com/s2/favicons?domain={target['url']}&sz=128"
+        icon = target.get("icon") or get_auto_icon(target["url"])
         channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
         
         today = datetime.now()
@@ -272,7 +279,8 @@ def auto_scrape_epg(target):
             except Exception: continue
     except Exception as e:
         print(f"[!] Universal Scraper Error for {target['name']}: {e}")
-        channels = [{"id": epg_id, "name": target["name"], "icon": ""}]
+        icon = target.get("icon") or get_auto_icon(target["url"])
+        channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
 
     return channels, programmes
 
