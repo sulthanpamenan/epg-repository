@@ -225,7 +225,74 @@ def fetch_epg_mncvision(target):
     return channels, programmes
 
 # =========================================================================
-# SCRAPER 3: UNIVERSAL PARSER (SINGLE CHANNEL WEB)
+# SCRAPER 3: CLTV36 (CUSTOM PARSER FOR AM/PM SCHEDULES)
+# =========================================================================
+def fetch_epg_cltv36(target):
+    """Custom parser to handle CLTV36 HTML structure & 12-hour AM/PM schedules."""
+    epg_id = target["id"]
+    utc_offset = target.get("utc_offset", "+0800")
+    programmes = []
+    channels = [{"id": epg_id, "name": target["name"], "icon": target.get("icon") or "https://cltv36.tv/wp-content/uploads/2021/02/cltv36-logo.png"}]
+    
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    
+    try:
+        res = requests.get(target["url"], headers=headers, timeout=15)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, 'html.parser')
+            today = datetime.now()
+            
+            titles = soup.find_all(['h2', 'h3', 'h4'])
+            
+            for t_tag in titles:
+                title = t_tag.get_text(strip=True)
+                if not title or len(title) < 3 or 'program' in title.lower():
+                    continue
+                
+                next_node = t_tag.find_next_sibling()
+                time_text = ""
+                desc_text = ""
+                
+                while next_node and next_node.name in ['p', 'div', 'span']:
+                    text = next_node.get_text(strip=True)
+                    if any(x in text.lower() for x in ['am', 'pm', 'monday', 'friday', 'saturday', 'sunday', 'daily']):
+                        time_text = text
+                    elif len(text) > 20:
+                        desc_text = text
+                        break
+                    next_node = next_node.find_next_sibling()
+                
+                if time_text:
+                    time_matches = re.findall(r'(\d{1,2}:\d{2}\s*(?:AM|PM))', time_text, re.IGNORECASE)
+                    
+                    if time_matches:
+                        start_str = time_matches[0]
+                        start_time = datetime.strptime(start_str.upper(), "%I:%M %p").time()
+                        start_dt = datetime.combine(today.date(), start_time)
+                        
+                        if len(time_matches) > 1:
+                            end_str = time_matches[1]
+                            end_time = datetime.strptime(end_str.upper(), "%I:%M %p").time()
+                            stop_dt = datetime.combine(today.date(), end_time)
+                            if stop_dt <= start_dt:
+                                stop_dt += timedelta(days=1)
+                        else:
+                            stop_dt = start_dt + timedelta(hours=1)
+                        
+                        programmes.append({
+                            "channel": epg_id,
+                            "start": format_xmltv_date(start_dt, utc_offset),
+                            "stop": format_xmltv_date(stop_dt, utc_offset),
+                            "title": title,
+                            "desc": desc_text if desc_text else f"Broadcast of {title} on CLTV36"
+                        })
+    except Exception as e:
+        print(f"[!] Failed to extract CLTV36 EPG: {e}")
+        
+    return channels, programmes
+
+# =========================================================================
+# SCRAPER 4: UNIVERSAL PARSER (SINGLE CHANNEL WEB)
 # =========================================================================
 def auto_scrape_epg(target):
     """Universal function to extract time and title from any URL."""
@@ -322,6 +389,8 @@ def generate_xmltv():
             ch_list, progs = fetch_epg_mncvision(target)
         elif "redbull" in target["url"].lower() or target["id"] == "RedBullTV.global":
             ch_list, progs = fetch_epg_redbull(target)
+        elif "cltv36" in target["url"].lower() or target["id"] == "CLTV36.ph":
+            ch_list, progs = fetch_epg_cltv36(target)
         else:
             ch_list, progs = auto_scrape_epg(target)
 
