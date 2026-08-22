@@ -11,6 +11,9 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from concurrent.futures import ThreadPoolExecutor
 
+# =========================================================================
+# EPG TARGET SOURCES LIST
+# =========================================================================
 EPG_TARGET_SOURCES = [
     {
         "id": "PadangTV.id",
@@ -23,21 +26,21 @@ EPG_TARGET_SOURCES = [
         "id": "RedBullTV.global",
         "name": "Red Bull TV",
         "url": "https://www.redbull.tv/en/epg",
-        "icon": "https://www.google.com/s2/favicons?domain=redbull.tv&sz=128",
+        "icon": "",
         "utc_offset": "+0000"
     },
     {
         "id": "MNCVision.all",
         "name": "MNC Vision All Channels",
         "url": "https://www.mncvision.id/channel",
-        "icon": "https://www.google.com/s2/favicons?domain=mncvision.id&sz=128",
+        "icon": "",
         "utc_offset": "+0700"
     },
     {
         "id": "CLTV36.ph",
         "name": "CLTV36",
         "url": "https://cltv36.tv/tv-programs/",
-        "icon": "https://cltv36.tv/wp-content/uploads/2021/02/cltv36-logo.png",
+        "icon": "",
         "utc_offset": "+0800"
     }
 ]
@@ -56,6 +59,7 @@ def indent_xml(elem):
 def fetch_epg_redbull(target):
     epg_id = target["id"]
     programmes = []
+    icon = target.get("icon") or f"https://www.google.com/s2/favicons?domain={target['url']}&sz=128"
     channels = [{"id": epg_id, "name": target["name"], "icon": target["icon"]}]
     
     url = "https://api.redbull.tv/v3/epg/live"
@@ -85,7 +89,7 @@ def fetch_epg_redbull(target):
                         "desc": desc
                     })
     except Exception as e:
-        print(f"[!] Error RedBull: {e}")
+        print(f"[!] RedBull Error: {e}")
 
     return channels, programmes
 
@@ -134,7 +138,7 @@ def fetch_single_mnc(args):
                     "start": format_xmltv_date(start_dt, "+0700"),
                     "stop": format_xmltv_date(stop_dt, "+0700"),
                     "title": title,
-                    "desc": f"Siaran {title} di {raw_name}"
+                    "desc": f"Broadcast of {title} on {raw_name}"
                 })
     except Exception:
         pass
@@ -165,7 +169,7 @@ def fetch_epg_mncvision(target):
                     channels.append(ch_info)
                     programmes.extend(progs)
     except Exception as e:
-        print(f"[!] Error MNC: {e}")
+        print(f"[!] MNC Error: {e}")
     return channels, programmes
 
 # =========================================================================
@@ -174,6 +178,7 @@ def fetch_epg_mncvision(target):
 def fetch_epg_cltv36(target):
     epg_id = target["id"]
     programmes = []
+    icon = target.get("icon") or f"https://www.google.com/s2/favicons?domain={target['url']}&sz=128"
     channels = [{"id": epg_id, "name": target["name"], "icon": target["icon"]}]
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     
@@ -216,11 +221,11 @@ def fetch_epg_cltv36(target):
                         if prog_data not in programmes: programmes.append(prog_data)
                     except Exception: continue
     except Exception as e:
-        print(f"[!] Error CLTV36: {e}")
+        print(f"[!] CLTV36 Error: {e}")
     return channels, programmes
 
 # =========================================================================
-# 4. UNIVERSAL SCRAPER (PADANG TV, DLL)
+# 4. UNIVERSAL SCRAPER
 # =========================================================================
 def auto_scrape_epg(target):
     epg_id = target["id"]
@@ -262,20 +267,20 @@ def auto_scrape_epg(target):
                     "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0700")),
                     "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0700")),
                     "title": title,
-                    "desc": f"Program {title} di {target['name']}"
+                    "desc": f"Program {title} on {target['name']}"
                 })
             except Exception: continue
     except Exception as e:
-        print(f"[!] Error Universal Scraper {target['name']}: {e}")
+        print(f"[!] Universal Scraper Error for {target['name']}: {e}")
         channels = [{"id": epg_id, "name": target["name"], "icon": ""}]
 
     return channels, programmes
 
 # =========================================================================
-# MAIN GENERATOR LOGIC (FIXED)
+# MAIN GENERATOR LOGIC
 # =========================================================================
 def generate_xmltv():
-    print("[*] Memulai scraping EPG...")
+    print("[*] Starting EPG scraping...")
     tv_elem = ET.Element("tv", {
         "generator-info-name": "Universal IPTV EPG Generator",
         "generator-info-url": "https://github.com/sulthanpamenan"
@@ -297,9 +302,9 @@ def generate_xmltv():
 
         all_channels.extend(ch_list)
         all_programmes.extend(progs)
-        print(f"[✓] Berhasil menambahkan {len(ch_list)} channel & {len(progs)} jadwal untuk {target['name']}")
+        print(f"[✓] Successfully added {len(ch_list)} channel(s) & {len(progs)} show(s) for {target['name']}")
 
-    # 1. Tulis Tag <channel>
+    # 1. Write <channel> Tags
     for ch in all_channels:
         c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
         d_elem = ET.SubElement(c_elem, "display-name")
@@ -307,7 +312,7 @@ def generate_xmltv():
         if ch.get("icon"):
             ET.SubElement(c_elem, "icon", src=ch["icon"])
 
-    # 2. Tulis Tag <programme>
+    # 2. Write <programme> Tags
     for prog in all_programmes:
         p_elem = ET.SubElement(tv_elem, "programme", {
             "start": prog["start"],
@@ -324,7 +329,7 @@ def generate_xmltv():
     with open("epg.xml", "w", encoding="utf-8") as f:
         f.write(pretty_xml)
         
-    print(f"\n[SUKSES] File `epg.xml` berhasil diperbarui dengan total {len(all_channels)} channel dan {len(all_programmes)} jadwal acara!")
+    print(f"\n[SUCCESS] `epg.xml` file successfully updated with {len(all_channels)} channels and {len(all_programmes)} programs!")
 
 if __name__ == "__main__":
     generate_xmltv()
