@@ -42,6 +42,34 @@ EPG_TARGET_SOURCES = [
         "url": "https://cltv36.tv/tv-programs/",
         "icon": "",
         "utc_offset": "+0800"
+    },
+    {
+        "id": "Qazaqstan.kz",
+        "name": "Qazaqstan TV",
+        "url": "https://qazaqstan.tv/program",
+        "icon": "",
+        "utc_offset": "+0500"
+    },
+    {
+        "id": "QazaqstanInt.kz",
+        "name": "Qazaqstan International",
+        "url": "https://qazaqstan.tv/program",
+        "icon": "",
+        "utc_offset": "+0500"
+    },
+    {
+        "id": "Balapan.kz",
+        "name": "Balapan TV",
+        "url": "https://balapan.tv/program",
+        "icon": "",
+        "utc_offset": "+0500"
+    },
+    {
+        "id": "AbaiTV.kz",
+        "name": "Abai TV",
+        "url": "https://abaitv.kz/program",
+        "icon": "",
+        "utc_offset": "+0500"
     }
 ]
 
@@ -91,7 +119,8 @@ def fetch_epg_redbull(target):
                         "start": format_xmltv_date(start_dt, "+0000"),
                         "stop": format_xmltv_date(end_dt, "+0000"),
                         "title": title,
-                        "desc": desc
+                        "desc": desc,
+                        "lang": "en"
                     })
     except Exception as e:
         print(f"[!] RedBull Error: {e}")
@@ -143,7 +172,8 @@ def fetch_single_mnc(args):
                     "start": format_xmltv_date(start_dt, "+0700"),
                     "stop": format_xmltv_date(stop_dt, "+0700"),
                     "title": title,
-                    "desc": f"Broadcast of {title} on {raw_name}"
+                    "desc": f"Broadcast of {title} on {raw_name}",
+                    "lang": "en"
                 })
     except Exception:
         pass
@@ -223,7 +253,8 @@ def fetch_epg_cltv36(target):
                             "start": format_xmltv_date(start_dt, "+0800"),
                             "stop": format_xmltv_date(stop_dt, "+0800"),
                             "title": title,
-                            "desc": f"Broadcast of {title} on CLTV36"
+                            "desc": f"Broadcast of {title} on CLTV36",
+                            "lang": "en"
                         }
                         if prog_data not in programmes: programmes.append(prog_data)
                     except Exception: continue
@@ -232,7 +263,61 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. UNIVERSAL SCRAPER
+# 4. QAZAQSTAN NETWORK SCRAPER
+# =========================================================================
+def fetch_epg_qazaqstan(target):
+    epg_id = target["id"]
+    programmes = []
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    icon = target.get("icon") or get_auto_icon(target["url"])
+    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
+    
+    try:
+        res = requests.get(target["url"], headers=headers, timeout=15)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, 'html.parser')
+            today = datetime.now()
+            
+            time_pattern = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
+            extracted = []
+
+            for elem in soup.find_all(['tr', 'li', 'div', 'p']):
+                text = elem.get_text(" ", strip=True)
+                if len(text) > 150: continue
+                match = time_pattern.search(text)
+                if match:
+                    t_str = match.group(1).replace('.', ':')
+                    if len(t_str.split(':')[0]) == 1: t_str = "0" + t_str
+                    title = text[match.end():].strip(" -–:\t\n\r[]")
+                    if title and len(title) > 2 and not title.startswith("http"):
+                        extracted.append((t_str, title))
+
+            for i in range(len(extracted)):
+                t_str, title = extracted[i]
+                try:
+                    start_dt = datetime.strptime(f"{today.strftime('%Y-%m-%d')} {t_str}", "%Y-%m-%d %H:%M")
+                    if i + 1 < len(extracted):
+                        stop_dt = datetime.strptime(f"{today.strftime('%Y-%m-%d')} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
+                        if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+                    else:
+                        stop_dt = start_dt + timedelta(hours=1)
+
+                    programmes.append({
+                        "channel": epg_id,
+                        "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0500")),
+                        "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0500")),
+                        "title": title,
+                        "desc": f"Program {title} di {target['name']}",
+                        "lang": "kk"
+                    })
+                except Exception: continue
+    except Exception as e:
+        print(f"[!] Qazaqstan Scraper Error for {target['name']}: {e}")
+
+    return channels, programmes
+
+# =========================================================================
+# 5. UNIVERSAL SCRAPER
 # =========================================================================
 def auto_scrape_epg(target):
     epg_id = target["id"]
@@ -274,7 +359,8 @@ def auto_scrape_epg(target):
                     "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0700")),
                     "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0700")),
                     "title": title,
-                    "desc": f"Program {title} on {target['name']}"
+                    "desc": f"Program {title} on {target['name']}",
+                    "lang": "en"
                 })
             except Exception: continue
     except Exception as e:
@@ -305,6 +391,8 @@ def generate_xmltv():
             ch_list, progs = fetch_epg_redbull(target)
         elif "cltv36" in target["url"].lower() or target["id"] == "CLTV36.ph":
             ch_list, progs = fetch_epg_cltv36(target)
+        elif any(domain in target["url"].lower() for domain in ["qazaqstan.tv", "balapan.tv", "abaitv.kz"]):
+            ch_list, progs = fetch_epg_qazaqstan(target)
         else:
             ch_list, progs = auto_scrape_epg(target)
 
@@ -327,10 +415,10 @@ def generate_xmltv():
             "stop": prog["stop"],
             "channel": prog["channel"]
         })
-        t_elem = ET.SubElement(p_elem, "title", lang="en")
+        t_elem = ET.SubElement(p_elem, "title", lang=prog.get("lang", "en"))
         t_elem.text = prog["title"]
         if prog.get("desc"):
-            d_elem = ET.SubElement(p_elem, "desc", lang="en")
+            d_elem = ET.SubElement(p_elem, "desc", lang=prog.get("lang", "en"))
             d_elem.text = prog["desc"]
 
     pretty_xml = indent_xml(tv_elem)
