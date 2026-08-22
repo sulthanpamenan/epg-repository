@@ -2,7 +2,7 @@
 <tv generator-info-name="Universal IPTV EPG Generator" generator-info-url="https://github.com/sulthanpamenan">
   <channel id="PadangTV.id">
     <display-name>Padang TV</display-name>
-    <icon src="https://padangtv.id/wp-content/uploads/2025/10/cropped-Desain-tanpa-judul-11-32x32.png"/>
+    <icon src="https://www.google.com/s2/favicons?domain=https://padangtv.id/schedule/&amp;sz=128"/>
   </channel>
   <channel id="RedBullTV.global">
     <display-name>Red Bull TV</display-name>
@@ -12,4 +12,104 @@
     <display-name>CLTV36</display-name>
     <icon src="https://cltv36.tv/wp-content/uploads/2021/02/cltv36-logo.png"/>
   </channel>
+  <programme start="20260822170000 +0800" stop="20260822180000 +0800" channel="CLTV36.ph">
+    <title lang="en">Top Stories:</title>
+    <desc lang="en">Broadcast of Top Stories: on CLTV36</desc>
+  </programme>
+  <programme start="20260822170000 +0800" stop="20260822180000 +0800" channel="CLTV36.ph">
+    <title lang="en">Bawal ing Tsismis kang Sonia Soto</title>
+    <desc lang="en">Broadcast of Bawal ing Tsismis kang Sonia Soto on CLTV36</desc>
+  </programme>
+  <programme start="20260822170000 +0800" stop="20260822180000 +0800" channel="CLTV36.ph">
+    <title lang="en">Wednesday, 5:00 PM – 6:00 PM</title>
+    <desc lang="en">Broadcast of Wednesday, 5:00 PM – 6:00 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822120000 +0800" stop="20260822130000 +0800" channel="CLTV36.ph">
+    <title lang="en">Nánu Pa Ta?</title>
+    <desc lang="en">Broadcast of Nánu Pa Ta? on CLTV36</desc>
+  </programme>
+  <programme start="20260822120000 +0800" stop="20260822130000 +0800" channel="CLTV36.ph">
+    <title lang="en">Monday – Friday, 12:00 PM – 1:00 PM</title>
+    <desc lang="en">Broadcast of Monday – Friday, 12:00 PM – 1:00 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822180000 +0800" stop="20260822190000 +0800" channel="CLTV36.ph">
+    <title lang="en">Balen At Balita</title>
+    <desc lang="en">Broadcast of Balen At Balita on CLTV36</desc>
+  </programme>
+  <programme start="20260822180000 +0800" stop="20260822190000 +0800" channel="CLTV36.ph">
+    <title lang="en">Monday – Friday, 6:00 PM – 7:00 PM</title>
+    <desc lang="en">Broadcast of Monday – Friday, 6:00 PM – 7:00 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822160000 +0800" stop="20260822170000 +0800" channel="CLTV36.ph">
+    <title lang="en">Perspektiba</title>
+    <desc lang="en">Broadcast of Perspektiba on CLTV36</desc>
+  </programme>
+  <programme start="20260822160000 +0800" stop="20260822170000 +0800" channel="CLTV36.ph">
+    <title lang="en">Friday, 4:00 PM</title>
+    <desc lang="en">Broadcast of Friday, 4:00 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822190000 +0800" stop="20260822193000 +0800" channel="CLTV36.ph">
+    <title lang="en">Business As Unusual</title>
+    <desc lang="en">Broadcast of Business As Unusual on CLTV36</desc>
+  </programme>
+  <programme start="20260822190000 +0800" stop="20260822193000 +0800" channel="CLTV36.ph">
+    <title lang="en">Wednesday, 7:00 PM – 7:30 PM</title>
+    <desc lang="en">Broadcast of Wednesday, 7:00 PM – 7:30 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822130000 +0800" stop="20260822140000 +0800" channel="CLTV36.ph">
+    <title lang="en">TopPick</title>
+    <desc lang="en">Broadcast of TopPick on CLTV36</desc>
+  </programme>
+  <programme start="20260822130000 +0800" stop="20260822140000 +0800" channel="CLTV36.ph">
+    <title lang="en">Monday – Friday, 12:00 NN – 01:00 PM</title>
+    <desc lang="en">Broadcast of Monday – Friday, 12:00 NN – 01:00 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822200000 +0800" stop="20260822203000 +0800" channel="CLTV36.ph">
+    <title lang="en">Atin Kaming K!</title>
+    <desc lang="en">Broadcast of Atin Kaming K! on CLTV36</desc>
+  </programme>
+  <programme start="20260822200000 +0800" stop="20260822203000 +0800" channel="CLTV36.ph">
+    <title lang="en">Thursday, 8:00 PM – 8:30 PM</title>
+    <desc lang="en">Broadcast of Thursday, 8:00 PM – 8:30 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822153000 +0800" stop="20260822160000 +0800" channel="CLTV36.ph">
+    <title lang="en">Discover Japan</title>
+    <desc lang="en">Broadcast of Discover Japan on CLTV36</desc>
+  </programme>
+  <programme start="20260822153000 +0800" stop="20260822160000 +0800" channel="CLTV36.ph">
+    <title lang="en">Sunday, 3:30 PM – 4:00 PM</title>
+    <desc lang="en">Broadcast of Sunday, 3:30 PM – 4:00 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822150000 +0800" stop="20260822153000 +0800" channel="CLTV36.ph">
+    <title lang="en">UN In Action</title>
+    <desc lang="en">Broadcast of UN In Action on CLTV36</desc>
+  </programme>
+  <programme start="20260822150000 +0800" stop="20260822153000 +0800" channel="CLTV36.ph">
+    <title lang="en">Sunday, 3:00 PM – 3:30 PM</title>
+    <desc lang="en">Broadcast of Sunday, 3:00 PM – 3:30 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822200000 +0800" stop="20260822203000 +0800" channel="CLTV36.ph">
+    <title lang="en">Let’s Talk Heart to Heart</title>
+    <desc lang="en">Broadcast of Let’s Talk Heart to Heart on CLTV36</desc>
+  </programme>
+  <programme start="20260822160000 +0800" stop="20260822170000 +0800" channel="CLTV36.ph">
+    <title lang="en">Plataporma Eleksyon 2022 Candidates Forum</title>
+    <desc lang="en">Broadcast of Plataporma Eleksyon 2022 Candidates Forum on CLTV36</desc>
+  </programme>
+  <programme start="20260822160000 +0800" stop="20260822170000 +0800" channel="CLTV36.ph">
+    <title lang="en">Friday, 4:00 PM – 5:00 PM</title>
+    <desc lang="en">Broadcast of Friday, 4:00 PM – 5:00 PM on CLTV36</desc>
+  </programme>
+  <programme start="20260822083000 +0800" stop="20260822090000 +0800" channel="CLTV36.ph">
+    <title lang="en">Kalusugang SiguraDOH</title>
+    <desc lang="en">Broadcast of Kalusugang SiguraDOH on CLTV36</desc>
+  </programme>
+  <programme start="20260822090000 +0800" stop="20260822120000 +0800" channel="CLTV36.ph">
+    <title lang="en">CLTV36 Teleskwela</title>
+    <desc lang="en">Broadcast of CLTV36 Teleskwela on CLTV36</desc>
+  </programme>
+  <programme start="20260822090000 +0800" stop="20260822120000 +0800" channel="CLTV36.ph">
+    <title lang="en">Monday – Friday, 9:00 AM – 12:00 PM; 1:00 – 6:00 PM</title>
+    <desc lang="en">Broadcast of Monday – Friday, 9:00 AM – 12:00 PM; 1:00 – 6:00 PM on CLTV36</desc>
+  </programme>
 </tv>
