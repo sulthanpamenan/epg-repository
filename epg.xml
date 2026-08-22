@@ -1,624 +1,624 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <tv generator-info-name="Universal IPTV EPG Generator" generator-info-url="https://github.com/sulthanpamenan">
   <channel id="PadangTV.id">
     <display-name>Padang TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=padangtv.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=padangtv.id&amp;sz=128" />
   </channel>
   <channel id="RedBullTV.global">
     <display-name>Red Bull TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.redbull.tv&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.redbull.tv&amp;sz=128" />
   </channel>
   <channel id="Channel1VisionPrimeHD.mnc">
     <display-name>Channel1Vision Prime HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel6UNIQUES.mnc">
     <display-name>Channel6UNIQUES (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel7ORIGINALS.mnc">
     <display-name>Channel7ORIGINALS (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel8CINEEDGE.mnc">
     <display-name>Channel8CINEEDGE (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel9BUDDYSTARS.mnc">
     <display-name>Channel9BUDDY STARS (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel10Superrix.mnc">
     <display-name>Channel10Superrix (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel11HITSMOVIES.mnc">
     <display-name>Channel11HITS MOVIES (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel12GalaxyPremium.mnc">
     <display-name>Channel12Galaxy Premium (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel13Galaxy.mnc">
     <display-name>Channel13Galaxy (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel14IMC.mnc">
     <display-name>Channel14IMC (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel19Thrill.mnc">
     <display-name>Channel19Thrill (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel20CelestialMovies.mnc">
     <display-name>Channel20Celestial Movies (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel22CCM.mnc">
     <display-name>Channel22CCM (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel23ZeeBioskop.mnc">
     <display-name>Channel23Zee Bioskop (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel25tvNMovies.mnc">
     <display-name>Channel25tvN Movies (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel26StudioUniversal.mnc">
     <display-name>Channel26Studio Universal (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel37NickelodeonJr.mnc">
     <display-name>Channel37Nickelodeon Jr (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel39Zoomoo.mnc">
     <display-name>Channel39Zoomoo (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel40Moonbug.mnc">
     <display-name>Channel40Moonbug (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel41CBeebies.mnc">
     <display-name>Channel41CBeebies (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel46KidsTV.mnc">
     <display-name>Channel46Kids TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel47Dreamworks.mnc">
     <display-name>Channel47Dreamworks (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel49Nickelodeon.mnc">
     <display-name>Channel49Nickelodeon (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel78Indosiar.mnc">
     <display-name>Channel78Indosiar (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel80RCTI.mnc">
     <display-name>Channel80RCTI (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel81GTV.mnc">
     <display-name>Channel81GTV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel82MNCTV.mnc">
     <display-name>Channel82MNCTV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel83iNews.mnc">
     <display-name>Channel83iNews (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel84SindoNewsTV.mnc">
     <display-name>Channel84Sindo News TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel86Entertainment.mnc">
     <display-name>Channel86Entertainment (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel87TransTV.mnc">
     <display-name>Channel87Trans TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel88Sportstars4.mnc">
     <display-name>Channel88Sportstars 4 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel89SCTV.mnc">
     <display-name>Channel89SCTV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel90HanacarakaTV.mnc">
     <display-name>Channel90Hanacaraka TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel91LIFE.mnc">
     <display-name>Channel91LIFE (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel92MuslimTV.mnc">
     <display-name>Channel92Muslim TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel93AlQuranAlKareem.mnc">
     <display-name>Channel93Al Quran Al Kareem (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel94VisionPrime.mnc">
     <display-name>Channel94Vision Prime (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel95FOODTRAVEL.mnc">
     <display-name>Channel95FOOD TRAVEL (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel96CelebritiesTV.mnc">
     <display-name>Channel96Celebrities TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel97tvOne.mnc">
     <display-name>Channel97tvOne (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel98Sportstars2.mnc">
     <display-name>Channel98Sportstars 2 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel99Sportstars3.mnc">
     <display-name>Channel99Sportstars 3 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel100IDX.mnc">
     <display-name>Channel100IDX (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel101SoccerChannel.mnc">
     <display-name>Channel101Soccer Channel (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel102Sportstars.mnc">
     <display-name>Channel102Sportstars (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel103BTV.mnc">
     <display-name>Channel103BTV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel105TawafTV.mnc">
     <display-name>Channel105Tawaf TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel106KompasTV.mnc">
     <display-name>Channel106Kompas TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel107MetroTV.mnc">
     <display-name>Channel107Metro TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel110Trans7.mnc">
     <display-name>Channel110Trans 7 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel111MusicTV.mnc">
     <display-name>Channel111Music TV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel113JAKTV.mnc">
     <display-name>Channel113JAKTV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel115ANTV.mnc">
     <display-name>Channel115ANTV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel116MDTV.mnc">
     <display-name>Channel116MDTV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel118TVRI.mnc">
     <display-name>Channel118TVRI (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel154AXN.mnc">
     <display-name>Channel154AXN (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel157Animax.mnc">
     <display-name>Channel157Animax (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel158tvN.mnc">
     <display-name>Channel158tvN (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel160HITS.mnc">
     <display-name>Channel160HITS (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel161KIX.mnc">
     <display-name>Channel161KIX (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel164ONE.mnc">
     <display-name>Channel164ONE (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel167Lifetime.mnc">
     <display-name>Channel167Lifetime (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel200BBCEarth.mnc">
     <display-name>Channel200BBC Earth (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel201GlobalTrekker.mnc">
     <display-name>Channel201Global Trekker (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel202OutdoorChannel.mnc">
     <display-name>Channel202Outdoor Channel (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel204LoveNature.mnc">
     <display-name>Channel204Love Nature (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel205CGTNDocumentary.mnc">
     <display-name>Channel205CGTN Documentary (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel206History.mnc">
     <display-name>Channel206History (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel207CrimeInvestigation.mnc">
     <display-name>Channel207Crime Investigation (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel240RockEntertainment.mnc">
     <display-name>Channel240Rock Entertainment (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel248RockAction.mnc">
     <display-name>Channel248Rock Action (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel304FightSports.mnc">
     <display-name>Channel304Fight Sports (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel307SPOTV.mnc">
     <display-name>Channel307SPOTV (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel308SPOTV2.mnc">
     <display-name>Channel308SPOTV 2 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel309beINSports1.mnc">
     <display-name>Channel309beIN Sports 1 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel310beINSports2.mnc">
     <display-name>Channel310beIN Sports 2 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel311beINSports3.mnc">
     <display-name>Channel311beIN Sports 3 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel312beINSPORTS4.mnc">
     <display-name>Channel312beIN SPORTS 4 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel313beINSPORTS5.mnc">
     <display-name>Channel313beIN SPORTS 5 (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel330ChannelNewsAsia.mnc">
     <display-name>Channel330Channel News Asia (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel331AlJazeeraEnglish.mnc">
     <display-name>Channel331Al Jazeera English (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel332BBCWorldNews.mnc">
     <display-name>Channel332BBC World News (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel333EURONEWS.mnc">
     <display-name>Channel333EURONEWS (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel335FOXNews.mnc">
     <display-name>Channel335FOX News (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel336SEATODAY.mnc">
     <display-name>Channel336SEA TODAY (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel337CNBC.mnc">
     <display-name>Channel337CNBC (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel338Bloomberg.mnc">
     <display-name>Channel338Bloomberg (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel350ABCAustralia.mnc">
     <display-name>Channel350ABC Australia (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel351Arirang.mnc">
     <display-name>Channel351Arirang (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel352France24English.mnc">
     <display-name>Channel352France 24 English (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel353CGTN.mnc">
     <display-name>Channel353CGTN (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel354NHKWorldPremium.mnc">
     <display-name>Channel354NHK World Premium (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel355NHKWorld.mnc">
     <display-name>Channel355NHK World (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel357DWEnglish.mnc">
     <display-name>Channel357DW English (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel401ORIGINALSHD.mnc">
     <display-name>Channel401ORIGINALS HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel402CINEEDGEHD.mnc">
     <display-name>Channel402CINEEDGE HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel403BUDDYSTARSHD.mnc">
     <display-name>Channel403BUDDY STARS HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel404SuperrixHD.mnc">
     <display-name>Channel404Superrix HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel405UNIQUESHD.mnc">
     <display-name>Channel405UNIQUES HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel406StudioUniversalHD.mnc">
     <display-name>Channel406Studio Universal HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel409HITSMOVIESHD.mnc">
     <display-name>Channel409HITS MOVIES HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel415tvNMoviesHD.mnc">
     <display-name>Channel415tvN Movies HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel417beINSports1HD.mnc">
     <display-name>Channel417beIN Sports 1 HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel418beINSports2HD.mnc">
     <display-name>Channel418beIN Sports 2 HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel419beINSports3HD.mnc">
     <display-name>Channel419beIN Sports 3 HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel420SoccerChannelHD.mnc">
     <display-name>Channel420Soccer Channel HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel421SportstarsHD.mnc">
     <display-name>Channel421Sportstars HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel422Sportstars2HD.mnc">
     <display-name>Channel422Sportstars 2 HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel423sportstars3HD.mnc">
     <display-name>Channel423sportstars 3 HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel424Sportstars4HD.mnc">
     <display-name>Channel424Sportstars 4 HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel427SPOTVHD.mnc">
     <display-name>Channel427SPOTV HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel428SPOTV2HD.mnc">
     <display-name>Channel428SPOTV 2 HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel430RCTIHD.mnc">
     <display-name>Channel430RCTI HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel431GTVHD.mnc">
     <display-name>Channel431GTV HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel432MNCTVHD.mnc">
     <display-name>Channel432MNCTV HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel433iNewsHD.mnc">
     <display-name>Channel433iNews HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel434SindoNewsTVHD.mnc">
     <display-name>Channel434Sindo News TV HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel436IDXHD.mnc">
     <display-name>Channel436IDX HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel437SCTVHD.mnc">
     <display-name>Channel437SCTV HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel438IndosiarHD.mnc">
     <display-name>Channel438Indosiar HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel444MusicTVHD.mnc">
     <display-name>Channel444Music TV HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel445ONEHD.mnc">
     <display-name>Channel445ONE HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel446tvNHD.mnc">
     <display-name>Channel446tvN HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel447AXNHD.mnc">
     <display-name>Channel447AXN HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel459FoodTravelHD.mnc">
     <display-name>Channel459Food Travel HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel460OutdoorchannelHD.mnc">
     <display-name>Channel460Outdoor channel HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel461BBCEarthHD.mnc">
     <display-name>Channel461BBC Earth HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel462GlobalTrekkerHD.mnc">
     <display-name>Channel462Global Trekker HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel463LoveNatureHD.mnc">
     <display-name>Channel463Love Nature HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel471KidsTVHD.mnc">
     <display-name>Channel471Kids TV HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel472NickJrHD.mnc">
     <display-name>Channel472Nick Jr. HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="Channel473DreamworksHD.mnc">
     <display-name>Channel473Dreamworks HD (MNC)</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=www.mncvision.id&amp;sz=128" />
   </channel>
   <channel id="CLTV36.ph">
     <display-name>CLTV36</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=cltv36.tv&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=cltv36.tv&amp;sz=128" />
   </channel>
   <channel id="Qazaqstan.kz">
     <display-name>Qazaqstan TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=qazaqstan.tv&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=qazaqstan.tv&amp;sz=128" />
   </channel>
   <channel id="QazaqstanInt.kz">
     <display-name>Qazaqstan International</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=qazaqstan.tv&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=qazaqstan.tv&amp;sz=128" />
   </channel>
   <channel id="Balapan.kz">
     <display-name>Balapan TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=balapan.tv&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=balapan.tv&amp;sz=128" />
   </channel>
   <channel id="AbaiTV.kz">
     <display-name>Abai TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=abaitv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=abaitv.kz&amp;sz=128" />
   </channel>
   <channel id="Qazsport.kz">
     <display-name>Qazsport</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=qazsporttv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=qazsporttv.kz&amp;sz=128" />
   </channel>
   <channel id="AqjaiyqTV.kz">
     <display-name>Aqjaiyq TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=aqjaiyqtv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=aqjaiyqtv.kz&amp;sz=128" />
   </channel>
   <channel id="AqtobeTV.kz">
     <display-name>Aqtobe TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=aqtobetv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=aqtobetv.kz&amp;sz=128" />
   </channel>
   <channel id="AltaiTV.kz">
     <display-name>Altai TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=altaitv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=altaitv.kz&amp;sz=128" />
   </channel>
   <channel id="AtyrauTV.kz">
     <display-name>Atyrau TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=atyrautv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=atyrautv.kz&amp;sz=128" />
   </channel>
   <channel id="ErtisTV.kz">
     <display-name>Ertis TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=ertistv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=ertistv.kz&amp;sz=128" />
   </channel>
   <channel id="JambylTV.kz">
     <display-name>Jambyl TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=jambyltv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=jambyltv.kz&amp;sz=128" />
   </channel>
   <channel id="KoksheTV.kz">
     <display-name>Kokshe TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=kokshetv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=kokshetv.kz&amp;sz=128" />
   </channel>
   <channel id="MangystauTV.kz">
     <display-name>Mangystau TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=mangystautv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=mangystautv.kz&amp;sz=128" />
   </channel>
   <channel id="OntustikTV.kz">
     <display-name>Ontustik TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=ontustiktv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=ontustiktv.kz&amp;sz=128" />
   </channel>
   <channel id="QostanaiTV.kz">
     <display-name>Qostanai TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=qostanaitv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=qostanaitv.kz&amp;sz=128" />
   </channel>
   <channel id="QyzyljarTV.kz">
     <display-name>Qyzyljar TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=qyzyljartv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=qyzyljartv.kz&amp;sz=128" />
   </channel>
   <channel id="QyzylordaTV.kz">
     <display-name>Qyzylorda TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=qyzylordatv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=qyzylordatv.kz&amp;sz=128" />
   </channel>
   <channel id="SaryarqaTV.kz">
     <display-name>Saryarqa TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=saryarqatv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=saryarqatv.kz&amp;sz=128" />
   </channel>
   <channel id="SemeiTV.kz">
     <display-name>Semei TV</display-name>
-    <icon src="https://www.google.com/s2/favicons?domain=semeitv.kz&amp;sz=128"/>
+    <icon src="https://www.google.com/s2/favicons?domain=semeitv.kz&amp;sz=128" />
   </channel>
   <programme start="20260822020000 +0700" stop="20260822030000 +0700" channel="Channel1VisionPrimeHD.mnc">
     <title lang="en">03:00</title>
@@ -820,13 +820,9 @@
     <title lang="en">19:23Space Racers</title>
     <desc lang="en">Broadcast of 19:23Space Racers on Channel9BUDDY STARS</desc>
   </programme>
-  <programme start="20260822005500 +0700" stop="20260822023300 +0700" channel="Channel10Superrix.mnc">
-    <title lang="en">02:33</title>
-    <desc lang="en">Broadcast of 02:33 on Channel10Superrix</desc>
-  </programme>
   <programme start="20260822023300 +0700" stop="20260822050600 +0700" channel="Channel10Superrix.mnc">
-    <title lang="en">05:06Deadly Secrets: The Confession</title>
-    <desc lang="en">Broadcast of 05:06Deadly Secrets: The Confession on Channel10Superrix</desc>
+    <title lang="en">05:06</title>
+    <desc lang="en">Broadcast of 05:06 on Channel10Superrix</desc>
   </programme>
   <programme start="20260822050600 +0700" stop="20260822063100 +0700" channel="Channel10Superrix.mnc">
     <title lang="en">06:31Max Und Die Wilde 7</title>
@@ -856,9 +852,13 @@
     <title lang="en">18:00Dawn Rider</title>
     <desc lang="en">Broadcast of 18:00Dawn Rider on Channel10Superrix</desc>
   </programme>
-  <programme start="20260822180000 +0700" stop="20260822190000 +0700" channel="Channel10Superrix.mnc">
+  <programme start="20260822180000 +0700" stop="20260822200300 +0700" channel="Channel10Superrix.mnc">
     <title lang="en">20:03Lost Souls: The Return</title>
     <desc lang="en">Broadcast of 20:03Lost Souls: The Return on Channel10Superrix</desc>
+  </programme>
+  <programme start="20260822200300 +0700" stop="20260822210300 +0700" channel="Channel10Superrix.mnc">
+    <title lang="en">21:45Accused</title>
+    <desc lang="en">Broadcast of 21:45Accused on Channel10Superrix</desc>
   </programme>
   <programme start="20260822021500 +0700" stop="20260822043000 +0700" channel="Channel11HITSMOVIES.mnc">
     <title lang="en">04:30</title>
@@ -900,13 +900,9 @@
     <title lang="en">01:15Mamma Mia!</title>
     <desc lang="en">Broadcast of 01:15Mamma Mia! on Channel11HITS MOVIES</desc>
   </programme>
-  <programme start="20260822004500 +0700" stop="20260822022500 +0700" channel="Channel12GalaxyPremium.mnc">
-    <title lang="en">02:25</title>
-    <desc lang="en">Broadcast of 02:25 on Channel12Galaxy Premium</desc>
-  </programme>
   <programme start="20260822022500 +0700" stop="20260822040000 +0700" channel="Channel12GalaxyPremium.mnc">
-    <title lang="en">04:00Resident Evil: Damnation</title>
-    <desc lang="en">Broadcast of 04:00Resident Evil: Damnation on Channel12Galaxy Premium</desc>
+    <title lang="en">04:00</title>
+    <desc lang="en">Broadcast of 04:00 on Channel12Galaxy Premium</desc>
   </programme>
   <programme start="20260822040000 +0700" stop="20260822055000 +0700" channel="Channel12GalaxyPremium.mnc">
     <title lang="en">05:50Collateral</title>
@@ -936,9 +932,13 @@
     <title lang="en">16:05The Night Before</title>
     <desc lang="en">Broadcast of 16:05The Night Before on Channel12Galaxy Premium</desc>
   </programme>
-  <programme start="20260822160500 +0700" stop="20260822170500 +0700" channel="Channel12GalaxyPremium.mnc">
+  <programme start="20260822160500 +0700" stop="20260822173000 +0700" channel="Channel12GalaxyPremium.mnc">
     <title lang="en">17:30Sex Tape</title>
     <desc lang="en">Broadcast of 17:30Sex Tape on Channel12Galaxy Premium</desc>
+  </programme>
+  <programme start="20260822173000 +0700" stop="20260822183000 +0700" channel="Channel12GalaxyPremium.mnc">
+    <title lang="en">19:30The Social Network</title>
+    <desc lang="en">Broadcast of 19:30The Social Network on Channel12Galaxy Premium</desc>
   </programme>
   <programme start="20260822011500 +0700" stop="20260822025000 +0700" channel="Channel13Galaxy.mnc">
     <title lang="en">02:50</title>
@@ -1020,17 +1020,9 @@
     <title lang="en">18:35Soekarno</title>
     <desc lang="en">Broadcast of 18:35Soekarno on Channel14IMC</desc>
   </programme>
-  <programme start="20260822005000 +0700" stop="20260822020000 +0700" channel="Channel19Thrill.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel19Thrill</desc>
-  </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel19Thrill.mnc">
-    <title lang="en">02:30Trans7</title>
-    <desc lang="en">Broadcast of 02:30Trans7 on Channel19Thrill</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel19Thrill.mnc">
-    <title lang="en">04:00Room For Rent</title>
-    <desc lang="en">Broadcast of 04:00Room For Rent on Channel19Thrill</desc>
+    <title lang="en">04:00</title>
+    <desc lang="en">Broadcast of 04:00 on Channel19Thrill</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822040000 +0700" channel="Channel19Thrill.mnc">
     <title lang="en">04:00Trans7</title>
@@ -1059,6 +1051,14 @@
   <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel19Thrill.mnc">
     <title lang="en">08:30Trans7</title>
     <desc lang="en">Broadcast of 08:30Trans7 on Channel19Thrill</desc>
+  </programme>
+  <programme start="20260822083000 +0700" stop="20260822085000 +0700" channel="Channel19Thrill.mnc">
+    <title lang="en">09:30Trans7</title>
+    <desc lang="en">Broadcast of 09:30Trans7 on Channel19Thrill</desc>
+  </programme>
+  <programme start="20260822085000 +0700" stop="20260822095000 +0700" channel="Channel19Thrill.mnc">
+    <title lang="en">10:30Get In The Dark</title>
+    <desc lang="en">Broadcast of 10:30Get In The Dark on Channel19Thrill</desc>
   </programme>
   <programme start="20260822021500 +0700" stop="20260822040000 +0700" channel="Channel20CelestialMovies.mnc">
     <title lang="en">04:00</title>
@@ -1300,13 +1300,9 @@
     <title lang="en">06:05Rubble &amp; Crew</title>
     <desc lang="en">Broadcast of 06:05Rubble &amp; Crew on Channel37Nickelodeon Jr</desc>
   </programme>
-  <programme start="20260822021500 +0700" stop="20260822023000 +0700" channel="Channel39Zoomoo.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel39Zoomoo</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822024500 +0700" channel="Channel39Zoomoo.mnc">
-    <title lang="en">02:45Leo: Wildlife Ranger S2, Ep 8</title>
-    <desc lang="en">Broadcast of 02:45Leo: Wildlife Ranger S2, Ep 8 on Channel39Zoomoo</desc>
+    <title lang="en">02:45</title>
+    <desc lang="en">Broadcast of 02:45 on Channel39Zoomoo</desc>
   </programme>
   <programme start="20260822024500 +0700" stop="20260822030000 +0700" channel="Channel39Zoomoo.mnc">
     <title lang="en">03:00Leo: Wildlife Ranger S2, Ep 9</title>
@@ -1336,9 +1332,13 @@
     <title lang="en">05:30ZooMoo's Got Brains S2, Ep 29</title>
     <desc lang="en">Broadcast of 05:30ZooMoo's Got Brains S2, Ep 29 on Channel39Zoomoo</desc>
   </programme>
-  <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel39Zoomoo.mnc">
+  <programme start="20260822053000 +0700" stop="20260822054500 +0700" channel="Channel39Zoomoo.mnc">
     <title lang="en">05:45ZooMoo's Got Brains S2, Ep 30</title>
     <desc lang="en">Broadcast of 05:45ZooMoo's Got Brains S2, Ep 30 on Channel39Zoomoo</desc>
+  </programme>
+  <programme start="20260822054500 +0700" stop="20260822064500 +0700" channel="Channel39Zoomoo.mnc">
+    <title lang="en">06:00ZooMoo's Got Brains S2, Ep 31</title>
+    <desc lang="en">Broadcast of 06:00ZooMoo's Got Brains S2, Ep 31 on Channel39Zoomoo</desc>
   </programme>
   <programme start="20260822021700 +0700" stop="20260822024700 +0700" channel="Channel40Moonbug.mnc">
     <title lang="en">02:47</title>
@@ -1380,13 +1380,9 @@
     <title lang="en">07:06Little Angel</title>
     <desc lang="en">Broadcast of 07:06Little Angel on Channel40Moonbug</desc>
   </programme>
-  <programme start="20260822022100 +0700" stop="20260822023500 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">02:35</title>
-    <desc lang="en">Broadcast of 02:35 on Channel41CBeebies</desc>
-  </programme>
   <programme start="20260822023500 +0700" stop="20260822024200 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">02:42Supertato S2, Ep 29</title>
-    <desc lang="en">Broadcast of 02:42Supertato S2, Ep 29 on Channel41CBeebies</desc>
+    <title lang="en">02:42</title>
+    <desc lang="en">Broadcast of 02:42 on Channel41CBeebies</desc>
   </programme>
   <programme start="20260822024200 +0700" stop="20260822025000 +0700" channel="Channel41CBeebies.mnc">
     <title lang="en">02:50Supertato S2, Ep 28</title>
@@ -1416,17 +1412,17 @@
     <title lang="en">03:16Hey Duggee S2, Ep 35</title>
     <desc lang="en">Broadcast of 03:16Hey Duggee S2, Ep 35 on Channel41CBeebies</desc>
   </programme>
-  <programme start="20260822031600 +0700" stop="20260822041600 +0700" channel="Channel41CBeebies.mnc">
+  <programme start="20260822031600 +0700" stop="20260822032500 +0700" channel="Channel41CBeebies.mnc">
     <title lang="en">03:25Hey Duggee S2, Ep 36</title>
     <desc lang="en">Broadcast of 03:25Hey Duggee S2, Ep 36 on Channel41CBeebies</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel46KidsTV.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel46Kids TV</desc>
+  <programme start="20260822032500 +0700" stop="20260822042500 +0700" channel="Channel41CBeebies.mnc">
+    <title lang="en">03:32Hey Duggee's Squirrel..., Ep 23</title>
+    <desc lang="en">Broadcast of 03:32Hey Duggee's Squirrel..., Ep 23 on Channel41CBeebies</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel46KidsTV.mnc">
-    <title lang="en">03:00Morphle</title>
-    <desc lang="en">Broadcast of 03:00Morphle on Channel46Kids TV</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel46Kids TV</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel46KidsTV.mnc">
     <title lang="en">03:30PAW Patrol S4</title>
@@ -1456,9 +1452,13 @@
     <title lang="en">06:30Kiko S4</title>
     <desc lang="en">Broadcast of 06:30Kiko S4 on Channel46Kids TV</desc>
   </programme>
-  <programme start="20260822063000 +0700" stop="20260822073000 +0700" channel="Channel46KidsTV.mnc">
+  <programme start="20260822063000 +0700" stop="20260822070000 +0700" channel="Channel46KidsTV.mnc">
     <title lang="en">07:00Kamen Rider ZEZTZ</title>
     <desc lang="en">Broadcast of 07:00Kamen Rider ZEZTZ on Channel46Kids TV</desc>
+  </programme>
+  <programme start="20260822070000 +0700" stop="20260822080000 +0700" channel="Channel46KidsTV.mnc">
+    <title lang="en">07:20Enchantimals</title>
+    <desc lang="en">Broadcast of 07:20Enchantimals on Channel46Kids TV</desc>
   </programme>
   <programme start="20260822021500 +0700" stop="20260822024000 +0700" channel="Channel47Dreamworks.mnc">
     <title lang="en">02:40</title>
@@ -1500,13 +1500,9 @@
     <title lang="en">05:50Dew Drops Diaries</title>
     <desc lang="en">Broadcast of 05:50Dew Drops Diaries on Channel47Dreamworks</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822022500 +0700" channel="Channel49Nickelodeon.mnc">
-    <title lang="en">02:25</title>
-    <desc lang="en">Broadcast of 02:25 on Channel49Nickelodeon</desc>
-  </programme>
   <programme start="20260822022500 +0700" stop="20260822025000 +0700" channel="Channel49Nickelodeon.mnc">
-    <title lang="en">02:50iCarly</title>
-    <desc lang="en">Broadcast of 02:50iCarly on Channel49Nickelodeon</desc>
+    <title lang="en">02:50</title>
+    <desc lang="en">Broadcast of 02:50 on Channel49Nickelodeon</desc>
   </programme>
   <programme start="20260822025000 +0700" stop="20260822031000 +0700" channel="Channel49Nickelodeon.mnc">
     <title lang="en">03:10Victorious</title>
@@ -1536,9 +1532,13 @@
     <title lang="en">05:35The Marsupilamis</title>
     <desc lang="en">Broadcast of 05:35The Marsupilamis on Channel49Nickelodeon</desc>
   </programme>
-  <programme start="20260822053500 +0700" stop="20260822063500 +0700" channel="Channel49Nickelodeon.mnc">
+  <programme start="20260822053500 +0700" stop="20260822055500 +0700" channel="Channel49Nickelodeon.mnc">
     <title lang="en">05:55Best And Bester</title>
     <desc lang="en">Broadcast of 05:55Best And Bester on Channel49Nickelodeon</desc>
+  </programme>
+  <programme start="20260822055500 +0700" stop="20260822065500 +0700" channel="Channel49Nickelodeon.mnc">
+    <title lang="en">06:20Best And Bester</title>
+    <desc lang="en">Broadcast of 06:20Best And Bester on Channel49Nickelodeon</desc>
   </programme>
   <programme start="20260822013000 +0700" stop="20260822030000 +0700" channel="Channel78Indosiar.mnc">
     <title lang="en">03:00</title>
@@ -1700,13 +1700,9 @@
     <title lang="en">17:30Upin &amp; Ipin</title>
     <desc lang="en">Broadcast of 17:30Upin &amp; Ipin on Channel82MNCTV</desc>
   </programme>
-  <programme start="20260822014500 +0700" stop="20260822023000 +0700" channel="Channel83iNews.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel83iNews</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822031500 +0700" channel="Channel83iNews.mnc">
-    <title lang="en">03:15Special Report</title>
-    <desc lang="en">Broadcast of 03:15Special Report on Channel83iNews</desc>
+    <title lang="en">03:15</title>
+    <desc lang="en">Broadcast of 03:15 on Channel83iNews</desc>
   </programme>
   <programme start="20260822031500 +0700" stop="20260822040000 +0700" channel="Channel83iNews.mnc">
     <title lang="en">04:00Realita</title>
@@ -1736,17 +1732,17 @@
     <title lang="en">07:30iNews Update</title>
     <desc lang="en">Broadcast of 07:30iNews Update on Channel83iNews</desc>
   </programme>
-  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel83iNews.mnc">
+  <programme start="20260822073000 +0700" stop="20260822080000 +0700" channel="Channel83iNews.mnc">
     <title lang="en">08:00Breaking News</title>
     <desc lang="en">Broadcast of 08:00Breaking News on Channel83iNews</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel84SindoNewsTV.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel84Sindo News TV</desc>
+  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel83iNews.mnc">
+    <title lang="en">09:00Realita</title>
+    <desc lang="en">Broadcast of 09:00Realita on Channel83iNews</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822033000 +0700" channel="Channel84SindoNewsTV.mnc">
-    <title lang="en">03:30SINDO Prime Weekend</title>
-    <desc lang="en">Broadcast of 03:30SINDO Prime Weekend on Channel84Sindo News TV</desc>
+    <title lang="en">03:30</title>
+    <desc lang="en">Broadcast of 03:30 on Channel84Sindo News TV</desc>
   </programme>
   <programme start="20260822033000 +0700" stop="20260822040000 +0700" channel="Channel84SindoNewsTV.mnc">
     <title lang="en">04:00iNews Malam</title>
@@ -1776,9 +1772,13 @@
     <title lang="en">10:00Special Report</title>
     <desc lang="en">Broadcast of 10:00Special Report on Channel84Sindo News TV</desc>
   </programme>
-  <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel84SindoNewsTV.mnc">
+  <programme start="20260822100000 +0700" stop="20260822103000 +0700" channel="Channel84SindoNewsTV.mnc">
     <title lang="en">10:30Autotech</title>
     <desc lang="en">Broadcast of 10:30Autotech on Channel84Sindo News TV</desc>
+  </programme>
+  <programme start="20260822103000 +0700" stop="20260822113000 +0700" channel="Channel84SindoNewsTV.mnc">
+    <title lang="en">12:00SINDO Siang</title>
+    <desc lang="en">Broadcast of 12:00SINDO Siang on Channel84Sindo News TV</desc>
   </programme>
   <programme start="20260822020000 +0700" stop="20260822030000 +0700" channel="Channel86Entertainment.mnc">
     <title lang="en">03:00</title>
@@ -2460,13 +2460,9 @@
     <title lang="en">14:30V-League 2025-2026: Womens</title>
     <desc lang="en">Broadcast of 14:30V-League 2025-2026: Womens on Channel102Sportstars</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel103BTV.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel103BTV</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel103BTV.mnc">
-    <title lang="en">03:00Berita Kriminal</title>
-    <desc lang="en">Broadcast of 03:00Berita Kriminal on Channel103BTV</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel103BTV</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel103BTV.mnc">
     <title lang="en">03:30Berita Satu Sore</title>
@@ -2496,17 +2492,17 @@
     <title lang="en">07:00Saat Teduh Bersama GMS</title>
     <desc lang="en">Broadcast of 07:00Saat Teduh Bersama GMS on Channel103BTV</desc>
   </programme>
-  <programme start="20260822070000 +0700" stop="20260822080000 +0700" channel="Channel103BTV.mnc">
+  <programme start="20260822070000 +0700" stop="20260822073000 +0700" channel="Channel103BTV.mnc">
     <title lang="en">07:30Jalan Dakwah</title>
     <desc lang="en">Broadcast of 07:30Jalan Dakwah on Channel103BTV</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel105TawafTV.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel105Tawaf TV</desc>
+  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel103BTV.mnc">
+    <title lang="en">07:45FYI</title>
+    <desc lang="en">Broadcast of 07:45FYI on Channel103BTV</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel105TawafTV.mnc">
-    <title lang="en">03:00DMI TV</title>
-    <desc lang="en">Broadcast of 03:00DMI TV on Channel105Tawaf TV</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel105Tawaf TV</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel105TawafTV.mnc">
     <title lang="en">03:30DMI TV</title>
@@ -2536,9 +2532,13 @@
     <title lang="en">07:00DMI TV</title>
     <desc lang="en">Broadcast of 07:00DMI TV on Channel105Tawaf TV</desc>
   </programme>
-  <programme start="20260822070000 +0700" stop="20260822080000 +0700" channel="Channel105TawafTV.mnc">
+  <programme start="20260822070000 +0700" stop="20260822073000 +0700" channel="Channel105TawafTV.mnc">
     <title lang="en">07:30DMI TV</title>
     <desc lang="en">Broadcast of 07:30DMI TV on Channel105Tawaf TV</desc>
+  </programme>
+  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel105TawafTV.mnc">
+    <title lang="en">08:00DMI TV</title>
+    <desc lang="en">Broadcast of 08:00DMI TV on Channel105Tawaf TV</desc>
   </programme>
   <programme start="20260822020000 +0700" stop="20260822030000 +0700" channel="Channel106KompasTV.mnc">
     <title lang="en">03:00</title>
@@ -2580,13 +2580,9 @@
     <title lang="en">12:30Jurnal Nusantara</title>
     <desc lang="en">Broadcast of 12:30Jurnal Nusantara on Channel106Kompas TV</desc>
   </programme>
-  <programme start="20260822020500 +0700" stop="20260822023000 +0700" channel="Channel107MetroTV.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel107Metro TV</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel107MetroTV.mnc">
-    <title lang="en">03:00Metro Hari Ini</title>
-    <desc lang="en">Broadcast of 03:00Metro Hari Ini on Channel107Metro TV</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel107Metro TV</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822030500 +0700" channel="Channel107MetroTV.mnc">
     <title lang="en">03:05Headline News</title>
@@ -2616,17 +2612,17 @@
     <title lang="en">05:05Headline News</title>
     <desc lang="en">Broadcast of 05:05Headline News on Channel107Metro TV</desc>
   </programme>
-  <programme start="20260822050500 +0700" stop="20260822060500 +0700" channel="Channel107MetroTV.mnc">
+  <programme start="20260822050500 +0700" stop="20260822053000 +0700" channel="Channel107MetroTV.mnc">
     <title lang="en">05:30Top News</title>
     <desc lang="en">Broadcast of 05:30Top News on Channel107Metro TV</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel110Trans7.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel110Trans 7</desc>
+  <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel107MetroTV.mnc">
+    <title lang="en">06:00Top News</title>
+    <desc lang="en">Broadcast of 06:00Top News on Channel107Metro TV</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822031500 +0700" channel="Channel110Trans7.mnc">
-    <title lang="en">03:15On The Spot</title>
-    <desc lang="en">Broadcast of 03:15On The Spot on Channel110Trans 7</desc>
+    <title lang="en">03:15</title>
+    <desc lang="en">Broadcast of 03:15 on Channel110Trans 7</desc>
   </programme>
   <programme start="20260822031500 +0700" stop="20260822040000 +0700" channel="Channel110Trans7.mnc">
     <title lang="en">04:00LOL ComediHa!</title>
@@ -2659,6 +2655,10 @@
   <programme start="20260822091500 +0700" stop="20260822101500 +0700" channel="Channel110Trans7.mnc">
     <title lang="en">10:15Heits Abis</title>
     <desc lang="en">Broadcast of 10:15Heits Abis on Channel110Trans 7</desc>
+  </programme>
+  <programme start="20260822101500 +0700" stop="20260822111500 +0700" channel="Channel110Trans7.mnc">
+    <title lang="en">11:15Obrolan Tiap Waktu</title>
+    <desc lang="en">Broadcast of 11:15Obrolan Tiap Waktu on Channel110Trans 7</desc>
   </programme>
   <programme start="20260822020000 +0700" stop="20260822043000 +0700" channel="Channel111MusicTV.mnc">
     <title lang="en">04:30</title>
@@ -2860,13 +2860,9 @@
     <title lang="en">11:00TVRI</title>
     <desc lang="en">Broadcast of 11:00TVRI on Channel118TVRI</desc>
   </programme>
-  <programme start="20260822003500 +0700" stop="20260822023500 +0700" channel="Channel154AXN.mnc">
-    <title lang="en">02:35</title>
-    <desc lang="en">Broadcast of 02:35 on Channel154AXN</desc>
-  </programme>
   <programme start="20260822023500 +0700" stop="20260822031500 +0700" channel="Channel154AXN.mnc">
-    <title lang="en">03:15Twisted Metal S2, Ep 1</title>
-    <desc lang="en">Broadcast of 03:15Twisted Metal S2, Ep 1 on Channel154AXN</desc>
+    <title lang="en">03:15</title>
+    <desc lang="en">Broadcast of 03:15 on Channel154AXN</desc>
   </programme>
   <programme start="20260822031500 +0700" stop="20260822041000 +0700" channel="Channel154AXN.mnc">
     <title lang="en">04:10The Rookie: Feds S1, Ep 7</title>
@@ -2896,17 +2892,17 @@
     <title lang="en">09:05Coroner S2, Ep 6</title>
     <desc lang="en">Broadcast of 09:05Coroner S2, Ep 6 on Channel154AXN</desc>
   </programme>
-  <programme start="20260822090500 +0700" stop="20260822100500 +0700" channel="Channel154AXN.mnc">
+  <programme start="20260822090500 +0700" stop="20260822095500 +0700" channel="Channel154AXN.mnc">
     <title lang="en">09:55FBI S8, Ep 15</title>
     <desc lang="en">Broadcast of 09:55FBI S8, Ep 15 on Channel154AXN</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel157Animax.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel157Animax</desc>
+  <programme start="20260822095500 +0700" stop="20260822105500 +0700" channel="Channel154AXN.mnc">
+    <title lang="en">12:00Ghostbusters: Frozen Empire</title>
+    <desc lang="en">Broadcast of 12:00Ghostbusters: Frozen Empire on Channel154AXN</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel157Animax.mnc">
-    <title lang="en">03:00Oshi No Ko, Ep 15</title>
-    <desc lang="en">Broadcast of 03:00Oshi No Ko, Ep 15 on Channel157Animax</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel157Animax</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel157Animax.mnc">
     <title lang="en">03:30Oshi No Ko, Ep 16</title>
@@ -2936,9 +2932,13 @@
     <title lang="en">06:30The Faraway Paladin, Ep 7</title>
     <desc lang="en">Broadcast of 06:30The Faraway Paladin, Ep 7 on Channel157Animax</desc>
   </programme>
-  <programme start="20260822063000 +0700" stop="20260822073000 +0700" channel="Channel157Animax.mnc">
+  <programme start="20260822063000 +0700" stop="20260822070000 +0700" channel="Channel157Animax.mnc">
     <title lang="en">07:00Black Clover S1, Ep 28</title>
     <desc lang="en">Broadcast of 07:00Black Clover S1, Ep 28 on Channel157Animax</desc>
+  </programme>
+  <programme start="20260822070000 +0700" stop="20260822080000 +0700" channel="Channel157Animax.mnc">
+    <title lang="en">07:30Black Clover S1, Ep 29</title>
+    <desc lang="en">Broadcast of 07:30Black Clover S1, Ep 29 on Channel157Animax</desc>
   </programme>
   <programme start="20260822014500 +0700" stop="20260822050000 +0700" channel="Channel158tvN.mnc">
     <title lang="en">05:00</title>
@@ -3180,13 +3180,9 @@
     <title lang="en">08:25How Did They Fix That? S2, Ep 5</title>
     <desc lang="en">Broadcast of 08:25How Did They Fix That? S2, Ep 5 on Channel201Global Trekker</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel202OutdoorChannel.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel202Outdoor Channel</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel202OutdoorChannel.mnc">
-    <title lang="en">03:00Strangers In Danger S1, Ep 2</title>
-    <desc lang="en">Broadcast of 03:00Strangers In Danger S1, Ep 2 on Channel202Outdoor Channel</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel202Outdoor Channel</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822040000 +0700" channel="Channel202OutdoorChannel.mnc">
     <title lang="en">04:00Brave Wilderness S2, Ep 17</title>
@@ -3216,9 +3212,13 @@
     <title lang="en">08:30Strangers In Danger S1, Ep 1</title>
     <desc lang="en">Broadcast of 08:30Strangers In Danger S1, Ep 1 on Channel202Outdoor Channel</desc>
   </programme>
-  <programme start="20260822083000 +0700" stop="20260822093000 +0700" channel="Channel202OutdoorChannel.mnc">
+  <programme start="20260822083000 +0700" stop="20260822090000 +0700" channel="Channel202OutdoorChannel.mnc">
     <title lang="en">09:00Strangers In Danger S1, Ep 2</title>
     <desc lang="en">Broadcast of 09:00Strangers In Danger S1, Ep 2 on Channel202Outdoor Channel</desc>
+  </programme>
+  <programme start="20260822090000 +0700" stop="20260822100000 +0700" channel="Channel202OutdoorChannel.mnc">
+    <title lang="en">10:00Brave Wilderness S2, Ep 17</title>
+    <desc lang="en">Broadcast of 10:00Brave Wilderness S2, Ep 17 on Channel202Outdoor Channel</desc>
   </programme>
   <programme start="20260822021500 +0700" stop="20260822031000 +0700" channel="Channel204LoveNature.mnc">
     <title lang="en">03:10</title>
@@ -3260,13 +3260,9 @@
     <title lang="en">10:50The Enchanted Forests S1, Ep 5</title>
     <desc lang="en">Broadcast of 10:50The Enchanted Forests S1, Ep 5 on Channel204Love Nature</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel205CGTNDocumentary.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel205CGTN Documentary</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel205CGTNDocumentary.mnc">
-    <title lang="en">03:00Pixel Collage</title>
-    <desc lang="en">Broadcast of 03:00Pixel Collage on Channel205CGTN Documentary</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel205CGTN Documentary</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822040000 +0700" channel="Channel205CGTNDocumentary.mnc">
     <title lang="en">04:00Remarkable Construction, Ep 1</title>
@@ -3300,13 +3296,13 @@
     <title lang="en">11:00Remarkable Construction, Ep 2</title>
     <desc lang="en">Broadcast of 11:00Remarkable Construction, Ep 2 on Channel205CGTN Documentary</desc>
   </programme>
-  <programme start="20260822013000 +0700" stop="20260822022500 +0700" channel="Channel206History.mnc">
-    <title lang="en">02:25</title>
-    <desc lang="en">Broadcast of 02:25 on Channel206History</desc>
+  <programme start="20260822110000 +0700" stop="20260822120000 +0700" channel="Channel205CGTNDocumentary.mnc">
+    <title lang="en">12:00Remarkable Construction, Ep 3</title>
+    <desc lang="en">Broadcast of 12:00Remarkable Construction, Ep 3 on Channel205CGTN Documentary</desc>
   </programme>
   <programme start="20260822022500 +0700" stop="20260822032000 +0700" channel="Channel206History.mnc">
-    <title lang="en">03:20Lost U-Boats Of WW2, Ep 1</title>
-    <desc lang="en">Broadcast of 03:20Lost U-Boats Of WW2, Ep 1 on Channel206History</desc>
+    <title lang="en">03:20</title>
+    <desc lang="en">Broadcast of 03:20 on Channel206History</desc>
   </programme>
   <programme start="20260822032000 +0700" stop="20260822041500 +0700" channel="Channel206History.mnc">
     <title lang="en">04:15Alone S11, Ep 2</title>
@@ -3336,9 +3332,13 @@
     <title lang="en">09:50WW2 With Tom Hanks, Ep 5</title>
     <desc lang="en">Broadcast of 09:50WW2 With Tom Hanks, Ep 5 on Channel206History</desc>
   </programme>
-  <programme start="20260822095000 +0700" stop="20260822105000 +0700" channel="Channel206History.mnc">
+  <programme start="20260822095000 +0700" stop="20260822104500 +0700" channel="Channel206History.mnc">
     <title lang="en">10:45WW2 With Tom Hanks, Ep 6</title>
     <desc lang="en">Broadcast of 10:45WW2 With Tom Hanks, Ep 6 on Channel206History</desc>
+  </programme>
+  <programme start="20260822104500 +0700" stop="20260822114500 +0700" channel="Channel206History.mnc">
+    <title lang="en">11:40Curse Of Oak Island S12, Ep 25</title>
+    <desc lang="en">Broadcast of 11:40Curse Of Oak Island S12, Ep 25 on Channel206History</desc>
   </programme>
   <programme start="20260822021000 +0700" stop="20260822030500 +0700" channel="Channel207CrimeInvestigation.mnc">
     <title lang="en">03:05</title>
@@ -3380,13 +3380,9 @@
     <title lang="en">09:30Women On Death Row, Ep 3</title>
     <desc lang="en">Broadcast of 09:30Women On Death Row, Ep 3 on Channel207Crime Investigation</desc>
   </programme>
-  <programme start="20260822014000 +0700" stop="20260822022500 +0700" channel="Channel240RockEntertainment.mnc">
-    <title lang="en">02:25</title>
-    <desc lang="en">Broadcast of 02:25 on Channel240Rock Entertainment</desc>
-  </programme>
   <programme start="20260822022500 +0700" stop="20260822031000 +0700" channel="Channel240RockEntertainment.mnc">
-    <title lang="en">03:10Next Level Chef S4, Ep 12</title>
-    <desc lang="en">Broadcast of 03:10Next Level Chef S4, Ep 12 on Channel240Rock Entertainment</desc>
+    <title lang="en">03:10</title>
+    <desc lang="en">Broadcast of 03:10 on Channel240Rock Entertainment</desc>
   </programme>
   <programme start="20260822031000 +0700" stop="20260822035500 +0700" channel="Channel240RockEntertainment.mnc">
     <title lang="en">03:55Next Level Chef S4, Ep 13</title>
@@ -3416,9 +3412,13 @@
     <title lang="en">08:25Next Level Chef S4, Ep 5</title>
     <desc lang="en">Broadcast of 08:25Next Level Chef S4, Ep 5 on Channel240Rock Entertainment</desc>
   </programme>
-  <programme start="20260822082500 +0700" stop="20260822092500 +0700" channel="Channel240RockEntertainment.mnc">
+  <programme start="20260822082500 +0700" stop="20260822091000 +0700" channel="Channel240RockEntertainment.mnc">
     <title lang="en">09:10Next Level Chef S4, Ep 6</title>
     <desc lang="en">Broadcast of 09:10Next Level Chef S4, Ep 6 on Channel240Rock Entertainment</desc>
+  </programme>
+  <programme start="20260822091000 +0700" stop="20260822101000 +0700" channel="Channel240RockEntertainment.mnc">
+    <title lang="en">09:55Next Level Chef S4, Ep 7</title>
+    <desc lang="en">Broadcast of 09:55Next Level Chef S4, Ep 7 on Channel240Rock Entertainment</desc>
   </programme>
   <programme start="20260822021500 +0700" stop="20260822041500 +0700" channel="Channel248RockAction.mnc">
     <title lang="en">04:15</title>
@@ -3460,13 +3460,9 @@
     <title lang="en">19:55U-571</title>
     <desc lang="en">Broadcast of 19:55U-571 on Channel248Rock Action</desc>
   </programme>
-  <programme start="20260822000000 +0700" stop="20260822023000 +0700" channel="Channel304FightSports.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel304Fight Sports</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel304FightSports.mnc">
-    <title lang="en">03:00BWF Martial Arts S4, Ep 2</title>
-    <desc lang="en">Broadcast of 03:00BWF Martial Arts S4, Ep 2 on Channel304Fight Sports</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel304Fight Sports</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel304FightSports.mnc">
     <title lang="en">03:30Knockouts!: Martinez Vs Barker</title>
@@ -3496,9 +3492,13 @@
     <title lang="en">09:00BWF Martial Arts S4, Ep 2</title>
     <desc lang="en">Broadcast of 09:00BWF Martial Arts S4, Ep 2 on Channel304Fight Sports</desc>
   </programme>
-  <programme start="20260822090000 +0700" stop="20260822100000 +0700" channel="Channel304FightSports.mnc">
+  <programme start="20260822090000 +0700" stop="20260822093000 +0700" channel="Channel304FightSports.mnc">
     <title lang="en">09:30Knockouts!: Martinez Vs Barker</title>
     <desc lang="en">Broadcast of 09:30Knockouts!: Martinez Vs Barker on Channel304Fight Sports</desc>
+  </programme>
+  <programme start="20260822093000 +0700" stop="20260822103000 +0700" channel="Channel304FightSports.mnc">
+    <title lang="en">10:00FS Grand Sumo S31, Ep 2</title>
+    <desc lang="en">Broadcast of 10:00FS Grand Sumo S31, Ep 2 on Channel304Fight Sports</desc>
   </programme>
   <programme start="20260822010000 +0700" stop="20260822030000 +0700" channel="Channel307SPOTV.mnc">
     <title lang="en">03:00</title>
@@ -3580,13 +3580,9 @@
     <title lang="en">19:002026 The Asian Tournament (L)</title>
     <desc lang="en">Broadcast of 19:002026 The Asian Tournament (L) on Channel308SPOTV 2</desc>
   </programme>
-  <programme start="20260822002500 +0700" stop="20260822022500 +0700" channel="Channel309beINSports1.mnc">
-    <title lang="en">02:25</title>
-    <desc lang="en">Broadcast of 02:25 on Channel309beIN Sports 1</desc>
-  </programme>
   <programme start="20260822022500 +0700" stop="20260822043000 +0700" channel="Channel309beINSports1.mnc">
-    <title lang="en">04:30LaLiga 2026/27: ESP Vs RMA (L)</title>
-    <desc lang="en">Broadcast of 04:30LaLiga 2026/27: ESP Vs RMA (L) on Channel309beIN Sports 1</desc>
+    <title lang="en">04:30</title>
+    <desc lang="en">Broadcast of 04:30 on Channel309beIN Sports 1</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822050000 +0700" channel="Channel309beINSports1.mnc">
     <title lang="en">05:00FIA European Truck Racing HL</title>
@@ -3616,9 +3612,13 @@
     <title lang="en">09:30Mini Match LaLiga: BET Vs RSO</title>
     <desc lang="en">Broadcast of 09:30Mini Match LaLiga: BET Vs RSO on Channel309beIN Sports 1</desc>
   </programme>
-  <programme start="20260822093000 +0700" stop="20260822103000 +0700" channel="Channel309beINSports1.mnc">
+  <programme start="20260822093000 +0700" stop="20260822100000 +0700" channel="Channel309beINSports1.mnc">
     <title lang="en">10:00FIA World Rally Magazine Show</title>
     <desc lang="en">Broadcast of 10:00FIA World Rally Magazine Show on Channel309beIN Sports 1</desc>
+  </programme>
+  <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel309beINSports1.mnc">
+    <title lang="en">10:35F1 Academy Qual.: Netherlands</title>
+    <desc lang="en">Broadcast of 10:35F1 Academy Qual.: Netherlands on Channel309beIN Sports 1</desc>
   </programme>
   <programme start="20260822012500 +0700" stop="20260822033000 +0700" channel="Channel310beINSports2.mnc">
     <title lang="en">03:30</title>
@@ -3820,13 +3820,9 @@
     <title lang="en">08:00Lunch With Us, Ep 5</title>
     <desc lang="en">Broadcast of 08:00Lunch With Us, Ep 5 on Channel330Channel News Asia</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel331Al Jazeera English</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
-    <title lang="en">03:00A Changing World?: Zhou Bo</title>
-    <desc lang="en">Broadcast of 03:00A Changing World?: Zhou Bo on Channel331Al Jazeera English</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel331Al Jazeera English</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
     <title lang="en">03:30News (L)</title>
@@ -3856,17 +3852,17 @@
     <title lang="en">08:00NewsHour</title>
     <desc lang="en">Broadcast of 08:00NewsHour on Channel331Al Jazeera English</desc>
   </programme>
-  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
+  <programme start="20260822080000 +0700" stop="20260822083000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
     <title lang="en">08:30News (L)</title>
     <desc lang="en">Broadcast of 08:30News (L) on Channel331Al Jazeera English</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel332BBCWorldNews.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel332BBC World News</desc>
+  <programme start="20260822083000 +0700" stop="20260822093000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
+    <title lang="en">09:00All Hail The Military</title>
+    <desc lang="en">Broadcast of 09:00All Hail The Military on Channel331Al Jazeera English</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel332BBCWorldNews.mnc">
-    <title lang="en">03:00The Travel Show: USA, Pt 2</title>
-    <desc lang="en">Broadcast of 03:00The Travel Show: USA, Pt 2 on Channel332BBC World News</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel332BBC World News</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822040000 +0700" channel="Channel332BBCWorldNews.mnc">
     <title lang="en">04:00BBC News</title>
@@ -3896,21 +3892,17 @@
     <title lang="en">07:30BBC News</title>
     <desc lang="en">Broadcast of 07:30BBC News on Channel332BBC World News</desc>
   </programme>
-  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel332BBCWorldNews.mnc">
+  <programme start="20260822073000 +0700" stop="20260822080000 +0700" channel="Channel332BBCWorldNews.mnc">
     <title lang="en">08:00World's Ultimate Adv.: Wild</title>
     <desc lang="en">Broadcast of 08:00World's Ultimate Adv.: Wild on Channel332BBC World News</desc>
   </programme>
-  <programme start="20260822020500 +0700" stop="20260822023000 +0700" channel="Channel333EURONEWS.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel333EURONEWS</desc>
-  </programme>
-  <programme start="20260822023000 +0700" stop="20260822023800 +0700" channel="Channel333EURONEWS.mnc">
-    <title lang="en">02:385 Minutes</title>
-    <desc lang="en">Broadcast of 02:385 Minutes on Channel333EURONEWS</desc>
+  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel332BBCWorldNews.mnc">
+    <title lang="en">08:30BBC News</title>
+    <desc lang="en">Broadcast of 08:30BBC News on Channel332BBC World News</desc>
   </programme>
   <programme start="20260822023800 +0700" stop="20260822024800 +0700" channel="Channel333EURONEWS.mnc">
-    <title lang="en">02:48Made In Europe</title>
-    <desc lang="en">Broadcast of 02:48Made In Europe on Channel333EURONEWS</desc>
+    <title lang="en">02:48</title>
+    <desc lang="en">Broadcast of 02:48 on Channel333EURONEWS</desc>
   </programme>
   <programme start="20260822024800 +0700" stop="20260822030000 +0700" channel="Channel333EURONEWS.mnc">
     <title lang="en">03:00News</title>
@@ -3936,9 +3928,17 @@
     <title lang="en">04:055 Minutes</title>
     <desc lang="en">Broadcast of 04:055 Minutes on Channel333EURONEWS</desc>
   </programme>
-  <programme start="20260822040500 +0700" stop="20260822050500 +0700" channel="Channel333EURONEWS.mnc">
+  <programme start="20260822040500 +0700" stop="20260822043000 +0700" channel="Channel333EURONEWS.mnc">
     <title lang="en">04:3012 Minutes With</title>
     <desc lang="en">Broadcast of 04:3012 Minutes With on Channel333EURONEWS</desc>
+  </programme>
+  <programme start="20260822043000 +0700" stop="20260822043800 +0700" channel="Channel333EURONEWS.mnc">
+    <title lang="en">04:385 Minutes</title>
+    <desc lang="en">Broadcast of 04:385 Minutes on Channel333EURONEWS</desc>
+  </programme>
+  <programme start="20260822043800 +0700" stop="20260822053800 +0700" channel="Channel333EURONEWS.mnc">
+    <title lang="en">04:48Made In Europe</title>
+    <desc lang="en">Broadcast of 04:48Made In Europe on Channel333EURONEWS</desc>
   </programme>
   <programme start="20260822020000 +0700" stop="20260822030000 +0700" channel="Channel335FOXNews.mnc">
     <title lang="en">03:00</title>
@@ -4020,13 +4020,9 @@
     <title lang="en">09:30Executive Decisions</title>
     <desc lang="en">Broadcast of 09:30Executive Decisions on Channel337CNBC</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel338Bloomberg.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel338Bloomberg</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel338Bloomberg.mnc">
-    <title lang="en">03:00The Circuit</title>
-    <desc lang="en">Broadcast of 03:00The Circuit on Channel338Bloomberg</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel338Bloomberg</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel338Bloomberg.mnc">
     <title lang="en">03:30Leaders With Francine Lacqua</title>
@@ -4056,17 +4052,17 @@
     <title lang="en">07:30Wealth With David Rubenstein</title>
     <desc lang="en">Broadcast of 07:30Wealth With David Rubenstein on Channel338Bloomberg</desc>
   </programme>
-  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel338Bloomberg.mnc">
+  <programme start="20260822073000 +0700" stop="20260822080000 +0700" channel="Channel338Bloomberg.mnc">
     <title lang="en">08:00Wealth With David Rubenstein</title>
     <desc lang="en">Broadcast of 08:00Wealth With David Rubenstein on Channel338Bloomberg</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel350ABCAustralia.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel350ABC Australia</desc>
+  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel338Bloomberg.mnc">
+    <title lang="en">08:30Bloomberg Originals</title>
+    <desc lang="en">Broadcast of 08:30Bloomberg Originals on Channel338Bloomberg</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel350ABCAustralia.mnc">
-    <title lang="en">03:00That Pacific Sports Show</title>
-    <desc lang="en">Broadcast of 03:00That Pacific Sports Show on Channel350ABC Australia</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel350ABC Australia</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822040000 +0700" channel="Channel350ABCAustralia.mnc">
     <title lang="en">04:00A Brief History Of Cricket</title>
@@ -4096,17 +4092,17 @@
     <title lang="en">08:30Back Roads</title>
     <desc lang="en">Broadcast of 08:30Back Roads on Channel350ABC Australia</desc>
   </programme>
-  <programme start="20260822083000 +0700" stop="20260822093000 +0700" channel="Channel350ABCAustralia.mnc">
+  <programme start="20260822083000 +0700" stop="20260822090000 +0700" channel="Channel350ABCAustralia.mnc">
     <title lang="en">09:00Landline</title>
     <desc lang="en">Broadcast of 09:00Landline on Channel350ABC Australia</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel351Arirang.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel351Arirang</desc>
+  <programme start="20260822090000 +0700" stop="20260822100000 +0700" channel="Channel350ABCAustralia.mnc">
+    <title lang="en">09:30ABC News At Noon</title>
+    <desc lang="en">Broadcast of 09:30ABC News At Noon on Channel350ABC Australia</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel351Arirang.mnc">
-    <title lang="en">03:00The Grand Heritage K-ASMR</title>
-    <desc lang="en">Broadcast of 03:00The Grand Heritage K-ASMR on Channel351Arirang</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel351Arirang</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822040000 +0700" channel="Channel351Arirang.mnc">
     <title lang="en">04:00PerformArts Reload</title>
@@ -4136,17 +4132,17 @@
     <title lang="en">07:30Arirang Special</title>
     <desc lang="en">Broadcast of 07:30Arirang Special on Channel351Arirang</desc>
   </programme>
-  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel351Arirang.mnc">
+  <programme start="20260822073000 +0700" stop="20260822080000 +0700" channel="Channel351Arirang.mnc">
     <title lang="en">08:00The Art Of Pairing</title>
     <desc lang="en">Broadcast of 08:00The Art Of Pairing on Channel351Arirang</desc>
   </programme>
-  <programme start="20260822021500 +0700" stop="20260822023000 +0700" channel="Channel352France24English.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel352France 24 English</desc>
+  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel351Arirang.mnc">
+    <title lang="en">08:15K-Culture Minutes: K-Now</title>
+    <desc lang="en">Broadcast of 08:15K-Culture Minutes: K-Now on Channel351Arirang</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822024500 +0700" channel="Channel352France24English.mnc">
-    <title lang="en">02:45Bulletin (L)</title>
-    <desc lang="en">Broadcast of 02:45Bulletin (L) on Channel352France 24 English</desc>
+    <title lang="en">02:45</title>
+    <desc lang="en">Broadcast of 02:45 on Channel352France 24 English</desc>
   </programme>
   <programme start="20260822024500 +0700" stop="20260822030000 +0700" channel="Channel352France24English.mnc">
     <title lang="en">03:00French Connections</title>
@@ -4176,17 +4172,17 @@
     <title lang="en">04:30France In Focus</title>
     <desc lang="en">Broadcast of 04:30France In Focus on Channel352France 24 English</desc>
   </programme>
-  <programme start="20260822043000 +0700" stop="20260822053000 +0700" channel="Channel352France24English.mnc">
+  <programme start="20260822043000 +0700" stop="20260822044500 +0700" channel="Channel352France24English.mnc">
     <title lang="en">04:45Bulletin (L)</title>
     <desc lang="en">Broadcast of 04:45Bulletin (L) on Channel352France 24 English</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel353CGTN.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel353CGTN</desc>
+  <programme start="20260822044500 +0700" stop="20260822054500 +0700" channel="Channel352France24English.mnc">
+    <title lang="en">05:00Arts24</title>
+    <desc lang="en">Broadcast of 05:00Arts24 on Channel352France 24 English</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel353CGTN.mnc">
-    <title lang="en">03:00Travelogue</title>
-    <desc lang="en">Broadcast of 03:00Travelogue on Channel353CGTN</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel353CGTN</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel353CGTN.mnc">
     <title lang="en">03:30The World Today</title>
@@ -4216,17 +4212,17 @@
     <title lang="en">07:00Assignment Asia</title>
     <desc lang="en">Broadcast of 07:00Assignment Asia on Channel353CGTN</desc>
   </programme>
-  <programme start="20260822070000 +0700" stop="20260822080000 +0700" channel="Channel353CGTN.mnc">
+  <programme start="20260822070000 +0700" stop="20260822073000 +0700" channel="Channel353CGTN.mnc">
     <title lang="en">07:30The World Today</title>
     <desc lang="en">Broadcast of 07:30The World Today on Channel353CGTN</desc>
   </programme>
-  <programme start="20260822014500 +0700" stop="20260822023500 +0700" channel="Channel354NHKWorldPremium.mnc">
-    <title lang="en">02:35</title>
-    <desc lang="en">Broadcast of 02:35 on Channel354NHK World Premium</desc>
+  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel353CGTN.mnc">
+    <title lang="en">08:00The Agenda</title>
+    <desc lang="en">Broadcast of 08:00The Agenda on Channel353CGTN</desc>
   </programme>
   <programme start="20260822023500 +0700" stop="20260822025500 +0700" channel="Channel354NHKWorldPremium.mnc">
-    <title lang="en">02:55Documentary: 20 Minutes</title>
-    <desc lang="en">Broadcast of 02:55Documentary: 20 Minutes on Channel354NHK World Premium</desc>
+    <title lang="en">02:55</title>
+    <desc lang="en">Broadcast of 02:55 on Channel354NHK World Premium</desc>
   </programme>
   <programme start="20260822025500 +0700" stop="20260822030000 +0700" channel="Channel354NHKWorldPremium.mnc">
     <title lang="en">03:00World Weather</title>
@@ -4256,9 +4252,13 @@
     <title lang="en">04:55Weather</title>
     <desc lang="en">Broadcast of 04:55Weather on Channel354NHK World Premium</desc>
   </programme>
-  <programme start="20260822045500 +0700" stop="20260822055500 +0700" channel="Channel354NHKWorldPremium.mnc">
+  <programme start="20260822045500 +0700" stop="20260822050000 +0700" channel="Channel354NHKWorldPremium.mnc">
     <title lang="en">05:00News &amp; Weather</title>
     <desc lang="en">Broadcast of 05:00News &amp; Weather on Channel354NHK World Premium</desc>
+  </programme>
+  <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel354NHKWorldPremium.mnc">
+    <title lang="en">05:45News: Good Morning, Japan</title>
+    <desc lang="en">Broadcast of 05:45News: Good Morning, Japan on Channel354NHK World Premium</desc>
   </programme>
   <programme start="20260822021000 +0700" stop="20260822025400 +0700" channel="Channel355NHKWorld.mnc">
     <title lang="en">02:54</title>
@@ -4460,13 +4460,9 @@
     <title lang="en">19:23Space Racers</title>
     <desc lang="en">Broadcast of 19:23Space Racers on Channel403BUDDY STARS HD</desc>
   </programme>
-  <programme start="20260822005500 +0700" stop="20260822023300 +0700" channel="Channel404SuperrixHD.mnc">
-    <title lang="en">02:33</title>
-    <desc lang="en">Broadcast of 02:33 on Channel404Superrix HD</desc>
-  </programme>
   <programme start="20260822023300 +0700" stop="20260822050600 +0700" channel="Channel404SuperrixHD.mnc">
-    <title lang="en">05:06Deadly Secrets: The Confession</title>
-    <desc lang="en">Broadcast of 05:06Deadly Secrets: The Confession on Channel404Superrix HD</desc>
+    <title lang="en">05:06</title>
+    <desc lang="en">Broadcast of 05:06 on Channel404Superrix HD</desc>
   </programme>
   <programme start="20260822050600 +0700" stop="20260822063100 +0700" channel="Channel404SuperrixHD.mnc">
     <title lang="en">06:31Max Und Die Wilde 7</title>
@@ -4496,9 +4492,13 @@
     <title lang="en">18:00Dawn Rider</title>
     <desc lang="en">Broadcast of 18:00Dawn Rider on Channel404Superrix HD</desc>
   </programme>
-  <programme start="20260822180000 +0700" stop="20260822190000 +0700" channel="Channel404SuperrixHD.mnc">
+  <programme start="20260822180000 +0700" stop="20260822200300 +0700" channel="Channel404SuperrixHD.mnc">
     <title lang="en">20:03Lost Souls: The Return</title>
     <desc lang="en">Broadcast of 20:03Lost Souls: The Return on Channel404Superrix HD</desc>
+  </programme>
+  <programme start="20260822200300 +0700" stop="20260822210300 +0700" channel="Channel404SuperrixHD.mnc">
+    <title lang="en">21:45Accused</title>
+    <desc lang="en">Broadcast of 21:45Accused on Channel404Superrix HD</desc>
   </programme>
   <programme start="20260822012800 +0700" stop="20260822025100 +0700" channel="Channel405UNIQUESHD.mnc">
     <title lang="en">02:51</title>
@@ -4660,13 +4660,9 @@
     <title lang="en">21:00Noryang: Deadly Sea</title>
     <desc lang="en">Broadcast of 21:00Noryang: Deadly Sea on Channel415tvN Movies HD</desc>
   </programme>
-  <programme start="20260822002500 +0700" stop="20260822022500 +0700" channel="Channel417beINSports1HD.mnc">
-    <title lang="en">02:25</title>
-    <desc lang="en">Broadcast of 02:25 on Channel417beIN Sports 1 HD</desc>
-  </programme>
   <programme start="20260822022500 +0700" stop="20260822043000 +0700" channel="Channel417beINSports1HD.mnc">
-    <title lang="en">04:30LaLiga 2026/27: ESP Vs RMA (L)</title>
-    <desc lang="en">Broadcast of 04:30LaLiga 2026/27: ESP Vs RMA (L) on Channel417beIN Sports 1 HD</desc>
+    <title lang="en">04:30</title>
+    <desc lang="en">Broadcast of 04:30 on Channel417beIN Sports 1 HD</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822050000 +0700" channel="Channel417beINSports1HD.mnc">
     <title lang="en">05:00FIA European Truck Racing HL</title>
@@ -4696,9 +4692,13 @@
     <title lang="en">09:30Mini Match LaLiga: BET Vs RSO</title>
     <desc lang="en">Broadcast of 09:30Mini Match LaLiga: BET Vs RSO on Channel417beIN Sports 1 HD</desc>
   </programme>
-  <programme start="20260822093000 +0700" stop="20260822103000 +0700" channel="Channel417beINSports1HD.mnc">
+  <programme start="20260822093000 +0700" stop="20260822100000 +0700" channel="Channel417beINSports1HD.mnc">
     <title lang="en">10:00FIA World Rally Magazine Show</title>
     <desc lang="en">Broadcast of 10:00FIA World Rally Magazine Show on Channel417beIN Sports 1 HD</desc>
+  </programme>
+  <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel417beINSports1HD.mnc">
+    <title lang="en">10:35F1 Academy Qual.: Netherlands</title>
+    <desc lang="en">Broadcast of 10:35F1 Academy Qual.: Netherlands on Channel417beIN Sports 1 HD</desc>
   </programme>
   <programme start="20260822012500 +0700" stop="20260822033000 +0700" channel="Channel418beINSports2HD.mnc">
     <title lang="en">03:30</title>
@@ -5180,13 +5180,9 @@
     <title lang="en">17:30Upin &amp; Ipin</title>
     <desc lang="en">Broadcast of 17:30Upin &amp; Ipin on Channel432MNCTV HD</desc>
   </programme>
-  <programme start="20260822014500 +0700" stop="20260822023000 +0700" channel="Channel433iNewsHD.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel433iNews HD</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822031500 +0700" channel="Channel433iNewsHD.mnc">
-    <title lang="en">03:15Special Report</title>
-    <desc lang="en">Broadcast of 03:15Special Report on Channel433iNews HD</desc>
+    <title lang="en">03:15</title>
+    <desc lang="en">Broadcast of 03:15 on Channel433iNews HD</desc>
   </programme>
   <programme start="20260822031500 +0700" stop="20260822040000 +0700" channel="Channel433iNewsHD.mnc">
     <title lang="en">04:00Realita</title>
@@ -5216,17 +5212,17 @@
     <title lang="en">07:30iNews Update</title>
     <desc lang="en">Broadcast of 07:30iNews Update on Channel433iNews HD</desc>
   </programme>
-  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel433iNewsHD.mnc">
+  <programme start="20260822073000 +0700" stop="20260822080000 +0700" channel="Channel433iNewsHD.mnc">
     <title lang="en">08:00Breaking News</title>
     <desc lang="en">Broadcast of 08:00Breaking News on Channel433iNews HD</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel434SindoNewsTVHD.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel434Sindo News TV HD</desc>
+  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel433iNewsHD.mnc">
+    <title lang="en">09:00Realita</title>
+    <desc lang="en">Broadcast of 09:00Realita on Channel433iNews HD</desc>
   </programme>
   <programme start="20260822023000 +0700" stop="20260822033000 +0700" channel="Channel434SindoNewsTVHD.mnc">
-    <title lang="en">03:30SINDO Prime Weekend</title>
-    <desc lang="en">Broadcast of 03:30SINDO Prime Weekend on Channel434Sindo News TV HD</desc>
+    <title lang="en">03:30</title>
+    <desc lang="en">Broadcast of 03:30 on Channel434Sindo News TV HD</desc>
   </programme>
   <programme start="20260822033000 +0700" stop="20260822040000 +0700" channel="Channel434SindoNewsTVHD.mnc">
     <title lang="en">04:00iNews Malam</title>
@@ -5256,9 +5252,13 @@
     <title lang="en">10:00Special Report</title>
     <desc lang="en">Broadcast of 10:00Special Report on Channel434Sindo News TV HD</desc>
   </programme>
-  <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel434SindoNewsTVHD.mnc">
+  <programme start="20260822100000 +0700" stop="20260822103000 +0700" channel="Channel434SindoNewsTVHD.mnc">
     <title lang="en">10:30Autotech</title>
     <desc lang="en">Broadcast of 10:30Autotech on Channel434Sindo News TV HD</desc>
+  </programme>
+  <programme start="20260822103000 +0700" stop="20260822113000 +0700" channel="Channel434SindoNewsTVHD.mnc">
+    <title lang="en">12:00SINDO Siang</title>
+    <desc lang="en">Broadcast of 12:00SINDO Siang on Channel434Sindo News TV HD</desc>
   </programme>
   <programme start="20260822020000 +0700" stop="20260822030000 +0700" channel="Channel436IDXHD.mnc">
     <title lang="en">03:00</title>
@@ -5460,13 +5460,9 @@
     <title lang="en">18:30Kill It: Style Creator, Ep 11</title>
     <desc lang="en">Broadcast of 18:30Kill It: Style Creator, Ep 11 on Channel446tvN HD</desc>
   </programme>
-  <programme start="20260822003500 +0700" stop="20260822023500 +0700" channel="Channel447AXNHD.mnc">
-    <title lang="en">02:35</title>
-    <desc lang="en">Broadcast of 02:35 on Channel447AXN HD</desc>
-  </programme>
   <programme start="20260822023500 +0700" stop="20260822031500 +0700" channel="Channel447AXNHD.mnc">
-    <title lang="en">03:15Twisted Metal S2, Ep 1</title>
-    <desc lang="en">Broadcast of 03:15Twisted Metal S2, Ep 1 on Channel447AXN HD</desc>
+    <title lang="en">03:15</title>
+    <desc lang="en">Broadcast of 03:15 on Channel447AXN HD</desc>
   </programme>
   <programme start="20260822031500 +0700" stop="20260822041000 +0700" channel="Channel447AXNHD.mnc">
     <title lang="en">04:10The Rookie: Feds S1, Ep 7</title>
@@ -5496,9 +5492,13 @@
     <title lang="en">09:05Coroner S2, Ep 6</title>
     <desc lang="en">Broadcast of 09:05Coroner S2, Ep 6 on Channel447AXN HD</desc>
   </programme>
-  <programme start="20260822090500 +0700" stop="20260822100500 +0700" channel="Channel447AXNHD.mnc">
+  <programme start="20260822090500 +0700" stop="20260822095500 +0700" channel="Channel447AXNHD.mnc">
     <title lang="en">09:55FBI S8, Ep 15</title>
     <desc lang="en">Broadcast of 09:55FBI S8, Ep 15 on Channel447AXN HD</desc>
+  </programme>
+  <programme start="20260822095500 +0700" stop="20260822105500 +0700" channel="Channel447AXNHD.mnc">
+    <title lang="en">12:00Ghostbusters: Frozen Empire</title>
+    <desc lang="en">Broadcast of 12:00Ghostbusters: Frozen Empire on Channel447AXN HD</desc>
   </programme>
   <programme start="20260822020000 +0700" stop="20260822030000 +0700" channel="Channel459FoodTravelHD.mnc">
     <title lang="en">03:00</title>
@@ -5540,13 +5540,9 @@
     <title lang="en">11:30MasterChef Indonesia S12</title>
     <desc lang="en">Broadcast of 11:30MasterChef Indonesia S12 on Channel459Food Travel HD</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel460OutdoorchannelHD.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel460Outdoor channel HD</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel460OutdoorchannelHD.mnc">
-    <title lang="en">03:00Strangers In Danger S1, Ep 2</title>
-    <desc lang="en">Broadcast of 03:00Strangers In Danger S1, Ep 2 on Channel460Outdoor channel HD</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel460Outdoor channel HD</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822040000 +0700" channel="Channel460OutdoorchannelHD.mnc">
     <title lang="en">04:00Brave Wilderness S2, Ep 17</title>
@@ -5576,9 +5572,13 @@
     <title lang="en">08:30Strangers In Danger S1, Ep 1</title>
     <desc lang="en">Broadcast of 08:30Strangers In Danger S1, Ep 1 on Channel460Outdoor channel HD</desc>
   </programme>
-  <programme start="20260822083000 +0700" stop="20260822093000 +0700" channel="Channel460OutdoorchannelHD.mnc">
+  <programme start="20260822083000 +0700" stop="20260822090000 +0700" channel="Channel460OutdoorchannelHD.mnc">
     <title lang="en">09:00Strangers In Danger S1, Ep 2</title>
     <desc lang="en">Broadcast of 09:00Strangers In Danger S1, Ep 2 on Channel460Outdoor channel HD</desc>
+  </programme>
+  <programme start="20260822090000 +0700" stop="20260822100000 +0700" channel="Channel460OutdoorchannelHD.mnc">
+    <title lang="en">10:00Brave Wilderness S2, Ep 17</title>
+    <desc lang="en">Broadcast of 10:00Brave Wilderness S2, Ep 17 on Channel460Outdoor channel HD</desc>
   </programme>
   <programme start="20260822021000 +0700" stop="20260822031000 +0700" channel="Channel461BBCEarthHD.mnc">
     <title lang="en">03:10</title>
@@ -5700,13 +5700,9 @@
     <title lang="en">10:50The Enchanted Forests S1, Ep 5</title>
     <desc lang="en">Broadcast of 10:50The Enchanted Forests S1, Ep 5 on Channel463Love Nature HD</desc>
   </programme>
-  <programme start="20260822020000 +0700" stop="20260822023000 +0700" channel="Channel471KidsTVHD.mnc">
-    <title lang="en">02:30</title>
-    <desc lang="en">Broadcast of 02:30 on Channel471Kids TV HD</desc>
-  </programme>
   <programme start="20260822023000 +0700" stop="20260822030000 +0700" channel="Channel471KidsTVHD.mnc">
-    <title lang="en">03:00Morphle</title>
-    <desc lang="en">Broadcast of 03:00Morphle on Channel471Kids TV HD</desc>
+    <title lang="en">03:00</title>
+    <desc lang="en">Broadcast of 03:00 on Channel471Kids TV HD</desc>
   </programme>
   <programme start="20260822030000 +0700" stop="20260822033000 +0700" channel="Channel471KidsTVHD.mnc">
     <title lang="en">03:30PAW Patrol S4</title>
@@ -5736,9 +5732,13 @@
     <title lang="en">06:30Kiko S4</title>
     <desc lang="en">Broadcast of 06:30Kiko S4 on Channel471Kids TV HD</desc>
   </programme>
-  <programme start="20260822063000 +0700" stop="20260822073000 +0700" channel="Channel471KidsTVHD.mnc">
+  <programme start="20260822063000 +0700" stop="20260822070000 +0700" channel="Channel471KidsTVHD.mnc">
     <title lang="en">07:00Kamen Rider ZEZTZ</title>
     <desc lang="en">Broadcast of 07:00Kamen Rider ZEZTZ on Channel471Kids TV HD</desc>
+  </programme>
+  <programme start="20260822070000 +0700" stop="20260822080000 +0700" channel="Channel471KidsTVHD.mnc">
+    <title lang="en">07:20Enchantimals</title>
+    <desc lang="en">Broadcast of 07:20Enchantimals on Channel471Kids TV HD</desc>
   </programme>
   <programme start="20260822022000 +0700" stop="20260822024000 +0700" channel="Channel472NickJrHD.mnc">
     <title lang="en">02:40</title>
@@ -5925,36 +5925,36 @@
     <desc lang="en">Program «Сынақ алаңы» on Balapan TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260823070500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;ЖӘДІГЕР&quot;</title>
-    <desc lang="en">Program &quot;ЖӘДІГЕР&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"ЖӘДІГЕР"</title>
+    <desc lang="en">Program "ЖӘДІГЕР" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260822104500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;ЖӘДІГЕР&quot;</title>
-    <desc lang="en">Program &quot;ЖӘДІГЕР&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"ЖӘДІГЕР"</title>
+    <desc lang="en">Program "ЖӘДІГЕР" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822104500 +0500" stop="20260823104500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;ЕЛ АЛДЫНДА&quot;</title>
-    <desc lang="en">Program &quot;ЕЛ АЛДЫНДА&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"ЕЛ АЛДЫНДА"</title>
+    <desc lang="en">Program "ЕЛ АЛДЫНДА" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822104500 +0500" stop="20260822111500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;ЕЛ АЛДЫНДА&quot;</title>
-    <desc lang="en">Program &quot;ЕЛ АЛДЫНДА&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"ЕЛ АЛДЫНДА"</title>
+    <desc lang="en">Program "ЕЛ АЛДЫНДА" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822111500 +0500" stop="20260823111500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;БЕС НӘРСЕГЕ АСЫҚ БОЛ&quot;</title>
-    <desc lang="en">Program &quot;БЕС НӘРСЕГЕ АСЫҚ БОЛ&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"БЕС НӘРСЕГЕ АСЫҚ БОЛ"</title>
+    <desc lang="en">Program "БЕС НӘРСЕГЕ АСЫҚ БОЛ" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822111500 +0500" stop="20260822131000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;БЕС НӘРСЕГЕ АСЫҚ БОЛ&quot;</title>
-    <desc lang="en">Program &quot;БЕС НӘРСЕГЕ АСЫҚ БОЛ&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"БЕС НӘРСЕГЕ АСЫҚ БОЛ"</title>
+    <desc lang="en">Program "БЕС НӘРСЕГЕ АСЫҚ БОЛ" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822131000 +0500" stop="20260823131000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ&quot;</title>
-    <desc lang="en">Program &quot;ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ"</title>
+    <desc lang="en">Program "ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822131000 +0500" stop="20260822170000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ&quot;</title>
-    <desc lang="en">Program &quot;ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ"</title>
+    <desc lang="en">Program "ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260823170000 +0500" channel="AqjaiyqTV.kz">
     <title lang="en">Техникалық үзіліс</title>
@@ -5977,28 +5977,28 @@
     <desc lang="en">Program 17:00 Техникалық үзіліс on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822183000 +0500" stop="20260823183000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;ЖАНСАРАЙ&quot;</title>
-    <desc lang="en">Program &quot;ЖАНСАРАЙ&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"ЖАНСАРАЙ"</title>
+    <desc lang="en">Program "ЖАНСАРАЙ" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822183000 +0500" stop="20260822185500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;ЖАНСАРАЙ&quot;</title>
-    <desc lang="en">Program &quot;ЖАНСАРАЙ&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"ЖАНСАРАЙ"</title>
+    <desc lang="en">Program "ЖАНСАРАЙ" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822185500 +0500" stop="20260823185500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;АЛДАСПАН&quot;</title>
-    <desc lang="en">Program &quot;АЛДАСПАН&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"АЛДАСПАН"</title>
+    <desc lang="en">Program "АЛДАСПАН" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822185500 +0500" stop="20260822200000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;АЛДАСПАН&quot;</title>
-    <desc lang="en">Program &quot;АЛДАСПАН&quot; on Aqjaiyq TV</desc>
+    <title lang="en">"АЛДАСПАН"</title>
+    <desc lang="en">Program "АЛДАСПАН" on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260823200000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;АТАМЕКЕН АЯСЫНДА&quot;. ЖАҢАҚАЛА АУДАНЫ</title>
-    <desc lang="en">Program &quot;АТАМЕКЕН АЯСЫНДА&quot;. ЖАҢАҚАЛА АУДАНЫ on Aqjaiyq TV</desc>
+    <title lang="en">"АТАМЕКЕН АЯСЫНДА". ЖАҢАҚАЛА АУДАНЫ</title>
+    <desc lang="en">Program "АТАМЕКЕН АЯСЫНДА". ЖАҢАҚАЛА АУДАНЫ on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260822210000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="en">&quot;АТАМЕКЕН АЯСЫНДА&quot;. ЖАҢАҚАЛА АУДАНЫ</title>
-    <desc lang="en">Program &quot;АТАМЕКЕН АЯСЫНДА&quot;. ЖАҢАҚАЛА АУДАНЫ on Aqjaiyq TV</desc>
+    <title lang="en">"АТАМЕКЕН АЯСЫНДА". ЖАҢАҚАЛА АУДАНЫ</title>
+    <desc lang="en">Program "АТАМЕКЕН АЯСЫНДА". ЖАҢАҚАЛА АУДАНЫ on Aqjaiyq TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260823170000 +0500" channel="AqtobeTV.kz">
     <title lang="en">ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
@@ -6025,108 +6025,108 @@
     <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Aqtobe TV</desc>
   </programme>
   <programme start="20260822084000 +0500" stop="20260823084000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ALTAI APTA&quot; /каз/ сараптамалық бағдарлама</title>
-    <desc lang="en">Program &quot;ALTAI APTA&quot; /каз/ сараптамалық бағдарлама on Altai TV</desc>
+    <title lang="en">"ALTAI APTA" /каз/ сараптамалық бағдарлама</title>
+    <desc lang="en">Program "ALTAI APTA" /каз/ сараптамалық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822084000 +0500" stop="20260822095500 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ALTAI APTA&quot; /каз/ сараптамалық бағдарлама</title>
-    <desc lang="en">Program &quot;ALTAI APTA&quot; /каз/ сараптамалық бағдарлама on Altai TV</desc>
+    <title lang="en">"ALTAI APTA" /каз/ сараптамалық бағдарлама</title>
+    <desc lang="en">Program "ALTAI APTA" /каз/ сараптамалық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822095500 +0500" stop="20260823095500 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ҚЫЗЫҚ КӘСІП&quot; ақпараттық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ҚЫЗЫҚ КӘСІП&quot; ақпараттық-танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама</title>
+    <desc lang="en">Program "ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822095500 +0500" stop="20260822100000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ҚЫЗЫҚ КӘСІП&quot; ақпараттық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ҚЫЗЫҚ КӘСІП&quot; ақпараттық-танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама</title>
+    <desc lang="en">Program "ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260823100000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЖАҢА ҚАЗАҚСТАН&quot; ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;ЖАҢА ҚАЗАҚСТАН&quot; ақпараттық бағдарлама on Altai TV</desc>
+    <title lang="en">"ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама</title>
+    <desc lang="en">Program "ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260822104000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЖАҢА ҚАЗАҚСТАН&quot; ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;ЖАҢА ҚАЗАҚСТАН&quot; ақпараттық бағдарлама on Altai TV</desc>
+    <title lang="en">"ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама</title>
+    <desc lang="en">Program "ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822104000 +0500" stop="20260823104000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ВЕКТОР БУДУЩЕГО&quot; информационно-позновательная программа</title>
-    <desc lang="en">Program &quot;ВЕКТОР БУДУЩЕГО&quot; информационно-позновательная программа on Altai TV</desc>
+    <title lang="en">"ВЕКТОР БУДУЩЕГО" информационно-позновательная программа</title>
+    <desc lang="en">Program "ВЕКТОР БУДУЩЕГО" информационно-позновательная программа on Altai TV</desc>
   </programme>
   <programme start="20260822104000 +0500" stop="20260822110000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ВЕКТОР БУДУЩЕГО&quot; информационно-позновательная программа</title>
-    <desc lang="en">Program &quot;ВЕКТОР БУДУЩЕГО&quot; информационно-позновательная программа on Altai TV</desc>
+    <title lang="en">"ВЕКТОР БУДУЩЕГО" информационно-позновательная программа</title>
+    <desc lang="en">Program "ВЕКТОР БУДУЩЕГО" информационно-позновательная программа on Altai TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260823110000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЕЛГЕ ҚЫЗМЕТ&quot;/рус/  общественно-политическая программа</title>
-    <desc lang="en">Program &quot;ЕЛГЕ ҚЫЗМЕТ&quot;/рус/  общественно-политическая программа on Altai TV</desc>
+    <title lang="en">"ЕЛГЕ ҚЫЗМЕТ"/рус/  общественно-политическая программа</title>
+    <desc lang="en">Program "ЕЛГЕ ҚЫЗМЕТ"/рус/  общественно-политическая программа on Altai TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260822131000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЕЛГЕ ҚЫЗМЕТ&quot;/рус/  общественно-политическая программа</title>
-    <desc lang="en">Program &quot;ЕЛГЕ ҚЫЗМЕТ&quot;/рус/  общественно-политическая программа on Altai TV</desc>
+    <title lang="en">"ЕЛГЕ ҚЫЗМЕТ"/рус/  общественно-политическая программа</title>
+    <desc lang="en">Program "ЕЛГЕ ҚЫЗМЕТ"/рус/  общественно-политическая программа on Altai TV</desc>
   </programme>
   <programme start="20260822131000 +0500" stop="20260823131000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ҚЫЗЫҚ КӘСІП&quot; ақпараттық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ҚЫЗЫҚ КӘСІП&quot; ақпараттық-танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама</title>
+    <desc lang="en">Program "ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822131000 +0500" stop="20260822132000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ҚЫЗЫҚ КӘСІП&quot; ақпараттық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ҚЫЗЫҚ КӘСІП&quot; ақпараттық-танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама</title>
+    <desc lang="en">Program "ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822132000 +0500" stop="20260823132000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЭКОНОМИКА И ОБЩЕСТВО&quot;  ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;ЭКОНОМИКА И ОБЩЕСТВО&quot;  ақпараттық бағдарлама on Altai TV</desc>
+    <title lang="en">"ЭКОНОМИКА И ОБЩЕСТВО"  ақпараттық бағдарлама</title>
+    <desc lang="en">Program "ЭКОНОМИКА И ОБЩЕСТВО"  ақпараттық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822132000 +0500" stop="20260822134000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЭКОНОМИКА И ОБЩЕСТВО&quot;  ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;ЭКОНОМИКА И ОБЩЕСТВО&quot;  ақпараттық бағдарлама on Altai TV</desc>
+    <title lang="en">"ЭКОНОМИКА И ОБЩЕСТВО"  ақпараттық бағдарлама</title>
+    <desc lang="en">Program "ЭКОНОМИКА И ОБЩЕСТВО"  ақпараттық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822134000 +0500" stop="20260823134000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЕЛ ҚОРҒАНЫ&quot; ақпараттық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ЕЛ ҚОРҒАНЫ&quot; ақпараттық-танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"ЕЛ ҚОРҒАНЫ" ақпараттық-танымдық бағдарлама</title>
+    <desc lang="en">Program "ЕЛ ҚОРҒАНЫ" ақпараттық-танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822134000 +0500" stop="20260822190000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЕЛ ҚОРҒАНЫ&quot; ақпараттық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ЕЛ ҚОРҒАНЫ&quot; ақпараттық-танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"ЕЛ ҚОРҒАНЫ" ақпараттық-танымдық бағдарлама</title>
+    <desc lang="en">Program "ЕЛ ҚОРҒАНЫ" ақпараттық-танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260823190000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЖАҢА ҚАЗАҚСТАН&quot; ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;ЖАҢА ҚАЗАҚСТАН&quot; ақпараттық бағдарлама on Altai TV</desc>
+    <title lang="en">"ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама</title>
+    <desc lang="en">Program "ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260822194000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;ЖАҢА ҚАЗАҚСТАН&quot; ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;ЖАҢА ҚАЗАҚСТАН&quot; ақпараттық бағдарлама on Altai TV</desc>
+    <title lang="en">"ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама</title>
+    <desc lang="en">Program "ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822194000 +0500" stop="20260823194000 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;СПЕЦИАЛЬНЫЙ РЕПОРТАЖ&quot; ақпараттық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;СПЕЦИАЛЬНЫЙ РЕПОРТАЖ&quot; ақпараттық-танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"СПЕЦИАЛЬНЫЙ РЕПОРТАЖ" ақпараттық-танымдық бағдарлама</title>
+    <desc lang="en">Program "СПЕЦИАЛЬНЫЙ РЕПОРТАЖ" ақпараттық-танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822194000 +0500" stop="20260822233500 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;СПЕЦИАЛЬНЫЙ РЕПОРТАЖ&quot; ақпараттық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;СПЕЦИАЛЬНЫЙ РЕПОРТАЖ&quot; ақпараттық-танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"СПЕЦИАЛЬНЫЙ РЕПОРТАЖ" ақпараттық-танымдық бағдарлама</title>
+    <desc lang="en">Program "СПЕЦИАЛЬНЫЙ РЕПОРТАЖ" ақпараттық-танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822233500 +0500" stop="20260823233500 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;МАЗМҰНДАМА&quot; танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;МАЗМҰНДАМА&quot; танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"МАЗМҰНДАМА" танымдық бағдарлама</title>
+    <desc lang="en">Program "МАЗМҰНДАМА" танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822233500 +0500" stop="20260823003500 +0500" channel="AltaiTV.kz">
-    <title lang="en">&quot;МАЗМҰНДАМА&quot; танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;МАЗМҰНДАМА&quot; танымдық бағдарлама on Altai TV</desc>
+    <title lang="en">"МАЗМҰНДАМА" танымдық бағдарлама</title>
+    <desc lang="en">Program "МАЗМҰНДАМА" танымдық бағдарлама on Altai TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260823070500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ГАУҺАРТАС&quot; - мәдени-танымдық бағдарлама. (Qazaqstan Ұлттық телеарнасы-2023)</title>
-    <desc lang="en">Program &quot;ГАУҺАРТАС&quot; - мәдени-танымдық бағдарлама. (Qazaqstan Ұлттық телеарнасы-2023) on Atyrau TV</desc>
+    <title lang="en">"ГАУҺАРТАС" - мәдени-танымдық бағдарлама. (Qazaqstan Ұлттық телеарнасы-2023)</title>
+    <desc lang="en">Program "ГАУҺАРТАС" - мәдени-танымдық бағдарлама. (Qazaqstan Ұлттық телеарнасы-2023) on Atyrau TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260822080500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ГАУҺАРТАС&quot; - мәдени-танымдық бағдарлама. (Qazaqstan Ұлттық телеарнасы-2023)</title>
-    <desc lang="en">Program &quot;ГАУҺАРТАС&quot; - мәдени-танымдық бағдарлама. (Qazaqstan Ұлттық телеарнасы-2023) on Atyrau TV</desc>
+    <title lang="en">"ГАУҺАРТАС" - мәдени-танымдық бағдарлама. (Qazaqstan Ұлттық телеарнасы-2023)</title>
+    <desc lang="en">Program "ГАУҺАРТАС" - мәдени-танымдық бағдарлама. (Qazaqstan Ұлттық телеарнасы-2023) on Atyrau TV</desc>
   </programme>
   <programme start="20260822080500 +0500" stop="20260823080500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ӘЛИ МЕН АИЯ&quot; - анимация. (Balapan телеарнасы, 2016 ж.)</title>
-    <desc lang="en">Program &quot;ӘЛИ МЕН АИЯ&quot; - анимация. (Balapan телеарнасы, 2016 ж.) on Atyrau TV</desc>
+    <title lang="en">"ӘЛИ МЕН АИЯ" - анимация. (Balapan телеарнасы, 2016 ж.)</title>
+    <desc lang="en">Program "ӘЛИ МЕН АИЯ" - анимация. (Balapan телеарнасы, 2016 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822080500 +0500" stop="20260822081500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ӘЛИ МЕН АИЯ&quot; - анимация. (Balapan телеарнасы, 2016 ж.)</title>
-    <desc lang="en">Program &quot;ӘЛИ МЕН АИЯ&quot; - анимация. (Balapan телеарнасы, 2016 ж.) on Atyrau TV</desc>
+    <title lang="en">"ӘЛИ МЕН АИЯ" - анимация. (Balapan телеарнасы, 2016 ж.)</title>
+    <desc lang="en">Program "ӘЛИ МЕН АИЯ" - анимация. (Balapan телеарнасы, 2016 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822081500 +0500" stop="20260823081500 +0500" channel="AtyrauTV.kz">
     <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама.</title>
@@ -6145,52 +6145,52 @@
     <desc lang="en">Program «НОВОСТИ» - информационная программа. on Atyrau TV</desc>
   </programme>
   <programme start="20260822091500 +0500" stop="20260823091500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;КҮМІС КӨМЕЙ&quot;, Ұлттық музыкалық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;КҮМІС КӨМЕЙ&quot;, Ұлттық музыкалық-танымдық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"КҮМІС КӨМЕЙ", Ұлттық музыкалық-танымдық бағдарлама</title>
+    <desc lang="en">Program "КҮМІС КӨМЕЙ", Ұлттық музыкалық-танымдық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822091500 +0500" stop="20260822101000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;КҮМІС КӨМЕЙ&quot;, Ұлттық музыкалық-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;КҮМІС КӨМЕЙ&quot;, Ұлттық музыкалық-танымдық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"КҮМІС КӨМЕЙ", Ұлттық музыкалық-танымдық бағдарлама</title>
+    <desc lang="en">Program "КҮМІС КӨМЕЙ", Ұлттық музыкалық-танымдық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822101000 +0500" stop="20260823101000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ӨЗЕКТІ&quot; - қоғамдық-саяси бағдарлама, қайталау</title>
-    <desc lang="en">Program &quot;ӨЗЕКТІ&quot; - қоғамдық-саяси бағдарлама, қайталау on Atyrau TV</desc>
+    <title lang="en">"ӨЗЕКТІ" - қоғамдық-саяси бағдарлама, қайталау</title>
+    <desc lang="en">Program "ӨЗЕКТІ" - қоғамдық-саяси бағдарлама, қайталау on Atyrau TV</desc>
   </programme>
   <programme start="20260822101000 +0500" stop="20260822104500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ӨЗЕКТІ&quot; - қоғамдық-саяси бағдарлама, қайталау</title>
-    <desc lang="en">Program &quot;ӨЗЕКТІ&quot; - қоғамдық-саяси бағдарлама, қайталау on Atyrau TV</desc>
+    <title lang="en">"ӨЗЕКТІ" - қоғамдық-саяси бағдарлама, қайталау</title>
+    <desc lang="en">Program "ӨЗЕКТІ" - қоғамдық-саяси бағдарлама, қайталау on Atyrau TV</desc>
   </programme>
   <programme start="20260822104500 +0500" stop="20260823104500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;КҮЙЕУ БАЛА&quot;, телехикая, 1 маусым, 11 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
-    <desc lang="en">Program &quot;КҮЙЕУ БАЛА&quot;, телехикая, 1 маусым, 11 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.) on Atyrau TV</desc>
+    <title lang="en">"КҮЙЕУ БАЛА", телехикая, 1 маусым, 11 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
+    <desc lang="en">Program "КҮЙЕУ БАЛА", телехикая, 1 маусым, 11 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822104500 +0500" stop="20260822113500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;КҮЙЕУ БАЛА&quot;, телехикая, 1 маусым, 11 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
-    <desc lang="en">Program &quot;КҮЙЕУ БАЛА&quot;, телехикая, 1 маусым, 11 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.) on Atyrau TV</desc>
+    <title lang="en">"КҮЙЕУ БАЛА", телехикая, 1 маусым, 11 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
+    <desc lang="en">Program "КҮЙЕУ БАЛА", телехикая, 1 маусым, 11 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822113500 +0500" stop="20260823113500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ТОПЫРАҚ ПЕН ХАУА&quot;, телехикая, 2 маусым, 197 бөлім (Түркия, 2010 ж.)</title>
-    <desc lang="en">Program &quot;ТОПЫРАҚ ПЕН ХАУА&quot;, телехикая, 2 маусым, 197 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
+    <title lang="en">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 197 бөлім (Түркия, 2010 ж.)</title>
+    <desc lang="en">Program "ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 197 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822113500 +0500" stop="20260822123000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ТОПЫРАҚ ПЕН ХАУА&quot;, телехикая, 2 маусым, 197 бөлім (Түркия, 2010 ж.)</title>
-    <desc lang="en">Program &quot;ТОПЫРАҚ ПЕН ХАУА&quot;, телехикая, 2 маусым, 197 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
+    <title lang="en">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 197 бөлім (Түркия, 2010 ж.)</title>
+    <desc lang="en">Program "ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 197 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822123000 +0500" stop="20260823123000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;САНА&quot; - әлеуметтік-қоғамдық ток шоу (Abaı ТВ)</title>
-    <desc lang="en">Program &quot;САНА&quot; - әлеуметтік-қоғамдық ток шоу (Abaı ТВ) on Atyrau TV</desc>
+    <title lang="en">"САНА" - әлеуметтік-қоғамдық ток шоу (Abaı ТВ)</title>
+    <desc lang="en">Program "САНА" - әлеуметтік-қоғамдық ток шоу (Abaı ТВ) on Atyrau TV</desc>
   </programme>
   <programme start="20260822123000 +0500" stop="20260822133000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;САНА&quot; - әлеуметтік-қоғамдық ток шоу (Abaı ТВ)</title>
-    <desc lang="en">Program &quot;САНА&quot; - әлеуметтік-қоғамдық ток шоу (Abaı ТВ) on Atyrau TV</desc>
+    <title lang="en">"САНА" - әлеуметтік-қоғамдық ток шоу (Abaı ТВ)</title>
+    <desc lang="en">Program "САНА" - әлеуметтік-қоғамдық ток шоу (Abaı ТВ) on Atyrau TV</desc>
   </programme>
   <programme start="20260822133000 +0500" stop="20260823133000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;АУЫЛЫМ&quot; -ақпаратты-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;АУЫЛЫМ&quot; -ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"АУЫЛЫМ" -ақпаратты-танымдық бағдарлама</title>
+    <desc lang="en">Program "АУЫЛЫМ" -ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822133000 +0500" stop="20260822170000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;АУЫЛЫМ&quot; -ақпаратты-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;АУЫЛЫМ&quot; -ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"АУЫЛЫМ" -ақпаратты-танымдық бағдарлама</title>
+    <desc lang="en">Program "АУЫЛЫМ" -ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260823170000 +0500" channel="AtyrauTV.kz">
     <title lang="en">ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
@@ -6213,308 +6213,308 @@
     <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Atyrau TV</desc>
   </programme>
   <programme start="20260822170500 +0500" stop="20260823170500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ШАҢЫРАҚ СЫРЫ&quot; - ақпаратты-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ШАҢЫРАҚ СЫРЫ&quot; - ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"ШАҢЫРАҚ СЫРЫ" - ақпаратты-танымдық бағдарлама</title>
+    <desc lang="en">Program "ШАҢЫРАҚ СЫРЫ" - ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822170500 +0500" stop="20260822173500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ШАҢЫРАҚ СЫРЫ&quot; - ақпаратты-танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ШАҢЫРАҚ СЫРЫ&quot; - ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"ШАҢЫРАҚ СЫРЫ" - ақпаратты-танымдық бағдарлама</title>
+    <desc lang="en">Program "ШАҢЫРАҚ СЫРЫ" - ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822173500 +0500" stop="20260823173500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ЭФИРДЕ 102.0 FM&quot;. ақпаратты танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ЭФИРДЕ 102.0 FM&quot;. ақпаратты танымдық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"ЭФИРДЕ 102.0 FM". ақпаратты танымдық бағдарлама</title>
+    <desc lang="en">Program "ЭФИРДЕ 102.0 FM". ақпаратты танымдық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822173500 +0500" stop="20260822180500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ЭФИРДЕ 102.0 FM&quot;. ақпаратты танымдық бағдарлама</title>
-    <desc lang="en">Program &quot;ЭФИРДЕ 102.0 FM&quot;. ақпаратты танымдық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"ЭФИРДЕ 102.0 FM". ақпаратты танымдық бағдарлама</title>
+    <desc lang="en">Program "ЭФИРДЕ 102.0 FM". ақпаратты танымдық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822180500 +0500" stop="20260823180500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;САҚАЛАР-2&quot; - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.)</title>
-    <desc lang="en">Program &quot;САҚАЛАР-2&quot; - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.) on Atyrau TV</desc>
+    <title lang="en">"САҚАЛАР-2" - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.)</title>
+    <desc lang="en">Program "САҚАЛАР-2" - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822180500 +0500" stop="20260822181500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;САҚАЛАР-2&quot; - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.)</title>
-    <desc lang="en">Program &quot;САҚАЛАР-2&quot; - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.) on Atyrau TV</desc>
+    <title lang="en">"САҚАЛАР-2" - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.)</title>
+    <desc lang="en">Program "САҚАЛАР-2" - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822181500 +0500" stop="20260823181500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ЕЛ ҮШІН&quot; - қоғамдық-саяси бағдарлама</title>
-    <desc lang="en">Program &quot;ЕЛ ҮШІН&quot; - қоғамдық-саяси бағдарлама on Atyrau TV</desc>
+    <title lang="en">"ЕЛ ҮШІН" - қоғамдық-саяси бағдарлама</title>
+    <desc lang="en">Program "ЕЛ ҮШІН" - қоғамдық-саяси бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822181500 +0500" stop="20260822184000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ЕЛ ҮШІН&quot; - қоғамдық-саяси бағдарлама</title>
-    <desc lang="en">Program &quot;ЕЛ ҮШІН&quot; - қоғамдық-саяси бағдарлама on Atyrau TV</desc>
+    <title lang="en">"ЕЛ ҮШІН" - қоғамдық-саяси бағдарлама</title>
+    <desc lang="en">Program "ЕЛ ҮШІН" - қоғамдық-саяси бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822184000 +0500" stop="20260823184000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ЖҰМЫСЫМ  ОСЫНДАЙ&quot; - танымдық бағдарлама, қайталау</title>
-    <desc lang="en">Program &quot;ЖҰМЫСЫМ  ОСЫНДАЙ&quot; - танымдық бағдарлама, қайталау on Atyrau TV</desc>
+    <title lang="en">"ЖҰМЫСЫМ  ОСЫНДАЙ" - танымдық бағдарлама, қайталау</title>
+    <desc lang="en">Program "ЖҰМЫСЫМ  ОСЫНДАЙ" - танымдық бағдарлама, қайталау on Atyrau TV</desc>
   </programme>
   <programme start="20260822184000 +0500" stop="20260822190000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ЖҰМЫСЫМ  ОСЫНДАЙ&quot; - танымдық бағдарлама, қайталау</title>
-    <desc lang="en">Program &quot;ЖҰМЫСЫМ  ОСЫНДАЙ&quot; - танымдық бағдарлама, қайталау on Atyrau TV</desc>
+    <title lang="en">"ЖҰМЫСЫМ  ОСЫНДАЙ" - танымдық бағдарлама, қайталау</title>
+    <desc lang="en">Program "ЖҰМЫСЫМ  ОСЫНДАЙ" - танымдық бағдарлама, қайталау on Atyrau TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260823190000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;АТАМЕКЕН&quot; - әлеуметтік бағдарлама</title>
-    <desc lang="en">Program &quot;АТАМЕКЕН&quot; - әлеуметтік бағдарлама on Atyrau TV</desc>
+    <title lang="en">"АТАМЕКЕН" - әлеуметтік бағдарлама</title>
+    <desc lang="en">Program "АТАМЕКЕН" - әлеуметтік бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260822192000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;АТАМЕКЕН&quot; - әлеуметтік бағдарлама</title>
-    <desc lang="en">Program &quot;АТАМЕКЕН&quot; - әлеуметтік бағдарлама on Atyrau TV</desc>
+    <title lang="en">"АТАМЕКЕН" - әлеуметтік бағдарлама</title>
+    <desc lang="en">Program "АТАМЕКЕН" - әлеуметтік бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822192000 +0500" stop="20260823192000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ДОС БОЛАЙЫҚ!&quot; - подкаст</title>
-    <desc lang="en">Program &quot;ДОС БОЛАЙЫҚ!&quot; - подкаст on Atyrau TV</desc>
+    <title lang="en">"ДОС БОЛАЙЫҚ!" - подкаст</title>
+    <desc lang="en">Program "ДОС БОЛАЙЫҚ!" - подкаст on Atyrau TV</desc>
   </programme>
   <programme start="20260822192000 +0500" stop="20260822194000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ДОС БОЛАЙЫҚ!&quot; - подкаст</title>
-    <desc lang="en">Program &quot;ДОС БОЛАЙЫҚ!&quot; - подкаст on Atyrau TV</desc>
+    <title lang="en">"ДОС БОЛАЙЫҚ!" - подкаст</title>
+    <desc lang="en">Program "ДОС БОЛАЙЫҚ!" - подкаст on Atyrau TV</desc>
   </programme>
   <programme start="20260822194000 +0500" stop="20260823194000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;АРНАЙЫ ЖОБА&quot; -ақпаратты - сараптамалық бағдарлама</title>
-    <desc lang="en">Program &quot;АРНАЙЫ ЖОБА&quot; -ақпаратты - сараптамалық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"АРНАЙЫ ЖОБА" -ақпаратты - сараптамалық бағдарлама</title>
+    <desc lang="en">Program "АРНАЙЫ ЖОБА" -ақпаратты - сараптамалық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822194000 +0500" stop="20260822200000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;АРНАЙЫ ЖОБА&quot; -ақпаратты - сараптамалық бағдарлама</title>
-    <desc lang="en">Program &quot;АРНАЙЫ ЖОБА&quot; -ақпаратты - сараптамалық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"АРНАЙЫ ЖОБА" -ақпаратты - сараптамалық бағдарлама</title>
+    <desc lang="en">Program "АРНАЙЫ ЖОБА" -ақпаратты - сараптамалық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260823200000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ДАРЫН&quot; - интелектуалдық теле жоба</title>
-    <desc lang="en">Program &quot;ДАРЫН&quot; - интелектуалдық теле жоба on Atyrau TV</desc>
+    <title lang="en">"ДАРЫН" - интелектуалдық теле жоба</title>
+    <desc lang="en">Program "ДАРЫН" - интелектуалдық теле жоба on Atyrau TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260822202500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ДАРЫН&quot; - интелектуалдық теле жоба</title>
-    <desc lang="en">Program &quot;ДАРЫН&quot; - интелектуалдық теле жоба on Atyrau TV</desc>
+    <title lang="en">"ДАРЫН" - интелектуалдық теле жоба</title>
+    <desc lang="en">Program "ДАРЫН" - интелектуалдық теле жоба on Atyrau TV</desc>
   </programme>
   <programme start="20260822202500 +0500" stop="20260823202500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ЖҮРЕГІҢНЕН БІР ОРЫН БЕР...&quot; С.Әбеновтың шығ. кеші (Qazaqstan Ұлттық телеарнасы-2023)</title>
-    <desc lang="en">Program &quot;ЖҮРЕГІҢНЕН БІР ОРЫН БЕР...&quot; С.Әбеновтың шығ. кеші (Qazaqstan Ұлттық телеарнасы-2023) on Atyrau TV</desc>
+    <title lang="en">"ЖҮРЕГІҢНЕН БІР ОРЫН БЕР..." С.Әбеновтың шығ. кеші (Qazaqstan Ұлттық телеарнасы-2023)</title>
+    <desc lang="en">Program "ЖҮРЕГІҢНЕН БІР ОРЫН БЕР..." С.Әбеновтың шығ. кеші (Qazaqstan Ұлттық телеарнасы-2023) on Atyrau TV</desc>
   </programme>
   <programme start="20260822202500 +0500" stop="20260822214000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ЖҮРЕГІҢНЕН БІР ОРЫН БЕР...&quot; С.Әбеновтың шығ. кеші (Qazaqstan Ұлттық телеарнасы-2023)</title>
-    <desc lang="en">Program &quot;ЖҮРЕГІҢНЕН БІР ОРЫН БЕР...&quot; С.Әбеновтың шығ. кеші (Qazaqstan Ұлттық телеарнасы-2023) on Atyrau TV</desc>
+    <title lang="en">"ЖҮРЕГІҢНЕН БІР ОРЫН БЕР..." С.Әбеновтың шығ. кеші (Qazaqstan Ұлттық телеарнасы-2023)</title>
+    <desc lang="en">Program "ЖҮРЕГІҢНЕН БІР ОРЫН БЕР..." С.Әбеновтың шығ. кеші (Qazaqstan Ұлттық телеарнасы-2023) on Atyrau TV</desc>
   </programme>
   <programme start="20260822214000 +0500" stop="20260823214000 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;06 АЙМАҚ&quot; - ойын-сауықтық бағдарлама</title>
-    <desc lang="en">Program &quot;06 АЙМАҚ&quot; - ойын-сауықтық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"06 АЙМАҚ" - ойын-сауықтық бағдарлама</title>
+    <desc lang="en">Program "06 АЙМАҚ" - ойын-сауықтық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822214000 +0500" stop="20260822220500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;06 АЙМАҚ&quot; - ойын-сауықтық бағдарлама</title>
-    <desc lang="en">Program &quot;06 АЙМАҚ&quot; - ойын-сауықтық бағдарлама on Atyrau TV</desc>
+    <title lang="en">"06 АЙМАҚ" - ойын-сауықтық бағдарлама</title>
+    <desc lang="en">Program "06 АЙМАҚ" - ойын-сауықтық бағдарлама on Atyrau TV</desc>
   </programme>
   <programme start="20260822220500 +0500" stop="20260823220500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ТОПЫРАҚ ПЕН ХАУА&quot;, телехикая, 2 маусым, 198, 199 бөлім (Түркия, 2010 ж.)</title>
-    <desc lang="en">Program &quot;ТОПЫРАҚ ПЕН ХАУА&quot;, телехикая, 2 маусым, 198, 199 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
+    <title lang="en">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 198, 199 бөлім (Түркия, 2010 ж.)</title>
+    <desc lang="en">Program "ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 198, 199 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822220500 +0500" stop="20260822230500 +0500" channel="AtyrauTV.kz">
-    <title lang="en">&quot;ТОПЫРАҚ ПЕН ХАУА&quot;, телехикая, 2 маусым, 198, 199 бөлім (Түркия, 2010 ж.)</title>
-    <desc lang="en">Program &quot;ТОПЫРАҚ ПЕН ХАУА&quot;, телехикая, 2 маусым, 198, 199 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
+    <title lang="en">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 198, 199 бөлім (Түркия, 2010 ж.)</title>
+    <desc lang="en">Program "ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 198, 199 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260823070500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КӨКШЕ ӘУЕНДЕРІ&quot;</title>
-    <desc lang="en">Program &quot;КӨКШЕ ӘУЕНДЕРІ&quot; on Kokshe TV</desc>
+    <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260822072500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КӨКШЕ ӘУЕНДЕРІ&quot;</title>
-    <desc lang="en">Program &quot;КӨКШЕ ӘУЕНДЕРІ&quot; on Kokshe TV</desc>
+    <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822072500 +0500" stop="20260823072500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822072500 +0500" stop="20260822073000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822073000 +0500" stop="20260823073000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КОНЦЕРТ&quot;</title>
-    <desc lang="en">Program &quot;КОНЦЕРТ&quot; on Kokshe TV</desc>
+    <title lang="en">"КОНЦЕРТ"</title>
+    <desc lang="en">Program "КОНЦЕРТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822073000 +0500" stop="20260822090000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КОНЦЕРТ&quot;</title>
-    <desc lang="en">Program &quot;КОНЦЕРТ&quot; on Kokshe TV</desc>
+    <title lang="en">"КОНЦЕРТ"</title>
+    <desc lang="en">Program "КОНЦЕРТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260823090000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;KÓKSHE AQPARAT&quot; Ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;KÓKSHE AQPARAT&quot; Ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"KÓKSHE AQPARAT" Ақпараттық бағдарлама</title>
+    <desc lang="en">Program "KÓKSHE AQPARAT" Ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260822093000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;KÓKSHE AQPARAT&quot; Ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;KÓKSHE AQPARAT&quot; Ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"KÓKSHE AQPARAT" Ақпараттық бағдарлама</title>
+    <desc lang="en">Program "KÓKSHE AQPARAT" Ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822093000 +0500" stop="20260823093000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КӨКШЕ ӘУЕНДЕРІ&quot;</title>
-    <desc lang="en">Program &quot;КӨКШЕ ӘУЕНДЕРІ&quot; on Kokshe TV</desc>
+    <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822093000 +0500" stop="20260822094000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КӨКШЕ ӘУЕНДЕРІ&quot;</title>
-    <desc lang="en">Program &quot;КӨКШЕ ӘУЕНДЕРІ&quot; on Kokshe TV</desc>
+    <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822094000 +0500" stop="20260823094000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;СПОРТ АЛАҢЫ&quot; Ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;СПОРТ АЛАҢЫ&quot; Ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"СПОРТ АЛАҢЫ" Ақпараттық бағдарлама</title>
+    <desc lang="en">Program "СПОРТ АЛАҢЫ" Ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822094000 +0500" stop="20260822095000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;СПОРТ АЛАҢЫ&quot; Ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;СПОРТ АЛАҢЫ&quot; Ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"СПОРТ АЛАҢЫ" Ақпараттық бағдарлама</title>
+    <desc lang="en">Program "СПОРТ АЛАҢЫ" Ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822095000 +0500" stop="20260823095000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;АЛТЫН САҚА&quot; м/х 17,18 бөлім</title>
-    <desc lang="en">Program &quot;АЛТЫН САҚА&quot; м/х 17,18 бөлім on Kokshe TV</desc>
+    <title lang="en">"АЛТЫН САҚА" м/х 17,18 бөлім</title>
+    <desc lang="en">Program "АЛТЫН САҚА" м/х 17,18 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822095000 +0500" stop="20260822100000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;АЛТЫН САҚА&quot; м/х 17,18 бөлім</title>
-    <desc lang="en">Program &quot;АЛТЫН САҚА&quot; м/х 17,18 бөлім on Kokshe TV</desc>
+    <title lang="en">"АЛТЫН САҚА" м/х 17,18 бөлім</title>
+    <desc lang="en">Program "АЛТЫН САҚА" м/х 17,18 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260823100000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;KÓKSHE AQPARAT&quot; Информационная программа</title>
-    <desc lang="en">Program &quot;KÓKSHE AQPARAT&quot; Информационная программа on Kokshe TV</desc>
+    <title lang="en">"KÓKSHE AQPARAT" Информационная программа</title>
+    <desc lang="en">Program "KÓKSHE AQPARAT" Информационная программа on Kokshe TV</desc>
   </programme>
   <programme start="20260822100000 +0500" stop="20260822103000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;KÓKSHE AQPARAT&quot; Информационная программа</title>
-    <desc lang="en">Program &quot;KÓKSHE AQPARAT&quot; Информационная программа on Kokshe TV</desc>
+    <title lang="en">"KÓKSHE AQPARAT" Информационная программа</title>
+    <desc lang="en">Program "KÓKSHE AQPARAT" Информационная программа on Kokshe TV</desc>
   </programme>
   <programme start="20260822103000 +0500" stop="20260823103000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ЖАНТАЛАС&quot;. Телехикая. 14 бөлім</title>
-    <desc lang="en">Program &quot;ЖАНТАЛАС&quot;. Телехикая. 14 бөлім on Kokshe TV</desc>
+    <title lang="en">"ЖАНТАЛАС". Телехикая. 14 бөлім</title>
+    <desc lang="en">Program "ЖАНТАЛАС". Телехикая. 14 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822103000 +0500" stop="20260822111500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ЖАНТАЛАС&quot;. Телехикая. 14 бөлім</title>
-    <desc lang="en">Program &quot;ЖАНТАЛАС&quot;. Телехикая. 14 бөлім on Kokshe TV</desc>
+    <title lang="en">"ЖАНТАЛАС". Телехикая. 14 бөлім</title>
+    <desc lang="en">Program "ЖАНТАЛАС". Телехикая. 14 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822111500 +0500" stop="20260823111500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;СӨЗ ПАТШАСЫ&quot; 1,2 бөлім</title>
-    <desc lang="en">Program &quot;СӨЗ ПАТШАСЫ&quot; 1,2 бөлім on Kokshe TV</desc>
+    <title lang="en">"СӨЗ ПАТШАСЫ" 1,2 бөлім</title>
+    <desc lang="en">Program "СӨЗ ПАТШАСЫ" 1,2 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822111500 +0500" stop="20260822121500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;СӨЗ ПАТШАСЫ&quot; 1,2 бөлім</title>
-    <desc lang="en">Program &quot;СӨЗ ПАТШАСЫ&quot; 1,2 бөлім on Kokshe TV</desc>
+    <title lang="en">"СӨЗ ПАТШАСЫ" 1,2 бөлім</title>
+    <desc lang="en">Program "СӨЗ ПАТШАСЫ" 1,2 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822121500 +0500" stop="20260823121500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822121500 +0500" stop="20260822122000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822122000 +0500" stop="20260823122000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;БАЛА БЕКЗАТ&quot; 1,2 бөлім</title>
-    <desc lang="en">Program &quot;БАЛА БЕКЗАТ&quot; 1,2 бөлім on Kokshe TV</desc>
+    <title lang="en">"БАЛА БЕКЗАТ" 1,2 бөлім</title>
+    <desc lang="en">Program "БАЛА БЕКЗАТ" 1,2 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822122000 +0500" stop="20260822124000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;БАЛА БЕКЗАТ&quot; 1,2 бөлім</title>
-    <desc lang="en">Program &quot;БАЛА БЕКЗАТ&quot; 1,2 бөлім on Kokshe TV</desc>
+    <title lang="en">"БАЛА БЕКЗАТ" 1,2 бөлім</title>
+    <desc lang="en">Program "БАЛА БЕКЗАТ" 1,2 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822124000 +0500" stop="20260823124000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТӘУЕКЕЛ-2&quot; 19,20 бөлім</title>
-    <desc lang="en">Program &quot;ТӘУЕКЕЛ-2&quot; 19,20 бөлім on Kokshe TV</desc>
+    <title lang="en">"ТӘУЕКЕЛ-2" 19,20 бөлім</title>
+    <desc lang="en">Program "ТӘУЕКЕЛ-2" 19,20 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822124000 +0500" stop="20260822132000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТӘУЕКЕЛ-2&quot; 19,20 бөлім</title>
-    <desc lang="en">Program &quot;ТӘУЕКЕЛ-2&quot; 19,20 бөлім on Kokshe TV</desc>
+    <title lang="en">"ТӘУЕКЕЛ-2" 19,20 бөлім</title>
+    <desc lang="en">Program "ТӘУЕКЕЛ-2" 19,20 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822132000 +0500" stop="20260823132000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;БҮГІНГІ ТАҚЫРЫП&quot;. Ақпараттық-саяси бағдарлама</title>
-    <desc lang="en">Program &quot;БҮГІНГІ ТАҚЫРЫП&quot;. Ақпараттық-саяси бағдарлама on Kokshe TV</desc>
+    <title lang="en">"БҮГІНГІ ТАҚЫРЫП". Ақпараттық-саяси бағдарлама</title>
+    <desc lang="en">Program "БҮГІНГІ ТАҚЫРЫП". Ақпараттық-саяси бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822132000 +0500" stop="20260822134000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;БҮГІНГІ ТАҚЫРЫП&quot;. Ақпараттық-саяси бағдарлама</title>
-    <desc lang="en">Program &quot;БҮГІНГІ ТАҚЫРЫП&quot;. Ақпараттық-саяси бағдарлама on Kokshe TV</desc>
+    <title lang="en">"БҮГІНГІ ТАҚЫРЫП". Ақпараттық-саяси бағдарлама</title>
+    <desc lang="en">Program "БҮГІНГІ ТАҚЫРЫП". Ақпараттық-саяси бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822134000 +0500" stop="20260823134000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822134000 +0500" stop="20260822134500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822134500 +0500" stop="20260823134500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;АЛТЫН САҚА&quot; м/х 19,20 бөлім</title>
-    <desc lang="en">Program &quot;АЛТЫН САҚА&quot; м/х 19,20 бөлім on Kokshe TV</desc>
+    <title lang="en">"АЛТЫН САҚА" м/х 19,20 бөлім</title>
+    <desc lang="en">Program "АЛТЫН САҚА" м/х 19,20 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822134500 +0500" stop="20260822140000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;АЛТЫН САҚА&quot; м/х 19,20 бөлім</title>
-    <desc lang="en">Program &quot;АЛТЫН САҚА&quot; м/х 19,20 бөлім on Kokshe TV</desc>
+    <title lang="en">"АЛТЫН САҚА" м/х 19,20 бөлім</title>
+    <desc lang="en">Program "АЛТЫН САҚА" м/х 19,20 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822140000 +0500" stop="20260823140000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕХНИКАЛЫҚ ҮЗІЛІС&quot;</title>
-    <desc lang="en">Program &quot;ТЕХНИКАЛЫҚ ҮЗІЛІС&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕХНИКАЛЫҚ ҮЗІЛІС"</title>
+    <desc lang="en">Program "ТЕХНИКАЛЫҚ ҮЗІЛІС" on Kokshe TV</desc>
   </programme>
   <programme start="20260822140000 +0500" stop="20260822170000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕХНИКАЛЫҚ ҮЗІЛІС&quot;</title>
-    <desc lang="en">Program &quot;ТЕХНИКАЛЫҚ ҮЗІЛІС&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕХНИКАЛЫҚ ҮЗІЛІС"</title>
+    <desc lang="en">Program "ТЕХНИКАЛЫҚ ҮЗІЛІС" on Kokshe TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260823170000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КОНЦЕРТ&quot;</title>
-    <desc lang="en">Program &quot;КОНЦЕРТ&quot; on Kokshe TV</desc>
+    <title lang="en">"КОНЦЕРТ"</title>
+    <desc lang="en">Program "КОНЦЕРТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260822183000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КОНЦЕРТ&quot;</title>
-    <desc lang="en">Program &quot;КОНЦЕРТ&quot; on Kokshe TV</desc>
+    <title lang="en">"КОНЦЕРТ"</title>
+    <desc lang="en">Program "КОНЦЕРТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822183000 +0500" stop="20260823183000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;БАЛА БЕКЗАТ&quot; 1,2 бөлім</title>
-    <desc lang="en">Program &quot;БАЛА БЕКЗАТ&quot; 1,2 бөлім on Kokshe TV</desc>
+    <title lang="en">"БАЛА БЕКЗАТ" 1,2 бөлім</title>
+    <desc lang="en">Program "БАЛА БЕКЗАТ" 1,2 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822183000 +0500" stop="20260822185500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;БАЛА БЕКЗАТ&quot; 1,2 бөлім</title>
-    <desc lang="en">Program &quot;БАЛА БЕКЗАТ&quot; 1,2 бөлім on Kokshe TV</desc>
+    <title lang="en">"БАЛА БЕКЗАТ" 1,2 бөлім</title>
+    <desc lang="en">Program "БАЛА БЕКЗАТ" 1,2 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822185500 +0500" stop="20260823185500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822185500 +0500" stop="20260822190000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260823190000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ПРЕМЬЕРЫ&quot; 9 бөлім. /Бағдарлама</title>
-    <desc lang="en">Program &quot;ПРЕМЬЕРЫ&quot; 9 бөлім. /Бағдарлама on Kokshe TV</desc>
+    <title lang="en">"ПРЕМЬЕРЫ" 9 бөлім. /Бағдарлама</title>
+    <desc lang="en">Program "ПРЕМЬЕРЫ" 9 бөлім. /Бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822190000 +0500" stop="20260822192500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ПРЕМЬЕРЫ&quot; 9 бөлім. /Бағдарлама</title>
-    <desc lang="en">Program &quot;ПРЕМЬЕРЫ&quot; 9 бөлім. /Бағдарлама on Kokshe TV</desc>
+    <title lang="en">"ПРЕМЬЕРЫ" 9 бөлім. /Бағдарлама</title>
+    <desc lang="en">Program "ПРЕМЬЕРЫ" 9 бөлім. /Бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822192500 +0500" stop="20260823192500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ЖАНТАЛАС&quot;. Телехикая. 15 бөлім</title>
-    <desc lang="en">Program &quot;ЖАНТАЛАС&quot;. Телехикая. 15 бөлім on Kokshe TV</desc>
+    <title lang="en">"ЖАНТАЛАС". Телехикая. 15 бөлім</title>
+    <desc lang="en">Program "ЖАНТАЛАС". Телехикая. 15 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822192500 +0500" stop="20260822201500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ЖАНТАЛАС&quot;. Телехикая. 15 бөлім</title>
-    <desc lang="en">Program &quot;ЖАНТАЛАС&quot;. Телехикая. 15 бөлім on Kokshe TV</desc>
+    <title lang="en">"ЖАНТАЛАС". Телехикая. 15 бөлім</title>
+    <desc lang="en">Program "ЖАНТАЛАС". Телехикая. 15 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822201500 +0500" stop="20260823201500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822201500 +0500" stop="20260822202000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822202000 +0500" stop="20260823202000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КӨКШЕ ӘУЕНДЕРІ&quot;</title>
-    <desc lang="en">Program &quot;КӨКШЕ ӘУЕНДЕРІ&quot; on Kokshe TV</desc>
+    <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822202000 +0500" stop="20260822203000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КӨКШЕ ӘУЕНДЕРІ&quot;</title>
-    <desc lang="en">Program &quot;КӨКШЕ ӘУЕНДЕРІ&quot; on Kokshe TV</desc>
+    <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822203000 +0500" stop="20260823203000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;АҚ ПЕН ҚАРА&quot; ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;АҚ ПЕН ҚАРА&quot; ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"АҚ ПЕН ҚАРА" ақпараттық бағдарлама</title>
+    <desc lang="en">Program "АҚ ПЕН ҚАРА" ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822203000 +0500" stop="20260822211000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;АҚ ПЕН ҚАРА&quot; ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;АҚ ПЕН ҚАРА&quot; ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"АҚ ПЕН ҚАРА" ақпараттық бағдарлама</title>
+    <desc lang="en">Program "АҚ ПЕН ҚАРА" ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822211000 +0500" stop="20260823211000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ПӘРМЕНДІ ПІКІР&quot;. Бағдарлама аралық телеинтервью</title>
-    <desc lang="en">Program &quot;ПӘРМЕНДІ ПІКІР&quot;. Бағдарлама аралық телеинтервью on Kokshe TV</desc>
+    <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
+    <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
   </programme>
   <programme start="20260822211000 +0500" stop="20260822212000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ПӘРМЕНДІ ПІКІР&quot;. Бағдарлама аралық телеинтервью</title>
-    <desc lang="en">Program &quot;ПӘРМЕНДІ ПІКІР&quot;. Бағдарлама аралық телеинтервью on Kokshe TV</desc>
+    <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
+    <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
   </programme>
   <programme start="20260822212000 +0500" stop="20260823212000 +0500" channel="KoksheTV.kz">
     <title lang="en">«АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама</title>
@@ -6525,52 +6525,52 @@
     <desc lang="en">Program «АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822213000 +0500" stop="20260823213000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822213000 +0500" stop="20260822213500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822213500 +0500" stop="20260823213500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ЫНТЫМАҚ АУЫЛЫ&quot;. Телехикая 7,8 бөлім</title>
-    <desc lang="en">Program &quot;ЫНТЫМАҚ АУЫЛЫ&quot;. Телехикая 7,8 бөлім on Kokshe TV</desc>
+    <title lang="en">"ЫНТЫМАҚ АУЫЛЫ". Телехикая 7,8 бөлім</title>
+    <desc lang="en">Program "ЫНТЫМАҚ АУЫЛЫ". Телехикая 7,8 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822213500 +0500" stop="20260822231500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ЫНТЫМАҚ АУЫЛЫ&quot;. Телехикая 7,8 бөлім</title>
-    <desc lang="en">Program &quot;ЫНТЫМАҚ АУЫЛЫ&quot;. Телехикая 7,8 бөлім on Kokshe TV</desc>
+    <title lang="en">"ЫНТЫМАҚ АУЫЛЫ". Телехикая 7,8 бөлім</title>
+    <desc lang="en">Program "ЫНТЫМАҚ АУЫЛЫ". Телехикая 7,8 бөлім on Kokshe TV</desc>
   </programme>
   <programme start="20260822231500 +0500" stop="20260823231500 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822231500 +0500" stop="20260822232000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;ТЕЛЕМАРКЕТ&quot;</title>
-    <desc lang="en">Program &quot;ТЕЛЕМАРКЕТ&quot; on Kokshe TV</desc>
+    <title lang="en">"ТЕЛЕМАРКЕТ"</title>
+    <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822232000 +0500" stop="20260823232000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КӨКШЕ ӘУЕНДЕРІ&quot;</title>
-    <desc lang="en">Program &quot;КӨКШЕ ӘУЕНДЕРІ&quot; on Kokshe TV</desc>
+    <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822232000 +0500" stop="20260822234000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КӨКШЕ ӘУЕНДЕРІ&quot;</title>
-    <desc lang="en">Program &quot;КӨКШЕ ӘУЕНДЕРІ&quot; on Kokshe TV</desc>
+    <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
   </programme>
   <programme start="20260822234000 +0500" stop="20260823234000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КҮН БЕДЕРІНДЕ&quot; Ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;КҮН БЕДЕРІНДЕ&quot; Ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"КҮН БЕДЕРІНДЕ" Ақпараттық бағдарлама</title>
+    <desc lang="en">Program "КҮН БЕДЕРІНДЕ" Ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822234000 +0500" stop="20260822235000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;КҮН БЕДЕРІНДЕ&quot; Ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;КҮН БЕДЕРІНДЕ&quot; Ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"КҮН БЕДЕРІНДЕ" Ақпараттық бағдарлама</title>
+    <desc lang="en">Program "КҮН БЕДЕРІНДЕ" Ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822235000 +0500" stop="20260823235000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;В ТЕЧЕНИЕ ДНЯ&quot; Ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;В ТЕЧЕНИЕ ДНЯ&quot; Ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама</title>
+    <desc lang="en">Program "В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822235000 +0500" stop="20260823005000 +0500" channel="KoksheTV.kz">
-    <title lang="en">&quot;В ТЕЧЕНИЕ ДНЯ&quot; Ақпараттық бағдарлама</title>
-    <desc lang="en">Program &quot;В ТЕЧЕНИЕ ДНЯ&quot; Ақпараттық бағдарлама on Kokshe TV</desc>
+    <title lang="en">"В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама</title>
+    <desc lang="en">Program "В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама on Kokshe TV</desc>
   </programme>
   <programme start="20260822150000 +0500" stop="20260823150000 +0500" channel="OntustikTV.kz">
     <title lang="en">«Техникалық үзіліс» 15:00 - 17:00</title>
@@ -6757,68 +6757,68 @@
     <desc lang="en">Program «КӨҢІЛ ТОЛҚЫНЫ» on Qostanai TV</desc>
   </programme>
   <programme start="20260822071500 +0500" stop="20260823071500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Күміс көмей&quot;</title>
-    <desc lang="en">Program &quot;Күміс көмей&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Күміс көмей"</title>
+    <desc lang="en">Program "Күміс көмей" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822071500 +0500" stop="20260822084000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Күміс көмей&quot;</title>
-    <desc lang="en">Program &quot;Күміс көмей&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Күміс көмей"</title>
+    <desc lang="en">Program "Күміс көмей" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822084000 +0500" stop="20260823084000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;АНЫҚTIMES&quot; /қайталау/</title>
-    <desc lang="en">Program &quot;АНЫҚTIMES&quot; /қайталау/ on Qyzylorda TV</desc>
+    <title lang="en">"АНЫҚTIMES" /қайталау/</title>
+    <desc lang="en">Program "АНЫҚTIMES" /қайталау/ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822084000 +0500" stop="20260822090000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;АНЫҚTIMES&quot; /қайталау/</title>
-    <desc lang="en">Program &quot;АНЫҚTIMES&quot; /қайталау/ on Qyzylorda TV</desc>
+    <title lang="en">"АНЫҚTIMES" /қайталау/</title>
+    <desc lang="en">Program "АНЫҚTIMES" /қайталау/ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260823090000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;ЗИЯТКЕР&quot;</title>
-    <desc lang="en">Program &quot;ЗИЯТКЕР&quot; on Qyzylorda TV</desc>
+    <title lang="en">"ЗИЯТКЕР"</title>
+    <desc lang="en">Program "ЗИЯТКЕР" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822090000 +0500" stop="20260822093000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;ЗИЯТКЕР&quot;</title>
-    <desc lang="en">Program &quot;ЗИЯТКЕР&quot; on Qyzylorda TV</desc>
+    <title lang="en">"ЗИЯТКЕР"</title>
+    <desc lang="en">Program "ЗИЯТКЕР" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822093000 +0500" stop="20260823093000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Топырақ пен Хауа&quot; т/с. /116-сер/</title>
-    <desc lang="en">Program &quot;Топырақ пен Хауа&quot; т/с. /116-сер/ on Qyzylorda TV</desc>
+    <title lang="en">"Топырақ пен Хауа" т/с. /116-сер/</title>
+    <desc lang="en">Program "Топырақ пен Хауа" т/с. /116-сер/ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822093000 +0500" stop="20260822101500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Топырақ пен Хауа&quot; т/с. /116-сер/</title>
-    <desc lang="en">Program &quot;Топырақ пен Хауа&quot; т/с. /116-сер/ on Qyzylorda TV</desc>
+    <title lang="en">"Топырақ пен Хауа" т/с. /116-сер/</title>
+    <desc lang="en">Program "Топырақ пен Хауа" т/с. /116-сер/ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822101500 +0500" stop="20260823101500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Беймәлім Алаш&quot;</title>
-    <desc lang="en">Program &quot;Беймәлім Алаш&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Беймәлім Алаш"</title>
+    <desc lang="en">Program "Беймәлім Алаш" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822101500 +0500" stop="20260822103500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Беймәлім Алаш&quot;</title>
-    <desc lang="en">Program &quot;Беймәлім Алаш&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Беймәлім Алаш"</title>
+    <desc lang="en">Program "Беймәлім Алаш" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822103500 +0500" stop="20260823103500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Мәслихат&quot;</title>
-    <desc lang="en">Program &quot;Мәслихат&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Мәслихат"</title>
+    <desc lang="en">Program "Мәслихат" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822103500 +0500" stop="20260822110000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Мәслихат&quot;</title>
-    <desc lang="en">Program &quot;Мәслихат&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Мәслихат"</title>
+    <desc lang="en">Program "Мәслихат" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260823110000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Фазилет ханым&quot; т/с. /109-сер./</title>
-    <desc lang="en">Program &quot;Фазилет ханым&quot; т/с. /109-сер./ on Qyzylorda TV</desc>
+    <title lang="en">"Фазилет ханым" т/с. /109-сер./</title>
+    <desc lang="en">Program "Фазилет ханым" т/с. /109-сер./ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822110000 +0500" stop="20260822122000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Фазилет ханым&quot; т/с. /109-сер./</title>
-    <desc lang="en">Program &quot;Фазилет ханым&quot; т/с. /109-сер./ on Qyzylorda TV</desc>
+    <title lang="en">"Фазилет ханым" т/с. /109-сер./</title>
+    <desc lang="en">Program "Фазилет ханым" т/с. /109-сер./ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822122000 +0500" stop="20260823122000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;QYZYQ ORDA&quot;</title>
-    <desc lang="en">Program &quot;QYZYQ ORDA&quot; on Qyzylorda TV</desc>
+    <title lang="en">"QYZYQ ORDA"</title>
+    <desc lang="en">Program "QYZYQ ORDA" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822122000 +0500" stop="20260822170000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;QYZYQ ORDA&quot;</title>
-    <desc lang="en">Program &quot;QYZYQ ORDA&quot; on Qyzylorda TV</desc>
+    <title lang="en">"QYZYQ ORDA"</title>
+    <desc lang="en">Program "QYZYQ ORDA" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260823170000 +0500" channel="QyzylordaTV.kz">
     <title lang="en">ге дейін техникалық үзіліс</title>
@@ -6833,76 +6833,76 @@
     <desc lang="en">Program ге дейін техникалық үзіліс on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260823170000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Саған сенемін&quot; т/с. /6-сер/</title>
-    <desc lang="en">Program &quot;Саған сенемін&quot; т/с. /6-сер/ on Qyzylorda TV</desc>
+    <title lang="en">"Саған сенемін" т/с. /6-сер/</title>
+    <desc lang="en">Program "Саған сенемін" т/с. /6-сер/ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822170000 +0500" stop="20260822180000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Саған сенемін&quot; т/с. /6-сер/</title>
-    <desc lang="en">Program &quot;Саған сенемін&quot; т/с. /6-сер/ on Qyzylorda TV</desc>
+    <title lang="en">"Саған сенемін" т/с. /6-сер/</title>
+    <desc lang="en">Program "Саған сенемін" т/с. /6-сер/ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260823180000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;ҚҰДАЙЫ ҚОНАҚ&quot;</title>
-    <desc lang="en">Program &quot;ҚҰДАЙЫ ҚОНАҚ&quot; on Qyzylorda TV</desc>
+    <title lang="en">"ҚҰДАЙЫ ҚОНАҚ"</title>
+    <desc lang="en">Program "ҚҰДАЙЫ ҚОНАҚ" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822180000 +0500" stop="20260822191000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;ҚҰДАЙЫ ҚОНАҚ&quot;</title>
-    <desc lang="en">Program &quot;ҚҰДАЙЫ ҚОНАҚ&quot; on Qyzylorda TV</desc>
+    <title lang="en">"ҚҰДАЙЫ ҚОНАҚ"</title>
+    <desc lang="en">Program "ҚҰДАЙЫ ҚОНАҚ" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822191000 +0500" stop="20260823191000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Құнды жәдігер&quot;</title>
-    <desc lang="en">Program &quot;Құнды жәдігер&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Құнды жәдігер"</title>
+    <desc lang="en">Program "Құнды жәдігер" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822191000 +0500" stop="20260822192500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Құнды жәдігер&quot;</title>
-    <desc lang="en">Program &quot;Құнды жәдігер&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Құнды жәдігер"</title>
+    <desc lang="en">Program "Құнды жәдігер" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822192500 +0500" stop="20260823192500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;БАЛА ОРДА&quot;</title>
-    <desc lang="en">Program &quot;БАЛА ОРДА&quot; on Qyzylorda TV</desc>
+    <title lang="en">"БАЛА ОРДА"</title>
+    <desc lang="en">Program "БАЛА ОРДА" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822192500 +0500" stop="20260822200000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;БАЛА ОРДА&quot;</title>
-    <desc lang="en">Program &quot;БАЛА ОРДА&quot; on Qyzylorda TV</desc>
+    <title lang="en">"БАЛА ОРДА"</title>
+    <desc lang="en">Program "БАЛА ОРДА" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260823200000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Фазилет ханым&quot; т/с. /110-сер./</title>
-    <desc lang="en">Program &quot;Фазилет ханым&quot; т/с. /110-сер./ on Qyzylorda TV</desc>
+    <title lang="en">"Фазилет ханым" т/с. /110-сер./</title>
+    <desc lang="en">Program "Фазилет ханым" т/с. /110-сер./ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822200000 +0500" stop="20260822210000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Фазилет ханым&quot; т/с. /110-сер./</title>
-    <desc lang="en">Program &quot;Фазилет ханым&quot; т/с. /110-сер./ on Qyzylorda TV</desc>
+    <title lang="en">"Фазилет ханым" т/с. /110-сер./</title>
+    <desc lang="en">Program "Фазилет ханым" т/с. /110-сер./ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822210000 +0500" stop="20260823210000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Жырдария&quot;. С.Жақсығұловтың жыр кеші</title>
-    <desc lang="en">Program &quot;Жырдария&quot;. С.Жақсығұловтың жыр кеші on Qyzylorda TV</desc>
+    <title lang="en">"Жырдария". С.Жақсығұловтың жыр кеші</title>
+    <desc lang="en">Program "Жырдария". С.Жақсығұловтың жыр кеші on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822210000 +0500" stop="20260822220000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Жырдария&quot;. С.Жақсығұловтың жыр кеші</title>
-    <desc lang="en">Program &quot;Жырдария&quot;. С.Жақсығұловтың жыр кеші on Qyzylorda TV</desc>
+    <title lang="en">"Жырдария". С.Жақсығұловтың жыр кеші</title>
+    <desc lang="en">Program "Жырдария". С.Жақсығұловтың жыр кеші on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822220000 +0500" stop="20260823220000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;PARALLEL&quot;</title>
-    <desc lang="en">Program &quot;PARALLEL&quot; on Qyzylorda TV</desc>
+    <title lang="en">"PARALLEL"</title>
+    <desc lang="en">Program "PARALLEL" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822220000 +0500" stop="20260822223500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;PARALLEL&quot;</title>
-    <desc lang="en">Program &quot;PARALLEL&quot; on Qyzylorda TV</desc>
+    <title lang="en">"PARALLEL"</title>
+    <desc lang="en">Program "PARALLEL" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822223500 +0500" stop="20260823223500 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Топырақ пен Хауа&quot; т/с. /117-сер/</title>
-    <desc lang="en">Program &quot;Топырақ пен Хауа&quot; т/с. /117-сер/ on Qyzylorda TV</desc>
+    <title lang="en">"Топырақ пен Хауа" т/с. /117-сер/</title>
+    <desc lang="en">Program "Топырақ пен Хауа" т/с. /117-сер/ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822223500 +0500" stop="20260822232000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Топырақ пен Хауа&quot; т/с. /117-сер/</title>
-    <desc lang="en">Program &quot;Топырақ пен Хауа&quot; т/с. /117-сер/ on Qyzylorda TV</desc>
+    <title lang="en">"Топырақ пен Хауа" т/с. /117-сер/</title>
+    <desc lang="en">Program "Топырақ пен Хауа" т/с. /117-сер/ on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822232000 +0500" stop="20260823232000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Күй-керуен&quot;</title>
-    <desc lang="en">Program &quot;Күй-керуен&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Күй-керуен"</title>
+    <desc lang="en">Program "Күй-керуен" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822232000 +0500" stop="20260823002000 +0500" channel="QyzylordaTV.kz">
-    <title lang="en">&quot;Күй-керуен&quot;</title>
-    <desc lang="en">Program &quot;Күй-керуен&quot; on Qyzylorda TV</desc>
+    <title lang="en">"Күй-керуен"</title>
+    <desc lang="en">Program "Күй-керуен" on Qyzylorda TV</desc>
   </programme>
   <programme start="20260822070500 +0500" stop="20260823070500 +0500" channel="SemeiTV.kz">
     <title lang="en">«Semei» телеарнасының мұрағатынан концерт</title>
