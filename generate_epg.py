@@ -227,35 +227,32 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK SCRAPER (REAL HTML DOM SCRAPER)
+# 4. QAZAQSTAN NETWORK SCRAPER (GEOBLOCK BYPASS VIA PROXY RELAY)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-        "Accept-Language": "kk,ru;q=0.9,en;q=0.8"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     }
     
     icon = target.get("icon") or get_auto_icon(target["url"])
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     programmes = []
     
+    # Gunakan AllOrigins / CORS Proxy untuk menembus Geoblock dari luar Kazakhstan
+    bypass_url = f"https://api.allorigins.win/raw?url={target['url']}"
+    
     try:
-        res = HTTP_SESSION.get(target["url"], headers=headers, timeout=15)
+        res = requests.get(bypass_url, headers=headers, timeout=20)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             today_str = datetime.now().strftime("%Y-%m-%d")
             
-            # Cari seluruh baris/kontainer jadwal di halaman
             raw_progs = []
-            
-            # Pattern Regex untuk mencocokkan Format Jam HH:MM (seperti di screenshot F12)
             time_pattern = re.compile(r'(\b[0-2]?\d:[0-5]\d\b)')
             
             for container in soup.find_all(['div', 'tr', 'li']):
                 text = container.get_text(" ", strip=True)
-                # Filter elemen pendek yang berisi jam tayang & judul
                 if 5 < len(text) < 200:
                     match = time_pattern.search(text)
                     if match:
@@ -263,10 +260,7 @@ def fetch_epg_qazaqstan(target):
                         if len(time_start.split(':')[0]) == 1:
                             time_start = "0" + time_start
                             
-                        # Ambil teks setelah jam sebagai Judul Acara
                         title_part = text[match.end():].strip(" -–:\t\n\r[]")
-                        
-                        # Bersihkan kata-kata sampah
                         for ignore_word in ["LIVE", "ЭФИРДЕ", "Бағдарлама", "Драма", "Көркем фильм", "Телехикая", "Шоу"]:
                             title_part = title_part.replace(ignore_word, "").strip()
                             
@@ -282,10 +276,8 @@ def fetch_epg_qazaqstan(target):
                             except Exception:
                                 continue
 
-            # Urutkan berdasarkan waktu mulai
             raw_progs.sort(key=lambda x: x["start_dt"])
             
-            # Hitung waktu selesai (stop_dt)
             for i in range(len(raw_progs)):
                 curr = raw_progs[i]
                 start_dt = curr["start_dt"]
@@ -310,7 +302,7 @@ def fetch_epg_qazaqstan(target):
                 return channels, programmes
 
     except Exception as e:
-        print(f"[!] HTML Scraper Error for {target['name']}: {e}")
+        print(f"[!] Geoblock Bypass Error [{target['name']}]: {e}")
 
     return auto_scrape_epg(target)
 
