@@ -900,13 +900,9 @@
     <title lang="en">03:30Cat People</title>
     <desc lang="en">Broadcast of 03:30Cat People on Channel11HITS MOVIES</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822055000 +0700" channel="Channel12GalaxyPremium.mnc">
-    <title lang="en">05:50</title>
-    <desc lang="en">Broadcast of 05:50 on Channel12Galaxy Premium</desc>
-  </programme>
   <programme start="20260822055000 +0700" stop="20260822072000 +0700" channel="Channel12GalaxyPremium.mnc">
-    <title lang="en">07:20The Forest</title>
-    <desc lang="en">Broadcast of 07:20The Forest on Channel12Galaxy Premium</desc>
+    <title lang="en">07:20</title>
+    <desc lang="en">Broadcast of 07:20 on Channel12Galaxy Premium</desc>
   </programme>
   <programme start="20260822072000 +0700" stop="20260822090000 +0700" channel="Channel12GalaxyPremium.mnc">
     <title lang="en">09:00Teenage Mutant Ninja Turtles</title>
@@ -936,9 +932,13 @@
     <title lang="en">19:30The Social Network</title>
     <desc lang="en">Broadcast of 19:30The Social Network on Channel12Galaxy Premium</desc>
   </programme>
-  <programme start="20260822193000 +0700" stop="20260822203000 +0700" channel="Channel12GalaxyPremium.mnc">
+  <programme start="20260822193000 +0700" stop="20260822210000 +0700" channel="Channel12GalaxyPremium.mnc">
     <title lang="en">21:00I Spy</title>
     <desc lang="en">Broadcast of 21:00I Spy on Channel12Galaxy Premium</desc>
+  </programme>
+  <programme start="20260822210000 +0700" stop="20260822220000 +0700" channel="Channel12GalaxyPremium.mnc">
+    <title lang="en">22:30The Grudge</title>
+    <desc lang="en">Broadcast of 22:30The Grudge on Channel12Galaxy Premium</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822060500 +0700" channel="Channel13Galaxy.mnc">
     <title lang="en">06:05</title>
@@ -1020,17 +1020,9 @@
     <title lang="en">21:20Jones: Jomblo Ngenes</title>
     <desc lang="en">Broadcast of 21:20Jones: Jomblo Ngenes on Channel14IMC</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822044500 +0700" channel="Channel19Thrill.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel19Thrill</desc>
-  </programme>
-  <programme start="20260822044500 +0700" stop="20260822053000 +0700" channel="Channel19Thrill.mnc">
-    <title lang="en">05:30Trans7</title>
-    <desc lang="en">Broadcast of 05:30Trans7 on Channel19Thrill</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel19Thrill.mnc">
-    <title lang="en">07:05Fengmen Village Horror</title>
-    <desc lang="en">Broadcast of 07:05Fengmen Village Horror on Channel19Thrill</desc>
+    <title lang="en">07:05</title>
+    <desc lang="en">Broadcast of 07:05 on Channel19Thrill</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822070500 +0700" channel="Channel19Thrill.mnc">
     <title lang="en">07:30Trans7</title>
@@ -1056,9 +1048,17 @@
     <title lang="en">10:15Trans7</title>
     <desc lang="en">Broadcast of 10:15Trans7 on Channel19Thrill</desc>
   </programme>
-  <programme start="20260822101500 +0700" stop="20260822111500 +0700" channel="Channel19Thrill.mnc">
+  <programme start="20260822101500 +0700" stop="20260822103000 +0700" channel="Channel19Thrill.mnc">
     <title lang="en">11:15Trans7</title>
     <desc lang="en">Broadcast of 11:15Trans7 on Channel19Thrill</desc>
+  </programme>
+  <programme start="20260822103000 +0700" stop="20260822111500 +0700" channel="Channel19Thrill.mnc">
+    <title lang="en">12:00Room For Rent</title>
+    <desc lang="en">Broadcast of 12:00Room For Rent on Channel19Thrill</desc>
+  </programme>
+  <programme start="20260822111500 +0700" stop="20260822121500 +0700" channel="Channel19Thrill.mnc">
+    <title lang="en">12:00Trans7</title>
+    <desc lang="en">Broadcast of 12:00Trans7 on Channel19Thrill</desc>
   </programme>
   <programme start="20260822052000 +0700" stop="20260822070000 +0700" channel="Channel20CelestialMovies.mnc">
     <title lang="en">07:00</title>
@@ -1260,13 +1260,9 @@
     <title lang="en">22:55Robin Hood</title>
     <desc lang="en">Broadcast of 22:55Robin Hood on Channel26Studio Universal</desc>
   </programme>
-  <programme start="20260822052000 +0700" stop="20260822054000 +0700" channel="Channel37NickelodeonJr.mnc">
-    <title lang="en">05:40</title>
-    <desc lang="en">Broadcast of 05:40 on Channel37Nickelodeon Jr</desc>
-  </programme>
   <programme start="20260822054000 +0700" stop="20260822060500 +0700" channel="Channel37NickelodeonJr.mnc">
-    <title lang="en">06:05Rubble &amp; Crew</title>
-    <desc lang="en">Broadcast of 06:05Rubble &amp; Crew on Channel37Nickelodeon Jr</desc>
+    <title lang="en">06:05</title>
+    <desc lang="en">Broadcast of 06:05 on Channel37Nickelodeon Jr</desc>
   </programme>
   <programme start="20260822060500 +0700" stop="20260822062500 +0700" channel="Channel37NickelodeonJr.mnc">
     <title lang="en">06:25PAW Patrol</title>
@@ -1296,21 +1292,17 @@
     <title lang="en">08:45Santiago Of The Seas</title>
     <desc lang="en">Broadcast of 08:45Santiago Of The Seas on Channel37Nickelodeon Jr</desc>
   </programme>
-  <programme start="20260822084500 +0700" stop="20260822094500 +0700" channel="Channel37NickelodeonJr.mnc">
+  <programme start="20260822084500 +0700" stop="20260822090500 +0700" channel="Channel37NickelodeonJr.mnc">
     <title lang="en">09:05Dora</title>
     <desc lang="en">Broadcast of 09:05Dora on Channel37Nickelodeon Jr</desc>
   </programme>
-  <programme start="20260822051500 +0700" stop="20260822053000 +0700" channel="Channel39Zoomoo.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel39Zoomoo</desc>
-  </programme>
-  <programme start="20260822053000 +0700" stop="20260822054500 +0700" channel="Channel39Zoomoo.mnc">
-    <title lang="en">05:45ZooMoo's Got Brains S2, Ep 30</title>
-    <desc lang="en">Broadcast of 05:45ZooMoo's Got Brains S2, Ep 30 on Channel39Zoomoo</desc>
+  <programme start="20260822090500 +0700" stop="20260822100500 +0700" channel="Channel37NickelodeonJr.mnc">
+    <title lang="en">09:30Blaze &amp; The Monster Machines</title>
+    <desc lang="en">Broadcast of 09:30Blaze &amp; The Monster Machines on Channel37Nickelodeon Jr</desc>
   </programme>
   <programme start="20260822054500 +0700" stop="20260822060000 +0700" channel="Channel39Zoomoo.mnc">
-    <title lang="en">06:00ZooMoo's Got Brains S2, Ep 31</title>
-    <desc lang="en">Broadcast of 06:00ZooMoo's Got Brains S2, Ep 31 on Channel39Zoomoo</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel39Zoomoo</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822061500 +0700" channel="Channel39Zoomoo.mnc">
     <title lang="en">06:15Animal All Stars S1, Ep 29</title>
@@ -1336,9 +1328,17 @@
     <title lang="en">07:30Jelly Jamm S1, Ep 28</title>
     <desc lang="en">Broadcast of 07:30Jelly Jamm S1, Ep 28 on Channel39Zoomoo</desc>
   </programme>
-  <programme start="20260822073000 +0700" stop="20260822083000 +0700" channel="Channel39Zoomoo.mnc">
+  <programme start="20260822073000 +0700" stop="20260822074500 +0700" channel="Channel39Zoomoo.mnc">
     <title lang="en">07:45Jelly Jamm S1, Ep 29</title>
     <desc lang="en">Broadcast of 07:45Jelly Jamm S1, Ep 29 on Channel39Zoomoo</desc>
+  </programme>
+  <programme start="20260822074500 +0700" stop="20260822080000 +0700" channel="Channel39Zoomoo.mnc">
+    <title lang="en">08:00Jelly Jamm S1, Ep 30</title>
+    <desc lang="en">Broadcast of 08:00Jelly Jamm S1, Ep 30 on Channel39Zoomoo</desc>
+  </programme>
+  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel39Zoomoo.mnc">
+    <title lang="en">08:15Jelly Jamm S1, Ep 31</title>
+    <desc lang="en">Broadcast of 08:15Jelly Jamm S1, Ep 31 on Channel39Zoomoo</desc>
   </programme>
   <programme start="20260822052600 +0700" stop="20260822060000 +0700" channel="Channel40Moonbug.mnc">
     <title lang="en">06:00</title>
@@ -1380,21 +1380,9 @@
     <title lang="en">09:59Dance Party</title>
     <desc lang="en">Broadcast of 09:59Dance Party on Channel40Moonbug</desc>
   </programme>
-  <programme start="20260822052700 +0700" stop="20260822053500 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">05:35</title>
-    <desc lang="en">Broadcast of 05:35 on Channel41CBeebies</desc>
-  </programme>
-  <programme start="20260822053500 +0700" stop="20260822054200 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">05:42Hey Duggee's Squirrel..., Ep 24</title>
-    <desc lang="en">Broadcast of 05:42Hey Duggee's Squirrel..., Ep 24 on Channel41CBeebies</desc>
-  </programme>
-  <programme start="20260822054200 +0700" stop="20260822054900 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">05:49Hey Duggee's Squirrel..., Ep 25</title>
-    <desc lang="en">Broadcast of 05:49Hey Duggee's Squirrel..., Ep 25 on Channel41CBeebies</desc>
-  </programme>
   <programme start="20260822054900 +0700" stop="20260822055600 +0700" channel="Channel41CBeebies.mnc">
-    <title lang="en">05:56Hey Duggee's Squirrel..., Ep 26</title>
-    <desc lang="en">Broadcast of 05:56Hey Duggee's Squirrel..., Ep 26 on Channel41CBeebies</desc>
+    <title lang="en">05:56</title>
+    <desc lang="en">Broadcast of 05:56 on Channel41CBeebies</desc>
   </programme>
   <programme start="20260822055600 +0700" stop="20260822060300 +0700" channel="Channel41CBeebies.mnc">
     <title lang="en">06:03Hey Duggee's Squirrel..., Ep 14</title>
@@ -1416,17 +1404,25 @@
     <title lang="en">06:32Bluey S3, Ep 9</title>
     <desc lang="en">Broadcast of 06:32Bluey S3, Ep 9 on Channel41CBeebies</desc>
   </programme>
-  <programme start="20260822063200 +0700" stop="20260822073200 +0700" channel="Channel41CBeebies.mnc">
+  <programme start="20260822063200 +0700" stop="20260822063900 +0700" channel="Channel41CBeebies.mnc">
     <title lang="en">06:39Bluey S3, Ep 10</title>
     <desc lang="en">Broadcast of 06:39Bluey S3, Ep 10 on Channel41CBeebies</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel46KidsTV.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel46Kids TV</desc>
+  <programme start="20260822063900 +0700" stop="20260822064600 +0700" channel="Channel41CBeebies.mnc">
+    <title lang="en">06:46Bluey S3, Ep 11</title>
+    <desc lang="en">Broadcast of 06:46Bluey S3, Ep 11 on Channel41CBeebies</desc>
+  </programme>
+  <programme start="20260822064600 +0700" stop="20260822065300 +0700" channel="Channel41CBeebies.mnc">
+    <title lang="en">06:53Bluey S3, Ep 12</title>
+    <desc lang="en">Broadcast of 06:53Bluey S3, Ep 12 on Channel41CBeebies</desc>
+  </programme>
+  <programme start="20260822065300 +0700" stop="20260822075300 +0700" channel="Channel41CBeebies.mnc">
+    <title lang="en">07:00Bluey S3, Ep 13</title>
+    <desc lang="en">Broadcast of 07:00Bluey S3, Ep 13 on Channel41CBeebies</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel46KidsTV.mnc">
-    <title lang="en">06:00Kids Menu</title>
-    <desc lang="en">Broadcast of 06:00Kids Menu on Channel46Kids TV</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel46Kids TV</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel46KidsTV.mnc">
     <title lang="en">06:30Kiko S4</title>
@@ -1456,17 +1452,17 @@
     <title lang="en">11:20Sahabat Selamanya Upin &amp; Ipin</title>
     <desc lang="en">Broadcast of 11:20Sahabat Selamanya Upin &amp; Ipin on Channel46Kids TV</desc>
   </programme>
-  <programme start="20260822112000 +0700" stop="20260822122000 +0700" channel="Channel46KidsTV.mnc">
+  <programme start="20260822112000 +0700" stop="20260822113000 +0700" channel="Channel46KidsTV.mnc">
     <title lang="en">11:30O Iya Ya</title>
     <desc lang="en">Broadcast of 11:30O Iya Ya on Channel46Kids TV</desc>
   </programme>
-  <programme start="20260822052500 +0700" stop="20260822055000 +0700" channel="Channel47Dreamworks.mnc">
-    <title lang="en">05:50</title>
-    <desc lang="en">Broadcast of 05:50 on Channel47Dreamworks</desc>
+  <programme start="20260822113000 +0700" stop="20260822123000 +0700" channel="Channel46KidsTV.mnc">
+    <title lang="en">12:30Main Bareng Entong</title>
+    <desc lang="en">Broadcast of 12:30Main Bareng Entong on Channel46Kids TV</desc>
   </programme>
   <programme start="20260822055000 +0700" stop="20260822061500 +0700" channel="Channel47Dreamworks.mnc">
-    <title lang="en">06:15Gabby's Dollhouse</title>
-    <desc lang="en">Broadcast of 06:15Gabby's Dollhouse on Channel47Dreamworks</desc>
+    <title lang="en">06:15</title>
+    <desc lang="en">Broadcast of 06:15 on Channel47Dreamworks</desc>
   </programme>
   <programme start="20260822061500 +0700" stop="20260822064000 +0700" channel="Channel47Dreamworks.mnc">
     <title lang="en">06:40Gabby's Dollhouse</title>
@@ -1496,21 +1492,17 @@
     <title lang="en">09:10Go, Dog. Go!</title>
     <desc lang="en">Broadcast of 09:10Go, Dog. Go! on Channel47Dreamworks</desc>
   </programme>
-  <programme start="20260822091000 +0700" stop="20260822101000 +0700" channel="Channel47Dreamworks.mnc">
+  <programme start="20260822091000 +0700" stop="20260822093500 +0700" channel="Channel47Dreamworks.mnc">
     <title lang="en">09:35Dawn Of The Croods</title>
     <desc lang="en">Broadcast of 09:35Dawn Of The Croods on Channel47Dreamworks</desc>
   </programme>
-  <programme start="20260822051000 +0700" stop="20260822053500 +0700" channel="Channel49Nickelodeon.mnc">
-    <title lang="en">05:35</title>
-    <desc lang="en">Broadcast of 05:35 on Channel49Nickelodeon</desc>
-  </programme>
-  <programme start="20260822053500 +0700" stop="20260822055500 +0700" channel="Channel49Nickelodeon.mnc">
-    <title lang="en">05:55Best And Bester</title>
-    <desc lang="en">Broadcast of 05:55Best And Bester on Channel49Nickelodeon</desc>
+  <programme start="20260822093500 +0700" stop="20260822103500 +0700" channel="Channel47Dreamworks.mnc">
+    <title lang="en">10:00Dawn Of The Croods</title>
+    <desc lang="en">Broadcast of 10:00Dawn Of The Croods on Channel47Dreamworks</desc>
   </programme>
   <programme start="20260822055500 +0700" stop="20260822062000 +0700" channel="Channel49Nickelodeon.mnc">
-    <title lang="en">06:20Best And Bester</title>
-    <desc lang="en">Broadcast of 06:20Best And Bester on Channel49Nickelodeon</desc>
+    <title lang="en">06:20</title>
+    <desc lang="en">Broadcast of 06:20 on Channel49Nickelodeon</desc>
   </programme>
   <programme start="20260822062000 +0700" stop="20260822064000 +0700" channel="Channel49Nickelodeon.mnc">
     <title lang="en">06:40The Patrick Star Show</title>
@@ -1536,9 +1528,17 @@
     <title lang="en">08:30Danger Force</title>
     <desc lang="en">Broadcast of 08:30Danger Force on Channel49Nickelodeon</desc>
   </programme>
-  <programme start="20260822083000 +0700" stop="20260822093000 +0700" channel="Channel49Nickelodeon.mnc">
+  <programme start="20260822083000 +0700" stop="20260822085500 +0700" channel="Channel49Nickelodeon.mnc">
     <title lang="en">08:55Henry Danger</title>
     <desc lang="en">Broadcast of 08:55Henry Danger on Channel49Nickelodeon</desc>
+  </programme>
+  <programme start="20260822085500 +0700" stop="20260822092000 +0700" channel="Channel49Nickelodeon.mnc">
+    <title lang="en">09:20The Loud House</title>
+    <desc lang="en">Broadcast of 09:20The Loud House on Channel49Nickelodeon</desc>
+  </programme>
+  <programme start="20260822092000 +0700" stop="20260822102000 +0700" channel="Channel49Nickelodeon.mnc">
+    <title lang="en">09:40The Loud House</title>
+    <desc lang="en">Broadcast of 09:40The Loud House on Channel49Nickelodeon</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822060000 +0700" channel="Channel78Indosiar.mnc">
     <title lang="en">06:00</title>
@@ -1740,13 +1740,9 @@
     <title lang="en">12:30Cahaya Hati The Series</title>
     <desc lang="en">Broadcast of 12:30Cahaya Hati The Series on Channel83iNews</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel84SindoNewsTV.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel84Sindo News TV</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel84SindoNewsTV.mnc">
-    <title lang="en">06:30Realita</title>
-    <desc lang="en">Broadcast of 06:30Realita on Channel84Sindo News TV</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel84Sindo News TV</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822073000 +0700" channel="Channel84SindoNewsTV.mnc">
     <title lang="en">07:30iNews Files</title>
@@ -1776,17 +1772,17 @@
     <title lang="en">13:00I Love Indonesia</title>
     <desc lang="en">Broadcast of 13:00I Love Indonesia on Channel84Sindo News TV</desc>
   </programme>
-  <programme start="20260822130000 +0700" stop="20260822140000 +0700" channel="Channel84SindoNewsTV.mnc">
+  <programme start="20260822130000 +0700" stop="20260822143000 +0700" channel="Channel84SindoNewsTV.mnc">
     <title lang="en">14:30SINDO Today</title>
     <desc lang="en">Broadcast of 14:30SINDO Today on Channel84Sindo News TV</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel86Entertainment.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel86Entertainment</desc>
+  <programme start="20260822143000 +0700" stop="20260822153000 +0700" channel="Channel84SindoNewsTV.mnc">
+    <title lang="en">15:30iNews Siang</title>
+    <desc lang="en">Broadcast of 15:30iNews Siang on Channel84Sindo News TV</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel86Entertainment.mnc">
-    <title lang="en">06:30Konon Katanya</title>
-    <desc lang="en">Broadcast of 06:30Konon Katanya on Channel86Entertainment</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel86Entertainment</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822080000 +0700" channel="Channel86Entertainment.mnc">
     <title lang="en">08:00Calon Manten Coming Soon</title>
@@ -1816,9 +1812,13 @@
     <title lang="en">18:00Wedding Pullav</title>
     <desc lang="en">Broadcast of 18:00Wedding Pullav on Channel86Entertainment</desc>
   </programme>
-  <programme start="20260822180000 +0700" stop="20260822190000 +0700" channel="Channel86Entertainment.mnc">
+  <programme start="20260822180000 +0700" stop="20260822193000 +0700" channel="Channel86Entertainment.mnc">
     <title lang="en">19:30New Family 100</title>
     <desc lang="en">Broadcast of 19:30New Family 100 on Channel86Entertainment</desc>
+  </programme>
+  <programme start="20260822193000 +0700" stop="20260822203000 +0700" channel="Channel86Entertainment.mnc">
+    <title lang="en">20:30Opsi Jalan Keluar</title>
+    <desc lang="en">Broadcast of 20:30Opsi Jalan Keluar on Channel86Entertainment</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822063000 +0700" channel="Channel87TransTV.mnc">
     <title lang="en">06:30</title>
@@ -1940,13 +1940,9 @@
     <title lang="en">18:45Asmara Gen Z New Era</title>
     <desc lang="en">Broadcast of 18:45Asmara Gen Z New Era on Channel89SCTV</desc>
   </programme>
-  <programme start="20260822043000 +0700" stop="20260822053000 +0700" channel="Channel90HanacarakaTV.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel90Hanacaraka TV</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel90HanacarakaTV.mnc">
-    <title lang="en">06:00Pawartos Jawi</title>
-    <desc lang="en">Broadcast of 06:00Pawartos Jawi on Channel90Hanacaraka TV</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel90Hanacaraka TV</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822070000 +0700" channel="Channel90HanacarakaTV.mnc">
     <title lang="en">07:00Ludruk Humor Kirun</title>
@@ -1976,17 +1972,17 @@
     <title lang="en">11:00Baskom (Banyumas Komedi)</title>
     <desc lang="en">Broadcast of 11:00Baskom (Banyumas Komedi) on Channel90Hanacaraka TV</desc>
   </programme>
-  <programme start="20260822110000 +0700" stop="20260822120000 +0700" channel="Channel90HanacarakaTV.mnc">
+  <programme start="20260822110000 +0700" stop="20260822113000 +0700" channel="Channel90HanacarakaTV.mnc">
     <title lang="en">11:30Dagelan Jowo New</title>
     <desc lang="en">Broadcast of 11:30Dagelan Jowo New on Channel90Hanacaraka TV</desc>
   </programme>
-  <programme start="20260822043000 +0700" stop="20260822053000 +0700" channel="Channel91LIFE.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel91LIFE</desc>
+  <programme start="20260822113000 +0700" stop="20260822123000 +0700" channel="Channel90HanacarakaTV.mnc">
+    <title lang="en">12:30Kompleks Pengabdi Istri</title>
+    <desc lang="en">Broadcast of 12:30Kompleks Pengabdi Istri on Channel90Hanacaraka TV</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel91LIFE.mnc">
-    <title lang="en">06:00Life Music</title>
-    <desc lang="en">Broadcast of 06:00Life Music on Channel91LIFE</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel91LIFE</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822070000 +0700" channel="Channel91LIFE.mnc">
     <title lang="en">07:00Sekolah Minggu Gembira</title>
@@ -2016,9 +2012,13 @@
     <title lang="en">11:15Life Music</title>
     <desc lang="en">Broadcast of 11:15Life Music on Channel91LIFE</desc>
   </programme>
-  <programme start="20260822111500 +0700" stop="20260822121500 +0700" channel="Channel91LIFE.mnc">
+  <programme start="20260822111500 +0700" stop="20260822124500 +0700" channel="Channel91LIFE.mnc">
     <title lang="en">12:45Ibadah Minggu GSKI Jakarta (L)</title>
     <desc lang="en">Broadcast of 12:45Ibadah Minggu GSKI Jakarta (L) on Channel91LIFE</desc>
+  </programme>
+  <programme start="20260822124500 +0700" stop="20260822134500 +0700" channel="Channel91LIFE.mnc">
+    <title lang="en">13:15Way Out</title>
+    <desc lang="en">Broadcast of 13:15Way Out on Channel91LIFE</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822063000 +0700" channel="Channel92MuslimTV.mnc">
     <title lang="en">06:30</title>
@@ -2140,13 +2140,9 @@
     <title lang="en">19:00Terikat Janji</title>
     <desc lang="en">Broadcast of 19:00Terikat Janji on Channel94Vision Prime</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822053000 +0700" channel="Channel95FOODTRAVEL.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel95FOOD TRAVEL</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel95FOODTRAVEL.mnc">
-    <title lang="en">06:00Let's Go</title>
-    <desc lang="en">Broadcast of 06:00Let's Go on Channel95FOOD TRAVEL</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel95FOOD TRAVEL</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel95FOODTRAVEL.mnc">
     <title lang="en">06:30Travel Addict</title>
@@ -2176,9 +2172,13 @@
     <title lang="en">12:00Viral Kuliner</title>
     <desc lang="en">Broadcast of 12:00Viral Kuliner on Channel95FOOD TRAVEL</desc>
   </programme>
-  <programme start="20260822120000 +0700" stop="20260822130000 +0700" channel="Channel95FOODTRAVEL.mnc">
+  <programme start="20260822120000 +0700" stop="20260822123000 +0700" channel="Channel95FOODTRAVEL.mnc">
     <title lang="en">12:30Viral Kuliner</title>
     <desc lang="en">Broadcast of 12:30Viral Kuliner on Channel95FOOD TRAVEL</desc>
+  </programme>
+  <programme start="20260822123000 +0700" stop="20260822133000 +0700" channel="Channel95FOODTRAVEL.mnc">
+    <title lang="en">13:00Viral Kuliner</title>
+    <desc lang="en">Broadcast of 13:00Viral Kuliner on Channel95FOOD TRAVEL</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel96CelebritiesTV.mnc">
     <title lang="en">06:00</title>
@@ -2260,13 +2260,9 @@
     <title lang="en">12:30Kabar Siang</title>
     <desc lang="en">Broadcast of 12:30Kabar Siang on Channel97tvOne</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822053000 +0700" channel="Channel98Sportstars2.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel98Sportstars 2</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822080000 +0700" channel="Channel98Sportstars2.mnc">
-    <title lang="en">08:00Best Of Badminton</title>
-    <desc lang="en">Broadcast of 08:00Best Of Badminton on Channel98Sportstars 2</desc>
+    <title lang="en">08:00</title>
+    <desc lang="en">Broadcast of 08:00 on Channel98Sportstars 2</desc>
   </programme>
   <programme start="20260822080000 +0700" stop="20260822083000 +0700" channel="Channel98Sportstars2.mnc">
     <title lang="en">08:30iNews Sport</title>
@@ -2296,9 +2292,13 @@
     <title lang="en">16:30ASEAN C'ship Hyundai Cup 2026</title>
     <desc lang="en">Broadcast of 16:30ASEAN C'ship Hyundai Cup 2026 on Channel98Sportstars 2</desc>
   </programme>
-  <programme start="20260822163000 +0700" stop="20260822173000 +0700" channel="Channel98Sportstars2.mnc">
+  <programme start="20260822163000 +0700" stop="20260822183000 +0700" channel="Channel98Sportstars2.mnc">
     <title lang="en">18:30ASEAN C'ship Hyundai Cup 2026</title>
     <desc lang="en">Broadcast of 18:30ASEAN C'ship Hyundai Cup 2026 on Channel98Sportstars 2</desc>
+  </programme>
+  <programme start="20260822183000 +0700" stop="20260822193000 +0700" channel="Channel98Sportstars2.mnc">
+    <title lang="en">20:30Satu Hati Untuk Garuda</title>
+    <desc lang="en">Broadcast of 20:30Satu Hati Untuk Garuda on Channel98Sportstars 2</desc>
   </programme>
   <programme start="20260822040000 +0700" stop="20260822060000 +0700" channel="Channel99Sportstars3.mnc">
     <title lang="en">06:00</title>
@@ -2340,13 +2340,9 @@
     <title lang="en">00:00Satu Hati Untuk Garuda</title>
     <desc lang="en">Broadcast of 00:00Satu Hati Untuk Garuda on Channel99Sportstars 3</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel100IDX.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel100IDX</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel100IDX.mnc">
-    <title lang="en">06:30OMG IDX</title>
-    <desc lang="en">Broadcast of 06:30OMG IDX on Channel100IDX</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel100IDX</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822070000 +0700" channel="Channel100IDX.mnc">
     <title lang="en">07:00I Love Indonesia</title>
@@ -2376,9 +2372,13 @@
     <title lang="en">12:00News Screen</title>
     <desc lang="en">Broadcast of 12:00News Screen on Channel100IDX</desc>
   </programme>
-  <programme start="20260822120000 +0700" stop="20260822130000 +0700" channel="Channel100IDX.mnc">
+  <programme start="20260822120000 +0700" stop="20260822123000 +0700" channel="Channel100IDX.mnc">
     <title lang="en">12:30Women's Talk</title>
     <desc lang="en">Broadcast of 12:30Women's Talk on Channel100IDX</desc>
+  </programme>
+  <programme start="20260822123000 +0700" stop="20260822133000 +0700" channel="Channel100IDX.mnc">
+    <title lang="en">13:00Rating 5</title>
+    <desc lang="en">Broadcast of 13:00Rating 5 on Channel100IDX</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822063000 +0700" channel="Channel101SoccerChannel.mnc">
     <title lang="en">06:30</title>
@@ -2500,13 +2500,9 @@
     <title lang="en">09:00Galeri Rasa</title>
     <desc lang="en">Broadcast of 09:00Galeri Rasa on Channel103BTV</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel105TawafTV.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel105Tawaf TV</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel105TawafTV.mnc">
-    <title lang="en">06:00DMI TV</title>
-    <desc lang="en">Broadcast of 06:00DMI TV on Channel105Tawaf TV</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel105Tawaf TV</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822070000 +0700" channel="Channel105TawafTV.mnc">
     <title lang="en">07:00DMI TV</title>
@@ -2536,9 +2532,13 @@
     <title lang="en">10:30DMI TV</title>
     <desc lang="en">Broadcast of 10:30DMI TV on Channel105Tawaf TV</desc>
   </programme>
-  <programme start="20260822103000 +0700" stop="20260822113000 +0700" channel="Channel105TawafTV.mnc">
+  <programme start="20260822103000 +0700" stop="20260822110000 +0700" channel="Channel105TawafTV.mnc">
     <title lang="en">11:00DMI TV</title>
     <desc lang="en">Broadcast of 11:00DMI TV on Channel105Tawaf TV</desc>
+  </programme>
+  <programme start="20260822110000 +0700" stop="20260822120000 +0700" channel="Channel105TawafTV.mnc">
+    <title lang="en">11:30DMI TV</title>
+    <desc lang="en">Broadcast of 11:30DMI TV on Channel105Tawaf TV</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822063000 +0700" channel="Channel106KompasTV.mnc">
     <title lang="en">06:30</title>
@@ -2580,13 +2580,9 @@
     <title lang="en">15:00Berita Utama</title>
     <desc lang="en">Broadcast of 15:00Berita Utama on Channel106Kompas TV</desc>
   </programme>
-  <programme start="20260822050500 +0700" stop="20260822053000 +0700" channel="Channel107MetroTV.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel107Metro TV</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel107MetroTV.mnc">
-    <title lang="en">06:00Top News</title>
-    <desc lang="en">Broadcast of 06:00Top News on Channel107Metro TV</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel107Metro TV</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel107MetroTV.mnc">
     <title lang="en">06:30Metro Sport</title>
@@ -2616,17 +2612,17 @@
     <title lang="en">08:30Selamat Pagi Indonesia</title>
     <desc lang="en">Broadcast of 08:30Selamat Pagi Indonesia on Channel107Metro TV</desc>
   </programme>
-  <programme start="20260822083000 +0700" stop="20260822093000 +0700" channel="Channel107MetroTV.mnc">
+  <programme start="20260822083000 +0700" stop="20260822090000 +0700" channel="Channel107MetroTV.mnc">
     <title lang="en">09:00Selamat Pagi Indonesia</title>
     <desc lang="en">Broadcast of 09:00Selamat Pagi Indonesia on Channel107Metro TV</desc>
   </programme>
-  <programme start="20260822044500 +0700" stop="20260822053000 +0700" channel="Channel110Trans7.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel110Trans 7</desc>
+  <programme start="20260822090000 +0700" stop="20260822100000 +0700" channel="Channel107MetroTV.mnc">
+    <title lang="en">09:05Headline News</title>
+    <desc lang="en">Broadcast of 09:05Headline News on Channel107Metro TV</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel110Trans7.mnc">
-    <title lang="en">06:30Redaksi Pagi Akhir Pekan</title>
-    <desc lang="en">Broadcast of 06:30Redaksi Pagi Akhir Pekan on Channel110Trans 7</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel110Trans 7</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822073000 +0700" channel="Channel110Trans7.mnc">
     <title lang="en">07:30Spotlite</title>
@@ -2656,17 +2652,17 @@
     <title lang="en">12:45Jejak Petualangan</title>
     <desc lang="en">Broadcast of 12:45Jejak Petualangan on Channel110Trans 7</desc>
   </programme>
-  <programme start="20260822124500 +0700" stop="20260822134500 +0700" channel="Channel110Trans7.mnc">
+  <programme start="20260822124500 +0700" stop="20260822133000 +0700" channel="Channel110Trans7.mnc">
     <title lang="en">13:30The Explorer</title>
     <desc lang="en">Broadcast of 13:30The Explorer on Channel110Trans 7</desc>
   </programme>
-  <programme start="20260822043000 +0700" stop="20260822053000 +0700" channel="Channel111MusicTV.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel111Music TV</desc>
+  <programme start="20260822133000 +0700" stop="20260822143000 +0700" channel="Channel110Trans7.mnc">
+    <title lang="en">14:15Mancing Mania Strike Back</title>
+    <desc lang="en">Broadcast of 14:15Mancing Mania Strike Back on Channel110Trans 7</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel111MusicTV.mnc">
-    <title lang="en">06:30Juke Box</title>
-    <desc lang="en">Broadcast of 06:30Juke Box on Channel111Music TV</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel111Music TV</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822071500 +0700" channel="Channel111MusicTV.mnc">
     <title lang="en">07:15Made In India</title>
@@ -2696,9 +2692,13 @@
     <title lang="en">14:30Idol Story</title>
     <desc lang="en">Broadcast of 14:30Idol Story on Channel111Music TV</desc>
   </programme>
-  <programme start="20260822143000 +0700" stop="20260822153000 +0700" channel="Channel111MusicTV.mnc">
+  <programme start="20260822143000 +0700" stop="20260822170000 +0700" channel="Channel111MusicTV.mnc">
     <title lang="en">17:00Ratu Dendang Dangdut</title>
     <desc lang="en">Broadcast of 17:00Ratu Dendang Dangdut on Channel111Music TV</desc>
+  </programme>
+  <programme start="20260822170000 +0700" stop="20260822180000 +0700" channel="Channel111MusicTV.mnc">
+    <title lang="en">18:00Godain</title>
+    <desc lang="en">Broadcast of 18:00Godain on Channel111Music TV</desc>
   </programme>
   <programme start="20260822220000 +0700" stop="20260823090000 +0700" channel="Channel113JAKTV.mnc">
     <title lang="en">09:00</title>
@@ -2780,13 +2780,9 @@
     <title lang="en">02:00The Commitment</title>
     <desc lang="en">Broadcast of 02:00The Commitment on Channel115ANTV</desc>
   </programme>
-  <programme start="20260822041000 +0700" stop="20260822054500 +0700" channel="Channel116MDTV.mnc">
-    <title lang="en">05:45</title>
-    <desc lang="en">Broadcast of 05:45 on Channel116MDTV</desc>
-  </programme>
   <programme start="20260822054500 +0700" stop="20260822064500 +0700" channel="Channel116MDTV.mnc">
-    <title lang="en">06:45Jelajah Masjid Nusantara</title>
-    <desc lang="en">Broadcast of 06:45Jelajah Masjid Nusantara on Channel116MDTV</desc>
+    <title lang="en">06:45</title>
+    <desc lang="en">Broadcast of 06:45 on Channel116MDTV</desc>
   </programme>
   <programme start="20260822064500 +0700" stop="20260822080000 +0700" channel="Channel116MDTV.mnc">
     <title lang="en">08:00AADD: Ada Apa Dengan Dunia</title>
@@ -2816,9 +2812,13 @@
     <title lang="en">14:30Makan Enak Lagiii</title>
     <desc lang="en">Broadcast of 14:30Makan Enak Lagiii on Channel116MDTV</desc>
   </programme>
-  <programme start="20260822143000 +0700" stop="20260822153000 +0700" channel="Channel116MDTV.mnc">
+  <programme start="20260822143000 +0700" stop="20260822160000 +0700" channel="Channel116MDTV.mnc">
     <title lang="en">16:00Laper Mata</title>
     <desc lang="en">Broadcast of 16:00Laper Mata on Channel116MDTV</desc>
+  </programme>
+  <programme start="20260822160000 +0700" stop="20260822170000 +0700" channel="Channel116MDTV.mnc">
+    <title lang="en">17:00Masak Gesss!!!</title>
+    <desc lang="en">Broadcast of 17:00Masak Gesss!!! on Channel116MDTV</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822060000 +0700" channel="Channel118TVRI.mnc">
     <title lang="en">06:00</title>
@@ -2860,13 +2860,9 @@
     <title lang="en">11:30TVRI</title>
     <desc lang="en">Broadcast of 11:30TVRI on Channel118TVRI</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822054500 +0700" channel="Channel154AXN.mnc">
-    <title lang="en">05:45</title>
-    <desc lang="en">Broadcast of 05:45 on Channel154AXN</desc>
-  </programme>
   <programme start="20260822054500 +0700" stop="20260822063000 +0700" channel="Channel154AXN.mnc">
-    <title lang="en">06:30NCIS: Sydney S2, Ep 4</title>
-    <desc lang="en">Broadcast of 06:30NCIS: Sydney S2, Ep 4 on Channel154AXN</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel154AXN</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822071500 +0700" channel="Channel154AXN.mnc">
     <title lang="en">07:15Boston Blue S1, Ep 3</title>
@@ -2896,17 +2892,17 @@
     <title lang="en">13:50Sight Unseen S2, Ep 4</title>
     <desc lang="en">Broadcast of 13:50Sight Unseen S2, Ep 4 on Channel154AXN</desc>
   </programme>
-  <programme start="20260822135000 +0700" stop="20260822145000 +0700" channel="Channel154AXN.mnc">
+  <programme start="20260822135000 +0700" stop="20260822144000 +0700" channel="Channel154AXN.mnc">
     <title lang="en">14:40S.W.A.T. S7, Ep 9</title>
     <desc lang="en">Broadcast of 14:40S.W.A.T. S7, Ep 9 on Channel154AXN</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel157Animax.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel157Animax</desc>
+  <programme start="20260822144000 +0700" stop="20260822154000 +0700" channel="Channel154AXN.mnc">
+    <title lang="en">15:35Boston Blue S1, Ep 3</title>
+    <desc lang="en">Broadcast of 15:35Boston Blue S1, Ep 3 on Channel154AXN</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel157Animax.mnc">
-    <title lang="en">06:00The Faraway Paladin, Ep 6</title>
-    <desc lang="en">Broadcast of 06:00The Faraway Paladin, Ep 6 on Channel157Animax</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel157Animax</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel157Animax.mnc">
     <title lang="en">06:30The Faraway Paladin, Ep 7</title>
@@ -2936,21 +2932,17 @@
     <title lang="en">09:30One Piece: Marineford, Ep 29</title>
     <desc lang="en">Broadcast of 09:30One Piece: Marineford, Ep 29 on Channel157Animax</desc>
   </programme>
-  <programme start="20260822093000 +0700" stop="20260822103000 +0700" channel="Channel157Animax.mnc">
+  <programme start="20260822093000 +0700" stop="20260822100000 +0700" channel="Channel157Animax.mnc">
     <title lang="en">10:00One Piece: Marineford, Ep 30</title>
     <desc lang="en">Broadcast of 10:00One Piece: Marineford, Ep 30 on Channel157Animax</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel158tvN.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel158tvN</desc>
-  </programme>
-  <programme start="20260822053000 +0700" stop="20260822055000 +0700" channel="Channel158tvN.mnc">
-    <title lang="en">05:50You Can Cook, Sam Kim, Ep 10</title>
-    <desc lang="en">Broadcast of 05:50You Can Cook, Sam Kim, Ep 10 on Channel158tvN</desc>
+  <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel157Animax.mnc">
+    <title lang="en">10:30Oshi No Ko, Ep 15</title>
+    <desc lang="en">Broadcast of 10:30Oshi No Ko, Ep 15 on Channel157Animax</desc>
   </programme>
   <programme start="20260822055000 +0700" stop="20260822075000 +0700" channel="Channel158tvN.mnc">
-    <title lang="en">07:50Sixth Sense: City Tour, Ep 6</title>
-    <desc lang="en">Broadcast of 07:50Sixth Sense: City Tour, Ep 6 on Channel158tvN</desc>
+    <title lang="en">07:50</title>
+    <desc lang="en">Broadcast of 07:50 on Channel158tvN</desc>
   </programme>
   <programme start="20260822075000 +0700" stop="20260822100000 +0700" channel="Channel158tvN.mnc">
     <title lang="en">10:00Fresh Off The Sea S3, Ep 2</title>
@@ -2976,9 +2968,17 @@
     <title lang="en">18:30Kill It: Style Creator, Ep 11</title>
     <desc lang="en">Broadcast of 18:30Kill It: Style Creator, Ep 11 on Channel158tvN</desc>
   </programme>
-  <programme start="20260822183000 +0700" stop="20260822193000 +0700" channel="Channel158tvN.mnc">
+  <programme start="20260822183000 +0700" stop="20260822203000 +0700" channel="Channel158tvN.mnc">
     <title lang="en">20:30Sixth Sense: City Tour, Ep 7</title>
     <desc lang="en">Broadcast of 20:30Sixth Sense: City Tour, Ep 7 on Channel158tvN</desc>
+  </programme>
+  <programme start="20260822203000 +0700" stop="20260822213000 +0700" channel="Channel158tvN.mnc">
+    <title lang="en">21:30Legend Of Kitchen Soldier, Ep 9</title>
+    <desc lang="en">Broadcast of 21:30Legend Of Kitchen Soldier, Ep 9 on Channel158tvN</desc>
+  </programme>
+  <programme start="20260822213000 +0700" stop="20260822223000 +0700" channel="Channel158tvN.mnc">
+    <title lang="en">22:35Legend Of Kitchen..., Ep 10</title>
+    <desc lang="en">Broadcast of 22:35Legend Of Kitchen..., Ep 10 on Channel158tvN</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel160HITS.mnc">
     <title lang="en">06:00</title>
@@ -3020,13 +3020,9 @@
     <title lang="en">13:30The Jeffersons S9, Ep 6</title>
     <desc lang="en">Broadcast of 13:30The Jeffersons S9, Ep 6 on Channel160HITS</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822053500 +0700" channel="Channel161KIX.mnc">
-    <title lang="en">05:35</title>
-    <desc lang="en">Broadcast of 05:35 on Channel161KIX</desc>
-  </programme>
   <programme start="20260822053500 +0700" stop="20260822071000 +0700" channel="Channel161KIX.mnc">
-    <title lang="en">07:10Burning Blood</title>
-    <desc lang="en">Broadcast of 07:10Burning Blood on Channel161KIX</desc>
+    <title lang="en">07:10</title>
+    <desc lang="en">Broadcast of 07:10 on Channel161KIX</desc>
   </programme>
   <programme start="20260822071000 +0700" stop="20260822090000 +0700" channel="Channel161KIX.mnc">
     <title lang="en">09:00Blind War</title>
@@ -3056,9 +3052,13 @@
     <title lang="en">18:10Iron Squad W, Ep 10</title>
     <desc lang="en">Broadcast of 18:10Iron Squad W, Ep 10 on Channel161KIX</desc>
   </programme>
-  <programme start="20260822181000 +0700" stop="20260822191000 +0700" channel="Channel161KIX.mnc">
+  <programme start="20260822181000 +0700" stop="20260822200000 +0700" channel="Channel161KIX.mnc">
     <title lang="en">20:00The Grey Men 2</title>
     <desc lang="en">Broadcast of 20:00The Grey Men 2 on Channel161KIX</desc>
+  </programme>
+  <programme start="20260822200000 +0700" stop="20260822210000 +0700" channel="Channel161KIX.mnc">
+    <title lang="en">21:40Cruel War</title>
+    <desc lang="en">Broadcast of 21:40Cruel War on Channel161KIX</desc>
   </programme>
   <programme start="20260822050500 +0700" stop="20260822060500 +0700" channel="Channel167Lifetime.mnc">
     <title lang="en">06:05</title>
@@ -3100,13 +3100,9 @@
     <title lang="en">13:50Zombie House Flipping, Ep 95</title>
     <desc lang="en">Broadcast of 13:50Zombie House Flipping, Ep 95 on Channel167Lifetime</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822054500 +0700" channel="Channel200BBCEarth.mnc">
-    <title lang="en">05:45</title>
-    <desc lang="en">Broadcast of 05:45 on Channel200BBC Earth</desc>
-  </programme>
   <programme start="20260822054500 +0700" stop="20260822064000 +0700" channel="Channel200BBCEarth.mnc">
-    <title lang="en">06:40Asia S1, Ep 3</title>
-    <desc lang="en">Broadcast of 06:40Asia S1, Ep 3 on Channel200BBC Earth</desc>
+    <title lang="en">06:40</title>
+    <desc lang="en">Broadcast of 06:40 on Channel200BBC Earth</desc>
   </programme>
   <programme start="20260822064000 +0700" stop="20260822073500 +0700" channel="Channel200BBCEarth.mnc">
     <title lang="en">07:35Uncharted Amazon S1, Ep 1</title>
@@ -3140,13 +3136,13 @@
     <title lang="en">13:20Uncharted Amazon S1, Ep 1</title>
     <desc lang="en">Broadcast of 13:20Uncharted Amazon S1, Ep 1 on Channel200BBC Earth</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822050000 +0700" channel="Channel201GlobalTrekker.mnc">
+  <programme start="20260822132000 +0700" stop="20260822142000 +0700" channel="Channel200BBCEarth.mnc">
+    <title lang="en">14:15Asia S1, Ep 3</title>
+    <desc lang="en">Broadcast of 14:15Asia S1, Ep 3 on Channel200BBC Earth</desc>
+  </programme>
+  <programme start="20260822040000 +0700" stop="20260822055500 +0700" channel="Channel201GlobalTrekker.mnc">
     <title lang="en">06:00</title>
     <desc lang="en">Broadcast of 06:00 on Channel201Global Trekker</desc>
-  </programme>
-  <programme start="20260822050000 +0700" stop="20260822055500 +0700" channel="Channel201GlobalTrekker.mnc">
-    <title lang="en">05:55Wildest Survival, Ep 2</title>
-    <desc lang="en">Broadcast of 05:55Wildest Survival, Ep 2 on Channel201Global Trekker</desc>
   </programme>
   <programme start="20260822055500 +0700" stop="20260822060000 +0700" channel="Channel201GlobalTrekker.mnc">
     <title lang="en">06:50Wildest Survival, Ep 3</title>
@@ -3176,17 +3172,17 @@
     <title lang="en">10:40Air Warriors S11, Ep 5</title>
     <desc lang="en">Broadcast of 10:40Air Warriors S11, Ep 5 on Channel201Global Trekker</desc>
   </programme>
-  <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel201GlobalTrekker.mnc">
+  <programme start="20260822100000 +0700" stop="20260822104000 +0700" channel="Channel201GlobalTrekker.mnc">
     <title lang="en">12:00GTV</title>
     <desc lang="en">Broadcast of 12:00GTV on Channel201Global Trekker</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel202OutdoorChannel.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel202Outdoor Channel</desc>
+  <programme start="20260822104000 +0700" stop="20260822114000 +0700" channel="Channel201GlobalTrekker.mnc">
+    <title lang="en">11:25Air Warriors S11, Ep 6</title>
+    <desc lang="en">Broadcast of 11:25Air Warriors S11, Ep 6 on Channel201Global Trekker</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel202OutdoorChannel.mnc">
-    <title lang="en">06:00Man Eats Wild S1, Ep 6</title>
-    <desc lang="en">Broadcast of 06:00Man Eats Wild S1, Ep 6 on Channel202Outdoor Channel</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel202Outdoor Channel</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822070000 +0700" channel="Channel202OutdoorChannel.mnc">
     <title lang="en">07:00Running Wild S3, Ep 3</title>
@@ -3216,9 +3212,13 @@
     <title lang="en">11:30Man Eats Wild S1, Ep 5</title>
     <desc lang="en">Broadcast of 11:30Man Eats Wild S1, Ep 5 on Channel202Outdoor Channel</desc>
   </programme>
-  <programme start="20260822113000 +0700" stop="20260822123000 +0700" channel="Channel202OutdoorChannel.mnc">
+  <programme start="20260822113000 +0700" stop="20260822120000 +0700" channel="Channel202OutdoorChannel.mnc">
     <title lang="en">12:00Man Eats Wild S1, Ep 6</title>
     <desc lang="en">Broadcast of 12:00Man Eats Wild S1, Ep 6 on Channel202Outdoor Channel</desc>
+  </programme>
+  <programme start="20260822120000 +0700" stop="20260822130000 +0700" channel="Channel202OutdoorChannel.mnc">
+    <title lang="en">13:00Running Wild S3, Ep 3</title>
+    <desc lang="en">Broadcast of 13:00Running Wild S3, Ep 3 on Channel202Outdoor Channel</desc>
   </programme>
   <programme start="20260822052500 +0700" stop="20260822062000 +0700" channel="Channel204LoveNature.mnc">
     <title lang="en">06:20</title>
@@ -3340,13 +3340,9 @@
     <title lang="en">14:25WW2 With Tom Hanks, Ep 5</title>
     <desc lang="en">Broadcast of 14:25WW2 With Tom Hanks, Ep 5 on Channel206History</desc>
   </programme>
-  <programme start="20260822052500 +0700" stop="20260822055000 +0700" channel="Channel207CrimeInvestigation.mnc">
-    <title lang="en">05:50</title>
-    <desc lang="en">Broadcast of 05:50 on Channel207Crime Investigation</desc>
-  </programme>
   <programme start="20260822055000 +0700" stop="20260822061500 +0700" channel="Channel207CrimeInvestigation.mnc">
-    <title lang="en">06:15My Strange Arrest S3, Ep 12</title>
-    <desc lang="en">Broadcast of 06:15My Strange Arrest S3, Ep 12 on Channel207Crime Investigation</desc>
+    <title lang="en">06:15</title>
+    <desc lang="en">Broadcast of 06:15 on Channel207Crime Investigation</desc>
   </programme>
   <programme start="20260822061500 +0700" stop="20260822064500 +0700" channel="Channel207CrimeInvestigation.mnc">
     <title lang="en">06:45My Strange Arrest S3, Ep 11</title>
@@ -3376,9 +3372,13 @@
     <title lang="en">12:15Crime In Progress, Ep 7</title>
     <desc lang="en">Broadcast of 12:15Crime In Progress, Ep 7 on Channel207Crime Investigation</desc>
   </programme>
-  <programme start="20260822121500 +0700" stop="20260822131500 +0700" channel="Channel207CrimeInvestigation.mnc">
+  <programme start="20260822121500 +0700" stop="20260822131000 +0700" channel="Channel207CrimeInvestigation.mnc">
     <title lang="en">13:10Evil Up Close S6, Ep 10</title>
     <desc lang="en">Broadcast of 13:10Evil Up Close S6, Ep 10 on Channel207Crime Investigation</desc>
+  </programme>
+  <programme start="20260822131000 +0700" stop="20260822141000 +0700" channel="Channel207CrimeInvestigation.mnc">
+    <title lang="en">13:35Court Cam S6, Ep 159</title>
+    <desc lang="en">Broadcast of 13:35Court Cam S6, Ep 159 on Channel207Crime Investigation</desc>
   </programme>
   <programme start="20260822052500 +0700" stop="20260822061000 +0700" channel="Channel240RockEntertainment.mnc">
     <title lang="en">06:10</title>
@@ -3420,13 +3420,9 @@
     <title lang="en">12:55Next Level Chef S4, Ep 11</title>
     <desc lang="en">Broadcast of 12:55Next Level Chef S4, Ep 11 on Channel240Rock Entertainment</desc>
   </programme>
-  <programme start="20260822041500 +0700" stop="20260822054500 +0700" channel="Channel248RockAction.mnc">
-    <title lang="en">05:45</title>
-    <desc lang="en">Broadcast of 05:45 on Channel248Rock Action</desc>
-  </programme>
   <programme start="20260822054500 +0700" stop="20260822074500 +0700" channel="Channel248RockAction.mnc">
-    <title lang="en">07:453:10 To Yuma</title>
-    <desc lang="en">Broadcast of 07:453:10 To Yuma on Channel248Rock Action</desc>
+    <title lang="en">07:45</title>
+    <desc lang="en">Broadcast of 07:45 on Channel248Rock Action</desc>
   </programme>
   <programme start="20260822074500 +0700" stop="20260822094500 +0700" channel="Channel248RockAction.mnc">
     <title lang="en">09:45Jason Bourne</title>
@@ -3456,9 +3452,13 @@
     <title lang="en">19:55U-571</title>
     <desc lang="en">Broadcast of 19:55U-571 on Channel248Rock Action</desc>
   </programme>
-  <programme start="20260822195500 +0700" stop="20260822205500 +0700" channel="Channel248RockAction.mnc">
+  <programme start="20260822195500 +0700" stop="20260822220500 +0700" channel="Channel248RockAction.mnc">
     <title lang="en">22:05Widows</title>
     <desc lang="en">Broadcast of 22:05Widows on Channel248Rock Action</desc>
+  </programme>
+  <programme start="20260822220500 +0700" stop="20260822230500 +0700" channel="Channel248RockAction.mnc">
+    <title lang="en">23:45Get Out</title>
+    <desc lang="en">Broadcast of 23:45Get Out on Channel248Rock Action</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel304FightSports.mnc">
     <title lang="en">06:00</title>
@@ -3580,13 +3580,9 @@
     <title lang="en">21:002026 The Asian Tournament (L)</title>
     <desc lang="en">Broadcast of 21:002026 The Asian Tournament (L) on Channel308SPOTV 2</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel309beINSports1.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel309beIN Sports 1</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822073000 +0700" channel="Channel309beINSports1.mnc">
-    <title lang="en">07:30Le Mans Cup 2026: Race</title>
-    <desc lang="en">Broadcast of 07:30Le Mans Cup 2026: Race on Channel309beIN Sports 1</desc>
+    <title lang="en">07:30</title>
+    <desc lang="en">Broadcast of 07:30 on Channel309beIN Sports 1</desc>
   </programme>
   <programme start="20260822073000 +0700" stop="20260822080000 +0700" channel="Channel309beINSports1.mnc">
     <title lang="en">08:00FIA European Rally C'ship HL</title>
@@ -3616,9 +3612,13 @@
     <title lang="en">11:10F1 Academy Race: Netherlands</title>
     <desc lang="en">Broadcast of 11:10F1 Academy Race: Netherlands on Channel309beIN Sports 1</desc>
   </programme>
-  <programme start="20260822111000 +0700" stop="20260822121000 +0700" channel="Channel309beINSports1.mnc">
+  <programme start="20260822111000 +0700" stop="20260822114000 +0700" channel="Channel309beINSports1.mnc">
     <title lang="en">11:40Porsche Mobil 1 Supercup 2026</title>
     <desc lang="en">Broadcast of 11:40Porsche Mobil 1 Supercup 2026 on Channel309beIN Sports 1</desc>
+  </programme>
+  <programme start="20260822114000 +0700" stop="20260822124000 +0700" channel="Channel309beINSports1.mnc">
+    <title lang="en">12:15Porsche Mobil 1 Supercup 2026</title>
+    <desc lang="en">Broadcast of 12:15Porsche Mobil 1 Supercup 2026 on Channel309beIN Sports 1</desc>
   </programme>
   <programme start="20260822042000 +0700" stop="20260822061000 +0700" channel="Channel310beINSports2.mnc">
     <title lang="en">06:10</title>
@@ -3660,13 +3660,9 @@
     <title lang="en">16:30HSBC SVNS World C'ships 2026</title>
     <desc lang="en">Broadcast of 16:30HSBC SVNS World C'ships 2026 on Channel310beIN Sports 2</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel311beINSports3.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel311beIN Sports 3</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel311beINSports3.mnc">
-    <title lang="en">06:00SFT Surf Foil World Tour 2026</title>
-    <desc lang="en">Broadcast of 06:00SFT Surf Foil World Tour 2026 on Channel311beIN Sports 3</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel311beIN Sports 3</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822090000 +0700" channel="Channel311beINSports3.mnc">
     <title lang="en">09:00Tour de France 2026: Stage 16</title>
@@ -3696,9 +3692,13 @@
     <title lang="en">16:00GKA Kite World Tour 2026</title>
     <desc lang="en">Broadcast of 16:00GKA Kite World Tour 2026 on Channel311beIN Sports 3</desc>
   </programme>
-  <programme start="20260822160000 +0700" stop="20260822170000 +0700" channel="Channel311beINSports3.mnc">
+  <programme start="20260822160000 +0700" stop="20260822190000 +0700" channel="Channel311beINSports3.mnc">
     <title lang="en">19:00Tour de France 2026: Stage 16</title>
     <desc lang="en">Broadcast of 19:00Tour de France 2026: Stage 16 on Channel311beIN Sports 3</desc>
+  </programme>
+  <programme start="20260822190000 +0700" stop="20260822200000 +0700" channel="Channel311beINSports3.mnc">
+    <title lang="en">20:30SailGP 2026: Sassnitz Day 2 (L)</title>
+    <desc lang="en">Broadcast of 20:30SailGP 2026: Sassnitz Day 2 (L) on Channel311beIN Sports 3</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822080000 +0700" channel="Channel312beINSPORTS4.mnc">
     <title lang="en">08:00</title>
@@ -3780,13 +3780,9 @@
     <title lang="en">02:00beIN Sports 5</title>
     <desc lang="en">Broadcast of 02:00beIN Sports 5 on Channel313beIN SPORTS 5</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel330ChannelNewsAsia.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel330Channel News Asia</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel330ChannelNewsAsia.mnc">
-    <title lang="en">06:00CNA Correspondent, Ep 16</title>
-    <desc lang="en">Broadcast of 06:00CNA Correspondent, Ep 16 on Channel330Channel News Asia</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel330Channel News Asia</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel330ChannelNewsAsia.mnc">
     <title lang="en">06:30Asia Now</title>
@@ -3816,9 +3812,13 @@
     <title lang="en">09:02Headline News</title>
     <desc lang="en">Broadcast of 09:02Headline News on Channel330Channel News Asia</desc>
   </programme>
-  <programme start="20260822090200 +0700" stop="20260822100200 +0700" channel="Channel330ChannelNewsAsia.mnc">
+  <programme start="20260822090200 +0700" stop="20260822100000 +0700" channel="Channel330ChannelNewsAsia.mnc">
     <title lang="en">10:00I Am Canlaken</title>
     <desc lang="en">Broadcast of 10:00I Am Canlaken on Channel330Channel News Asia</desc>
+  </programme>
+  <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel330ChannelNewsAsia.mnc">
+    <title lang="en">10:30Asia Now</title>
+    <desc lang="en">Broadcast of 10:30Asia Now on Channel330Channel News Asia</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
     <title lang="en">06:00</title>
@@ -3860,13 +3860,9 @@
     <title lang="en">11:30News (L)</title>
     <desc lang="en">Broadcast of 11:30News (L) on Channel331Al Jazeera English</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel332BBCWorldNews.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel332BBC World News</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel332BBCWorldNews.mnc">
-    <title lang="en">06:00Talking Business</title>
-    <desc lang="en">Broadcast of 06:00Talking Business on Channel332BBC World News</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel332BBC World News</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel332BBCWorldNews.mnc">
     <title lang="en">06:30BBC News</title>
@@ -3896,25 +3892,17 @@
     <title lang="en">09:30BBC News</title>
     <desc lang="en">Broadcast of 09:30BBC News on Channel332BBC World News</desc>
   </programme>
-  <programme start="20260822093000 +0700" stop="20260822103000 +0700" channel="Channel332BBCWorldNews.mnc">
+  <programme start="20260822093000 +0700" stop="20260822100000 +0700" channel="Channel332BBCWorldNews.mnc">
     <title lang="en">10:00The Climate Question</title>
     <desc lang="en">Broadcast of 10:00The Climate Question on Channel332BBC World News</desc>
   </programme>
-  <programme start="20260822050500 +0700" stop="20260822053000 +0700" channel="Channel333EURONEWS.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel333EURONEWS</desc>
-  </programme>
-  <programme start="20260822053000 +0700" stop="20260822053800 +0700" channel="Channel333EURONEWS.mnc">
-    <title lang="en">05:38Global Week-End</title>
-    <desc lang="en">Broadcast of 05:38Global Week-End on Channel333EURONEWS</desc>
-  </programme>
-  <programme start="20260822053800 +0700" stop="20260822054800 +0700" channel="Channel333EURONEWS.mnc">
-    <title lang="en">05:48Made In Europe</title>
-    <desc lang="en">Broadcast of 05:48Made In Europe on Channel333EURONEWS</desc>
+  <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel332BBCWorldNews.mnc">
+    <title lang="en">10:30BBC News</title>
+    <desc lang="en">Broadcast of 10:30BBC News on Channel332BBC World News</desc>
   </programme>
   <programme start="20260822054800 +0700" stop="20260822060000 +0700" channel="Channel333EURONEWS.mnc">
-    <title lang="en">06:00News</title>
-    <desc lang="en">Broadcast of 06:00News on Channel333EURONEWS</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel333EURONEWS</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822060500 +0700" channel="Channel333EURONEWS.mnc">
     <title lang="en">06:05Global Week-End</title>
@@ -3936,9 +3924,21 @@
     <title lang="en">07:05Global Week-End</title>
     <desc lang="en">Broadcast of 07:05Global Week-End on Channel333EURONEWS</desc>
   </programme>
-  <programme start="20260822070500 +0700" stop="20260822080500 +0700" channel="Channel333EURONEWS.mnc">
+  <programme start="20260822070500 +0700" stop="20260822073000 +0700" channel="Channel333EURONEWS.mnc">
     <title lang="en">07:3012 Minutes With</title>
     <desc lang="en">Broadcast of 07:3012 Minutes With on Channel333EURONEWS</desc>
+  </programme>
+  <programme start="20260822073000 +0700" stop="20260822073800 +0700" channel="Channel333EURONEWS.mnc">
+    <title lang="en">07:38Global Week-End</title>
+    <desc lang="en">Broadcast of 07:38Global Week-End on Channel333EURONEWS</desc>
+  </programme>
+  <programme start="20260822073800 +0700" stop="20260822074800 +0700" channel="Channel333EURONEWS.mnc">
+    <title lang="en">07:48Made In Europe</title>
+    <desc lang="en">Broadcast of 07:48Made In Europe on Channel333EURONEWS</desc>
+  </programme>
+  <programme start="20260822074800 +0700" stop="20260822084800 +0700" channel="Channel333EURONEWS.mnc">
+    <title lang="en">08:00News</title>
+    <desc lang="en">Broadcast of 08:00News on Channel333EURONEWS</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel335FOXNews.mnc">
     <title lang="en">06:00</title>
@@ -3980,13 +3980,9 @@
     <title lang="en">15:00Life, Liberty &amp; Levin</title>
     <desc lang="en">Broadcast of 15:00Life, Liberty &amp; Levin on Channel335FOX News</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel337CNBC.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel337CNBC</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel337CNBC.mnc">
-    <title lang="en">06:00CNBC Explains</title>
-    <desc lang="en">Broadcast of 06:00CNBC Explains on Channel337CNBC</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel337CNBC</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel337CNBC.mnc">
     <title lang="en">06:30Executive Decisions</title>
@@ -4020,13 +4016,13 @@
     <title lang="en">11:00American Greed</title>
     <desc lang="en">Broadcast of 11:00American Greed on Channel337CNBC</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel338Bloomberg.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel338Bloomberg</desc>
+  <programme start="20260822110000 +0700" stop="20260822120000 +0700" channel="Channel337CNBC.mnc">
+    <title lang="en">13:00PGA Tour: FedEx St. Jude C'ship</title>
+    <desc lang="en">Broadcast of 13:00PGA Tour: FedEx St. Jude C'ship on Channel337CNBC</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel338Bloomberg.mnc">
-    <title lang="en">06:00The Mishal Husain Show</title>
-    <desc lang="en">Broadcast of 06:00The Mishal Husain Show on Channel338Bloomberg</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel338Bloomberg</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822070000 +0700" channel="Channel338Bloomberg.mnc">
     <title lang="en">07:00The Amazon Divide</title>
@@ -4059,6 +4055,10 @@
   <programme start="20260822100000 +0700" stop="20260822110000 +0700" channel="Channel338Bloomberg.mnc">
     <title lang="en">11:00The Amazon Divide</title>
     <desc lang="en">Broadcast of 11:00The Amazon Divide on Channel338Bloomberg</desc>
+  </programme>
+  <programme start="20260822110000 +0700" stop="20260822120000 +0700" channel="Channel338Bloomberg.mnc">
+    <title lang="en">11:30Bloomberg Originals</title>
+    <desc lang="en">Broadcast of 11:30Bloomberg Originals on Channel338Bloomberg</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel350ABCAustralia.mnc">
     <title lang="en">06:00</title>
@@ -4140,17 +4140,9 @@
     <title lang="en">10:00Simply K-Pop 2026</title>
     <desc lang="en">Broadcast of 10:00Simply K-Pop 2026 on Channel351Arirang</desc>
   </programme>
-  <programme start="20260822052100 +0700" stop="20260822053000 +0700" channel="Channel352France24English.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel352France 24 English</desc>
-  </programme>
-  <programme start="20260822053000 +0700" stop="20260822054500 +0700" channel="Channel352France24English.mnc">
-    <title lang="en">05:45Bulletin (L)</title>
-    <desc lang="en">Broadcast of 05:45Bulletin (L) on Channel352France 24 English</desc>
-  </programme>
   <programme start="20260822054500 +0700" stop="20260822060000 +0700" channel="Channel352France24English.mnc">
-    <title lang="en">06:00T�te-�-T�te</title>
-    <desc lang="en">Broadcast of 06:00T�te-�-T�te on Channel352France 24 English</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel352France 24 English</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822061500 +0700" channel="Channel352France24English.mnc">
     <title lang="en">06:15News (L)</title>
@@ -4176,9 +4168,17 @@
     <title lang="en">07:12News (L)</title>
     <desc lang="en">Broadcast of 07:12News (L) on Channel352France 24 English</desc>
   </programme>
-  <programme start="20260822071200 +0700" stop="20260822081200 +0700" channel="Channel352France24English.mnc">
+  <programme start="20260822071200 +0700" stop="20260822073000 +0700" channel="Channel352France24English.mnc">
     <title lang="en">07:30Paris Des Arts</title>
     <desc lang="en">Broadcast of 07:30Paris Des Arts on Channel352France 24 English</desc>
+  </programme>
+  <programme start="20260822073000 +0700" stop="20260822074200 +0700" channel="Channel352France24English.mnc">
+    <title lang="en">07:42Bulletin (L)</title>
+    <desc lang="en">Broadcast of 07:42Bulletin (L) on Channel352France 24 English</desc>
+  </programme>
+  <programme start="20260822074200 +0700" stop="20260822084200 +0700" channel="Channel352France24English.mnc">
+    <title lang="en">07:54The 51%</title>
+    <desc lang="en">Broadcast of 07:54The 51% on Channel352France 24 English</desc>
   </programme>
   <programme start="20260822050000 +0700" stop="20260822060000 +0700" channel="Channel353CGTN.mnc">
     <title lang="en">06:00</title>
@@ -4220,13 +4220,9 @@
     <title lang="en">10:30Sports Scene</title>
     <desc lang="en">Broadcast of 10:30Sports Scene on Channel353CGTN</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822054500 +0700" channel="Channel354NHKWorldPremium.mnc">
-    <title lang="en">05:45</title>
-    <desc lang="en">Broadcast of 05:45 on Channel354NHK World Premium</desc>
-  </programme>
   <programme start="20260822054500 +0700" stop="20260822055900 +0700" channel="Channel354NHKWorldPremium.mnc">
-    <title lang="en">05:59Natural Grandeur Of The East</title>
-    <desc lang="en">Broadcast of 05:59Natural Grandeur Of The East on Channel354NHK World Premium</desc>
+    <title lang="en">05:59</title>
+    <desc lang="en">Broadcast of 05:59 on Channel354NHK World Premium</desc>
   </programme>
   <programme start="20260822055900 +0700" stop="20260822060000 +0700" channel="Channel354NHKWorldPremium.mnc">
     <title lang="en">06:00World Weather</title>
@@ -4256,21 +4252,17 @@
     <title lang="en">07:55A Hundred-Year Journey: Tochigi</title>
     <desc lang="en">Broadcast of 07:55A Hundred-Year Journey: Tochigi on Channel354NHK World Premium</desc>
   </programme>
-  <programme start="20260822075500 +0700" stop="20260822085500 +0700" channel="Channel354NHKWorldPremium.mnc">
+  <programme start="20260822075500 +0700" stop="20260822080000 +0700" channel="Channel354NHKWorldPremium.mnc">
     <title lang="en">08:00Mini Program</title>
     <desc lang="en">Broadcast of 08:00Mini Program on Channel354NHK World Premium</desc>
   </programme>
-  <programme start="20260822051000 +0700" stop="20260822054000 +0700" channel="Channel355NHKWorld.mnc">
-    <title lang="en">05:40</title>
-    <desc lang="en">Broadcast of 05:40 on Channel355NHK World</desc>
-  </programme>
-  <programme start="20260822054000 +0700" stop="20260822054500 +0700" channel="Channel355NHKWorld.mnc">
-    <title lang="en">05:45Ukiyoe Edo-Life: Late Summer</title>
-    <desc lang="en">Broadcast of 05:45Ukiyoe Edo-Life: Late Summer on Channel355NHK World</desc>
+  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel354NHKWorldPremium.mnc">
+    <title lang="en">08:05News &amp; Weather</title>
+    <desc lang="en">Broadcast of 08:05News &amp; Weather on Channel354NHK World Premium</desc>
   </programme>
   <programme start="20260822054500 +0700" stop="20260822060000 +0700" channel="Channel355NHKWorld.mnc">
-    <title lang="en">06:00Ninja Truth</title>
-    <desc lang="en">Broadcast of 06:00Ninja Truth on Channel355NHK World</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel355NHK World</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822061000 +0700" channel="Channel355NHKWorld.mnc">
     <title lang="en">06:10NHK Newsline</title>
@@ -4296,9 +4288,17 @@
     <title lang="en">08:00Across Continents</title>
     <desc lang="en">Broadcast of 08:00Across Continents on Channel355NHK World</desc>
   </programme>
-  <programme start="20260822080000 +0700" stop="20260822090000 +0700" channel="Channel355NHKWorld.mnc">
+  <programme start="20260822080000 +0700" stop="20260822081000 +0700" channel="Channel355NHKWorld.mnc">
     <title lang="en">08:10NHK Newsline</title>
     <desc lang="en">Broadcast of 08:10NHK Newsline on Channel355NHK World</desc>
+  </programme>
+  <programme start="20260822081000 +0700" stop="20260822090000 +0700" channel="Channel355NHKWorld.mnc">
+    <title lang="en">09:00Museum Of Japan's History</title>
+    <desc lang="en">Broadcast of 09:00Museum Of Japan's History on Channel355NHK World</desc>
+  </programme>
+  <programme start="20260822090000 +0700" stop="20260822100000 +0700" channel="Channel355NHKWorld.mnc">
+    <title lang="en">09:10NHK Newsline</title>
+    <desc lang="en">Broadcast of 09:10NHK Newsline on Channel355NHK World</desc>
   </programme>
   <programme start="20260822050300 +0700" stop="20260822060000 +0700" channel="Channel357DWEnglish.mnc">
     <title lang="en">06:00</title>
@@ -4660,13 +4660,9 @@
     <title lang="en">00:55Cafe Midnight</title>
     <desc lang="en">Broadcast of 00:55Cafe Midnight on Channel415tvN Movies HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel417beINSports1HD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel417beIN Sports 1 HD</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822073000 +0700" channel="Channel417beINSports1HD.mnc">
-    <title lang="en">07:30Le Mans Cup 2026: Race</title>
-    <desc lang="en">Broadcast of 07:30Le Mans Cup 2026: Race on Channel417beIN Sports 1 HD</desc>
+    <title lang="en">07:30</title>
+    <desc lang="en">Broadcast of 07:30 on Channel417beIN Sports 1 HD</desc>
   </programme>
   <programme start="20260822073000 +0700" stop="20260822080000 +0700" channel="Channel417beINSports1HD.mnc">
     <title lang="en">08:00FIA European Rally C'ship HL</title>
@@ -4696,9 +4692,13 @@
     <title lang="en">11:10F1 Academy Race: Netherlands</title>
     <desc lang="en">Broadcast of 11:10F1 Academy Race: Netherlands on Channel417beIN Sports 1 HD</desc>
   </programme>
-  <programme start="20260822111000 +0700" stop="20260822121000 +0700" channel="Channel417beINSports1HD.mnc">
+  <programme start="20260822111000 +0700" stop="20260822114000 +0700" channel="Channel417beINSports1HD.mnc">
     <title lang="en">11:40Porsche Mobil 1 Supercup 2026</title>
     <desc lang="en">Broadcast of 11:40Porsche Mobil 1 Supercup 2026 on Channel417beIN Sports 1 HD</desc>
+  </programme>
+  <programme start="20260822114000 +0700" stop="20260822124000 +0700" channel="Channel417beINSports1HD.mnc">
+    <title lang="en">12:15Porsche Mobil 1 Supercup 2026</title>
+    <desc lang="en">Broadcast of 12:15Porsche Mobil 1 Supercup 2026 on Channel417beIN Sports 1 HD</desc>
   </programme>
   <programme start="20260822042000 +0700" stop="20260822061000 +0700" channel="Channel418beINSports2HD.mnc">
     <title lang="en">06:10</title>
@@ -4740,13 +4740,9 @@
     <title lang="en">16:30HSBC SVNS World C'ships 2026</title>
     <desc lang="en">Broadcast of 16:30HSBC SVNS World C'ships 2026 on Channel418beIN Sports 2 HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel419beINSports3HD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel419beIN Sports 3 HD</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel419beINSports3HD.mnc">
-    <title lang="en">06:00SFT Surf Foil World Tour 2026</title>
-    <desc lang="en">Broadcast of 06:00SFT Surf Foil World Tour 2026 on Channel419beIN Sports 3 HD</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel419beIN Sports 3 HD</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822090000 +0700" channel="Channel419beINSports3HD.mnc">
     <title lang="en">09:00Tour de France 2026: Stage 16</title>
@@ -4776,9 +4772,13 @@
     <title lang="en">16:00GKA Kite World Tour 2026</title>
     <desc lang="en">Broadcast of 16:00GKA Kite World Tour 2026 on Channel419beIN Sports 3 HD</desc>
   </programme>
-  <programme start="20260822160000 +0700" stop="20260822170000 +0700" channel="Channel419beINSports3HD.mnc">
+  <programme start="20260822160000 +0700" stop="20260822190000 +0700" channel="Channel419beINSports3HD.mnc">
     <title lang="en">19:00Tour de France 2026: Stage 16</title>
     <desc lang="en">Broadcast of 19:00Tour de France 2026: Stage 16 on Channel419beIN Sports 3 HD</desc>
+  </programme>
+  <programme start="20260822190000 +0700" stop="20260822200000 +0700" channel="Channel419beINSports3HD.mnc">
+    <title lang="en">20:30SailGP 2026: Sassnitz Day 2 (L)</title>
+    <desc lang="en">Broadcast of 20:30SailGP 2026: Sassnitz Day 2 (L) on Channel419beIN Sports 3 HD</desc>
   </programme>
   <programme start="20260822043000 +0700" stop="20260822063000 +0700" channel="Channel420SoccerChannelHD.mnc">
     <title lang="en">06:30</title>
@@ -4860,13 +4860,9 @@
     <title lang="en">16:30V-League 2025-2026: Mens</title>
     <desc lang="en">Broadcast of 16:30V-League 2025-2026: Mens on Channel421Sportstars HD</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822053000 +0700" channel="Channel422Sportstars2HD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel422Sportstars 2 HD</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822080000 +0700" channel="Channel422Sportstars2HD.mnc">
-    <title lang="en">08:00Best Of Badminton</title>
-    <desc lang="en">Broadcast of 08:00Best Of Badminton on Channel422Sportstars 2 HD</desc>
+    <title lang="en">08:00</title>
+    <desc lang="en">Broadcast of 08:00 on Channel422Sportstars 2 HD</desc>
   </programme>
   <programme start="20260822080000 +0700" stop="20260822083000 +0700" channel="Channel422Sportstars2HD.mnc">
     <title lang="en">08:30iNews Sport</title>
@@ -4896,9 +4892,13 @@
     <title lang="en">16:30ASEAN C'ship Hyundai Cup 2026</title>
     <desc lang="en">Broadcast of 16:30ASEAN C'ship Hyundai Cup 2026 on Channel422Sportstars 2 HD</desc>
   </programme>
-  <programme start="20260822163000 +0700" stop="20260822173000 +0700" channel="Channel422Sportstars2HD.mnc">
+  <programme start="20260822163000 +0700" stop="20260822183000 +0700" channel="Channel422Sportstars2HD.mnc">
     <title lang="en">18:30ASEAN C'ship Hyundai Cup 2026</title>
     <desc lang="en">Broadcast of 18:30ASEAN C'ship Hyundai Cup 2026 on Channel422Sportstars 2 HD</desc>
+  </programme>
+  <programme start="20260822183000 +0700" stop="20260822193000 +0700" channel="Channel422Sportstars2HD.mnc">
+    <title lang="en">20:30Satu Hati Untuk Garuda</title>
+    <desc lang="en">Broadcast of 20:30Satu Hati Untuk Garuda on Channel422Sportstars 2 HD</desc>
   </programme>
   <programme start="20260822040000 +0700" stop="20260822060000 +0700" channel="Channel423sportstars3HD.mnc">
     <title lang="en">06:00</title>
@@ -5220,13 +5220,9 @@
     <title lang="en">12:30Cahaya Hati The Series</title>
     <desc lang="en">Broadcast of 12:30Cahaya Hati The Series on Channel433iNews HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel434SindoNewsTVHD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel434Sindo News TV HD</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel434SindoNewsTVHD.mnc">
-    <title lang="en">06:30Realita</title>
-    <desc lang="en">Broadcast of 06:30Realita on Channel434Sindo News TV HD</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel434Sindo News TV HD</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822073000 +0700" channel="Channel434SindoNewsTVHD.mnc">
     <title lang="en">07:30iNews Files</title>
@@ -5256,17 +5252,17 @@
     <title lang="en">13:00I Love Indonesia</title>
     <desc lang="en">Broadcast of 13:00I Love Indonesia on Channel434Sindo News TV HD</desc>
   </programme>
-  <programme start="20260822130000 +0700" stop="20260822140000 +0700" channel="Channel434SindoNewsTVHD.mnc">
+  <programme start="20260822130000 +0700" stop="20260822143000 +0700" channel="Channel434SindoNewsTVHD.mnc">
     <title lang="en">14:30SINDO Today</title>
     <desc lang="en">Broadcast of 14:30SINDO Today on Channel434Sindo News TV HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel436IDXHD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel436IDX HD</desc>
+  <programme start="20260822143000 +0700" stop="20260822153000 +0700" channel="Channel434SindoNewsTVHD.mnc">
+    <title lang="en">15:30iNews Siang</title>
+    <desc lang="en">Broadcast of 15:30iNews Siang on Channel434Sindo News TV HD</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel436IDXHD.mnc">
-    <title lang="en">06:30OMG IDX</title>
-    <desc lang="en">Broadcast of 06:30OMG IDX on Channel436IDX HD</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel436IDX HD</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822070000 +0700" channel="Channel436IDXHD.mnc">
     <title lang="en">07:00I Love Indonesia</title>
@@ -5296,9 +5292,13 @@
     <title lang="en">12:00News Screen</title>
     <desc lang="en">Broadcast of 12:00News Screen on Channel436IDX HD</desc>
   </programme>
-  <programme start="20260822120000 +0700" stop="20260822130000 +0700" channel="Channel436IDXHD.mnc">
+  <programme start="20260822120000 +0700" stop="20260822123000 +0700" channel="Channel436IDXHD.mnc">
     <title lang="en">12:30Women's Talk</title>
     <desc lang="en">Broadcast of 12:30Women's Talk on Channel436IDX HD</desc>
+  </programme>
+  <programme start="20260822123000 +0700" stop="20260822133000 +0700" channel="Channel436IDXHD.mnc">
+    <title lang="en">13:00Rating 5</title>
+    <desc lang="en">Broadcast of 13:00Rating 5 on Channel436IDX HD</desc>
   </programme>
   <programme start="20260822044500 +0700" stop="20260822060000 +0700" channel="Channel437SCTVHD.mnc">
     <title lang="en">06:00</title>
@@ -5380,13 +5380,9 @@
     <title lang="en">20:30Merangkai Kisah Indah</title>
     <desc lang="en">Broadcast of 20:30Merangkai Kisah Indah on Channel438Indosiar HD</desc>
   </programme>
-  <programme start="20260822043000 +0700" stop="20260822053000 +0700" channel="Channel444MusicTVHD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel444Music TV HD</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822063000 +0700" channel="Channel444MusicTVHD.mnc">
-    <title lang="en">06:30Juke Box</title>
-    <desc lang="en">Broadcast of 06:30Juke Box on Channel444Music TV HD</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel444Music TV HD</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822071500 +0700" channel="Channel444MusicTVHD.mnc">
     <title lang="en">07:15Made In India</title>
@@ -5416,21 +5412,17 @@
     <title lang="en">14:30Idol Story</title>
     <desc lang="en">Broadcast of 14:30Idol Story on Channel444Music TV HD</desc>
   </programme>
-  <programme start="20260822143000 +0700" stop="20260822153000 +0700" channel="Channel444MusicTVHD.mnc">
+  <programme start="20260822143000 +0700" stop="20260822170000 +0700" channel="Channel444MusicTVHD.mnc">
     <title lang="en">17:00Ratu Dendang Dangdut</title>
     <desc lang="en">Broadcast of 17:00Ratu Dendang Dangdut on Channel444Music TV HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel446tvNHD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel446tvN HD</desc>
-  </programme>
-  <programme start="20260822053000 +0700" stop="20260822055000 +0700" channel="Channel446tvNHD.mnc">
-    <title lang="en">05:50You Can Cook, Sam Kim, Ep 10</title>
-    <desc lang="en">Broadcast of 05:50You Can Cook, Sam Kim, Ep 10 on Channel446tvN HD</desc>
+  <programme start="20260822170000 +0700" stop="20260822180000 +0700" channel="Channel444MusicTVHD.mnc">
+    <title lang="en">18:00Godain</title>
+    <desc lang="en">Broadcast of 18:00Godain on Channel444Music TV HD</desc>
   </programme>
   <programme start="20260822055000 +0700" stop="20260822075000 +0700" channel="Channel446tvNHD.mnc">
-    <title lang="en">07:50Sixth Sense: City Tour, Ep 6</title>
-    <desc lang="en">Broadcast of 07:50Sixth Sense: City Tour, Ep 6 on Channel446tvN HD</desc>
+    <title lang="en">07:50</title>
+    <desc lang="en">Broadcast of 07:50 on Channel446tvN HD</desc>
   </programme>
   <programme start="20260822075000 +0700" stop="20260822100000 +0700" channel="Channel446tvNHD.mnc">
     <title lang="en">10:00Fresh Off The Sea S3, Ep 2</title>
@@ -5456,17 +5448,21 @@
     <title lang="en">18:30Kill It: Style Creator, Ep 11</title>
     <desc lang="en">Broadcast of 18:30Kill It: Style Creator, Ep 11 on Channel446tvN HD</desc>
   </programme>
-  <programme start="20260822183000 +0700" stop="20260822193000 +0700" channel="Channel446tvNHD.mnc">
+  <programme start="20260822183000 +0700" stop="20260822203000 +0700" channel="Channel446tvNHD.mnc">
     <title lang="en">20:30Sixth Sense: City Tour, Ep 7</title>
     <desc lang="en">Broadcast of 20:30Sixth Sense: City Tour, Ep 7 on Channel446tvN HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822054500 +0700" channel="Channel447AXNHD.mnc">
-    <title lang="en">05:45</title>
-    <desc lang="en">Broadcast of 05:45 on Channel447AXN HD</desc>
+  <programme start="20260822203000 +0700" stop="20260822213000 +0700" channel="Channel446tvNHD.mnc">
+    <title lang="en">21:30Legend Of Kitchen Soldier, Ep 9</title>
+    <desc lang="en">Broadcast of 21:30Legend Of Kitchen Soldier, Ep 9 on Channel446tvN HD</desc>
+  </programme>
+  <programme start="20260822213000 +0700" stop="20260822223000 +0700" channel="Channel446tvNHD.mnc">
+    <title lang="en">22:35Legend Of Kitchen..., Ep 10</title>
+    <desc lang="en">Broadcast of 22:35Legend Of Kitchen..., Ep 10 on Channel446tvN HD</desc>
   </programme>
   <programme start="20260822054500 +0700" stop="20260822063000 +0700" channel="Channel447AXNHD.mnc">
-    <title lang="en">06:30NCIS: Sydney S2, Ep 4</title>
-    <desc lang="en">Broadcast of 06:30NCIS: Sydney S2, Ep 4 on Channel447AXN HD</desc>
+    <title lang="en">06:30</title>
+    <desc lang="en">Broadcast of 06:30 on Channel447AXN HD</desc>
   </programme>
   <programme start="20260822063000 +0700" stop="20260822071500 +0700" channel="Channel447AXNHD.mnc">
     <title lang="en">07:15Boston Blue S1, Ep 3</title>
@@ -5496,17 +5492,17 @@
     <title lang="en">13:50Sight Unseen S2, Ep 4</title>
     <desc lang="en">Broadcast of 13:50Sight Unseen S2, Ep 4 on Channel447AXN HD</desc>
   </programme>
-  <programme start="20260822135000 +0700" stop="20260822145000 +0700" channel="Channel447AXNHD.mnc">
+  <programme start="20260822135000 +0700" stop="20260822144000 +0700" channel="Channel447AXNHD.mnc">
     <title lang="en">14:40S.W.A.T. S7, Ep 9</title>
     <desc lang="en">Broadcast of 14:40S.W.A.T. S7, Ep 9 on Channel447AXN HD</desc>
   </programme>
-  <programme start="20260822040000 +0700" stop="20260822053000 +0700" channel="Channel459FoodTravelHD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel459Food Travel HD</desc>
+  <programme start="20260822144000 +0700" stop="20260822154000 +0700" channel="Channel447AXNHD.mnc">
+    <title lang="en">15:35Boston Blue S1, Ep 3</title>
+    <desc lang="en">Broadcast of 15:35Boston Blue S1, Ep 3 on Channel447AXN HD</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel459FoodTravelHD.mnc">
-    <title lang="en">06:00Let's Go</title>
-    <desc lang="en">Broadcast of 06:00Let's Go on Channel459Food Travel HD</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel459Food Travel HD</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel459FoodTravelHD.mnc">
     <title lang="en">06:30Travel Addict</title>
@@ -5536,17 +5532,17 @@
     <title lang="en">12:00Viral Kuliner</title>
     <desc lang="en">Broadcast of 12:00Viral Kuliner on Channel459Food Travel HD</desc>
   </programme>
-  <programme start="20260822120000 +0700" stop="20260822130000 +0700" channel="Channel459FoodTravelHD.mnc">
+  <programme start="20260822120000 +0700" stop="20260822123000 +0700" channel="Channel459FoodTravelHD.mnc">
     <title lang="en">12:30Viral Kuliner</title>
     <desc lang="en">Broadcast of 12:30Viral Kuliner on Channel459Food Travel HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel460OutdoorchannelHD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel460Outdoor channel HD</desc>
+  <programme start="20260822123000 +0700" stop="20260822133000 +0700" channel="Channel459FoodTravelHD.mnc">
+    <title lang="en">13:00Viral Kuliner</title>
+    <desc lang="en">Broadcast of 13:00Viral Kuliner on Channel459Food Travel HD</desc>
   </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel460OutdoorchannelHD.mnc">
-    <title lang="en">06:00Man Eats Wild S1, Ep 6</title>
-    <desc lang="en">Broadcast of 06:00Man Eats Wild S1, Ep 6 on Channel460Outdoor channel HD</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel460Outdoor channel HD</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822070000 +0700" channel="Channel460OutdoorchannelHD.mnc">
     <title lang="en">07:00Running Wild S3, Ep 3</title>
@@ -5576,17 +5572,17 @@
     <title lang="en">11:30Man Eats Wild S1, Ep 5</title>
     <desc lang="en">Broadcast of 11:30Man Eats Wild S1, Ep 5 on Channel460Outdoor channel HD</desc>
   </programme>
-  <programme start="20260822113000 +0700" stop="20260822123000 +0700" channel="Channel460OutdoorchannelHD.mnc">
+  <programme start="20260822113000 +0700" stop="20260822120000 +0700" channel="Channel460OutdoorchannelHD.mnc">
     <title lang="en">12:00Man Eats Wild S1, Ep 6</title>
     <desc lang="en">Broadcast of 12:00Man Eats Wild S1, Ep 6 on Channel460Outdoor channel HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822054500 +0700" channel="Channel461BBCEarthHD.mnc">
-    <title lang="en">05:45</title>
-    <desc lang="en">Broadcast of 05:45 on Channel461BBC Earth HD</desc>
+  <programme start="20260822120000 +0700" stop="20260822130000 +0700" channel="Channel460OutdoorchannelHD.mnc">
+    <title lang="en">13:00Running Wild S3, Ep 3</title>
+    <desc lang="en">Broadcast of 13:00Running Wild S3, Ep 3 on Channel460Outdoor channel HD</desc>
   </programme>
   <programme start="20260822054500 +0700" stop="20260822064000 +0700" channel="Channel461BBCEarthHD.mnc">
-    <title lang="en">06:40Asia S1, Ep 3</title>
-    <desc lang="en">Broadcast of 06:40Asia S1, Ep 3 on Channel461BBC Earth HD</desc>
+    <title lang="en">06:40</title>
+    <desc lang="en">Broadcast of 06:40 on Channel461BBC Earth HD</desc>
   </programme>
   <programme start="20260822064000 +0700" stop="20260822073500 +0700" channel="Channel461BBCEarthHD.mnc">
     <title lang="en">07:35Uncharted Amazon S1, Ep 1</title>
@@ -5620,13 +5616,13 @@
     <title lang="en">13:20Uncharted Amazon S1, Ep 1</title>
     <desc lang="en">Broadcast of 13:20Uncharted Amazon S1, Ep 1 on Channel461BBC Earth HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822055500 +0700" channel="Channel462GlobalTrekkerHD.mnc">
-    <title lang="en">05:55</title>
-    <desc lang="en">Broadcast of 05:55 on Channel462Global Trekker HD</desc>
+  <programme start="20260822132000 +0700" stop="20260822142000 +0700" channel="Channel461BBCEarthHD.mnc">
+    <title lang="en">14:15Asia S1, Ep 3</title>
+    <desc lang="en">Broadcast of 14:15Asia S1, Ep 3 on Channel461BBC Earth HD</desc>
   </programme>
   <programme start="20260822055500 +0700" stop="20260822065000 +0700" channel="Channel462GlobalTrekkerHD.mnc">
-    <title lang="en">06:50Wildest Survival, Ep 3</title>
-    <desc lang="en">Broadcast of 06:50Wildest Survival, Ep 3 on Channel462Global Trekker HD</desc>
+    <title lang="en">06:50</title>
+    <desc lang="en">Broadcast of 06:50 on Channel462Global Trekker HD</desc>
   </programme>
   <programme start="20260822065000 +0700" stop="20260822074000 +0700" channel="Channel462GlobalTrekkerHD.mnc">
     <title lang="en">07:40How Did They Fix That? S2, Ep 4</title>
@@ -5656,9 +5652,13 @@
     <title lang="en">12:10Air Warriors S11, Ep 7</title>
     <desc lang="en">Broadcast of 12:10Air Warriors S11, Ep 7 on Channel462Global Trekker HD</desc>
   </programme>
-  <programme start="20260822121000 +0700" stop="20260822131000 +0700" channel="Channel462GlobalTrekkerHD.mnc">
+  <programme start="20260822121000 +0700" stop="20260822125500 +0700" channel="Channel462GlobalTrekkerHD.mnc">
     <title lang="en">12:55Air Warriors S11, Ep 8</title>
     <desc lang="en">Broadcast of 12:55Air Warriors S11, Ep 8 on Channel462Global Trekker HD</desc>
+  </programme>
+  <programme start="20260822125500 +0700" stop="20260822135500 +0700" channel="Channel462GlobalTrekkerHD.mnc">
+    <title lang="en">13:40Air Warriors S11, Ep 9</title>
+    <desc lang="en">Broadcast of 13:40Air Warriors S11, Ep 9 on Channel462Global Trekker HD</desc>
   </programme>
   <programme start="20260822052500 +0700" stop="20260822062000 +0700" channel="Channel463LoveNatureHD.mnc">
     <title lang="en">06:20</title>
@@ -5700,13 +5700,9 @@
     <title lang="en">14:25Wild Pacific Rescue S1, Ep 3</title>
     <desc lang="en">Broadcast of 14:25Wild Pacific Rescue S1, Ep 3 on Channel463Love Nature HD</desc>
   </programme>
-  <programme start="20260822050000 +0700" stop="20260822053000 +0700" channel="Channel471KidsTVHD.mnc">
-    <title lang="en">05:30</title>
-    <desc lang="en">Broadcast of 05:30 on Channel471Kids TV HD</desc>
-  </programme>
   <programme start="20260822053000 +0700" stop="20260822060000 +0700" channel="Channel471KidsTVHD.mnc">
-    <title lang="en">06:00Kids Menu</title>
-    <desc lang="en">Broadcast of 06:00Kids Menu on Channel471Kids TV HD</desc>
+    <title lang="en">06:00</title>
+    <desc lang="en">Broadcast of 06:00 on Channel471Kids TV HD</desc>
   </programme>
   <programme start="20260822060000 +0700" stop="20260822063000 +0700" channel="Channel471KidsTVHD.mnc">
     <title lang="en">06:30Kiko S4</title>
@@ -5736,17 +5732,17 @@
     <title lang="en">11:20Sahabat Selamanya Upin &amp; Ipin</title>
     <desc lang="en">Broadcast of 11:20Sahabat Selamanya Upin &amp; Ipin on Channel471Kids TV HD</desc>
   </programme>
-  <programme start="20260822112000 +0700" stop="20260822122000 +0700" channel="Channel471KidsTVHD.mnc">
+  <programme start="20260822112000 +0700" stop="20260822113000 +0700" channel="Channel471KidsTVHD.mnc">
     <title lang="en">11:30O Iya Ya</title>
     <desc lang="en">Broadcast of 11:30O Iya Ya on Channel471Kids TV HD</desc>
   </programme>
-  <programme start="20260822052000 +0700" stop="20260822054000 +0700" channel="Channel472NickJrHD.mnc">
-    <title lang="en">05:40</title>
-    <desc lang="en">Broadcast of 05:40 on Channel472Nick Jr. HD</desc>
+  <programme start="20260822113000 +0700" stop="20260822123000 +0700" channel="Channel471KidsTVHD.mnc">
+    <title lang="en">12:30Main Bareng Entong</title>
+    <desc lang="en">Broadcast of 12:30Main Bareng Entong on Channel471Kids TV HD</desc>
   </programme>
   <programme start="20260822054000 +0700" stop="20260822060500 +0700" channel="Channel472NickJrHD.mnc">
-    <title lang="en">06:05Rubble &amp; Crew</title>
-    <desc lang="en">Broadcast of 06:05Rubble &amp; Crew on Channel472Nick Jr. HD</desc>
+    <title lang="en">06:05</title>
+    <desc lang="en">Broadcast of 06:05 on Channel472Nick Jr. HD</desc>
   </programme>
   <programme start="20260822060500 +0700" stop="20260822062500 +0700" channel="Channel472NickJrHD.mnc">
     <title lang="en">06:25PAW Patrol</title>
@@ -5776,17 +5772,17 @@
     <title lang="en">08:45Santiago Of The Seas</title>
     <desc lang="en">Broadcast of 08:45Santiago Of The Seas on Channel472Nick Jr. HD</desc>
   </programme>
-  <programme start="20260822084500 +0700" stop="20260822094500 +0700" channel="Channel472NickJrHD.mnc">
+  <programme start="20260822084500 +0700" stop="20260822090500 +0700" channel="Channel472NickJrHD.mnc">
     <title lang="en">09:05Dora</title>
     <desc lang="en">Broadcast of 09:05Dora on Channel472Nick Jr. HD</desc>
   </programme>
-  <programme start="20260822052500 +0700" stop="20260822055000 +0700" channel="Channel473DreamworksHD.mnc">
-    <title lang="en">05:50</title>
-    <desc lang="en">Broadcast of 05:50 on Channel473Dreamworks HD</desc>
+  <programme start="20260822090500 +0700" stop="20260822100500 +0700" channel="Channel472NickJrHD.mnc">
+    <title lang="en">09:30Blaze &amp; The Monster Machines</title>
+    <desc lang="en">Broadcast of 09:30Blaze &amp; The Monster Machines on Channel472Nick Jr. HD</desc>
   </programme>
   <programme start="20260822055000 +0700" stop="20260822061500 +0700" channel="Channel473DreamworksHD.mnc">
-    <title lang="en">06:15Gabby's Dollhouse</title>
-    <desc lang="en">Broadcast of 06:15Gabby's Dollhouse on Channel473Dreamworks HD</desc>
+    <title lang="en">06:15</title>
+    <desc lang="en">Broadcast of 06:15 on Channel473Dreamworks HD</desc>
   </programme>
   <programme start="20260822061500 +0700" stop="20260822064000 +0700" channel="Channel473DreamworksHD.mnc">
     <title lang="en">06:40Gabby's Dollhouse</title>
@@ -5816,9 +5812,13 @@
     <title lang="en">09:10Go, Dog. Go!</title>
     <desc lang="en">Broadcast of 09:10Go, Dog. Go! on Channel473Dreamworks HD</desc>
   </programme>
-  <programme start="20260822091000 +0700" stop="20260822101000 +0700" channel="Channel473DreamworksHD.mnc">
+  <programme start="20260822091000 +0700" stop="20260822093500 +0700" channel="Channel473DreamworksHD.mnc">
     <title lang="en">09:35Dawn Of The Croods</title>
     <desc lang="en">Broadcast of 09:35Dawn Of The Croods on Channel473Dreamworks HD</desc>
+  </programme>
+  <programme start="20260822093500 +0700" stop="20260822103500 +0700" channel="Channel473DreamworksHD.mnc">
+    <title lang="en">10:00Dawn Of The Croods</title>
+    <desc lang="en">Broadcast of 10:00Dawn Of The Croods on Channel473Dreamworks HD</desc>
   </programme>
   <programme start="20260822170000 +0800" stop="20260822180000 +0800" channel="CLTV36.ph">
     <title lang="en">Top Stories:</title>
