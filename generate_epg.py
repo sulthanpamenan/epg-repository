@@ -18,8 +18,6 @@ EPG_TARGET_SOURCES = [
     {"id": "RedBullTV.global", "name": "Red Bull TV", "url": "https://www.redbull.tv/en/epg", "icon": "", "utc_offset": "+0000"},
     {"id": "MNCVision.all", "name": "MNC Vision All Channels", "url": "https://www.mncvision.id/channel", "icon": "", "utc_offset": "+0700"},
     {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "icon": "", "utc_offset": "+0800"},
-    
-    # --- QAZAQSTAN NETWORK CHANNELS ---
     {"id": "Qazaqstan.kz", "name": "Qazaqstan TV", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
     {"id": "QazaqstanInt.kz", "name": "Qazaqstan International", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
     {"id": "Balapan.kz", "name": "Balapan TV", "url": "https://balapan.tv/program", "icon": "", "utc_offset": "+0500"},
@@ -227,20 +225,19 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK SCRAPER (FIXED: API FETCH VIA WORKER PROXY)
+# 4. QAZAQSTAN NETWORK SCRAPER (FIXED DATED URL & API PROXY)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "Accept": "application/json, text/plain, */*"
+        "Accept": "application/json, text/html, */*"
     }
     
     icon = target.get("icon") or get_auto_icon(target["url"])
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     programmes = []
     
-    # Mapping ID Saluran ke ID API Internal Qazaqstan
     channel_api_ids = {
         "Qazaqstan.kz": 1, "QazaqstanInt.kz": 1, "Balapan.kz": 2, "AbaiTV.kz": 3,
         "Qazsport.kz": 4, "AqjaiyqTV.kz": 5, "AqtobeTV.kz": 6, "AltaiTV.kz": 7,
@@ -250,32 +247,30 @@ def fetch_epg_qazaqstan(target):
     }
     
     internal_id = channel_api_ids.get(epg_id, 1)
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now()
+    today_str = today.strftime("%Y-%m-%d")
     
-    # Endpoint API JSON Resmi yang ditembak LEWAT WORKER PROXY milikmu
-    direct_api_url = f"https://qazaqstan.tv/api/v1/schedule?channel_id={internal_id}&date={today_str}"
     WORKER_PROXY = "https://qazaqstan-playlist.sulthan-pamenan.workers.dev/?url="
+    
+    # 1. METODE UTAMA: API JSON DENGAN ZONA WAKTU TANGGAL LENGKAP
+    direct_api_url = f"https://qazaqstan.tv/api/v1/schedule?channel_id={internal_id}&date={today_str}"
     proxied_api_url = f"{WORKER_PROXY}{encode_url(direct_api_url)}"
     
     try:
-        res = HTTP_SESSION.get(proxied_api_url, headers=headers, timeout=15)
-        
+        res = HTTP_SESSION.get(proxied_api_url, headers=headers, timeout=12)
         if res.status_code == 200:
             data = res.json()
             items = data.get("data", []) or data.get("schedule", []) or (data if isinstance(data, list) else [])
             
             raw_progs = []
-            if isinstance(items, list):
+            if isinstance(items, list) and len(items) > 0:
                 for item in items:
                     title = item.get("title") or item.get("name") or item.get("program_name")
                     time_start = item.get("time") or item.get("start_time") or item.get("begin")
                     
-                    if not title or not time_start: 
-                        continue
-                        
+                    if not title or not time_start: continue
                     time_start = str(time_start).strip()
-                    if len(time_start.split(':')[0]) == 1: 
-                        time_start = "0" + time_start
+                    if len(time_start.split(':')[0]) == 1: time_start = "0" + time_start
                     
                     try:
                         start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
@@ -284,39 +279,78 @@ def fetch_epg_qazaqstan(target):
                             "title": str(title).strip(),
                             "desc": str(item.get("description") or f"Program {title} di {target['name']}").strip()
                         })
-                    except Exception:
-                        continue
-            
-            # Urutkan jadwal & hitung waktu selesai
-            raw_progs.sort(key=lambda x: x["start_dt"])
-            
-            for i in range(len(raw_progs)):
-                curr = raw_progs[i]
-                start_dt = curr["start_dt"]
+                    except Exception: continue
                 
-                if i + 1 < len(raw_progs):
-                    stop_dt = raw_progs[i+1]["start_dt"]
-                    if stop_dt <= start_dt: 
-                        stop_dt += timedelta(days=1)
-                else:
-                    stop_dt = start_dt + timedelta(hours=1)
-                    
-                programmes.append({
-                    "channel": epg_id,
-                    "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0500")),
-                    "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0500")),
-                    "title": curr["title"],
-                    "desc": curr["desc"],
-                    "lang": "kk"
-                })
-
-            if programmes:
-                return channels, programmes
-
+                if raw_progs:
+                    return build_xmltv_programmes(epg_id, target, channels, raw_progs)
     except Exception as e:
-        print(f"[!] Qazaqstan API Error via Worker [{target['name']}]: {e}")
+        print(f"[!] API Fetch Error [{target['name']}]: {e}")
+
+    # 2. METODE FALLBACK: SCRAPE HTML DENGAN URL DATED PATH (/program/YYYY-MM-DD)
+    dated_url = f"{target['url'].rstrip('/')}/{today_str}"
+    proxied_html_url = f"{WORKER_PROXY}{encode_url(dated_url)}"
+    
+    try:
+        res = HTTP_SESSION.get(proxied_html_url, headers=headers, timeout=15)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, 'html.parser')
+            raw_progs = []
+            time_pattern = re.compile(r'(\b[0-2]?\d:[0-5]\d\b)')
+            
+            for container in soup.find_all(['div', 'tr', 'li']):
+                text = container.get_text(" ", strip=True)
+                if 5 < len(text) < 200:
+                    match = time_pattern.search(text)
+                    if match:
+                        time_start = match.group(1)
+                        if len(time_start.split(':')[0]) == 1: time_start = "0" + time_start
+                        
+                        title_part = text[match.end():].strip(" -–:\t\n\r[]")
+                        for ignore_word in ["LIVE", "ЭФИРДЕ", "Бағдарлама", "Драма", "Көркем фильм", "Телехикая", "Шоу", "ҚАЗІР ЭФИРДЕ"]:
+                            title_part = title_part.replace(ignore_word, "").strip()
+                            
+                        if title_part and len(title_part) > 2 and not title_part.startswith("http"):
+                            try:
+                                start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
+                                if not any(p["start_dt"] == start_dt for p in raw_progs):
+                                    raw_progs.append({
+                                        "start_dt": start_dt,
+                                        "title": title_part,
+                                        "desc": f"Program {title_part} di {target['name']}"
+                                    })
+                            except Exception: continue
+
+            if raw_progs:
+                return build_xmltv_programmes(epg_id, target, channels, raw_progs)
+    except Exception as e:
+        print(f"[!] HTML Dated Scrape Error [{target['name']}]: {e}")
 
     return auto_scrape_epg(target)
+
+def build_xmltv_programmes(epg_id, target, channels, raw_progs):
+    programmes = []
+    raw_progs.sort(key=lambda x: x["start_dt"])
+    
+    for i in range(len(raw_progs)):
+        curr = raw_progs[i]
+        start_dt = curr["start_dt"]
+        
+        if i + 1 < len(raw_progs):
+            stop_dt = raw_progs[i+1]["start_dt"]
+            if stop_dt <= start_dt:
+                stop_dt += timedelta(days=1)
+        else:
+            stop_dt = start_dt + timedelta(hours=1)
+            
+        programmes.append({
+            "channel": epg_id,
+            "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0500")),
+            "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0500")),
+            "title": curr["title"],
+            "desc": curr["desc"],
+            "lang": "kk"
+        })
+    return channels, programmes
 
 def encode_url(url_str):
     from urllib.parse import quote
