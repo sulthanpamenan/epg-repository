@@ -15,62 +15,29 @@ from concurrent.futures import ThreadPoolExecutor
 # EPG TARGET SOURCES LIST (Icon left empty "" for auto-fetch)
 # =========================================================================
 EPG_TARGET_SOURCES = [
-    {
-        "id": "PadangTV.id",
-        "name": "Padang TV",
-        "url": "https://padangtv.id/schedule/",
-        "icon": "",
-        "utc_offset": "+0700"
-    },
-    {
-        "id": "RedBullTV.global",
-        "name": "Red Bull TV",
-        "url": "https://www.redbull.tv/en/epg",
-        "icon": "",
-        "utc_offset": "+0000"
-    },
-    {
-        "id": "MNCVision.all",
-        "name": "MNC Vision All Channels",
-        "url": "https://www.mncvision.id/channel",
-        "icon": "",
-        "utc_offset": "+0700"
-    },
-    {
-        "id": "CLTV36.ph",
-        "name": "CLTV36",
-        "url": "https://cltv36.tv/tv-programs/",
-        "icon": "",
-        "utc_offset": "+0800"
-    },
-    {
-        "id": "Qazaqstan.kz",
-        "name": "Qazaqstan TV",
-        "url": "https://qazaqstan.tv/program",
-        "icon": "",
-        "utc_offset": "+0500"
-    },
-    {
-        "id": "QazaqstanInt.kz",
-        "name": "Qazaqstan International",
-        "url": "https://qazaqstan.tv/program",
-        "icon": "",
-        "utc_offset": "+0500"
-    },
-    {
-        "id": "Balapan.kz",
-        "name": "Balapan TV",
-        "url": "https://balapan.tv/program",
-        "icon": "",
-        "utc_offset": "+0500"
-    },
-    {
-        "id": "AbaiTV.kz",
-        "name": "Abai TV",
-        "url": "https://abaitv.kz/program",
-        "icon": "",
-        "utc_offset": "+0500"
-    }
+    {"id": "PadangTV.id", "name": "Padang TV", "url": "https://padangtv.id/schedule/", "icon": "", "utc_offset": "+0700"},
+    {"id": "RedBullTV.global", "name": "Red Bull TV", "url": "https://www.redbull.tv/en/epg", "icon": "", "utc_offset": "+0000"},
+    {"id": "MNCVision.all", "name": "MNC Vision All Channels", "url": "https://www.mncvision.id/channel", "icon": "", "utc_offset": "+0700"},
+    {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "icon": "", "utc_offset": "+0800"},
+    {"id": "Qazaqstan.kz", "name": "Qazaqstan TV", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "QazaqstanInt.kz", "name": "Qazaqstan International", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "Balapan.kz", "name": "Balapan TV", "url": "https://balapan.tv/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "AbaiTV.kz", "name": "Abai TV", "url": "https://abaitv.kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "Qazsport.kz", "name": "Qazsport", "url": "https://qazsporttv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "AqjaiyqTV.kz", "name": "Aqjaiyq TV", "url": "https://aqjaiyqtv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "AqtobeTV.kz", "name": "Aqtobe TV", "url": "https://aqtobetv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "AltaiTV.kz", "name": "Altai TV", "url": "https://altaitv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "AtyrauTV.kz", "name": "Atyrau TV", "url": "https://atyrautv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "ErtisTV.kz", "name": "Ertis TV", "url": "https://ertistv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "JambylTV.kz", "name": "Jambyl TV", "url": "https://jambyltv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "KoksheTV.kz", "name": "Kokshe TV", "url": "https://kokshetv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "MangystauTV.kz", "name": "Mangystau TV", "url": "https://mangystautv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "OntustikTV.kz", "name": "Ontustik TV", "url": "https://ontustiktv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "QostanaiTV.kz", "name": "Qostanai TV", "url": "https://qostanaitv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "QyzyljarTV.kz", "name": "Qyzyljar TV", "url": "https://qyzyljartv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "QyzylordaTV.kz", "name": "Qyzylorda TV", "url": "https://qyzylordatv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "SaryarqaTV.kz", "name": "Saryarqa TV", "url": "https://saryarqatv.kz/kz/program", "icon": "", "utc_offset": "+0500"},
+    {"id": "SemeiTV.kz", "name": "Semei TV", "url": "https://semeitv.kz/kz/program", "icon": "", "utc_offset": "+0500"}
 ]
 
 def format_xmltv_date(dt_obj, utc_offset="+0700"):
@@ -268,53 +235,84 @@ def fetch_epg_cltv36(target):
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
     programmes = []
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "https://qazaqstan.tv/"
+    }
+    
     icon = target.get("icon") or get_auto_icon(target["url"])
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     
+    channel_api_ids = {
+        "Qazaqstan.kz": 1, "QazaqstanInt.kz": 1, "Balapan.kz": 2, "AbaiTV.kz": 3,
+        "Qazsport.kz": 4, "AqjaiyqTV.kz": 5, "AqtobeTV.kz": 6, "AltaiTV.kz": 7,
+        "AtyrauTV.kz": 8, "ErtisTV.kz": 9, "JambylTV.kz": 10, "KoksheTV.kz": 11,
+        "MangystauTV.kz": 12, "OntustikTV.kz": 13, "QostanaiTV.kz": 14, "QyzyljarTV.kz": 15,
+        "QyzylordaTV.kz": 16, "SaryarqaTV.kz": 17, "SemeiTV.kz": 18
+    }
+    
+    internal_id = channel_api_ids.get(epg_id, 1)
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    
+    api_url = f"https://qazaqstan.tv/api/v1/schedule?channel_id={internal_id}&date={today_str}"
+    
     try:
-        res = requests.get(target["url"], headers=headers, timeout=15)
+        res = requests.get(api_url, headers=headers, timeout=15)
         if res.status_code == 200:
-            soup = BeautifulSoup(res.text, 'html.parser')
-            today = datetime.now()
+            data = res.json()
+            items = data.get("data", []) or data.get("schedule", []) or data
             
-            time_pattern = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
-            extracted = []
-
-            for elem in soup.find_all(['tr', 'li', 'div', 'p']):
-                text = elem.get_text(" ", strip=True)
-                if len(text) > 150: continue
-                match = time_pattern.search(text)
-                if match:
-                    t_str = match.group(1).replace('.', ':')
-                    if len(t_str.split(':')[0]) == 1: t_str = "0" + t_str
-                    title = text[match.end():].strip(" -–:\t\n\r[]")
-                    if title and len(title) > 2 and not title.startswith("http"):
-                        extracted.append((t_str, title))
-
-            for i in range(len(extracted)):
-                t_str, title = extracted[i]
-                try:
-                    start_dt = datetime.strptime(f"{today.strftime('%Y-%m-%d')} {t_str}", "%Y-%m-%d %H:%M")
-                    if i + 1 < len(extracted):
-                        stop_dt = datetime.strptime(f"{today.strftime('%Y-%m-%d')} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
-                        if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+            if isinstance(items, list):
+                for item in items:
+                    title = item.get("title") or item.get("name") or item.get("program_name")
+                    time_start = item.get("time") or item.get("start_time") or item.get("begin")
+                    
+                    if not title or not time_start:
+                        continue
+                        
+                    time_start = time_start.strip()
+                    if len(time_start.split(':')[0]) == 1:
+                        time_start = "0" + time_start
+                        
+                    start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
+                    
+                    programmes.append({
+                        "channel": epg_id,
+                        "start_dt": start_dt,
+                        "title": title.strip(),
+                        "desc": item.get("description") or f"Program {title.strip()} di {target['name']}"
+                    })
+                
+                programmes.sort(key=lambda x: x["start_dt"])
+                
+                final_programmes = []
+                for i in range(len(programmes)):
+                    curr = programmes[i]
+                    start_dt = curr["start_dt"]
+                    
+                    if i + 1 < len(programmes):
+                        stop_dt = programmes[i+1]["start_dt"]
+                        if stop_dt <= start_dt:
+                            stop_dt += timedelta(days=1)
                     else:
                         stop_dt = start_dt + timedelta(hours=1)
-
-                    programmes.append({
+                        
+                    final_programmes.append({
                         "channel": epg_id,
                         "start": format_xmltv_date(start_dt, target.get("utc_offset", "+0500")),
                         "stop": format_xmltv_date(stop_dt, target.get("utc_offset", "+0500")),
-                        "title": title,
-                        "desc": f"Program {title} di {target['name']}",
+                        "title": curr["title"],
+                        "desc": curr["desc"],
                         "lang": "kk"
                     })
-                except Exception: continue
-    except Exception as e:
-        print(f"[!] Qazaqstan Scraper Error for {target['name']}: {e}")
+                
+                return channels, final_programmes
 
-    return channels, programmes
+    except Exception as e:
+        print(f"[!] Qazaqstan API Scraper Error for {target['name']}: {e}")
+
+    return auto_scrape_epg(target)
 
 # =========================================================================
 # 5. UNIVERSAL SCRAPER
@@ -383,6 +381,13 @@ def generate_xmltv():
     all_channels = []
     all_programmes = []
 
+    qazaqstan_domains = [
+        "qazaqstan.tv", "balapan.tv", "abaitv.kz", "qazsporttv.kz", "aqjaiyqtv.kz",
+        "aqtobetv.kz", "altaitv.kz", "atyrautv.kz", "ertistv.kz", "jambyltv.kz",
+        "kokshetv.kz", "mangystautv.kz", "ontustiktv.kz", "qostanaitv.kz", "qyzyljartv.kz",
+        "qyzylordatv.kz", "saryarqatv.kz", "semeitv.kz"
+    ]
+    
     for target in EPG_TARGET_SOURCES:
         print(f"[*] Scraping: {target['name']}...")
         if "mncvision" in target["url"].lower():
@@ -391,7 +396,7 @@ def generate_xmltv():
             ch_list, progs = fetch_epg_redbull(target)
         elif "cltv36" in target["url"].lower() or target["id"] == "CLTV36.ph":
             ch_list, progs = fetch_epg_cltv36(target)
-        elif any(domain in target["url"].lower() for domain in ["qazaqstan.tv", "balapan.tv", "abaitv.kz"]):
+        elif any(domain in target["url"].lower() for domain in qazaqstan_domains) or target["id"].endswith(".kz"):
             ch_list, progs = fetch_epg_qazaqstan(target)
         else:
             ch_list, progs = auto_scrape_epg(target)
