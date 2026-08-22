@@ -225,7 +225,7 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK SCRAPER (FIXED DATED URL & API PROXY)
+# 4. QAZAQSTAN NETWORK SCRAPER (FIXED: CLEAN TITLE & LIVE DATE PARSER)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
@@ -236,7 +236,6 @@ def fetch_epg_qazaqstan(target):
     
     icon = target.get("icon") or get_auto_icon(target["url"])
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
-    programmes = []
     
     channel_api_ids = {
         "Qazaqstan.kz": 1, "QazaqstanInt.kz": 1, "Balapan.kz": 2, "AbaiTV.kz": 3,
@@ -247,12 +246,14 @@ def fetch_epg_qazaqstan(target):
     }
     
     internal_id = channel_api_ids.get(epg_id, 1)
+    
+    # Gunakan Tanggal Hari Ini Sesuai Server System Time
     today = datetime.now()
     today_str = today.strftime("%Y-%m-%d")
     
     WORKER_PROXY = "https://qazaqstan-playlist.sulthan-pamenan.workers.dev/?url="
     
-    # 1. METODE UTAMA: API JSON DENGAN ZONA WAKTU TANGGAL LENGKAP
+    # 1. TEMBAK API UTAMA DENGAN WORKER
     direct_api_url = f"https://qazaqstan.tv/api/v1/schedule?channel_id={internal_id}&date={today_str}"
     proxied_api_url = f"{WORKER_PROXY}{encode_url(direct_api_url)}"
     
@@ -272,21 +273,24 @@ def fetch_epg_qazaqstan(target):
                     time_start = str(time_start).strip()
                     if len(time_start.split(':')[0]) == 1: time_start = "0" + time_start
                     
+                    # Clean Teks Judul
+                    clean_title = str(title).replace("Онлайн көру", "").replace("ҚАЗІР ЭФИРДЕ", "").strip()
+                    
                     try:
                         start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
                         raw_progs.append({
                             "start_dt": start_dt,
-                            "title": str(title).strip(),
-                            "desc": str(item.get("description") or f"Program {title} di {target['name']}").strip()
+                            "title": clean_title,
+                            "desc": f"Program {clean_title} di {target['name']}"
                         })
                     except Exception: continue
                 
                 if raw_progs:
                     return build_xmltv_programmes(epg_id, target, channels, raw_progs)
     except Exception as e:
-        print(f"[!] API Fetch Error [{target['name']}]: {e}")
+        print(f"[!] API Error [{target['name']}]: {e}")
 
-    # 2. METODE FALLBACK: SCRAPE HTML DENGAN URL DATED PATH (/program/YYYY-MM-DD)
+    # 2. FALLBACK SCRAPE HTML DENGAN URL PATH BER-TANGGAL HARI INI
     dated_url = f"{target['url'].rstrip('/')}/{today_str}"
     proxied_html_url = f"{WORKER_PROXY}{encode_url(dated_url)}"
     
@@ -306,7 +310,7 @@ def fetch_epg_qazaqstan(target):
                         if len(time_start.split(':')[0]) == 1: time_start = "0" + time_start
                         
                         title_part = text[match.end():].strip(" -–:\t\n\r[]")
-                        for ignore_word in ["LIVE", "ЭФИРДЕ", "Бағдарлама", "Драма", "Көркем фильм", "Телехикая", "Шоу", "ҚАЗІР ЭФИРДЕ"]:
+                        for ignore_word in ["LIVE", "ЭФИРДЕ", "Бағдарлама", "Драма", "Көркем фильм", "Телехикая", "Шоу", "Онлайн көру", "ҚАЗІР ЭФИРДЕ"]:
                             title_part = title_part.replace(ignore_word, "").strip()
                             
                         if title_part and len(title_part) > 2 and not title_part.startswith("http"):
@@ -323,7 +327,7 @@ def fetch_epg_qazaqstan(target):
             if raw_progs:
                 return build_xmltv_programmes(epg_id, target, channels, raw_progs)
     except Exception as e:
-        print(f"[!] HTML Dated Scrape Error [{target['name']}]: {e}")
+        print(f"[!] HTML Scrape Error [{target['name']}]: {e}")
 
     return auto_scrape_epg(target)
 
