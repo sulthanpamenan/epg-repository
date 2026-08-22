@@ -4,7 +4,7 @@ import re
 import time
 import random
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timezone, timedelta
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -237,8 +237,8 @@ def fetch_epg_qazaqstan(target):
     icon = target.get("icon") or get_auto_icon(target["url"])
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     
-    today = datetime.now()
-    today_str = today.strftime("%Y-%m-%d")
+    kz_now = datetime.now(timezone.utc) + timedelta(hours=5)
+    today_str = kz_now.strftime("%Y-%m-%d")
     
     WORKER_PROXY = "https://qazaqstan-playlist.sulthan-pamenan.workers.dev/?url="
     dated_url = f"{target['url'].rstrip('/')}/{today_str}"
