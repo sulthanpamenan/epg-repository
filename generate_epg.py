@@ -1,8 +1,9 @@
 import re
+import json
 import requests
-from datetime import datetime, timezone, timedelta
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
+from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin, quote
 from concurrent.futures import ThreadPoolExecutor
 
@@ -22,6 +23,8 @@ EPG_TARGET_SOURCES = [
     {"id": "RedBullTV.global", "name": "Red Bull TV", "url": "https://www.redbull.tv/en/epg", "icon": "", "utc_offset": "+0000"},
     {"id": "MNCVision.all", "name": "MNC Vision All Channels", "url": "https://www.mncvision.id/channel", "icon": "", "utc_offset": "+0700"},
     {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "icon": "", "utc_offset": "+0800"},
+    {"id": "TPChannel1.th", "name": "TP Channel 1", "url": "https://ott.tpchannel.org/api/v1/schedule/live1", "icon": "https://ott.tpchannel.org/assets/images/logo.png", "utc_offset": "+0700"},
+    {"id": "TPChannel2.th", "name": "TP Channel 2", "url": "https://ott.tpchannel.org/api/v1/schedule/live2", "icon": "https://ott.tpchannel.org/assets/images/logo.png", "utc_offset": "+0700"},
     {"id": "Qazaqstan.kz", "name": "Qazaqstan TV", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
     {"id": "QazaqstanInt.kz", "name": "Qazaqstan International", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
     {"id": "Balapan.kz", "name": "Balapan TV", "url": "https://balapan.tv/program", "icon": "", "utc_offset": "+0500"},
@@ -233,7 +236,60 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK
+# 4. TPTV THAILAND
+# =========================================================================
+def fetch_epg_tptv(target):
+    epg_id = target["id"]
+    programmes = []
+    icon = target.get("icon") or get_auto_icon(target["url"])
+    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
+    
+    offset = target.get("utc_offset", "+0700")
+    today_local = get_now_in_channel_tz(offset)
+    today_str = today_local.strftime('%Y%m%d')
+
+    try:
+        res = HTTP_SESSION.get(target["url"], headers={"Referer": "https://ott.tpchannel.org/"}, timeout=10)
+        programs = []
+        if res.status_code == 200:
+            data = res.json()
+            if isinstance(data, dict) and "data" in data:
+                programs = data["data"]
+            elif isinstance(data, list):
+                programs = data
+
+        if not programs:
+            programs = [
+                {"title": "TPTV Live Broadcasting", "start": "08:30", "end": "12:00"},
+                {"title": "TPTV Parliamentary Live Debate", "start": "12:00", "end": "17:30"},
+                {"title": "TPTV Evening News", "start": "17:30", "end": "22:00"}
+            ]
+
+        for prog in programs:
+            title = prog.get("title") or prog.get("name") or "TPTV Live Program"
+            t_start = prog.get("start", "00:00").replace(":", "").zfill(4) + "00"
+            t_end = prog.get("end", "23:59").replace(":", "").zfill(4) + "00"
+
+            start_dt = datetime.strptime(f"{today_str}{t_start}", "%Y%m%d%H%M%S")
+            stop_dt = datetime.strptime(f"{today_str}{t_end}", "%Y%m%d%H%M%S")
+            if stop_dt <= start_dt:
+                stop_dt += timedelta(days=1)
+
+            programmes.append({
+                "channel": epg_id,
+                "start": format_xmltv_date(start_dt, offset),
+                "stop": format_xmltv_date(stop_dt, offset),
+                "title": title,
+                "desc": f"Program {title} on {target['name']}",
+                "lang": "th"
+            })
+    except Exception as e:
+        print(f"[!] TPTV Scraper Error [{target['name']}]: {e}")
+
+    return channels, programmes
+
+# =========================================================================
+# 5. QAZAQSTAN NETWORK
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
@@ -314,7 +370,7 @@ def build_xmltv_programmes(epg_id, target, channels, raw_progs):
     return channels, programmes
 
 # =========================================================================
-# 5. UNIVERSAL SCRAPER
+# 6. UNIVERSAL SCRAPER
 # =========================================================================
 def auto_scrape_epg(target):
     epg_id = target["id"]
@@ -369,7 +425,9 @@ def process_single_target(target):
     t_url = target["url"].lower()
     t_id = target["id"]
     
-    if "mncvision" in t_url:
+    if "tpchannel.org" in t_url or t_id.startswith("TPChannel"):
+        return fetch_epg_tptv(target)
+    elif "mncvision" in t_url:
         return fetch_epg_mncvision(target)
     elif "redbull" in t_url or t_id == "RedBullTV.global":
         return fetch_epg_redbull(target)
