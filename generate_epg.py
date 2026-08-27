@@ -241,39 +241,64 @@ def fetch_epg_cltv36(target):
 def fetch_epg_tptv(target):
     epg_id = target["id"]
     programmes = []
-    icon = target.get("icon") or get_auto_icon(target["url"])
+    icon = target.get("icon") or get_auto_icon("https://www.tpchannel.org/")
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     
     offset = target.get("utc_offset", "+0700")
     today_local = get_now_in_channel_tz(offset)
-    today_str = today_local.strftime('%Y%m%d')
+    today_str = today_local.strftime('%Y-%m-%d')
+
+    master_type = "2" if "1" in epg_id else "1"
+    api_url = f"https://www.tpchannel.org/api/get-by-date?master_type_id={master_type}&date={today_str}"
+    
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+        "Referer": "https://www.tpchannel.org/tv/schedule",
+        "X-Requested-With": "XMLHttpRequest"
+    }
 
     try:
-        res = HTTP_SESSION.get(target["url"], headers={"Referer": "https://ott.tpchannel.org/"}, timeout=10)
-        programs = []
+        res = HTTP_SESSION.get(api_url, headers=headers, timeout=12)
+        items = []
         if res.status_code == 200:
             data = res.json()
-            if isinstance(data, dict) and "data" in data:
-                programs = data["data"]
+            if isinstance(data, dict):
+                items = data.get("data", []) or data.get("result", [])
             elif isinstance(data, list):
-                programs = data
+                items = data
 
-        if not programs:
-            programs = [
-                {"title": "TPTV Live Broadcasting", "start": "08:30", "end": "12:00"},
-                {"title": "TPTV Parliamentary Live Debate", "start": "12:00", "end": "17:30"},
-                {"title": "TPTV Evening News", "start": "17:30", "end": "22:00"}
-            ]
+        extracted = []
+        for item in items:
+            title = item.get("title") or item.get("name") or item.get("program_name")
+            t_str = item.get("time") or item.get("start_time") or item.get("schedule_time")
+            
+            if t_str and title:
+                t_clean = t_str.replace(".", ":").strip()[:5].zfill(5)
+                extracted.append((t_clean, title.strip()))
 
-        for prog in programs:
-            title = prog.get("title") or prog.get("name") or "TPTV Live Program"
-            t_start = prog.get("start", "00:00").replace(":", "").zfill(4) + "00"
-            t_end = prog.get("end", "23:59").replace(":", "").zfill(4) + "00"
+        if not extracted:
+            web_res = HTTP_SESSION.get("https://www.tpchannel.org/tv/schedule", headers=headers, timeout=12)
+            if web_res.status_code == 200:
+                soup = BeautifulSoup(web_res.text, 'html.parser')
+                for row in soup.find_all(['div', 'li', 'tr']):
+                    text = row.get_text(" ", strip=True)
+                    match = TIME_PATTERN_HM.search(text)
+                    if match:
+                        t_clean = match.group(1).replace('.', ':').zfill(5)
+                        title_candidate = text[match.end():].strip(" -–:\t\n\r[]u.")
+                        if title_candidate and len(title_candidate) > 2 and "ดาวน์โหลด" not in title_candidate:
+                            extracted.append((t_clean, title_candidate))
 
-            start_dt = datetime.strptime(f"{today_str}{t_start}", "%Y%m%d%H%M%S")
-            stop_dt = datetime.strptime(f"{today_str}{t_end}", "%Y%m%d%H%M%S")
-            if stop_dt <= start_dt:
-                stop_dt += timedelta(days=1)
+        for i in range(len(extracted)):
+            t_str, title = extracted[i]
+            start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+            
+            if i + 1 < len(extracted):
+                stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
+                if stop_dt <= start_dt:
+                    stop_dt += timedelta(days=1)
+            else:
+                stop_dt = start_dt + timedelta(hours=1)
 
             programmes.append({
                 "channel": epg_id,
