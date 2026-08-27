@@ -247,67 +247,60 @@ def fetch_epg_tptv(target):
     today_local = get_now_in_channel_tz(offset)
     today_str = today_local.strftime('%Y-%m-%d')
 
-    api_url = f"https://www.tpchannel.org/api/get-by-date?date={today_str}"
-    
+    url = "https://www.tpchannel.org/tv/schedule"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
-        "Referer": "https://www.tpchannel.org/tv/schedule",
-        "X-Requested-With": "XMLHttpRequest"
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Referer": "https://www.tpchannel.org/broadcasts/tv"
     }
 
     try:
-        res = HTTP_SESSION.get(api_url, headers=headers, timeout=12)
-        items = []
-        if res.status_code == 200:
-            data = res.json()
-            if isinstance(data, dict):
-                items = data.get("data", []) or data.get("result", [])
-            elif isinstance(data, list):
-                items = data
-
+        res = HTTP_SESSION.get(url, headers=headers, timeout=12)
         extracted = []
-        for item in items:
-            title = item.get("title") or item.get("name") or item.get("program_name")
-            t_str = item.get("time") or item.get("start_time") or item.get("schedule_time")
-            
-            if t_str and title:
-                t_clean = t_str.replace(".", ":").strip()[:5].zfill(5)
-                extracted.append((t_clean, str(title).strip()))
 
-        if not extracted:
-            web_res = HTTP_SESSION.get("https://www.tpchannel.org/tv/schedule", headers=headers, timeout=12)
-            if web_res.status_code == 200:
-                soup = BeautifulSoup(web_res.text, 'html.parser')
-                for row in soup.find_all(['div', 'li', 'tr']):
-                    text = row.get_text(" ", strip=True)
-                    match = TIME_PATTERN_HM.search(text)
-                    if match:
-                        t_clean = match.group(1).replace('.', ':').zfill(5)
-                        title_candidate = text[match.end():].strip(" -–:\t\n\r[]u.")
-                        if title_candidate and len(title_candidate) > 2 and "ดาวน์โหลด" not in title_candidate:
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, 'html.parser')
+            
+            for element in soup.find_all(['div', 'li', 'tr', 'p']):
+                text = element.get_text(" ", strip=True)
+                if len(text) > 150: 
+                    continue
+                
+                match = TIME_PATTERN_HM.search(text)
+                if match:
+                    t_clean = match.group(1).replace('.', ':').zfill(5)
+                    title_candidate = text[match.end():].strip(" -–:\t\n\r[]u.")
+                    title_candidate = re.sub(r'^(u\.|น\.)', '', title_candidate).strip()
+                    
+                    if title_candidate and len(title_candidate) > 2 and "ดาวน์โหลด" not in title_candidate:
+                        if not any(x[0] == t_clean and x[1] == title_candidate for x in extracted):
                             extracted.append((t_clean, title_candidate))
 
         for i in range(len(extracted)):
             t_str, title = extracted[i]
-            start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-            
-            if i + 1 < len(extracted):
-                stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
-                if stop_dt <= start_dt:
-                    stop_dt += timedelta(days=1)
-            else:
-                stop_dt = start_dt + timedelta(hours=1)
+            try:
+                start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+                
+                if i + 1 < len(extracted):
+                    stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
+                    if stop_dt <= start_dt:
+                        stop_dt += timedelta(days=1)
+                else:
+                    stop_dt = start_dt + timedelta(hours=1)
 
-            programmes.append({
-                "channel": epg_id,
-                "start": format_xmltv_date(start_dt, offset),
-                "stop": format_xmltv_date(stop_dt, offset),
-                "title": title,
-                "desc": f"Program {title} on {target['name']}",
-                "lang": "th"
-            })
+                programmes.append({
+                    "channel": epg_id,
+                    "start": format_xmltv_date(start_dt, offset),
+                    "stop": format_xmltv_date(stop_dt, offset),
+                    "title": title,
+                    "desc": f"Program {title} di {target['name']}",
+                    "lang": "th"
+                })
+            except Exception:
+                continue
+
     except Exception as e:
-        print(f"[!] TPTV Scraper Error [{target['name']}]: {e}")
+        print(f"[!] TPTV HTML Scraper Error: {e}")
 
     return channels, programmes
 
