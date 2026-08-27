@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
 # =========================================================================
 # CONSTANTS & COMPILED REGEX
 # =========================================================================
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"}
 TIME_PATTERN_HM = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
 TIME_PATTERN_EXACT = re.compile(r'^([0-2]?\d:[0-5]\d)$')
 TIME_PATTERN_AMPM = re.compile(r'(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))')
@@ -23,8 +23,7 @@ EPG_TARGET_SOURCES = [
     {"id": "RedBullTV.global", "name": "Red Bull TV", "url": "https://www.redbull.tv/en/epg", "icon": "", "utc_offset": "+0000"},
     {"id": "MNCVision.all", "name": "MNC Vision All Channels", "url": "https://www.mncvision.id/channel", "icon": "", "utc_offset": "+0700"},
     {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "icon": "", "utc_offset": "+0800"},
-    {"id": "TPChannel1.th", "name": "TP Channel 1", "url": "https://www.tpchannel.org/tv/schedule", "icon": "", "utc_offset": "+0700"},
-    {"id": "TPChannel2.th", "name": "TP Channel 2", "url": "https://www.tpchannel.org/tv/schedule", "icon": "", "utc_offset": "+0700"},
+    {"id": "TPChannel.th", "name": "TP Channel", "url": "https://www.tpchannel.org/tv/schedule", "icon": "", "utc_offset": "+0700"},
     {"id": "Qazaqstan.kz", "name": "Qazaqstan TV", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
     {"id": "QazaqstanInt.kz", "name": "Qazaqstan International", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
     {"id": "Balapan.kz", "name": "Balapan TV", "url": "https://balapan.tv/program", "icon": "", "utc_offset": "+0500"},
@@ -248,8 +247,7 @@ def fetch_epg_tptv(target):
     today_local = get_now_in_channel_tz(offset)
     today_str = today_local.strftime('%Y-%m-%d')
 
-    master_type = "2" if "1" in epg_id else "1"
-    api_url = f"https://www.tpchannel.org/api/get-by-date?master_type_id={master_type}&date={today_str}"
+    api_url = f"https://www.tpchannel.org/api/get-by-date?date={today_str}"
     
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
@@ -274,7 +272,7 @@ def fetch_epg_tptv(target):
             
             if t_str and title:
                 t_clean = t_str.replace(".", ":").strip()[:5].zfill(5)
-                extracted.append((t_clean, title.strip()))
+                extracted.append((t_clean, str(title).strip()))
 
         if not extracted:
             web_res = HTTP_SESSION.get("https://www.tpchannel.org/tv/schedule", headers=headers, timeout=12)
