@@ -317,7 +317,6 @@ def fetch_epg_cltv36(target):
 # =========================================================================
 def fetch_epg_tptv(target):
     epg_id = target["id"]
-    programmes = []
     icon = target.get("icon") or get_auto_icon("https://www.tpchannel.org/")
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
     
@@ -329,58 +328,50 @@ def fetch_epg_tptv(target):
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Referer": "https://www.tpchannel.org/broadcasts/tv"
+        "Referer": "https://www.tpchannel.org/"
     }
 
+    raw_progs = []
     try:
         res = HTTP_SESSION.get(url, headers=headers, timeout=12)
-        extracted = []
-
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            for element in soup.find_all(['div', 'li', 'tr', 'p']):
-                text = element.get_text(" ", strip=True)
-                if len(text) > 150: 
+            items = soup.select('.schedule-item, .tv-schedule, tr, li, .row')
+            if not items:
+                items = soup.find_all(['div', 'li', 'tr'])
+
+            for element in items:
+                text = " ".join(element.get_text(" ", strip=True).split())
+                if len(text) > 200 or len(text) < 5:
                     continue
-                
-                match = TIME_PATTERN_HM.search(text)
+
+                 match = re.search(r'(\b[0-2]?\d[:.][0-5]\d\b)', text)
                 if match:
-                    t_clean = match.group(1).replace('.', ':').zfill(5)
-                    title_candidate = text[match.end():].strip(" -–:\t\n\r[]u.")
-                    title_candidate = re.sub(r'^(u\.|น\.)', '', title_candidate).strip()
+                    t_str = match.group(1).replace('.', ':').zfill(5)
+                    title = text[match.end():].strip(" -–:\t\n\r[]u.น.")
                     
-                    if title_candidate and len(title_candidate) > 2 and "ดาวน์โหลด" not in title_candidate:
-                        if not any(x[0] == t_clean and x[1] == title_candidate for x in extracted):
-                            extracted.append((t_clean, title_candidate))
+                    title = re.sub(r'^(u\.|น\.|รายการ|ข่าว)', '', title).strip(" -–:")
+                    
+                    if title and len(title) > 2 and "ดาวน์โหลด" not in title and "tpchannel" not in title.lower():
+                        try:
+                            start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+                            if not any(p["start_dt"] == start_dt for p in raw_progs):
+                                raw_progs.append({
+                                    "start_dt": start_dt,
+                                    "title": title,
+                                    "desc": f"รายการ {title} ทาง {target['name']}"
+                                })
+                        except Exception:
+                            continue
 
-        for i in range(len(extracted)):
-            t_str, title = extracted[i]
-            try:
-                start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-                
-                if i + 1 < len(extracted):
-                    stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
-                    if stop_dt <= start_dt:
-                        stop_dt += timedelta(days=1)
-                else:
-                    stop_dt = start_dt + timedelta(hours=1)
-
-                programmes.append({
-                    "channel": epg_id,
-                    "start": format_xmltv_date(start_dt, offset),
-                    "stop": format_xmltv_date(stop_dt, offset),
-                    "title": title,
-                    "desc": f"Program {title} di {target['name']}",
-                    "lang": "th"
-                })
-            except Exception:
-                continue
+            if raw_progs:
+                return build_xmltv_programmes(epg_id, target, channels, raw_progs)
 
     except Exception as e:
-        print(f"[!] TPTV HTML Scraper Error: {e}")
+        print(f"[!] TPTV Scraper Error: {e}")
 
-    return channels, programmes
+    return auto_scrape_epg(target)
 
 # =========================================================================
 # 6. QAZAQSTAN NETWORK
@@ -393,7 +384,6 @@ def fetch_epg_qazaqstan(target):
     kz_now = get_now_in_channel_tz("+0500")
     today_str = kz_now.strftime("%Y-%m-%d")
     
-    # WORKER PROXY DOMAIN (kazakhstan-playlist)
     WORKER_PROXY = "https://kazakhstan-playlist.sulthan-pamenan.workers.dev/?url="
     dated_url = f"{target['url'].rstrip('/')}/{today_str}"
     proxied_url = f"{WORKER_PROXY}{quote(dated_url, safe='')}"
@@ -495,19 +485,17 @@ def auto_scrape_epg(target):
 # ROUTER
 def process_single_target(target):
     t_url = target["url"].lower()
-    t_id = target["id"]
+    t_id = target["id"].lower()
     
-    if "padangtv.id" in target["url"]:
+    if "padangtv.id" in t_url:
         return fetch_epg_padangtv(target)
-    elif "qazaqstan" in target["id"].lower():
-        return fetch_epg_qazaqstan(target)
-    elif "tpchannel.org" in t_url or t_id.startswith("TPChannel"):
+    elif "tpchannel" in t_url or "tpchannel" in t_id:
         return fetch_epg_tptv(target)
     elif "mncvision" in t_url:
         return fetch_epg_mncvision(target)
-    elif "redbull" in t_url or t_id == "RedBullTV.global":
+    elif "redbull" in t_url or t_id == "redbulltv.global":
         return fetch_epg_redbull(target)
-    elif "cltv36" in t_url or t_id == "CLTV36.ph":
+    elif "cltv36" in t_url or t_id == "cltv36.ph":
         return fetch_epg_cltv36(target)
     elif t_id.endswith(".kz") or "qazaqstan" in t_url:
         return fetch_epg_qazaqstan(target)
