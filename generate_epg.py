@@ -346,7 +346,7 @@ def fetch_epg_tptv(target):
                 if len(text) > 200 or len(text) < 5:
                     continue
 
-                 match = re.search(r'(\b[0-2]?\d[:.][0-5]\d\b)', text)
+                match = re.search(r'(\b[0-2]?\d[:.][0-5]\d\b)', text)
                 if match:
                     t_str = match.group(1).replace('.', ':').zfill(5)
                     title = text[match.end():].strip(" -–:\t\n\r[]u.น.")
