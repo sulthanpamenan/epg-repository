@@ -614,6 +614,7 @@ def process_single_target(target):
 # =========================================================================
 def generate_xmltv():
     print("[*] Starting EPG scraping...")
+    now_utc_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     tv_elem = ET.Element(
         "tv",
         {
