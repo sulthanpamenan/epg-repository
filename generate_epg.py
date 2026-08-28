@@ -236,7 +236,7 @@ def fetch_epg_redbull(target):
     return channels, programmes
 
 # =========================================================================
-# 2. MNC VISION - DIRECT POST FORM PARSER
+# 2. MNC VISION - DIRECT POST FORM PARSER (UPDATED)
 # =========================================================================
 def fetch_epg_mncvision(target):
     channels, programmes = [], []
@@ -263,22 +263,29 @@ def fetch_epg_mncvision(target):
             rows = soup.find_all("tr")
             
             for row in rows:
+                # Cari elemen sel yang berisi nama channel / logo channel
                 ch_cell = row.find(["td", "th"], class_=re.compile(r"channel|ch", re.I)) or row.find("a", href=MNC_LINK_PATTERN)
                 if not ch_cell:
                     continue
                 
-                ch_name = clean_text_str(ch_cell.get_text(strip=True))
-                if not ch_name:
+                # Ekstrak nama asli stasiun TV dari atribut alt/title gambar logo jika ada, atau dari teks sel
+                img_tag = ch_cell.find("img")
+                if img_tag and img_tag.get("alt"):
+                    raw_ch_name = img_tag.get("alt")
+                elif img_tag and img_tag.get("title"):
+                    raw_ch_name = img_tag.get("title")
+                else:
+                    raw_ch_name = ch_cell.get_text(strip=True)
+
+                ch_name = clean_text_str(raw_ch_name)
+                # Bersihkan prefix "Ch. XX" atau "Ch XX" jika ada di awal nama
+                ch_name = re.sub(r"^Ch\.?\s*\d+\s*[-–]?\s*", "", ch_name, flags=re.I).strip()
+                
+                if not ch_name or len(ch_name) < 2:
                     continue
                 
+                # Buat ID unik berdasarkan nama asli saluran
                 clean_ch_id = re.sub(r"[^a-zA-Z0-9]", "", ch_name) + ".mnc"
-                
-                if not any(c["id"] == clean_ch_id for c in channels):
-                    channels.append({
-                        "id": clean_ch_id,
-                        "name": f"{ch_name} (MNC)",
-                        "icon": default_icon
-                    })
 
                 prog_cells = row.find_all(["td", "div"], class_=re.compile(r"prog|schedule|event", re.I))
                 extracted_items = []
@@ -293,27 +300,36 @@ def fetch_epg_mncvision(target):
                         if title and len(title) > 2:
                             extracted_items.append((t_str, clean_text_str(title)))
 
-                for i in range(len(extracted_items)):
-                    t_str, title = extracted_items[i]
-                    try:
-                        start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-                        if i + 1 < len(extracted_items):
-                            stop_dt = datetime.strptime(f"{today_str} {extracted_items[i+1][0]}", "%Y-%m-%d %H:%M")
-                            if stop_dt <= start_dt:
-                                stop_dt += timedelta(days=1)
-                        else:
-                            stop_dt = start_dt + timedelta(hours=1)
-
-                        programmes.append({
-                            "channel": clean_ch_id,
-                            "start": format_xmltv_date(start_dt, "+0700"),
-                            "stop": format_xmltv_date(stop_dt, "+0700"),
-                            "title": title,
-                            "desc": clean_text_str(f"Broadcast of {title} on {ch_name}"),
-                            "lang": "id",
+                # Hanya tambahkan channel ke daftar jika memiliki jadwal program
+                if extracted_items:
+                    if not any(c["id"] == clean_ch_id for c in channels):
+                        channels.append({
+                            "id": clean_ch_id,
+                            "name": f"{ch_name} (MNC)",
+                            "icon": default_icon
                         })
-                    except Exception:
-                        continue
+
+                    for i in range(len(extracted_items)):
+                        t_str, title = extracted_items[i]
+                        try:
+                            start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+                            if i + 1 < len(extracted_items):
+                                stop_dt = datetime.strptime(f"{today_str} {extracted_items[i+1][0]}", "%Y-%m-%d %H:%M")
+                                if stop_dt <= start_dt:
+                                    stop_dt += timedelta(days=1)
+                            else:
+                                stop_dt = start_dt + timedelta(hours=1)
+
+                            programmes.append({
+                                "channel": clean_ch_id,
+                                "start": format_xmltv_date(start_dt, "+0700"),
+                                "stop": format_xmltv_date(stop_dt, "+0700"),
+                                "title": title,
+                                "desc": clean_text_str(f"Broadcast of {title} on {ch_name}"),
+                                "lang": "id",
+                            })
+                        except Exception:
+                            continue
     except Exception as e:
         print(f"[!] MNC Vision POST Error: {e}")
 
