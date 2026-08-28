@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv generator-info-name="Universal IPTV EPG Generator">
+<tv generator-info-name="Universal IPTV EPG Generator" generator-info-url="https://github.com/sulthanpamenan">
  <channel id="TPChannel.th">
   <display-name>TP Channel</display-name>
  </channel>
@@ -66,4 +66,48 @@
  <channel id="SemeiTV.kz">
   <display-name>Semei TV</display-name>
  </channel>
+ <programme start="20260829083000 +0800" stop="20260829090000 +0800" channel="CLTV36.ph">
+  <title lang="en">Kalusugang SiguraDOH</title>
+  <desc lang="en">Broadcast of Kalusugang SiguraDOH on CLTV36</desc>
+ </programme>
+ <programme start="20260829090000 +0800" stop="20260829120000 +0800" channel="CLTV36.ph">
+  <title lang="en">CLTV36 Teleskwela</title>
+  <desc lang="en">Broadcast of CLTV36 Teleskwela on CLTV36</desc>
+ </programme>
+ <programme start="20260829120000 +0800" stop="20260829130000 +0800" channel="CLTV36.ph">
+  <title lang="en">Nánu Pa Ta?</title>
+  <desc lang="en">Broadcast of Nánu Pa Ta? on CLTV36</desc>
+ </programme>
+ <programme start="20260829130000 +0800" stop="20260829140000 +0800" channel="CLTV36.ph">
+  <title lang="en">TopPick</title>
+  <desc lang="en">Broadcast of TopPick on CLTV36</desc>
+ </programme>
+ <programme start="20260829150000 +0800" stop="20260829153000 +0800" channel="CLTV36.ph">
+  <title lang="en">UN In Action</title>
+  <desc lang="en">Broadcast of UN In Action on CLTV36</desc>
+ </programme>
+ <programme start="20260829153000 +0800" stop="20260829160000 +0800" channel="CLTV36.ph">
+  <title lang="en">Discover Japan</title>
+  <desc lang="en">Broadcast of Discover Japan on CLTV36</desc>
+ </programme>
+ <programme start="20260829160000 +0800" stop="20260829170000 +0800" channel="CLTV36.ph">
+  <title lang="en">Perspektiba</title>
+  <desc lang="en">Broadcast of Perspektiba on CLTV36</desc>
+ </programme>
+ <programme start="20260829170000 +0800" stop="20260829180000 +0800" channel="CLTV36.ph">
+  <title lang="en">Bawal ing Tsismis kang Sonia Soto</title>
+  <desc lang="en">Broadcast of Bawal ing Tsismis kang Sonia Soto on CLTV36</desc>
+ </programme>
+ <programme start="20260829180000 +0800" stop="20260829190000 +0800" channel="CLTV36.ph">
+  <title lang="en">Balen At Balita</title>
+  <desc lang="en">Broadcast of Balen At Balita on CLTV36</desc>
+ </programme>
+ <programme start="20260829190000 +0800" stop="20260829193000 +0800" channel="CLTV36.ph">
+  <title lang="en">Business As Unusual</title>
+  <desc lang="en">Broadcast of Business As Unusual on CLTV36</desc>
+ </programme>
+ <programme start="20260829200000 +0800" stop="20260829203000 +0800" channel="CLTV36.ph">
+  <title lang="en">Atin Kaming K!</title>
+  <desc lang="en">Broadcast of Atin Kaming K! on CLTV36</desc>
+ </programme>
 </tv>
