@@ -155,7 +155,7 @@ def fetch_epg_tpchannel(target):
     return channels, programmes
 
 # =========================================================================
-# 1. PADANG TV
+# 1. PADANG TV - PRECISE SCRAPER
 # =========================================================================
 def fetch_epg_padangtv(target):
     epg_id = target["id"]
@@ -172,27 +172,20 @@ def fetch_epg_padangtv(target):
             soup = BeautifulSoup(res.text, "html.parser")
             extracted = []
 
-            for elem in soup.find_all(["tr", "li", "div", "p"]):
+            rows = soup.find_all(["tr", "li", "div", "p"])
+            for elem in rows:
                 text = elem.get_text(" ", strip=True)
                 if len(text) > 150:
                     continue
+                
                 match = re.search(r"(\d{1,2}[:.]\d{2})\s*[-–]?\s*(.+)", text)
                 if match:
                     t_str = match.group(1).replace(".", ":").zfill(5)
                     title = match.group(2).strip()
                     title = re.sub(r"^[-–:\s]+", "", title)
-                    if title and len(title) > 2:
-                        extracted.append((t_str, title))
-
-            if not extracted:
-                for elem in soup.find_all(["tr", "li", "div"]):
-                    text = elem.get_text(" ", strip=True)
-                    match = TIME_PATTERN_HM.search(text)
-                    if match:
-                        t_str = match.group(1).replace(".", ":").zfill(5)
-                        title = text[match.end():].strip(" -–:\t\n\r")
-                        if title and len(title) > 2:
-                            extracted.append((t_str, title))
+                    if title and len(title) > 2 and not title.isdigit():
+                        if not extracted or extracted[-1][0] != t_str:
+                            extracted.append((t_str, clean_text_str(title)))
 
             for i in range(len(extracted)):
                 t_str, title = extracted[i]
@@ -209,8 +202,8 @@ def fetch_epg_padangtv(target):
                         "channel": epg_id,
                         "start": format_xmltv_date(start_dt, offset),
                         "stop": format_xmltv_date(stop_dt, offset),
-                        "title": clean_text_str(title),
-                        "desc": clean_text_str(f"Program {title} on {target['name']}"),
+                        "title": title,
+                        "desc": clean_text_str(f"Program {title} di Padang TV"),
                         "lang": "id",
                     })
                 except Exception:
@@ -439,7 +432,6 @@ def fetch_epg_qazaqstan(target):
     direct_url = f"{target['url'].rstrip('/')}/{today_str}"
     proxy_prefix = "https://iptv-playlist.sulthan-pamenan.workers.dev/?url="
     
-    # Cloudflare Worker Proxy diutamakan untuk menembus Geo-Block
     urls_to_try = [
         f"{proxy_prefix}{quote(direct_url, safe='')}",
         direct_url
@@ -453,7 +445,6 @@ def fetch_epg_qazaqstan(target):
 
             soup = BeautifulSoup(res.text, "html.parser")
 
-            # Metodologi 1: Parse data snapshot dari Livewire
             wire_el = soup.find(lambda tag: tag.has_attr("wire:snapshot") or tag.has_attr("wire:initial-data"))
             if wire_el:
                 try:
@@ -486,7 +477,6 @@ def fetch_epg_qazaqstan(target):
                 except Exception:
                     pass
 
-            # Metodologi 2: Fallback ke HTML DOM Scraping
             if not raw_progs:
                 selectors = [
                     ".schedule-item", ".program-item", ".tv-program", 
