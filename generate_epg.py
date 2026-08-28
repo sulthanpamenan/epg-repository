@@ -21,7 +21,6 @@ HEADERS = {
 }
 
 TIME_PATTERN_HM = re.compile(r"(\b[0-2]?\d[:.][0-5]\d\b)")
-TIME_PATTERN_EXACT = re.compile(r"^([0-2]?\d:[0-5]\d)$")
 TIME_PATTERN_AMPM = re.compile(r"(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))", re.IGNORECASE)
 MNC_LINK_PATTERN = re.compile(r"/channel/detail/")
 
@@ -110,9 +109,6 @@ def fix_and_sort_epg_programmes(programmes):
 
     return cleaned_programmes
 
-# =========================================================================
-# HELPER PARSER UNTUK MENGHUBUNGKAN HASIL QAZAQSTAN NETWORK
-# =========================================================================
 def build_xmltv_programmes(epg_id, target, channels, raw_progs):
     programmes = []
     raw_progs.sort(key=lambda x: x["start_dt"])
@@ -140,7 +136,7 @@ def build_xmltv_programmes(epg_id, target, channels, raw_progs):
     return channels, programmes
 
 # =========================================================================
-# 0. TP CHANNEL (THAILAND) - API JSON PARSER
+# 0. TP CHANNEL (THAILAND)
 # =========================================================================
 def fetch_epg_tpchannel(target):
     epg_id = target["id"]
@@ -261,13 +257,19 @@ def fetch_epg_redbull(target):
     return channels, programmes
 
 # =========================================================================
-# 2. MNC VISION - DIRECT POST FORM PARSER (UPDATED)
+# 2. MNC VISION (FIXED SESSION HEADERS)
 # =========================================================================
 def fetch_epg_mncvision(target):
     channels, programmes = [], []
     default_icon = target.get("icon") or get_auto_icon("https://www.mncvision.id")
     today_local = get_now_in_channel_tz("+0700")
     today_str = today_local.strftime("%Y-%m-%d")
+
+    # Ambil halaman awal dulu untuk membuat session cookie resmi
+    try:
+        HTTP_SESSION.get("https://www.mncvision.id/schedule", timeout=10)
+    except Exception:
+        pass
 
     post_url = "https://www.mncvision.id/schedule/formSearch"
     post_data = {
@@ -356,7 +358,7 @@ def fetch_epg_mncvision(target):
     return channels, programmes
 
 # =========================================================================
-# 3. CLTV36 (PHILIPPINES)
+# 3. CLTV36
 # =========================================================================
 def fetch_epg_cltv36(target):
     epg_id = target["id"]
@@ -413,7 +415,7 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK (UNIVERSAL PARSER UNTUK SELURUH JARINGAN KZ)
+# 4. QAZAQSTAN NETWORK (FIXED PROXY REQUEST HEADERS)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
@@ -435,7 +437,7 @@ def fetch_epg_qazaqstan(target):
 
     for url in urls_to_try:
         try:
-            res = HTTP_SESSION.get(url, timeout=20)
+            res = HTTP_SESSION.get(url, headers=HEADERS, timeout=20)
             if res.status_code != 200:
                 continue
 
@@ -546,7 +548,7 @@ def auto_scrape_epg(target):
     today_str = today_local.strftime("%Y-%m-%d")
 
     try:
-        res = HTTP_SESSION.get(target["url"], timeout=12)
+        res = HTTP_SESSION.get(target["url"], headers=HEADERS, timeout=12)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, "html.parser")
             extracted = []
