@@ -85,10 +85,6 @@ def clean_text_str(val):
     return re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", str(val)).strip()
 
 def fix_and_sort_epg_programmes(programmes):
-    """
-    Mengurutkan program berdasarkan channel dan waktu mulai secara kronologis,
-    serta menghilangkan entri dengan slot waktu bentrok/duplikat.
-    """
     seen_slots = set()
     cleaned_programmes = []
 
@@ -113,6 +109,35 @@ def fix_and_sort_epg_programmes(programmes):
         cleaned_programmes.append(prog)
 
     return cleaned_programmes
+
+# =========================================================================
+# HELPER PARSER UNTUK MENGHUBUNGKAN HASIL QAZAQSTAN NETWORK
+# =========================================================================
+def build_xmltv_programmes(epg_id, target, channels, raw_progs):
+    programmes = []
+    raw_progs.sort(key=lambda x: x["start_dt"])
+    offset = target.get("utc_offset", "+0500")
+
+    for i in range(len(raw_progs)):
+        curr = raw_progs[i]
+        start_dt = curr["start_dt"]
+
+        if i + 1 < len(raw_progs):
+            stop_dt = raw_progs[i + 1]["start_dt"]
+            if stop_dt <= start_dt:
+                stop_dt += timedelta(days=1)
+        else:
+            stop_dt = start_dt + timedelta(hours=1)
+
+        programmes.append({
+            "channel": epg_id,
+            "start": format_xmltv_date(start_dt, offset),
+            "stop": format_xmltv_date(stop_dt, offset),
+            "title": curr["title"],
+            "desc": curr["desc"],
+            "lang": "kk",
+        })
+    return channels, programmes
 
 # =========================================================================
 # 0. TP CHANNEL (THAILAND) - API JSON PARSER
@@ -263,12 +288,10 @@ def fetch_epg_mncvision(target):
             rows = soup.find_all("tr")
             
             for row in rows:
-                # Cari elemen sel yang berisi nama channel / logo channel
                 ch_cell = row.find(["td", "th"], class_=re.compile(r"channel|ch", re.I)) or row.find("a", href=MNC_LINK_PATTERN)
                 if not ch_cell:
                     continue
                 
-                # Ekstrak nama asli stasiun TV dari atribut alt/title gambar logo jika ada, atau dari teks sel
                 img_tag = ch_cell.find("img")
                 if img_tag and img_tag.get("alt"):
                     raw_ch_name = img_tag.get("alt")
@@ -278,13 +301,11 @@ def fetch_epg_mncvision(target):
                     raw_ch_name = ch_cell.get_text(strip=True)
 
                 ch_name = clean_text_str(raw_ch_name)
-                # Bersihkan prefix "Ch. XX" atau "Ch XX" jika ada di awal nama
                 ch_name = re.sub(r"^Ch\.?\s*\d+\s*[-–]?\s*", "", ch_name, flags=re.I).strip()
                 
                 if not ch_name or len(ch_name) < 2:
                     continue
                 
-                # Buat ID unik berdasarkan nama asli saluran
                 clean_ch_id = re.sub(r"[^a-zA-Z0-9]", "", ch_name) + ".mnc"
 
                 prog_cells = row.find_all(["td", "div"], class_=re.compile(r"prog|schedule|event", re.I))
@@ -300,7 +321,6 @@ def fetch_epg_mncvision(target):
                         if title and len(title) > 2:
                             extracted_items.append((t_str, clean_text_str(title)))
 
-                # Hanya tambahkan channel ke daftar jika memiliki jadwal program
                 if extracted_items:
                     if not any(c["id"] == clean_ch_id for c in channels):
                         channels.append({
@@ -421,7 +441,6 @@ def fetch_epg_qazaqstan(target):
 
             soup = BeautifulSoup(res.text, "html.parser")
 
-            # 1. Metode Utama: JSON Livewire State (Sangat Presisi & Cepat)
             wire_el = soup.find(lambda tag: tag.has_attr("wire:snapshot") or tag.has_attr("wire:initial-data"))
             if wire_el:
                 try:
@@ -457,12 +476,9 @@ def fetch_epg_qazaqstan(target):
                 except Exception:
                     pass
 
-            # 2. Metode Fallback: Parsing HTML Berbasis Jam (Mendukung Qazsport & Balapan)
             if not raw_progs:
-                # Cari baris program yang memuat penanda jam HH:MM
                 items = soup.find_all(lambda tag: tag.name in ["div", "li", "tr"] and TIME_PATTERN_HM.search(tag.get_text()))
                 
-                # Saring hanya container terkecil per jam (agar tidak menggabung masal)
                 specific_items = []
                 for item in items:
                     child_has_time = any(TIME_PATTERN_HM.search(c.get_text()) for c in item.find_all(recursive=False))
@@ -477,20 +493,15 @@ def fetch_epg_qazaqstan(target):
                         continue
                     
                     t_str = match.group(1).replace(".", ":").zfill(5)
-                    
-                    # Teks setelah jam
                     raw_title = txt[match.end():].strip(" -–:\t\n\r")
                     
-                    # Potong jika tanpa sengaja terbawa jam berikutnya
                     next_time = TIME_PATTERN_HM.search(raw_title)
                     if next_time:
                         raw_title = raw_title[:next_time.start()].strip()
 
-                    # Pembersihan kata sampah khas CMS Qazaqstan
                     for w in IGNORE_WORDS_KZ:
                         raw_title = raw_title.replace(w, "").strip()
                     
-                    # Bersihkan angka standalone sisa regex jam
                     raw_title = re.sub(r"^\d{1,2}[:.]\d{2}\s*", "", raw_title)
                     title = clean_text_str(raw_title)
 
