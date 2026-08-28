@@ -28,7 +28,18 @@ IGNORE_WORDS_KZ = {
 
 EPG_TARGET_SOURCES = [
   {"id": "TPChannel.th", "name": "TP Channel", "url": "https://www.tpchannel.org/tv/schedule", "icon": "", "utc_offset": "+0700"},
-  {"id": "RedBullTV.global", "name": "Red Bull TV", "url": "https://www.redbull.tv/en/epg", "icon": "", "utc_offset": "+0000"},
+  
+  # RED BULL TV CHANNELS
+  {"id": "RedBullTV.global", "name": "Red Bull TV: World of Red Bull", "rrn": "rrn:content:video-channels:c81f8686-ab67-4965-ba04-5f6658bb96cc", "utc_offset": "+0000"},
+  {"id": "RedBullPadel.global", "name": "Red Bull TV: Padel", "rrn": "rrn:content:video-channels:e0e6dee0-8c39-4de1-9488-72828468efe0", "utc_offset": "+0000"},
+  {"id": "RedBullBike.global", "name": "Red Bull TV: Bike", "rrn": "rrn:content:video-channels:ee30c528-32b1-4604-8976-e3bcee4ae7f0", "utc_offset": "+0000"},
+  {"id": "RedBullAdventure.global", "name": "Red Bull TV: Adventure", "rrn": "rrn:content:video-channels:870bcfa8-62b1-4e84-9c85-39f083df368a", "utc_offset": "+0000"},
+  {"id": "RedBullMotorsports.global", "name": "Red Bull TV: Motorsports", "rrn": "rrn:content:video-channels:fd4ed3c9-1800-477b-9909-53255da06632", "utc_offset": "+0000"},
+  {"id": "RedBullSurfing.global", "name": "Red Bull TV: Surfing", "rrn": "rrn:content:video-channels:2f6afaec-7ade-4fb8-961a-a51aa8279a99", "utc_offset": "+0000"},
+  {"id": "RedBullSkateboarding.global", "name": "Red Bull TV: Skateboarding", "rrn": "rrn:content:video-channels:5021f46c-6f34-4f51-ba1f-967f2885ac97", "utc_offset": "+0000"},
+  {"id": "RedBullWinter.global", "name": "Red Bull TV: Winter", "rrn": "rrn:content:video-channels:f4aa4fe4-5ce6-4b1c-a60b-abc6f21f16d0", "utc_offset": "+0000"},
+  {"id": "RedBullActionReel.global", "name": "Red Bull TV: Action Reel", "rrn": "rrn:content:video-channels:69a66f02-21fd-42a1-be5b-6965541cfe6a", "utc_offset": "+0000"},
+
   {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "icon": "", "utc_offset": "+0800"},
   {"id": "Qazaqstan.kz", "name": "Qazaqstan TV", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
   {"id": "QazaqstanInt.kz", "name": "Qazaqstan International", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
@@ -101,7 +112,7 @@ def fix_and_sort_epg_programmes(programmes):
     return cleaned_programmes
 
 # =========================================================================
-# 1. TP CHANNEL THAILAND (FIXED MASEHI DATE FILTER)
+# 1. TP CHANNEL THAILAND
 # =========================================================================
 def fetch_epg_tpchannel(target):
     epg_id = target["id"]
@@ -110,7 +121,6 @@ def fetch_epg_tpchannel(target):
     offset = target.get("utc_offset", "+0700")
     today_local = get_now_in_channel_tz(offset)
     
-    # Memakai tahun Masehi (YYYY-MM-DD) agar API mengembalikan data resmi
     date_param = today_local.strftime("%Y-%m-%d")
     today_str = today_local.strftime("%Y-%m-%d")
 
@@ -132,8 +142,6 @@ def fetch_epg_tpchannel(target):
             extracted = []
             for item in items:
                 t_str = item.get("time") or item.get("start_time") or item.get("schedule_time")
-                
-                # Mengambil gabungan title Th + En
                 title_th = item.get("title") or item.get("program_name") or item.get("name") or ""
                 subtitle = item.get("subtitle") or item.get("sub_title") or item.get("title_en") or ""
                 
@@ -170,19 +178,18 @@ def fetch_epg_tpchannel(target):
     return channels, programmes
 
 # =========================================================================
-# 2. RED BULL TV (NEXT.JS EMBEDDED JSON PARSER)
+# 2. RED BULL TV (MULTI-CHANNEL GRAPHQL PARSER)
 # =========================================================================
 def fetch_epg_redbull(target):
     epg_id = target["id"]
+    rrn_id = target["rrn"]
     programmes = []
     channels = [{"id": epg_id, "name": target["name"]}]
 
     graphql_url = "https://api.redbull.tv/v3/graphql"
-    
-    # Query GraphQL resmi Red Bull TV untuk Linear Channel EPG
     query = """
-    query GetLinearEpg {
-      linearChannel(id: "rrn:content:video-channels:c81f8686-ab67-4965-ba04-5f6658bb96cc") {
+    query GetLinearEpg($channelId: ID!) {
+      linearChannel(id: $channelId) {
         epg {
           items {
             title
@@ -204,17 +211,14 @@ def fetch_epg_redbull(target):
     }
 
     try:
-        res = HTTP_SESSION.post(graphql_url, json={"query": query}, headers=rb_headers, timeout=12)
+        res = HTTP_SESSION.post(graphql_url, json={"query": query, "variables": {"channelId": rrn_id}}, headers=rb_headers, timeout=12)
         
-        # Fallback ke REST API v5 jika GraphQL merespons non-200
         if res.status_code != 200:
-            rest_url = "https://tv-api.redbull.com/products/dynamic/v5.2/rbtv/en/id/rrn:content:video-channels:c81f8686-ab67-4965-ba04-5f6658bb96cc"
+            rest_url = f"https://tv-api.redbull.com/products/dynamic/v5.2/rbtv/en/id/{rrn_id}"
             res = HTTP_SESSION.get(rest_url, headers=rb_headers, timeout=12)
 
         if res.status_code == 200:
             data = res.json()
-            
-            # Extract dari GraphQL atau REST response
             items = []
             if "data" in data and data["data"].get("linearChannel"):
                 items = data["data"]["linearChannel"]["epg"].get("items", [])
@@ -222,7 +226,6 @@ def fetch_epg_redbull(target):
                 items = data.get("epg", []) or data.get("schedules", []) or data.get("items", [])
 
             for item in items:
-                # Ambil hierarki judul secara presisi: showTitle/title + subtitle
                 main_title = item.get("showTitle") or item.get("title") or item.get("label") or ""
                 sub_title = item.get("subtitle") or item.get("subTitle") or ""
                 
@@ -231,7 +234,7 @@ def fetch_epg_redbull(target):
                 else:
                     full_title = main_title or sub_title or "Red Bull TV Special"
 
-                desc = item.get("description") or f"Program {full_title} on Red Bull TV"
+                desc = item.get("description") or f"Program {full_title} on {target['name']}"
                 
                 start_iso = item.get("startTime") or item.get("start_time")
                 end_iso = item.get("endTime") or item.get("end_time")
@@ -252,7 +255,7 @@ def fetch_epg_redbull(target):
                     except Exception:
                         continue
     except Exception as e:
-        print(f"[!] RedBullTV GraphQL/API Error: {e}")
+        print(f"[!] RedBullTV Error [{target['name']}]: {e}")
 
     return channels, programmes
 
@@ -379,16 +382,15 @@ def fetch_epg_qazaqstan(target):
 
 # ROUTER
 def process_single_target(target):
-    t_url = target["url"].lower()
     t_id = target["id"]
 
-    if "tpchannel.org" in t_url or t_id == "TPChannel.th":
-        return fetch_epg_tpchannel(target)
-    elif "redbull" in t_url or t_id == "RedBullTV.global":
+    if "rrn" in target:
         return fetch_epg_redbull(target)
-    elif "cltv36" in t_url or t_id == "CLTV36.ph":
+    elif t_id == "TPChannel.th":
+        return fetch_epg_tpchannel(target)
+    elif t_id == "CLTV36.ph":
         return fetch_epg_cltv36(target)
-    elif t_id.endswith(".kz") or "qazaqstan" in t_url:
+    elif t_id.endswith(".kz"):
         return fetch_epg_qazaqstan(target)
     else:
         return fetch_epg_tpchannel(target)
@@ -401,7 +403,7 @@ def generate_xmltv():
     all_channels = []
     all_programmes = []
 
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=8) as executor:
         results = executor.map(process_single_target, EPG_TARGET_SOURCES)
 
     for ch_list, progs in results:
