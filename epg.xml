@@ -624,66 +624,6 @@
   <display-name>Semei TV</display-name>
   <icon src="https://www.google.com/s2/favicons?domain=semeitv.kz&amp;sz=128" />
  </channel>
- <programme start="20250718172728 +0700" stop="20250718182728 +0700" channel="PadangTV.id">
-  <title lang="id">Struktur Organisasi</title>
-  <desc lang="id">Program Struktur Organisasi di Padang TV</desc>
- </programme>
- <programme start="20200806094717 +0700" stop="20200806104717 +0700" channel="PadangTV.id">
-  <title lang="id">68 Surat Peringatan Dan Pemanggilan Dilayangkan, Jika Surat Tidak Diindahkan, PKL Akan Kena Tipiring</title>
-  <desc lang="id">Program 68 Surat Peringatan Dan Pemanggilan Dilayangkan, Jika Surat Tidak Diindahkan, PKL Akan Kena Tipiring di Padang TV</desc>
- </programme>
- <programme start="20200803091709 +0700" stop="20200803101709 +0700" channel="PadangTV.id">
-  <title lang="id">Pelaku Curanmor di Tangkap Saat Menemani Istrinya Melahirkan</title>
-  <desc lang="id">Program Pelaku Curanmor di Tangkap Saat Menemani Istrinya Melahirkan di Padang TV</desc>
- </programme>
- <programme start="20200803091616 +0700" stop="20200803101616 +0700" channel="PadangTV.id">
-  <title lang="id">Jaringan Sabu Antar Provinsi, BNN Sumbar Tangkap 2 Kurir, 1 Bandar Sabu,</title>
-  <desc lang="id">Program Jaringan Sabu Antar Provinsi, BNN Sumbar Tangkap 2 Kurir, 1 Bandar Sabu, di Padang TV</desc>
- </programme>
- <programme start="20200803091511 +0700" stop="20200803101511 +0700" channel="PadangTV.id">
-  <title lang="id">Interpelasi BLT Covid-19, Delapan Belas Dewan Telah Tandatangani Usulan Interpelasi</title>
-  <desc lang="id">Program Interpelasi BLT Covid-19, Delapan Belas Dewan Telah Tandatangani Usulan Interpelasi di Padang TV</desc>
- </programme>
- <programme start="20200730112227 +0700" stop="20200730122227 +0700" channel="PadangTV.id">
-  <title lang="id">Jual Sapi Orang Tua, Seorang Pemuda di Tangkap Polisi</title>
-  <desc lang="id">Program Jual Sapi Orang Tua, Seorang Pemuda di Tangkap Polisi di Padang TV</desc>
- </programme>
- <programme start="20200730112103 +0700" stop="20200730122103 +0700" channel="PadangTV.id">
-  <title lang="id">Usulan Interpelasi DPRD, Gerindra Ajukan Usulan Interpelasi Tentang Bantuan Covid Ke Walikota</title>
-  <desc lang="id">Program Usulan Interpelasi DPRD, Gerindra Ajukan Usulan Interpelasi Tentang Bantuan Covid Ke Walikota di Padang TV</desc>
- </programme>
- <programme start="20200730111923 +0700" stop="20200730121923 +0700" channel="PadangTV.id">
-  <title lang="id">DPRD Akan Carikan Solusi Agar Sekolah Swasta Bertahan, Empat Ribu Anak Diimbau Masuk Sekolah Swasta</title>
-  <desc lang="id">Program DPRD Akan Carikan Solusi Agar Sekolah Swasta Bertahan, Empat Ribu Anak Diimbau Masuk Sekolah Swasta di Padang TV</desc>
- </programme>
- <programme start="20200730111758 +0700" stop="20200730121758 +0700" channel="PadangTV.id">
-  <title lang="id">Sapi Makan Sampah Picu Kanker, Sapi Berkeliaran Di Tpa Aia Dingin Sebaiknya Dikandangkan</title>
-  <desc lang="id">Program Sapi Makan Sampah Picu Kanker, Sapi Berkeliaran Di Tpa Aia Dingin Sebaiknya Dikandangkan di Padang TV</desc>
- </programme>
- <programme start="20200730111615 +0700" stop="20200730121615 +0700" channel="PadangTV.id">
-  <title lang="id">Ratusan Massa Demo Kantor DPRD Pasaman Barat, Massa Tuntut Pembangunan Jalan Dan Mobil Ambulans</title>
-  <desc lang="id">Program Ratusan Massa Demo Kantor DPRD Pasaman Barat, Massa Tuntut Pembangunan Jalan Dan Mobil Ambulans di Padang TV</desc>
- </programme>
- <programme start="20200730111443 +0700" stop="20200730121443 +0700" channel="PadangTV.id">
-  <title lang="id">Puskesmas Kapau Tes Swab 49 Warga, 5 Warga Terkonfirmasi Positif</title>
-  <desc lang="id">Program Puskesmas Kapau Tes Swab 49 Warga, 5 Warga Terkonfirmasi Positif di Padang TV</desc>
- </programme>
- <programme start="20200730111349 +0700" stop="20200730121349 +0700" channel="PadangTV.id">
-  <title lang="id">Polemik Warga Inderapura, Surat Tak Digubris, Warga Bakal Lakukan  Demo 5 Agustus Mendatang</title>
-  <desc lang="id">Program Polemik Warga Inderapura, Surat Tak Digubris, Warga Bakal Lakukan  Demo 5 Agustus Mendatang di Padang TV</desc>
- </programme>
- <programme start="20200730111240 +0700" stop="20200730121240 +0700" channel="PadangTV.id">
-  <title lang="id">Perumda Air Minum Padang Berkurban, Karyawan Antusias Berkurban Kumpulkan 37 Ekor Sapi Meski Pandemi</title>
-  <desc lang="id">Program Perumda Air Minum Padang Berkurban, Karyawan Antusias Berkurban Kumpulkan 37 Ekor Sapi Meski Pandemi di Padang TV</desc>
- </programme>
- <programme start="20200730111110 +0700" stop="20200730121110 +0700" channel="PadangTV.id">
-  <title lang="id">Operasi Patuh 2020, Selain Surat Tilang, Polisi Berikan Tausiyah Kepada Pelanggar</title>
-  <desc lang="id">Program Operasi Patuh 2020, Selain Surat Tilang, Polisi Berikan Tausiyah Kepada Pelanggar di Padang TV</desc>
- </programme>
- <programme start="20200730092845 +0700" stop="20200730102845 +0700" channel="PadangTV.id">
-  <title lang="id">Launching MTQ Nasional Ke 28 Dilakukan Secara Virtual</title>
-  <desc lang="id">Program Launching MTQ Nasional Ke 28 Dilakukan Secara Virtual di Padang TV</desc>
- </programme>
  <programme start="20260828120000 +0700" stop="20260828130000 +0700" channel="Channel1VisionPrimeHD.mnc">
   <title lang="id">Manda Curhat</title>
   <desc lang="id">Broadcast of Manda Curhat on Channel1Vision Prime HD</desc>
@@ -1080,10 +1020,6 @@
   <title lang="id">Trans7</title>
   <desc lang="id">Broadcast of Trans7 on Channel19Thrill</desc>
  </programme>
- <programme start="20260828110500 +0700" stop="20260828123000 +0700" channel="Channel20CelestialMovies.mnc">
-  <title lang="id">Loving You</title>
-  <desc lang="id">Broadcast of Loving You on Channel20Celestial Movies</desc>
- </programme>
  <programme start="20260828123000 +0700" stop="20260828140500 +0700" channel="Channel20CelestialMovies.mnc">
   <title lang="id">Chinese Odyssey: Pandora's Box</title>
   <desc lang="id">Broadcast of Chinese Odyssey: Pandora's Box on Channel20Celestial Movies</desc>
@@ -1112,9 +1048,13 @@
   <title lang="id">Casino Tycoon</title>
   <desc lang="id">Broadcast of Casino Tycoon on Channel20Celestial Movies</desc>
  </programme>
- <programme start="20260828234500 +0700" stop="20260829004500 +0700" channel="Channel20CelestialMovies.mnc">
+ <programme start="20260828234500 +0700" stop="20260829011000 +0700" channel="Channel20CelestialMovies.mnc">
   <title lang="id">From Beijing With Love</title>
   <desc lang="id">Broadcast of From Beijing With Love on Channel20Celestial Movies</desc>
+ </programme>
+ <programme start="20260828011000 +0700" stop="20260828021000 +0700" channel="Channel20CelestialMovies.mnc">
+  <title lang="id">The Mighty Peking Man</title>
+  <desc lang="id">Broadcast of The Mighty Peking Man on Channel20Celestial Movies</desc>
  </programme>
  <programme start="20260828121000 +0700" stop="20260828142000 +0700" channel="Channel22CCM.mnc">
   <title lang="id">The Love Eterne</title>
@@ -1260,10 +1200,6 @@
   <title lang="id">Kung Fu Panda 3</title>
   <desc lang="id">Broadcast of Kung Fu Panda 3 on Channel26Studio Universal</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828112000 +0700" channel="Channel37NickelodeonJr.mnc">
-  <title lang="id">Blaze &amp; The Monster Machines</title>
-  <desc lang="id">Broadcast of Blaze &amp; The Monster Machines on Channel37Nickelodeon Jr</desc>
- </programme>
  <programme start="20260828112000 +0700" stop="20260828114500 +0700" channel="Channel37NickelodeonJr.mnc">
   <title lang="id">Blaze &amp; The Monster Machines</title>
   <desc lang="id">Broadcast of Blaze &amp; The Monster Machines on Channel37Nickelodeon Jr</desc>
@@ -1292,13 +1228,13 @@
   <title lang="id">Santiago Of The Seas</title>
   <desc lang="id">Broadcast of Santiago Of The Seas on Channel37Nickelodeon Jr</desc>
  </programme>
- <programme start="20260828140000 +0700" stop="20260828150000 +0700" channel="Channel37NickelodeonJr.mnc">
+ <programme start="20260828140000 +0700" stop="20260828142500 +0700" channel="Channel37NickelodeonJr.mnc">
   <title lang="id">Tim Rex In Space</title>
   <desc lang="id">Broadcast of Tim Rex In Space on Channel37Nickelodeon Jr</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828111500 +0700" channel="Channel39Zoomoo.mnc">
-  <title lang="id">Leo: Wildlife Ranger S2, Ep 18</title>
-  <desc lang="id">Broadcast of Leo: Wildlife Ranger S2, Ep 18 on Channel39Zoomoo</desc>
+ <programme start="20260828142500 +0700" stop="20260828152500 +0700" channel="Channel37NickelodeonJr.mnc">
+  <title lang="id">Tim Rex In Space</title>
+  <desc lang="id">Broadcast of Tim Rex In Space on Channel37Nickelodeon Jr</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828113000 +0700" channel="Channel39Zoomoo.mnc">
   <title lang="id">Leo: Wildlife Ranger S2, Ep 19</title>
@@ -1328,13 +1264,13 @@
   <title lang="id">Leo: Wildlife Ranger S2, Ep 25</title>
   <desc lang="id">Broadcast of Leo: Wildlife Ranger S2, Ep 25 on Channel39Zoomoo</desc>
  </programme>
- <programme start="20260828130000 +0700" stop="20260828140000 +0700" channel="Channel39Zoomoo.mnc">
+ <programme start="20260828130000 +0700" stop="20260828131500 +0700" channel="Channel39Zoomoo.mnc">
   <title lang="id">Leo: Wildlife Ranger S2, Ep 26</title>
   <desc lang="id">Broadcast of Leo: Wildlife Ranger S2, Ep 26 on Channel39Zoomoo</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828112600 +0700" channel="Channel40Moonbug.mnc">
-  <title lang="id">Little Angel</title>
-  <desc lang="id">Broadcast of Little Angel on Channel40Moonbug</desc>
+ <programme start="20260828131500 +0700" stop="20260828141500 +0700" channel="Channel39Zoomoo.mnc">
+  <title lang="id">Leo: Wildlife Ranger S2, Ep 27</title>
+  <desc lang="id">Broadcast of Leo: Wildlife Ranger S2, Ep 27 on Channel39Zoomoo</desc>
  </programme>
  <programme start="20260828112600 +0700" stop="20260828115800 +0700" channel="Channel40Moonbug.mnc">
   <title lang="id">Little Angel</title>
@@ -1364,17 +1300,13 @@
   <title lang="id">Morphle</title>
   <desc lang="id">Broadcast of Morphle on Channel40Moonbug</desc>
  </programme>
- <programme start="20260828150200 +0700" stop="20260828160200 +0700" channel="Channel40Moonbug.mnc">
+ <programme start="20260828150200 +0700" stop="20260828153100 +0700" channel="Channel40Moonbug.mnc">
   <title lang="id">CoComelon</title>
   <desc lang="id">Broadcast of CoComelon on Channel40Moonbug</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828111000 +0700" channel="Channel41CBeebies.mnc">
-  <title lang="id">Teletubbies S1, Ep 120</title>
-  <desc lang="id">Broadcast of Teletubbies S1, Ep 120 on Channel41CBeebies</desc>
- </programme>
- <programme start="20260828111000 +0700" stop="20260828111500 +0700" channel="Channel41CBeebies.mnc">
-  <title lang="id">Yakka Dee S1, Ep 8</title>
-  <desc lang="id">Broadcast of Yakka Dee S1, Ep 8 on Channel41CBeebies</desc>
+ <programme start="20260828153100 +0700" stop="20260828163100 +0700" channel="Channel40Moonbug.mnc">
+  <title lang="id">Cody Time</title>
+  <desc lang="id">Broadcast of Cody Time on Channel40Moonbug</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828112500 +0700" channel="Channel41CBeebies.mnc">
   <title lang="id">Messy Goes To Okido S1, Ep 52</title>
@@ -1400,13 +1332,17 @@
   <title lang="id">Hey Duggee S5, Ep 4</title>
   <desc lang="id">Broadcast of Hey Duggee S5, Ep 4 on Channel41CBeebies</desc>
  </programme>
- <programme start="20260828121500 +0700" stop="20260828131500 +0700" channel="Channel41CBeebies.mnc">
+ <programme start="20260828121500 +0700" stop="20260828122200 +0700" channel="Channel41CBeebies.mnc">
   <title lang="id">Hey Duggee's Squirrel..., Ep 21</title>
   <desc lang="id">Broadcast of Hey Duggee's Squirrel..., Ep 21 on Channel41CBeebies</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828112000 +0700" channel="Channel46KidsTV.mnc">
-  <title lang="id">Morphle</title>
-  <desc lang="id">Broadcast of Morphle on Channel46Kids TV</desc>
+ <programme start="20260828122200 +0700" stop="20260828123000 +0700" channel="Channel41CBeebies.mnc">
+  <title lang="id">Hey Duggee's Squirrel..., Ep 20</title>
+  <desc lang="id">Broadcast of Hey Duggee's Squirrel..., Ep 20 on Channel41CBeebies</desc>
+ </programme>
+ <programme start="20260828123000 +0700" stop="20260828133000 +0700" channel="Channel41CBeebies.mnc">
+  <title lang="id">Go Jetters S2, Ep 17</title>
+  <desc lang="id">Broadcast of Go Jetters S2, Ep 17 on Channel41CBeebies</desc>
  </programme>
  <programme start="20260828112000 +0700" stop="20260828113000 +0700" channel="Channel46KidsTV.mnc">
   <title lang="id">O Iya Ya</title>
@@ -1436,9 +1372,13 @@
   <title lang="id">SpongeBob SquarePants</title>
   <desc lang="id">Broadcast of SpongeBob SquarePants on Channel46Kids TV</desc>
  </programme>
- <programme start="20260828150000 +0700" stop="20260828160000 +0700" channel="Channel46KidsTV.mnc">
+ <programme start="20260828150000 +0700" stop="20260828153000 +0700" channel="Channel46KidsTV.mnc">
   <title lang="id">Thomas &amp; Friends S21</title>
   <desc lang="id">Broadcast of Thomas &amp; Friends S21 on Channel46Kids TV</desc>
+ </programme>
+ <programme start="20260828153000 +0700" stop="20260828163000 +0700" channel="Channel46KidsTV.mnc">
+  <title lang="id">Titus The Detective</title>
+  <desc lang="id">Broadcast of Titus The Detective on Channel46Kids TV</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828114000 +0700" channel="Channel47Dreamworks.mnc">
   <title lang="id">Gabby's Dollhouse</title>
@@ -1476,10 +1416,6 @@
   <title lang="id">Spirit Riding Free: Academy</title>
   <desc lang="id">Broadcast of Spirit Riding Free: Academy on Channel47Dreamworks</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828112000 +0700" channel="Channel49Nickelodeon.mnc">
-  <title lang="id">The Marsupilamis</title>
-  <desc lang="id">Broadcast of The Marsupilamis on Channel49Nickelodeon</desc>
- </programme>
  <programme start="20260828112000 +0700" stop="20260828114500 +0700" channel="Channel49Nickelodeon.mnc">
   <title lang="id">The Patrick Star Show</title>
   <desc lang="id">Broadcast of The Patrick Star Show on Channel49Nickelodeon</desc>
@@ -1508,13 +1444,13 @@
   <title lang="id">Wylde Pak</title>
   <desc lang="id">Broadcast of Wylde Pak on Channel49Nickelodeon</desc>
  </programme>
- <programme start="20260828135000 +0700" stop="20260828145000 +0700" channel="Channel49Nickelodeon.mnc">
+ <programme start="20260828135000 +0700" stop="20260828140500 +0700" channel="Channel49Nickelodeon.mnc">
   <title lang="id">SpongeBob SquarePants</title>
   <desc lang="id">Broadcast of SpongeBob SquarePants on Channel49Nickelodeon</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel78Indosiar.mnc">
-  <title lang="id">Patroli Siang</title>
-  <desc lang="id">Broadcast of Patroli Siang on Channel78Indosiar</desc>
+ <programme start="20260828140500 +0700" stop="20260828150500 +0700" channel="Channel49Nickelodeon.mnc">
+  <title lang="id">The Patrick Star Show</title>
+  <desc lang="id">Broadcast of The Patrick Star Show on Channel49Nickelodeon</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel78Indosiar.mnc">
   <title lang="id">Fokus Siang</title>
@@ -1544,13 +1480,13 @@
   <title lang="id">Blind War</title>
   <desc lang="id">Broadcast of Blind War on Channel78Indosiar</desc>
  </programme>
- <programme start="20260828010000 +0700" stop="20260828020000 +0700" channel="Channel78Indosiar.mnc">
+ <programme start="20260828010000 +0700" stop="20260828030000 +0700" channel="Channel78Indosiar.mnc">
   <title lang="id">Kungfu Yoga</title>
   <desc lang="id">Broadcast of Kungfu Yoga on Channel78Indosiar</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel80RCTI.mnc">
-  <title lang="id">Go Spot Eksklusif</title>
-  <desc lang="id">Broadcast of Go Spot Eksklusif on Channel80RCTI</desc>
+ <programme start="20260828030000 +0700" stop="20260828040000 +0700" channel="Channel78Indosiar.mnc">
+  <title lang="id">Rich And Famous</title>
+  <desc lang="id">Broadcast of Rich And Famous on Channel78Indosiar</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828130000 +0700" channel="Channel80RCTI.mnc">
   <title lang="id">Terikat Janji Selamanya</title>
@@ -1580,13 +1516,13 @@
   <title lang="id">Cinta Dari Surga</title>
   <desc lang="id">Broadcast of Cinta Dari Surga on Channel80RCTI</desc>
  </programme>
- <programme start="20260828001500 +0700" stop="20260828011500 +0700" channel="Channel80RCTI.mnc">
+ <programme start="20260828001500 +0700" stop="20260828013000 +0700" channel="Channel80RCTI.mnc">
   <title lang="id">Pacar Yang Tertukar</title>
   <desc lang="id">Broadcast of Pacar Yang Tertukar on Channel80RCTI</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828123000 +0700" channel="Channel81GTV.mnc">
-  <title lang="id">SpongeBob SquarePants</title>
-  <desc lang="id">Broadcast of SpongeBob SquarePants on Channel81GTV</desc>
+ <programme start="20260828013000 +0700" stop="20260828023000 +0700" channel="Channel80RCTI.mnc">
+  <title lang="id">Janji Jono</title>
+  <desc lang="id">Broadcast of Janji Jono on Channel80RCTI</desc>
  </programme>
  <programme start="20260828123000 +0700" stop="20260828143000 +0700" channel="Channel81GTV.mnc">
   <title lang="id">SpongeBob SquarePants</title>
@@ -1616,13 +1552,13 @@
   <title lang="id">Predator PBC Indonesia Open</title>
   <desc lang="id">Broadcast of Predator PBC Indonesia Open on Channel81GTV</desc>
  </programme>
- <programme start="20260828000000 +0700" stop="20260828010000 +0700" channel="Channel81GTV.mnc">
+ <programme start="20260828000000 +0700" stop="20260828003000 +0700" channel="Channel81GTV.mnc">
   <title lang="id">Kisah Viral</title>
   <desc lang="id">Broadcast of Kisah Viral on Channel81GTV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828121500 +0700" channel="Channel82MNCTV.mnc">
-  <title lang="id">Kiko</title>
-  <desc lang="id">Broadcast of Kiko on Channel82MNCTV</desc>
+ <programme start="20260828003000 +0700" stop="20260828013000 +0700" channel="Channel81GTV.mnc">
+  <title lang="id">1001 Kisah</title>
+  <desc lang="id">Broadcast of 1001 Kisah on Channel81GTV</desc>
  </programme>
  <programme start="20260828121500 +0700" stop="20260828124500 +0700" channel="Channel82MNCTV.mnc">
   <title lang="id">Lintas iNews Siang</title>
@@ -1652,13 +1588,13 @@
   <title lang="id">Upin &amp; Ipin</title>
   <desc lang="id">Broadcast of Upin &amp; Ipin on Channel82MNCTV</desc>
  </programme>
- <programme start="20260828193000 +0700" stop="20260828203000 +0700" channel="Channel82MNCTV.mnc">
+ <programme start="20260828193000 +0700" stop="20260828230000 +0700" channel="Channel82MNCTV.mnc">
   <title lang="id">Liga DMD Panggung Rezeki</title>
   <desc lang="id">Broadcast of Liga DMD Panggung Rezeki on Channel82MNCTV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828130000 +0700" channel="Channel83iNews.mnc">
-  <title lang="id">iNews Siang (L)</title>
-  <desc lang="id">Broadcast of iNews Siang (L) on Channel83iNews</desc>
+ <programme start="20260828230000 +0700" stop="20260829000000 +0700" channel="Channel82MNCTV.mnc">
+  <title lang="id">Temen Ngekost</title>
+  <desc lang="id">Broadcast of Temen Ngekost on Channel82MNCTV</desc>
  </programme>
  <programme start="20260828130000 +0700" stop="20260828133000 +0700" channel="Channel83iNews.mnc">
   <title lang="id">iNews On Point</title>
@@ -1688,9 +1624,13 @@
   <title lang="id">iNews Room (L)</title>
   <desc lang="id">Broadcast of iNews Room (L) on Channel83iNews</desc>
  </programme>
- <programme start="20260828203000 +0700" stop="20260828213000 +0700" channel="Channel83iNews.mnc">
+ <programme start="20260828203000 +0700" stop="20260828220000 +0700" channel="Channel83iNews.mnc">
   <title lang="id">iNews Prime (L)</title>
   <desc lang="id">Broadcast of iNews Prime (L) on Channel83iNews</desc>
+ </programme>
+ <programme start="20260828220000 +0700" stop="20260828230000 +0700" channel="Channel83iNews.mnc">
+  <title lang="id">Breaking Goals (L)</title>
+  <desc lang="id">Broadcast of Breaking Goals (L) on Channel83iNews</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828123000 +0700" channel="Channel84SindoNewsTV.mnc">
   <title lang="id">Lintas iNews Siang</title>
@@ -1728,10 +1668,6 @@
   <title lang="id">To The Point</title>
   <desc lang="id">Broadcast of To The Point on Channel84Sindo News TV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel86Entertainment.mnc">
-  <title lang="id">Super Deal Indonesia</title>
-  <desc lang="id">Broadcast of Super Deal Indonesia on Channel86Entertainment</desc>
- </programme>
  <programme start="20260828120000 +0700" stop="20260828133000 +0700" channel="Channel86Entertainment.mnc">
   <title lang="id">Take Me Out Indonesia</title>
   <desc lang="id">Broadcast of Take Me Out Indonesia on Channel86Entertainment</desc>
@@ -1760,9 +1696,13 @@
   <title lang="id">Super Deal Indonesia</title>
   <desc lang="id">Broadcast of Super Deal Indonesia on Channel86Entertainment</desc>
  </programme>
- <programme start="20260828203000 +0700" stop="20260828213000 +0700" channel="Channel86Entertainment.mnc">
+ <programme start="20260828203000 +0700" stop="20260828220000 +0700" channel="Channel86Entertainment.mnc">
   <title lang="id">Hidden Talent</title>
   <desc lang="id">Broadcast of Hidden Talent on Channel86Entertainment</desc>
+ </programme>
+ <programme start="20260828220000 +0700" stop="20260828230000 +0700" channel="Channel86Entertainment.mnc">
+  <title lang="id">Road To Kilau Raya: Karawang</title>
+  <desc lang="id">Broadcast of Road To Kilau Raya: Karawang on Channel86Entertainment</desc>
  </programme>
  <programme start="20260828123000 +0700" stop="20260828140000 +0700" channel="Channel87TransTV.mnc">
   <title lang="id">Brownis (Obrowlan Manis)</title>
@@ -1872,10 +1812,6 @@
   <title lang="id">Vidio Original: Love Is A Story</title>
   <desc lang="id">Broadcast of Vidio Original: Love Is A Story on Channel89SCTV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel90HanacarakaTV.mnc">
-  <title lang="id">Dagelan Jowo New</title>
-  <desc lang="id">Broadcast of Dagelan Jowo New on Channel90Hanacaraka TV</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828123000 +0700" channel="Channel90HanacarakaTV.mnc">
   <title lang="id">Kompleks Pengabdi Istri</title>
   <desc lang="id">Broadcast of Kompleks Pengabdi Istri on Channel90Hanacaraka TV</desc>
@@ -1904,13 +1840,13 @@
   <title lang="id">Pawartos Jawi</title>
   <desc lang="id">Broadcast of Pawartos Jawi on Channel90Hanacaraka TV</desc>
  </programme>
- <programme start="20260828173000 +0700" stop="20260828183000 +0700" channel="Channel90HanacarakaTV.mnc">
+ <programme start="20260828173000 +0700" stop="20260828180000 +0700" channel="Channel90HanacarakaTV.mnc">
   <title lang="id">Jan Enak Tenan</title>
   <desc lang="id">Broadcast of Jan Enak Tenan on Channel90Hanacaraka TV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel91LIFE.mnc">
-  <title lang="id">GBI VIFA</title>
-  <desc lang="id">Broadcast of GBI VIFA on Channel91LIFE</desc>
+ <programme start="20260828180000 +0700" stop="20260828190000 +0700" channel="Channel90HanacarakaTV.mnc">
+  <title lang="id">Konco Ngaso</title>
+  <desc lang="id">Broadcast of Konco Ngaso on Channel90Hanacaraka TV</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828123000 +0700" channel="Channel91LIFE.mnc">
   <title lang="id">Rhema</title>
@@ -1940,9 +1876,13 @@
   <title lang="id">Semua Kitab Suci</title>
   <desc lang="id">Broadcast of Semua Kitab Suci on Channel91LIFE</desc>
  </programme>
- <programme start="20260828160000 +0700" stop="20260828170000 +0700" channel="Channel91LIFE.mnc">
+ <programme start="20260828160000 +0700" stop="20260828163000 +0700" channel="Channel91LIFE.mnc">
   <title lang="id">Superbook Kids Club</title>
   <desc lang="id">Broadcast of Superbook Kids Club on Channel91LIFE</desc>
+ </programme>
+ <programme start="20260828163000 +0700" stop="20260828173000 +0700" channel="Channel91LIFE.mnc">
+  <title lang="id">Rumah CGN Keluarga</title>
+  <desc lang="id">Broadcast of Rumah CGN Keluarga on Channel91LIFE</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828123000 +0700" channel="Channel92MuslimTV.mnc">
   <title lang="id">Siraman Qolbu, Ust. Dhanu</title>
@@ -2124,10 +2064,6 @@
   <title lang="id">Celebrity Top 10</title>
   <desc lang="id">Broadcast of Celebrity Top 10 on Channel96Celebrities TV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828123000 +0700" channel="Channel97tvOne.mnc">
-  <title lang="id">Kabar Siang</title>
-  <desc lang="id">Broadcast of Kabar Siang on Channel97tvOne</desc>
- </programme>
  <programme start="20260828123000 +0700" stop="20260828133000 +0700" channel="Channel97tvOne.mnc">
   <title lang="id">Breaking News</title>
   <desc lang="id">Broadcast of Breaking News on Channel97tvOne</desc>
@@ -2160,9 +2096,9 @@
   <title lang="id">One On One</title>
   <desc lang="id">Broadcast of One On One on Channel97tvOne</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel98Sportstars2.mnc">
-  <title lang="id">Adrenaline Rush</title>
-  <desc lang="id">Broadcast of Adrenaline Rush on Channel98Sportstars 2</desc>
+ <programme start="20260828220000 +0700" stop="20260828230000 +0700" channel="Channel97tvOne.mnc">
+  <title lang="id">Kabar Hari Ini</title>
+  <desc lang="id">Broadcast of Kabar Hari Ini on Channel97tvOne</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel98Sportstars2.mnc">
   <title lang="id">Top Goals</title>
@@ -2192,9 +2128,13 @@
   <title lang="id">ASEAN C'ship Hyundai Cup 2026</title>
   <desc lang="id">Broadcast of ASEAN C'ship Hyundai Cup 2026 on Channel98Sportstars 2</desc>
  </programme>
- <programme start="20260828000000 +0700" stop="20260828010000 +0700" channel="Channel98Sportstars2.mnc">
+ <programme start="20260828000000 +0700" stop="20260828020000 +0700" channel="Channel98Sportstars2.mnc">
   <title lang="id">ASEAN C'ship Hyundai Cup 2026</title>
   <desc lang="id">Broadcast of ASEAN C'ship Hyundai Cup 2026 on Channel98Sportstars 2</desc>
+ </programme>
+ <programme start="20260828020000 +0700" stop="20260828030000 +0700" channel="Channel98Sportstars2.mnc">
+  <title lang="id">Satu Hati Untuk Garuda</title>
+  <desc lang="id">Broadcast of Satu Hati Untuk Garuda on Channel98Sportstars 2</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828140000 +0700" channel="Channel99Sportstars3.mnc">
   <title lang="id">Sportacular International Match</title>
@@ -2232,10 +2172,6 @@
   <title lang="id">Sportacular International Match</title>
   <desc lang="id">Broadcast of Sportacular International Match on Channel99Sportstars 3</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel100IDX.mnc">
-  <title lang="id">IDXTainment</title>
-  <desc lang="id">Broadcast of IDXTainment on Channel100IDX</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel100IDX.mnc">
   <title lang="id">IDX 1st Closing Market (L)</title>
   <desc lang="id">Broadcast of IDX 1st Closing Market (L) on Channel100IDX</desc>
@@ -2264,13 +2200,13 @@
   <title lang="id">News Screen</title>
   <desc lang="id">Broadcast of News Screen on Channel100IDX</desc>
  </programme>
- <programme start="20260828170000 +0700" stop="20260828180000 +0700" channel="Channel100IDX.mnc">
+ <programme start="20260828170000 +0700" stop="20260828173000 +0700" channel="Channel100IDX.mnc">
   <title lang="id">I Love Indonesia</title>
   <desc lang="id">Broadcast of I Love Indonesia on Channel100IDX</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828130000 +0700" channel="Channel101SoccerChannel.mnc">
-  <title lang="id">ACL Two 2025-2026: NSR Vs ARK</title>
-  <desc lang="id">Broadcast of ACL Two 2025-2026: NSR Vs ARK on Channel101Soccer Channel</desc>
+ <programme start="20260828173000 +0700" stop="20260828183000 +0700" channel="Channel100IDX.mnc">
+  <title lang="id">Kalaparan</title>
+  <desc lang="id">Broadcast of Kalaparan on Channel100IDX</desc>
  </programme>
  <programme start="20260828130000 +0700" stop="20260828150000 +0700" channel="Channel101SoccerChannel.mnc">
   <title lang="id">Hyundai C'ship 2026: LAO Vs THA</title>
@@ -2300,9 +2236,13 @@
   <title lang="id">Sportacular Match: WAL Vs GHA</title>
   <desc lang="id">Broadcast of Sportacular Match: WAL Vs GHA on Channel101Soccer Channel</desc>
  </programme>
- <programme start="20260828013000 +0700" stop="20260828023000 +0700" channel="Channel101SoccerChannel.mnc">
+ <programme start="20260828013000 +0700" stop="20260828020000 +0700" channel="Channel101SoccerChannel.mnc">
   <title lang="id">The Ultimate Goals</title>
   <desc lang="id">Broadcast of The Ultimate Goals on Channel101Soccer Channel</desc>
+ </programme>
+ <programme start="20260828020000 +0700" stop="20260828030000 +0700" channel="Channel101SoccerChannel.mnc">
+  <title lang="id">Best Of Persib: PSB Vs BKU</title>
+  <desc lang="id">Broadcast of Best Of Persib: PSB Vs BKU on Channel101Soccer Channel</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel102Sportstars.mnc">
   <title lang="id">Sports Today</title>
@@ -2340,10 +2280,6 @@
   <title lang="id">Satu Hati Untuk Garuda</title>
   <desc lang="id">Broadcast of Satu Hati Untuk Garuda on Channel102Sportstars</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel103BTV.mnc">
-  <title lang="id">Berita Satu Siang</title>
-  <desc lang="id">Broadcast of Berita Satu Siang on Channel103BTV</desc>
- </programme>
  <programme start="20260828120000 +0700" stop="20260828120500 +0700" channel="Channel103BTV.mnc">
   <title lang="id">Berita Satu Terkini</title>
   <desc lang="id">Broadcast of Berita Satu Terkini on Channel103BTV</desc>
@@ -2372,13 +2308,13 @@
   <title lang="id">Berita Satu Sore</title>
   <desc lang="id">Broadcast of Berita Satu Sore on Channel103BTV</desc>
  </programme>
- <programme start="20260828160000 +0700" stop="20260828170000 +0700" channel="Channel103BTV.mnc">
+ <programme start="20260828160000 +0700" stop="20260828160500 +0700" channel="Channel103BTV.mnc">
   <title lang="id">Berita Satu Terkini</title>
   <desc lang="id">Broadcast of Berita Satu Terkini on Channel103BTV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel105TawafTV.mnc">
-  <title lang="id">DMI TV</title>
-  <desc lang="id">Broadcast of DMI TV on Channel105Tawaf TV</desc>
+ <programme start="20260828160500 +0700" stop="20260828170500 +0700" channel="Channel103BTV.mnc">
+  <title lang="id">Berita Satu Sore</title>
+  <desc lang="id">Broadcast of Berita Satu Sore on Channel103BTV</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel105TawafTV.mnc">
   <title lang="id">DMI TV</title>
@@ -2408,13 +2344,13 @@
   <title lang="id">DMI TV</title>
   <desc lang="id">Broadcast of DMI TV on Channel105Tawaf TV</desc>
  </programme>
- <programme start="20260828160000 +0700" stop="20260828170000 +0700" channel="Channel105TawafTV.mnc">
+ <programme start="20260828160000 +0700" stop="20260828163000 +0700" channel="Channel105TawafTV.mnc">
   <title lang="id">DMI TV</title>
   <desc lang="id">Broadcast of DMI TV on Channel105Tawaf TV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828130000 +0700" channel="Channel106KompasTV.mnc">
-  <title lang="id">Kompas Siang</title>
-  <desc lang="id">Broadcast of Kompas Siang on Channel106Kompas TV</desc>
+ <programme start="20260828163000 +0700" stop="20260828173000 +0700" channel="Channel105TawafTV.mnc">
+  <title lang="id">DMI TV</title>
+  <desc lang="id">Broadcast of DMI TV on Channel105Tawaf TV</desc>
  </programme>
  <programme start="20260828130000 +0700" stop="20260828133000 +0700" channel="Channel106KompasTV.mnc">
   <title lang="id">Sapa Indonesia Siang</title>
@@ -2444,17 +2380,13 @@
   <title lang="id">Kompas Malam</title>
   <desc lang="id">Broadcast of Kompas Malam on Channel106Kompas TV</desc>
  </programme>
- <programme start="20260828230000 +0700" stop="20260829000000 +0700" channel="Channel106KompasTV.mnc">
+ <programme start="20260828230000 +0700" stop="20260828233000 +0700" channel="Channel106KompasTV.mnc">
   <title lang="id">Kompas Sport</title>
   <desc lang="id">Broadcast of Kompas Sport on Channel106Kompas TV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828110500 +0700" channel="Channel107MetroTV.mnc">
-  <title lang="id">Headline News</title>
-  <desc lang="id">Broadcast of Headline News on Channel107Metro TV</desc>
- </programme>
- <programme start="20260828110500 +0700" stop="20260828113000 +0700" channel="Channel107MetroTV.mnc">
-  <title lang="id">Metro Siang</title>
-  <desc lang="id">Broadcast of Metro Siang on Channel107Metro TV</desc>
+ <programme start="20260828233000 +0700" stop="20260829003000 +0700" channel="Channel106KompasTV.mnc">
+  <title lang="id">Kilas Kompas</title>
+  <desc lang="id">Broadcast of Kilas Kompas on Channel106Kompas TV</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel107MetroTV.mnc">
   <title lang="id">Metro Siang</title>
@@ -2480,9 +2412,17 @@
   <title lang="id">Kontroversi</title>
   <desc lang="id">Broadcast of Kontroversi on Channel107Metro TV</desc>
  </programme>
- <programme start="20260828140000 +0700" stop="20260828150000 +0700" channel="Channel107MetroTV.mnc">
+ <programme start="20260828140000 +0700" stop="20260828140500 +0700" channel="Channel107MetroTV.mnc">
   <title lang="id">Headline News</title>
   <desc lang="id">Broadcast of Headline News on Channel107Metro TV</desc>
+ </programme>
+ <programme start="20260828140500 +0700" stop="20260828143000 +0700" channel="Channel107MetroTV.mnc">
+  <title lang="id">Metro Siang</title>
+  <desc lang="id">Broadcast of Metro Siang on Channel107Metro TV</desc>
+ </programme>
+ <programme start="20260828143000 +0700" stop="20260828153000 +0700" channel="Channel107MetroTV.mnc">
+  <title lang="id">Metro Siang</title>
+  <desc lang="id">Broadcast of Metro Siang on Channel107Metro TV</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828120000 +0700" channel="Channel110Trans7.mnc">
   <title lang="id">Enah Bikin Enak</title>
@@ -2556,10 +2496,6 @@
   <title lang="id">Bucin (Bursa Music Indonesia)</title>
   <desc lang="id">Broadcast of Bucin (Bursa Music Indonesia) on Channel111Music TV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel113JAKTV.mnc">
-  <title lang="id">Cave And Cavern</title>
-  <desc lang="id">Broadcast of Cave And Cavern on Channel113JAKTV</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel113JAKTV.mnc">
   <title lang="id">Ninjao</title>
   <desc lang="id">Broadcast of Ninjao on Channel113JAKTV</desc>
@@ -2588,9 +2524,13 @@
   <title lang="id">The Youth Doctor</title>
   <desc lang="id">Broadcast of The Youth Doctor on Channel113JAKTV</desc>
  </programme>
- <programme start="20260828160000 +0700" stop="20260828170000 +0700" channel="Channel113JAKTV.mnc">
+ <programme start="20260828160000 +0700" stop="20260828163000 +0700" channel="Channel113JAKTV.mnc">
   <title lang="id">Cooking Time</title>
   <desc lang="id">Broadcast of Cooking Time on Channel113JAKTV</desc>
+ </programme>
+ <programme start="20260828163000 +0700" stop="20260828173000 +0700" channel="Channel113JAKTV.mnc">
+  <title lang="id">My Health My Choice</title>
+  <desc lang="id">Broadcast of My Health My Choice on Channel113JAKTV</desc>
  </programme>
  <programme start="20260828130000 +0700" stop="20260828143000 +0700" channel="Channel115ANTV.mnc">
   <title lang="id">Jhanak</title>
@@ -2664,14 +2604,6 @@
   <title lang="id">Customs Protection</title>
   <desc lang="id">Broadcast of Customs Protection on Channel116MDTV</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828110300 +0700" channel="Channel118TVRI.mnc">
-  <title lang="id">TVRI</title>
-  <desc lang="id">Broadcast of TVRI on Channel118TVRI</desc>
- </programme>
- <programme start="20260828110300 +0700" stop="20260828113000 +0700" channel="Channel118TVRI.mnc">
-  <title lang="id">TVRI</title>
-  <desc lang="id">Broadcast of TVRI on Channel118TVRI</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828130000 +0700" channel="Channel118TVRI.mnc">
   <title lang="id">TVRI</title>
   <desc lang="id">Broadcast of TVRI on Channel118TVRI</desc>
@@ -2697,6 +2629,14 @@
   <desc lang="id">Broadcast of TVRI on Channel118TVRI</desc>
  </programme>
  <programme start="20260828190000 +0700" stop="20260828200000 +0700" channel="Channel118TVRI.mnc">
+  <title lang="id">TVRI</title>
+  <desc lang="id">Broadcast of TVRI on Channel118TVRI</desc>
+ </programme>
+ <programme start="20260828200000 +0700" stop="20260828210000 +0700" channel="Channel118TVRI.mnc">
+  <title lang="id">TVRI</title>
+  <desc lang="id">Broadcast of TVRI on Channel118TVRI</desc>
+ </programme>
+ <programme start="20260828210000 +0700" stop="20260828220000 +0700" channel="Channel118TVRI.mnc">
   <title lang="id">TVRI</title>
   <desc lang="id">Broadcast of TVRI on Channel118TVRI</desc>
  </programme>
@@ -2736,10 +2676,6 @@
   <title lang="id">FBI S7, Ep 4</title>
   <desc lang="id">Broadcast of FBI S7, Ep 4 on Channel154AXN</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel157Animax.mnc">
-  <title lang="id">One Piece: Marineford, Ep 31</title>
-  <desc lang="id">Broadcast of One Piece: Marineford, Ep 31 on Channel157Animax</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel157Animax.mnc">
   <title lang="id">One Piece: Marineford, Ep 32</title>
   <desc lang="id">Broadcast of One Piece: Marineford, Ep 32 on Channel157Animax</desc>
@@ -2768,9 +2704,13 @@
   <title lang="id">Oshi No Ko S2, Ep 17</title>
   <desc lang="id">Broadcast of Oshi No Ko S2, Ep 17 on Channel157Animax</desc>
  </programme>
- <programme start="20260828150000 +0700" stop="20260828160000 +0700" channel="Channel157Animax.mnc">
+ <programme start="20260828150000 +0700" stop="20260828153000 +0700" channel="Channel157Animax.mnc">
   <title lang="id">D.Gray-Man, Ep 68</title>
   <desc lang="id">Broadcast of D.Gray-Man, Ep 68 on Channel157Animax</desc>
+ </programme>
+ <programme start="20260828153000 +0700" stop="20260828163000 +0700" channel="Channel157Animax.mnc">
+  <title lang="id">D.Gray-Man, Ep 69</title>
+  <desc lang="id">Broadcast of D.Gray-Man, Ep 69 on Channel157Animax</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828123500 +0700" channel="Channel158tvN.mnc">
   <title lang="id">Legend Of Kitchen..., Ep 11</title>
@@ -2808,10 +2748,6 @@
   <title lang="id">Kill It: Style Creator, Ep 12</title>
   <desc lang="id">Broadcast of Kill It: Style Creator, Ep 12 on Channel158tvN</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel160HITS.mnc">
-  <title lang="id">I Dream Of Jeannie S5, Ep 13</title>
-  <desc lang="id">Broadcast of I Dream Of Jeannie S5, Ep 13 on Channel160HITS</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828123000 +0700" channel="Channel160HITS.mnc">
   <title lang="id">CSI S6, Ep 1</title>
   <desc lang="id">Broadcast of CSI S6, Ep 1 on Channel160HITS</desc>
@@ -2840,9 +2776,13 @@
   <title lang="id">The Jeffersons S9, Ep 12</title>
   <desc lang="id">Broadcast of The Jeffersons S9, Ep 12 on Channel160HITS</desc>
  </programme>
- <programme start="20260828173000 +0700" stop="20260828183000 +0700" channel="Channel160HITS.mnc">
+ <programme start="20260828173000 +0700" stop="20260828180000 +0700" channel="Channel160HITS.mnc">
   <title lang="id">I Dream Of Jeannie S5, Ep 13</title>
   <desc lang="id">Broadcast of I Dream Of Jeannie S5, Ep 13 on Channel160HITS</desc>
+ </programme>
+ <programme start="20260828180000 +0700" stop="20260828190000 +0700" channel="Channel160HITS.mnc">
+  <title lang="id">Murder, She Wrote S9, Ep 20</title>
+  <desc lang="id">Broadcast of Murder, She Wrote S9, Ep 20 on Channel160HITS</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828132500 +0700" channel="Channel161KIX.mnc">
   <title lang="id">Iron Ball, Ep 10</title>
@@ -2988,10 +2928,6 @@
   <title lang="id">GTV</title>
   <desc lang="id">Broadcast of GTV on Channel201Global Trekker</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel202OutdoorChannel.mnc">
-  <title lang="id">Running Wild S4, Ep 6</title>
-  <desc lang="id">Broadcast of Running Wild S4, Ep 6 on Channel202Outdoor Channel</desc>
- </programme>
  <programme start="20260828120000 +0700" stop="20260828123000 +0700" channel="Channel202OutdoorChannel.mnc">
   <title lang="id">Man Eats Wild S1, Ep 7</title>
   <desc lang="id">Broadcast of Man Eats Wild S1, Ep 7 on Channel202Outdoor Channel</desc>
@@ -3020,9 +2956,13 @@
   <title lang="id">Airgunner Challenge S1, Ep 11</title>
   <desc lang="id">Broadcast of Airgunner Challenge S1, Ep 11 on Channel202Outdoor Channel</desc>
  </programme>
- <programme start="20260828153000 +0700" stop="20260828163000 +0700" channel="Channel202OutdoorChannel.mnc">
+ <programme start="20260828153000 +0700" stop="20260828160000 +0700" channel="Channel202OutdoorChannel.mnc">
   <title lang="id">Airgunner Challenge S1, Ep 12</title>
   <desc lang="id">Broadcast of Airgunner Challenge S1, Ep 12 on Channel202Outdoor Channel</desc>
+ </programme>
+ <programme start="20260828160000 +0700" stop="20260828170000 +0700" channel="Channel202OutdoorChannel.mnc">
+  <title lang="id">Making Pandas</title>
+  <desc lang="id">Broadcast of Making Pandas on Channel202Outdoor Channel</desc>
  </programme>
  <programme start="20260828114000 +0700" stop="20260828123500 +0700" channel="Channel204LoveNature.mnc">
   <title lang="id">Becoming Orangutan S1, Ep 3</title>
@@ -3060,10 +3000,6 @@
   <title lang="id">Humanlike: Chimps... S1, Ep 1</title>
   <desc lang="id">Broadcast of Humanlike: Chimps... S1, Ep 1 on Channel204Love Nature</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel205CGTNDocumentary.mnc">
-  <title lang="id">The Yangtze River, Ep 2</title>
-  <desc lang="id">Broadcast of The Yangtze River, Ep 2 on Channel205CGTN Documentary</desc>
- </programme>
  <programme start="20260828120000 +0700" stop="20260828123000 +0700" channel="Channel205CGTNDocumentary.mnc">
   <title lang="id">Collision Course, Ep 3</title>
   <desc lang="id">Broadcast of Collision Course, Ep 3 on Channel205CGTN Documentary</desc>
@@ -3092,9 +3028,13 @@
   <title lang="id">Fall In Love With Museums, Ep 5</title>
   <desc lang="id">Broadcast of Fall In Love With Museums, Ep 5 on Channel205CGTN Documentary</desc>
  </programme>
- <programme start="20260828163000 +0700" stop="20260828173000 +0700" channel="Channel205CGTNDocumentary.mnc">
+ <programme start="20260828163000 +0700" stop="20260828170000 +0700" channel="Channel205CGTNDocumentary.mnc">
   <title lang="id">Wisdom's Breath, Ep 6</title>
   <desc lang="id">Broadcast of Wisdom's Breath, Ep 6 on Channel205CGTN Documentary</desc>
+ </programme>
+ <programme start="20260828170000 +0700" stop="20260828180000 +0700" channel="Channel205CGTNDocumentary.mnc">
+  <title lang="id">The Yangtze River, Ep 2</title>
+  <desc lang="id">Broadcast of The Yangtze River, Ep 2 on Channel205CGTN Documentary</desc>
  </programme>
  <programme start="20260828114000 +0700" stop="20260828123500 +0700" channel="Channel206History.mnc">
   <title lang="id">Curse Of Oak Island S11, Ep 20</title>
@@ -3168,10 +3108,6 @@
   <title lang="id">Interrogation Cam, Ep 4</title>
   <desc lang="id">Broadcast of Interrogation Cam, Ep 4 on Channel207Crime Investigation</desc>
  </programme>
- <programme start="20260828111000 +0700" stop="20260828115500 +0700" channel="Channel240RockEntertainment.mnc">
-  <title lang="id">The Tonight Show S13, Ep 142</title>
-  <desc lang="id">Broadcast of The Tonight Show S13, Ep 142 on Channel240Rock Entertainment</desc>
- </programme>
  <programme start="20260828115500 +0700" stop="20260828124000 +0700" channel="Channel240RockEntertainment.mnc">
   <title lang="id">Late Night With... S13, Ep 111</title>
   <desc lang="id">Broadcast of Late Night With... S13, Ep 111 on Channel240Rock Entertainment</desc>
@@ -3200,9 +3136,13 @@
   <title lang="id">ExPatriot</title>
   <desc lang="id">Broadcast of ExPatriot on Channel240Rock Entertainment</desc>
  </programme>
- <programme start="20260828180000 +0700" stop="20260828190000 +0700" channel="Channel240RockEntertainment.mnc">
+ <programme start="20260828180000 +0700" stop="20260828200500 +0700" channel="Channel240RockEntertainment.mnc">
   <title lang="id">La La Land</title>
   <desc lang="id">Broadcast of La La Land on Channel240Rock Entertainment</desc>
+ </programme>
+ <programme start="20260828200500 +0700" stop="20260828210500 +0700" channel="Channel240RockEntertainment.mnc">
+  <title lang="id">The Internship</title>
+  <desc lang="id">Broadcast of The Internship on Channel240Rock Entertainment</desc>
  </programme>
  <programme start="20260828115500 +0700" stop="20260828140000 +0700" channel="Channel248RockAction.mnc">
   <title lang="id">Godzilla Minus One</title>
@@ -3240,10 +3180,6 @@
   <title lang="id">Get Out</title>
   <desc lang="id">Broadcast of Get Out on Channel248Rock Action</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel304FightSports.mnc">
-  <title lang="id">FS MMA: McLellan Vs Du Plessis</title>
-  <desc lang="id">Broadcast of FS MMA: McLellan Vs Du Plessis on Channel304Fight Sports</desc>
- </programme>
  <programme start="20260828120000 +0700" stop="20260828140000 +0700" channel="Channel304FightSports.mnc">
   <title lang="id">Mega Fights S1, Ep 42</title>
   <desc lang="id">Broadcast of Mega Fights S1, Ep 42 on Channel304Fight Sports</desc>
@@ -3272,9 +3208,13 @@
   <title lang="id">FS MMA: McLellan Vs Du Plessis</title>
   <desc lang="id">Broadcast of FS MMA: McLellan Vs Du Plessis on Channel304Fight Sports</desc>
  </programme>
- <programme start="20260828180000 +0700" stop="20260828190000 +0700" channel="Channel304FightSports.mnc">
+ <programme start="20260828180000 +0700" stop="20260828200000 +0700" channel="Channel304FightSports.mnc">
   <title lang="id">Mega Fights S1, Ep 47</title>
   <desc lang="id">Broadcast of Mega Fights S1, Ep 47 on Channel304Fight Sports</desc>
+ </programme>
+ <programme start="20260828200000 +0700" stop="20260828210000 +0700" channel="Channel304FightSports.mnc">
+  <title lang="id">Karate 1 Premiere League</title>
+  <desc lang="id">Broadcast of Karate 1 Premiere League on Channel304Fight Sports</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828134000 +0700" channel="Channel307SPOTV.mnc">
   <title lang="id">2026 US Open Tennis C'hips</title>
@@ -3384,10 +3324,6 @@
   <title lang="id">LaLiga Show 2026/27</title>
   <desc lang="id">Broadcast of LaLiga Show 2026/27 on Channel309beIN Sports 1</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828140000 +0700" channel="Channel310beINSports2.mnc">
-  <title lang="id">La Vuelta 2026: Stage 6</title>
-  <desc lang="id">Broadcast of La Vuelta 2026: Stage 6 on Channel310beIN Sports 2</desc>
- </programme>
  <programme start="20260828140000 +0700" stop="20260828143000 +0700" channel="Channel310beINSports2.mnc">
   <title lang="id">Mini Match Australian Open 2026</title>
   <desc lang="id">Broadcast of Mini Match Australian Open 2026 on Channel310beIN Sports 2</desc>
@@ -3416,7 +3352,11 @@
   <title lang="id">La Vuelta 2026: Stage 7 (L)</title>
   <desc lang="id">Broadcast of La Vuelta 2026: Stage 7 (L) on Channel310beIN Sports 2</desc>
  </programme>
- <programme start="20260828225000 +0700" stop="20260828235000 +0700" channel="Channel310beINSports2.mnc">
+ <programme start="20260828225000 +0700" stop="20260828232000 +0700" channel="Channel310beINSports2.mnc">
+  <title lang="id">Mini Match Australian Open 2026</title>
+  <desc lang="id">Broadcast of Mini Match Australian Open 2026 on Channel310beIN Sports 2</desc>
+ </programme>
+ <programme start="20260828232000 +0700" stop="20260829002000 +0700" channel="Channel310beINSports2.mnc">
   <title lang="id">Mini Match Australian Open 2026</title>
   <desc lang="id">Broadcast of Mini Match Australian Open 2026 on Channel310beIN Sports 2</desc>
  </programme>
@@ -3564,10 +3504,6 @@
   <title lang="id">Asia Tonight</title>
   <desc lang="id">Broadcast of Asia Tonight on Channel330Channel News Asia</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
-  <title lang="id">News (L)</title>
-  <desc lang="id">Broadcast of News (L) on Channel331Al Jazeera English</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
   <title lang="id">Witness: Still Playing</title>
   <desc lang="id">Broadcast of Witness: Still Playing on Channel331Al Jazeera English</desc>
@@ -3596,13 +3532,13 @@
   <title lang="id">News (L)</title>
   <desc lang="id">Broadcast of News (L) on Channel331Al Jazeera English</desc>
  </programme>
- <programme start="20260828153000 +0700" stop="20260828163000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
+ <programme start="20260828153000 +0700" stop="20260828160000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
   <title lang="id">101 East: Reef Rescue</title>
   <desc lang="id">Broadcast of 101 East: Reef Rescue on Channel331Al Jazeera English</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel332BBCWorldNews.mnc">
-  <title lang="id">BBC News</title>
-  <desc lang="id">Broadcast of BBC News on Channel332BBC World News</desc>
+ <programme start="20260828160000 +0700" stop="20260828170000 +0700" channel="Channel331AlJazeeraEnglish.mnc">
+  <title lang="id">Al Jazeera Investigates</title>
+  <desc lang="id">Broadcast of Al Jazeera Investigates on Channel331Al Jazeera English</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel332BBCWorldNews.mnc">
   <title lang="id">Business Today</title>
@@ -3632,13 +3568,13 @@
   <title lang="id">BBC News</title>
   <desc lang="id">Broadcast of BBC News on Channel332BBC World News</desc>
  </programme>
- <programme start="20260828150000 +0700" stop="20260828160000 +0700" channel="Channel332BBCWorldNews.mnc">
+ <programme start="20260828150000 +0700" stop="20260828153000 +0700" channel="Channel332BBCWorldNews.mnc">
   <title lang="id">BBC News</title>
   <desc lang="id">Broadcast of BBC News on Channel332BBC World News</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828111500 +0700" channel="Channel333EURONEWS.mnc">
-  <title lang="id">Wake Up Europe</title>
-  <desc lang="id">Broadcast of Wake Up Europe on Channel333EURONEWS</desc>
+ <programme start="20260828153000 +0700" stop="20260828163000 +0700" channel="Channel332BBCWorldNews.mnc">
+  <title lang="id">BBC News</title>
+  <desc lang="id">Broadcast of BBC News on Channel332BBC World News</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828113000 +0700" channel="Channel333EURONEWS.mnc">
   <title lang="id">Wake Up Europe</title>
@@ -3668,13 +3604,13 @@
   <title lang="id">News</title>
   <desc lang="id">Broadcast of News on Channel333EURONEWS</desc>
  </programme>
- <programme start="20260828143000 +0700" stop="20260828153000 +0700" channel="Channel333EURONEWS.mnc">
+ <programme start="20260828143000 +0700" stop="20260828144600 +0700" channel="Channel333EURONEWS.mnc">
   <title lang="id">Wake Up Europe</title>
   <desc lang="id">Broadcast of Wake Up Europe on Channel333EURONEWS</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel335FOXNews.mnc">
-  <title lang="id">The Five</title>
-  <desc lang="id">Broadcast of The Five on Channel335FOX News</desc>
+ <programme start="20260828144600 +0700" stop="20260828154600 +0700" channel="Channel333EURONEWS.mnc">
+  <title lang="id">The Ring</title>
+  <desc lang="id">Broadcast of The Ring on Channel333EURONEWS</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828130000 +0700" channel="Channel335FOXNews.mnc">
   <title lang="id">Jesse Watters Primetime</title>
@@ -3708,9 +3644,9 @@
   <title lang="id">Fox &amp; Friends</title>
   <desc lang="id">Broadcast of Fox &amp; Friends on Channel335FOX News</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel337CNBC.mnc">
-  <title lang="id">Access Middle East</title>
-  <desc lang="id">Broadcast of Access Middle East on Channel337CNBC</desc>
+ <programme start="20260828200000 +0700" stop="20260828210000 +0700" channel="Channel335FOXNews.mnc">
+  <title lang="id">America's Newsroom</title>
+  <desc lang="id">Broadcast of America's Newsroom on Channel335FOX News</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828130000 +0700" channel="Channel337CNBC.mnc">
   <title lang="id">Europe Early Edition</title>
@@ -3744,9 +3680,9 @@
   <title lang="id">Power Lunch</title>
   <desc lang="id">Broadcast of Power Lunch on Channel337CNBC</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel338Bloomberg.mnc">
-  <title lang="id">Bloomberg Horizons</title>
-  <desc lang="id">Broadcast of Bloomberg Horizons on Channel338Bloomberg</desc>
+ <programme start="20260828020000 +0700" stop="20260828030000 +0700" channel="Channel337CNBC.mnc">
+  <title lang="id">Closing Bell</title>
+  <desc lang="id">Broadcast of Closing Bell on Channel337CNBC</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828130000 +0700" channel="Channel338Bloomberg.mnc">
   <title lang="id">Bloomberg Daybreak: Europe</title>
@@ -3779,6 +3715,10 @@
  <programme start="20260828230000 +0700" stop="20260829000000 +0700" channel="Channel338Bloomberg.mnc">
   <title lang="id">Bloomberg Money</title>
   <desc lang="id">Broadcast of Bloomberg Money on Channel338Bloomberg</desc>
+ </programme>
+ <programme start="20260828000000 +0700" stop="20260828010000 +0700" channel="Channel338Bloomberg.mnc">
+  <title lang="id">Bloomberg: Balance Of Power</title>
+  <desc lang="id">Broadcast of Bloomberg: Balance Of Power on Channel338Bloomberg</desc>
  </programme>
  <programme start="20260828115500 +0700" stop="20260828122000 +0700" channel="Channel350ABCAustralia.mnc">
   <title lang="id">Every Bite Takes You Home</title>
@@ -3816,10 +3756,6 @@
   <title lang="id">Trial In The Outback</title>
   <desc lang="id">Broadcast of Trial In The Outback on Channel350ABC Australia</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel351Arirang.mnc">
-  <title lang="id">Simply K-Pop 2026</title>
-  <desc lang="id">Broadcast of Simply K-Pop 2026 on Channel351Arirang</desc>
- </programme>
  <programme start="20260828120000 +0700" stop="20260828123000 +0700" channel="Channel351Arirang.mnc">
   <title lang="id">K-Culture Dive (L)</title>
   <desc lang="id">Broadcast of K-Culture Dive (L) on Channel351Arirang</desc>
@@ -3848,13 +3784,13 @@
   <title lang="id">Arirang Special</title>
   <desc lang="id">Broadcast of Arirang Special on Channel351Arirang</desc>
  </programme>
- <programme start="20260828143000 +0700" stop="20260828153000 +0700" channel="Channel351Arirang.mnc">
+ <programme start="20260828143000 +0700" stop="20260828150000 +0700" channel="Channel351Arirang.mnc">
   <title lang="id">Vibe In Action: K-Initiative</title>
   <desc lang="id">Broadcast of Vibe In Action: K-Initiative on Channel351Arirang</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828111500 +0700" channel="Channel352France24English.mnc">
-  <title lang="id">News (L)</title>
-  <desc lang="id">Broadcast of News (L) on Channel352France 24 English</desc>
+ <programme start="20260828150000 +0700" stop="20260828160000 +0700" channel="Channel351Arirang.mnc">
+  <title lang="id">The Daily Report</title>
+  <desc lang="id">Broadcast of The Daily Report on Channel351Arirang</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828113000 +0700" channel="Channel352France24English.mnc">
   <title lang="id">The 51%</title>
@@ -3884,13 +3820,13 @@
   <title lang="id">Bulletin (L)</title>
   <desc lang="id">Broadcast of Bulletin (L) on Channel352France 24 English</desc>
  </programme>
- <programme start="20260828124500 +0700" stop="20260828134500 +0700" channel="Channel352France24English.mnc">
+ <programme start="20260828124500 +0700" stop="20260828125000 +0700" channel="Channel352France24English.mnc">
   <title lang="id">Focus</title>
   <desc lang="id">Broadcast of Focus on Channel352France 24 English</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel353CGTN.mnc">
-  <title lang="id">Global Watch</title>
-  <desc lang="id">Broadcast of Global Watch on Channel353CGTN</desc>
+ <programme start="20260828125000 +0700" stop="20260828135000 +0700" channel="Channel352France24English.mnc">
+  <title lang="id">French Connections</title>
+  <desc lang="id">Broadcast of French Connections on Channel352France 24 English</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828121500 +0700" channel="Channel353CGTN.mnc">
   <title lang="id">The World Today</title>
@@ -3920,17 +3856,13 @@
   <title lang="id">Sports Scene</title>
   <desc lang="id">Broadcast of Sports Scene on Channel353CGTN</desc>
  </programme>
- <programme start="20260828150000 +0700" stop="20260828160000 +0700" channel="Channel353CGTN.mnc">
+ <programme start="20260828150000 +0700" stop="20260828151500 +0700" channel="Channel353CGTN.mnc">
   <title lang="id">The World Today</title>
   <desc lang="id">Broadcast of The World Today on Channel353CGTN</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828110500 +0700" channel="Channel354NHKWorldPremium.mnc">
-  <title lang="id">News</title>
-  <desc lang="id">Broadcast of News on Channel354NHK World Premium</desc>
- </programme>
- <programme start="20260828110500 +0700" stop="20260828125000 +0700" channel="Channel354NHKWorldPremium.mnc">
-  <title lang="id">News Around Japan</title>
-  <desc lang="id">Broadcast of News Around Japan on Channel354NHK World Premium</desc>
+ <programme start="20260828151500 +0700" stop="20260828161500 +0700" channel="Channel353CGTN.mnc">
+  <title lang="id">Global Business</title>
+  <desc lang="id">Broadcast of Global Business on Channel353CGTN</desc>
  </programme>
  <programme start="20260828125000 +0700" stop="20260828125500 +0700" channel="Channel354NHKWorldPremium.mnc">
   <title lang="id">World Weather</title>
@@ -3956,13 +3888,17 @@
   <title lang="id">Mimicries: Natural Science</title>
   <desc lang="id">Broadcast of Mimicries: Natural Science on Channel354NHK World Premium</desc>
  </programme>
- <programme start="20260828135000 +0700" stop="20260828145000 +0700" channel="Channel354NHKWorldPremium.mnc">
+ <programme start="20260828135000 +0700" stop="20260828143500 +0700" channel="Channel354NHKWorldPremium.mnc">
   <title lang="id">Choices On How To Deal...</title>
   <desc lang="id">Broadcast of Choices On How To Deal... on Channel354NHK World Premium</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel355NHKWorld.mnc">
-  <title lang="id">NHK Newsline</title>
-  <desc lang="id">Broadcast of NHK Newsline on Channel355NHK World</desc>
+ <programme start="20260828143500 +0700" stop="20260828150000 +0700" channel="Channel354NHKWorldPremium.mnc">
+  <title lang="id">Exploring Factories</title>
+  <desc lang="id">Broadcast of Exploring Factories on Channel354NHK World Premium</desc>
+ </programme>
+ <programme start="20260828150000 +0700" stop="20260828160000 +0700" channel="Channel354NHKWorldPremium.mnc">
+  <title lang="id">PythagoraSwitch</title>
+  <desc lang="id">Broadcast of PythagoraSwitch on Channel354NHK World Premium</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel355NHKWorld.mnc">
   <title lang="id">Seasoning The Seasons</title>
@@ -3992,17 +3928,13 @@
   <title lang="id">Discovering Shimonoseki</title>
   <desc lang="id">Broadcast of Discovering Shimonoseki on Channel355NHK World</desc>
  </programme>
- <programme start="20260828150000 +0700" stop="20260828160000 +0700" channel="Channel355NHKWorld.mnc">
+ <programme start="20260828150000 +0700" stop="20260828153000 +0700" channel="Channel355NHKWorld.mnc">
   <title lang="id">NHK Newsline</title>
   <desc lang="id">Broadcast of NHK Newsline on Channel355NHK World</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828110200 +0700" channel="Channel357DWEnglish.mnc">
-  <title lang="id">DW News</title>
-  <desc lang="id">Broadcast of DW News on Channel357DW English</desc>
- </programme>
- <programme start="20260828110200 +0700" stop="20260828111500 +0700" channel="Channel357DWEnglish.mnc">
-  <title lang="id">DW News Focus</title>
-  <desc lang="id">Broadcast of DW News Focus on Channel357DW English</desc>
+ <programme start="20260828153000 +0700" stop="20260828163000 +0700" channel="Channel355NHKWorld.mnc">
+  <title lang="id">Document 72 Hours</title>
+  <desc lang="id">Broadcast of Document 72 Hours on Channel355NHK World</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828120000 +0700" channel="Channel357DWEnglish.mnc">
   <title lang="id">DocFilm</title>
@@ -4028,9 +3960,17 @@
   <title lang="id">DW News Focus</title>
   <desc lang="id">Broadcast of DW News Focus on Channel357DW English</desc>
  </programme>
- <programme start="20260828131500 +0700" stop="20260828141500 +0700" channel="Channel357DWEnglish.mnc">
+ <programme start="20260828131500 +0700" stop="20260828133000 +0700" channel="Channel357DWEnglish.mnc">
   <title lang="id">Arts Unveiled: Far-Right &amp; Art</title>
   <desc lang="id">Broadcast of Arts Unveiled: Far-Right &amp; Art on Channel357DW English</desc>
+ </programme>
+ <programme start="20260828133000 +0700" stop="20260828140000 +0700" channel="Channel357DWEnglish.mnc">
+  <title lang="id">Best Of DW Podcasts</title>
+  <desc lang="id">Broadcast of Best Of DW Podcasts on Channel357DW English</desc>
+ </programme>
+ <programme start="20260828140000 +0700" stop="20260828150000 +0700" channel="Channel357DWEnglish.mnc">
+  <title lang="id">DW News</title>
+  <desc lang="id">Broadcast of DW News on Channel357DW English</desc>
  </programme>
  <programme start="20260828113800 +0700" stop="20260828132400 +0700" channel="Channel401ORIGINALSHD.mnc">
   <title lang="id">Nightmare Alley: Possession</title>
@@ -4356,10 +4296,6 @@
   <title lang="id">LaLiga Show 2026/27</title>
   <desc lang="id">Broadcast of LaLiga Show 2026/27 on Channel417beIN Sports 1 HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828140000 +0700" channel="Channel418beINSports2HD.mnc">
-  <title lang="id">La Vuelta 2026: Stage 6</title>
-  <desc lang="id">Broadcast of La Vuelta 2026: Stage 6 on Channel418beIN Sports 2 HD</desc>
- </programme>
  <programme start="20260828140000 +0700" stop="20260828143000 +0700" channel="Channel418beINSports2HD.mnc">
   <title lang="id">Mini Match Australian Open 2026</title>
   <desc lang="id">Broadcast of Mini Match Australian Open 2026 on Channel418beIN Sports 2 HD</desc>
@@ -4388,7 +4324,11 @@
   <title lang="id">La Vuelta 2026: Stage 7 (L)</title>
   <desc lang="id">Broadcast of La Vuelta 2026: Stage 7 (L) on Channel418beIN Sports 2 HD</desc>
  </programme>
- <programme start="20260828225000 +0700" stop="20260828235000 +0700" channel="Channel418beINSports2HD.mnc">
+ <programme start="20260828225000 +0700" stop="20260828232000 +0700" channel="Channel418beINSports2HD.mnc">
+  <title lang="id">Mini Match Australian Open 2026</title>
+  <desc lang="id">Broadcast of Mini Match Australian Open 2026 on Channel418beIN Sports 2 HD</desc>
+ </programme>
+ <programme start="20260828232000 +0700" stop="20260829002000 +0700" channel="Channel418beINSports2HD.mnc">
   <title lang="id">Mini Match Australian Open 2026</title>
   <desc lang="id">Broadcast of Mini Match Australian Open 2026 on Channel418beIN Sports 2 HD</desc>
  </programme>
@@ -4428,10 +4368,6 @@
   <title lang="id">Super Lig 2026/27: FEN Vs KON</title>
   <desc lang="id">Broadcast of Super Lig 2026/27: FEN Vs KON on Channel419beIN Sports 3 HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828130000 +0700" channel="Channel420SoccerChannelHD.mnc">
-  <title lang="id">ACL Two 2025-2026: NSR Vs ARK</title>
-  <desc lang="id">Broadcast of ACL Two 2025-2026: NSR Vs ARK on Channel420Soccer Channel HD</desc>
- </programme>
  <programme start="20260828130000 +0700" stop="20260828150000 +0700" channel="Channel420SoccerChannelHD.mnc">
   <title lang="id">Hyundai C'ship 2026: LAO Vs THA</title>
   <desc lang="id">Broadcast of Hyundai C'ship 2026: LAO Vs THA on Channel420Soccer Channel HD</desc>
@@ -4460,9 +4396,13 @@
   <title lang="id">Sportacular Match: WAL Vs GHA</title>
   <desc lang="id">Broadcast of Sportacular Match: WAL Vs GHA on Channel420Soccer Channel HD</desc>
  </programme>
- <programme start="20260828013000 +0700" stop="20260828023000 +0700" channel="Channel420SoccerChannelHD.mnc">
+ <programme start="20260828013000 +0700" stop="20260828020000 +0700" channel="Channel420SoccerChannelHD.mnc">
   <title lang="id">The Ultimate Goals</title>
   <desc lang="id">Broadcast of The Ultimate Goals on Channel420Soccer Channel HD</desc>
+ </programme>
+ <programme start="20260828020000 +0700" stop="20260828030000 +0700" channel="Channel420SoccerChannelHD.mnc">
+  <title lang="id">Best Of Persib: PSB Vs BKU</title>
+  <desc lang="id">Broadcast of Best Of Persib: PSB Vs BKU on Channel420Soccer Channel HD</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel421SportstarsHD.mnc">
   <title lang="id">Sports Today</title>
@@ -4500,10 +4440,6 @@
   <title lang="id">Satu Hati Untuk Garuda</title>
   <desc lang="id">Broadcast of Satu Hati Untuk Garuda on Channel421Sportstars HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel422Sportstars2HD.mnc">
-  <title lang="id">Adrenaline Rush</title>
-  <desc lang="id">Broadcast of Adrenaline Rush on Channel422Sportstars 2 HD</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel422Sportstars2HD.mnc">
   <title lang="id">Top Goals</title>
   <desc lang="id">Broadcast of Top Goals on Channel422Sportstars 2 HD</desc>
@@ -4532,9 +4468,13 @@
   <title lang="id">ASEAN C'ship Hyundai Cup 2026</title>
   <desc lang="id">Broadcast of ASEAN C'ship Hyundai Cup 2026 on Channel422Sportstars 2 HD</desc>
  </programme>
- <programme start="20260828000000 +0700" stop="20260828010000 +0700" channel="Channel422Sportstars2HD.mnc">
+ <programme start="20260828000000 +0700" stop="20260828020000 +0700" channel="Channel422Sportstars2HD.mnc">
   <title lang="id">ASEAN C'ship Hyundai Cup 2026</title>
   <desc lang="id">Broadcast of ASEAN C'ship Hyundai Cup 2026 on Channel422Sportstars 2 HD</desc>
+ </programme>
+ <programme start="20260828020000 +0700" stop="20260828030000 +0700" channel="Channel422Sportstars2HD.mnc">
+  <title lang="id">Satu Hati Untuk Garuda</title>
+  <desc lang="id">Broadcast of Satu Hati Untuk Garuda on Channel422Sportstars 2 HD</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828140000 +0700" channel="Channel423sportstars3HD.mnc">
   <title lang="id">Sportacular International Match</title>
@@ -4680,10 +4620,6 @@
   <title lang="id">Super Series GP Sailing Show</title>
   <desc lang="id">Broadcast of Super Series GP Sailing Show on Channel428SPOTV 2 HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel430RCTIHD.mnc">
-  <title lang="id">Go Spot Eksklusif</title>
-  <desc lang="id">Broadcast of Go Spot Eksklusif on Channel430RCTI HD</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828130000 +0700" channel="Channel430RCTIHD.mnc">
   <title lang="id">Terikat Janji Selamanya</title>
   <desc lang="id">Broadcast of Terikat Janji Selamanya on Channel430RCTI HD</desc>
@@ -4712,13 +4648,13 @@
   <title lang="id">Cinta Dari Surga</title>
   <desc lang="id">Broadcast of Cinta Dari Surga on Channel430RCTI HD</desc>
  </programme>
- <programme start="20260828001500 +0700" stop="20260828011500 +0700" channel="Channel430RCTIHD.mnc">
+ <programme start="20260828001500 +0700" stop="20260828013000 +0700" channel="Channel430RCTIHD.mnc">
   <title lang="id">Pacar Yang Tertukar</title>
   <desc lang="id">Broadcast of Pacar Yang Tertukar on Channel430RCTI HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828123000 +0700" channel="Channel431GTVHD.mnc">
-  <title lang="id">SpongeBob SquarePants</title>
-  <desc lang="id">Broadcast of SpongeBob SquarePants on Channel431GTV HD</desc>
+ <programme start="20260828013000 +0700" stop="20260828023000 +0700" channel="Channel430RCTIHD.mnc">
+  <title lang="id">Janji Jono</title>
+  <desc lang="id">Broadcast of Janji Jono on Channel430RCTI HD</desc>
  </programme>
  <programme start="20260828123000 +0700" stop="20260828143000 +0700" channel="Channel431GTVHD.mnc">
   <title lang="id">SpongeBob SquarePants</title>
@@ -4748,13 +4684,13 @@
   <title lang="id">Predator PBC Indonesia Open</title>
   <desc lang="id">Broadcast of Predator PBC Indonesia Open on Channel431GTV HD</desc>
  </programme>
- <programme start="20260828000000 +0700" stop="20260828010000 +0700" channel="Channel431GTVHD.mnc">
+ <programme start="20260828000000 +0700" stop="20260828003000 +0700" channel="Channel431GTVHD.mnc">
   <title lang="id">Kisah Viral</title>
   <desc lang="id">Broadcast of Kisah Viral on Channel431GTV HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828121500 +0700" channel="Channel432MNCTVHD.mnc">
-  <title lang="id">Kiko</title>
-  <desc lang="id">Broadcast of Kiko on Channel432MNCTV HD</desc>
+ <programme start="20260828003000 +0700" stop="20260828013000 +0700" channel="Channel431GTVHD.mnc">
+  <title lang="id">1001 Kisah</title>
+  <desc lang="id">Broadcast of 1001 Kisah on Channel431GTV HD</desc>
  </programme>
  <programme start="20260828121500 +0700" stop="20260828124500 +0700" channel="Channel432MNCTVHD.mnc">
   <title lang="id">Lintas iNews Siang</title>
@@ -4784,13 +4720,13 @@
   <title lang="id">Upin &amp; Ipin</title>
   <desc lang="id">Broadcast of Upin &amp; Ipin on Channel432MNCTV HD</desc>
  </programme>
- <programme start="20260828193000 +0700" stop="20260828203000 +0700" channel="Channel432MNCTVHD.mnc">
+ <programme start="20260828193000 +0700" stop="20260828230000 +0700" channel="Channel432MNCTVHD.mnc">
   <title lang="id">Liga DMD Panggung Rezeki</title>
   <desc lang="id">Broadcast of Liga DMD Panggung Rezeki on Channel432MNCTV HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828130000 +0700" channel="Channel433iNewsHD.mnc">
-  <title lang="id">iNews Siang (L)</title>
-  <desc lang="id">Broadcast of iNews Siang (L) on Channel433iNews HD</desc>
+ <programme start="20260828230000 +0700" stop="20260829000000 +0700" channel="Channel432MNCTVHD.mnc">
+  <title lang="id">Temen Ngekost</title>
+  <desc lang="id">Broadcast of Temen Ngekost on Channel432MNCTV HD</desc>
  </programme>
  <programme start="20260828130000 +0700" stop="20260828133000 +0700" channel="Channel433iNewsHD.mnc">
   <title lang="id">iNews On Point</title>
@@ -4820,9 +4756,13 @@
   <title lang="id">iNews Room (L)</title>
   <desc lang="id">Broadcast of iNews Room (L) on Channel433iNews HD</desc>
  </programme>
- <programme start="20260828203000 +0700" stop="20260828213000 +0700" channel="Channel433iNewsHD.mnc">
+ <programme start="20260828203000 +0700" stop="20260828220000 +0700" channel="Channel433iNewsHD.mnc">
   <title lang="id">iNews Prime (L)</title>
   <desc lang="id">Broadcast of iNews Prime (L) on Channel433iNews HD</desc>
+ </programme>
+ <programme start="20260828220000 +0700" stop="20260828230000 +0700" channel="Channel433iNewsHD.mnc">
+  <title lang="id">Breaking Goals (L)</title>
+  <desc lang="id">Broadcast of Breaking Goals (L) on Channel433iNews HD</desc>
  </programme>
  <programme start="20260828120000 +0700" stop="20260828123000 +0700" channel="Channel434SindoNewsTVHD.mnc">
   <title lang="id">Lintas iNews Siang</title>
@@ -4860,10 +4800,6 @@
   <title lang="id">To The Point</title>
   <desc lang="id">Broadcast of To The Point on Channel434Sindo News TV HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel436IDXHD.mnc">
-  <title lang="id">IDXTainment</title>
-  <desc lang="id">Broadcast of IDXTainment on Channel436IDX HD</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel436IDXHD.mnc">
   <title lang="id">IDX 1st Closing Market (L)</title>
   <desc lang="id">Broadcast of IDX 1st Closing Market (L) on Channel436IDX HD</desc>
@@ -4892,9 +4828,13 @@
   <title lang="id">News Screen</title>
   <desc lang="id">Broadcast of News Screen on Channel436IDX HD</desc>
  </programme>
- <programme start="20260828170000 +0700" stop="20260828180000 +0700" channel="Channel436IDXHD.mnc">
+ <programme start="20260828170000 +0700" stop="20260828173000 +0700" channel="Channel436IDXHD.mnc">
   <title lang="id">I Love Indonesia</title>
   <desc lang="id">Broadcast of I Love Indonesia on Channel436IDX HD</desc>
+ </programme>
+ <programme start="20260828173000 +0700" stop="20260828183000 +0700" channel="Channel436IDXHD.mnc">
+  <title lang="id">Kalaparan</title>
+  <desc lang="id">Broadcast of Kalaparan on Channel436IDX HD</desc>
  </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel437SCTVHD.mnc">
   <title lang="id">Liputan 6 Siang (L)</title>
@@ -4932,10 +4872,6 @@
   <title lang="id">Vidio Original: Love Is A Story</title>
   <desc lang="id">Broadcast of Vidio Original: Love Is A Story on Channel437SCTV HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828113000 +0700" channel="Channel438IndosiarHD.mnc">
-  <title lang="id">Patroli Siang</title>
-  <desc lang="id">Broadcast of Patroli Siang on Channel438Indosiar HD</desc>
- </programme>
  <programme start="20260828113000 +0700" stop="20260828120000 +0700" channel="Channel438IndosiarHD.mnc">
   <title lang="id">Fokus Siang</title>
   <desc lang="id">Broadcast of Fokus Siang on Channel438Indosiar HD</desc>
@@ -4964,9 +4900,13 @@
   <title lang="id">Blind War</title>
   <desc lang="id">Broadcast of Blind War on Channel438Indosiar HD</desc>
  </programme>
- <programme start="20260828010000 +0700" stop="20260828020000 +0700" channel="Channel438IndosiarHD.mnc">
+ <programme start="20260828010000 +0700" stop="20260828030000 +0700" channel="Channel438IndosiarHD.mnc">
   <title lang="id">Kungfu Yoga</title>
   <desc lang="id">Broadcast of Kungfu Yoga on Channel438Indosiar HD</desc>
+ </programme>
+ <programme start="20260828030000 +0700" stop="20260828040000 +0700" channel="Channel438IndosiarHD.mnc">
+  <title lang="id">Rich And Famous</title>
+  <desc lang="id">Broadcast of Rich And Famous on Channel438Indosiar HD</desc>
  </programme>
  <programme start="20260828111500 +0700" stop="20260828120000 +0700" channel="Channel444MusicTVHD.mnc">
   <title lang="id">Godain</title>
@@ -5112,10 +5052,6 @@
   <title lang="id">Viral Kuliner Review</title>
   <desc lang="id">Broadcast of Viral Kuliner Review on Channel459Food Travel HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828120000 +0700" channel="Channel460OutdoorchannelHD.mnc">
-  <title lang="id">Running Wild S4, Ep 6</title>
-  <desc lang="id">Broadcast of Running Wild S4, Ep 6 on Channel460Outdoor channel HD</desc>
- </programme>
  <programme start="20260828120000 +0700" stop="20260828123000 +0700" channel="Channel460OutdoorchannelHD.mnc">
   <title lang="id">Man Eats Wild S1, Ep 7</title>
   <desc lang="id">Broadcast of Man Eats Wild S1, Ep 7 on Channel460Outdoor channel HD</desc>
@@ -5144,9 +5080,13 @@
   <title lang="id">Airgunner Challenge S1, Ep 11</title>
   <desc lang="id">Broadcast of Airgunner Challenge S1, Ep 11 on Channel460Outdoor channel HD</desc>
  </programme>
- <programme start="20260828153000 +0700" stop="20260828163000 +0700" channel="Channel460OutdoorchannelHD.mnc">
+ <programme start="20260828153000 +0700" stop="20260828160000 +0700" channel="Channel460OutdoorchannelHD.mnc">
   <title lang="id">Airgunner Challenge S1, Ep 12</title>
   <desc lang="id">Broadcast of Airgunner Challenge S1, Ep 12 on Channel460Outdoor channel HD</desc>
+ </programme>
+ <programme start="20260828160000 +0700" stop="20260828170000 +0700" channel="Channel460OutdoorchannelHD.mnc">
+  <title lang="id">Making Pandas</title>
+  <desc lang="id">Broadcast of Making Pandas on Channel460Outdoor channel HD</desc>
  </programme>
  <programme start="20260828114000 +0700" stop="20260828124000 +0700" channel="Channel461BBCEarthHD.mnc">
   <title lang="id">Mammals S1, Ep 1</title>
@@ -5256,10 +5196,6 @@
   <title lang="id">Humanlike: Chimps... S1, Ep 1</title>
   <desc lang="id">Broadcast of Humanlike: Chimps... S1, Ep 1 on Channel463Love Nature HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828112000 +0700" channel="Channel471KidsTVHD.mnc">
-  <title lang="id">Morphle</title>
-  <desc lang="id">Broadcast of Morphle on Channel471Kids TV HD</desc>
- </programme>
  <programme start="20260828112000 +0700" stop="20260828113000 +0700" channel="Channel471KidsTVHD.mnc">
   <title lang="id">O Iya Ya</title>
   <desc lang="id">Broadcast of O Iya Ya on Channel471Kids TV HD</desc>
@@ -5288,13 +5224,13 @@
   <title lang="id">SpongeBob SquarePants</title>
   <desc lang="id">Broadcast of SpongeBob SquarePants on Channel471Kids TV HD</desc>
  </programme>
- <programme start="20260828150000 +0700" stop="20260828160000 +0700" channel="Channel471KidsTVHD.mnc">
+ <programme start="20260828150000 +0700" stop="20260828153000 +0700" channel="Channel471KidsTVHD.mnc">
   <title lang="id">Thomas &amp; Friends S21</title>
   <desc lang="id">Broadcast of Thomas &amp; Friends S21 on Channel471Kids TV HD</desc>
  </programme>
- <programme start="20260828110000 +0700" stop="20260828112000 +0700" channel="Channel472NickJrHD.mnc">
-  <title lang="id">Blaze &amp; The Monster Machines</title>
-  <desc lang="id">Broadcast of Blaze &amp; The Monster Machines on Channel472Nick Jr. HD</desc>
+ <programme start="20260828153000 +0700" stop="20260828163000 +0700" channel="Channel471KidsTVHD.mnc">
+  <title lang="id">Titus The Detective</title>
+  <desc lang="id">Broadcast of Titus The Detective on Channel471Kids TV HD</desc>
  </programme>
  <programme start="20260828112000 +0700" stop="20260828114500 +0700" channel="Channel472NickJrHD.mnc">
   <title lang="id">Blaze &amp; The Monster Machines</title>
@@ -5324,7 +5260,11 @@
   <title lang="id">Santiago Of The Seas</title>
   <desc lang="id">Broadcast of Santiago Of The Seas on Channel472Nick Jr. HD</desc>
  </programme>
- <programme start="20260828140000 +0700" stop="20260828150000 +0700" channel="Channel472NickJrHD.mnc">
+ <programme start="20260828140000 +0700" stop="20260828142500 +0700" channel="Channel472NickJrHD.mnc">
+  <title lang="id">Tim Rex In Space</title>
+  <desc lang="id">Broadcast of Tim Rex In Space on Channel472Nick Jr. HD</desc>
+ </programme>
+ <programme start="20260828142500 +0700" stop="20260828152500 +0700" channel="Channel472NickJrHD.mnc">
   <title lang="id">Tim Rex In Space</title>
   <desc lang="id">Broadcast of Tim Rex In Space on Channel472Nick Jr. HD</desc>
  </programme>
@@ -5367,6 +5307,10 @@
  <programme start="20260828170000 +0800" stop="20260828180000 +0800" channel="CLTV36.ph">
   <title lang="en">Top Stories:</title>
   <desc lang="en">Broadcast of Top Stories: on CLTV36</desc>
+ </programme>
+ <programme start="20260828170000 +0800" stop="20260828180000 +0800" channel="CLTV36.ph">
+  <title lang="en">CLTV PROGRAMS Bawal ing Tsismis kang Sonia Soto Wednesday,  –  “Bawal ing Tsismis Kang Sonia Soto” is an engaging current affairs talk show hosted by KBP award-winning broadcast journalist Sonia Soto, in collaboration with the CLTV36 news team. The program’s primary objective is to dissect and clarify pressing issues while promoting a critical stance against gossip and fake news. By championing verified, credible news sources, it empowers the public to make informed decisions and be responsible purveyors of accurate information. Nánu Pa Ta? Monday – Friday,  –  From local news and cultural celebrations to volunteer opportunities and support for local businesses, “Nanu Pa Ta?” provides a valuable platform for residents to stay informed and engaged in their neighborhood. With its charismatic host Jenna Lumbang-Parungao and entertaining segments, it offers both information and entertainment, making it a favorite among viewers of all ages. Tune in to “Nanu Pa Ta?” to stay connected and be a part of the vibrant Kapampangan community. Balen At Balita Monday – Friday,  –  “Balen at Balita,” stands as the preeminent source of current, reliable news in the Central Luzon region. Upholding its unwavering dedication to public service, the program delivers objective and fact-based news coverage, earning the trust of its viewers. The CLTV36 News team consistently strives to be the most esteemed and dependable news source in Central Luzon, providing timely and credible information that keeps the community well-informed and connected to the latest developments in the region. Perspektiba Friday,  Perspektiba tackles social, environmental, cultural, economic and political issues that are controversial, relevant and of public interest to the people of Central Luzon, providing a platform for different sector representatives of society who are experts in their respective fields.  Topics close to the hearts of the viewers will be delved on and national issues will be analyzed through the local perspective led by Aizeline David-Manzon. Business As Unusual Wednesday,  –  “Business As Usual” is a multiplatform on-air (TV) and social media program which aims to promote and feature small and large scale enterprises, entrepreneurs, and other local products in Central Luzon. TopPick Monday – Friday, 12:00 NN –  Toppick is a local community billboard TV program which features announcements and events that may be of interest to the viewers. Atin Kaming K! Thursday,  –  CLTV’s Kapampangan-language talk show, hosted by Jenna Lumbang-Parungao and Jhoedie Mercado, delves into the culture, tradition and the life of the Kapampangan people, with tourism features such as Malaus Ko Pu (Welcome), and a Kapampangan language Mangapampangan Tamu (Let’s Speak Kapampangan). Discover Japan Sunday,  –  Discover the charm of Japan on video. Discover Japan offers a comprehensive view of Japanese culture, nature, science and technology and tourism. UN In Action Sunday,  –  “UN in Action” reports on the work of the United Nations and its Agencies around the world. They illustrate UN peacekeeping efforts as well as projects aimed at reducing poverty and human suffering, fighting disease, providing humanitarian assistance and stimulating economic growth. Let’s Talk Heart to Heart Saturday,  –  “Let’s Talk Heart to Heart” aims to educate viewers regarding current cardiac conditions most especially the risk factors causing cardiovascular diseases through the Philippine Heart Association (PHA) advocacies. Plataporma Eleksyon 2022 Candidates Forum Friday,  –  Plataporma aims to give the public, especially the voters, the opportunity to know and understand the platform, program proposals and positions on social issues of the national and local candidates.  It serves as a venue for discussion between the candidates, sectoral groups and the public to achieve a successful 2022 National and Local Elections.  The program is in a town-hall format where the candidates will be questioned by various sectors of Central Luzon as well as by CLTV journalists.  Aizeline David-Manzon and Justine Dizon serve as the moderators of the program. Kalusugang SiguraDOH Sunday,  –  Kalusugang SiguraDOH is a program of the Dept of Health Region 3 to promote its advocacies and programs. The program features various health concerns and the programs of the Department of Health, giving the audience information on how to live a healthy life.  Topics range from family planning, mental health, polio vaccine and food safety. CLTV36 Teleskwela Monday – Friday,  – ; 1:00 –  Saturday, 8:00 – , 1:00 –  Provides students in Pampanga, from Grade 1 to Grade 12, a safe place to continue their learning through innovative teaching modules using television as a medium. CLTV RETIRED PROGRAMS Perspektiba Perspektiba tackles social, environmental, cultural, economic and political issues that are controversial, relevant and of public interest to the people of Central Luzon, providing a platform for different sector representatives of society who are experts in their respective fields. Topics close to the hearts of the viewers will be delved on and national issues will be analyzed through the local perspective. Public Interest Public Interest is CLTV’s latest news commentary program hosted by broadcast journalist Justine Dizon. It presents factual information, guided but fearless assessment and analysis on issues apropos to the stakeholders in Central Luzon, setting the bar of watchdog journalism in the local media. True to the function of the press as the fourth estate, this program seeks to reinforce the system of checks and balances in a democratic government and in the society as a whole. Here, we will ask the tough questions for the sake of Public Interest. So To Speak “Punu’t dulo ng bawat usapin, ating lilinawin.” So to Speak is a program that brings to light the various social issues prevalent in the country which directly affect Central Luzon. Likewise, it tackles local issues, providing correct and timely information to the people of Region 3, that will empower them to become better citizens. Together with experts, analysts and opinion-makers, So to Speak analyzes the issues which concern the people of Central Luzon, and encourages critical thinking and participation from its viewers. Nanu Pa Ta? CLTV’s Kapampangan-language talk show, hosted by Jhoedie Mercado and Nicolette Henson-Hizon, delves into the culture, tradition and the life of Kapampangans. Bagong Hamon Central Luzon CLTV36’s LIVE daily newscast program, Bagong Hamon Central Luzon is the source for fresh, timely and credible news in Central Luzon. True to the station’s commitment of public service through objective and factual news, the CLTV36 News team also continues to aspire to be the most trusted news team in the region. Stories On Wheels In this web series, we are treated to stories of different customers of the Laus Auto Group, along with the latest car reviews and other automotive care tips. Beyond Style A lifestyle TV and web show hosted by former beauty queen and model turned media personality Nicolette Henson-Hizon where she shares lifestyle tips with viewers to help them live their lives in style. We cover everything from wellness, fashion and lifestyle to make life more fulfilling. Music Zone Features music videos of international artists and bands.</title>
+  <desc lang="en">Broadcast of CLTV PROGRAMS Bawal ing Tsismis kang Sonia Soto Wednesday,  –  “Bawal ing Tsismis Kang Sonia Soto” is an engaging current affairs talk show hosted by KBP award-winning broadcast journalist Sonia Soto, in collaboration with the CLTV36 news team. The program’s primary objective is to dissect and clarify pressing issues while promoting a critical stance against gossip and fake news. By championing verified, credible news sources, it empowers the public to make informed decisions and be responsible purveyors of accurate information. Nánu Pa Ta? Monday – Friday,  –  From local news and cultural celebrations to volunteer opportunities and support for local businesses, “Nanu Pa Ta?” provides a valuable platform for residents to stay informed and engaged in their neighborhood. With its charismatic host Jenna Lumbang-Parungao and entertaining segments, it offers both information and entertainment, making it a favorite among viewers of all ages. Tune in to “Nanu Pa Ta?” to stay connected and be a part of the vibrant Kapampangan community. Balen At Balita Monday – Friday,  –  “Balen at Balita,” stands as the preeminent source of current, reliable news in the Central Luzon region. Upholding its unwavering dedication to public service, the program delivers objective and fact-based news coverage, earning the trust of its viewers. The CLTV36 News team consistently strives to be the most esteemed and dependable news source in Central Luzon, providing timely and credible information that keeps the community well-informed and connected to the latest developments in the region. Perspektiba Friday,  Perspektiba tackles social, environmental, cultural, economic and political issues that are controversial, relevant and of public interest to the people of Central Luzon, providing a platform for different sector representatives of society who are experts in their respective fields.  Topics close to the hearts of the viewers will be delved on and national issues will be analyzed through the local perspective led by Aizeline David-Manzon. Business As Unusual Wednesday,  –  “Business As Usual” is a multiplatform on-air (TV) and social media program which aims to promote and feature small and large scale enterprises, entrepreneurs, and other local products in Central Luzon. TopPick Monday – Friday, 12:00 NN –  Toppick is a local community billboard TV program which features announcements and events that may be of interest to the viewers. Atin Kaming K! Thursday,  –  CLTV’s Kapampangan-language talk show, hosted by Jenna Lumbang-Parungao and Jhoedie Mercado, delves into the culture, tradition and the life of the Kapampangan people, with tourism features such as Malaus Ko Pu (Welcome), and a Kapampangan language Mangapampangan Tamu (Let’s Speak Kapampangan). Discover Japan Sunday,  –  Discover the charm of Japan on video. Discover Japan offers a comprehensive view of Japanese culture, nature, science and technology and tourism. UN In Action Sunday,  –  “UN in Action” reports on the work of the United Nations and its Agencies around the world. They illustrate UN peacekeeping efforts as well as projects aimed at reducing poverty and human suffering, fighting disease, providing humanitarian assistance and stimulating economic growth. Let’s Talk Heart to Heart Saturday,  –  “Let’s Talk Heart to Heart” aims to educate viewers regarding current cardiac conditions most especially the risk factors causing cardiovascular diseases through the Philippine Heart Association (PHA) advocacies. Plataporma Eleksyon 2022 Candidates Forum Friday,  –  Plataporma aims to give the public, especially the voters, the opportunity to know and understand the platform, program proposals and positions on social issues of the national and local candidates.  It serves as a venue for discussion between the candidates, sectoral groups and the public to achieve a successful 2022 National and Local Elections.  The program is in a town-hall format where the candidates will be questioned by various sectors of Central Luzon as well as by CLTV journalists.  Aizeline David-Manzon and Justine Dizon serve as the moderators of the program. Kalusugang SiguraDOH Sunday,  –  Kalusugang SiguraDOH is a program of the Dept of Health Region 3 to promote its advocacies and programs. The program features various health concerns and the programs of the Department of Health, giving the audience information on how to live a healthy life.  Topics range from family planning, mental health, polio vaccine and food safety. CLTV36 Teleskwela Monday – Friday,  – ; 1:00 –  Saturday, 8:00 – , 1:00 –  Provides students in Pampanga, from Grade 1 to Grade 12, a safe place to continue their learning through innovative teaching modules using television as a medium. CLTV RETIRED PROGRAMS Perspektiba Perspektiba tackles social, environmental, cultural, economic and political issues that are controversial, relevant and of public interest to the people of Central Luzon, providing a platform for different sector representatives of society who are experts in their respective fields. Topics close to the hearts of the viewers will be delved on and national issues will be analyzed through the local perspective. Public Interest Public Interest is CLTV’s latest news commentary program hosted by broadcast journalist Justine Dizon. It presents factual information, guided but fearless assessment and analysis on issues apropos to the stakeholders in Central Luzon, setting the bar of watchdog journalism in the local media. True to the function of the press as the fourth estate, this program seeks to reinforce the system of checks and balances in a democratic government and in the society as a whole. Here, we will ask the tough questions for the sake of Public Interest. So To Speak “Punu’t dulo ng bawat usapin, ating lilinawin.” So to Speak is a program that brings to light the various social issues prevalent in the country which directly affect Central Luzon. Likewise, it tackles local issues, providing correct and timely information to the people of Region 3, that will empower them to become better citizens. Together with experts, analysts and opinion-makers, So to Speak analyzes the issues which concern the people of Central Luzon, and encourages critical thinking and participation from its viewers. Nanu Pa Ta? CLTV’s Kapampangan-language talk show, hosted by Jhoedie Mercado and Nicolette Henson-Hizon, delves into the culture, tradition and the life of Kapampangans. Bagong Hamon Central Luzon CLTV36’s LIVE daily newscast program, Bagong Hamon Central Luzon is the source for fresh, timely and credible news in Central Luzon. True to the station’s commitment of public service through objective and factual news, the CLTV36 News team also continues to aspire to be the most trusted news team in the region. Stories On Wheels In this web series, we are treated to stories of different customers of the Laus Auto Group, along with the latest car reviews and other automotive care tips. Beyond Style A lifestyle TV and web show hosted by former beauty queen and model turned media personality Nicolette Henson-Hizon where she shares lifestyle tips with viewers to help them live their lives in style. We cover everything from wellness, fashion and lifestyle to make life more fulfilling. Music Zone Features music videos of international artists and bands. on CLTV36</desc>
  </programme>
  <programme start="20260828170000 +0800" stop="20260828180000 +0800" channel="CLTV36.ph">
   <title lang="en">Bawal ing Tsismis kang Sonia Soto</title>
@@ -5444,6 +5388,10 @@
   <title lang="en">Let’s Talk Heart to Heart</title>
   <desc lang="en">Broadcast of Let’s Talk Heart to Heart on CLTV36</desc>
  </programme>
+ <programme start="20260828200000 +0800" stop="20260828203000 +0800" channel="CLTV36.ph">
+  <title lang="en">Saturday, 8:00 PM – 8:30 PM</title>
+  <desc lang="en">Broadcast of Saturday, 8:00 PM – 8:30 PM on CLTV36</desc>
+ </programme>
  <programme start="20260828160000 +0800" stop="20260828170000 +0800" channel="CLTV36.ph">
   <title lang="en">Plataporma Eleksyon 2022 Candidates Forum</title>
   <desc lang="en">Broadcast of Plataporma Eleksyon 2022 Candidates Forum on CLTV36</desc>
@@ -5456,6 +5404,10 @@
   <title lang="en">Kalusugang SiguraDOH</title>
   <desc lang="en">Broadcast of Kalusugang SiguraDOH on CLTV36</desc>
  </programme>
+ <programme start="20260828083000 +0800" stop="20260828090000 +0800" channel="CLTV36.ph">
+  <title lang="en">Sunday, 8:30 AM – 9:00 AM</title>
+  <desc lang="en">Broadcast of Sunday, 8:30 AM – 9:00 AM on CLTV36</desc>
+ </programme>
  <programme start="20260828090000 +0800" stop="20260828120000 +0800" channel="CLTV36.ph">
   <title lang="en">CLTV36 Teleskwela</title>
   <desc lang="en">Broadcast of CLTV36 Teleskwela on CLTV36</desc>
@@ -5464,1048 +5416,8 @@
   <title lang="en">Monday – Friday, 9:00 AM – 12:00 PM; 1:00 – 6:00 PM</title>
   <desc lang="en">Broadcast of Monday – Friday, 9:00 AM – 12:00 PM; 1:00 – 6:00 PM on CLTV36</desc>
  </programme>
- <programme start="20260828115000 +0500" stop="20260828125000 +0500" channel="Balapan.kz">
-  <title lang="en">«Сынақ алаңы»</title>
-  <desc lang="en">Program «Сынақ алаңы» on Balapan TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260829170000 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">Техникалық үзіліс</title>
-  <desc lang="en">Program Техникалық үзіліс on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260829140000 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">Техникалық үзіліс</title>
-  <desc lang="en">Program Техникалық үзіліс on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">17:00 Техникалық үзіліс</title>
-  <desc lang="en">Program 17:00 Техникалық үзіліс on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">17:00 Техникалық үзіліс</title>
-  <desc lang="en">Program 17:00 Техникалық үзіліс on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260828181500 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">17:00 Техникалық үзіліс</title>
-  <desc lang="en">Program 17:00 Техникалық үзіліс on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828181500 +0500" stop="20260829181500 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">"НАШ ГОРОД"</title>
-  <desc lang="en">Program "НАШ ГОРОД" on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828181500 +0500" stop="20260828184000 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">"НАШ ГОРОД"</title>
-  <desc lang="en">Program "НАШ ГОРОД" on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828184000 +0500" stop="20260829184000 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">"ПО СТРАНИЦАМ ИСТОРИИ"</title>
-  <desc lang="en">Program "ПО СТРАНИЦАМ ИСТОРИИ" on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828184000 +0500" stop="20260828194000 +0500" channel="AqjaiyqTV.kz">
-  <title lang="en">"ПО СТРАНИЦАМ ИСТОРИИ"</title>
-  <desc lang="en">Program "ПО СТРАНИЦАМ ИСТОРИИ" on Aqjaiyq TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260829170000 +0500" channel="AqtobeTV.kz">
-  <title lang="en">ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Aqtobe TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260829140000 +0500" channel="AqtobeTV.kz">
-  <title lang="en">ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Aqtobe TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="AqtobeTV.kz">
-  <title lang="en">17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Aqtobe TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="AqtobeTV.kz">
-  <title lang="en">17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Aqtobe TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="AqtobeTV.kz">
-  <title lang="en">17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Aqtobe TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260828150000 +0500" channel="AqtobeTV.kz">
-  <title lang="en">17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Aqtobe TV</desc>
- </programme>
- <programme start="20260828110000 +0500" stop="20260829110000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ЖАҢА ҚАЗАҚСТАН" /рус/ тікелей эфир ақпараттық бағдарлама</title>
-  <desc lang="en">Program "ЖАҢА ҚАЗАҚСТАН" /рус/ тікелей эфир ақпараттық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828110000 +0500" stop="20260828124000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ЖАҢА ҚАЗАҚСТАН" /рус/ тікелей эфир ақпараттық бағдарлама</title>
-  <desc lang="en">Program "ЖАҢА ҚАЗАҚСТАН" /рус/ тікелей эфир ақпараттық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828124000 +0500" stop="20260829124000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ДИАГНОЗ" /каз/ ақпараттық-танымдық бағдарлама</title>
-  <desc lang="en">Program "ДИАГНОЗ" /каз/ ақпараттық-танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828124000 +0500" stop="20260828130000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ДИАГНОЗ" /каз/ ақпараттық-танымдық бағдарлама</title>
-  <desc lang="en">Program "ДИАГНОЗ" /каз/ ақпараттық-танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828130000 +0500" stop="20260829130000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ЧЕЛОВЕК ТРУДА" ақпараттық-танымдық бағдарлама</title>
-  <desc lang="en">Program "ЧЕЛОВЕК ТРУДА" ақпараттық-танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828130000 +0500" stop="20260828171500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ЧЕЛОВЕК ТРУДА" ақпараттық-танымдық бағдарлама</title>
-  <desc lang="en">Program "ЧЕЛОВЕК ТРУДА" ақпараттық-танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828171500 +0500" stop="20260829171500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ALTAI AQPARAT" /каз/ақпараттық бағдарлама</title>
-  <desc lang="en">Program "ALTAI AQPARAT" /каз/ақпараттық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828171500 +0500" stop="20260828173500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ALTAI AQPARAT" /каз/ақпараттық бағдарлама</title>
-  <desc lang="en">Program "ALTAI AQPARAT" /каз/ақпараттық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828173500 +0500" stop="20260829173500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ALTAI AQPARAT" /рус/ информационная программа</title>
-  <desc lang="en">Program "ALTAI AQPARAT" /рус/ информационная программа on Altai TV</desc>
- </programme>
- <programme start="20260828173500 +0500" stop="20260828175500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ALTAI AQPARAT" /рус/ информационная программа</title>
-  <desc lang="en">Program "ALTAI AQPARAT" /рус/ информационная программа on Altai TV</desc>
- </programme>
- <programme start="20260828175500 +0500" stop="20260829175500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"КӨНЕНІҢ КӨЗІ", "УНИКАЛЬНЫЙ ЭКСПОНАТ",, "СЕН БІЛЕСІҢ БЕ?", "ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама</title>
-  <desc lang="en">Program "КӨНЕНІҢ КӨЗІ", "УНИКАЛЬНЫЙ ЭКСПОНАТ",, "СЕН БІЛЕСІҢ БЕ?", "ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828175500 +0500" stop="20260828180000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"КӨНЕНІҢ КӨЗІ", "УНИКАЛЬНЫЙ ЭКСПОНАТ",, "СЕН БІЛЕСІҢ БЕ?", "ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама</title>
-  <desc lang="en">Program "КӨНЕНІҢ КӨЗІ", "УНИКАЛЬНЫЙ ЭКСПОНАТ",, "СЕН БІЛЕСІҢ БЕ?", "ҚЫЗЫҚ КӘСІП" ақпараттық-танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260829180000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ALTAI APTA" /каз/ сараптамалық бағдарлама</title>
-  <desc lang="en">Program "ALTAI APTA" /каз/ сараптамалық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260828182000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ALTAI APTA" /каз/ сараптамалық бағдарлама</title>
-  <desc lang="en">Program "ALTAI APTA" /каз/ сараптамалық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828182000 +0500" stop="20260829182000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ALTAI APTA" /рус/ аналитическая программа</title>
-  <desc lang="en">Program "ALTAI APTA" /рус/ аналитическая программа on Altai TV</desc>
- </programme>
- <programme start="20260828182000 +0500" stop="20260828184000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ALTAI APTA" /рус/ аналитическая программа</title>
-  <desc lang="en">Program "ALTAI APTA" /рус/ аналитическая программа on Altai TV</desc>
- </programme>
- <programme start="20260828184000 +0500" stop="20260829184000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"МАЗМҰНДАМА" танымдық бағдарлама</title>
-  <desc lang="en">Program "МАЗМҰНДАМА" танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828184000 +0500" stop="20260828190000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"МАЗМҰНДАМА" танымдық бағдарлама</title>
-  <desc lang="en">Program "МАЗМҰНДАМА" танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828190000 +0500" stop="20260829190000 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ЖАҢА ҚАЗАҚСТАН" /рус/ информационная программа (повтор)</title>
-  <desc lang="en">Program "ЖАҢА ҚАЗАҚСТАН" /рус/ информационная программа (повтор) on Altai TV</desc>
- </programme>
- <programme start="20260828190000 +0500" stop="20260828233500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"ЖАҢА ҚАЗАҚСТАН" /рус/ информационная программа (повтор)</title>
-  <desc lang="en">Program "ЖАҢА ҚАЗАҚСТАН" /рус/ информационная программа (повтор) on Altai TV</desc>
- </programme>
- <programme start="20260828233500 +0500" stop="20260829233500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"МАЗМҰНДАМА" танымдық бағдарлама</title>
-  <desc lang="en">Program "МАЗМҰНДАМА" танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828233500 +0500" stop="20260829003500 +0500" channel="AltaiTV.kz">
-  <title lang="en">"МАЗМҰНДАМА" танымдық бағдарлама</title>
-  <desc lang="en">Program "МАЗМҰНДАМА" танымдық бағдарлама on Altai TV</desc>
- </programme>
- <programme start="20260828070500 +0500" stop="20260829070500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"АТЫРАУ ТАҢЫ" - ақпаратты-танымдық, ойын - сауықтық бағдарлама</title>
-  <desc lang="en">Program "АТЫРАУ ТАҢЫ" - ақпаратты-танымдық, ойын - сауықтық бағдарлама on Atyrau TV</desc>
- </programme>
- <programme start="20260828070500 +0500" stop="20260828080500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"АТЫРАУ ТАҢЫ" - ақпаратты-танымдық, ойын - сауықтық бағдарлама</title>
-  <desc lang="en">Program "АТЫРАУ ТАҢЫ" - ақпаратты-танымдық, ойын - сауықтық бағдарлама on Atyrau TV</desc>
- </programme>
- <programme start="20260828080500 +0500" stop="20260829080500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ӘЛИ МЕН АИЯ" - анимация. (Balapan телеарнасы, 2016 ж.)</title>
-  <desc lang="en">Program "ӘЛИ МЕН АИЯ" - анимация. (Balapan телеарнасы, 2016 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828080500 +0500" stop="20260828081500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ӘЛИ МЕН АИЯ" - анимация. (Balapan телеарнасы, 2016 ж.)</title>
-  <desc lang="en">Program "ӘЛИ МЕН АИЯ" - анимация. (Balapan телеарнасы, 2016 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828081500 +0500" stop="20260829081500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама, қайталау</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама, қайталау on Atyrau TV</desc>
- </programme>
- <programme start="20260828081500 +0500" stop="20260828091500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама, қайталау</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама, қайталау on Atyrau TV</desc>
- </programme>
- <programme start="20260828091500 +0500" stop="20260829091500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"АТЫРАУ ТАҢЫ" - ақпаратты-танымдық, ойын - сауықтық бағдарлама, қайталау</title>
-  <desc lang="en">Program "АТЫРАУ ТАҢЫ" - ақпаратты-танымдық, ойын - сауықтық бағдарлама, қайталау on Atyrau TV</desc>
- </programme>
- <programme start="20260828091500 +0500" stop="20260828101500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"АТЫРАУ ТАҢЫ" - ақпаратты-танымдық, ойын - сауықтық бағдарлама, қайталау</title>
-  <desc lang="en">Program "АТЫРАУ ТАҢЫ" - ақпаратты-танымдық, ойын - сауықтық бағдарлама, қайталау on Atyrau TV</desc>
- </programme>
- <programme start="20260828101500 +0500" stop="20260829101500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ҚОҒАМ СӨЗІ" - қоғамдық-саяси бағдарлама, қайталау</title>
-  <desc lang="en">Program "ҚОҒАМ СӨЗІ" - қоғамдық-саяси бағдарлама, қайталау on Atyrau TV</desc>
- </programme>
- <programme start="20260828101500 +0500" stop="20260828105500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ҚОҒАМ СӨЗІ" - қоғамдық-саяси бағдарлама, қайталау</title>
-  <desc lang="en">Program "ҚОҒАМ СӨЗІ" - қоғамдық-саяси бағдарлама, қайталау on Atyrau TV</desc>
- </programme>
- <programme start="20260828105500 +0500" stop="20260829105500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"КҮЙЕУ БАЛА", телехикая, 2 маусым, 1 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
-  <desc lang="en">Program "КҮЙЕУ БАЛА", телехикая, 2 маусым, 1 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828105500 +0500" stop="20260828114000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"КҮЙЕУ БАЛА", телехикая, 2 маусым, 1 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
-  <desc lang="en">Program "КҮЙЕУ БАЛА", телехикая, 2 маусым, 1 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828114000 +0500" stop="20260829114000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 204 бөлім (Түркия, 2010 ж.)</title>
-  <desc lang="en">Program "ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 204 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828114000 +0500" stop="20260828123000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 204 бөлім (Түркия, 2010 ж.)</title>
-  <desc lang="en">Program "ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 204 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828123000 +0500" stop="20260829123000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ЭФИРДЕ 102.0 FM". Тікелей эфир</title>
-  <desc lang="en">Program "ЭФИРДЕ 102.0 FM". Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828123000 +0500" stop="20260828130000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ЭФИРДЕ 102.0 FM". Тікелей эфир</title>
-  <desc lang="en">Program "ЭФИРДЕ 102.0 FM". Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828130000 +0500" stop="20260829130000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама.</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. on Atyrau TV</desc>
- </programme>
- <programme start="20260828130000 +0500" stop="20260828131500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама.</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. on Atyrau TV</desc>
- </programme>
- <programme start="20260828131500 +0500" stop="20260829131500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа.</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. on Atyrau TV</desc>
- </programme>
- <programme start="20260828131500 +0500" stop="20260828133000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа.</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. on Atyrau TV</desc>
- </programme>
- <programme start="20260828133000 +0500" stop="20260829133000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ҒАЖАЙЫПСТАНҒА САЯХАТ" - танымдық, анимация. (Balapan телеарнасы, 2012 ж.)</title>
-  <desc lang="en">Program "ҒАЖАЙЫПСТАНҒА САЯХАТ" - танымдық, анимация. (Balapan телеарнасы, 2012 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828133000 +0500" stop="20260829133000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ҒАЖАЙЫПСТАНҒА САЯХАТ" - танымдық, анимация. (Balapan телеарнасы, 2012 ж.)</title>
-  <desc lang="en">Program "ҒАЖАЙЫПСТАНҒА САЯХАТ" - танымдық, анимация. (Balapan телеарнасы, 2012 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828133000 +0500" stop="20260829133000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ТАНЫМ МЕН ТАҒЫЛЫМ" - ағартушылық-танымдық бағдарлама</title>
-  <desc lang="en">Program "ТАНЫМ МЕН ТАҒЫЛЫМ" - ағартушылық-танымдық бағдарлама on Atyrau TV</desc>
- </programme>
- <programme start="20260828133000 +0500" stop="20260828170000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ТАНЫМ МЕН ТАҒЫЛЫМ" - ағартушылық-танымдық бағдарлама</title>
-  <desc lang="en">Program "ТАНЫМ МЕН ТАҒЫЛЫМ" - ағартушылық-танымдық бағдарлама on Atyrau TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260829170000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program ТЕХНИКАЛЫҚ ҮЗІЛІС on Atyrau TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260829140000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program ТЕХНИКАЛЫҚ ҮЗІЛІС on Atyrau TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Atyrau TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Atyrau TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260828170500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
-  <desc lang="en">Program 17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС on Atyrau TV</desc>
- </programme>
- <programme start="20260828170500 +0500" stop="20260829170500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828170500 +0500" stop="20260828172000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828172000 +0500" stop="20260829172000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа. Прямой эфир</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. Прямой эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828172000 +0500" stop="20260828173500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа. Прямой эфир</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. Прямой эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828173500 +0500" stop="20260829173500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ҮРКЕР" - әдеби танымдық бағдарлама (Abaı ТВ, 2021 ж.)</title>
-  <desc lang="en">Program "ҮРКЕР" - әдеби танымдық бағдарлама (Abaı ТВ, 2021 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828173500 +0500" stop="20260828180500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ҮРКЕР" - әдеби танымдық бағдарлама (Abaı ТВ, 2021 ж.)</title>
-  <desc lang="en">Program "ҮРКЕР" - әдеби танымдық бағдарлама (Abaı ТВ, 2021 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828180500 +0500" stop="20260829180500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"САҚАЛАР-2" - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.)</title>
-  <desc lang="en">Program "САҚАЛАР-2" - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828180500 +0500" stop="20260828182000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"САҚАЛАР-2" - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.)</title>
-  <desc lang="en">Program "САҚАЛАР-2" - анимациялық мультфильм. (Balapan телеарнасы, 2020 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828182000 +0500" stop="20260829182000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ӨЗЕКТІ". Тікелей эфир</title>
-  <desc lang="en">Program "ӨЗЕКТІ". Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828182000 +0500" stop="20260828190000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ӨЗЕКТІ". Тікелей эфир</title>
-  <desc lang="en">Program "ӨЗЕКТІ". Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828190000 +0500" stop="20260829190000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828190000 +0500" stop="20260828192000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828192000 +0500" stop="20260829192000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа. Прямой эфир</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. Прямой эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828192000 +0500" stop="20260828194000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа. Прямой эфир</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. Прямой эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828194000 +0500" stop="20260829194000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"КҮЙЕУ БАЛА", телехикая, 2 маусым, 2 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
-  <desc lang="en">Program "КҮЙЕУ БАЛА", телехикая, 2 маусым, 2 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828194000 +0500" stop="20260828203000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"КҮЙЕУ БАЛА", телехикая, 2 маусым, 2 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
-  <desc lang="en">Program "КҮЙЕУ БАЛА", телехикая, 2 маусым, 2 бөлім  (Qazaqstan Ұлттық телеарнасы, 2021 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828203000 +0500" stop="20260829203000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828203000 +0500" stop="20260828210500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. Тікелей эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828210500 +0500" stop="20260829210500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа. Прямой эфир</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. Прямой эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828210500 +0500" stop="20260828213500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа. Прямой эфир</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. Прямой эфир on Atyrau TV</desc>
- </programme>
- <programme start="20260828213500 +0500" stop="20260829213500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ТЕКТІЛІК" - ақпаратты-танымдық бағдарлама</title>
-  <desc lang="en">Program "ТЕКТІЛІК" - ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
- </programme>
- <programme start="20260828213500 +0500" stop="20260828220000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ТЕКТІЛІК" - ақпаратты-танымдық бағдарлама</title>
-  <desc lang="en">Program "ТЕКТІЛІК" - ақпаратты-танымдық бағдарлама on Atyrau TV</desc>
- </programme>
- <programme start="20260828220000 +0500" stop="20260829220000 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 205 бөлім (Түркия, 2010 ж.)</title>
-  <desc lang="en">Program "ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 205 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828220000 +0500" stop="20260828225500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 205 бөлім (Түркия, 2010 ж.)</title>
-  <desc lang="en">Program "ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 205 бөлім (Түркия, 2010 ж.) on Atyrau TV</desc>
- </programme>
- <programme start="20260828225500 +0500" stop="20260829225500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама.</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. on Atyrau TV</desc>
- </programme>
- <programme start="20260828225500 +0500" stop="20260828232500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама.</title>
-  <desc lang="en">Program «ЖАҢАЛЫҚТАР» - ақпараттық бағдарлама. on Atyrau TV</desc>
- </programme>
- <programme start="20260828232500 +0500" stop="20260829232500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа.</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. on Atyrau TV</desc>
- </programme>
- <programme start="20260828232500 +0500" stop="20260829002500 +0500" channel="AtyrauTV.kz">
-  <title lang="en">«НОВОСТИ» - информационная программа.</title>
-  <desc lang="en">Program «НОВОСТИ» - информационная программа. on Atyrau TV</desc>
- </programme>
- <programme start="20260828070500 +0500" stop="20260829070500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
-  <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828070500 +0500" stop="20260828072000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"КӨКШЕ ӘУЕНДЕРІ"</title>
-  <desc lang="en">Program "КӨКШЕ ӘУЕНДЕРІ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828072000 +0500" stop="20260829072000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ҮЙРЕН ДЕ ЖИРЕН" 10 бөлім. Ойын-сауық бағдарлама</title>
-  <desc lang="en">Program "ҮЙРЕН ДЕ ЖИРЕН" 10 бөлім. Ойын-сауық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828072000 +0500" stop="20260828073000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ҮЙРЕН ДЕ ЖИРЕН" 10 бөлім. Ойын-сауық бағдарлама</title>
-  <desc lang="en">Program "ҮЙРЕН ДЕ ЖИРЕН" 10 бөлім. Ойын-сауық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828073000 +0500" stop="20260829073000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ӘНДІGROUND" 2 бөлім. Бағдарлама</title>
-  <desc lang="en">Program "ӘНДІGROUND" 2 бөлім. Бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828073000 +0500" stop="20260828075500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ӘНДІGROUND" 2 бөлім. Бағдарлама</title>
-  <desc lang="en">Program "ӘНДІGROUND" 2 бөлім. Бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828075500 +0500" stop="20260829075500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828075500 +0500" stop="20260828090000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828090000 +0500" stop="20260829090000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"KÓKSHE AQPARAT" Ақпараттық бағдарлама</title>
-  <desc lang="en">Program "KÓKSHE AQPARAT" Ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828090000 +0500" stop="20260828093000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"KÓKSHE AQPARAT" Ақпараттық бағдарлама</title>
-  <desc lang="en">Program "KÓKSHE AQPARAT" Ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828093000 +0500" stop="20260829093000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"БРЕНД АҚМОЛА" ақпараттық бағдарлама</title>
-  <desc lang="en">Program "БРЕНД АҚМОЛА" ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828093000 +0500" stop="20260828094000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"БРЕНД АҚМОЛА" ақпараттық бағдарлама</title>
-  <desc lang="en">Program "БРЕНД АҚМОЛА" ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828094000 +0500" stop="20260829094000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ЕРТЕМІР-2"  Мультхикая 7,8 бөлім</title>
-  <desc lang="en">Program "ЕРТЕМІР-2"  Мультхикая 7,8 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828094000 +0500" stop="20260828100000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ЕРТЕМІР-2"  Мультхикая 7,8 бөлім</title>
-  <desc lang="en">Program "ЕРТЕМІР-2"  Мультхикая 7,8 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828100000 +0500" stop="20260829100000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"KÓKSHE AQPARAT" Ақпараттық бағдарлама</title>
-  <desc lang="en">Program "KÓKSHE AQPARAT" Ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828100000 +0500" stop="20260828103000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"KÓKSHE AQPARAT" Ақпараттық бағдарлама</title>
-  <desc lang="en">Program "KÓKSHE AQPARAT" Ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828103000 +0500" stop="20260829103000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828103000 +0500" stop="20260828104000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828104000 +0500" stop="20260829104000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ФАЗИЛЕТ ХАНЫМ" Телехикая. 75 бөлім</title>
-  <desc lang="en">Program "ФАЗИЛЕТ ХАНЫМ" Телехикая. 75 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828104000 +0500" stop="20260828104500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ФАЗИЛЕТ ХАНЫМ" Телехикая. 75 бөлім</title>
-  <desc lang="en">Program "ФАЗИЛЕТ ХАНЫМ" Телехикая. 75 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828104500 +0500" stop="20260829104500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ЗАҢ МЕН ТӘРТІП" ақпараттық бағдарлама</title>
-  <desc lang="en">Program "ЗАҢ МЕН ТӘРТІП" ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828104500 +0500" stop="20260828113500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ЗАҢ МЕН ТӘРТІП" ақпараттық бағдарлама</title>
-  <desc lang="en">Program "ЗАҢ МЕН ТӘРТІП" ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828113500 +0500" stop="20260829113500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"КЕК ЖОЛЫНДА". Телехикая. 48 бөлім</title>
-  <desc lang="en">Program "КЕК ЖОЛЫНДА". Телехикая. 48 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828113500 +0500" stop="20260828122500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"КЕК ЖОЛЫНДА". Телехикая. 48 бөлім</title>
-  <desc lang="en">Program "КЕК ЖОЛЫНДА". Телехикая. 48 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828122500 +0500" stop="20260829122500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828122500 +0500" stop="20260828123000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828123000 +0500" stop="20260829123000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ДИАЛОГ ДНЯ". Ақпараттық-саяси бағдарлама</title>
-  <desc lang="en">Program "ДИАЛОГ ДНЯ". Ақпараттық-саяси бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828123000 +0500" stop="20260828125000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ДИАЛОГ ДНЯ". Ақпараттық-саяси бағдарлама</title>
-  <desc lang="en">Program "ДИАЛОГ ДНЯ". Ақпараттық-саяси бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828125000 +0500" stop="20260829125000 +0500" channel="KoksheTV.kz">
-  <title lang="en">«АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама</title>
-  <desc lang="en">Program «АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828125000 +0500" stop="20260828130000 +0500" channel="KoksheTV.kz">
-  <title lang="en">«АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама</title>
-  <desc lang="en">Program «АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828130000 +0500" stop="20260829130000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-  <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
- </programme>
- <programme start="20260828130000 +0500" stop="20260828130500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-  <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
- </programme>
- <programme start="20260828130500 +0500" stop="20260829130500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПРЕМЬЕРЫ" 14 бөлім</title>
-  <desc lang="en">Program "ПРЕМЬЕРЫ" 14 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828130500 +0500" stop="20260828133500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПРЕМЬЕРЫ" 14 бөлім</title>
-  <desc lang="en">Program "ПРЕМЬЕРЫ" 14 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828133500 +0500" stop="20260829133500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828133500 +0500" stop="20260828134000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828134000 +0500" stop="20260829134000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ЕРТЕМІР-2"  Мультхикая 9,10 бөлім</title>
-  <desc lang="en">Program "ЕРТЕМІР-2"  Мультхикая 9,10 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828134000 +0500" stop="20260828135500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ЕРТЕМІР-2"  Мультхикая 9,10 бөлім</title>
-  <desc lang="en">Program "ЕРТЕМІР-2"  Мультхикая 9,10 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828135500 +0500" stop="20260829135500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-  <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
- </programme>
- <programme start="20260828135500 +0500" stop="20260828140000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-  <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕХНИКАЛЫҚ ҮЗІЛІС"</title>
-  <desc lang="en">Program "ТЕХНИКАЛЫҚ ҮЗІЛІС" on Kokshe TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260828170000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕХНИКАЛЫҚ ҮЗІЛІС"</title>
-  <desc lang="en">Program "ТЕХНИКАЛЫҚ ҮЗІЛІС" on Kokshe TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260829170000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТАЗА LIKE" информационная программа</title>
-  <desc lang="en">Program "ТАЗА LIKE" информационная программа on Kokshe TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260828171000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТАЗА LIKE" информационная программа</title>
-  <desc lang="en">Program "ТАЗА LIKE" информационная программа on Kokshe TV</desc>
- </programme>
- <programme start="20260828171000 +0500" stop="20260829171000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828171000 +0500" stop="20260828173000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828173000 +0500" stop="20260829173000 +0500" channel="KoksheTV.kz">
-  <title lang="en">«АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама</title>
-  <desc lang="en">Program «АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828173000 +0500" stop="20260828174000 +0500" channel="KoksheTV.kz">
-  <title lang="en">«АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама</title>
-  <desc lang="en">Program «АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828174000 +0500" stop="20260829174000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-  <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
- </programme>
- <programme start="20260828174000 +0500" stop="20260828180000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-  <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260829180000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ФАЗИЛЕТ ХАНЫМ" Телехикая. 76 бөлім</title>
-  <desc lang="en">Program "ФАЗИЛЕТ ХАНЫМ" Телехикая. 76 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260828185500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ФАЗИЛЕТ ХАНЫМ" Телехикая. 76 бөлім</title>
-  <desc lang="en">Program "ФАЗИЛЕТ ХАНЫМ" Телехикая. 76 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828185500 +0500" stop="20260829185500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828185500 +0500" stop="20260828190000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828190000 +0500" stop="20260829190000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"БҮГІНГІ ТАҚЫРЫП". Ақпараттық-саяси бағдарлама</title>
-  <desc lang="en">Program "БҮГІНГІ ТАҚЫРЫП". Ақпараттық-саяси бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828190000 +0500" stop="20260828192000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"БҮГІНГІ ТАҚЫРЫП". Ақпараттық-саяси бағдарлама</title>
-  <desc lang="en">Program "БҮГІНГІ ТАҚЫРЫП". Ақпараттық-саяси бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828192000 +0500" stop="20260829192000 +0500" channel="KoksheTV.kz">
-  <title lang="en">«ӨҢІР ӨРКЕНИЕТІ»  ақпараттық бағдарлама</title>
-  <desc lang="en">Program «ӨҢІР ӨРКЕНИЕТІ»  ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828192000 +0500" stop="20260828194000 +0500" channel="KoksheTV.kz">
-  <title lang="en">«ӨҢІР ӨРКЕНИЕТІ»  ақпараттық бағдарлама</title>
-  <desc lang="en">Program «ӨҢІР ӨРКЕНИЕТІ»  ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828194000 +0500" stop="20260829194000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"АЙНЫМАС АЙҒАНЫМ" Телехикая. 17 бөлім</title>
-  <desc lang="en">Program "АЙНЫМАС АЙҒАНЫМ" Телехикая. 17 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828194000 +0500" stop="20260828210000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"АЙНЫМАС АЙҒАНЫМ" Телехикая. 17 бөлім</title>
-  <desc lang="en">Program "АЙНЫМАС АЙҒАНЫМ" Телехикая. 17 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828210000 +0500" stop="20260829210000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ӘНДІGROUND" 3 бөлім. Бағдарлама</title>
-  <desc lang="en">Program "ӘНДІGROUND" 3 бөлім. Бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828210000 +0500" stop="20260828220000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ӘНДІGROUND" 3 бөлім. Бағдарлама</title>
-  <desc lang="en">Program "ӘНДІGROUND" 3 бөлім. Бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828220000 +0500" stop="20260829220000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828220000 +0500" stop="20260828220500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ТЕЛЕМАРКЕТ"</title>
-  <desc lang="en">Program "ТЕЛЕМАРКЕТ" on Kokshe TV</desc>
- </programme>
- <programme start="20260828220500 +0500" stop="20260829220500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"АЙНЫМАС АЙҒАНЫМ" Телехикая. 18 бөлім</title>
-  <desc lang="en">Program "АЙНЫМАС АЙҒАНЫМ" Телехикая. 18 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828220500 +0500" stop="20260828225000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"АЙНЫМАС АЙҒАНЫМ" Телехикая. 18 бөлім</title>
-  <desc lang="en">Program "АЙНЫМАС АЙҒАНЫМ" Телехикая. 18 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828225000 +0500" stop="20260829225000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"КЕК ЖОЛЫНДА". Телехикая. 49 бөлім</title>
-  <desc lang="en">Program "КЕК ЖОЛЫНДА". Телехикая. 49 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828225000 +0500" stop="20260828233500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"КЕК ЖОЛЫНДА". Телехикая. 49 бөлім</title>
-  <desc lang="en">Program "КЕК ЖОЛЫНДА". Телехикая. 49 бөлім on Kokshe TV</desc>
- </programme>
- <programme start="20260828233500 +0500" stop="20260829233500 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-  <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
- </programme>
- <programme start="20260828233500 +0500" stop="20260828234000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-  <desc lang="en">Program "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью on Kokshe TV</desc>
- </programme>
- <programme start="20260828234000 +0500" stop="20260829234000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"КҮН БЕДЕРІНДЕ" Ақпараттық бағдарлама</title>
-  <desc lang="en">Program "КҮН БЕДЕРІНДЕ" Ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828234000 +0500" stop="20260828235000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"КҮН БЕДЕРІНДЕ" Ақпараттық бағдарлама</title>
-  <desc lang="en">Program "КҮН БЕДЕРІНДЕ" Ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828235000 +0500" stop="20260829235000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама</title>
-  <desc lang="en">Program "В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828235000 +0500" stop="20260829005000 +0500" channel="KoksheTV.kz">
-  <title lang="en">"В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама</title>
-  <desc lang="en">Program "В ТЕЧЕНИЕ ДНЯ" Ақпараттық бағдарлама on Kokshe TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260829180000 +0500" channel="MangystauTV.kz">
-  <title lang="en">Техникалық үзіліс</title>
-  <desc lang="en">Program Техникалық үзіліс on Mangystau TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260829180000 +0500" channel="MangystauTV.kz">
-  <title lang="en">Техникалық үзіліс</title>
-  <desc lang="en">Program Техникалық үзіліс on Mangystau TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260829180000 +0500" channel="MangystauTV.kz">
-  <title lang="en">Техникалық үзіліс</title>
-  <desc lang="en">Program Техникалық үзіліс on Mangystau TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260829150000 +0500" channel="MangystauTV.kz">
-  <title lang="en">Техникалық үзіліс</title>
-  <desc lang="en">Program Техникалық үзіліс on Mangystau TV</desc>
- </programme>
- <programme start="20260828150000 +0500" stop="20260828160000 +0500" channel="MangystauTV.kz">
-  <title lang="en">18.00 Техникалық үзіліс</title>
-  <desc lang="en">Program 18.00 Техникалық үзіліс on Mangystau TV</desc>
- </programme>
- <programme start="20260828150000 +0500" stop="20260829150000 +0500" channel="OntustikTV.kz">
-  <title lang="en">«Техникалық үзіліс» 15:00 - 17:00</title>
-  <desc lang="en">Program «Техникалық үзіліс» 15:00 - 17:00 on Ontustik TV</desc>
- </programme>
- <programme start="20260828150000 +0500" stop="20260829150000 +0500" channel="OntustikTV.kz">
-  <title lang="en">«Техникалық үзіліс» 15:00 - 17:00</title>
-  <desc lang="en">Program «Техникалық үзіліс» 15:00 - 17:00 on Ontustik TV</desc>
- </programme>
- <programme start="20260828150000 +0500" stop="20260829150000 +0500" channel="OntustikTV.kz">
-  <title lang="en">17:00</title>
-  <desc lang="en">Program 17:00 on Ontustik TV</desc>
- </programme>
- <programme start="20260828150000 +0500" stop="20260829150000 +0500" channel="OntustikTV.kz">
-  <title lang="en">17:00</title>
-  <desc lang="en">Program 17:00 on Ontustik TV</desc>
- </programme>
- <programme start="20260828150000 +0500" stop="20260828160000 +0500" channel="OntustikTV.kz">
-  <title lang="en">17:00</title>
-  <desc lang="en">Program 17:00 on Ontustik TV</desc>
- </programme>
- <programme start="20260828070000 +0500" stop="20260829070000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ИНЕЛІК» телехикая 9 бөлім («Qazaqstan» ҰТА, 2020 ж)</title>
-  <desc lang="en">Program «ИНЕЛІК» телехикая 9 бөлім («Qazaqstan» ҰТА, 2020 ж) on Qostanai TV</desc>
- </programme>
- <programme start="20260828070000 +0500" stop="20260828080000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ИНЕЛІК» телехикая 9 бөлім («Qazaqstan» ҰТА, 2020 ж)</title>
-  <desc lang="en">Program «ИНЕЛІК» телехикая 9 бөлім («Qazaqstan» ҰТА, 2020 ж) on Qostanai TV</desc>
- </programme>
- <programme start="20260828080000 +0500" stop="20260829080000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ДАЛА ӨРКЕНИЕТІ» д.с. («Qazaqstan» ҰТА, 2020 ж.)</title>
-  <desc lang="en">Program «ДАЛА ӨРКЕНИЕТІ» д.с. («Qazaqstan» ҰТА, 2020 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828080000 +0500" stop="20260828083000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ДАЛА ӨРКЕНИЕТІ» д.с. («Qazaqstan» ҰТА, 2020 ж.)</title>
-  <desc lang="en">Program «ДАЛА ӨРКЕНИЕТІ» д.с. («Qazaqstan» ҰТА, 2020 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828083000 +0500" stop="20260829083000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ЕР ТЕМІР» мультхикая (Balapan TV)</title>
-  <desc lang="en">Program «ЕР ТЕМІР» мультхикая (Balapan TV) on Qostanai TV</desc>
- </programme>
- <programme start="20260828083000 +0500" stop="20260828090000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ЕР ТЕМІР» мультхикая (Balapan TV)</title>
-  <desc lang="en">Program «ЕР ТЕМІР» мультхикая (Balapan TV) on Qostanai TV</desc>
- </programme>
- <programme start="20260828090000 +0500" stop="20260829090000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (ақпараттық бағдарлама /қайталау)</title>
-  <desc lang="en">Program «ARQA AQPARAT» (ақпараттық бағдарлама /қайталау) on Qostanai TV</desc>
- </programme>
- <programme start="20260828090000 +0500" stop="20260828100000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (ақпараттық бағдарлама /қайталау)</title>
-  <desc lang="en">Program «ARQA AQPARAT» (ақпараттық бағдарлама /қайталау) on Qostanai TV</desc>
- </programme>
- <programme start="20260828100000 +0500" stop="20260829100000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ТАЛАНТ TIME» (тікелей эфир) (музыкалық бағдарлама)</title>
-  <desc lang="en">Program «ТАЛАНТ TIME» (тікелей эфир) (музыкалық бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828100000 +0500" stop="20260828110000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ТАЛАНТ TIME» (тікелей эфир) (музыкалық бағдарлама)</title>
-  <desc lang="en">Program «ТАЛАНТ TIME» (тікелей эфир) (музыкалық бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828110000 +0500" stop="20260829110000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«КЕК ЖОЛЫНДА» телехикая 44 бөлім (Түркия, 2025 ж.)</title>
-  <desc lang="en">Program «КЕК ЖОЛЫНДА» телехикая 44 бөлім (Түркия, 2025 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828110000 +0500" stop="20260828120000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«КЕК ЖОЛЫНДА» телехикая 44 бөлім (Түркия, 2025 ж.)</title>
-  <desc lang="en">Program «КЕК ЖОЛЫНДА» телехикая 44 бөлім (Түркия, 2025 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828120000 +0500" stop="20260829120000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ҚЫЗЫҚ ЕКЕН» (интелектуалды бағдарлама ) («Qazaqstan» ҰТА, 2021 ж.)</title>
-  <desc lang="en">Program «ҚЫЗЫҚ ЕКЕН» (интелектуалды бағдарлама ) («Qazaqstan» ҰТА, 2021 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828120000 +0500" stop="20260828124500 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ҚЫЗЫҚ ЕКЕН» (интелектуалды бағдарлама ) («Qazaqstan» ҰТА, 2021 ж.)</title>
-  <desc lang="en">Program «ҚЫЗЫҚ ЕКЕН» (интелектуалды бағдарлама ) («Qazaqstan» ҰТА, 2021 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828124500 +0500" stop="20260829124500 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ШАБДАЛЫ 18» телехикая (5 бөлім) («Qazaqstan» ҰТА, 2020 ж.)</title>
-  <desc lang="en">Program «ШАБДАЛЫ 18» телехикая (5 бөлім) («Qazaqstan» ҰТА, 2020 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828124500 +0500" stop="20260828133000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ШАБДАЛЫ 18» телехикая (5 бөлім) («Qazaqstan» ҰТА, 2020 ж.)</title>
-  <desc lang="en">Program «ШАБДАЛЫ 18» телехикая (5 бөлім) («Qazaqstan» ҰТА, 2020 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828133000 +0500" stop="20260829133000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (күндізгі жаңалықтар) (ақпараттық бағдарлама) (каз/рус)</title>
-  <desc lang="en">Program «ARQA AQPARAT» (күндізгі жаңалықтар) (ақпараттық бағдарлама) (каз/рус) on Qostanai TV</desc>
- </programme>
- <programme start="20260828133000 +0500" stop="20260828140000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (күндізгі жаңалықтар) (ақпараттық бағдарлама) (каз/рус)</title>
-  <desc lang="en">Program «ARQA AQPARAT» (күндізгі жаңалықтар) (ақпараттық бағдарлама) (каз/рус) on Qostanai TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">17:00)</title>
-  <desc lang="en">Program 17:00) on Qostanai TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">17:00)</title>
-  <desc lang="en">Program 17:00) on Qostanai TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">17:00)</title>
-  <desc lang="en">Program 17:00) on Qostanai TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260829140000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">17:00)</title>
-  <desc lang="en">Program 17:00) on Qostanai TV</desc>
- </programme>
- <programme start="20260828140000 +0500" stop="20260828170000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">17:00)</title>
-  <desc lang="en">Program 17:00) on Qostanai TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260829170000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ЫНТЫМАҚ АУЫЛЫ» телехикая (19 бөлім) («Qazaqstan» ҰТА, 2021 ж.)</title>
-  <desc lang="en">Program «ЫНТЫМАҚ АУЫЛЫ» телехикая (19 бөлім) («Qazaqstan» ҰТА, 2021 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828170000 +0500" stop="20260828180000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ЫНТЫМАҚ АУЫЛЫ» телехикая (19 бөлім) («Qazaqstan» ҰТА, 2021 ж.)</title>
-  <desc lang="en">Program «ЫНТЫМАҚ АУЫЛЫ» телехикая (19 бөлім) («Qazaqstan» ҰТА, 2021 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260829180000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» тікелей эфир (ақпараттық бағдарлама )</title>
-  <desc lang="en">Program «ARQA AQPARAT» тікелей эфир (ақпараттық бағдарлама ) on Qostanai TV</desc>
- </programme>
- <programme start="20260828180000 +0500" stop="20260828182000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» тікелей эфир (ақпараттық бағдарлама )</title>
-  <desc lang="en">Program «ARQA AQPARAT» тікелей эфир (ақпараттық бағдарлама ) on Qostanai TV</desc>
- </programme>
- <programme start="20260828182000 +0500" stop="20260829182000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«НАСЛЕДИЕ НАРОДА» (мәдени танымдық бағдарлама)</title>
-  <desc lang="en">Program «НАСЛЕДИЕ НАРОДА» (мәдени танымдық бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828182000 +0500" stop="20260828184000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«НАСЛЕДИЕ НАРОДА» (мәдени танымдық бағдарлама)</title>
-  <desc lang="en">Program «НАСЛЕДИЕ НАРОДА» (мәдени танымдық бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828184000 +0500" stop="20260829184000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» прямой эфир (ақпараттық бағдарлама )</title>
-  <desc lang="en">Program «ARQA AQPARAT» прямой эфир (ақпараттық бағдарлама ) on Qostanai TV</desc>
- </programme>
- <programme start="20260828184000 +0500" stop="20260828190000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» прямой эфир (ақпараттық бағдарлама )</title>
-  <desc lang="en">Program «ARQA AQPARAT» прямой эфир (ақпараттық бағдарлама ) on Qostanai TV</desc>
- </programme>
- <programme start="20260828190000 +0500" stop="20260829190000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ТАҚЫРЫП» (қоғамдық - саяси бағдарлама)</title>
-  <desc lang="en">Program «ТАҚЫРЫП» (қоғамдық - саяси бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828190000 +0500" stop="20260828193000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ТАҚЫРЫП» (қоғамдық - саяси бағдарлама)</title>
-  <desc lang="en">Program «ТАҚЫРЫП» (қоғамдық - саяси бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828193000 +0500" stop="20260829193000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ИНЕЛІК» телехикая 10 бөлім («Qazaqstan» ҰТА, 2020 ж)</title>
-  <desc lang="en">Program «ИНЕЛІК» телехикая 10 бөлім («Qazaqstan» ҰТА, 2020 ж) on Qostanai TV</desc>
- </programme>
- <programme start="20260828193000 +0500" stop="20260828203000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ИНЕЛІК» телехикая 10 бөлім («Qazaqstan» ҰТА, 2020 ж)</title>
-  <desc lang="en">Program «ИНЕЛІК» телехикая 10 бөлім («Qazaqstan» ҰТА, 2020 ж) on Qostanai TV</desc>
- </programme>
- <programme start="20260828203000 +0500" stop="20260829203000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (қорытынды жаңалықтар)(ақпараттық бағдарлама)</title>
-  <desc lang="en">Program «ARQA AQPARAT» (қорытынды жаңалықтар)(ақпараттық бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828203000 +0500" stop="20260828210500 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (қорытынды жаңалықтар)(ақпараттық бағдарлама)</title>
-  <desc lang="en">Program «ARQA AQPARAT» (қорытынды жаңалықтар)(ақпараттық бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828210500 +0500" stop="20260829210500 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«РЕГИОН 10» (ақпараттық-танымдық бағдарлама) (қайталау)</title>
-  <desc lang="en">Program «РЕГИОН 10» (ақпараттық-танымдық бағдарлама) (қайталау) on Qostanai TV</desc>
- </programme>
- <programme start="20260828210500 +0500" stop="20260828213000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«РЕГИОН 10» (ақпараттық-танымдық бағдарлама) (қайталау)</title>
-  <desc lang="en">Program «РЕГИОН 10» (ақпараттық-танымдық бағдарлама) (қайталау) on Qostanai TV</desc>
- </programme>
- <programme start="20260828213000 +0500" stop="20260829213000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (итоговые новости) (ақпараттық бағдарлама)</title>
-  <desc lang="en">Program «ARQA AQPARAT» (итоговые новости) (ақпараттық бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828213000 +0500" stop="20260828220500 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (итоговые новости) (ақпараттық бағдарлама)</title>
-  <desc lang="en">Program «ARQA AQPARAT» (итоговые новости) (ақпараттық бағдарлама) on Qostanai TV</desc>
- </programme>
- <programme start="20260828220500 +0500" stop="20260829220500 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ШЕБЕР» (мәдени-танымдық бағдарлама) («ABAI TV» 2020 ж.)</title>
-  <desc lang="en">Program «ШЕБЕР» (мәдени-танымдық бағдарлама) («ABAI TV» 2020 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828220500 +0500" stop="20260828223000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ШЕБЕР» (мәдени-танымдық бағдарлама) («ABAI TV» 2020 ж.)</title>
-  <desc lang="en">Program «ШЕБЕР» (мәдени-танымдық бағдарлама) («ABAI TV» 2020 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828223000 +0500" stop="20260829223000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«КЕК ЖОЛЫНДА» телехикая 45 бөлім (Түркия, 2025 ж.)</title>
-  <desc lang="en">Program «КЕК ЖОЛЫНДА» телехикая 45 бөлім (Түркия, 2025 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828223000 +0500" stop="20260828233000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«КЕК ЖОЛЫНДА» телехикая 45 бөлім (Түркия, 2025 ж.)</title>
-  <desc lang="en">Program «КЕК ЖОЛЫНДА» телехикая 45 бөлім (Түркия, 2025 ж.) on Qostanai TV</desc>
- </programme>
- <programme start="20260828233000 +0500" stop="20260829233000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (дайджест) (каз/рус) (ақпараттық бағдарлама )</title>
-  <desc lang="en">Program «ARQA AQPARAT» (дайджест) (каз/рус) (ақпараттық бағдарлама ) on Qostanai TV</desc>
- </programme>
- <programme start="20260828233000 +0500" stop="20260829003000 +0500" channel="QostanaiTV.kz">
-  <title lang="en">«ARQA AQPARAT» (дайджест) (каз/рус) (ақпараттық бағдарлама )</title>
-  <desc lang="en">Program «ARQA AQPARAT» (дайджест) (каз/рус) (ақпараттық бағдарлама ) on Qostanai TV</desc>
- </programme>
- <programme start="20260828074500 +0500" stop="20260829074500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Дала өркениеті» бағдарламасы</title>
-  <desc lang="en">Program «Дала өркениеті» бағдарламасы on Semei TV</desc>
- </programme>
- <programme start="20260828074500 +0500" stop="20260828081500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Дала өркениеті» бағдарламасы</title>
-  <desc lang="en">Program «Дала өркениеті» бағдарламасы on Semei TV</desc>
- </programme>
- <programme start="20260828081500 +0500" stop="20260829081500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Суперкөлік Самұрық»  мультфильмі</title>
-  <desc lang="en">Program «Суперкөлік Самұрық»  мультфильмі on Semei TV</desc>
- </programme>
- <programme start="20260828081500 +0500" stop="20260828090500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Суперкөлік Самұрық»  мультфильмі</title>
-  <desc lang="en">Program «Суперкөлік Самұрық»  мультфильмі on Semei TV</desc>
- </programme>
- <programme start="20260828090500 +0500" stop="20260829090500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Ойыншық сақшылары» мультфильм</title>
-  <desc lang="en">Program «Ойыншық сақшылары» мультфильм on Semei TV</desc>
- </programme>
- <programme start="20260828090500 +0500" stop="20260828093000 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Ойыншық сақшылары» мультфильм</title>
-  <desc lang="en">Program «Ойыншық сақшылары» мультфильм on Semei TV</desc>
- </programme>
- <programme start="20260828093000 +0500" stop="20260829093000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"ЕЛГЕ СӘЛЕМ!" - ақпаратты-танымдық, ойын-сауықтық бағдарлама тікелей эфир</title>
-  <desc lang="en">Program "ЕЛГЕ СӘЛЕМ!" - ақпаратты-танымдық, ойын-сауықтық бағдарлама тікелей эфир on Semei TV</desc>
- </programme>
- <programme start="20260828093000 +0500" stop="20260828113000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"ЕЛГЕ СӘЛЕМ!" - ақпаратты-танымдық, ойын-сауықтық бағдарлама тікелей эфир</title>
-  <desc lang="en">Program "ЕЛГЕ СӘЛЕМ!" - ақпаратты-танымдық, ойын-сауықтық бағдарлама тікелей эфир on Semei TV</desc>
- </programme>
- <programme start="20260828113000 +0500" stop="20260829113000 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Топырақ пен Хауа»  Телехикая</title>
-  <desc lang="en">Program «Топырақ пен Хауа»  Телехикая on Semei TV</desc>
- </programme>
- <programme start="20260828113000 +0500" stop="20260828123000 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Топырақ пен Хауа»  Телехикая</title>
-  <desc lang="en">Program «Топырақ пен Хауа»  Телехикая on Semei TV</desc>
- </programme>
- <programme start="20260828123000 +0500" stop="20260829123000 +0500" channel="SemeiTV.kz">
-  <title lang="en">«DIALOG» сұхбат бағдарламасы  /қайталау/</title>
-  <desc lang="en">Program «DIALOG» сұхбат бағдарламасы  /қайталау/ on Semei TV</desc>
- </programme>
- <programme start="20260828123000 +0500" stop="20260828133500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«DIALOG» сұхбат бағдарламасы  /қайталау/</title>
-  <desc lang="en">Program «DIALOG» сұхбат бағдарламасы  /қайталау/ on Semei TV</desc>
- </programme>
- <programme start="20260828133500 +0500" stop="20260829133500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Киелі Қазақстан» бағдарламасы</title>
-  <desc lang="en">Program «Киелі Қазақстан» бағдарламасы on Semei TV</desc>
- </programme>
- <programme start="20260828133500 +0500" stop="20260828175500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Киелі Қазақстан» бағдарламасы</title>
-  <desc lang="en">Program «Киелі Қазақстан» бағдарламасы on Semei TV</desc>
- </programme>
- <programme start="20260828175500 +0500" stop="20260829175500 +0500" channel="SemeiTV.kz">
-  <title lang="en">Техникалық үзіліс</title>
-  <desc lang="en">Program Техникалық үзіліс on Semei TV</desc>
- </programme>
- <programme start="20260828175500 +0500" stop="20260829141000 +0500" channel="SemeiTV.kz">
-  <title lang="en">Техникалық үзіліс</title>
-  <desc lang="en">Program Техникалық үзіліс on Semei TV</desc>
- </programme>
- <programme start="20260828141000 +0500" stop="20260829141000 +0500" channel="SemeiTV.kz">
-  <title lang="en">17:55 Техникалық үзіліс</title>
-  <desc lang="en">Program 17:55 Техникалық үзіліс on Semei TV</desc>
- </programme>
- <programme start="20260828141000 +0500" stop="20260829141000 +0500" channel="SemeiTV.kz">
-  <title lang="en">17:55 Техникалық үзіліс</title>
-  <desc lang="en">Program 17:55 Техникалық үзіліс on Semei TV</desc>
- </programme>
- <programme start="20260828141000 +0500" stop="20260828184500 +0500" channel="SemeiTV.kz">
-  <title lang="en">17:55 Техникалық үзіліс</title>
-  <desc lang="en">Program 17:55 Техникалық үзіліс on Semei TV</desc>
- </programme>
- <programme start="20260828184500 +0500" stop="20260829184500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«ҚАЛАДАН АУЫЛҒА» ПИЛОТТЫҚ ЖОБА</title>
-  <desc lang="en">Program «ҚАЛАДАН АУЫЛҒА» ПИЛОТТЫҚ ЖОБА on Semei TV</desc>
- </programme>
- <programme start="20260828184500 +0500" stop="20260828191500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«ҚАЛАДАН АУЫЛҒА» ПИЛОТТЫҚ ЖОБА</title>
-  <desc lang="en">Program «ҚАЛАДАН АУЫЛҒА» ПИЛОТТЫҚ ЖОБА on Semei TV</desc>
- </programme>
- <programme start="20260828191500 +0500" stop="20260829191500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Ғасырлар пернесі» бағдарламасы 24-бөлім</title>
-  <desc lang="en">Program «Ғасырлар пернесі» бағдарламасы 24-бөлім on Semei TV</desc>
- </programme>
- <programme start="20260828191500 +0500" stop="20260828194000 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Ғасырлар пернесі» бағдарламасы 24-бөлім</title>
-  <desc lang="en">Program «Ғасырлар пернесі» бағдарламасы 24-бөлім on Semei TV</desc>
- </programme>
- <programme start="20260828194000 +0500" stop="20260829194000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"СПЕЦИАЛЬНЫЙ РЕПОРТАЖ" репортаж</title>
-  <desc lang="en">Program "СПЕЦИАЛЬНЫЙ РЕПОРТАЖ" репортаж on Semei TV</desc>
- </programme>
- <programme start="20260828194000 +0500" stop="20260828200000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"СПЕЦИАЛЬНЫЙ РЕПОРТАЖ" репортаж</title>
-  <desc lang="en">Program "СПЕЦИАЛЬНЫЙ РЕПОРТАЖ" репортаж on Semei TV</desc>
- </programme>
- <programme start="20260828200000 +0500" stop="20260829200000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"Ел ішінде" бағдарламасы</title>
-  <desc lang="en">Program "Ел ішінде" бағдарламасы on Semei TV</desc>
- </programme>
- <programme start="20260828200000 +0500" stop="20260828201000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"Ел ішінде" бағдарламасы</title>
-  <desc lang="en">Program "Ел ішінде" бағдарламасы on Semei TV</desc>
- </programme>
- <programme start="20260828201000 +0500" stop="20260829201000 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Топырақ пен Хауа» 80-бөлім Телехикая</title>
-  <desc lang="en">Program «Топырақ пен Хауа» 80-бөлім Телехикая on Semei TV</desc>
- </programme>
- <programme start="20260828201000 +0500" stop="20260828214500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Топырақ пен Хауа» 80-бөлім Телехикая</title>
-  <desc lang="en">Program «Топырақ пен Хауа» 80-бөлім Телехикая on Semei TV</desc>
- </programme>
- <programme start="20260828214500 +0500" stop="20260829214500 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Қазақтар» бағдарламасы</title>
-  <desc lang="en">Program «Қазақтар» бағдарламасы on Semei TV</desc>
- </programme>
- <programme start="20260828214500 +0500" stop="20260828221000 +0500" channel="SemeiTV.kz">
-  <title lang="en">«Қазақтар» бағдарламасы</title>
-  <desc lang="en">Program «Қазақтар» бағдарламасы on Semei TV</desc>
- </programme>
- <programme start="20260828221000 +0500" stop="20260829221000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"Таңдау" 9-бөлім</title>
-  <desc lang="en">Program "Таңдау" 9-бөлім on Semei TV</desc>
- </programme>
- <programme start="20260828221000 +0500" stop="20260828234000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"Таңдау" 9-бөлім</title>
-  <desc lang="en">Program "Таңдау" 9-бөлім on Semei TV</desc>
- </programme>
- <programme start="20260828234000 +0500" stop="20260829234000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"Ынтымақ ауылы" 10-бөлім</title>
-  <desc lang="en">Program "Ынтымақ ауылы" 10-бөлім on Semei TV</desc>
- </programme>
- <programme start="20260828234000 +0500" stop="20260829004000 +0500" channel="SemeiTV.kz">
-  <title lang="en">"Ынтымақ ауылы" 10-бөлім</title>
-  <desc lang="en">Program "Ынтымақ ауылы" 10-бөлім on Semei TV</desc>
+ <programme start="20260828110000 +0800" stop="20260828150000 +0800" channel="CLTV36.ph">
+  <title lang="en">Saturday, 8:00 – 11:00 AM, 1:00 – 3:00 PM</title>
+  <desc lang="en">Broadcast of Saturday, 8:00 – 11:00 AM, 1:00 – 3:00 PM on CLTV36</desc>
  </programme>
 </tv>
