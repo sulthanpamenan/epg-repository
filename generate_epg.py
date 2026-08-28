@@ -33,7 +33,6 @@ IGNORE_WORDS_KZ = {
 
 EPG_TARGET_SOURCES = [
   {"id": "TPChannel.th", "name": "TP Channel", "url": "https://www.tpchannel.org/tv/schedule", "icon": "", "utc_offset": "+0700"},
-  {"id": "PadangTV.id", "name": "Padang TV", "url": "https://padangtv.id/schedule/", "icon": "https://padangtv.id/wp-content/uploads/2020/07/logo1-e1595189708614.png", "utc_offset": "+0700"},
   {"id": "RedBullTV.global", "name": "Red Bull TV", "url": "https://www.redbull.tv/en/epg", "icon": "", "utc_offset": "+0000"},
   {"id": "MNCVision.all", "name": "MNC Vision All Channels", "url": "https://www.mncvision.id/schedule/formSearch", "icon": "", "utc_offset": "+0700"},
   {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "icon": "", "utc_offset": "+0800"},
@@ -84,6 +83,36 @@ def clean_text_str(val):
     if not val:
         return ""
     return re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", str(val)).strip()
+
+def fix_and_sort_epg_programmes(programmes):
+    """
+    Mengurutkan program berdasarkan channel dan waktu mulai secara kronologis,
+    serta menghilangkan entri dengan slot waktu bentrok/duplikat.
+    """
+    seen_slots = set()
+    cleaned_programmes = []
+
+    sorted_programmes = sorted(
+        programmes, 
+        key=lambda x: (x['channel'], x['start'])
+    )
+
+    for prog in sorted_programmes:
+        channel = prog['channel']
+        start = prog['start']
+        stop = prog['stop']
+
+        if stop <= start:
+            continue
+
+        slot_key = (channel, start)
+        if slot_key in seen_slots:
+            continue
+            
+        seen_slots.add(slot_key)
+        cleaned_programmes.append(prog)
+
+    return cleaned_programmes
 
 # =========================================================================
 # 0. TP CHANNEL (THAILAND) - API JSON PARSER
@@ -155,94 +184,7 @@ def fetch_epg_tpchannel(target):
     return channels, programmes
 
 # =========================================================================
-# 1. PADANG TV - ADVANCED SCRAPER WITH MULTI-DAY & FALLBACK
-# =========================================================================
-def fetch_epg_padangtv(target):
-    epg_id = target["id"]
-    programmes = []
-    icon = target.get("icon") or "https://padangtv.id/wp-content/uploads/2020/07/logo1-e1595189708614.png"
-    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
-    offset = target.get("utc_offset", "+0700")
-    today_local = get_now_in_channel_tz(offset)
-
-    extracted = []
-
-    try:
-        res = HTTP_SESSION.get(target["url"], timeout=15)
-        if res.status_code == 200:
-            soup = BeautifulSoup(res.text, "html.parser")
-            items = soup.select("tr") or soup.select(".schedule-item") or soup.select(".elementor-icon-list-item")
-            
-            for item in items:
-                text = item.get_text(" ", strip=True)
-                parts = text.replace(".", ":").split()
-                if not parts:
-                    continue
-                
-                time_part = parts[0]
-                if ":" in time_part and len(time_part) <= 5:
-                    title = " ".join(parts[1:])
-                    if title and not title.isdigit():
-                        t_str = time_part.zfill(5)
-                        if not extracted or extracted[-1][0] != t_str:
-                            extracted.append((
-                                t_str, 
-                                clean_text_str(title), 
-                                clean_text_str(f"Saksikan tayangan {title} secara langsung hanya di Padang TV.")
-                            ))
-    except Exception as e:
-        print(f"[!] PadangTV Scraping Warning: {e}")
-
-    if not extracted:
-        print("[!] Padang TV: Web schedule kosong. Mengaktifkan professional fallback schedule...")
-        extracted = [
-            ("05:00", "Salingka Minang Morning", "Program musik dan sajian kebudayaan khas Minangkabau untuk menyapa pagi Anda dengan alunan lagu daerah populer."),
-            ("06:00", "Detak Sumbar Pagi", "Sajikan berita terkini, hangat, dan terpercaya seputar Sumatera Barat, peristiwa lokal, sosial, dan ekonomi pagi ini."),
-            ("07:30", "Lagu Minang Hits", "Kumpulan video musik Minang terbaik dan terpopuler dari para penyanyi legendaris hingga seniman muda Sumatera Barat."),
-            ("09:00", "Dapur Kita", "Acara kuliner khas Minang dan nusantara. Mengulas resep masakan tradisional, tips memasak, dan wisata kuliner terfavorit."),
-            ("11:00", "Info Publik", "Informasi seputar pelayanan publik, kebijakan pemerintah daerah Sumatera Barat, dan sosialisasi program kemasyarakatan."),
-            ("12:00", "Detak Sumbar Siang", "Rangkuman berita terkini tengah hari mengenai peristiwa penting, politik, dan kabar daerah terupdate dari seluruh wilayah Sumbar."),
-            ("13:30", "Feature Daerah", "Program dokumenter lokal yang mengangkat potensi keindahan alam, kearifan lokal, pariwisata, dan potensi UMKM Sumatera Barat."),
-            ("15:30", "Salingka Minang Sore", "Menemani sore Anda dengan sajian hiburan, seni pertunjukan tradisional Minangkabau, dan lagu-lagu daerah pilihan."),
-            ("17:00", "Mimbar Agama", "Siar keagamaan Islam, ceramah spiritual, dan kajian fikih sehari-hari menjelang waktu ibadah maghrib."),
-            ("19:00", "Detak Sumbar Utama", "Program berita utama malam hari yang menyajikan laporan mendalam, investigasi, dan rangkuman peristiwa terbesar hari ini di Sumbar."),
-            ("20:30", "Talkshow Interaktif", "Diskusi publik bersama tokoh daerah, pengamat, dan pejabat publik mengulas isu-isu hangat terkini di Sumatera Barat."),
-            ("22:00", "Sinema / Salingka Minang Malam", "Tayangan hiburan malam yang menghadirkan pertunjukan seni drama, komedi Minang, dan deretan lagu nostalgia pilihan."),
-            ("00:00", "Padang TV Night Broadcast", "Rangkaian siaran ulang program-program unggulan Padang TV untuk menemani waktu istirahat malam Anda.")
-        ]
-
-    dates_to_generate = [today_local.date() + timedelta(days=i) for i in range(3)]
-
-    for current_date in dates_to_generate:
-        for i in range(len(extracted)):
-            t_str, title, desc = extracted[i]
-            try:
-                time_struct = datetime.strptime(t_str, "%H:%M").time()
-                start_dt = datetime.combine(current_date, time_struct)
-
-                if i + 1 < len(extracted):
-                    next_time_struct = datetime.strptime(extracted[i+1][0], "%H:%M").time()
-                    stop_dt = datetime.combine(current_date, next_time_struct)
-                    if stop_dt <= start_dt:
-                        stop_dt += timedelta(days=1)
-                else:
-                    stop_dt = start_dt + timedelta(hours=3)
-
-                programmes.append({
-                    "channel": epg_id,
-                    "start": format_xmltv_date(start_dt, offset),
-                    "stop": format_xmltv_date(stop_dt, offset),
-                    "title": title,
-                    "desc": desc,
-                    "lang": "id",
-                })
-            except Exception:
-                continue
-
-    return channels, programmes
-
-# =========================================================================
-# 2. RED BULL TV
+# 1. RED BULL TV
 # =========================================================================
 def fetch_epg_redbull(target):
     epg_id = target["id"]
@@ -294,7 +236,7 @@ def fetch_epg_redbull(target):
     return channels, programmes
 
 # =========================================================================
-# 3. MNC VISION - DIRECT POST FORM PARSER
+# 2. MNC VISION - DIRECT POST FORM PARSER
 # =========================================================================
 def fetch_epg_mncvision(target):
     channels, programmes = [], []
@@ -378,7 +320,7 @@ def fetch_epg_mncvision(target):
     return channels, programmes
 
 # =========================================================================
-# 4. CLTV36 (PHILIPPINES)
+# 3. CLTV36 (PHILIPPINES)
 # =========================================================================
 def fetch_epg_cltv36(target):
     epg_id = target["id"]
@@ -435,7 +377,7 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 5. QAZAQSTAN NETWORK (WORKER PROXY ENFORCED)
+# 4. QAZAQSTAN NETWORK (WORKER PROXY ENFORCED)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
@@ -575,7 +517,7 @@ def build_xmltv_programmes(epg_id, target, channels, raw_progs):
     return channels, programmes
 
 # =========================================================================
-# 6. UNIVERSAL SCRAPER
+# 5. UNIVERSAL SCRAPER
 # =========================================================================
 def auto_scrape_epg(target):
     epg_id = target["id"]
@@ -638,8 +580,6 @@ def process_single_target(target):
 
     if "tpchannel.org" in t_url or t_id == "TPChannel.th":
         return fetch_epg_tpchannel(target)
-    elif "padangtv.id" in t_url or t_id == "PadangTV.id":
-        return fetch_epg_padangtv(target)
     elif "mncvision" in t_url:
         return fetch_epg_mncvision(target)
     elif "redbull" in t_url or t_id == "RedBullTV.global":
@@ -673,6 +613,9 @@ def generate_xmltv():
     for ch_list, progs in results:
         all_channels.extend(ch_list)
         all_programmes.extend(progs)
+
+    # Clean & Sort EPG Programmes Kronologis
+    all_programmes = fix_and_sort_epg_programmes(all_programmes)
 
     # 1. Channels
     for ch in all_channels:
