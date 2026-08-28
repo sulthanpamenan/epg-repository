@@ -177,45 +177,82 @@ def fetch_epg_redbull(target):
     programmes = []
     channels = [{"id": epg_id, "name": target["name"]}]
 
+    graphql_url = "https://api.redbull.tv/v3/graphql"
+    
+    # Query GraphQL resmi Red Bull TV untuk Linear Channel EPG
+    query = """
+    query GetLinearEpg {
+      linearChannel(id: "rrn:content:video-channels:c81f8686-ab67-4965-ba04-5f6658bb96cc") {
+        epg {
+          items {
+            title
+            subtitle
+            showTitle
+            startTime
+            endTime
+            description
+          }
+        }
+      }
+    }
+    """
+    
+    rb_headers = {
+        "User-Agent": HEADERS["User-Agent"],
+        "Content-Type": "application/json",
+        "Accept": "*/*",
+    }
+
     try:
-        res = HTTP_SESSION.get("https://www.redbull.tv/en/epg", timeout=15)
+        res = HTTP_SESSION.post(graphql_url, json={"query": query}, headers=rb_headers, timeout=12)
+        
+        # Fallback ke REST API v5 jika GraphQL merespons non-200
+        if res.status_code != 200:
+            rest_url = "https://tv-api.redbull.com/products/dynamic/v5.2/rbtv/en/id/rrn:content:video-channels:c81f8686-ab67-4965-ba04-5f6658bb96cc"
+            res = HTTP_SESSION.get(rest_url, headers=rb_headers, timeout=12)
+
         if res.status_code == 200:
-            soup = BeautifulSoup(res.text, "html.parser")
+            data = res.json()
             
-            # Extract JSON Next.js Data dari tag __NEXT_DATA__
-            next_data_tag = soup.find("script", id="__NEXT_DATA__")
-            if next_data_tag and next_data_tag.string:
-                js_data = json.loads(next_data_tag.string)
+            # Extract dari GraphQL atau REST response
+            items = []
+            if "data" in data and data["data"].get("linearChannel"):
+                items = data["data"]["linearChannel"]["epg"].get("items", [])
+            else:
+                items = data.get("epg", []) or data.get("schedules", []) or data.get("items", [])
+
+            for item in items:
+                # Ambil hierarki judul secara presisi: showTitle/title + subtitle
+                main_title = item.get("showTitle") or item.get("title") or item.get("label") or ""
+                sub_title = item.get("subtitle") or item.get("subTitle") or ""
                 
-                # Cari blok EPG di dalam state Next.js
-                page_props = js_data.get("props", {}).get("pageProps", {})
-                epg_items = page_props.get("epg", []) or page_props.get("initialState", {}).get("epg", [])
+                if main_title and sub_title and sub_title.lower() not in main_title.lower():
+                    full_title = f"{main_title} - {sub_title}"
+                else:
+                    full_title = main_title or sub_title or "Red Bull TV Special"
 
-                for item in epg_items:
-                    title = item.get("label") or item.get("title") or ""
-                    sub_title = item.get("subTitle") or item.get("subtitle") or ""
-                    full_title = f"{title} - {sub_title}" if (title and sub_title) else (title or sub_title)
+                desc = item.get("description") or f"Program {full_title} on Red Bull TV"
+                
+                start_iso = item.get("startTime") or item.get("start_time")
+                end_iso = item.get("endTime") or item.get("end_time")
 
-                    start_iso = item.get("startTime") or item.get("start_time")
-                    end_iso = item.get("endTime") or item.get("end_time")
+                if start_iso and end_iso:
+                    try:
+                        start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
+                        end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00"))
 
-                    if start_iso and end_iso:
-                        try:
-                            start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
-                            end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00"))
-
-                            programmes.append({
-                                "channel": epg_id,
-                                "start": format_xmltv_date(start_dt, "+0000"),
-                                "stop": format_xmltv_date(end_dt, "+0000"),
-                                "title": clean_text_str(full_title),
-                                "desc": clean_text_str(item.get("description", full_title)),
-                                "lang": "en",
-                            })
-                        except Exception:
-                            continue
+                        programmes.append({
+                            "channel": epg_id,
+                            "start": format_xmltv_date(start_dt, "+0000"),
+                            "stop": format_xmltv_date(end_dt, "+0000"),
+                            "title": clean_text_str(full_title),
+                            "desc": clean_text_str(desc),
+                            "lang": "en",
+                        })
+                    except Exception:
+                        continue
     except Exception as e:
-        print(f"[!] RedBull Error: {e}")
+        print(f"[!] RedBullTV GraphQL/API Error: {e}")
 
     return channels, programmes
 
