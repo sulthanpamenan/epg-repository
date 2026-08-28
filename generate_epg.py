@@ -393,7 +393,7 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK (WORKER PROXY ENFORCED)
+# 4. QAZAQSTAN NETWORK (TERMASUK BALAPAN TV - FIXED HTML PARSER)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
@@ -421,6 +421,7 @@ def fetch_epg_qazaqstan(target):
 
             soup = BeautifulSoup(res.text, "html.parser")
 
+            # 1. Prioritas: Ambil data dari Livewire State / JSON jika ada
             wire_el = soup.find(lambda tag: tag.has_attr("wire:snapshot") or tag.has_attr("wire:initial-data"))
             if wire_el:
                 try:
@@ -444,7 +445,7 @@ def fetch_epg_qazaqstan(target):
                                 raw_progs.append({
                                     "start_dt": start_dt,
                                     "title": clean_text_str(title),
-                                    "desc": clean_text_str(f"Program {title} di {target['name']}"),
+                                    "desc": clean_text_str(f"Бағдарлама {title} - {target['name']}"),
                                 })
                             except Exception:
                                 continue
@@ -453,50 +454,60 @@ def fetch_epg_qazaqstan(target):
                 except Exception:
                     pass
 
+            # 2. Fallback Khusus Balapan TV & Layout Kartu (Mencegah Teks Masal)
             if not raw_progs:
-                selectors = [
-                    ".schedule-item", ".program-item", ".tv-program", 
-                    ".schedule-list li", ".program-list li",
-                    "[class*='schedule']", "[class*='program']"
-                ]
-                schedule_blocks = []
-                for sel in selectors:
-                    schedule_blocks = soup.select(sel)
-                    if schedule_blocks:
-                        break
+                # Cari seluruh elemen berbentuk kartu/baris program individual
+                cards = soup.find_all(lambda tag: tag.name in ["div", "li", "a"] and TIME_PATTERN_HM.search(tag.get_text()))
                 
-                if not schedule_blocks:
-                    schedule_blocks = soup.find_all(["li", "tr", "div", "article"])
+                # Filter hanya kartu level terbawah (child paling dalam yang memuat jam)
+                specific_cards = []
+                for card in cards:
+                    # Pastikan kartu tidak membungkus kartu lain yang juga punya jam
+                    child_has_time = any(TIME_PATTERN_HM.search(child.get_text()) for child in card.find_all(recursive=False))
+                    if not child_has_time:
+                        specific_cards.append(card)
 
                 seen_times = set()
-                for block in schedule_blocks:
-                    txt = block.get_text(" ", strip=True)
+                for card in specific_cards:
+                    txt = card.get_text(" ", strip=True)
                     match = TIME_PATTERN_HM.search(txt)
-                    if match:
-                        t_str = match.group(1).replace(".", ":").zfill(5)
-                        title_candidate = txt[match.end():].strip(" -–:\t\n\r")
-                        
-                        for w in IGNORE_WORDS_KZ:
-                            title_candidate = title_candidate.replace(w, "").strip()
-                        
-                        title_candidate = re.sub(r"^\d{1,2}[:.]\d{2}\s*", "", title_candidate)
-                        title_candidate = re.sub(r"^\d{2}\b", "", title_candidate).strip()
+                    if not match:
+                        continue
+                    
+                    t_str = match.group(1).replace(".", ":").zfill(5)
+                    
+                    # Ambil teks setelah substring jam
+                    raw_title = txt[match.end():].strip(" -–:\t\n\r")
+                    
+                    # Potong jika tanpa sengaja terbawa jam berikutnya
+                    next_time = TIME_PATTERN_HM.search(raw_title)
+                    if next_time:
+                        raw_title = raw_title[:next_time.start()].strip()
 
-                        if title_candidate and len(title_candidate) > 2:
-                            try:
-                                start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-                                time_key = start_dt.strftime("%H:%M")
-                                if time_key not in seen_times:
-                                    seen_times.add(time_key)
-                                    raw_progs.append({
-                                        "start_dt": start_dt,
-                                        "title": clean_text_str(title_candidate),
-                                        "desc": clean_text_str(f"Program {title_candidate} di {target['name']}"),
-                                    })
-                            except Exception:
-                                continue
+                    # Bersihkan kata-kata sampah khas website KZ
+                    for w in IGNORE_WORDS_KZ:
+                        raw_title = raw_title.replace(w, "").strip()
+                    
+                    title = clean_text_str(raw_title)
+
+                    if title and len(title) >= 2:
+                        try:
+                            start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+                            time_key = start_dt.strftime("%H:%M")
+                            
+                            if time_key not in seen_times:
+                                seen_times.add(time_key)
+                                raw_progs.append({
+                                    "start_dt": start_dt,
+                                    "title": title,
+                                    "desc": clean_text_str(f"Бағдарлама {title} - {target['name']}"),
+                                })
+                        except Exception:
+                            continue
+
                 if raw_progs:
                     break
+
         except Exception as e:
             print(f"[!] Scraper Warning [{target['name']}] on {url}: {e}")
             continue
@@ -504,32 +515,6 @@ def fetch_epg_qazaqstan(target):
     if raw_progs:
         return build_xmltv_programmes(epg_id, target, channels, raw_progs)
     
-    return channels, programmes
-
-def build_xmltv_programmes(epg_id, target, channels, raw_progs):
-    programmes = []
-    raw_progs.sort(key=lambda x: x["start_dt"])
-    offset = target.get("utc_offset", "+0500")
-
-    for i in range(len(raw_progs)):
-        curr = raw_progs[i]
-        start_dt = curr["start_dt"]
-
-        if i + 1 < len(raw_progs):
-            stop_dt = raw_progs[i + 1]["start_dt"]
-            if stop_dt <= start_dt:
-                stop_dt += timedelta(days=1)
-        else:
-            stop_dt = start_dt + timedelta(hours=1)
-
-        programmes.append({
-            "channel": epg_id,
-            "start": format_xmltv_date(start_dt, offset),
-            "stop": format_xmltv_date(stop_dt, offset),
-            "title": curr["title"],
-            "desc": curr["desc"],
-            "lang": "kk",
-        })
     return channels, programmes
 
 # =========================================================================
