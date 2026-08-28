@@ -14,7 +14,7 @@ HEADERS = {
         "(KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
     ),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9,kk;q=0.8,th;q=0.7,id;q=0.6",
+    "Accept-Language": "en-US,en;q=0.9,th;q=0.8,id;q=0.6",
 }
 
 TIME_PATTERN_HM = re.compile(r"(\b[0-2]?\d[:.][0-5]\d\b)")
@@ -56,10 +56,6 @@ HTTP_SESSION.headers.update(HEADERS)
 
 def format_xmltv_date(dt_obj, utc_offset="+0700"):
     return dt_obj.strftime(f"%Y%m%d%H%M%S {utc_offset}")
-
-def get_auto_icon(target_url):
-    domain = target_url.split("//")[-1].split("/")[0]
-    return f"https://www.google.com/s2/favicons?domain={domain}&sz=128"
 
 def parse_offset_hours(offset_str):
     try:
@@ -104,46 +100,20 @@ def fix_and_sort_epg_programmes(programmes):
 
     return cleaned_programmes
 
-def build_xmltv_programmes(epg_id, target, channels, raw_progs):
-    programmes = []
-    raw_progs.sort(key=lambda x: x["start_dt"])
-    offset = target.get("utc_offset", "+0500")
-
-    for i in range(len(raw_progs)):
-        curr = raw_progs[i]
-        start_dt = curr["start_dt"]
-
-        if i + 1 < len(raw_progs):
-            stop_dt = raw_progs[i + 1]["start_dt"]
-            if stop_dt <= start_dt:
-                stop_dt += timedelta(days=1)
-        else:
-            stop_dt = start_dt + timedelta(hours=1)
-
-        programmes.append({
-            "channel": epg_id,
-            "start": format_xmltv_date(start_dt, offset),
-            "stop": format_xmltv_date(stop_dt, offset),
-            "title": curr["title"],
-            "desc": curr["desc"],
-            "lang": "kk",
-        })
-    return channels, programmes
-
 # =========================================================================
-# 0. TP CHANNEL (THAILAND) - FULL TITLE PARSER
+# 1. TP CHANNEL THAILAND (FIXED MASEHI DATE FILTER)
 # =========================================================================
 def fetch_epg_tpchannel(target):
     epg_id = target["id"]
     programmes = []
-    icon = target.get("icon") or get_auto_icon(target["url"])
-    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
+    channels = [{"id": epg_id, "name": target["name"]}]
     offset = target.get("utc_offset", "+0700")
     today_local = get_now_in_channel_tz(offset)
     
-    thai_year = today_local.year + 543
-    date_param = f"{thai_year}-{today_local.strftime('%m-%d')}"
+    # Memakai tahun Masehi (YYYY-MM-DD) agar API mengembalikan data resmi
+    date_param = today_local.strftime("%Y-%m-%d")
     today_str = today_local.strftime("%Y-%m-%d")
+
     api_url = f"https://www.tpchannel.org/tv/schedule/get-by-date?master_type_id=2&date={date_param}"
     
     tp_headers = {
@@ -163,14 +133,11 @@ def fetch_epg_tpchannel(target):
             for item in items:
                 t_str = item.get("time") or item.get("start_time") or item.get("schedule_time")
                 
-                # Menggabungkan title dan subtitle agar judul Thai + English terambil penuh
+                # Mengambil gabungan title Th + En
                 title_th = item.get("title") or item.get("program_name") or item.get("name") or ""
                 subtitle = item.get("subtitle") or item.get("sub_title") or item.get("title_en") or ""
                 
-                if title_th and subtitle:
-                    full_title = f"{title_th} {subtitle}".strip()
-                else:
-                    full_title = title_th or subtitle
+                full_title = f"{title_th} {subtitle}".strip() if (title_th and subtitle) else (title_th or subtitle)
 
                 if t_str and full_title:
                     t_str = str(t_str).replace(".", ":").zfill(5)[:5]
@@ -203,71 +170,62 @@ def fetch_epg_tpchannel(target):
     return channels, programmes
 
 # =========================================================================
-# 1. RED BULL TV - REAL TITLE & SUBTITLE PARSER
+# 2. RED BULL TV (NEXT.JS EMBEDDED JSON PARSER)
 # =========================================================================
 def fetch_epg_redbull(target):
     epg_id = target["id"]
     programmes = []
-    icon = target.get("icon") or get_auto_icon(target["url"])
-    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
-
-    api_url = "https://tv-api.redbull.com/products/dynamic/v5.2/rbtv/en/id/rrn:content:video-channels:c81f8686-ab67-4965-ba04-5f6658bb96cc"
-    rb_headers = {
-        "User-Agent": HEADERS["User-Agent"],
-        "Accept": "*/*",
-        "Origin": "https://www.redbull.tv",
-        "Referer": "https://www.redbull.tv/",
-    }
+    channels = [{"id": epg_id, "name": target["name"]}]
 
     try:
-        res = HTTP_SESSION.get(api_url, headers=rb_headers, timeout=12)
+        res = HTTP_SESSION.get("https://www.redbull.tv/en/epg", timeout=15)
         if res.status_code == 200:
-            data = res.json()
-            items = data.get("epg", []) or data.get("schedules", []) or data.get("items", [])
-
-            for item in items:
-                # Mengambil label/header dan subTitle untuk membentuk judul spesifik
-                main_title = item.get("label") or item.get("title") or ""
-                sub_title = item.get("subTitle") or item.get("subtitle") or ""
+            soup = BeautifulSoup(res.text, "html.parser")
+            
+            # Extract JSON Next.js Data dari tag __NEXT_DATA__
+            next_data_tag = soup.find("script", id="__NEXT_DATA__")
+            if next_data_tag and next_data_tag.string:
+                js_data = json.loads(next_data_tag.string)
                 
-                if main_title and sub_title:
-                    full_title = f"{main_title} - {sub_title}"
-                else:
-                    full_title = main_title or sub_title or "Red Bull TV Special"
+                # Cari blok EPG di dalam state Next.js
+                page_props = js_data.get("props", {}).get("pageProps", {})
+                epg_items = page_props.get("epg", []) or page_props.get("initialState", {}).get("epg", [])
 
-                desc = item.get("description") or f"Program {full_title} on Red Bull TV"
-                
-                start_iso = item.get("start_time") or item.get("startTime")
-                end_iso = item.get("end_time") or item.get("endTime")
+                for item in epg_items:
+                    title = item.get("label") or item.get("title") or ""
+                    sub_title = item.get("subTitle") or item.get("subtitle") or ""
+                    full_title = f"{title} - {sub_title}" if (title and sub_title) else (title or sub_title)
 
-                if start_iso and end_iso:
-                    try:
-                        start_dt = datetime.fromisoformat(start_iso.replace("Z", "+00:00"))
-                        end_dt = datetime.fromisoformat(end_iso.replace("Z", "+00:00"))
+                    start_iso = item.get("startTime") or item.get("start_time")
+                    end_iso = item.get("endTime") or item.get("end_time")
 
-                        programmes.append({
-                            "channel": epg_id,
-                            "start": format_xmltv_date(start_dt, "+0000"),
-                            "stop": format_xmltv_date(end_dt, "+0000"),
-                            "title": clean_text_str(full_title),
-                            "desc": clean_text_str(desc),
-                            "lang": "en",
-                        })
-                    except Exception:
-                        continue
+                    if start_iso and end_iso:
+                        try:
+                            start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
+                            end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00"))
+
+                            programmes.append({
+                                "channel": epg_id,
+                                "start": format_xmltv_date(start_dt, "+0000"),
+                                "stop": format_xmltv_date(end_dt, "+0000"),
+                                "title": clean_text_str(full_title),
+                                "desc": clean_text_str(item.get("description", full_title)),
+                                "lang": "en",
+                            })
+                        except Exception:
+                            continue
     except Exception as e:
-        print(f"[!] RedBullTV Error: {e}")
+        print(f"[!] RedBull Error: {e}")
 
     return channels, programmes
 
 # =========================================================================
-# 2. CLTV36 (PHILIPPINES)
+# 3. CLTV36
 # =========================================================================
 def fetch_epg_cltv36(target):
     epg_id = target["id"]
     programmes = []
-    icon = target.get("icon") or get_auto_icon(target["url"])
-    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
+    channels = [{"id": epg_id, "name": target["name"]}]
     today_local = get_now_in_channel_tz("+0800")
 
     try:
@@ -315,125 +273,72 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 3. QAZAQSTAN NETWORK (PARSER AKTIF DENGAN PROXY CLOUDFLARE WORKER)
+# 4. QAZAQSTAN NETWORK
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
-    icon = target.get("icon") or get_auto_icon(target["url"])
-    channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
-
+    channels = [{"id": epg_id, "name": target["name"]}]
+    programmes = []
     kz_now = get_now_in_channel_tz("+0500")
     today_str = kz_now.strftime("%Y-%m-%d")
 
-    raw_progs = []
     direct_url = f"{target['url'].rstrip('/')}/{today_str}"
     proxy_prefix = "https://iptv-playlist.sulthan-pamenan.workers.dev/?url="
     
-    urls_to_try = [
-        f"{proxy_prefix}{quote(direct_url, safe='')}",
-        direct_url
-    ]
+    urls_to_try = [f"{proxy_prefix}{quote(direct_url, safe='')}", direct_url]
 
     for url in urls_to_try:
         try:
-            res = HTTP_SESSION.get(url, timeout=20)
+            res = HTTP_SESSION.get(url, timeout=15)
             if res.status_code != 200:
                 continue
 
             soup = BeautifulSoup(res.text, "html.parser")
+            raw_progs = []
 
-            # 1. Parsing dari Livewire state JSON
-            wire_el = soup.find(lambda tag: tag.has_attr("wire:snapshot") or tag.has_attr("wire:initial-data"))
-            if wire_el:
-                try:
-                    raw_json = wire_el.get("wire:snapshot") or wire_el.get("wire:initial-data")
-                    data = json.loads(raw_json)
-                    
-                    schedules = []
-                    if "memo" in data and "data" in data["memo"]:
-                        schedules = data["memo"]["data"].get("schedules", [])
-                    elif "data" in data:
-                        schedules = data["data"].get("schedules", [])
-                    elif "schedules" in data:
-                        schedules = data["schedules"]
-                    
-                    for item in schedules:
-                        t_start = item.get("time") or item.get("start_time") or item.get("start")
-                        title = item.get("title") or item.get("name") or item.get("program")
-                        category = item.get("category") or item.get("subtitle") or ""
-                        
-                        if t_start and title:
-                            full_title = f"{category}. {title}".strip(" .") if category else title
-                            try:
-                                start_dt = datetime.strptime(f"{today_str} {t_start}", "%Y-%m-%d %H:%M")
-                                raw_progs.append({
-                                    "start_dt": start_dt,
-                                    "title": clean_text_str(full_title),
-                                    "desc": clean_text_str(f"Бағдарлама {full_title} - {target['name']}"),
-                                })
-                            except Exception:
-                                continue
-                    if raw_progs:
-                        break
-                except Exception:
-                    pass
-
-            # 2. Parsing HTML Fallback jika Livewire JSON tidak ditemukan
-            if not raw_progs:
-                items = soup.find_all(lambda tag: tag.name in ["div", "li", "tr"] and TIME_PATTERN_HM.search(tag.get_text()))
-                
-                specific_items = []
-                for item in items:
-                    child_has_time = any(TIME_PATTERN_HM.search(c.get_text()) for c in item.find_all(recursive=False))
-                    if not child_has_time:
-                        specific_items.append(item)
-
-                seen_times = set()
-                for item in specific_items:
-                    txt = item.get_text(" ", strip=True)
-                    match = TIME_PATTERN_HM.search(txt)
-                    if not match:
-                        continue
-                    
+            for element in soup.find_all(["div", "li", "tr"]):
+                text = element.get_text(" ", strip=True)
+                match = TIME_PATTERN_HM.search(text)
+                if match:
                     t_str = match.group(1).replace(".", ":").zfill(5)
-                    raw_title = txt[match.end():].strip(" -–:\t\n\r")
+                    raw_title = text[match.end():].strip(" -–:\t\n\r")
                     
-                    next_time = TIME_PATTERN_HM.search(raw_title)
-                    if next_time:
-                        raw_title = raw_title[:next_time.start()].strip()
-
                     for w in IGNORE_WORDS_KZ:
                         raw_title = raw_title.replace(w, "").strip()
                     
-                    raw_title = re.sub(r"^\d{1,2}[:.]\d{2}\s*", "", raw_title)
                     title = clean_text_str(raw_title)
-
-                    if title and len(title) >= 2:
+                    if title and len(title) >= 2 and not any(r["title"] == title for r in raw_progs):
                         try:
                             start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-                            time_key = start_dt.strftime("%H:%M")
-                            
-                            if time_key not in seen_times:
-                                seen_times.add(time_key)
-                                raw_progs.append({
-                                    "start_dt": start_dt,
-                                    "title": title,
-                                    "desc": clean_text_str(f"Бағдарлама {title} - {target['name']}"),
-                                })
+                            raw_progs.append({"start_dt": start_dt, "title": title})
                         except Exception:
                             continue
 
-                if raw_progs:
-                    break
+            if raw_progs:
+                raw_progs.sort(key=lambda x: x["start_dt"])
+                for i in range(len(raw_progs)):
+                    curr = raw_progs[i]
+                    start_dt = curr["start_dt"]
+                    if i + 1 < len(raw_progs):
+                        stop_dt = raw_progs[i + 1]["start_dt"]
+                        if stop_dt <= start_dt:
+                            stop_dt += timedelta(days=1)
+                    else:
+                        stop_dt = start_dt + timedelta(hours=1)
 
-        except Exception as e:
-            print(f"[!] Scraper Warning [{target['name']}]: {e}")
+                    programmes.append({
+                        "channel": epg_id,
+                        "start": format_xmltv_date(start_dt, "+0500"),
+                        "stop": format_xmltv_date(stop_dt, "+0500"),
+                        "title": curr["title"],
+                        "desc": clean_text_str(f"Бағдарлама {curr['title']} - {target['name']}"),
+                        "lang": "kk",
+                    })
+                break
+        except Exception:
             continue
 
-    if raw_progs:
-        return build_xmltv_programmes(epg_id, target, channels, raw_progs)
-    
-    return channels, []
+    return channels, programmes
 
 # ROUTER
 def process_single_target(target):
@@ -451,23 +356,15 @@ def process_single_target(target):
     else:
         return fetch_epg_tpchannel(target)
 
-# =========================================================================
 # MAIN LOGIC
-# =========================================================================
 def generate_xmltv():
     print("[*] Starting EPG scraping...")
-    tv_elem = ET.Element(
-        "tv",
-        {
-            "generator-info-name": "Universal IPTV EPG Generator",
-            "generator-info-url": "https://github.com/sulthanpamenan",
-        },
-    )
+    tv_elem = ET.Element("tv", {"generator-info-name": "Universal IPTV EPG Generator", "generator-info-url": "https://github.com/sulthanpamenan"})
 
     all_channels = []
     all_programmes = []
 
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         results = executor.map(process_single_target, EPG_TARGET_SOURCES)
 
     for ch_list, progs in results:
@@ -482,11 +379,7 @@ def generate_xmltv():
         d_elem.text = ch["name"]
 
     for prog in all_programmes:
-        p_elem = ET.SubElement(tv_elem, "programme", {
-            "start": prog["start"],
-            "stop": prog["stop"],
-            "channel": prog["channel"],
-        })
+        p_elem = ET.SubElement(tv_elem, "programme", {"start": prog["start"], "stop": prog["stop"], "channel": prog["channel"]})
         t_elem = ET.SubElement(p_elem, "title", lang=prog.get("lang", "en"))
         t_elem.text = prog["title"]
         if prog.get("desc"):
@@ -497,10 +390,7 @@ def generate_xmltv():
     tree = ET.ElementTree(tv_elem)
     tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
 
-    print(
-        f"\n[SUCCESS] `epg.xml` file updated with {len(all_channels)} channels"
-        f" and {len(all_programmes)} programs!"
-    )
+    print(f"\n[SUCCESS] `epg.xml` file updated with {len(all_channels)} channels and {len(all_programmes)} programs!")
 
 if __name__ == "__main__":
     generate_xmltv()
