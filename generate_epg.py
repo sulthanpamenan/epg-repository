@@ -393,7 +393,7 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK (TERMASUK BALAPAN TV - FIXED HTML PARSER)
+# 4. QAZAQSTAN NETWORK (UNIVERSAL PARSER UNTUK SELURUH JARINGAN KZ)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
@@ -421,7 +421,7 @@ def fetch_epg_qazaqstan(target):
 
             soup = BeautifulSoup(res.text, "html.parser")
 
-            # 1. Prioritas: Ambil data dari Livewire State / JSON jika ada
+            # 1. Metode Utama: JSON Livewire State (Sangat Presisi & Cepat)
             wire_el = soup.find(lambda tag: tag.has_attr("wire:snapshot") or tag.has_attr("wire:initial-data"))
             if wire_el:
                 try:
@@ -439,13 +439,16 @@ def fetch_epg_qazaqstan(target):
                     for item in schedules:
                         t_start = item.get("time") or item.get("start_time") or item.get("start")
                         title = item.get("title") or item.get("name") or item.get("program")
+                        category = item.get("category") or item.get("subtitle") or ""
+                        
                         if t_start and title:
+                            full_title = f"{category}. {title}".strip(" .") if category else title
                             try:
                                 start_dt = datetime.strptime(f"{today_str} {t_start}", "%Y-%m-%d %H:%M")
                                 raw_progs.append({
                                     "start_dt": start_dt,
-                                    "title": clean_text_str(title),
-                                    "desc": clean_text_str(f"Бағдарлама {title} - {target['name']}"),
+                                    "title": clean_text_str(full_title),
+                                    "desc": clean_text_str(f"Бағдарлама {full_title} - {target['name']}"),
                                 })
                             except Exception:
                                 continue
@@ -454,29 +457,28 @@ def fetch_epg_qazaqstan(target):
                 except Exception:
                     pass
 
-            # 2. Fallback Khusus Balapan TV & Layout Kartu (Mencegah Teks Masal)
+            # 2. Metode Fallback: Parsing HTML Berbasis Jam (Mendukung Qazsport & Balapan)
             if not raw_progs:
-                # Cari seluruh elemen berbentuk kartu/baris program individual
-                cards = soup.find_all(lambda tag: tag.name in ["div", "li", "a"] and TIME_PATTERN_HM.search(tag.get_text()))
+                # Cari baris program yang memuat penanda jam HH:MM
+                items = soup.find_all(lambda tag: tag.name in ["div", "li", "tr"] and TIME_PATTERN_HM.search(tag.get_text()))
                 
-                # Filter hanya kartu level terbawah (child paling dalam yang memuat jam)
-                specific_cards = []
-                for card in cards:
-                    # Pastikan kartu tidak membungkus kartu lain yang juga punya jam
-                    child_has_time = any(TIME_PATTERN_HM.search(child.get_text()) for child in card.find_all(recursive=False))
+                # Saring hanya container terkecil per jam (agar tidak menggabung masal)
+                specific_items = []
+                for item in items:
+                    child_has_time = any(TIME_PATTERN_HM.search(c.get_text()) for c in item.find_all(recursive=False))
                     if not child_has_time:
-                        specific_cards.append(card)
+                        specific_items.append(item)
 
                 seen_times = set()
-                for card in specific_cards:
-                    txt = card.get_text(" ", strip=True)
+                for item in specific_items:
+                    txt = item.get_text(" ", strip=True)
                     match = TIME_PATTERN_HM.search(txt)
                     if not match:
                         continue
                     
                     t_str = match.group(1).replace(".", ":").zfill(5)
                     
-                    # Ambil teks setelah substring jam
+                    # Teks setelah jam
                     raw_title = txt[match.end():].strip(" -–:\t\n\r")
                     
                     # Potong jika tanpa sengaja terbawa jam berikutnya
@@ -484,10 +486,12 @@ def fetch_epg_qazaqstan(target):
                     if next_time:
                         raw_title = raw_title[:next_time.start()].strip()
 
-                    # Bersihkan kata-kata sampah khas website KZ
+                    # Pembersihan kata sampah khas CMS Qazaqstan
                     for w in IGNORE_WORDS_KZ:
                         raw_title = raw_title.replace(w, "").strip()
                     
+                    # Bersihkan angka standalone sisa regex jam
+                    raw_title = re.sub(r"^\d{1,2}[:.]\d{2}\s*", "", raw_title)
                     title = clean_text_str(raw_title)
 
                     if title and len(title) >= 2:
