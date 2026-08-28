@@ -86,7 +86,7 @@ def clean_text_str(val):
     return re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", str(val)).strip()
 
 # =========================================================================
-# 0. TP CHANNEL (THAILAND) - API JSON PARSER (UPDATED VIA cURL)
+# 0. TP CHANNEL (THAILAND) - API PARSER
 # =========================================================================
 def fetch_epg_tpchannel(target):
     epg_id = target["id"]
@@ -97,7 +97,6 @@ def fetch_epg_tpchannel(target):
     offset = target.get("utc_offset", "+0700")
     today_local = get_now_in_channel_tz(offset)
     
-    # Konversi Tahun Masehi ke Kalender Buddhis Thai (BE = Masehi + 543)
     thai_year = today_local.year + 543
     date_param = f"{thai_year}-{today_local.strftime('%m-%d')}"
     today_str = today_local.strftime("%Y-%m-%d")
@@ -150,7 +149,6 @@ def fetch_epg_tpchannel(target):
     except Exception as e:
         print(f"[!] TP Channel Error: {e}")
 
-    # Fallback ke Scraper Generik jika API gagal me-return data
     if not programmes:
         return auto_scrape_epg(target)
 
@@ -223,7 +221,7 @@ def fetch_epg_padangtv(target):
     return channels, programmes
 
 # =========================================================================
-# 2. RED BULL TV (UPDATED VIA DYNAMIC API)
+# 2. RED BULL TV
 # =========================================================================
 def fetch_epg_redbull(target):
     epg_id = target["id"]
@@ -369,7 +367,7 @@ def fetch_epg_mncvision(target):
     return channels, programmes
 
 # =========================================================================
-# 4. CLTV36 (PHILIPPINES) - EXACT ELEMENTOR DOM PARSER
+# 4. CLTV36 (PHILIPPINES)
 # =========================================================================
 def fetch_epg_cltv36(target):
     epg_id = target["id"]
@@ -382,7 +380,6 @@ def fetch_epg_cltv36(target):
         res = HTTP_SESSION.get(target["url"], timeout=15)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, "html.parser")
-            
             wrappers = soup.select(".elementor-widget-wrap.elementor-element-populated")
             
             for wrap in wrappers:
@@ -427,7 +424,7 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # =========================================================================
-# 5. QAZAQSTAN NETWORK
+# 5. QAZAQSTAN NETWORK (WORKER PROXY ENFORCED)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
@@ -439,12 +436,14 @@ def fetch_epg_qazaqstan(target):
     today_str = kz_now.strftime("%Y-%m-%d")
 
     raw_progs = []
-    urls_to_try = [
-        f"{target['url'].rstrip('/')}/{today_str}",
-    ]
+    direct_url = f"{target['url'].rstrip('/')}/{today_str}"
+    proxy_prefix = "https://iptv-playlist.sulthan-pamenan.workers.dev/?url="
     
-    proxy = "https://iptv-playlist.sulthan-pamenan.workers.dev/?url="
-    urls_to_try.append(f"{proxy}{quote(urls_to_try[0], safe='')}")
+    # Cloudflare Worker Proxy diutamakan untuk menembus Geo-Block
+    urls_to_try = [
+        f"{proxy_prefix}{quote(direct_url, safe='')}",
+        direct_url
+    ]
 
     for url in urls_to_try:
         try:
@@ -454,6 +453,7 @@ def fetch_epg_qazaqstan(target):
 
             soup = BeautifulSoup(res.text, "html.parser")
 
+            # Metodologi 1: Parse data snapshot dari Livewire
             wire_el = soup.find(lambda tag: tag.has_attr("wire:snapshot") or tag.has_attr("wire:initial-data"))
             if wire_el:
                 try:
@@ -486,6 +486,7 @@ def fetch_epg_qazaqstan(target):
                 except Exception:
                     pass
 
+            # Metodologi 2: Fallback ke HTML DOM Scraping
             if not raw_progs:
                 selectors = [
                     ".schedule-item", ".program-item", ".tv-program", 
