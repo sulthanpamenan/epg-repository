@@ -35,7 +35,7 @@ EPG_TARGET_SOURCES = [
   {"id": "TPChannel.th", "name": "TP Channel", "url": "https://www.tpchannel.org/tv/schedule", "icon": "", "utc_offset": "+0700"},
   {"id": "PadangTV.id", "name": "Padang TV", "url": "https://padangtv.id/schedule/", "icon": "https://padangtv.id/wp-content/uploads/2020/07/logo1-e1595189708614.png", "utc_offset": "+0700"},
   {"id": "RedBullTV.global", "name": "Red Bull TV", "url": "https://www.redbull.tv/en/epg", "icon": "", "utc_offset": "+0000"},
-  {"id": "MNCVision.all", "name": "MNC Vision All Channels", "url": "https://www.mncvision.id/channel", "icon": "", "utc_offset": "+0700"},
+  {"id": "MNCVision.all", "name": "MNC Vision All Channels", "url": "https://www.mncvision.id/schedule/formSearch", "icon": "", "utc_offset": "+0700"},
   {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "icon": "", "utc_offset": "+0800"},
   {"id": "Qazaqstan.kz", "name": "Qazaqstan TV", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
   {"id": "QazaqstanInt.kz", "name": "Qazaqstan International", "url": "https://qazaqstan.tv/program", "icon": "", "utc_offset": "+0500"},
@@ -167,7 +167,6 @@ def fetch_epg_padangtv(target):
 
     extracted = []
 
-    # 1. Scraping dari website Padang TV
     try:
         res = HTTP_SESSION.get(target["url"], timeout=15)
         if res.status_code == 200:
@@ -194,12 +193,11 @@ def fetch_epg_padangtv(target):
     except Exception as e:
         print(f"[!] PadangTV Scraping Warning: {e}")
 
-    # 2. Hardcoded Fallback Schedule jika data web kosong
     if not extracted:
         print("[!] Padang TV: Web schedule kosong. Mengaktifkan professional fallback schedule...")
         extracted = [
             ("05:00", "Salingka Minang Morning", "Program musik dan sajian kebudayaan khas Minangkabau untuk menyapa pagi Anda dengan alunan lagu daerah populer."),
-            ("06:00", "Detak Sumbar Pagi", "Sajian berita terkini, hangat, dan terpercaya seputar Sumatera Barat, peristiwa lokal, sosial, dan ekonomi pagi ini."),
+            ("06:00", "Detak Sumbar Pagi", "Sajikan berita terkini, hangat, dan terpercaya seputar Sumatera Barat, peristiwa lokal, sosial, dan ekonomi pagi ini."),
             ("07:30", "Lagu Minang Hits", "Kumpulan video musik Minang terbaik dan terpopuler dari para penyanyi legendaris hingga seniman muda Sumatera Barat."),
             ("09:00", "Dapur Kita", "Acara kuliner khas Minang dan nusantara. Mengulas resep masakan tradisional, tips memasak, dan wisata kuliner terfavorit."),
             ("11:00", "Info Publik", "Informasi seputar pelayanan publik, kebijakan pemerintah daerah Sumatera Barat, dan sosialisasi program kemasyarakatan."),
@@ -213,7 +211,6 @@ def fetch_epg_padangtv(target):
             ("00:00", "Padang TV Night Broadcast", "Rangkaian siaran ulang program-program unggulan Padang TV untuk menemani waktu istirahat malam Anda.")
         ]
 
-    # 3. Proyeksi EPG Multi-Hari (3 Hari ke Depan)
     dates_to_generate = [today_local.date() + timedelta(days=i) for i in range(3)]
 
     for current_date in dates_to_generate:
@@ -297,97 +294,87 @@ def fetch_epg_redbull(target):
     return channels, programmes
 
 # =========================================================================
-# 3. MNC VISION
+# 3. MNC VISION - DIRECT POST FORM PARSER
 # =========================================================================
-def fetch_single_mnc(args):
-    href, raw_name, base_url, today_local, default_icon = args
-    programmes = []
-    clean_name = re.sub(r"[^a-zA-Z0-9]", "", raw_name)
-    if not clean_name:
-        return None, []
-
-    epg_id = f"{clean_name}.mnc"
-    ch_info = {"id": epg_id, "name": f"{raw_name} (MNC)", "icon": default_icon}
-
-    try:
-        res = HTTP_SESSION.get(urljoin(base_url, href), timeout=10)
-        if res.status_code == 200:
-            soup = BeautifulSoup(res.text, "html.parser")
-            items = []
-
-            for row in soup.find_all(["tr", "li", "div", "p"]):
-                text = row.get_text(strip=True)
-                if len(text) > 120:
-                    continue
-
-                match = TIME_PATTERN_HM.search(text)
-                if match:
-                    t_str = match.group(1).replace(".", ":").zfill(5)
-                    raw_title = text[match.end() :].strip(" -–:\t\n\r[]")
-                    clean_title = re.sub(r"^\d{1,2}[:.]\d{2}\s*", "", raw_title)
-                    clean_title = re.sub(r"^\d{2}\b", "", clean_title).strip()
-
-                    if clean_title and len(clean_title) > 2:
-                        items.append((t_str, clean_title))
-
-            today_str = today_local.strftime("%Y-%m-%d")
-            for i in range(len(items)):
-                t_str, title = items[i]
-                start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-                if i + 1 < len(items):
-                    stop_dt = datetime.strptime(f"{today_str} {items[i+1][0]}", "%Y-%m-%d %H:%M")
-                    if stop_dt <= start_dt:
-                        stop_dt += timedelta(days=1)
-                else:
-                    stop_dt = start_dt + timedelta(hours=1)
-
-                programmes.append({
-                    "channel": epg_id,
-                    "start": format_xmltv_date(start_dt, "+0700"),
-                    "stop": format_xmltv_date(stop_dt, "+0700"),
-                    "title": clean_text_str(title),
-                    "desc": clean_text_str(f"Broadcast of {title} on {raw_name}"),
-                    "lang": "id",
-                })
-    except Exception:
-        pass
-    return ch_info, programmes
-
 def fetch_epg_mncvision(target):
     channels, programmes = [], []
-    default_icon = target.get("icon") or get_auto_icon(target["url"])
+    default_icon = target.get("icon") or get_auto_icon("https://www.mncvision.id")
     today_local = get_now_in_channel_tz("+0700")
+    today_str = today_local.strftime("%Y-%m-%d")
+
+    post_url = "https://www.mncvision.id/schedule/formSearch"
+    post_data = {
+        "fdate": today_str,
+        "submit": "Submit"
+    }
+    mnc_headers = {
+        "User-Agent": HEADERS["User-Agent"],
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Origin": "https://www.mncvision.id",
+        "Referer": "https://www.mncvision.id/schedule/formSearch",
+    }
 
     try:
-        res = HTTP_SESSION.get(target["url"], timeout=12)
+        res = HTTP_SESSION.post(post_url, data=post_data, headers=mnc_headers, timeout=15)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, "html.parser")
-            links = soup.find_all("a", href=MNC_LINK_PATTERN)
-            visited, tasks = set(), []
-
-            for l in links:
-                href = l.get("href")
-                if href in visited:
+            rows = soup.find_all("tr")
+            
+            for row in rows:
+                ch_cell = row.find(["td", "th"], class_=re.compile(r"channel|ch", re.I)) or row.find("a", href=MNC_LINK_PATTERN)
+                if not ch_cell:
                     continue
-                visited.add(href)
-                raw_name = l.get_text(strip=True) or href.split("/")[-1]
-                tasks.append((
-                    href,
-                    raw_name,
-                    "https://www.mncvision.id",
-                    today_local,
-                    default_icon,
-                ))
+                
+                ch_name = clean_text_str(ch_cell.get_text(strip=True))
+                if not ch_name:
+                    continue
+                
+                clean_ch_id = re.sub(r"[^a-zA-Z0-9]", "", ch_name) + ".mnc"
+                
+                if not any(c["id"] == clean_ch_id for c in channels):
+                    channels.append({
+                        "id": clean_ch_id,
+                        "name": f"{ch_name} (MNC)",
+                        "icon": default_icon
+                    })
 
-            with ThreadPoolExecutor(max_workers=8) as executor:
-                results = executor.map(fetch_single_mnc, tasks)
+                prog_cells = row.find_all(["td", "div"], class_=re.compile(r"prog|schedule|event", re.I))
+                extracted_items = []
 
-            for ch_info, progs in results:
-                if ch_info and progs:
-                    channels.append(ch_info)
-                    programmes.extend(progs)
+                for cell in prog_cells:
+                    text = cell.get_text(" ", strip=True)
+                    match = TIME_PATTERN_HM.search(text)
+                    if match:
+                        t_str = match.group(1).replace(".", ":").zfill(5)
+                        title = text[match.end():].strip(" -–:\t\n\r[]")
+                        title = re.sub(r"^\d{1,2}[:.]\d{2}\s*", "", title).strip()
+                        if title and len(title) > 2:
+                            extracted_items.append((t_str, clean_text_str(title)))
+
+                for i in range(len(extracted_items)):
+                    t_str, title = extracted_items[i]
+                    try:
+                        start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+                        if i + 1 < len(extracted_items):
+                            stop_dt = datetime.strptime(f"{today_str} {extracted_items[i+1][0]}", "%Y-%m-%d %H:%M")
+                            if stop_dt <= start_dt:
+                                stop_dt += timedelta(days=1)
+                        else:
+                            stop_dt = start_dt + timedelta(hours=1)
+
+                        programmes.append({
+                            "channel": clean_ch_id,
+                            "start": format_xmltv_date(start_dt, "+0700"),
+                            "stop": format_xmltv_date(stop_dt, "+0700"),
+                            "title": title,
+                            "desc": clean_text_str(f"Broadcast of {title} on {ch_name}"),
+                            "lang": "id",
+                        })
+                    except Exception:
+                        continue
     except Exception as e:
-        print(f"[!] MNC Error: {e}")
+        print(f"[!] MNC Vision POST Error: {e}")
+
     return channels, programmes
 
 # =========================================================================
