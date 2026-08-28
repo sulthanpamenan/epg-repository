@@ -354,6 +354,7 @@ def fetch_epg_qazaqstan(target):
     epg_id = target["id"]
     icon = target.get("icon") or get_auto_icon(target["url"])
     channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
+    programmes = []  # <--- Inisialisasi variabel di sini agar tidak NameError
 
     kz_now = get_now_in_channel_tz("+0500")
     today_str = kz_now.strftime("%Y-%m-%d")
