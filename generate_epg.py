@@ -1,25 +1,34 @@
+import json
 import re
-import requests
-from datetime import datetime, timezone, timedelta
-import xml.etree.ElementTree as ET
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin, quote
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta, timezone
+from urllib.parse import quote, urljoin
+import xml.etree.ElementTree as ET
+
+from bs4 import BeautifulSoup
+import requests
 
 # =========================================================================
 # CONSTANTS & COMPILED REGEX
 # =========================================================================
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "th-TH,th;q=0.9,en-US;q=0.8,en;q=0.7"
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+    ),
+    "Accept-Language": "en-US,en;q=0.9,th;q=0.8,kk;q=0.7",
 }
-TIME_PATTERN_HM = re.compile(r'(\b[0-2]?\d[:.][0-5]\d\b)')
-TIME_PATTERN_EXACT = re.compile(r'^([0-2]?\d:[0-5]\d)$')
-TIME_PATTERN_AMPM = re.compile(r'(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))')
-MNC_LINK_PATTERN = re.compile(r'/channel/detail/')
 
-IGNORE_WORDS_KZ = {"LIVE", "ЭФИРДЕ", "Бағдарлама", "Драма", "Көркем фильм", "Телехикая", "Шоу", "Онлайн көру", "Онлайн қарау", "ҚАЗІР ЭФИРДЕ"}
+TIME_PATTERN_HM = re.compile(r"(\b[0-2]?\d[:.][0-5]\d\b)")
+TIME_PATTERN_EXACT = re.compile(r"^([0-2]?\d:[0-5]\d)$")
+TIME_PATTERN_AMPM = re.compile(r"(\d{1,2}:\d{2}\s*(?:AM|PM|am|pm))")
+MNC_LINK_PATTERN = re.compile(r"/channel/detail/")
+
+IGNORE_WORDS_KZ = {
+    "LIVE", "ЭФИРДЕ", "Бағдарлама", "Драма", "Көркем фильм", "Телехикая", "Шоу", "Онлайн көру", "Онлайн қарау", "ҚАЗІР ЭФИРДЕ",
+}
 
 EPG_TARGET_SOURCES = [
   {"id": "TPChannel.th", "name": "TP Channel", "url": "https://www.tpchannel.org/tv/schedule", "icon": "", "utc_offset": "+0700"},
@@ -60,7 +69,7 @@ def get_auto_icon(target_url):
 
 def parse_offset_hours(offset_str):
   try:
-    sign = -1 if offset_str[0] == '-' else 1
+    sign = -1 if offset_str[0] == "-" else 1
     hours = int(offset_str[1:3])
     return sign * hours
   except Exception:
@@ -78,29 +87,28 @@ def fetch_epg_tpchannel(target):
   programmes = []
   icon = target.get("icon") or get_auto_icon(target["url"])
   channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
-  
+
   offset = target.get("utc_offset", "+0700")
   today_local = get_now_in_channel_tz(offset)
-  today_str = today_local.strftime('%Y-%m-%d')
-  
+  today_str = today_local.strftime("%Y-%m-%d")
+
   try:
     res = HTTP_SESSION.get(target["url"], timeout=15)
     if res.status_code == 200:
-      soup = BeautifulSoup(res.text, 'html.parser')
+      soup = BeautifulSoup(res.text, "html.parser")
       extracted = []
 
-      # Parse HTML structure for TP Channel schedule
-      for row in soup.find_all(['div', 'tr', 'li']):
+      for row in soup.find_all(["div", "tr", "li", "p"]):
         text = row.get_text(" ", strip=True)
-        # Look for time formats like "06:00 น." or "06:00"
-        time_match = re.search(r'(\d{1,2}[:.]\d{2})\s*(?:น\.|น)?', text)
+        time_match = re.search(r"(\d{1,2}[:.]\d{2})\s*(?:น\.|น)?", text)
         if time_match:
-          t_str = time_match.group(1).replace('.', ':').zfill(5)
-          
-          # Clean text to isolate title
-          clean_text = re.sub(r'\d{1,2}[:.]\d{2}\s*(?:น\.|น)?', '', text).strip()
-          clean_text = re.sub(r'\s+', ' ', clean_text)
-          
+          t_str = time_match.group(1).replace(".", ":").zfill(5)
+
+          clean_text = re.sub(
+              r"\d{1,2}[:.]\d{2}\s*(?:น\.|น)?", "", text
+          ).strip()
+          clean_text = re.sub(r"\s+", " ", clean_text)
+
           if clean_text and len(clean_text) > 1 and not clean_text.isdigit():
             if not extracted or extracted[-1][0] != t_str:
               extracted.append((t_str, clean_text))
@@ -108,21 +116,25 @@ def fetch_epg_tpchannel(target):
       for i in range(len(extracted)):
         t_str, title = extracted[i]
         try:
-          start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+          start_dt = datetime.strptime(
+              f"{today_str} {t_str}", "%Y-%m-%d %H:%M"
+          )
           if i + 1 < len(extracted):
-            stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
+            stop_dt = datetime.strptime(
+                f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M"
+            )
             if stop_dt <= start_dt:
               stop_dt += timedelta(days=1)
           else:
             stop_dt = start_dt + timedelta(hours=1)
 
           programmes.append({
-            "channel": epg_id,
-            "start": format_xmltv_date(start_dt, offset),
-            "stop": format_xmltv_date(stop_dt, offset),
-            "title": title,
-            "desc": f"Broadcast of {title} on {target['name']}",
-            "lang": "th"
+              "channel": epg_id,
+              "start": format_xmltv_date(start_dt, offset),
+              "stop": format_xmltv_date(stop_dt, offset),
+              "title": title,
+              "desc": f"Broadcast of {title} on {target['name']}",
+              "lang": "th",
           })
         except Exception:
           continue
@@ -132,14 +144,53 @@ def fetch_epg_tpchannel(target):
   return channels, programmes
 
 # =========================================================================
-# 1. RED BULL TV
+# 1. PADANG TV (WORDPRESS API)
+# =========================================================================
+def fetch_epg_padangtv(target):
+  epg_id = target["id"]
+  programmes = []
+  icon = target.get("icon") or get_auto_icon(target["url"])
+  channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
+  offset = target.get("utc_offset", "+0700")
+
+  try:
+    api_url = "https://padangtv.id/wp-json/wp/v2/posts?per_page=15"
+    res = HTTP_SESSION.get(api_url, timeout=12)
+    if res.status_code == 200:
+      posts = res.json()
+      for post in posts:
+        title = BeautifulSoup(
+            post.get("title", {}).get("rendered", ""), "html.parser"
+        ).text.strip()
+        date_str = post.get("date")
+        if title and date_str:
+          start_dt = datetime.fromisoformat(date_str)
+          stop_dt = start_dt + timedelta(hours=1)
+          programmes.append({
+              "channel": epg_id,
+              "start": format_xmltv_date(start_dt, offset),
+              "stop": format_xmltv_date(stop_dt, offset),
+              "title": title,
+              "desc": f"Program {title} di Padang TV",
+              "lang": "id",
+          })
+  except Exception as e:
+    print(f"[!] Padang TV API Error: {e}")
+
+  if not programmes:
+    return auto_scrape_epg(target)
+
+  return channels, programmes
+
+# =========================================================================
+# 2. RED BULL TV
 # =========================================================================
 def fetch_epg_redbull(target):
   epg_id = target["id"]
   programmes = []
   icon = target.get("icon") or get_auto_icon(target["url"])
   channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
- 
+
   try:
     res = HTTP_SESSION.get("https://api.redbull.tv/v3/epg/live", timeout=12)
     if res.status_code == 200:
@@ -150,17 +201,17 @@ def fetch_epg_redbull(target):
         desc = item.get("description", f"Show {title} on Red Bull TV")
         start_iso = item.get("start_time") or item.get("startTime")
         end_iso = item.get("end_time") or item.get("endTime")
-       
+
         if start_iso and end_iso:
-          start_dt = datetime.fromisoformat(start_iso.replace('Z', '+00:00'))
-          end_dt = datetime.fromisoformat(end_iso.replace('Z', '+00:00'))
+          start_dt = datetime.fromisoformat(start_iso.replace("Z", "+00:00"))
+          end_dt = datetime.fromisoformat(end_iso.replace("Z", "+00:00"))
           programmes.append({
-            "channel": epg_id,
-            "start": format_xmltv_date(start_dt, "+0000"),
-            "stop": format_xmltv_date(end_dt, "+0000"),
-            "title": title,
-            "desc": desc,
-            "lang": "en"
+              "channel": epg_id,
+              "start": format_xmltv_date(start_dt, "+0000"),
+              "stop": format_xmltv_date(end_dt, "+0000"),
+              "title": title,
+              "desc": desc,
+              "lang": "en",
           })
   except Exception as e:
     print(f"[!] RedBull Error: {e}")
@@ -168,51 +219,60 @@ def fetch_epg_redbull(target):
   return channels, programmes
 
 # =========================================================================
-# 2. MNC VISION
+# 3. MNC VISION
 # =========================================================================
 def fetch_single_mnc(args):
   href, raw_name, base_url, today_local, default_icon = args
   programmes = []
-  clean_name = re.sub(r'[^a-zA-Z0-9]', '', raw_name)
+  clean_name = re.sub(r"[^a-zA-Z0-9]", "", raw_name)
   if not clean_name:
     return None, []
-   
+
   epg_id = f"{clean_name}.mnc"
   ch_info = {"id": epg_id, "name": f"{raw_name} (MNC)", "icon": default_icon}
- 
+
   try:
     res = HTTP_SESSION.get(urljoin(base_url, href), timeout=10)
     if res.status_code == 200:
-      soup = BeautifulSoup(res.text, 'html.parser')
+      soup = BeautifulSoup(res.text, "html.parser")
       items = []
-     
-      for row in soup.find_all(['tr', 'li', 'div']):
+
+      for row in soup.find_all(["tr", "li", "div"]):
         text = row.get_text(strip=True)
-        if len(text) > 120: continue
+        if len(text) > 120:
+          continue
+
         match = TIME_PATTERN_HM.search(text)
         if match:
-          t_str = match.group(1).replace('.', ':').zfill(5)
-          title = text[match.end():].strip(" -–:\t\n\r[]")
-          if title and len(title) > 2:
-            items.append((t_str, title))
+          t_str = match.group(1).replace(".", ":").zfill(5)
 
-      today_str = today_local.strftime('%Y-%m-%d')
+          raw_title = text[match.end() :].strip(" -–:\t\n\r[]")
+          clean_title = re.sub(r"^\d{1,2}[:.]\d{2}\s*", "", raw_title)
+          clean_title = re.sub(r"^\d{2}\b", "", clean_title).strip()
+
+          if clean_title and len(clean_title) > 2:
+            items.append((t_str, clean_title))
+
+      today_str = today_local.strftime("%Y-%m-%d")
       for i in range(len(items)):
         t_str, title = items[i]
         start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
         if i + 1 < len(items):
-          stop_dt = datetime.strptime(f"{today_str} {items[i+1][0]}", "%Y-%m-%d %H:%M")
-          if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+          stop_dt = datetime.strptime(
+              f"{today_str} {items[i+1][0]}", "%Y-%m-%d %H:%M"
+          )
+          if stop_dt <= start_dt:
+            stop_dt += timedelta(days=1)
         else:
           stop_dt = start_dt + timedelta(hours=1)
 
         programmes.append({
-          "channel": epg_id,
-          "start": format_xmltv_date(start_dt, "+0700"),
-          "stop": format_xmltv_date(stop_dt, "+0700"),
-          "title": title,
-          "desc": f"Broadcast of {title} on {raw_name}",
-          "lang": "en"
+            "channel": epg_id,
+            "start": format_xmltv_date(start_dt, "+0700"),
+            "stop": format_xmltv_date(stop_dt, "+0700"),
+            "title": title,
+            "desc": f"Broadcast of {title} on {raw_name}",
+            "lang": "id",
         })
   except Exception:
     pass
@@ -222,20 +282,27 @@ def fetch_epg_mncvision(target):
   channels, programmes = [], []
   default_icon = target.get("icon") or get_auto_icon(target["url"])
   today_local = get_now_in_channel_tz("+0700")
- 
+
   try:
     res = HTTP_SESSION.get(target["url"], timeout=12)
     if res.status_code == 200:
-      soup = BeautifulSoup(res.text, 'html.parser')
-      links = soup.find_all('a', href=MNC_LINK_PATTERN)
+      soup = BeautifulSoup(res.text, "html.parser")
+      links = soup.find_all("a", href=MNC_LINK_PATTERN)
       visited, tasks = set(), []
-     
+
       for l in links:
-        href = l.get('href')
-        if href in visited: continue
+        href = l.get("href")
+        if href in visited:
+          continue
         visited.add(href)
-        raw_name = l.get_text(strip=True) or href.split('/')[-1]
-        tasks.append((href, raw_name, "https://www.mncvision.id", today_local, default_icon))
+        raw_name = l.get_text(strip=True) or href.split("/")[-1]
+        tasks.append((
+            href,
+            raw_name,
+            "https://www.mncvision.id",
+            today_local,
+            default_icon,
+        ))
 
       with ThreadPoolExecutor(max_workers=6) as executor:
         results = executor.map(fetch_single_mnc, tasks)
@@ -249,7 +316,7 @@ def fetch_epg_mncvision(target):
   return channels, programmes
 
 # =========================================================================
-# 3. CLTV36
+# 4. CLTV36
 # =========================================================================
 def fetch_epg_cltv36(target):
   epg_id = target["id"]
@@ -257,95 +324,140 @@ def fetch_epg_cltv36(target):
   icon = target.get("icon") or get_auto_icon(target["url"])
   channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
   today_local = get_now_in_channel_tz("+0800")
- 
+
   try:
     res = HTTP_SESSION.get(target["url"], timeout=12)
     if res.status_code == 200:
-      soup = BeautifulSoup(res.text, 'html.parser')
-     
-      for container in soup.find_all(['div', 'article', 'section']):
+      soup = BeautifulSoup(res.text, "html.parser")
+
+      for container in soup.find_all(["div", "article", "section"]):
         text = container.get_text(" ", strip=True)
         time_matches = TIME_PATTERN_AMPM.findall(text)
-       
+
         if time_matches:
-          title_tag = container.find(['h1', 'h2', 'h3', 'h4', 'h5', 'strong'])
-          if not title_tag: continue
+          title_tag = container.find(["h1", "h2", "h3", "h4", "h5", "strong"])
+          if not title_tag:
+            continue
           title = title_tag.get_text(strip=True)
-          if len(title) < 3 or 'program' in title.lower(): continue
+          if len(title) < 3 or "program" in title.lower():
+            continue
 
           try:
             start_str = time_matches[0].upper().replace(" ", "")
-            start_dt = datetime.combine(today_local.date(), datetime.strptime(start_str.zfill(7), "%I:%M%p").time())
-           
+            start_dt = datetime.combine(
+                today_local.date(),
+                datetime.strptime(start_str.zfill(7), "%I:%M%p").time(),
+            )
+
             if len(time_matches) > 1:
               end_str = time_matches[1].upper().replace(" ", "")
-              stop_dt = datetime.combine(today_local.date(), datetime.strptime(end_str.zfill(7), "%I:%M%p").time())
-              if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+              stop_dt = datetime.combine(
+                  today_local.date(),
+                  datetime.strptime(end_str.zfill(7), "%I:%M%p").time(),
+              )
+              if stop_dt <= start_dt:
+                stop_dt += timedelta(days=1)
             else:
               stop_dt = start_dt + timedelta(hours=1)
 
             prog_data = {
-              "channel": epg_id,
-              "start": format_xmltv_date(start_dt, "+0800"),
-              "stop": format_xmltv_date(stop_dt, "+0800"),
-              "title": title,
-              "desc": f"Broadcast of {title} on CLTV36",
-              "lang": "en"
+                "channel": epg_id,
+                "start": format_xmltv_date(start_dt, "+0800"),
+                "stop": format_xmltv_date(stop_dt, "+0800"),
+                "title": title,
+                "desc": f"Broadcast of {title} on CLTV36",
+                "lang": "en",
             }
-            if prog_data not in programmes: programmes.append(prog_data)
-          except Exception: continue
+            if prog_data not in programmes:
+              programmes.append(prog_data)
+          except Exception:
+            continue
   except Exception as e:
     print(f"[!] CLTV36 Error: {e}")
   return channels, programmes
 
 # =========================================================================
-# 4. QAZAQSTAN NETWORK
+# 5. QAZAQSTAN NETWORK (LARAVEL LIVEWIRE & HTML FALLBACK)
 # =========================================================================
 def fetch_epg_qazaqstan(target):
   epg_id = target["id"]
   icon = target.get("icon") or get_auto_icon(target["url"])
   channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
- 
+
   kz_now = get_now_in_channel_tz("+0500")
   today_str = kz_now.strftime("%Y-%m-%d")
- 
-  WORKER_PROXY = "https://qazaqstan-playlist.sulthan-pamenan.workers.dev/?url="
+
+  WORKER_PROXY = "https://iptv-playlist.sulthan-pamenan.workers.dev/?url="
   dated_url = f"{target['url'].rstrip('/')}/{today_str}"
   proxied_url = f"{WORKER_PROXY}{quote(dated_url, safe='')}"
- 
+
   raw_progs = []
   try:
     res = HTTP_SESSION.get(proxied_url, timeout=12)
     if res.status_code == 200:
-      soup = BeautifulSoup(res.text, 'html.parser')
-      all_elements = soup.find_all(['span', 'p', 'div', 'h3', 'h4', 'a'])
-     
-      for i, elem in enumerate(all_elements):
-        t_text = elem.get_text(strip=True)
-        if TIME_PATTERN_EXACT.match(t_text):
-          time_start = t_text.zfill(5)
-          title_found = ""
-         
-          for j in range(i + 1, min(i + 8, len(all_elements))):
-            candidate = all_elements[j].get_text(strip=True)
-            for ignore_word in IGNORE_WORDS_KZ:
-              candidate = candidate.replace(ignore_word, "").strip()
-             
-            if candidate and len(candidate) > 2 and not TIME_PATTERN_EXACT.match(candidate) and not candidate.startswith("http"):
-              title_found = candidate
-              break
-         
-          if title_found:
-            try:
-              start_dt = datetime.strptime(f"{today_str} {time_start}", "%Y-%m-%d %H:%M")
-              if not any(p["start_dt"] == start_dt for p in raw_progs):
-                raw_progs.append({
+      soup = BeautifulSoup(res.text, "html.parser")
+
+      wire_el = soup.find(
+          lambda tag: tag.has_attr("wire:snapshot")
+          or tag.has_attr("wire:initial-data")
+      )
+      if wire_el:
+        try:
+          raw_json = wire_el.get("wire:snapshot") or wire_el.get(
+              "wire:initial-data"
+          )
+          data = json.loads(raw_json)
+          schedules = data.get("memo", {}).get("data", {}).get("schedules", [])
+          for item in schedules:
+            t_start = item.get("time") or item.get("start_time")
+            title = item.get("title") or item.get("name")
+            if t_start and title:
+              start_dt = datetime.strptime(
+                  f"{today_str} {t_start}", "%Y-%m-%d %H:%M"
+              )
+              raw_progs.append({
                   "start_dt": start_dt,
-                  "title": title_found,
-                  "desc": f"Program {title_found} di {target['name']}"
-                })
-            except Exception:
-              continue
+                  "title": title.strip(),
+                  "desc": f"Program {title.strip()} di {target['name']}",
+              })
+        except Exception:
+          pass
+
+      if not raw_progs:
+        all_elements = soup.find_all(["span", "p", "div", "h3", "h4", "a"])
+        for i, elem in enumerate(all_elements):
+          t_text = elem.get_text(strip=True)
+          if TIME_PATTERN_EXACT.match(t_text):
+            time_start = t_text.zfill(5)
+            title_found = ""
+
+            for j in range(i + 1, min(i + 8, len(all_elements))):
+              candidate = all_elements[j].get_text(strip=True)
+              for ignore_word in IGNORE_WORDS_KZ:
+                candidate = candidate.replace(ignore_word, "").strip()
+
+              if (
+                  candidate
+                  and len(candidate) > 2
+                  and not TIME_PATTERN_EXACT.match(candidate)
+                  and not candidate.startswith("http")
+              ):
+                title_found = candidate
+                break
+
+            if title_found:
+              try:
+                start_dt = datetime.strptime(
+                    f"{today_str} {time_start}", "%Y-%m-%d %H:%M"
+                )
+                if not any(p["start_dt"] == start_dt for p in raw_progs):
+                  raw_progs.append({
+                      "start_dt": start_dt,
+                      "title": title_found,
+                      "desc": f"Program {title_found} di {target['name']}",
+                  })
+              except Exception:
+                continue
 
       if raw_progs:
         return build_xmltv_programmes(epg_id, target, channels, raw_progs)
@@ -358,73 +470,81 @@ def build_xmltv_programmes(epg_id, target, channels, raw_progs):
   programmes = []
   raw_progs.sort(key=lambda x: x["start_dt"])
   offset = target.get("utc_offset", "+0500")
- 
+
   for i in range(len(raw_progs)):
     curr = raw_progs[i]
     start_dt = curr["start_dt"]
-   
+
     if i + 1 < len(raw_progs):
-      stop_dt = raw_progs[i+1]["start_dt"]
-      if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+      stop_dt = raw_progs[i + 1]["start_dt"]
+      if stop_dt <= start_dt:
+        stop_dt += timedelta(days=1)
     else:
       stop_dt = start_dt + timedelta(hours=1)
-     
+
     programmes.append({
-      "channel": epg_id,
-      "start": format_xmltv_date(start_dt, offset),
-      "stop": format_xmltv_date(stop_dt, offset),
-      "title": curr["title"],
-      "desc": curr["desc"],
-      "lang": "kk"
+        "channel": epg_id,
+        "start": format_xmltv_date(start_dt, offset),
+        "stop": format_xmltv_date(stop_dt, offset),
+        "title": curr["title"],
+        "desc": curr["desc"],
+        "lang": "kk",
     })
   return channels, programmes
 
+
 # =========================================================================
-# 5. UNIVERSAL SCRAPER
+# 6. UNIVERSAL SCRAPER
 # =========================================================================
 def auto_scrape_epg(target):
   epg_id = target["id"]
   programmes = []
   icon = target.get("icon") or get_auto_icon(target["url"])
   channels = [{"id": epg_id, "name": target["name"], "icon": icon}]
- 
+
   offset = target.get("utc_offset", "+0700")
   today_local = get_now_in_channel_tz(offset)
-  today_str = today_local.strftime('%Y-%m-%d')
- 
+  today_str = today_local.strftime("%Y-%m-%d")
+
   try:
     res = HTTP_SESSION.get(target["url"], timeout=12)
-    soup = BeautifulSoup(res.text, 'html.parser')
+    soup = BeautifulSoup(res.text, "html.parser")
     extracted = []
 
-    for element in soup.find_all(['tr', 'li', 'p', 'div']):
+    for element in soup.find_all(["tr", "li", "p", "div"]):
       text = element.get_text(strip=True)
-      if len(text) > 120: continue
+      if len(text) > 120:
+        continue
       match = TIME_PATTERN_HM.search(text)
       if match:
-        t_str = match.group(1).replace('.', ':').zfill(5)
-        title = text[match.end():].strip(" -–:\t\n\r")
-        if title and len(title) > 2: extracted.append((t_str, title))
+        t_str = match.group(1).replace(".", ":").zfill(5)
+        title = text[match.end() :].strip(" -–:\t\n\r")
+        if title and len(title) > 2:
+          extracted.append((t_str, title))
 
     for i in range(len(extracted)):
       t_str, title = extracted[i]
       try:
         start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
         if i + 1 < len(extracted):
-          stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
-          if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+          stop_dt = datetime.strptime(
+              f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M"
+          )
+          if stop_dt <= start_dt:
+            stop_dt += timedelta(days=1)
         else:
           stop_dt = start_dt + timedelta(hours=1)
 
         programmes.append({
-          "channel": epg_id,
-          "start": format_xmltv_date(start_dt, offset),
-          "stop": format_xmltv_date(stop_dt, offset),
-          "title": title,
-          "desc": f"Program {title} on {target['name']}",
-          "lang": "en"
+            "channel": epg_id,
+            "start": format_xmltv_date(start_dt, offset),
+            "stop": format_xmltv_date(stop_dt, offset),
+            "title": title,
+            "desc": f"Program {title} on {target['name']}",
+            "lang": "en",
         })
-      except Exception: continue
+      except Exception:
+        continue
   except Exception as e:
     print(f"[!] Universal Scraper Error [{target['name']}]: {e}")
 
@@ -434,9 +554,11 @@ def auto_scrape_epg(target):
 def process_single_target(target):
   t_url = target["url"].lower()
   t_id = target["id"]
- 
+
   if "tpchannel.org" in t_url or t_id == "TPChannel.th":
     return fetch_epg_tpchannel(target)
+  elif "padangtv.id" in t_url or t_id == "PadangTV.id":
+    return fetch_epg_padangtv(target)
   elif "mncvision" in t_url:
     return fetch_epg_mncvision(target)
   elif "redbull" in t_url or t_id == "RedBullTV.global":
@@ -453,10 +575,13 @@ def process_single_target(target):
 # =========================================================================
 def generate_xmltv():
   print("[*] Starting EPG scraping...")
-  tv_elem = ET.Element("tv", {
-    "generator-info-name": "Universal IPTV EPG Generator",
-    "generator-info-url": "https://github.com/sulthanpamenan"
-  })
+  tv_elem = ET.Element(
+      "tv",
+      {
+          "generator-info-name": "Universal IPTV EPG Generator",
+          "generator-info-url": "https://github.com/sulthanpamenan",
+      },
+  )
 
   all_channels = []
   all_programmes = []
@@ -479,9 +604,9 @@ def generate_xmltv():
   # 2. Programmes
   for prog in all_programmes:
     p_elem = ET.SubElement(tv_elem, "programme", {
-      "start": prog["start"],
-      "stop": prog["stop"],
-      "channel": prog["channel"]
+        "start": prog["start"],
+        "stop": prog["stop"],
+        "channel": prog["channel"],
     })
     t_elem = ET.SubElement(p_elem, "title", lang=prog.get("lang", "en"))
     t_elem.text = prog["title"]
@@ -493,7 +618,10 @@ def generate_xmltv():
   tree = ET.ElementTree(tv_elem)
   tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
 
-  print(f"\n[SUCCESS] `epg.xml` file updated with {len(all_channels)} channels and {len(all_programmes)} programs!")
+  print(
+      f"\n[SUCCESS] `epg.xml` file updated with {len(all_channels)} channels"
+      f" and {len(all_programmes)} programs!"
+  )
 
 if __name__ == "__main__":
   generate_xmltv()
