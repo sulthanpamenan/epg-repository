@@ -24,13 +24,81 @@ IGNORE_WORDS_KZ = {
 }
 
 EPG_TARGET_SOURCES = [
+    # 1. TP CHANNEL THAILAND
     {"id": "TPChannel.th", "name": "TP Channel", "url": "https://www.tpchannel.org/tv/schedule", "utc_offset": "+0700"},
+
+    # 2. RED BULL TV CHANNELS
     {"id": "RedBullTV.global", "name": "Red Bull TV: World of Red Bull", "rrn": "rrn:content:video-channels:c81f8686-ab67-4965-ba04-5f6658bb96cc", "utc_offset": "+0000"},
+    {"id": "RedBullPadel.global", "name": "Red Bull TV: Padel", "rrn": "rrn:content:video-channels:e0e6dee0-8c39-4de1-9488-72828468efe0", "utc_offset": "+0000"},
+    {"id": "RedBullBike.global", "name": "Red Bull TV: Bike", "rrn": "rrn:content:video-channels:ee30c528-32b1-4604-8976-e3bcee4ae7f0", "utc_offset": "+0000"},
+    {"id": "RedBullAdventure.global", "name": "Red Bull TV: Adventure", "rrn": "rrn:content:video-channels:870bcfa8-62b1-4e84-9c85-39f083df368a", "utc_offset": "+0000"},
+    {"id": "RedBullMotorsports.global", "name": "Red Bull TV: Motorsports", "rrn": "rrn:content:video-channels:fd4ed3c9-1800-477b-9909-53255da06632", "utc_offset": "+0000"},
+    {"id": "RedBullSurfing.global", "name": "Red Bull TV: Surfing", "rrn": "rrn:content:video-channels:2f6afaec-7ade-4fb8-961a-a51aa8279a99", "utc_offset": "+0000"},
+    {"id": "RedBullSkateboarding.global", "name": "Red Bull TV: Skateboarding", "rrn": "rrn:content:video-channels:5021f46c-6f34-4f51-ba1f-967f2885ac97", "utc_offset": "+0000"},
+    {"id": "RedBullWinter.global", "name": "Red Bull TV: Winter", "rrn": "rrn:content:video-channels:f4aa4fe4-5ce6-4b1c-a60b-abc6f21f16d0", "utc_offset": "+0000"},
+    {"id": "RedBullActionReel.global", "name": "Red Bull TV: Action Reel", "rrn": "rrn:content:video-channels:69a66f02-21fd-42a1-be5b-6965541cfe6a", "utc_offset": "+0000"},
+
+    # 3. CLTV36 FILIPINA
     {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "utc_offset": "+0800"},
+
+    # 4. QAZAQSTAN NETWORK
     {"id": "Qazaqstan.kz", "name": "Qazaqstan TV", "url": "https://qazaqstan.tv/program", "utc_offset": "+0500"},
     {"id": "Balapan.kz", "name": "Balapan TV", "url": "https://balapan.tv/program", "utc_offset": "+0500"},
-    {"id": "RCTI.id", "name": "RCTI", "mnc_code": "1", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "MNCTV.id", "name": "MNCTV", "mnc_code": "2", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "AbaiTV.kz", "name": "Abai TV", "url": "https://abaitv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "Qazsport.kz", "name": "Qazsport", "url": "https://qazsporttv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "AqjaiyqTV.kz", "name": "Aqjaiyq TV", "url": "https://aqjaiyqtv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "AqtobeTV.kz", "name": "Aqtobe TV", "url": "https://aqtobetv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "AltaiTV.kz", "name": "Altai TV", "url": "https://altaitv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "AtyrauTV.kz", "name": "Atyrau TV", "url": "https://atyrautv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "ErtisTV.kz", "name": "Ertis TV", "url": "https://ertistv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "JambylTV.kz", "name": "Jambyl TV", "url": "https://jambyltv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "KoksheTV.kz", "name": "Kokshe TV", "url": "https://kokshetv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "MangystauTV.kz", "name": "Mangystau TV", "url": "https://mangystautv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "OntustikTV.kz", "name": "Ontustik TV", "url": "https://ontustiktv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "QostanaiTV.kz", "name": "Qostanai TV", "url": "https://qostanaitv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "QyzyljarTV.kz", "name": "Qyzyljar TV", "url": "https://qyzyljartv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "QyzylordaTV.kz", "name": "Qyzylorda TV", "url": "https://qyzylordatv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "SaryarqaTV.kz", "name": "Saryarqa TV", "url": "https://saryarqatv.kz/kz/program", "utc_offset": "+0500"},
+    {"id": "SemeiTV.kz", "name": "Semei TV", "url": "https://semeitv.kz/kz/program", "utc_offset": "+0500"},
+
+    # 5. MNC VISION INDONESIA
+    # --- FTA Nasional ---
+    {"id": "RCTI.id", "name": "RCTI", "mnc_code": "80", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "MNCTV.id", "name": "MNCTV", "mnc_code": "82", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "GTV.id", "name": "GTV", "mnc_code": "81", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "iNews.id", "name": "iNews", "mnc_code": "83", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "SCTV.id", "name": "SCTV", "mnc_code": "89", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "Indosiar.id", "name": "Indosiar", "mnc_code": "78", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "TransTV.id", "name": "Trans TV", "mnc_code": "87", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "Trans7.id", "name": "Trans7", "mnc_code": "110", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "ANTV.id", "name": "ANTV", "mnc_code": "115", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "tvOne.id", "name": "tvOne", "mnc_code": "97", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "MetroTV.id", "name": "Metro TV", "mnc_code": "107", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "KompasTV.id", "name": "Kompas TV", "mnc_code": "106", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "NET.id", "name": "NET.", "mnc_code": "116", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "TVRI.id", "name": "TVRI", "mnc_code": "118", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+
+    # --- MNC Group Channels (In-House Terbaru) ---
+    {"id": "VisionPrime.id", "name": "Vision Prime", "mnc_code": "1", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "KidsTV.id", "name": "Kids TV", "mnc_code": "46", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "Entertainment.id", "name": "Entertainment", "mnc_code": "86", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "MusicTV.id", "name": "Music TV", "mnc_code": "111", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "FoodTravel.id", "name": "Food Travel", "mnc_code": "95", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "Life.id", "name": "Life", "mnc_code": "91", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "MuslimTV.id", "name": "Muslim TV", "mnc_code": "92", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "CelebritiesTV.id", "name": "Celebrities TV", "mnc_code": "96", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+
+    # --- Olahraga & International Premium ---
+    {"id": "Sportstars.id", "name": "Sportstars", "mnc_code": "102", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "Sportstars2.id", "name": "Sportstars 2", "mnc_code": "98", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "SoccerChannel.id", "name": "Soccer Channel", "mnc_code": "101", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "SPOTV.id", "name": "SPOTV", "mnc_code": "307", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "SPOTV2.id", "name": "SPOTV 2", "mnc_code": "308", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "beINSports1.id", "name": "beIN Sports 1", "mnc_code": "309", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "beINSports2.id", "name": "beIN Sports 2", "mnc_code": "310", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "beINSports3.id", "name": "beIN Sports 3", "mnc_code": "311", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "AXN.id", "name": "AXN", "mnc_code": "154", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
+    {"id": "tvN.id", "name": "tvN", "mnc_code": "158", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
 ]
 
 HTTP_SESSION = requests.Session()
@@ -95,6 +163,7 @@ def fetch_epg_tpchannel(target):
 
                     programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Watch {title}", "lang": "th"})
                 except Exception: continue
+            print(f"[✓] TP Channel: Berhasil memuat {len(programmes)} program!")
     except Exception as e:
         print(f"[!] TP Channel Error: {e}")
     return channels, programmes
@@ -147,6 +216,7 @@ def fetch_epg_cltv36(target):
 
                             programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": desc_text, "lang": "en"})
                         except Exception: continue
+            print(f"[✓] CLTV36: Berhasil memuat {len(programmes)} program!")
     except Exception as e:
         print(f"[!] CLTV36 Error: {e}")
     return channels, programmes
@@ -188,8 +258,9 @@ def fetch_epg_mncvision(target):
 
                         programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Acara {title}", "lang": "id"})
                     except Exception: continue
+            print(f"[✓] MNC Vision [{target['name']}]: Berhasil memuat {len(programmes)} program!")
     except Exception as e:
-        print(f"[!] MNC Vision Error: {e}")
+        print(f"[!] MNC Vision Error [{target['name']}]: {e}")
     return channels, programmes
 
 # --- 4. QAZAQSTAN NETWORK ---
@@ -209,6 +280,7 @@ def fetch_epg_qazaqstan(target):
             soup = BeautifulSoup(res.text, "html.parser")
             raw_progs = []
 
+            # Skema 1: Qazaqstan, Qazsport, Abai, Aqjaiyq
             items_schema1 = soup.select(".program-item, a.program-item")
             if items_schema1:
                 for item in items_schema1:
@@ -222,6 +294,7 @@ def fetch_epg_qazaqstan(target):
                             try: raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M"), "title": title})
                             except Exception: continue
 
+            # Skema 2: Balapan TV (.rounded-full / .drop-shadow)
             if not raw_progs:
                 for card in soup.find_all("a", class_=re.compile(r"rounded-full|group", re.I)):
                     text_content = card.get_text(" ", strip=True)
@@ -247,6 +320,7 @@ def fetch_epg_qazaqstan(target):
                         if stop_dt <= start_dt: stop_dt += timedelta(days=1)
                     else: stop_dt = start_dt + timedelta(hours=1)
                     programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": curr["title"], "desc": f"Бағдарлама {curr['title']}", "lang": "kk"})
+                print(f"[✓] Qazaqstan Network [{target['name']}]: Berhasil memuat {len(programmes)} program!")
                 break
         except Exception: continue
     return channels, programmes
@@ -278,10 +352,11 @@ def fetch_epg_redbull_all(targets):
                         start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
                         end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")) if end_iso else start_dt + timedelta(hours=1)
                         programmes.append({"channel": t["id"], "start": format_xmltv_date(start_dt, "+0000"), "stop": format_xmltv_date(end_dt, "+0000"), "title": clean_text_str(title), "desc": clean_text_str(desc), "lang": "en"})
+                print(f"[✓] Red Bull TV [{t['name']}]: Direct Fetch Berhasil!")
         except Exception as e: print(f"[!] Red Bull API Error: {e}")
     return channels, programmes
 
-# --- MAIN EXECUTION ---
+# --- MAIN ROUTER & EXECUTION ---
 def process_single_target(target):
     t_id = target["id"]
     if t_id == "TPChannel.th": return fetch_epg_tpchannel(target)
@@ -291,21 +366,30 @@ def process_single_target(target):
     return [], []
 
 def generate_xmltv():
+    print("[*] Memulai Generasi EPG XMLTV...")
     tv_elem = ET.Element("tv", {"generator-info-name": "Universal IPTV EPG Generator"})
     all_channels, all_programmes = [], []
 
+    # 1. Scraping Red Bull TV
     redbull_targets = [t for t in EPG_TARGET_SOURCES if "rrn" in t]
     if redbull_targets:
         rb_channels, rb_programmes = fetch_epg_redbull_all(redbull_targets)
         all_channels.extend(rb_channels)
         all_programmes.extend(rb_programmes)
 
+    # 2. Multi-Threading Scraping untuk Sumber Lainnya
     other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
     with ThreadPoolExecutor(max_workers=8) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
 
+    # 3. Buat Elemen Channel XML
+    for ch in all_channels:
+        c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
+        ET.SubElement(c_elem, "display-name").text = ch["name"]
+
+    # 4. Buat Elemen Program XML & Deduplikasi
     seen = set()
     for p in all_programmes:
         key = (p["channel"], p["start"])
@@ -315,13 +399,9 @@ def generate_xmltv():
             ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = p["title"]
             if p.get("desc"): ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
 
-    for ch in all_channels:
-        c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
-        ET.SubElement(c_elem, "display-name").text = ch["name"]
-
     ET.indent(tv_elem, space="  ")
     ET.ElementTree(tv_elem).write("epg.xml", encoding="utf-8", xml_declaration=True)
-    print(f"[SUCCESS] Berhasil memperbarui epg.xml!")
+    print(f"\n[SUCCESS] Berhasil memperbarui epg.xml dengan {len(all_channels)} channel & {len(seen)} program!")
 
 if __name__ == "__main__":
     generate_xmltv()
