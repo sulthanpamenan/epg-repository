@@ -248,11 +248,11 @@ def fetch_epg_mncvision_code(mnc_code):
     return [], []
 
 def fetch_all_mncvision_parallel():
-    print("[*] Starting mass scan of MNC Vision (ID 1 - 120)...")
+    print("[*] Starting mass scan of MNC Vision (ID 1 - 473)...")
     all_channels, all_programmes = [], []
     
-    with ThreadPoolExecutor(max_workers=15) as executor:
-        results = executor.map(fetch_epg_mncvision_code, range(1, 121))
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        results = executor.map(fetch_epg_mncvision_code, range(1, 474))
         for ch_list, progs in results:
             if progs:
                 all_channels.extend(ch_list)
