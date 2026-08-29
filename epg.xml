@@ -480,18 +480,6 @@
   <channel id="SemeiTV.kz">
     <display-name>Semei TV</display-name>
   </channel>
-  <programme start="20260829131945 +0000" stop="20260829135035 +0000" channel="RedBullTV.global">
-    <title lang="en">Black Pearl</title>
-    <desc lang="en">At 42, Chris Sharma conquers Black Pearl in Mallorca – his toughest deep water solo climb yet.</desc>
-  </programme>
-  <programme start="20260829135035 +0000" stop="20260829140938 +0000" channel="RedBullTV.global">
-    <title lang="en">The puzzle</title>
-    <desc lang="en">Brette Harrington climbs the Chinese Puzzle Wall, completing a route begun by her late partner, Marc-André.</desc>
-  </programme>
-  <programme start="20260829140938 +0000" stop="20260829142542 +0000" channel="RedBullTV.global">
-    <title lang="en">Charles at large</title>
-    <desc lang="en">Barefoot boulderer Charles Albert conquers his hardest route – L'Ombre du Voyageur in Switzerland.</desc>
-  </programme>
   <programme start="20260829142542 +0000" stop="20260829145749 +0000" channel="RedBullTV.global">
     <title lang="en">Dropping Molly</title>
     <desc lang="en">Climber Molly Mitchell pursues a rare, all-gear ascent of Boulder Canyon's dangerous Crank-it.</desc>
@@ -560,13 +548,17 @@
     <title lang="en">ABC of… Motocross</title>
     <desc lang="en">Take an action-filled ride around the world's gnarliest tracks for a look at all things motocross.</desc>
   </programme>
-  <programme start="20260829132051 +0000" stop="20260829134717 +0000" channel="RedBullPadel.global">
-    <title lang="en">Padel Life – part 2</title>
-    <desc lang="en">Four padel players give an inside look into their lives and what makes the sport a global phenomenon.</desc>
+  <programme start="20260829224931 +0000" stop="20260829230132 +0000" channel="RedBullTV.global">
+    <title lang="en">Is Jeffrey Herlings Grand Prix ready?</title>
+    <desc lang="en">Jeffrey Herlings's iron will to win is strong, but succeeding after injury will take monumental team effort.</desc>
   </programme>
-  <programme start="20260829134717 +0000" stop="20260829141322 +0000" channel="RedBullPadel.global">
-    <title lang="en">Paris Major Premier Padel highlights</title>
-    <desc lang="en">Watch the highlights from the Paris Major Premier Padel tournament held at Roland-Garros stadium.</desc>
+  <programme start="20260829230132 +0000" stop="20260829232608 +0000" channel="RedBullTV.global">
+    <title lang="en">Jeffrey Herlings prepares for high stakes GP</title>
+    <desc lang="en">The KTM Factory Racing team leave nothing to chance when it comes to race prep and planning.</desc>
+  </programme>
+  <programme start="20260829232608 +0000" stop="20260829233957 +0000" channel="RedBullTV.global">
+    <title lang="en">Jeffrey Herlings is not done yet!</title>
+    <desc lang="en">Jeffrey Herlings sets his sights on the 2024 MXGP season as he looks to add to his trophy haul.</desc>
   </programme>
   <programme start="20260829141322 +0000" stop="20260829143929 +0000" channel="RedBullPadel.global">
     <title lang="en">Malaga Premier Padel P1 highlights</title>
@@ -640,17 +632,13 @@
     <title lang="en">Padel Life – part 2</title>
     <desc lang="en">Four padel players give an inside look into their lives and what makes the sport a global phenomenon.</desc>
   </programme>
-  <programme start="20260829132131 +0000" stop="20260829135816 +0000" channel="RedBullBike.global">
-    <title lang="en">Brandon Semenuk – Steps to the Top</title>
-    <desc lang="en">An inside look at the creative process behind Brandon Semenuk’s Red Bull Rampage winning run in 2021.</desc>
+  <programme start="20260829215955 +0000" stop="20260829222600 +0000" channel="RedBullPadel.global">
+    <title lang="en">Paris Major Premier Padel highlights</title>
+    <desc lang="en">Watch the highlights from the Paris Major Premier Padel tournament held at Roland-Garros stadium.</desc>
   </programme>
-  <programme start="20260829135816 +0000" stop="20260829141500 +0000" channel="RedBullBike.global">
-    <title lang="en">Remy Morton: Seven Days and $7K</title>
-    <desc lang="en">Can Australian MTB freerider Remy Morton build his ultimate line in seven days and with a AUD$7,000 budget?</desc>
-  </programme>
-  <programme start="20260829141500 +0000" stop="20260829143301 +0000" channel="RedBullBike.global">
-    <title lang="en">EMIL – Every Mystery I've Lived: The Next Chapter</title>
-    <desc lang="en">Despite autoimmune illness, MTB slopestyle champ Emil Johansson fights to regain his mountain bike title.</desc>
+  <programme start="20260829222600 +0000" stop="20260829225207 +0000" channel="RedBullPadel.global">
+    <title lang="en">Madrid P1 Premier Padel highlights</title>
+    <desc lang="en">Watch the highlights from the Madrid P1 Premier Padel tournament.</desc>
   </programme>
   <programme start="20260829143301 +0000" stop="20260829152501 +0000" channel="RedBullBike.global">
     <title lang="en">All the highlights from Whistler</title>
@@ -668,11 +656,11 @@
     <title lang="en">New Zealand</title>
     <desc lang="en">Rob Warner and slopestyle genius Matt Jones make their way through New Zealand’s South Island trails.</desc>
   </programme>
-  <programme start="20260829163501 +0000" stop="20260829165928 +0000" channel="RedBullBike.global">
+  <programme start="20260829163501 +0000" stop="20260829165927 +0000" channel="RedBullBike.global">
     <title lang="en">Kenya</title>
     <desc lang="en">Former World Cup racer Rob Warner heads to Kenya with freeride pro Matt Jones to ride Mount Kenya.</desc>
   </programme>
-  <programme start="20260829165928 +0000" stop="20260829170639 +0000" channel="RedBullBike.global">
+  <programme start="20260829165927 +0000" stop="20260829170639 +0000" channel="RedBullBike.global">
     <title lang="en">The power of bikes</title>
     <desc lang="en">Endurance athlete Rebecca Rusch and adventurer Patrick Sweeney cycled up and down Mount Kilimanjaro, Tanzania.</desc>
   </programme>
@@ -684,11 +672,11 @@
     <title lang="en">The Old World</title>
     <desc lang="en">Traverse iconic European locations in a celebration of biking culture that unites MTB and BMX.</desc>
   </programme>
-  <programme start="20260829184000 +0000" stop="20260829190611 +0000" channel="RedBullBike.global">
+  <programme start="20260829184000 +0000" stop="20260829190610 +0000" channel="RedBullBike.global">
     <title lang="en">Chasing the Inca II</title>
     <desc lang="en">Take a journey into the Peruvian Andes with a group of pro mountain bikers searching for a lost Incan trail.</desc>
   </programme>
-  <programme start="20260829190611 +0000" stop="20260829192146 +0000" channel="RedBullBike.global">
+  <programme start="20260829190610 +0000" stop="20260829192146 +0000" channel="RedBullBike.global">
     <title lang="en">Norwegian freeride with Brage Vestavik</title>
     <desc lang="en">Norway's Brage Vestavik has made a name for himself as the toughest freeride mountain biker to hit the scene.</desc>
   </programme>
@@ -720,9 +708,17 @@
     <title lang="en">Erik Fedko checks out Emil Johansson's home spots</title>
     <desc lang="en">After 2020 Crankworx Rotorua, Erik Fedko heads to Sweden to see Emil Johansson’s favourite mountain biking spots.</desc>
   </programme>
-  <programme start="20260829130408 +0000" stop="20260829134038 +0000" channel="RedBullAdventure.global">
-    <title lang="en">Red Bull Dual Ascent</title>
-    <desc lang="en">Sixteen world-class athletes on eight teams battle to be the fastest up a wall of six gruelling pitches.</desc>
+  <programme start="20260829223800 +0000" stop="20260829225601 +0000" channel="RedBullBike.global">
+    <title lang="en">EMIL – Every Mystery I've Lived: The Next Chapter</title>
+    <desc lang="en">Despite autoimmune illness, MTB slopestyle champ Emil Johansson fights to regain his mountain bike title.</desc>
+  </programme>
+  <programme start="20260829225601 +0000" stop="20260829232139 +0000" channel="RedBullBike.global">
+    <title lang="en">Asa Vermette's Ascent</title>
+    <desc lang="en">Follow Asa Vermette – one of mountain biking’s most exciting young riders – on his debut at Red Bull Hardline.</desc>
+  </programme>
+  <programme start="20260829232139 +0000" stop="20260830000722 +0000" channel="RedBullBike.global">
+    <title lang="en">Gamble</title>
+    <desc lang="en">Raw speed, a heavy-hitting soundtrack and virgin locations – mountain bike riders show off their skills.</desc>
   </programme>
   <programme start="20260829134038 +0000" stop="20260829144625 +0000" channel="RedBullAdventure.global">
     <title lang="en">K2 The Impossible Descent</title>
@@ -736,11 +732,11 @@
     <title lang="en">Best moments from Copenhagen</title>
     <desc lang="en">These are the best moments from the third event of the 2022 Red Bull Cliff Diving World Series in Denmark.</desc>
   </programme>
-  <programme start="20260829155617 +0000" stop="20260829161716 +0000" channel="RedBullAdventure.global">
+  <programme start="20260829155617 +0000" stop="20260829161715 +0000" channel="RedBullAdventure.global">
     <title lang="en">The Nose speed record part 1</title>
     <desc lang="en">Alex Honnold and Tommy Caldwell introduce us to the speed record on The Nose route up El Capitan, California.</desc>
   </programme>
-  <programme start="20260829161716 +0000" stop="20260829163658 +0000" channel="RedBullAdventure.global">
+  <programme start="20260829161715 +0000" stop="20260829163658 +0000" channel="RedBullAdventure.global">
     <title lang="en">The Filer Creek Expedition</title>
     <desc lang="en">Follow Canadian paddler Ed Muggridge on his first foray into whitewater expedition.</desc>
   </programme>
@@ -800,13 +796,9 @@
     <title lang="en">360 Ascent</title>
     <desc lang="en">Climbers Janja Garnbret and Domen Škofic scale the tallest artificial multi-pitch route in the world.</desc>
   </programme>
-  <programme start="20260829124557 +0000" stop="20260829133924 +0000" channel="RedBullMotorsports.global">
-    <title lang="en">Red Bull Romaniacs</title>
-    <desc lang="en">Four days of brutal Transylvanian terrain and 24 hours in the saddle makes up Hard Enduro's longest race.</desc>
-  </programme>
-  <programme start="20260829133924 +0000" stop="20260829135451 +0000" channel="RedBullMotorsports.global">
-    <title lang="en">Formula Schnitzeljagd – warming up in Austria</title>
-    <desc lang="en">F1 drivers travel over land, water and air, doing challenges along the way, as a warm-up for the Austrian GP.</desc>
+  <programme start="20260829214411 +0000" stop="20260829220509 +0000" channel="RedBullAdventure.global">
+    <title lang="en">The Nose speed record part 1</title>
+    <desc lang="en">Alex Honnold and Tommy Caldwell introduce us to the speed record on The Nose route up El Capitan, California.</desc>
   </programme>
   <programme start="20260829135451 +0000" stop="20260829145857 +0000" channel="RedBullMotorsports.global">
     <title lang="en">Erzbergrodeo Red Bull Hare Scramble</title>
@@ -880,23 +872,23 @@
     <title lang="en">The drive to compete</title>
     <desc lang="en">Riders discuss how they got started and the rivalry between Antonio Cairoli and Jeffrey Herlings.</desc>
   </programme>
-  <programme start="20260829131229 +0000" stop="20260829135549 +0000" channel="RedBullSurfing.global">
-    <title lang="en">Chapters</title>
-    <desc lang="en">Travel with surf star Kanoa Igarashi for insider access to the World Championship Tour.</desc>
+  <programme start="20260830003852 +0000" stop="20260830010437 +0000" channel="RedBullMotorsports.global">
+    <title lang="en">ABC of… Drifting</title>
+    <desc lang="en">Drift driver Dave Egan gives the lowdown on the motorsport that's all about speed, style, smoke and skill.</desc>
   </programme>
-  <programme start="20260829135549 +0000" stop="20260829143631 +0000" channel="RedBullSurfing.global">
-    <title lang="en">RISS</title>
-    <desc lang="en">Ride with surfer Carissa Moore around the 2019 World Surf League Championship Tour.</desc>
+  <programme start="20260830010437 +0000" stop="20260830012811 +0000" channel="RedBullMotorsports.global">
+    <title lang="en">Tackling Red Bull TKO</title>
+    <desc lang="en">Mani and Paul are in the USA for Red Bull TKO, chatting with drivers, scouting trails and checking out trucks.</desc>
   </programme>
-  <programme start="20260829143631 +0000" stop="20260829161907 +0000" channel="RedBullSurfing.global">
+  <programme start="20260829143630 +0000" stop="20260829161907 +0000" channel="RedBullSurfing.global">
     <title lang="en">And Two If By Sea</title>
     <desc lang="en">Twin surfers. Rival careers. Pro surfers and identical twins CJ and Damien Hobgood battle sibling rivalry.</desc>
   </programme>
-  <programme start="20260829161907 +0000" stop="20260829164519 +0000" channel="RedBullSurfing.global">
+  <programme start="20260829161907 +0000" stop="20260829164518 +0000" channel="RedBullSurfing.global">
     <title lang="en">Leon Glatzer surfs Costa Rica</title>
     <desc lang="en">Leon Glatzer unpacks the incredible history of Pavones and explores its thriving roots surf scene.</desc>
   </programme>
-  <programme start="20260829164519 +0000" stop="20260829182017 +0000" channel="RedBullSurfing.global">
+  <programme start="20260829164518 +0000" stop="20260829182017 +0000" channel="RedBullSurfing.global">
     <title lang="en">For the Dream</title>
     <desc lang="en">Ex-pro surfer Ben Gravy sets out on his dream to become the first person to surf in all 50 US states.</desc>
   </programme>
@@ -960,17 +952,13 @@
     <title lang="en">The beast awakens</title>
     <desc lang="en">Surfer Kai heads to a Nazaré swell, but ends up fighting for his life after his biggest wipeout ever.</desc>
   </programme>
-  <programme start="20260829130713 +0000" stop="20260829133625 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Madars Apse meets Mike Vallely</title>
-    <desc lang="en">Madars Apse meets Mike Vallely – the pioneer of modern skateboard culture – in Des Moines, Iowa.</desc>
+  <programme start="20260830015534 +0000" stop="20260830023201 +0000" channel="RedBullSurfing.global">
+    <title lang="en">Meet Kehu Butler in New Zealand</title>
+    <desc lang="en">The future of Kiwi surfing, Māori Kehu Butler, examines his culture’s past in Made In: New Zealand.</desc>
   </programme>
-  <programme start="20260829133625 +0000" stop="20260829140459 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Gose Gerald &amp; Uganda Skateboard Society</title>
-    <desc lang="en">Madars Apse meets Uganda Skateboard Society founder, Gose Gerald, and his crew who invent their own tricks.</desc>
-  </programme>
-  <programme start="20260829140459 +0000" stop="20260829142555 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Skate Ethiopia</title>
-    <desc lang="en">Madars Apse travels to Ethiopia to discover the growing, 150-strong skate scene in Addis Ababa.</desc>
+  <programme start="20260830023201 +0000" stop="20260830032933 +0000" channel="RedBullSurfing.global">
+    <title lang="en">The Other Side of Fear</title>
+    <desc lang="en">The inspirational tale of big wave surfer and keynote speaker Mark Mathews and his journey back from disaster.</desc>
   </programme>
   <programme start="20260829142555 +0000" stop="20260829144049 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Beaver Fleming</title>
@@ -1040,25 +1028,17 @@
     <title lang="en">Skating the streets of Barcelona</title>
     <desc lang="en">Gustavo Ribeiro and the Ementa crew try some tricks on the streets of skateboarding’s first city – Barcelona.</desc>
   </programme>
-  <programme start="20260829131237 +0000" stop="20260829133456 +0000" channel="RedBullWinter.global">
-    <title lang="en">Finland</title>
-    <desc lang="en">Snowboarders Mark and Craig McMorris link up with their childhood hero, Eero Ettala, in Finland.</desc>
+  <programme start="20260829185138 +0000" stop="20260829190139 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Alex Sorgente</title>
+    <desc lang="en">We head down to Carlsbad, California, to tag along with skateboarder Alex Sorgente for a day in his life.</desc>
   </programme>
-  <programme start="20260829133456 +0000" stop="20260829134427 +0000" channel="RedBullWinter.global">
-    <title lang="en">New York cover shoot</title>
-    <desc lang="en">From the mountains to the runway, Eileen Gu finds her feet in the two worlds of skiing and modelling.</desc>
+  <programme start="20260829190139 +0000" stop="20260829191308 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Jagger Eaton</title>
+    <desc lang="en">Ride shotgun in the Raptor as we hang with Mesa, Arizona’s very own Jagger Eaton, for a day.</desc>
   </programme>
-  <programme start="20260829134427 +0000" stop="20260829135127 +0000" channel="RedBullWinter.global">
-    <title lang="en">Making X Games history</title>
-    <desc lang="en">Eileen Gu entered the 2021 Winter X Games as an Aspen rookie and won three medals to make competition history.</desc>
-  </programme>
-  <programme start="20260829135127 +0000" stop="20260829140056 +0000" channel="RedBullWinter.global">
-    <title lang="en">Scotty James returns to Aspen to compete</title>
-    <desc lang="en">A last-minute change has Scotty James back in Colorado to compete in the FIS Snowboard World Championships.</desc>
-  </programme>
-  <programme start="20260829140056 +0000" stop="20260829141039 +0000" channel="RedBullWinter.global">
-    <title lang="en">Spring training days with Scotty James</title>
-    <desc lang="en">The sun has set on Scotty James's 2021 competitive halfpipe season, but now there's spring training.</desc>
+  <programme start="20260829191308 +0000" stop="20260829193104 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Bam Margera</title>
+    <desc lang="en">Meet icon Bam Margera as Madars Apse begins his skateboarding hall of fame journey.</desc>
   </programme>
   <programme start="20260829141039 +0000" stop="20260829145858 +0000" channel="RedBullWinter.global">
     <title lang="en">The Collective</title>
@@ -1068,11 +1048,11 @@
     <title lang="en">How to capture perfect drone shots</title>
     <desc lang="en">Loads of people have a drone – but how can you use them best for professional action shots?</desc>
   </programme>
-  <programme start="20260829150727 +0000" stop="20260829151838 +0000" channel="RedBullWinter.global">
+  <programme start="20260829150727 +0000" stop="20260829151837 +0000" channel="RedBullWinter.global">
     <title lang="en">Scotty James is stoked to get back on the snow</title>
     <desc lang="en">After six months of no snowboarding, an empty halfpipe was a sight for Scotty James's sore eyes.</desc>
   </programme>
-  <programme start="20260829151838 +0000" stop="20260829152742 +0000" channel="RedBullWinter.global">
+  <programme start="20260829151837 +0000" stop="20260829152742 +0000" channel="RedBullWinter.global">
     <title lang="en">World Championships glory</title>
     <desc lang="en">Freeskier Eileen Gu wins two gold medals and a bronze at the FIS World Championships. All despite being injured.</desc>
   </programme>
@@ -1120,85 +1100,105 @@
     <title lang="en">Back in Switzerland with Scotty James</title>
     <desc lang="en">It's spring break in Switzerland for Scotty James and there's nothing but blue skies and empty halfpipes.</desc>
   </programme>
-  <programme start="20260829131907 +0000" stop="20260829132158 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Breaking in the elements</title>
-    <desc lang="en">Menno, dancing in water, and Lil G, dancing while on fire, stage the most visually stunning dance-off.</desc>
+  <programme start="20260829183538 +0000" stop="20260829185319 +0000" channel="RedBullWinter.global">
+    <title lang="en">The making of Unrailistic 2.0</title>
+    <desc lang="en">Most of the tricks in Unrailistic 2.0 look smooth and effortless. Don’t be fooled.</desc>
   </programme>
-  <programme start="20260829132158 +0000" stop="20260829132444 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Tahnée Seagrave tears up Lousã, Portugal</title>
-    <desc lang="en">British cyclist Tahnée Seagrave returns after serious injury to the UCI Downhill Mountain Bike World Cup.</desc>
+  <programme start="20260829185319 +0000" stop="20260829190354 +0000" channel="RedBullWinter.global">
+    <title lang="en">Drop in at X Games with Scotty James</title>
+    <desc lang="en">Scotty James arrives in Aspen ready to entertain under the lights, and hunting for his sixth X Games medal.</desc>
   </programme>
-  <programme start="20260829132444 +0000" stop="20260829132952 +0000" channel="RedBullActionReel.global">
+  <programme start="20260829190354 +0000" stop="20260829191032 +0000" channel="RedBullWinter.global">
+    <title lang="en">How to tick off your bucket list shoot</title>
+    <desc lang="en">See what happens when John Jackson and the Pirate film crew head into an active volcano in Kamchatka, Russia.</desc>
+  </programme>
+  <programme start="20260829191032 +0000" stop="20260829193254 +0000" channel="RedBullWinter.global">
+    <title lang="en">Colorado</title>
+    <desc lang="en">Welcome to the land of Dumb &amp; Dumber jokes. Mark and Craig McMorris lead a crew of up-and-comers in Colorado.</desc>
+  </programme>
+  <programme start="20260829193254 +0000" stop="20260829195607 +0000" channel="RedBullWinter.global">
+    <title lang="en">Bang on Time</title>
+    <desc lang="en">Watch freeskiers perform tricks, while the Red Bull Skydive Team perform aerial acrobatics at the same time.</desc>
+  </programme>
+  <programme start="20260829143704 +0000" stop="20260829143936 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Caroline Marks</title>
+    <desc lang="en">Meet 2018 Rookie of the Year Caroline Marks in filmer Jacob Vanderwork’s stunning short film.</desc>
+  </programme>
+  <programme start="20260829143936 +0000" stop="20260829144257 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Pedro Burns</title>
+    <desc lang="en">Pedro Burns goes for a ride across three wildly different Chilean terrains.</desc>
+  </programme>
+  <programme start="20260829144257 +0000" stop="20260829144755 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Skating in Mayan lands</title>
+    <desc lang="en">Watch a skate remix of Madars Apse, Angelo Caro, Jaakko Ojanen and Zack Wallin in the land of the Maya.</desc>
+  </programme>
+  <programme start="20260829144755 +0000" stop="20260829145203 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Rhine Line</title>
+    <desc lang="en">FIM FMX World Champion and X Games gold medal winner Luc Ackermann unveils three world firsts.</desc>
+  </programme>
+  <programme start="20260829145203 +0000" stop="20260829145616 +0000" channel="RedBullActionReel.global">
+    <title lang="en">CJ Collins FER DAYZ</title>
+    <desc lang="en">Abandoned pools, DIYs and even some street action from everyone's favourite all-terrain animal, CJ Collins.</desc>
+  </programme>
+  <programme start="20260829145616 +0000" stop="20260829145922 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Brandon Semenuk – Japan</title>
+    <desc lang="en">Brandon Semenuk and Revel Co head to Hakuba, Japan, for the latest instalment of MTB RAW.</desc>
+  </programme>
+  <programme start="20260829145922 +0000" stop="20260829150422 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Off-road</title>
+    <desc lang="en">Watch off-roaders Seth Quintero and Mitch Guthrie Jr carve their lines in the King of the Hammers desert.</desc>
+  </programme>
+  <programme start="20260829150422 +0000" stop="20260829150710 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Laurie Greenland</title>
+    <desc lang="en">Enjoy the raw sight and sound of MTB pro Laurie Greenland as he rides down a mountainside in New Zealand.</desc>
+  </programme>
+  <programme start="20260829150710 +0000" stop="20260829150909 +0000" channel="RedBullActionReel.global">
+    <title lang="en">GP Ice Race</title>
+    <desc lang="en">Watch Max Verstappen enjoy his first track action of 2022 with ice speedway star Franky Zorn.</desc>
+  </programme>
+  <programme start="20260829150909 +0000" stop="20260829151928 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Markus Eder in The Ultimate Run</title>
+    <desc lang="en">Take a cinematic journey in this Emmy Award-winning ski film from the world's most renowned freestyle skier, Markus Eder.</desc>
+  </programme>
+  <programme start="20260829151928 +0000" stop="20260829152138 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Wake Crane</title>
+    <desc lang="en">Three top riders rip around a custom wakeboard park built from a crane and a bunch of cargo containers.</desc>
+  </programme>
+  <programme start="20260829152138 +0000" stop="20260829152505 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Unrailistic 2.0</title>
+    <desc lang="en">This year freeski ace Jesper Tjäder is back with new trick ideas and creative, never-before-seen features.</desc>
+  </programme>
+  <programme start="20260829152505 +0000" stop="20260829153147 +0000" channel="RedBullActionReel.global">
+    <title lang="en">From sim to reality</title>
+    <desc lang="en">Max Verstappen gets sucked into his simulator and needs to clear different levels to get to the Belgium GP.</desc>
+  </programme>
+  <programme start="20260829153147 +0000" stop="20260829153411 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Matt Jones</title>
+    <desc lang="en">Step inside Matt Jones’s secret compound to find out just what it takes to take on the best in MTB.</desc>
+  </programme>
+  <programme start="20260829153411 +0000" stop="20260829153806 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Project Istanbulls</title>
+    <desc lang="en">Pierre Gasly and Alex Albon took to the streets of Istanbul, Turkey, with a driving display through the city.</desc>
+  </programme>
+  <programme start="20260829153806 +0000" stop="20260829154315 +0000" channel="RedBullActionReel.global">
     <title lang="en">Follow Fabio</title>
     <desc lang="en">Follow trials bike ace Fabio Wibmer with a racing drone to capture him shredding some iconic German landmarks.</desc>
   </programme>
-  <programme start="20260829132952 +0000" stop="20260829133458 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Dropping in on Dubai</title>
-    <desc lang="en">Watch Kriss Kyle jump from a helicopter onto the roof of Burj Al Arab in Dubai – on his BMX bike.</desc>
+  <programme start="20260829154315 +0000" stop="20260829155207 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Ricciardo takes on the Outback</title>
+    <desc lang="en">The 'Honey Badger' in Oz – Red Bull Racing send driver Daniel Ricciardo to Melbourne's Albert Park circuit.</desc>
   </programme>
-  <programme start="20260829133458 +0000" stop="20260829133641 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Mathieu Rebeaud in Switzerland</title>
-    <desc lang="en">Freeride motocross rider Mathieu Rebeaud takes us on an (almost) silent ride in his own backyard.</desc>
+  <programme start="20260829155207 +0000" stop="20260829155429 +0000" channel="RedBullActionReel.global">
+    <title lang="en">The Soul Flyers</title>
+    <desc lang="en">In a world first, the Soul Flyers wingsuit pilots BASE jump off a mountain and land in a mid-air aeroplane.</desc>
   </programme>
-  <programme start="20260829133641 +0000" stop="20260829133803 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Petra BASE jump</title>
-    <desc lang="en">Watch as Miles Daisher, Red Bull Air Force pilot, BASE jumps to land in front of Petra's Treasury.</desc>
+  <programme start="20260829155429 +0000" stop="20260829155926 +0000" channel="RedBullActionReel.global">
+    <title lang="en">First sessions = INSANE</title>
+    <desc lang="en">Practice + drone makes you feel like you're flying. This session embodies what freeriding is all about.</desc>
   </programme>
-  <programme start="20260829133803 +0000" stop="20260829134338 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Duct Out</title>
-    <desc lang="en">Tyler Bereman and Robbie Maddison escape LA's gridlock and turn the city into a personal MX playground.</desc>
-  </programme>
-  <programme start="20260829134338 +0000" stop="20260829134520 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Carson Storch</title>
-    <desc lang="en">Watch Carson Storch ride through a forest and take on a train and rail track in 100 seconds of raw MTB action.</desc>
-  </programme>
-  <programme start="20260829134520 +0000" stop="20260829134709 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Brandon Semenuk unleashed in an abandoned mine</title>
-    <desc lang="en">For his sixth contribution to our Raw 100 series, Brandon Semenuk heads to Merritt, British Columbia.</desc>
-  </programme>
-  <programme start="20260829134709 +0000" stop="20260829135301 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Running reverse</title>
-    <desc lang="en">Watch freerunner Jason Paul put things right with a series of breathtaking and high-stakes moves.</desc>
-  </programme>
-  <programme start="20260829135301 +0000" stop="20260829135436 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Action from Fabio Wibmer's latest project</title>
-    <desc lang="en">Fabio Wibmer takes dicey situations and turns them into outstanding tricks for his film, Wibmer's Law.</desc>
-  </programme>
-  <programme start="20260829135436 +0000" stop="20260829135816 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Last call for Mr Paul</title>
-    <desc lang="en">Pro freerunner Jason Paul is late for a flight and needs to use his athletic prowess to navigate the airport.</desc>
-  </programme>
-  <programme start="20260829135816 +0000" stop="20260829140133 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Uncorked</title>
-    <desc lang="en">With a gorgeous sunset behind them, Mark McMorris and Seb Toots shred a perfectly manicured snowboard park.</desc>
-  </programme>
-  <programme start="20260829140133 +0000" stop="20260829140315 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Nouria Newman kayaks in British Columbia</title>
-    <desc lang="en">Follow Nouria Newman as she visits Canada to kayak the white water of British Columbia's Spillimacheen River.</desc>
-  </programme>
-  <programme start="20260829140315 +0000" stop="20260829140640 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Wakeskate reflection</title>
-    <desc lang="en">Wakeskaters Brian Grubb and Matti Buys hit some iconic beachfront landmarks in Durban, South Africa.</desc>
-  </programme>
-  <programme start="20260829140640 +0000" stop="20260829140930 +0000" channel="RedBullActionReel.global">
-    <title lang="en">The mighty waves of Nazaré</title>
-    <desc lang="en">Enjoy big-wave surfers taking on the monstrous slabs at Nazaré.</desc>
-  </programme>
-  <programme start="20260829140930 +0000" stop="20260829141219 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Cherry blossoms</title>
-    <desc lang="en">Check out all the great spots skateboarder Simon Stricker found to shred on a trip to Taiwan.</desc>
-  </programme>
-  <programme start="20260829141219 +0000" stop="20260829142944 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Just the Tricks</title>
-    <desc lang="en">All-killer, no-filler; get a concentrated blast of just the snowboarding tricks from the film.</desc>
-  </programme>
-  <programme start="20260829142944 +0000" stop="20260829143238 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Emil Johansson in New Zealand</title>
-    <desc lang="en">During his downtime in New Zealand, here’s what stylish Swede Emil Johansson got up to with Hunt Cinema.</desc>
-  </programme>
-  <programme start="20260829143238 +0000" stop="20260829143704 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Skate Intersection – Lost in Shanghai</title>
-    <desc lang="en">Fancy skating the world in a day? Let Maxim Habanec, Vladik Scholz and Angelo Caro skate you around the themed towns of Shanghai, China.</desc>
+  <programme start="20260829155926 +0000" stop="20260829160254 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Realm featuring Brandon Semenuk</title>
+    <desc lang="en">We challenged Brandon Semenuk and Justin Wyper to build unique features. Here’s what they came up with.</desc>
   </programme>
   <programme start="20260829000000 +0700" stop="20260829010000 +0700" channel="MNC_1.id">
     <title lang="id">Manda Curhat</title>
@@ -14200,13 +14200,17 @@
     <title lang="id">The Adv. Of Rocky &amp; Bullwinkle</title>
     <desc lang="id">Acara The Adv. Of Rocky &amp; Bullwinkle di MNC Channel 473</desc>
   </programme>
-  <programme start="20260829200000 +0800" stop="20260829203000 +0800" channel="CLTV36.ph">
-    <title lang="en">Let’s Talk Heart to Heart</title>
-    <desc lang="en">“Let’s Talk Heart to Heart” aims to educate viewers regarding current cardiac conditions most especially the risk factors causing cardiovascular diseases through the Philippine Heart Association (PHA) advocacies.</desc>
+  <programme start="20260830153000 +0800" stop="20260830160000 +0800" channel="CLTV36.ph">
+    <title lang="en">Discover Japan</title>
+    <desc lang="en">Discover the charm of Japan on video.Discover Japanoffers a comprehensive view of Japanese culture, nature, science and technology and tourism.</desc>
   </programme>
-  <programme start="20260829110000 +0800" stop="20260829150000 +0800" channel="CLTV36.ph">
-    <title lang="en">CLTV36 Teleskwela</title>
-    <desc lang="en">Provides students in Pampanga, from Grade 1 to Grade 12, a safe place to continue their learning through innovative teaching modules using television as a medium.</desc>
+  <programme start="20260830150000 +0800" stop="20260830153000 +0800" channel="CLTV36.ph">
+    <title lang="en">UN In Action</title>
+    <desc lang="en">“UN in Action” reports on the work of the United Nations and its Agencies around the world. They illustrate UN peacekeeping efforts as well as projects aimed at reducing poverty and human suffering, fighting disease, providing humanitarian assistance and stimulating economic growth.</desc>
+  </programme>
+  <programme start="20260830083000 +0800" stop="20260830090000 +0800" channel="CLTV36.ph">
+    <title lang="en">Kalusugang SiguraDOH</title>
+    <desc lang="en">Kalusugang SiguraDOH is a program of the Dept of Health Region 3 to promote its advocacies and programs. The program features various health concerns and the programs of the Department of Health, giving the audience information on how to live a healthy life.  Topics range from family planning, mental health, polio vaccine and food safety.</desc>
   </programme>
   <programme start="20260829014500 +0500" stop="20260829020500 +0500" channel="Qazaqstan.kz">
     <title lang="kk">«Prime era»</title>
@@ -14585,16 +14589,16 @@
     <desc lang="kk">Бағдарлама Жәдігер</desc>
   </programme>
   <programme start="20260829193000 +0500" stop="20260829200000 +0500" channel="AbaiTV.kz">
-    <title lang="kk">АРНАЙЫ ЖОБА. Семей полигонының жабылғанына 35 жыл толуына орай арнайы жоба Ақын әлемі Онлайн қарау</title>
-    <desc lang="kk">Бағдарлама АРНАЙЫ ЖОБА. Семей полигонының жабылғанына 35 жыл толуына орай арнайы жоба Ақын әлемі Онлайн қарау</desc>
+    <title lang="kk">Ақын әлемі</title>
+    <desc lang="kk">Бағдарлама Ақын әлемі</desc>
   </programme>
   <programme start="20260829200000 +0500" stop="20260829210000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Вечные ценности</title>
     <desc lang="kk">Бағдарлама Вечные ценности</desc>
   </programme>
   <programme start="20260829210000 +0500" stop="20260829220000 +0500" channel="AbaiTV.kz">
-    <title lang="kk">ЗАМАН-АРТ</title>
-    <desc lang="kk">Бағдарлама ЗАМАН-АРТ</desc>
+    <title lang="kk">Бағдарлама. «Көне аспаптардың заманауи келбеті» ЗАМАН-АРТ Онлайн қарау</title>
+    <desc lang="kk">Бағдарлама Бағдарлама. «Көне аспаптардың заманауи келбеті» ЗАМАН-АРТ Онлайн қарау</desc>
   </programme>
   <programme start="20260829070000 +0500" stop="20260829070500 +0500" channel="Qazsport.kz">
     <title lang="kk">Әнұран</title>
@@ -14680,9 +14684,13 @@
     <title lang="kk">"АЛДАСПАН". Мәдени-ағартушылық хабар</title>
     <desc lang="kk">Бағдарлама "АЛДАСПАН". Мәдени-ағартушылық хабар</desc>
   </programme>
-  <programme start="20260829194000 +0500" stop="20260829204000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">Танымдық бағдарлама "ТОПЖАРҒАН". Танымдық бағдарлама Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Танымдық бағдарлама "ТОПЖАРҒАН". Танымдық бағдарлама Онлайн көру</desc>
+  <programme start="20260829194000 +0500" stop="20260829200000 +0500" channel="AqjaiyqTV.kz">
+    <title lang="kk">"ТОПЖАРҒАН". Танымдық бағдарлама</title>
+    <desc lang="kk">Бағдарлама "ТОПЖАРҒАН". Танымдық бағдарлама</desc>
+  </programme>
+  <programme start="20260829200000 +0500" stop="20260829210000 +0500" channel="AqjaiyqTV.kz">
+    <title lang="kk">Концерттік бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Концерттік бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама Онлайн көру</desc>
   </programme>
   <programme start="20260829070000 +0500" stop="20260829070500 +0500" channel="AqtobeTV.kz">
     <title lang="kk">ӘНҰРАН</title>
@@ -14757,12 +14765,12 @@
     <desc lang="kk">Бағдарлама "САЗДЫ СӘЛЕМ"</desc>
   </programme>
   <programme start="20260829191500 +0500" stop="20260829205500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-әлеуметтік  хабар "ЖЕЛІДЕ 103" Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Ақпараттық-әлеуметтік  хабар "ЖЕЛІДЕ 103" Онлайн көру</desc>
+    <title lang="kk">"ЖЕЛІДЕ 103"</title>
+    <desc lang="kk">Бағдарлама "ЖЕЛІДЕ 103"</desc>
   </programme>
   <programme start="20260829205500 +0500" stop="20260829215500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">"ҚАЗАҚША PODCAST"</title>
-    <desc lang="kk">Бағдарлама "ҚАЗАҚША PODCAST"</desc>
+    <title lang="kk">Ақпараттық-танымдық хабар "ҚАЗАҚША PODCAST" Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Ақпараттық-танымдық хабар "ҚАЗАҚША PODCAST" Онлайн көру</desc>
   </programme>
   <programme start="20260829215500 +0500" stop="20260829233000 +0500" channel="AqtobeTV.kz">
     <title lang="kk">"ЖАРҚЫН ЖҮЗДЕСУ"</title>
@@ -14840,9 +14848,13 @@
     <title lang="kk">"ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама</title>
     <desc lang="kk">Бағдарлама "ЖАҢА ҚАЗАҚСТАН" ақпараттық бағдарлама</desc>
   </programme>
-  <programme start="20260829194000 +0500" stop="20260829220000 +0500" channel="AltaiTV.kz">
-    <title lang="kk">"ДИАГНОЗ" /каз/ ақпараттық-танымдық бағдарлама Онлайн көру</title>
-    <desc lang="kk">Бағдарлама "ДИАГНОЗ" /каз/ ақпараттық-танымдық бағдарлама Онлайн көру</desc>
+  <programme start="20260829194000 +0500" stop="20260829200500 +0500" channel="AltaiTV.kz">
+    <title lang="kk">"ДИАГНОЗ" /каз/ ақпараттық-танымдық бағдарлама</title>
+    <desc lang="kk">Бағдарлама "ДИАГНОЗ" /каз/ ақпараттық-танымдық бағдарлама</desc>
+  </programme>
+  <programme start="20260829200500 +0500" stop="20260829220000 +0500" channel="AltaiTV.kz">
+    <title lang="kk">КОНЦЕРТТІК БАҒДАРЛАМА Онлайн көру</title>
+    <desc lang="kk">Бағдарлама КОНЦЕРТТІК БАҒДАРЛАМА Онлайн көру</desc>
   </programme>
   <programme start="20260829220000 +0500" stop="20260829233500 +0500" channel="AltaiTV.kz">
     <title lang="kk">Телехикая "ТОПЫРАҚ ПЕН ХАУА" 64,65 бөлім</title>
@@ -14941,16 +14953,16 @@
     <desc lang="kk">Бағдарлама "ДОС БОЛАЙЫҚ" - подкаст</desc>
   </programme>
   <programme start="20260829194000 +0500" stop="20260829200000 +0500" channel="AtyrauTV.kz">
-    <title lang="kk">"ТАТУЛЫҚ МЕКЕНІ" - арнайы жоба Онлайн көру</title>
-    <desc lang="kk">Бағдарлама "ТАТУЛЫҚ МЕКЕНІ" - арнайы жоба Онлайн көру</desc>
+    <title lang="kk">"ТАТУЛЫҚ МЕКЕНІ" - арнайы жоба</title>
+    <desc lang="kk">Бағдарлама "ТАТУЛЫҚ МЕКЕНІ" - арнайы жоба</desc>
   </programme>
   <programme start="20260829200000 +0500" stop="20260829203000 +0500" channel="AtyrauTV.kz">
     <title lang="kk">"ДАРЫН" - интелектуалдық теле жоба</title>
     <desc lang="kk">Бағдарлама "ДАРЫН" - интелектуалдық теле жоба</desc>
   </programme>
   <programme start="20260829203000 +0500" stop="20260829220000 +0500" channel="AtyrauTV.kz">
-    <title lang="kk">"АЛАШҰЛЫ", тобының ән кеші  (Qazaqstan Ұлттық телеарнасы, 2018 ж.)</title>
-    <desc lang="kk">Бағдарлама "АЛАШҰЛЫ", тобының ән кеші  (Qazaqstan Ұлттық телеарнасы, 2018 ж.)</desc>
+    <title lang="kk">"АЛАШҰЛЫ", тобының ән кеші  (Qazaqstan Ұлттық телеарнасы, 2018 ж.) Онлайн көру</title>
+    <desc lang="kk">Бағдарлама "АЛАШҰЛЫ", тобының ән кеші  (Qazaqstan Ұлттық телеарнасы, 2018 ж.) Онлайн көру</desc>
   </programme>
   <programme start="20260829220000 +0500" stop="20260829233500 +0500" channel="AtyrauTV.kz">
     <title lang="kk">"ТОПЫРАҚ ПЕН ХАУА", телехикая, 2 маусым, 206, 207 бөлім (Түркия, 2010 ж.)</title>
@@ -15109,16 +15121,16 @@
     <desc lang="kk">Бағдарлама МҮМКІН ЕМЕС</desc>
   </programme>
   <programme start="20260829193000 +0500" stop="20260829200000 +0500" channel="JambylTV.kz">
-    <title lang="kk">танымдық бағдарлама ТАРАЗ. ТҰЛҒА. ТАЛАНТ Онлайн көру</title>
-    <desc lang="kk">Бағдарлама танымдық бағдарлама ТАРАЗ. ТҰЛҒА. ТАЛАНТ Онлайн көру</desc>
+    <title lang="kk">ТАРАЗ. ТҰЛҒА. ТАЛАНТ</title>
+    <desc lang="kk">Бағдарлама ТАРАЗ. ТҰЛҒА. ТАЛАНТ</desc>
   </programme>
   <programme start="20260829200000 +0500" stop="20260829203000 +0500" channel="JambylTV.kz">
     <title lang="kk">ТӘУЕЛСІЗДІК ТОЛҚЫНЫНДА</title>
     <desc lang="kk">Бағдарлама ТӘУЕЛСІЗДІК ТОЛҚЫНЫНДА</desc>
   </programme>
   <programme start="20260829203000 +0500" stop="20260829235500 +0500" channel="JambylTV.kz">
-    <title lang="kk">ЖАРҚЫН ЖҮЗДЕСУ</title>
-    <desc lang="kk">Бағдарлама ЖАРҚЫН ЖҮЗДЕСУ</desc>
+    <title lang="kk">танымдық бағдарлама ЖАРҚЫН ЖҮЗДЕСУ Онлайн көру</title>
+    <desc lang="kk">Бағдарлама танымдық бағдарлама ЖАРҚЫН ЖҮЗДЕСУ Онлайн көру</desc>
   </programme>
   <programme start="20260829235500 +0500" stop="20260830005500 +0500" channel="JambylTV.kz">
     <title lang="kk">Әнұран</title>
@@ -15189,16 +15201,16 @@
     <desc lang="kk">Бағдарлама "ПРЕМЬЕРЫ" 14 бөлім</desc>
   </programme>
   <programme start="20260829192500 +0500" stop="20260829203000 +0500" channel="KoksheTV.kz">
-    <title lang="kk">"ЖАНТАЛАС". Телехикая. 17 бөлім Онлайн көру</title>
-    <desc lang="kk">Бағдарлама "ЖАНТАЛАС". Телехикая. 17 бөлім Онлайн көру</desc>
+    <title lang="kk">"ЖАНТАЛАС". Телехикая. 17 бөлім</title>
+    <desc lang="kk">Бағдарлама "ЖАНТАЛАС". Телехикая. 17 бөлім</desc>
   </programme>
   <programme start="20260829203000 +0500" stop="20260829211000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"ДВЕ СТОРОНЫ" ақпараттық бағдарлама</title>
     <desc lang="kk">Бағдарлама "ДВЕ СТОРОНЫ" ақпараттық бағдарлама</desc>
   </programme>
   <programme start="20260829211000 +0500" stop="20260829212000 +0500" channel="KoksheTV.kz">
-    <title lang="kk">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</title>
-    <desc lang="kk">Бағдарлама "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью</desc>
+    <title lang="kk">"ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью Онлайн көру</title>
+    <desc lang="kk">Бағдарлама "ПӘРМЕНДІ ПІКІР". Бағдарлама аралық телеинтервью Онлайн көру</desc>
   </programme>
   <programme start="20260829212000 +0500" stop="20260829213500 +0500" channel="KoksheTV.kz">
     <title lang="kk">«АРНАЙЫ РЕПОРТАЖ». Ақпараттық сараптамалық бағдарлама</title>
@@ -15265,16 +15277,16 @@
     <desc lang="kk">Бағдарлама "Мәселе"</desc>
   </programme>
   <programme start="20260829180000 +0500" stop="20260829200000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Ақпараттық "Тамыз кеңесі" Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Ақпараттық "Тамыз кеңесі" Онлайн көру</desc>
+    <title lang="kk">"Тамыз кеңесі"</title>
+    <desc lang="kk">Бағдарлама "Тамыз кеңесі"</desc>
   </programme>
   <programme start="20260829200000 +0500" stop="20260829203000 +0500" channel="MangystauTV.kz">
     <title lang="kk">"Маңғыстауда жасалған"</title>
     <desc lang="kk">Бағдарлама "Маңғыстауда жасалған"</desc>
   </programme>
   <programme start="20260829203000 +0500" stop="20260829213000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">"Шамшырақ"</title>
-    <desc lang="kk">Бағдарлама "Шамшырақ"</desc>
+    <title lang="kk">Қоғамдық саяси "Шамшырақ" Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Қоғамдық саяси "Шамшырақ" Онлайн көру</desc>
   </programme>
   <programme start="20260829070000 +0500" stop="20260829070500 +0500" channel="OntustikTV.kz">
     <title lang="kk">Арнаның ашылуы.Гимн.</title>
@@ -15328,21 +15340,17 @@
     <title lang="kk">«Балдәурен»</title>
     <desc lang="kk">Бағдарлама «Балдәурен»</desc>
   </programme>
-  <programme start="20260829182500 +0500" stop="20260829191000 +0500" channel="OntustikTV.kz">
+  <programme start="20260829182500 +0500" stop="20260829203500 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Өнерлі өлке»</title>
     <desc lang="kk">Бағдарлама «Өнерлі өлке»</desc>
-  </programme>
-  <programme start="20260829191000 +0500" stop="20260829203500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">музыкалық бағдарлама «Ән шашу» Онлайн көру</title>
-    <desc lang="kk">Бағдарлама музыкалық бағдарлама «Ән шашу» Онлайн көру</desc>
   </programme>
   <programme start="20260829203500 +0500" stop="20260829211000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Сұхбат live»</title>
     <desc lang="kk">Бағдарлама «Сұхбат live»</desc>
   </programme>
   <programme start="20260829211000 +0500" stop="20260829222500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">«Гауһартас»</title>
-    <desc lang="kk">Бағдарлама «Гауһартас»</desc>
+    <title lang="kk">мәдени-танымдық бағдарлама «Гауһартас» Онлайн көру</title>
+    <desc lang="kk">Бағдарлама мәдени-танымдық бағдарлама «Гауһартас» Онлайн көру</desc>
   </programme>
   <programme start="20260829222500 +0500" stop="20260829235500 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Жаным менің»</title>
@@ -15409,16 +15417,16 @@
     <desc lang="kk">Бағдарлама «ДАРЫН» (каз) (танымдық бағдарлама)</desc>
   </programme>
   <programme start="20260829193000 +0500" stop="20260829200000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«СЫРЛЫ САХНА» (мәдени-танымдық бағдарлама ) Онлайн көру</title>
-    <desc lang="kk">Бағдарлама «СЫРЛЫ САХНА» (мәдени-танымдық бағдарлама ) Онлайн көру</desc>
+    <title lang="kk">«СЫРЛЫ САХНА» (мәдени-танымдық бағдарлама )</title>
+    <desc lang="kk">Бағдарлама «СЫРЛЫ САХНА» (мәдени-танымдық бағдарлама )</desc>
   </programme>
   <programme start="20260829200000 +0500" stop="20260829210000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«ДИАЛОГ» (қоғамдық бағдарлама)</title>
     <desc lang="kk">Бағдарлама «ДИАЛОГ» (қоғамдық бағдарлама)</desc>
   </programme>
   <programme start="20260829210000 +0500" stop="20260829213000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«АPТА-АQPARAT» (Апталық ақпараттық-сараптамалық бағдарлама)</title>
-    <desc lang="kk">Бағдарлама «АPТА-АQPARAT» (Апталық ақпараттық-сараптамалық бағдарлама)</desc>
+    <title lang="kk">«АPТА-АQPARAT» (Апталық ақпараттық-сараптамалық бағдарлама) Онлайн көру</title>
+    <desc lang="kk">Бағдарлама «АPТА-АQPARAT» (Апталық ақпараттық-сараптамалық бағдарлама) Онлайн көру</desc>
   </programme>
   <programme start="20260829213000 +0500" stop="20260829221000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«СЕНБІЛІК КЕШ» (мәдени-танымдық бағдарлама)</title>
@@ -15485,8 +15493,8 @@
     <desc lang="kk">Бағдарлама «Егемен ел. 35 белес». «Қарағанды-Жезқазған» автожолы»</desc>
   </programme>
   <programme start="20260829195000 +0500" stop="20260829200000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Музыкалық бағдарлама Бейнеклип Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Музыкалық бағдарлама Бейнеклип Онлайн көру</desc>
+    <title lang="kk">Бейнеклип</title>
+    <desc lang="kk">Бағдарлама Бейнеклип</desc>
   </programme>
   <programme start="20260829200000 +0500" stop="20260829204500 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Главная студия»</title>
@@ -15497,8 +15505,8 @@
     <desc lang="kk">Бағдарлама «Аймақ айнасы»</desc>
   </programme>
   <programme start="20260829210500 +0500" stop="20260829221000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">«Гауһартас»</title>
-    <desc lang="kk">Бағдарлама «Гауһартас»</desc>
+    <title lang="kk">Мәдени-танымдық кеш «Гауһартас» Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Мәдени-танымдық кеш «Гауһартас» Онлайн көру</desc>
   </programme>
   <programme start="20260829221000 +0500" stop="20260829231000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Дәуір даналары». Құнанбай Өскенбайұлы</title>
