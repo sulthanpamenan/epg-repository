@@ -37,7 +37,7 @@ EPG_TARGET_SOURCES = [
     {"id": "RedBullWinter.global", "name": "Red Bull TV: Winter", "rrn": "rrn:content:video-channels:f4aa4fe4-5ce6-4b1c-a60b-abc6f21f16d0", "utc_offset": "+0000"},
     {"id": "RedBullActionReel.global", "name": "Red Bull TV: Action Reel", "rrn": "rrn:content:video-channels:69a66f02-21fd-42a1-be5b-6965541cfe6a", "utc_offset": "+0000"},
 
-    # 3. CLTV36 FILIPINA
+    # 3. CLTV36 PHILIPPINES
     {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "utc_offset": "+0800"},
 
     # 4. QAZAQSTAN NETWORK
@@ -124,7 +124,7 @@ def fetch_epg_tpchannel(target):
 
                     programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Watch {title}", "lang": "th"})
                 except Exception: continue
-            print(f"[✓] TP Channel: Successfully loaded {len(programmes)} program!")
+            print(f"[✓] TP Channel: Successfully loaded {len(programmes)} programs!")
     except Exception as e:
         print(f"[!] TP Channel Error: {e}")
     return channels, programmes
@@ -177,7 +177,7 @@ def fetch_epg_cltv36(target):
 
                             programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": desc_text, "lang": "en"})
                         except Exception: continue
-            print(f"[✓] CLTV36: Successfully loaded {len(programmes)} program!")
+            print(f"[✓] CLTV36: Successfully loaded {len(programmes)} programs!")
     except Exception as e:
         print(f"[!] CLTV36 Error: {e}")
     return channels, programmes
@@ -259,7 +259,7 @@ def fetch_all_mncvision_parallel():
                 all_channels.extend(ch_list)
                 all_programmes.extend(progs)
 
-    print(f"[✓] MNC Vision: Successfully extracted active {len(all_channels)} channels & {len(all_programmes)} program!")
+    print(f"[✓] MNC Vision: Successfully extracted {len(all_channels)} active channels & {len(all_programmes)} programs!")
     return all_channels, all_programmes
 
 # --- 4. QAZAQSTAN NETWORK ---
@@ -279,6 +279,7 @@ def fetch_epg_qazaqstan(target):
             soup = BeautifulSoup(res.text, "html.parser")
             raw_progs = []
 
+            # Scheme 1: Qazaqstan, Qazsport, Abai, Aqjaiyq
             items_schema1 = soup.select(".program-item, a.program-item")
             if items_schema1:
                 for item in items_schema1:
@@ -292,6 +293,7 @@ def fetch_epg_qazaqstan(target):
                             try: raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M"), "title": title})
                             except Exception: continue
 
+            # Scheme 2: Balapan TV (.rounded-full / .drop-shadow)
             if not raw_progs:
                 for card in soup.find_all("a", class_=re.compile(r"rounded-full|group", re.I)):
                     text_content = card.get_text(" ", strip=True)
@@ -317,7 +319,7 @@ def fetch_epg_qazaqstan(target):
                         if stop_dt <= start_dt: stop_dt += timedelta(days=1)
                     else: stop_dt = start_dt + timedelta(hours=1)
                     programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": curr["title"], "desc": f"Бағдарлама {curr['title']}", "lang": "kk"})
-                print(f"[✓] Qazaqstan Network [{target['name']}]: Successfully loaded {len(programmes)} program!")
+                print(f"[✓] Qazaqstan Network [{target['name']}]: Successfully loaded {len(programmes)} programs!")
                 break
         except Exception: continue
     return channels, programmes
@@ -381,7 +383,7 @@ def generate_xmltv():
     all_channels.extend(mnc_channels)
     all_programmes.extend(mnc_programmes)
 
-    # 3. Multi-threaded Scraping from Other Sources
+    # 3. Multi-threaded Scraping from Other Sources (TP Channel, CLTV36, Qazaqstan Network)
     other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
     with ThreadPoolExecutor(max_workers=8) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
@@ -403,13 +405,10 @@ def generate_xmltv():
             ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = p["title"]
             if p.get("desc"): ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
 
-    with open("epg.xml", "wb") as f:
-        tree = ET.ElementTree(tv_elem)
-        tree.write(f, encoding="utf-8", xml_declaration=True)
-        f.flush()
-
+    ET.indent(tv_elem, space="  ")
+    ET.ElementTree(tv_elem).write("epg.xml", encoding="utf-8", xml_declaration=True)
     print("=" * 60)
-    print(f"[SUCCESS] Successfully created epg.xml with {len(all_channels)} channel & {len(seen)} programs!")
+    print(f"[SUCCESS] Successfully created epg.xml with {len(all_channels)} channels & {len(seen)} programs!")
     print("=" * 60)
 
 if __name__ == "__main__":
