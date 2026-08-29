@@ -5,13 +5,12 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
 import requests
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
 TIME_PATTERN_HM = re.compile(r"(\b[0-2]?\d[:.][0-5]\d\b)")
@@ -60,45 +59,6 @@ EPG_TARGET_SOURCES = [
     {"id": "QyzylordaTV.kz", "name": "Qyzylorda TV", "url": "https://qyzylordatv.kz/kz/program", "utc_offset": "+0500"},
     {"id": "SaryarqaTV.kz", "name": "Saryarqa TV", "url": "https://saryarqatv.kz/kz/program", "utc_offset": "+0500"},
     {"id": "SemeiTV.kz", "name": "Semei TV", "url": "https://semeitv.kz/kz/program", "utc_offset": "+0500"},
-
-    # 5. MNC VISION INDONESIA
-    # --- FTA Nasional ---
-    {"id": "RCTI.id", "name": "RCTI", "mnc_code": "80", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "MNCTV.id", "name": "MNCTV", "mnc_code": "82", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "GTV.id", "name": "GTV", "mnc_code": "81", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "iNews.id", "name": "iNews", "mnc_code": "83", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "SCTV.id", "name": "SCTV", "mnc_code": "89", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "Indosiar.id", "name": "Indosiar", "mnc_code": "78", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "TransTV.id", "name": "Trans TV", "mnc_code": "87", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "Trans7.id", "name": "Trans7", "mnc_code": "110", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "ANTV.id", "name": "ANTV", "mnc_code": "115", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "tvOne.id", "name": "tvOne", "mnc_code": "97", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "MetroTV.id", "name": "Metro TV", "mnc_code": "107", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "KompasTV.id", "name": "Kompas TV", "mnc_code": "106", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "NET.id", "name": "NET.", "mnc_code": "116", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "TVRI.id", "name": "TVRI", "mnc_code": "118", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-
-    # --- MNC Group Channels (In-House Terbaru) ---
-    {"id": "VisionPrime.id", "name": "Vision Prime", "mnc_code": "1", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "KidsTV.id", "name": "Kids TV", "mnc_code": "46", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "Entertainment.id", "name": "Entertainment", "mnc_code": "86", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "MusicTV.id", "name": "Music TV", "mnc_code": "111", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "FoodTravel.id", "name": "Food Travel", "mnc_code": "95", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "Life.id", "name": "Life", "mnc_code": "91", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "MuslimTV.id", "name": "Muslim TV", "mnc_code": "92", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "CelebritiesTV.id", "name": "Celebrities TV", "mnc_code": "96", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-
-    # --- Olahraga & International Premium ---
-    {"id": "Sportstars.id", "name": "Sportstars", "mnc_code": "102", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "Sportstars2.id", "name": "Sportstars 2", "mnc_code": "98", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "SoccerChannel.id", "name": "Soccer Channel", "mnc_code": "101", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "SPOTV.id", "name": "SPOTV", "mnc_code": "307", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "SPOTV2.id", "name": "SPOTV 2", "mnc_code": "308", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "beINSports1.id", "name": "beIN Sports 1", "mnc_code": "309", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "beINSports2.id", "name": "beIN Sports 2", "mnc_code": "310", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "beINSports3.id", "name": "beIN Sports 3", "mnc_code": "311", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "AXN.id", "name": "AXN", "mnc_code": "154", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
-    {"id": "tvN.id", "name": "tvN", "mnc_code": "158", "url": "https://www.mncvision.id/schedule/table", "utc_offset": "+0700"},
 ]
 
 HTTP_SESSION = requests.Session()
@@ -163,7 +123,7 @@ def fetch_epg_tpchannel(target):
 
                     programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Watch {title}", "lang": "th"})
                 except Exception: continue
-            print(f"[✓] TP Channel: Berhasil memuat {len(programmes)} program!")
+            print(f"[✓] TP Channel: Successfully loaded {len(programmes)} program!")
     except Exception as e:
         print(f"[!] TP Channel Error: {e}")
     return channels, programmes
@@ -216,52 +176,90 @@ def fetch_epg_cltv36(target):
 
                             programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": desc_text, "lang": "en"})
                         except Exception: continue
-            print(f"[✓] CLTV36: Berhasil memuat {len(programmes)} program!")
+            print(f"[✓] CLTV36: Successfully loaded {len(programmes)} program!")
     except Exception as e:
         print(f"[!] CLTV36 Error: {e}")
     return channels, programmes
 
 # --- 3. MNC VISION ---
-def fetch_epg_mncvision(target):
-    epg_id, offset = target["id"], target.get("utc_offset", "+0700")
-    channels = [{"id": epg_id, "name": target["name"], "icon": target.get("icon", "")}]
-    programmes = []
-    
-    today_local = get_now_in_channel_tz(offset)
-    today_str = today_local.strftime("%Y-%m-%d")
-    payload = {"c_id": target.get("mnc_code", "1"), "date": today_str}
-    headers = {"User-Agent": HEADERS["User-Agent"], "Content-Type": "application/x-www-form-urlencoded", "Origin": "https://www.mncvision.id", "Referer": "https://www.mncvision.id/schedule/table"}
+def fetch_epg_mncvision_code(mnc_code):
+    today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
+    post_url = "https://www.mncvision.id/schedule/table"
+
+    payload = {
+        "search_model": "channel",
+        "af0rmelement": "aformelement",
+        "fdate": today_str,
+        "fchannel": str(mnc_code),
+        "submit": "Cari"
+    }
+
+    mnc_headers = {
+        "User-Agent": HEADERS["User-Agent"],
+        "Origin": "https://www.mncvision.id",
+        "Referer": "https://www.mncvision.id/schedule/table",
+    }
 
     try:
-        res = HTTP_SESSION.post(target.get("url", "https://www.mncvision.id/schedule/table"), data=payload, headers=headers, timeout=12)
+        res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=12)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, "html.parser")
             table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
             
             if table:
+                rows = table.find_all("tr")[1:]
                 raw_list = []
-                for row in table.find_all("tr")[1:]:
+                
+                for row in rows:
                     cols = row.find_all(["td", "th"])
                     if len(cols) >= 2:
                         time_str, title_str = cols[0].get_text(strip=True), cols[1].get_text(strip=True)
                         if time_str and title_str:
                             raw_list.append((time_str.replace(".", ":").zfill(5)[:5], clean_text_str(title_str)))
 
-                for i in range(len(raw_list)):
-                    t_str, title = raw_list[i]
-                    try:
-                        start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-                        if i + 1 < len(raw_list):
-                            stop_dt = datetime.strptime(f"{today_str} {raw_list[i+1][0]}", "%Y-%m-%d %H:%M")
-                            if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                        else: stop_dt = start_dt + timedelta(hours=1)
+                if raw_list:
+                    ch_id = f"MNC_{mnc_code}.id"
+                    ch_name = f"MNC Channel {mnc_code}"
+                    
+                    channels = [{"id": ch_id, "name": ch_name}]
+                    programmes = []
 
-                        programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Acara {title}", "lang": "id"})
-                    except Exception: continue
-            print(f"[✓] MNC Vision [{target['name']}]: Berhasil memuat {len(programmes)} program!")
-    except Exception as e:
-        print(f"[!] MNC Vision Error [{target['name']}]: {e}")
-    return channels, programmes
+                    for i in range(len(raw_list)):
+                        t_str, title = raw_list[i]
+                        try:
+                            start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
+                            if i + 1 < len(raw_list):
+                                stop_dt = datetime.strptime(f"{today_str} {raw_list[i+1][0]}", "%Y-%m-%d %H:%M")
+                                if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+                            else: stop_dt = start_dt + timedelta(hours=1)
+
+                            programmes.append({
+                                "channel": ch_id,
+                                "start": format_xmltv_date(start_dt, "+0700"),
+                                "stop": format_xmltv_date(stop_dt, "+0700"),
+                                "title": title,
+                                "desc": f"Acara {title} di {ch_name}",
+                                "lang": "id",
+                            })
+                        except Exception: continue
+                    return channels, programmes
+    except Exception:
+        pass
+    return [], []
+
+def fetch_all_mncvision_parallel():
+    print("[*] Starting mass scan of MNC Vision (ID 1 - 120)...")
+    all_channels, all_programmes = [], []
+    
+    with ThreadPoolExecutor(max_workers=15) as executor:
+        results = executor.map(fetch_epg_mncvision_code, range(1, 121))
+        for ch_list, progs in results:
+            if progs:
+                all_channels.extend(ch_list)
+                all_programmes.extend(progs)
+
+    print(f"[✓] MNC Vision: Successfully extracted active {len(all_channels)} channels & {len(all_programmes)} program!")
+    return all_channels, all_programmes
 
 # --- 4. QAZAQSTAN NETWORK ---
 def fetch_epg_qazaqstan(target):
@@ -320,7 +318,7 @@ def fetch_epg_qazaqstan(target):
                         if stop_dt <= start_dt: stop_dt += timedelta(days=1)
                     else: stop_dt = start_dt + timedelta(hours=1)
                     programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": curr["title"], "desc": f"Бағдарлама {curr['title']}", "lang": "kk"})
-                print(f"[✓] Qazaqstan Network [{target['name']}]: Berhasil memuat {len(programmes)} program!")
+                print(f"[✓] Qazaqstan Network [{target['name']}]: Successfully loaded {len(programmes)} program!")
                 break
         except Exception: continue
     return channels, programmes
@@ -352,7 +350,7 @@ def fetch_epg_redbull_all(targets):
                         start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
                         end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")) if end_iso else start_dt + timedelta(hours=1)
                         programmes.append({"channel": t["id"], "start": format_xmltv_date(start_dt, "+0000"), "stop": format_xmltv_date(end_dt, "+0000"), "title": clean_text_str(title), "desc": clean_text_str(desc), "lang": "en"})
-                print(f"[✓] Red Bull TV [{t['name']}]: Direct Fetch Berhasil!")
+                print(f"[✓] Red Bull TV [{t['name']}]: Direct Fetch Successful!")
         except Exception as e: print(f"[!] Red Bull API Error: {e}")
     return channels, programmes
 
@@ -362,34 +360,41 @@ def process_single_target(target):
     if t_id == "TPChannel.th": return fetch_epg_tpchannel(target)
     elif t_id == "CLTV36.ph": return fetch_epg_cltv36(target)
     elif t_id.endswith(".kz"): return fetch_epg_qazaqstan(target)
-    elif t_id.endswith(".id"): return fetch_epg_mncvision(target)
     return [], []
 
 def generate_xmltv():
-    print("[*] Memulai Generasi EPG XMLTV...")
+    print("=" * 60)
+    print("[*] Starting EPG XMLTV Generation")
+    print("=" * 60)
+    
     tv_elem = ET.Element("tv", {"generator-info-name": "Universal IPTV EPG Generator"})
     all_channels, all_programmes = [], []
 
-    # 1. Scraping Red Bull TV
+    # 1. Fetch Red Bull TV
     redbull_targets = [t for t in EPG_TARGET_SOURCES if "rrn" in t]
     if redbull_targets:
         rb_channels, rb_programmes = fetch_epg_redbull_all(redbull_targets)
         all_channels.extend(rb_channels)
         all_programmes.extend(rb_programmes)
 
-    # 2. Multi-Threading Scraping untuk Sumber Lainnya
+    # 2. MNC Vision Mass Scan
+    mnc_channels, mnc_programmes = fetch_all_mncvision_parallel()
+    all_channels.extend(mnc_channels)
+    all_programmes.extend(mnc_programmes)
+
+    # 3. Multi-threaded Scraping from Other Sources (TP Channel, CLTV36, Qazaqstan Network)
     other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
     with ThreadPoolExecutor(max_workers=8) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
 
-    # 3. Buat Elemen Channel XML
+    # 4. Write Channel Element to XML
     for ch in all_channels:
         c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
         ET.SubElement(c_elem, "display-name").text = ch["name"]
 
-    # 4. Buat Elemen Program XML & Deduplikasi
+    # 5. Write Program Elements to XML & Deduplicate
     seen = set()
     for p in all_programmes:
         key = (p["channel"], p["start"])
@@ -401,7 +406,9 @@ def generate_xmltv():
 
     ET.indent(tv_elem, space="  ")
     ET.ElementTree(tv_elem).write("epg.xml", encoding="utf-8", xml_declaration=True)
-    print(f"\n[SUCCESS] Berhasil memperbarui epg.xml dengan {len(all_channels)} channel & {len(seen)} program!")
+    print("=" * 60)
+    print(f"[SUCCESS] Berhasil membuat epg.xml dengan {len(all_channels)} channel & {len(seen)} program!")
+    print("=" * 60)
 
 if __name__ == "__main__":
     generate_xmltv()
