@@ -200,6 +200,7 @@ def fetch_epg_mncvision_code(mnc_code):
     today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
     post_url = "https://www.mncvision.id/schedule/table"
 
+    # PERBAIKAN PENTING: Value "submit" HARUS "Cari" (sesuai spesifikasi form MNC Vision)
     payload = {
         "search_model": "channel",
         "af0rmelement": "aformelement",
@@ -268,7 +269,7 @@ def fetch_all_mncvision_parallel():
     print("[*] Starting parallel scan for MNC Vision (ID 1 - 473)...")
     all_channels, all_programmes = [], []
     
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         results = executor.map(fetch_epg_mncvision_code, range(1, 474))
         for ch_list, progs in results:
             if progs:
@@ -296,7 +297,6 @@ def fetch_epg_qazaqstan(target):
             soup = BeautifulSoup(res.text, "html.parser")
             raw_progs = []
 
-            # Schema 1: Qazaqstan, Qazsport, Abai, Aqjaiyq
             items_schema1 = soup.select(".program-item, a.program-item")
             if items_schema1:
                 for item in items_schema1:
@@ -313,7 +313,6 @@ def fetch_epg_qazaqstan(target):
                             except Exception: 
                                 continue
 
-            # Schema 2: Balapan TV (.rounded-full / .drop-shadow)
             if not raw_progs:
                 for card in soup.find_all("a", class_=re.compile(r"rounded-full|group", re.I)):
                     text_content = card.get_text(" ", strip=True)
@@ -425,12 +424,15 @@ def generate_xmltv():
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
 
-    # 4. Append Channel Elements to XML
+    # PERBAIKAN PENTING: Hanya menambahkan <channel> jika memiliki data program (<programme>)
+    active_channel_ids = {p["channel"] for p in all_programmes}
+    
     for ch in all_channels:
-        c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
-        ET.SubElement(c_elem, "display-name").text = ch["name"]
+        if ch["id"] in active_channel_ids:
+            c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
+            ET.SubElement(c_elem, "display-name").text = ch["name"]
 
-    # 5. Append Program Elements to XML & Deduplicate
+    # Append Program Elements to XML & Deduplicate
     seen = set()
     for p in all_programmes:
         key = (p["channel"], p["start"])
@@ -441,20 +443,20 @@ def generate_xmltv():
             if p.get("desc"): 
                 ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
 
-    # 6. Apply Safe XML Indentation
+    # Apply Safe XML Indentation
     try:
         ET.indent(tv_elem, space="  ")
     except AttributeError:
         pass
 
-    # 7. Write XML Tree to Disk safely
+    # Write XML Tree to Disk safely
     with open("epg.xml", "wb") as f:
         tree = ET.ElementTree(tv_elem)
         tree.write(f, encoding="utf-8", xml_declaration=True)
         f.flush()
 
     print("=" * 60)
-    print(f"[SUCCESS] Successfully created epg.xml with {len(all_channels)} channels & {len(seen)} programs!")
+    print(f"[SUCCESS] Successfully created epg.xml with {len(active_channel_ids)} active channels & {len(seen)} programs!")
     print("=" * 60)
 
 if __name__ == "__main__":
