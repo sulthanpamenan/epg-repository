@@ -447,95 +447,103 @@ def fetch_epg_tpchannel(target):
 
 
 # =========================================================================
-# 2. RED BULL TV (PLAYWRIGHT AUTO-SCROLL SCRAPER)
+# 2. RED BULL TV (OPTIMIZED PLAYWRIGHT SCRAPER)
 # =========================================================================
 def fetch_epg_redbull_all(targets):
-  channels = [{"id": t["id"], "name": t["name"]} for t in targets]
-  programmes = []
-  rrn_map = {t["rrn"]: t["id"] for t in targets}
+    channels = [{"id": t["id"], "name": t["name"]} for t in targets]
+    programmes = []
+    rrn_map = {t["rrn"]: t["id"] for t in targets}
 
-  print("[*] Launching Playwright Chromium for Red Bull TV EPG...")
+    print("[*] Launching Playwright Chromium for Red Bull TV EPG...")
 
-  try:
-    with sync_playwright() as p:
-      browser = p.chromium.launch(headless=True)
-      page = browser.new_page()
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent=HEADERS["User-Agent"]
+            )
+            page = context.new_page()
 
-      def on_response(response):
-        try:
-          if response.status == 200 and (
-              "guides/v5.1" in response.url
-              or "collections/v5.3" in response.url
-          ):
-            data = response.json()
-            cards = data.get("cards", []) if isinstance(data, dict) else []
+            def process_json_payload(data, request_url):
+                cards = data.get("cards", []) if isinstance(data, dict) else []
+                
+                # Identifikasi ID Channel berdasarkan RRN dalam URL request
+                matched_id = "RedBullTV.global"
+                for rrn, ch_id in rrn_map.items():
+                    if rrn in request_url:
+                        matched_id = ch_id
+                        break
 
-            matched_id = None
-            for rrn, ch_id in rrn_map.items():
-              if rrn in response.url:
-                matched_id = ch_id
-                break
-            if not matched_id:
-              matched_id = "RedBullTV.global"
-
-            for card in cards:
-              title = (
-                  card.get("title")
-                  or card.get("label")
-                  or card.get("subtitle")
-                  or "Red Bull TV Program"
-              )
-              desc = (
-                  card.get("short_description") or card.get("description") or ""
-              )
-              start_iso = (
-                  card.get("start_time")
-                  or card.get("startTime")
-                  or card.get("published_at")
-              )
-              end_iso = card.get("end_time") or card.get("endTime")
-
-              if start_iso:
-                try:
-                  start_dt = datetime.fromisoformat(
-                      str(start_iso).replace("Z", "+00:00")
-                  )
-                  if end_iso:
-                    end_dt = datetime.fromisoformat(
-                        str(end_iso).replace("Z", "+00:00")
+                for card in cards:
+                    title = (
+                        card.get("title")
+                        or card.get("label")
+                        or card.get("subtitle")
+                        or "Red Bull TV Program"
                     )
-                  else:
-                    end_dt = datetime.fromtimestamp(
-                        start_dt.timestamp() + 3600
+                    desc = (
+                        card.get("short_description")
+                        or card.get("description")
+                        or ""
                     )
+                    start_iso = (
+                        card.get("start_time")
+                        or card.get("startTime")
+                        or card.get("published_at")
+                    )
+                    end_iso = card.get("end_time") or card.get("endTime")
 
-                  programmes.append({
-                      "channel": matched_id,
-                      "start": format_xmltv_date(start_dt, "+0000"),
-                      "stop": format_xmltv_date(end_dt, "+0000"),
-                      "title": clean_text_str(title),
-                      "desc": clean_text_str(
-                          desc or f"Watch {title} on Red Bull TV."
-                      ),
-                      "lang": "en",
-                  })
-                except Exception:
-                  continue
-        except Exception:
-          pass
+                    if start_iso:
+                        try:
+                            start_dt = datetime.fromisoformat(
+                                str(start_iso).replace("Z", "+00:00")
+                            )
+                            if end_iso:
+                                end_dt = datetime.fromisoformat(
+                                    str(end_iso).replace("Z", "+00:00")
+                                )
+                            else:
+                                end_dt = start_dt + timedelta(hours=1)
 
-      page.on("response", on_response)
-      page.goto("https://www.redbull.tv/id_ID/epg", wait_until="networkidle")
+                            programmes.append({
+                                "channel": matched_id,
+                                "start": format_xmltv_date(start_dt, "+0000"),
+                                "stop": format_xmltv_date(end_dt, "+0000"),
+                                "title": clean_text_str(title),
+                                "desc": clean_text_str(
+                                    desc or f"Watch {title} on Red Bull TV."
+                                ),
+                                "lang": "en",
+                            })
+                        except Exception:
+                            continue
 
-      for _ in range(10):
-        page.evaluate("window.scrollBy(0, 1000)")
-        page.wait_for_timeout(1000)
+            def on_response(response):
+                if response.status == 200 and (
+                    "guides/v5.1" in response.url
+                    or "collections/v5.3" in response.url
+                ):
+                    try:
+                        data = response.json()
+                        process_json_payload(data, response.url)
+                    except Exception:
+                        pass
 
-      browser.close()
-  except Exception as e:
-    print(f"[!] Red Bull Playwright Error: {e}")
+            page.on("response", on_response)
+            
+            # Akses halaman EPG
+            page.goto("https://www.redbull.tv/id_ID/epg", wait_until="domcontentloaded", timeout=30000)
+            
+            # Auto scroll bertahap untuk memicu lazy loading API
+            for _ in range(8):
+                page.mouse.wheel(0, 1500)
+                page.wait_for_timeout(800)
 
-  return channels, programmes
+            browser.close()
+    except Exception as e:
+        print(f"[!] Red Bull Playwright Error: {e}")
+
+    return channels, programmes
 
 
 # =========================================================================
