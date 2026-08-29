@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <tv generator-info-name="Universal IPTV EPG Generator" generator-info-url="https://github.com/sulthanpamenan">
- <channel id="TPChannel.th">
-  <display-name>TP Channel</display-name>
- </channel>
  <channel id="RedBullTV.global">
   <display-name>Red Bull TV: World of Red Bull</display-name>
  </channel>
@@ -29,6 +26,9 @@
  </channel>
  <channel id="RedBullActionReel.global">
   <display-name>Red Bull TV: Action Reel</display-name>
+ </channel>
+ <channel id="TPChannel.th">
+  <display-name>TP Channel</display-name>
  </channel>
  <channel id="CLTV36.ph">
   <display-name>CLTV36</display-name>
@@ -89,6 +89,18 @@
  </channel>
  <channel id="SemeiTV.kz">
   <display-name>Semei TV</display-name>
+ </channel>
+ <channel id="RCTI.id">
+  <display-name>RCTI</display-name>
+ </channel>
+ <channel id="MNCTV.id">
+  <display-name>MNCTV</display-name>
+ </channel>
+ <channel id="GTV.id">
+  <display-name>GTV</display-name>
+ </channel>
+ <channel id="iNews.id">
+  <display-name>iNews</display-name>
  </channel>
  <programme start="20260829070000 +0500" stop="20260829080000 +0500" channel="AbaiTV.kz">
   <title lang="kk">Әнұран 07:05 . 9-бағдарлама «Ұлы дала сазы». 9-бағдарлама 08:00 «Көне дәуір құпиялары». 5-бөлім Фильм 08:30 . Киіз үй Түркі әлемі 09:10 . Бұқар жырау Дәуір даналары 10:00 . Ұлттық би ГАУҺАРТАС. Мәдени-танымдық бағдарлама. 4-бағдарлама 11:00 Программа. Сергей Калмыков Pro art 11:25 Программа. «Қарлығаштың құйрығы неге айыр?» Эпос 11:55 . 26 бағдарлама Алтын қақпа 12:50 Программа. Меруерт Утекешева Пока все вместе 13:50 «Нұржамал шақырады» концерті Концерт 14:55 «Ұлы Дала Таңы».  Фильм 17:35 . Су қауіпсіздігі: мәселелер мен шешімдер Ғылым мен ғалам 18:00 . «Өнерім – өмірім» Қазақстанның Халық артисі Хадиша Бөкеева туралы Ұмытпаймыз 19:05 . Шара Жиенқұлова Жәдігер 19:30 АРНАЙЫ ЖОБА. Семей полигонының жабылғанына 35 жыл толуына орай арнайы жоба Ақын әлемі 20:00 Программа. Муратбек Турбай Вечные ценности 21:00 . «Көне аспаптардың заманауи келбеті» ЗАМАН-АРТ 22:00 «Шаңырақ».  Фильм 23:30 «Ли Бай». Деректі фильм. 2 бөлім Фильм 00:10 Әнұран</title>
@@ -1022,13 +1034,13 @@
   <title lang="kk">Арнаның жабылуы.Гимн</title>
   <desc lang="kk">Бағдарлама Арнаның жабылуы.Гимн - Ontustik TV</desc>
  </programme>
- <programme start="20260829060500 +0500" stop="20260829070500 +0500" channel="Qazaqstan.kz">
-  <title lang="kk">Фериха 07:45 Арнайы жоба ІТ жетістіктер: Жаңа буын 08:05  Көңіл толқыны 09:00  Жоғалған жылдар 10:00  Сезім мен серт 12:00 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы Prime Era 12:25 Қуандық Рақымның концерті 14:20 Арнайы жоба Қазақстан және ядролық қарусыз әлем 14:35 Мультфильм Су перісі 2: теңізге оралу 15:40  Менің атым Қожа 17:40 1-бағдарлама Құрылтай 18:00  Сезім мен серт  20:00 Жаңалықтар Ақпарат 20:15  Әлем және біз 20:30  Әулет құпиясы 21:25  Титаник 01:15 Жаңалықтар Ақпарат 01:30  Әлем және біз 01:45 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы «Prime era» 02:05 Жүсіпбек Елебековтің туғанына 122 жыл Бірегей 02:55 Экологиялық акцияларды қалай тұрақты құндылыққа айналдырамыз? Таза сана 03:15 Арнайы жоба ІТ жетістіктер: Жаңа буын 03:20 1-бағдарлама Құрылтай 03:40 Деректі фильм Пирамидалар құпиясы 04:25  Көңіл толқыны 05:10 Әнұран 05:35 Жаңалықтар Ақпарат 05:50  Ақсауыт</title>
-  <desc lang="kk">Бағдарлама Фериха 07:45 Арнайы жоба ІТ жетістіктер: Жаңа буын 08:05  Көңіл толқыны 09:00  Жоғалған жылдар 10:00  Сезім мен серт 12:00 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы Prime Era 12:25 Қуандық Рақымның концерті 14:20 Арнайы жоба Қазақстан және ядролық қарусыз әлем 14:35 Мультфильм Су перісі 2: теңізге оралу 15:40  Менің атым Қожа 17:40 1-бағдарлама Құрылтай 18:00  Сезім мен серт  20:00 Жаңалықтар Ақпарат 20:15  Әлем және біз 20:30  Әулет құпиясы 21:25  Титаник 01:15 Жаңалықтар Ақпарат 01:30  Әлем және біз 01:45 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы «Prime era» 02:05 Жүсіпбек Елебековтің туғанына 122 жыл Бірегей 02:55 Экологиялық акцияларды қалай тұрақты құндылыққа айналдырамыз? Таза сана 03:15 Арнайы жоба ІТ жетістіктер: Жаңа буын 03:20 1-бағдарлама Құрылтай 03:40 Деректі фильм Пирамидалар құпиясы 04:25  Көңіл толқыны 05:10 Әнұран 05:35 Жаңалықтар Ақпарат 05:50  Ақсауыт - Qazaqstan TV</desc>
+ <programme start="20260829060500 +0500" stop="20260830060500 +0500" channel="Qazaqstan.kz">
+  <title lang="kk">Фериха  07:45 Арнайы жоба ІТ жетістіктер: Жаңа буын 08:05  Көңіл толқыны 09:00  Жоғалған жылдар 10:00  Сезім мен серт 12:00 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы Prime Era 12:25 Қуандық Рақымның концерті 14:15 Арнайы жоба Қазақстан және ядролық қарусыз әлем 14:35 Мультфильм Су перісі 2: теңізге оралу 15:40  Менің атым Қожа 17:40 1-бағдарлама Құрылтай 18:00  Сезім мен серт  20:00 Жаңалықтар Ақпарат 20:15  Әлем және біз 20:30  Әулет құпиясы 21:25  Титаник 01:15 Жаңалықтар Ақпарат 01:30  Әлем және біз 01:45 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы «Prime era» 02:05 Жүсіпбек Елебековтің туғанына 122 жыл Бірегей 02:55 Экологиялық акцияларды қалай тұрақты құндылыққа айналдырамыз? Таза сана 03:15 Арнайы жоба ІТ жетістіктер: Жаңа буын 03:20 1-бағдарлама Құрылтай 03:40 Деректі фильм Пирамидалар құпиясы 04:25  Көңіл толқыны 05:10 Әнұран 05:35 Жаңалықтар Ақпарат 05:50  Ақсауыт</title>
+  <desc lang="kk">Бағдарлама Фериха  07:45 Арнайы жоба ІТ жетістіктер: Жаңа буын 08:05  Көңіл толқыны 09:00  Жоғалған жылдар 10:00  Сезім мен серт 12:00 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы Prime Era 12:25 Қуандық Рақымның концерті 14:15 Арнайы жоба Қазақстан және ядролық қарусыз әлем 14:35 Мультфильм Су перісі 2: теңізге оралу 15:40  Менің атым Қожа 17:40 1-бағдарлама Құрылтай 18:00  Сезім мен серт  20:00 Жаңалықтар Ақпарат 20:15  Әлем және біз 20:30  Әулет құпиясы 21:25  Титаник 01:15 Жаңалықтар Ақпарат 01:30  Әлем және біз 01:45 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы «Prime era» 02:05 Жүсіпбек Елебековтің туғанына 122 жыл Бірегей 02:55 Экологиялық акцияларды қалай тұрақты құндылыққа айналдырамыз? Таза сана 03:15 Арнайы жоба ІТ жетістіктер: Жаңа буын 03:20 1-бағдарлама Құрылтай 03:40 Деректі фильм Пирамидалар құпиясы 04:25  Көңіл толқыны 05:10 Әнұран 05:35 Жаңалықтар Ақпарат 05:50  Ақсауыт - Qazaqstan TV</desc>
  </programme>
  <programme start="20260829060500 +0500" stop="20260829070500 +0500" channel="QazaqstanInt.kz">
-  <title lang="kk">Фериха 07:45 Арнайы жоба ІТ жетістіктер: Жаңа буын 08:05  Көңіл толқыны 09:00  Жоғалған жылдар 10:00  Сезім мен серт 12:00 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы Prime Era 12:25 Қуандық Рақымның концерті 14:20 Арнайы жоба Қазақстан және ядролық қарусыз әлем 14:35 Мультфильм Су перісі 2: теңізге оралу 15:40  Менің атым Қожа 17:40 1-бағдарлама Құрылтай 18:00  Сезім мен серт  20:00 Жаңалықтар Ақпарат 20:15  Әлем және біз 20:30  Әулет құпиясы 21:25  Титаник 01:15 Жаңалықтар Ақпарат 01:30  Әлем және біз 01:45 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы «Prime era» 02:05 Жүсіпбек Елебековтің туғанына 122 жыл Бірегей 02:55 Экологиялық акцияларды қалай тұрақты құндылыққа айналдырамыз? Таза сана 03:15 Арнайы жоба ІТ жетістіктер: Жаңа буын 03:20 1-бағдарлама Құрылтай 03:40 Деректі фильм Пирамидалар құпиясы 04:25  Көңіл толқыны 05:10 Әнұран 05:35 Жаңалықтар Ақпарат 05:50  Ақсауыт</title>
-  <desc lang="kk">Бағдарлама Фериха 07:45 Арнайы жоба ІТ жетістіктер: Жаңа буын 08:05  Көңіл толқыны 09:00  Жоғалған жылдар 10:00  Сезім мен серт 12:00 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы Prime Era 12:25 Қуандық Рақымның концерті 14:20 Арнайы жоба Қазақстан және ядролық қарусыз әлем 14:35 Мультфильм Су перісі 2: теңізге оралу 15:40  Менің атым Қожа 17:40 1-бағдарлама Құрылтай 18:00  Сезім мен серт  20:00 Жаңалықтар Ақпарат 20:15  Әлем және біз 20:30  Әулет құпиясы 21:25  Титаник 01:15 Жаңалықтар Ақпарат 01:30  Әлем және біз 01:45 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы «Prime era» 02:05 Жүсіпбек Елебековтің туғанына 122 жыл Бірегей 02:55 Экологиялық акцияларды қалай тұрақты құндылыққа айналдырамыз? Таза сана 03:15 Арнайы жоба ІТ жетістіктер: Жаңа буын 03:20 1-бағдарлама Құрылтай 03:40 Деректі фильм Пирамидалар құпиясы 04:25  Көңіл толқыны 05:10 Әнұран 05:35 Жаңалықтар Ақпарат 05:50  Ақсауыт - Qazaqstan International</desc>
+  <title lang="kk">Фериха 07:45 Арнайы жоба ІТ жетістіктер: Жаңа буын 08:05  Көңіл толқыны 09:00  Жоғалған жылдар 10:00  Сезім мен серт 12:00 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы Prime Era 12:25 Қуандық Рақымның концерті 14:15 Арнайы жоба Қазақстан және ядролық қарусыз әлем 14:35 Мультфильм Су перісі 2: теңізге оралу 15:40  Менің атым Қожа 17:40 1-бағдарлама Құрылтай 18:00  Сезім мен серт  20:00 Жаңалықтар Ақпарат 20:15  Әлем және біз 20:30  Әулет құпиясы 21:25  Титаник 01:15 Жаңалықтар Ақпарат 01:30  Әлем және біз 01:45 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы «Prime era» 02:05 Жүсіпбек Елебековтің туғанына 122 жыл Бірегей 02:55 Экологиялық акцияларды қалай тұрақты құндылыққа айналдырамыз? Таза сана 03:15 Арнайы жоба ІТ жетістіктер: Жаңа буын 03:20 1-бағдарлама Құрылтай 03:40 Деректі фильм Пирамидалар құпиясы 04:25  Көңіл толқыны 05:10 Әнұран 05:35 Жаңалықтар Ақпарат 05:50  Ақсауыт</title>
+  <desc lang="kk">Бағдарлама Фериха 07:45 Арнайы жоба ІТ жетістіктер: Жаңа буын 08:05  Көңіл толқыны 09:00  Жоғалған жылдар 10:00  Сезім мен серт 12:00 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы Prime Era 12:25 Қуандық Рақымның концерті 14:15 Арнайы жоба Қазақстан және ядролық қарусыз әлем 14:35 Мультфильм Су перісі 2: теңізге оралу 15:40  Менің атым Қожа 17:40 1-бағдарлама Құрылтай 18:00  Сезім мен серт  20:00 Жаңалықтар Ақпарат 20:15  Әлем және біз 20:30  Әулет құпиясы 21:25  Титаник 01:15 Жаңалықтар Ақпарат 01:30  Әлем және біз 01:45 0-ден 9 млн долларға дейін: қазақстандық стартап тарихы «Prime era» 02:05 Жүсіпбек Елебековтің туғанына 122 жыл Бірегей 02:55 Экологиялық акцияларды қалай тұрақты құндылыққа айналдырамыз? Таза сана 03:15 Арнайы жоба ІТ жетістіктер: Жаңа буын 03:20 1-бағдарлама Құрылтай 03:40 Деректі фильм Пирамидалар құпиясы 04:25  Көңіл толқыны 05:10 Әнұран 05:35 Жаңалықтар Ақпарат 05:50  Ақсауыт - Qazaqstan International</desc>
  </programme>
  <programme start="20260829070000 +0500" stop="20260829080000 +0500" channel="Qazsport.kz">
   <title lang="kk">Әнұран 07:05 Футбол. УЕФА Чемпиондар Лигасы. Плей-офф кезеңі ЛАСК (Аустрия) - Селтик (Шотландия) 08:50 Ақпараттық-сараптамалық бағдарламасы Sport review 09:20 Футбол УЕФА Чемпиондар Лигасының журналы 09:45 Сұхбат Шейх Сауд Али Аль Тани  10:00 Қазақстан чемпионаты. Іріктеу Дзюдо  14:10 Азия чемпионаты (Әйелдер). 1\2 финал Волейбол 16:15 Qazsport алаңы ток-шоуы Эквадор татамиіндегі тарихи жеңіс  17:00 Дзюдо Қазақстан чемпионаты. Финал 19:00 Ақпараттық-сараптамалық бағдарламасы Sport review 19:30 Футбол УЕФА Чемпиондар Лигасының шолуы  20:00 Grand slam Дзюдо 22:00 Ақпараттық-сараптамалық бағдарламасы Sport review 22:30 Футбол. УЕФА Чемпиондар Лигасы. Плей-офф кезеңі Сабах (Әзербайжан) - Хапоэль Беэр-Шева (Израиль) 00:55 Футбол УЕФА Чемпиондар Лигасының журналы 01:25 Әнұран</title>
@@ -1109,6 +1121,202 @@
  <programme start="20260829221000 +0500" stop="20260829231000 +0500" channel="QostanaiTV.kz">
   <title lang="kk">«КЕК ЖОЛЫНДА» телехикая 46 бөлім (Түркия, 2025 ж.)</title>
   <desc lang="kk">Бағдарлама «КЕК ЖОЛЫНДА» телехикая 46 бөлім (Түркия, 2025 ж.) - Qostanai TV</desc>
+ </programme>
+ <programme start="20260829000000 +0000" stop="20261107000000 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Megaloop</title>
+  <desc lang="en">The world's best kiteboarders compete against each other and the North Sea at Red Bull Megaloop, performing their most extreme megaloops.</desc>
+ </programme>
+ <programme start="20260829003418 +0000" stop="20260829023957 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: Mostar 2026</title>
+  <desc lang="en">The world’s top cliff divers leap from Mostar’s Stari Most bridge into Neretva River's emerald waters.</desc>
+ </programme>
+ <programme start="20260829023957 +0000" stop="20260829033902 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: United States 2015</title>
+  <desc lang="en">Cliff Diving goes coed as the women joins the men at the 3rd stop of the World Series in Fort Worth, Texas.</desc>
+ </programme>
+ <programme start="20260829033902 +0000" stop="20260829043807 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: Women's Season Recap 2015</title>
+  <desc lang="en">The second season of Women's Cliff Diving pushes the sport to new heights with more difficult dives.</desc>
+ </programme>
+ <programme start="20260829043807 +0000" stop="20260829053714 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: United States 2014</title>
+  <desc lang="en">It’s a day of firsts as the series makes its first stop in Texas and kicks off the first Women’s season.</desc>
+ </programme>
+ <programme start="20260829053714 +0000" stop="20260829063557 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: Season Preview 2014</title>
+  <desc lang="en">The quest for cliff diving perfection continues, and both men's and women's competitions tour in 2014.</desc>
+ </programme>
+ <programme start="20260829063557 +0000" stop="20260829073518 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: France 2015</title>
+  <desc lang="en">La Rochelle, France welcomes the Cliff Diving World Series back to its orginal home for 2015's 2nd stop.</desc>
+ </programme>
+ <programme start="20260829073518 +0000" stop="20260829083438 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: Italy 2015</title>
+  <desc lang="en">In the 7th stop of the World Series, and the women's final, Cliff Diving leaps from Polignano a Mare, Italy.</desc>
+ </programme>
+ <programme start="20260829083438 +0000" stop="20260829085834 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: United Kingdom 2013</title>
+  <desc lang="en">The divers traverse a long platform overlooking the spectator-filled Blue Lagoon in Pembrokeshire, Wales.</desc>
+ </programme>
+ <programme start="20260829084000 +0000" stop="20260829094000 +0000" channel="RedBullTV.global">
+  <title lang="en">MotoGP™</title>
+  <desc lang="en">The next race of the 2026 MotoGP™ season is in Aragon. The Grand Prix of Aragon promises thrilling duels.</desc>
+ </programme>
+ <programme start="20260829085834 +0000" stop="20260829092231 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: France 2013</title>
+  <desc lang="en">The historic Saint Nicolas tower in La Rochelle is the first stop of the 2013 Cliff Diving World Series.</desc>
+ </programme>
+ <programme start="20260829092231 +0000" stop="20260829093838 +0000" channel="RedBullTV.global">
+  <title lang="en">BIKE: Race Tapes – Wild UCI World Cup Stories</title>
+  <desc lang="en">Can DIY riders Aaron Gwin, Neko Mulally and Seth Alvo find success in their MTB pursuits?</desc>
+ </programme>
+ <programme start="20260829093838 +0000" stop="20260829100000 +0000" channel="RedBullTV.global">
+  <title lang="en">RED BULL CLIFF DIVING: Italy 2013</title>
+  <desc lang="en">Optimal weather conditions in Malcesine set the stage for some of the most awe-inspiring dives of the season.</desc>
+ </programme>
+ <programme start="20260829100000 +0000" stop="20260829102340 +0000" channel="RedBullTV.global">
+  <title lang="en">SKATE: Skate Tales – Madars Apse's Global Journey</title>
+  <desc lang="en">Madars Apse meets the Japanese skateboarder who shaped an alternative skate movement.</desc>
+ </programme>
+ <programme start="20260829102340 +0000" stop="20260829111441 +0000" channel="RedBullTV.global">
+  <title lang="en">SURF: WSL Championship Tour 2025 Abu Dhabi – Wrap Show</title>
+  <desc lang="en">The team breaks down three days of action after the success of the the WSL’s first Middle Eastern event.</desc>
+ </programme>
+ <programme start="20260829111441 +0000" stop="20260829120532 +0000" channel="RedBullTV.global">
+  <title lang="en">SURF: WSL Championship Tour 2025 Australia – Wrap Show</title>
+  <desc lang="en">The fight heats up as the mid-year cut looms. Who rises, who falls and who delivers the biggest surprise?</desc>
+ </programme>
+ <programme start="20260829120532 +0000" stop="20260829125623 +0000" channel="RedBullTV.global">
+  <title lang="en">SURF: WSL Championship Tour 2025 Bonsoy – Wrap Show</title>
+  <desc lang="en">The WSL team dissect the top stories, triumphs and upsets of the 2025 Bonsoy Gold Coast Pro.</desc>
+ </programme>
+ <programme start="20260829125623 +0000" stop="20260829131915 +0000" channel="RedBullTV.global">
+  <title lang="en">SKATE: Skate Tales – Madars Apse's Global Journey</title>
+  <desc lang="en">Inspirational Brazilian Vitória Mendonça is changing the face of pro skateboarding culture.</desc>
+ </programme>
+ <programme start="20260829131915 +0000" stop="20260829134251 +0000" channel="RedBullTV.global">
+  <title lang="en">SKATE: Skate Tales – Madars Apse's Global Journey</title>
+  <desc lang="en">Madars Apse travels to Ethiopia to discover the growing, 150-strong skate scene in Addis Ababa.</desc>
+ </programme>
+ <programme start="20260829134251 +0000" stop="20260829143342 +0000" channel="RedBullTV.global">
+  <title lang="en">SURF: Inside Pro Surfing – Behind the Break</title>
+  <desc lang="en">Elite surfers compete at the Rip Curl Pro Bells Beach, chasing legendary Australian waves.</desc>
+ </programme>
+ <programme start="20260829143342 +0000" stop="20260829152432 +0000" channel="RedBullTV.global">
+  <title lang="en">SURF: Inside Pro Surfing – Behind the Break</title>
+  <desc lang="en">Western Australia's hallowed Margaret River played host to the second event of the 2026 WSL Championship Tour.</desc>
+ </programme>
+ <programme start="20260829152432 +0000" stop="20260829161523 +0000" channel="RedBullTV.global">
+  <title lang="en">SURF: Inside Pro Surfing – Behind the Break</title>
+  <desc lang="en">Perfect waves, crazy crowds and mind-blowing performances: the 2026 Gold Coast Pro was an instant classic.</desc>
+ </programme>
+ <programme start="20260829154500 +0000" stop="20260829164500 +0000" channel="RedBullTV.global">
+  <title lang="en">American Football League Europe</title>
+  <desc lang="en">The real season battle begins as the Vienna Vikings take the next step toward AFLE glory.</desc>
+ </programme>
+ <programme start="20260830133000 +0000" stop="20260830143000 +0000" channel="RedBullTV.global">
+  <title lang="en">ADAC MX Masters</title>
+  <desc lang="en">The sixth stop of the ADAC MX Masters 2026 takes the riders to Vellahn in Germany.</desc>
+ </programme>
+ <programme start="20260830142000 +0000" stop="20260830152000 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Bowl Rippers</title>
+  <desc lang="en">Known for its high-energy jam format that captures the style and spontaneity of bowl skating, Red Bull Bowl Rippers returns for the seventh edition in Marseille, France.</desc>
+ </programme>
+ <programme start="20260904070000 +0000" stop="20260906200000 +0000" channel="RedBullTV.global">
+  <title lang="en">Premier Padel</title>
+  <desc lang="en">With Spain boasting the most padel titles in the world and the top-ranked players, excitement is set to reach fever pitch at the Madrid P1.</desc>
+ </programme>
+ <programme start="20260906125000 +0000" stop="20260906135000 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Cerro Abajo</title>
+  <desc lang="en">The world’s best riders in the most extreme urban downhill MTB race conquer steep staircases, narrow streets, parks, monuments and obstacles only Stuttgart can offer.</desc>
+ </programme>
+ <programme start="20260910120000 +0000" stop="20260914190000 +0000" channel="RedBullTV.global">
+  <title lang="en">FIA World Rally Championship</title>
+  <desc lang="en">Rally Chile Bio Bío's gravel roads guarantee plenty of twists and turns. Based in Chile's second-largest city, this route includes technical, winding and cambered forest tracks in the Biobío region.</desc>
+ </programme>
+ <programme start="20260911103000 +0000" stop="20260913170000 +0000" channel="RedBullTV.global">
+  <title lang="en">Premier Padel</title>
+  <desc lang="en">The city of lights hosts the Major tournament as the world's top-ranked players fight for Premier Padel glory.</desc>
+ </programme>
+ <programme start="20260911152500 +0000" stop="20260912203000 +0000" channel="RedBullTV.global">
+  <title lang="en">Drift Masters</title>
+  <desc lang="en">The Polish capital again sets the perfect stage for the closing act of the Drift Masters year. The cavernous PGE Narodowy stadium in Warsaw sets the scene for two days of unmissable drifting action.</desc>
+ </programme>
+ <programme start="20260912084000 +0000" stop="20260913132500 +0000" channel="RedBullTV.global">
+  <title lang="en">MotoGP™</title>
+  <desc lang="en">The next race of the 2026 MotoGP™ season is in Misano. The Grand Prix of San Marino promises thrilling duels.</desc>
+ </programme>
+ <programme start="20260912111500 +0000" stop="20260913125000 +0000" channel="RedBullTV.global">
+  <title lang="en">DTM</title>
+  <desc lang="en">The seventh stop of the 2026 DTM season for the drivers is Sachsenring in Germany.</desc>
+ </programme>
+ <programme start="20260912145000 +0000" stop="20260912155000 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Rookies Cup</title>
+  <desc lang="en">The Misano World Circuit is a race track located next to the town of Misano Adriatico (Province of Rimini) in the frazione of Santa Monica-Cella. Originally designed in 1969.</desc>
+ </programme>
+ <programme start="20260913000000 +0000" stop="20260914030000 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Batalla</title>
+  <desc lang="en">Perú vuelve al centro del freestyle, mientras se prepara para hostear la Final Internacional, ¿quién se llevará el título nacional?</desc>
+ </programme>
+ <programme start="20260917220000 +0000" stop="20260920220000 +0000" channel="RedBullTV.global">
+  <title lang="en">MotoGP™</title>
+  <desc lang="en">The next race of the 2026 MotoGP™ season is at the Red Bull Ring. The Grand Prix of Austria promises thrilling duels.</desc>
+ </programme>
+ <programme start="20260919145000 +0000" stop="20260919155000 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Rookies Cup</title>
+  <desc lang="en">In 1996 it was completely rebuilt with a 4.3 KM layout and renamed the A1 ring. The track was closed after the 2004 season as it was in need of refurbishment.</desc>
+ </programme>
+ <programme start="20260925220000 +0000" stop="20260927220000 +0000" channel="RedBullTV.global">
+  <title lang="en">ADAC MX Masters</title>
+  <desc lang="en">The seventh and final stop of the ADAC MX Masters 2026 takes the riders to Fürstlich Drehna in Germany.</desc>
+ </programme>
+ <programme start="20260927113000 +0000" stop="20260927123000 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Cliff Diving World Series</title>
+  <desc lang="en">One of Red Bull Cliff Diving’s most iconic locations, Polignano a Mare sets the stage for the penultimate stop of the season.</desc>
+ </programme>
+ <programme start="20260927220000 +0000" stop="20261004220000 +0000" channel="RedBullTV.global">
+  <title lang="en">Premier Padel</title>
+  <desc lang="en">The fastest-growing racket sport touches down in the Netherlands for the Rotterdam Premier Padel P2.</desc>
+ </programme>
+ <programme start="20260930220000 +0000" stop="20261004220000 +0000" channel="RedBullTV.global">
+  <title lang="en">FIA World Rally Championship</title>
+  <desc lang="en">The Mediterranean backdrop of Sardinia may be welcoming, but this is one of the WRC's toughest stops. There's no room for error, thanks to narrow, rugged gravel tracks pushing tyres to their limits.</desc>
+ </programme>
+ <programme start="20261003220000 +0000" stop="20261004220000 +0000" channel="RedBullTV.global">
+  <title lang="en">MotoGP™</title>
+  <desc lang="en">The next race of the 2026 MotoGP™ season is at Motegi circuit. The Grand Prix of Japan promises thrilling duels.</desc>
+ </programme>
+ <programme start="20261004220000 +0000" stop="20261011220000 +0000" channel="RedBullTV.global">
+  <title lang="en">Premier Padel</title>
+  <desc lang="en">As the sport continues its rise in popularity, follow Premier Padel to see the game played out at the German stop.</desc>
+ </programme>
+ <programme start="20261009000000 +0000" stop="20261012000000 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Rampage</title>
+  <desc lang="en">The two-day big-mountain freeride MTB event – featuring both women's and men's categories – is back!</desc>
+ </programme>
+ <programme start="20261009220000 +0000" stop="20261011220000 +0000" channel="RedBullTV.global">
+  <title lang="en">DTM</title>
+  <desc lang="en">The eighth and final stop of the 2026 DTM season for the drivers is Hockenheimring, Germany.</desc>
+ </programme>
+ <programme start="20261010220000 +0000" stop="20261011220000 +0000" channel="RedBullTV.global">
+  <title lang="en">MotoGP™</title>
+  <desc lang="en">The next race of the 2026 MotoGP™ season is in Indonesia. The Grand Prix of Indonesia promises thrilling duels.</desc>
+ </programme>
+ <programme start="20261011220000 +0000" stop="20261018220000 +0000" channel="RedBullTV.global">
+  <title lang="en">Premier Padel</title>
+  <desc lang="en">Milan is the next city to champion the sport's boom as Premier Padel continues its global tour.</desc>
+ </programme>
+ <programme start="20261017184500 +0000" stop="20261017194500 +0000" channel="RedBullTV.global">
+  <title lang="en">Red Bull Hardline</title>
+  <desc lang="en">Red Bull Hardline heads to British Columbia for its first-ever event in Canada, as riders prepare to take on this iteration of the world's most extreme downhill race at Cypress Mountain.</desc>
+ </programme>
+ <programme start="20261022220000 +0000" stop="20261025220000 +0000" channel="RedBullTV.global">
+  <title lang="en">MotoGP™</title>
+  <desc lang="en">The next race of the 2026 MotoGP™ season is at Phillip Island. The Grand Prix of Australia promises thrilling duels.</desc>
+ </programme>
+ <programme start="20261025230000 +0000" stop="20261031230000 +0000" channel="RedBullTV.global">
+  <title lang="en">Premier Padel</title>
+  <desc lang="en">As the sport continues its rise in popularity, follow Premier Padel to see the game played out in Kuwait City.</desc>
  </programme>
  <programme start="20260829065800 +0500" stop="20260830065800 +0500" channel="SaryarqaTV.kz">
   <title lang="kk">Әнұран 07:00 Жаңалықтар (каз., рус.) «Арқа ақпарат» 07:45 Ақпараттық бағдарлама «Өзекті» 08:00  «Алты жасар Алпамыс» 09:15 Мәдени-танымдық кеш «Күміс көмей» 10:00 Жаңалықтар (каз., рус.) «Арқа ақпарат» 10:45 Ақпараттық бағдарлама «Өзекті» 11:00  «Топырақ пен Хауа-2» 11:45 Ақпараттық бағдарлама «Таразыда тәртіп» 12:00 Музыкалық бағдарлама Асхат Тарғынның концерті 14:00 ТЕХНИКАЛЫҚ ҮЗІЛІС 17:00  «Он алты жасар чемпион» 18:00 Ақпараттық-танымдық бағдарлама «АуылTIMES» 18:40 Деректі фильм «Тастағы тарих. Петроглифтер» 19:00 Обзор за неделю (рус.) «Апта» 19:30 Ақпараттық-сараптамалық бағдарлама «Егемен ел. 35 белес». «Қарағанды-Жезқазған» автожолы» 19:50 Музыкалық бағдарлама Бейнеклип 20:00 Общественно-политическое ток-шоу «Главная студия» 20:45 Ақпараттық-сараптамалық бағдарлама «Аймақ айнасы» 21:05 Мәдени-танымдық кеш «Гауһартас» 22:10 Деректі фильм «Дәуір даналары». Құнанбай Өскенбайұлы 23:00  «Топырақ пен Хауа-2»</title>
