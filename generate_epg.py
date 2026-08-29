@@ -74,18 +74,14 @@ def get_now_in_channel_tz(offset_str):
     return datetime.now(timezone.utc) + timedelta(hours=sign * hours)
 
 def clean_text_str(val):
-    if not val: 
-        return ""
+    if not val: return ""
     return re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", str(val)).strip()
 
 def parse_cltv36_day_matches(day_text, target_weekday_name, is_weekend):
     dt, t_day = day_text.upper(), target_weekday_name.upper()
-    if t_day in dt or "DAILY" in dt: 
-        return True
-    if ("MONDAY - FRIDAY" in dt or "MON - FRI" in dt or "MONDAY – FRIDAY" in dt) and not is_weekend: 
-        return True
-    if ("MONDAY - SATURDAY" in dt or "MONDAY – SATURDAY" in dt) and t_day != "SUNDAY": 
-        return True
+    if t_day in dt or "DAILY" in dt: return True
+    if ("MONDAY - FRIDAY" in dt or "MON - FRI" in dt or "MONDAY – FRIDAY" in dt) and not is_weekend: return True
+    if ("MONDAY - SATURDAY" in dt or "MONDAY – SATURDAY" in dt) and t_day != "SUNDAY": return True
     return False
 
 # --- 1. TP CHANNEL ---
@@ -122,14 +118,12 @@ def fetch_epg_tpchannel(target):
                     start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
                     if i + 1 < len(extracted):
                         stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
-                        if stop_dt <= start_dt: 
-                            stop_dt += timedelta(days=1)
+                        if stop_dt <= start_dt: stop_dt += timedelta(days=1)
                     else:
                         stop_dt = start_dt + timedelta(hours=1)
 
                     programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Watch {title}", "lang": "th"})
-                except Exception: 
-                    continue
+                except Exception: continue
             print(f"[✓] TP Channel: Successfully loaded {len(programmes)} program!")
     except Exception as e:
         print(f"[!] TP Channel Error: {e}")
@@ -152,15 +146,12 @@ def fetch_epg_cltv36(target):
             wrappers = soup.select(".elementor-widget-wrap.elementor-element-populated")
 
             for wrap in wrappers:
-                if retired_heading and retired_heading in wrap.parents: 
-                    continue
+                if retired_heading and retired_heading in wrap.parents: continue
                 h2_tag = wrap.find(["h2", "h3"], class_="elementor-heading-title")
-                if not h2_tag: 
-                    continue
+                if not h2_tag: continue
                 
                 title = clean_text_str(h2_tag.get_text(strip=True))
-                if "RETIRED" in title.upper(): 
-                    continue
+                if "RETIRED" in title.upper(): continue
 
                 desc_text = f"Watch {title} on CLTV36."
                 for p in wrap.find_all("p"):
@@ -171,8 +162,7 @@ def fetch_epg_cltv36(target):
 
                 for line in wrap.get_text("\n", strip=True).split("\n"):
                     line_clean = line.replace("NN", "PM").replace("nn", "pm")
-                    if not parse_cltv36_day_matches(line_clean, today_name, is_weekend): 
-                        continue
+                    if not parse_cltv36_day_matches(line_clean, today_name, is_weekend): continue
                     
                     time_matches = TIME_PATTERN_AMPM.findall(line_clean)
                     for idx in range(0, len(time_matches) - 1, 2):
@@ -183,12 +173,10 @@ def fetch_epg_cltv36(target):
                             stop_time = datetime.strptime(stop_str.zfill(7), "%I:%M%p").time()
                             
                             start_dt, stop_dt = datetime.combine(today_local.date(), start_time), datetime.combine(today_local.date(), stop_time)
-                            if stop_dt <= start_dt: 
-                                stop_dt += timedelta(days=1)
+                            if stop_dt <= start_dt: stop_dt += timedelta(days=1)
 
                             programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": desc_text, "lang": "en"})
-                        except Exception: 
-                            continue
+                        except Exception: continue
             print(f"[✓] CLTV36: Successfully loaded {len(programmes)} program!")
     except Exception as e:
         print(f"[!] CLTV36 Error: {e}")
@@ -243,10 +231,8 @@ def fetch_epg_mncvision_code(mnc_code):
                             start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
                             if i + 1 < len(raw_list):
                                 stop_dt = datetime.strptime(f"{today_str} {raw_list[i+1][0]}", "%Y-%m-%d %H:%M")
-                                if stop_dt <= start_dt: 
-                                    stop_dt += timedelta(days=1)
-                            else: 
-                                stop_dt = start_dt + timedelta(hours=1)
+                                if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+                            else: stop_dt = start_dt + timedelta(hours=1)
 
                             programmes.append({
                                 "channel": ch_id,
@@ -256,8 +242,7 @@ def fetch_epg_mncvision_code(mnc_code):
                                 "desc": f"Acara {title} di {ch_name}",
                                 "lang": "id",
                             })
-                        except Exception: 
-                            continue
+                        except Exception: continue
                     return channels, programmes
     except Exception:
         pass
@@ -290,12 +275,10 @@ def fetch_epg_qazaqstan(target):
     for url in [direct_url, f"https://iptv-playlist.sulthan-pamenan.workers.dev/?url={quote(direct_url, safe='')}"]:
         try:
             res = HTTP_SESSION.get(url, timeout=15)
-            if res.status_code != 200: 
-                continue
+            if res.status_code != 200: continue
             soup = BeautifulSoup(res.text, "html.parser")
             raw_progs = []
 
-            # Skema 1: Qazaqstan, Qazsport, Abai, Aqjaiyq
             items_schema1 = soup.select(".program-item, a.program-item")
             if items_schema1:
                 for item in items_schema1:
@@ -306,12 +289,9 @@ def fetch_epg_qazaqstan(target):
                         title_elem = item.select_one(".program-title") or item.find(class_=re.compile(r"title|name", re.I))
                         title = clean_text_str(title_elem.get_text(strip=True)) if title_elem else clean_text_str(text_content[match.end():].strip(" -–:\t\n\r"))
                         if title and len(title) >= 2 and not any(r["title"] == title for r in raw_progs):
-                            try: 
-                                raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M"), "title": title})
-                            except Exception: 
-                                continue
+                            try: raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M"), "title": title})
+                            except Exception: continue
 
-            # Skema 2: Balapan TV (.rounded-full / .drop-shadow)
             if not raw_progs:
                 for card in soup.find_all("a", class_=re.compile(r"rounded-full|group", re.I)):
                     text_content = card.get_text(" ", strip=True)
@@ -323,13 +303,10 @@ def fetch_epg_qazaqstan(target):
                             if not TIME_PATTERN_HM.search(stext) and len(stext) >= 2:
                                 title = clean_text_str(stext)
                                 break
-                        if not title: 
-                            title = clean_text_str(text_content[match.end():].strip(" -–:\t\n\r"))
+                        if not title: title = clean_text_str(text_content[match.end():].strip(" -–:\t\n\r"))
                         if title and len(title) >= 2 and not any(r["title"] == title for r in raw_progs):
-                            try: 
-                                raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {match.group(1).replace('.', ':').zfill(5)[:5]}", "%Y-%m-%d %H:%M"), "title": title})
-                            except Exception: 
-                                continue
+                            try: raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {match.group(1).replace('.', ':').zfill(5)[:5]}", "%Y-%m-%d %H:%M"), "title": title})
+                            except Exception: continue
 
             if raw_progs:
                 raw_progs.sort(key=lambda x: x["start_dt"])
@@ -337,15 +314,12 @@ def fetch_epg_qazaqstan(target):
                     curr, start_dt = raw_progs[i], raw_progs[i]["start_dt"]
                     if i + 1 < len(raw_progs):
                         stop_dt = raw_progs[i + 1]["start_dt"]
-                        if stop_dt <= start_dt: 
-                            stop_dt += timedelta(days=1)
-                    else: 
-                        stop_dt = start_dt + timedelta(hours=1)
+                        if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+                    else: stop_dt = start_dt + timedelta(hours=1)
                     programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": curr["title"], "desc": f"Бағдарлама {curr['title']}", "lang": "kk"})
                 print(f"[✓] Qazaqstan Network [{target['name']}]: Successfully loaded {len(programmes)} program!")
                 break
-        except Exception: 
-            continue
+        except Exception: continue
     return channels, programmes
 
 # --- 5. RED BULL TV ---
@@ -354,18 +328,14 @@ def fetch_epg_redbull_all(targets):
     programmes = []
     
     def extract_raw_items(data):
-        if isinstance(data, list): 
-            return data
+        if isinstance(data, list): return data
         if isinstance(data, dict):
-            if "items" in data and isinstance(data["items"], list): 
-                return data["items"]
-            if "cards" in data and isinstance(data["cards"], list): 
-                return data["cards"]
+            if "items" in data and isinstance(data["items"], list): return data["items"]
+            if "cards" in data and isinstance(data["cards"], list): return data["cards"]
             for key in ["data", "epg", "collection"]:
                 if key in data and isinstance(data[key], dict):
                     res = extract_raw_items(data[key])
-                    if res: 
-                        return res
+                    if res: return res
         return []
 
     for t in targets:
@@ -380,19 +350,15 @@ def fetch_epg_redbull_all(targets):
                         end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")) if end_iso else start_dt + timedelta(hours=1)
                         programmes.append({"channel": t["id"], "start": format_xmltv_date(start_dt, "+0000"), "stop": format_xmltv_date(end_dt, "+0000"), "title": clean_text_str(title), "desc": clean_text_str(desc), "lang": "en"})
                 print(f"[✓] Red Bull TV [{t['name']}]: Direct Fetch Successful!")
-        except Exception as e: 
-            print(f"[!] Red Bull API Error: {e}")
+        except Exception as e: print(f"[!] Red Bull API Error: {e}")
     return channels, programmes
 
 # --- MAIN ROUTER & EXECUTION ---
 def process_single_target(target):
     t_id = target["id"]
-    if t_id == "TPChannel.th": 
-        return fetch_epg_tpchannel(target)
-    elif t_id == "CLTV36.ph": 
-        return fetch_epg_cltv36(target)
-    elif t_id.endswith(".kz"): 
-        return fetch_epg_qazaqstan(target)
+    if t_id == "TPChannel.th": return fetch_epg_tpchannel(target)
+    elif t_id == "CLTV36.ph": return fetch_epg_cltv36(target)
+    elif t_id.endswith(".kz"): return fetch_epg_qazaqstan(target)
     return [], []
 
 def generate_xmltv():
@@ -435,16 +401,8 @@ def generate_xmltv():
             seen.add(key)
             p_elem = ET.SubElement(tv_elem, "programme", {"start": p["start"], "stop": p["stop"], "channel": p["channel"]})
             ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = p["title"]
-            if p.get("desc"): 
-                ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
+            if p.get("desc"): ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
 
-    # 6. Format Indentasi secara Aman (Standard ASCII Spaces)
-    try:
-        ET.indent(tv_elem, space="  ")
-    except AttributeError:
-        pass  # Jaga-jaga jika menggunakan Python versi tua (<3.9)
-
-    # 7. Tulis File Menggunakan Context Manager + Flush
     with open("epg.xml", "wb") as f:
         tree = ET.ElementTree(tv_elem)
         tree.write(f, encoding="utf-8", xml_declaration=True)
