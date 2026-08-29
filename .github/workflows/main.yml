@@ -20,8 +20,8 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 pytz
-          pip install -r requirements.txt
+          pip install requests beautifulsoup4 pytz playwright
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           playwright install chromium
 
       - name: Run EPG Generator
@@ -31,7 +31,6 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add generate_epg.py requirements.txt
           git add epg.xml
           git commit -m "Auto-update EPG XMLTV [skip ci]" || echo "No changes to commit"
           git push origin main
