@@ -76,9 +76,7 @@ def get_now_in_channel_tz(offset_str):
 def clean_text_str(val):
     if not val: 
         return ""
-    # Regex Sanitizer XML 1.0 yang sangat ketat & aman
-    val_str = str(val)
-    return re.sub(r'[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD\U0010000-\U0010FFFF]', '', val_str).strip()
+    return re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", str(val)).strip()
 
 def parse_cltv36_day_matches(day_text, target_weekday_name, is_weekend):
     dt, t_day = day_text.upper(), target_weekday_name.upper()
@@ -297,6 +295,7 @@ def fetch_epg_qazaqstan(target):
             soup = BeautifulSoup(res.text, "html.parser")
             raw_progs = []
 
+            # Skema 1: Qazaqstan, Qazsport, Abai, Aqjaiyq
             items_schema1 = soup.select(".program-item, a.program-item")
             if items_schema1:
                 for item in items_schema1:
@@ -312,6 +311,7 @@ def fetch_epg_qazaqstan(target):
                             except Exception: 
                                 continue
 
+            # Skema 2: Balapan TV (.rounded-full / .drop-shadow)
             if not raw_progs:
                 for card in soup.find_all("a", class_=re.compile(r"rounded-full|group", re.I)):
                     text_content = card.get_text(" ", strip=True)
@@ -415,19 +415,19 @@ def generate_xmltv():
     all_channels.extend(mnc_channels)
     all_programmes.extend(mnc_programmes)
 
-    # 3. Multi-threaded Scraping dari Sumber Lainnya
+    # 3. Multi-threaded Scraping from Other Sources
     other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
     with ThreadPoolExecutor(max_workers=8) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
 
-    # 4. Tulis Channel Element ke XML
+    # 4. Write Channel Element to XML
     for ch in all_channels:
         c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
         ET.SubElement(c_elem, "display-name").text = ch["name"]
 
-    # 5. Tulis Program Elements ke XML & Deduplikasi
+    # 5. Write Program Elements to XML & Deduplicate
     seen = set()
     for p in all_programmes:
         key = (p["channel"], p["start"])
@@ -438,13 +438,13 @@ def generate_xmltv():
             if p.get("desc"): 
                 ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
 
-    # 6. Format Indentasi secara Aman
+    # 6. Format Indentasi secara Aman (Standard ASCII Spaces)
     try:
         ET.indent(tv_elem, space="  ")
     except AttributeError:
-        pass
+        pass  # Jaga-jaga jika menggunakan Python versi tua (<3.9)
 
-    # 7. Tulis File Menggunakan Context Manager + Flush Buffer
+    # 7. Tulis File Menggunakan Context Manager + Flush
     with open("epg.xml", "wb") as f:
         tree = ET.ElementTree(tv_elem)
         tree.write(f, encoding="utf-8", xml_declaration=True)
