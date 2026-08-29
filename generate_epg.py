@@ -10,7 +10,7 @@ import requests
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9,id;q=0.8",
+    "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
 TIME_PATTERN_HM = re.compile(r"(\b[0-2]?\d[:.][0-5]\d\b)")
@@ -37,7 +37,7 @@ EPG_TARGET_SOURCES = [
     {"id": "RedBullWinter.global", "name": "Red Bull TV: Winter", "rrn": "rrn:content:video-channels:f4aa4fe4-5ce6-4b1c-a60b-abc6f21f16d0", "utc_offset": "+0000"},
     {"id": "RedBullActionReel.global", "name": "Red Bull TV: Action Reel", "rrn": "rrn:content:video-channels:69a66f02-21fd-42a1-be5b-6965541cfe6a", "utc_offset": "+0000"},
 
-    # 3. CLTV36 PHILIPPINES
+    # 3. CLTV36 FILIPINA
     {"id": "CLTV36.ph", "name": "CLTV36", "url": "https://cltv36.tv/tv-programs/", "utc_offset": "+0800"},
 
     # 4. QAZAQSTAN NETWORK
@@ -76,6 +76,7 @@ def get_now_in_channel_tz(offset_str):
 def clean_text_str(val):
     if not val: 
         return ""
+    # Regex Sanitizer XML 1.0 yang sangat ketat & aman
     val_str = str(val)
     return re.sub(r'[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD\U0010000-\U0010FFFF]', '', val_str).strip()
 
@@ -128,10 +129,10 @@ def fetch_epg_tpchannel(target):
                     else:
                         stop_dt = start_dt + timedelta(hours=1)
 
-                    programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Watch {title} on TP Channel", "lang": "th"})
+                    programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Watch {title}", "lang": "th"})
                 except Exception: 
                     continue
-            print(f"[✓] TP Channel: Successfully loaded {len(programmes)} programs!")
+            print(f"[✓] TP Channel: Successfully loaded {len(programmes)} program!")
     except Exception as e:
         print(f"[!] TP Channel Error: {e}")
     return channels, programmes
@@ -190,7 +191,7 @@ def fetch_epg_cltv36(target):
                             programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": desc_text, "lang": "en"})
                         except Exception: 
                             continue
-            print(f"[✓] CLTV36: Successfully loaded {len(programmes)} programs!")
+            print(f"[✓] CLTV36: Successfully loaded {len(programmes)} program!")
     except Exception as e:
         print(f"[!] CLTV36 Error: {e}")
     return channels, programmes
@@ -200,7 +201,6 @@ def fetch_epg_mncvision_code(mnc_code):
     today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
     post_url = "https://www.mncvision.id/schedule/table"
 
-    # PERBAIKAN PENTING: Value "submit" HARUS "Cari" (sesuai spesifikasi form MNC Vision)
     payload = {
         "search_model": "channel",
         "af0rmelement": "aformelement",
@@ -255,7 +255,7 @@ def fetch_epg_mncvision_code(mnc_code):
                                 "start": format_xmltv_date(start_dt, "+0700"),
                                 "stop": format_xmltv_date(stop_dt, "+0700"),
                                 "title": title,
-                                "desc": f"Watch {title} on {ch_name}",
+                                "desc": f"Acara {title} di {ch_name}",
                                 "lang": "id",
                             })
                         except Exception: 
@@ -266,17 +266,17 @@ def fetch_epg_mncvision_code(mnc_code):
     return [], []
 
 def fetch_all_mncvision_parallel():
-    print("[*] Starting parallel scan for MNC Vision (ID 1 - 473)...")
+    print("[*] Starting mass scan of MNC Vision (ID 1 - 473)...")
     all_channels, all_programmes = [], []
     
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=20) as executor:
         results = executor.map(fetch_epg_mncvision_code, range(1, 474))
         for ch_list, progs in results:
             if progs:
                 all_channels.extend(ch_list)
                 all_programmes.extend(progs)
 
-    print(f"[✓] MNC Vision: Successfully extracted {len(all_channels)} active channels & {len(all_programmes)} programs!")
+    print(f"[✓] MNC Vision: Successfully extracted active {len(all_channels)} channels & {len(all_programmes)} program!")
     return all_channels, all_programmes
 
 # --- 4. QAZAQSTAN NETWORK ---
@@ -306,8 +306,7 @@ def fetch_epg_qazaqstan(target):
                         t_str = match.group(1).replace(".", ":").zfill(5)[:5]
                         title_elem = item.select_one(".program-title") or item.find(class_=re.compile(r"title|name", re.I))
                         title = clean_text_str(title_elem.get_text(strip=True)) if title_elem else clean_text_str(text_content[match.end():].strip(" -–:\t\n\r"))
-                        
-                        if title and len(title) >= 2 and title.upper() not in IGNORE_WORDS_KZ and not any(r["title"] == title for r in raw_progs):
+                        if title and len(title) >= 2 and not any(r["title"] == title for r in raw_progs):
                             try: 
                                 raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M"), "title": title})
                             except Exception: 
@@ -326,8 +325,7 @@ def fetch_epg_qazaqstan(target):
                                 break
                         if not title: 
                             title = clean_text_str(text_content[match.end():].strip(" -–:\t\n\r"))
-                        
-                        if title and len(title) >= 2 and title.upper() not in IGNORE_WORDS_KZ and not any(r["title"] == title for r in raw_progs):
+                        if title and len(title) >= 2 and not any(r["title"] == title for r in raw_progs):
                             try: 
                                 raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {match.group(1).replace('.', ':').zfill(5)[:5]}", "%Y-%m-%d %H:%M"), "title": title})
                             except Exception: 
@@ -343,8 +341,8 @@ def fetch_epg_qazaqstan(target):
                             stop_dt += timedelta(days=1)
                     else: 
                         stop_dt = start_dt + timedelta(hours=1)
-                    programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": curr["title"], "desc": f"Watch {curr['title']}", "lang": "kk"})
-                print(f"[✓] Qazaqstan Network [{target['name']}]: Successfully loaded {len(programmes)} programs!")
+                    programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": curr["title"], "desc": f"Бағдарлама {curr['title']}", "lang": "kk"})
+                print(f"[✓] Qazaqstan Network [{target['name']}]: Successfully loaded {len(programmes)} program!")
                 break
         except Exception: 
             continue
@@ -417,22 +415,19 @@ def generate_xmltv():
     all_channels.extend(mnc_channels)
     all_programmes.extend(mnc_programmes)
 
-    # 3. Multi-threaded Scraping for Other Sources
+    # 3. Multi-threaded Scraping dari Sumber Lainnya
     other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
     with ThreadPoolExecutor(max_workers=8) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
 
-    # PERBAIKAN PENTING: Hanya menambahkan <channel> jika memiliki data program (<programme>)
-    active_channel_ids = {p["channel"] for p in all_programmes}
-    
+    # 4. Tulis Channel Element ke XML
     for ch in all_channels:
-        if ch["id"] in active_channel_ids:
-            c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
-            ET.SubElement(c_elem, "display-name").text = ch["name"]
+        c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
+        ET.SubElement(c_elem, "display-name").text = ch["name"]
 
-    # Append Program Elements to XML & Deduplicate
+    # 5. Tulis Program Elements ke XML & Deduplikasi
     seen = set()
     for p in all_programmes:
         key = (p["channel"], p["start"])
@@ -443,20 +438,20 @@ def generate_xmltv():
             if p.get("desc"): 
                 ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
 
-    # Apply Safe XML Indentation
+    # 6. Format Indentasi secara Aman
     try:
         ET.indent(tv_elem, space="  ")
     except AttributeError:
         pass
 
-    # Write XML Tree to Disk safely
+    # 7. Tulis File Menggunakan Context Manager + Flush Buffer
     with open("epg.xml", "wb") as f:
         tree = ET.ElementTree(tv_elem)
         tree.write(f, encoding="utf-8", xml_declaration=True)
         f.flush()
 
     print("=" * 60)
-    print(f"[SUCCESS] Successfully created epg.xml with {len(active_channel_ids)} active channels & {len(seen)} programs!")
+    print(f"[SUCCESS] Successfully created epg.xml with {len(all_channels)} channel & {len(seen)} programs!")
     print("=" * 60)
 
 if __name__ == "__main__":
