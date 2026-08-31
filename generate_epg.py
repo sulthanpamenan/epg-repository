@@ -70,7 +70,8 @@ def get_now_in_channel_tz(offset_str):
 
 def clean_text_str(val):
     if not val: return ""
-    return re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", str(val)).strip()
+    text = re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", str(val)).strip()
+    return re.sub(r"\s+", " ", text)
 
 def decode_base64_json(data_b64):
     try:
@@ -293,14 +294,49 @@ def fetch_epg_cltv36(target):
     return channels, programmes
 
 # --- 4. MNC VISION ---
-def fetch_epg_mncvision_code(mnc_code):
+def get_mnc_channel_options():
+    url = "https://www.mncvision.id/schedule/table"
+    channels = []
+    try:
+        res = HTTP_SESSION.get(url, timeout=12)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, "html.parser")
+            select = soup.find("select", {"name": "fchannel"}) or soup.find("select", {"id": "fchannel"})
+            if select:
+                for opt in select.find_all("option"):
+                    val = opt.get("value")
+                    raw_name = clean_text_str(opt.get_text())
+                    if val and str(val) != "0" and raw_name and "Pilih Channel" not in raw_name and "Toggle" not in raw_name:
+                        slug = re.sub(r'[-\s]+', '-', re.sub(r'[^\w\s-]', '', raw_name.lower().strip()))
+                        slug_id = f"MNC_{slug}.id"
+                        channels.append({
+                            "code": str(val),
+                            "clean_name": raw_name,
+                            "slug_id": slug_id
+                        })
+    except Exception:
+        pass
+    return channels
+
+def fetch_single_mnc_epg(ch_info):
     today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
     post_url = "https://www.mncvision.id/schedule/table"
-    payload = {"search_model": "channel", "af0rmelement": "aformelement", "fdate": today_str, "fchannel": str(mnc_code), "submit": "Cari"}
-    mnc_headers = {"User-Agent": HEADERS["User-Agent"], "Origin": "https://www.mncvision.id", "Referer": "https://www.mncvision.id/schedule/table"}
+    payload = {
+        "search_model": "channel",
+        "af0rmelement": "aformelement",
+        "fdate": today_str,
+        "fchannel": ch_info["code"],
+        "submit": "Cari"
+    }
+    mnc_headers = {
+        "User-Agent": HEADERS["User-Agent"],
+        "Origin": "https://www.mncvision.id",
+        "Referer": "https://www.mncvision.id/schedule/table",
+    }
 
+    programmes = []
     try:
-        res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=12)
+        res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=10)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, "html.parser")
             table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
@@ -310,13 +346,17 @@ def fetch_epg_mncvision_code(mnc_code):
                 for row in rows:
                     cols = row.find_all(["td", "th"])
                     if len(cols) >= 2:
-                        time_str, title_str = cols[0].get_text(strip=True), cols[1].get_text(strip=True)
-                        if time_str and title_str:
-                            raw_list.append((time_str.replace(".", ":").zfill(5)[:5], clean_text_str(title_str)))
+                        time_str = clean_text_str(cols[0].get_text())
+                        title_str = clean_text_str(cols[1].get_text())
+                        if time_str and title_str and "Toggle navigation" not in title_str:
+                            match = TIME_PATTERN_HM.search(time_str)
+                            if match:
+                                t_clean = match.group(1).replace(".", ":").zfill(5)[:5]
+                                raw_list.append((t_clean, title_str))
 
                 if raw_list:
-                    ch_id, ch_name = f"MNC_{mnc_code}.id", f"MNC Channel {mnc_code}"
-                    programmes = []
+                    ch_id = ch_info["slug_id"]
+                    ch_name = ch_info["clean_name"]
                     for i in range(len(raw_list)):
                         t_str, title = raw_list[i]
                         try:
@@ -324,22 +364,39 @@ def fetch_epg_mncvision_code(mnc_code):
                             if i + 1 < len(raw_list):
                                 stop_dt = datetime.strptime(f"{today_str} {raw_list[i+1][0]}", "%Y-%m-%d %H:%M")
                                 if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                            else: stop_dt = start_dt + timedelta(hours=1)
-                            programmes.append({"channel": ch_id, "start": format_xmltv_date(start_dt, "+0700"), "stop": format_xmltv_date(stop_dt, "+0700"), "title": title, "desc": f"Acara {title} di {ch_name}", "lang": "id"})
-                        except Exception: continue
+                            else:
+                                stop_dt = start_dt + timedelta(hours=1)
+
+                            programmes.append({
+                                "channel": ch_id,
+                                "start": format_xmltv_date(start_dt, "+0700"),
+                                "stop": format_xmltv_date(stop_dt, "+0700"),
+                                "title": title,
+                                "desc": f"Acara {title} di {ch_name}",
+                                "lang": "id"
+                            })
+                        except Exception:
+                            continue
+                    print(f"[✓] MNC Vision [{ch_name}]: Loaded {len(programmes)} programs!")
                     return [{"id": ch_id, "name": ch_name}], programmes
-    except Exception: pass
+    except Exception:
+        pass
     return [], []
 
 def fetch_all_mncvision_parallel():
-    print("[*] Starting mass scan of MNC Vision (ID 1 - 473)...")
+    channels_list = get_mnc_channel_options()
+    if not channels_list:
+        return [], []
+
+    print(f"[*] Starting precision extraction for {len(channels_list)} MNC Vision channels...")
     all_channels, all_programmes = [], []
     with ThreadPoolExecutor(max_workers=20) as executor:
-        results = executor.map(fetch_epg_mncvision_code, range(1, 474))
+        results = executor.map(fetch_single_mnc_epg, channels_list)
         for ch_list, progs in results:
             if progs:
                 all_channels.extend(ch_list)
                 all_programmes.extend(progs)
+
     print(f"[✓] MNC Vision: Successfully extracted {len(all_channels)} active channels & {len(all_programmes)} programs!")
     return all_channels, all_programmes
 
@@ -461,7 +518,7 @@ def generate_xmltv():
         all_channels.extend(rb_channels)
         all_programmes.extend(rb_programmes)
 
-    # 3. MNC Vision Mass Scan
+    # 3. MNC Vision Mass Precision Scan
     mnc_channels, mnc_programmes = fetch_all_mncvision_parallel()
     all_channels.extend(mnc_channels)
     all_programmes.extend(mnc_programmes)
