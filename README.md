@@ -1,6 +1,6 @@
 # 📺 Universal IPTV EPG Generator & Repository
 
-[![Auto Update EPG](https://github.com/sulthanpamenan/epg-repository/actions/workflows/epg_update.yml/badge.svg)](https://github.com/sulthanpamenan/epg-repository/actions/workflows/epg_update.yml)
+[![Generate EPG XMLTV](https://github.com/sulthanpamenan/epg-repository/actions/workflows/epg.yml/badge.svg)](https://github.com/sulthanpamenan/epg-repository/actions/workflows/epg.yml)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Active-success?logo=github)](https://sulthanpamenan.github.io/epg-repository/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -20,7 +20,7 @@ Import this link directly into your preferred IPTV player (TiviMate, OTT Navigat
 
 ## ✨ Key Features
 
-- **Automated Background Updates:** Refreshed automatically every **6 hours** via GitHub Actions to ensure up-to-date timelines.
+- **Automated Precision Updates:** Refreshed automatically **twice daily** at **00:30 WIB** and **12:30 WIB** via GitHub Actions to capture fresh daily schedule updates without unnecessary resource consumption.
 - **Timezone Alignment:** Configured with standard ISO 8601 UTC offsets so IPTV players automatically convert program times to local device time zones.
 - **Universal Compatibility:** Fully standardized XMLTV format for all M3U & XMLTV supported IPTV applications.
 - **Multi-Source Aggregation:** Combines multiple television schedules into a single centralized guide.
