@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import requests
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
 }
@@ -103,37 +103,54 @@ TIVIE_MASTER_FALLBACK = [
     {"id": "vtv", "name": "VTV"}, {"id": "sindonews", "name": "Sindonews TV"}
 ]
 
+TIVIE_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "id,en-US;q=0.9,en;q=0.8",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "Referer": "https://tivie.id/",
+}
+
 def discover_tivie_channels():
     channels, added_ids = [], set()
     try:
-        res = HTTP_SESSION.get("https://tivie.id/", timeout=8)
-        ziggy_match = re.search(r'Ziggy\s*=\s*(\{.*?\});', res.text)
-        if ziggy_match:
-            routes = json.loads(ziggy_match.group(1)).get('routes', {})
-            for r_info in routes.values():
-                uri = r_info.get('uri', '')
-                if 'channel/' in uri:
-                    slug = uri.split('channel/')[1].replace('{channel}', '').strip('/')
-                    if slug and slug not in added_ids and not slug.startswith('{'):
-                        added_ids.add(slug)
-                        channels.append({"id": slug, "name": slug.replace('-', ' ').title()})
+        res = HTTP_SESSION.get("https://tivie.id/", headers=TIVIE_HEADERS, timeout=10)
+        if res.status_code == 200:
+            ziggy_match = re.search(r'Ziggy\s*=\s*(\{.*?\});', res.text)
+            if ziggy_match:
+                routes = json.loads(ziggy_match.group(1)).get('routes', {})
+                for r_info in routes.values():
+                    uri = r_info.get('uri', '')
+                    if 'channel/' in uri:
+                        slug = uri.split('channel/')[1].replace('{channel}', '').strip('/')
+                        if slug and slug not in added_ids and not slug.startswith('{'):
+                            added_ids.add(slug)
+                            channels.append({"id": slug, "name": slug.replace('-', ' ').title()})
 
-        soup = BeautifulSoup(res.text, 'html.parser')
-        for link in soup.find_all('a', href=re.compile(r'/channel/')):
-            match = re.search(r'/channel/([a-zA-Z0-9-]+)', link.get('href', ''))
-            if match:
-                ch_id = match.group(1).lower().strip()
-                if ch_id and len(ch_id) < 25 and ch_id not in added_ids and not re.search(r'(besok|kemarin|lusa|\d{8})', ch_id):
-                    added_ids.add(ch_id)
-                    channels.append({"id": ch_id, "name": link.get_text(strip=True) or ch_id.replace('-', ' ').title()})
+            soup = BeautifulSoup(res.text, 'html.parser')
+            for link in soup.find_all('a', href=re.compile(r'/channel/')):
+                match = re.search(r'/channel/([a-zA-Z0-9-]+)', link.get('href', ''))
+                if match:
+                    ch_id = match.group(1).lower().strip()
+                    if ch_id and len(ch_id) < 25 and ch_id not in added_ids and not re.search(r'(besok|kemarin|lusa|\d{8})', ch_id):
+                        added_ids.add(ch_id)
+                        channels.append({"id": ch_id, "name": link.get_text(strip=True) or ch_id.replace('-', ' ').title()})
     except Exception:
         pass
 
-    if len(channels) < 10:
-        for m_ch in TIVIE_MASTER_FALLBACK:
-            if m_ch["id"] not in added_ids:
-                added_ids.add(m_ch["id"])
-                channels.append(m_ch)
+    for m_ch in TIVIE_MASTER_FALLBACK:
+        if m_ch["id"] not in added_ids:
+            added_ids.add(m_ch["id"])
+            channels.append(m_ch)
+            
     return channels
 
 def scrape_single_tivie_channel(ch):
@@ -143,8 +160,11 @@ def scrape_single_tivie_channel(ch):
     wib_tz = timezone(timedelta(hours=7))
     today_wib = datetime.now(timezone.utc).astimezone(wib_tz).date()
 
+    req_headers = TIVIE_HEADERS.copy()
+    req_headers["Referer"] = f"https://tivie.id/channel/{ch_id}"
+
     try:
-        res = HTTP_SESSION.get(url, timeout=8)
+        res = HTTP_SESSION.get(url, headers=req_headers, timeout=10)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
@@ -186,7 +206,8 @@ def scrape_single_tivie_channel(ch):
                     "desc": f"Acara {curr['title']} di {ch_name}",
                     "lang": "id"
                 })
-            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs!")
+            if programmes:
+                print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs!")
     except Exception:
         pass
 
@@ -197,7 +218,7 @@ def fetch_all_tivie_parallel():
     print(f"[*] Starting parallel EPG extraction for {len(channels)} Tivie.id channels...")
     all_channels, all_programmes = [], []
 
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=8) as executor:
         results = executor.map(scrape_single_tivie_channel, channels)
         for ch_info, progs in results:
             if progs:
