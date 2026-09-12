@@ -54,6 +54,9 @@
   <channel id="Dens_nusantara-tv-ntv.id">
     <display-name>Nusantara TV</display-name>
   </channel>
+  <channel id="Dens_my-cinema-europe-hd.id">
+    <display-name>My Cinema Europe</display-name>
+  </channel>
   <channel id="Dens_crema-tv.id">
     <display-name>Crema TV</display-name>
   </channel>
@@ -81,6 +84,9 @@
   <channel id="Dens_trt-world.id">
     <display-name>TRT World</display-name>
   </channel>
+  <channel id="Dens_russia-today-rt.id">
+    <display-name>RT News</display-name>
+  </channel>
   <channel id="Dens_wion.id">
     <display-name>WION</display-name>
   </channel>
@@ -102,11 +108,17 @@
   <channel id="Dens_dw-tv.id">
     <display-name>DW TV</display-name>
   </channel>
+  <channel id="Dens_dim-tv.id">
+    <display-name>DIM TV</display-name>
+  </channel>
   <channel id="Dens_tbn.id">
     <display-name>TBN</display-name>
   </channel>
   <channel id="Dens_cgtn-documentary.id">
     <display-name>CGTN Documentary</display-name>
+  </channel>
+  <channel id="Dens_quran-tv.id">
+    <display-name>Saudi Quran TV</display-name>
   </channel>
   <channel id="Dens_sunna-tv.id">
     <display-name>Saudi Sunnah TV</display-name>
@@ -2395,6 +2407,74 @@
     <title lang="id">KOK BISA VIRAL</title>
     <desc lang="id">Saksikan KOK BISA VIRAL di Nusantara TV</desc>
   </programme>
+  <programme start="20260912000000 +0700" stop="20260912005000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">The Poll Diaries</title>
+    <desc lang="id">Saksikan The Poll Diaries di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912005000 +0700" stop="20260912025000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">800 Bullets</title>
+    <desc lang="id">Saksikan 800 Bullets di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912025000 +0700" stop="20260912045000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">Urban Hymn</title>
+    <desc lang="id">Saksikan Urban Hymn di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912045000 +0700" stop="20260912062500 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">Jedine Tereza</title>
+    <desc lang="id">Saksikan Jedine Tereza di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912062500 +0700" stop="20260912081000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">Dare to be wild</title>
+    <desc lang="id">Saksikan Dare to be wild di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912081000 +0700" stop="20260912100000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">Jane's Journey</title>
+    <desc lang="id">Saksikan Jane's Journey di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912100000 +0700" stop="20260912113000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">The Exam</title>
+    <desc lang="id">Saksikan The Exam di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912113000 +0700" stop="20260912130500 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">Night Forest â€“ A Secret Bond of Friendship</title>
+    <desc lang="id">Saksikan Night Forest â€“ A Secret Bond of Friendship di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912130500 +0700" stop="20260912144500 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">The Black Pimpernel</title>
+    <desc lang="id">Saksikan The Black Pimpernel di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912144500 +0700" stop="20260912153000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">The Dreams of the Young</title>
+    <desc lang="id">Saksikan The Dreams of the Young di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912153000 +0700" stop="20260912170000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">My Dad Is a Sausage</title>
+    <desc lang="id">Saksikan My Dad Is a Sausage di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912170000 +0700" stop="20260912183000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">Heribert</title>
+    <desc lang="id">Saksikan Heribert di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912183000 +0700" stop="20260912200000 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">The Pincher's High Voltage Heist</title>
+    <desc lang="id">Saksikan The Pincher's High Voltage Heist di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912200000 +0700" stop="20260912213500 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">In the Shadow of Fear 2 - You Shall not Lie</title>
+    <desc lang="id">Saksikan In the Shadow of Fear 2 - You Shall not Lie di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912213500 +0700" stop="20260912234500 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">The Indolent Judge</title>
+    <desc lang="id">Saksikan The Indolent Judge di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912234500 +0700" stop="20260912235900 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">The Impossible Crime</title>
+    <desc lang="id">Saksikan The Impossible Crime di My Cinema Europe</desc>
+  </programme>
+  <programme start="20260912235900 +0700" stop="20260913005900 +0700" channel="Dens_my-cinema-europe-hd.id">
+    <title lang="id">The Impossible Crime</title>
+    <desc lang="id">Saksikan The Impossible Crime di My Cinema Europe</desc>
+  </programme>
   <programme start="20260912000000 +0700" stop="20260912010000 +0700" channel="Dens_crema-tv.id">
     <title lang="id">The Schedule Is Not Available</title>
     <desc lang="id">Saksikan The Schedule Is Not Available di Crema TV</desc>
@@ -3859,6 +3939,202 @@
     <title lang="id">STRAIT TALK</title>
     <desc lang="id">Saksikan STRAIT TALK di TRT World</desc>
   </programme>
+  <programme start="20260912000000 +0700" stop="20260912003000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912003000 +0700" stop="20260912010000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Cross Talk</title>
+    <desc lang="id">Saksikan Cross Talk di RT News</desc>
+  </programme>
+  <programme start="20260912010000 +0700" stop="20260912013000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912013000 +0700" stop="20260912020000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912020000 +0700" stop="20260912023000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912023000 +0700" stop="20260912030000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912030000 +0700" stop="20260912033000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912033000 +0700" stop="20260912040000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Cross Talk</title>
+    <desc lang="id">Saksikan Cross Talk di RT News</desc>
+  </programme>
+  <programme start="20260912040000 +0700" stop="20260912043000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912043000 +0700" stop="20260912050000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912050000 +0700" stop="20260912053000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912053000 +0700" stop="20260912060000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912060000 +0700" stop="20260912063000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912063000 +0700" stop="20260912070000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Cross Talk</title>
+    <desc lang="id">Saksikan Cross Talk di RT News</desc>
+  </programme>
+  <programme start="20260912070000 +0700" stop="20260912073000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912073000 +0700" stop="20260912080000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912080000 +0700" stop="20260912083000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912083000 +0700" stop="20260912090000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912090000 +0700" stop="20260912093000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912093000 +0700" stop="20260912100000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Cross Talk</title>
+    <desc lang="id">Saksikan Cross Talk di RT News</desc>
+  </programme>
+  <programme start="20260912100000 +0700" stop="20260912103000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Miami America Now LIVE</title>
+    <desc lang="id">Saksikan Miami America Now LIVE di RT News</desc>
+  </programme>
+  <programme start="20260912103000 +0700" stop="20260912110000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912110000 +0700" stop="20260912113000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Miami America Now LIVE</title>
+    <desc lang="id">Saksikan Miami America Now LIVE di RT News</desc>
+  </programme>
+  <programme start="20260912113000 +0700" stop="20260912120000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Deep State</title>
+    <desc lang="id">Saksikan Deep State di RT News</desc>
+  </programme>
+  <programme start="20260912120000 +0700" stop="20260912123000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Miami America Now LIVE</title>
+    <desc lang="id">Saksikan Miami America Now LIVE di RT News</desc>
+  </programme>
+  <programme start="20260912123000 +0700" stop="20260912130000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Going Underground</title>
+    <desc lang="id">Saksikan Going Underground di RT News</desc>
+  </programme>
+  <programme start="20260912130000 +0700" stop="20260912133000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Miami America Now LIVE</title>
+    <desc lang="id">Saksikan Miami America Now LIVE di RT News</desc>
+  </programme>
+  <programme start="20260912133000 +0700" stop="20260912140000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Cross Talk</title>
+    <desc lang="id">Saksikan Cross Talk di RT News</desc>
+  </programme>
+  <programme start="20260912140000 +0700" stop="20260912143000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Miami AMERICA NOW</title>
+    <desc lang="id">Saksikan Miami AMERICA NOW di RT News</desc>
+  </programme>
+  <programme start="20260912143000 +0700" stop="20260912150000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Deep State</title>
+    <desc lang="id">Saksikan Deep State di RT News</desc>
+  </programme>
+  <programme start="20260912150000 +0700" stop="20260912153000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Miami AMERICA NOW</title>
+    <desc lang="id">Saksikan Miami AMERICA NOW di RT News</desc>
+  </programme>
+  <programme start="20260912153000 +0700" stop="20260912160000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912160000 +0700" stop="20260912163000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912163000 +0700" stop="20260912170000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Going Underground</title>
+    <desc lang="id">Saksikan Going Underground di RT News</desc>
+  </programme>
+  <programme start="20260912170000 +0700" stop="20260912173000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912173000 +0700" stop="20260912180000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912180000 +0700" stop="20260912183000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912183000 +0700" stop="20260912190000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Deep State</title>
+    <desc lang="id">Saksikan Deep State di RT News</desc>
+  </programme>
+  <programme start="20260912190000 +0700" stop="20260912193000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912193000 +0700" stop="20260912200000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912200000 +0700" stop="20260912203000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912203000 +0700" stop="20260912210000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Documentary</title>
+    <desc lang="id">Saksikan Documentary di RT News</desc>
+  </programme>
+  <programme start="20260912210000 +0700" stop="20260912213000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912213000 +0700" stop="20260912220000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Going Underground</title>
+    <desc lang="id">Saksikan Going Underground di RT News</desc>
+  </programme>
+  <programme start="20260912220000 +0700" stop="20260912223000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912223000 +0700" stop="20260912230000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Deep State</title>
+    <desc lang="id">Saksikan Deep State di RT News</desc>
+  </programme>
+  <programme start="20260912230000 +0700" stop="20260912233000 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Headline News</title>
+    <desc lang="id">Saksikan Headline News di RT News</desc>
+  </programme>
+  <programme start="20260912233000 +0700" stop="20260912235900 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Lumumbaâ€™s Africa</title>
+    <desc lang="id">Saksikan Lumumbaâ€™s Africa di RT News</desc>
+  </programme>
+  <programme start="20260912235900 +0700" stop="20260913005900 +0700" channel="Dens_russia-today-rt.id">
+    <title lang="id">Lumumbaâ€™s Africa</title>
+    <desc lang="id">Saksikan Lumumbaâ€™s Africa di RT News</desc>
+  </programme>
   <programme start="20260912000000 +0700" stop="20260912010000 +0700" channel="Dens_wion.id">
     <title lang="id">The Schedule Is Not Available</title>
     <desc lang="id">Saksikan The Schedule Is Not Available di WION</desc>
@@ -5255,6 +5531,78 @@
     <title lang="id">DW News Africa</title>
     <desc lang="id">Saksikan DW News Africa di DW TV</desc>
   </programme>
+  <programme start="20260912000000 +0700" stop="20260912020000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Cities (12+)</title>
+    <desc lang="id">Saksikan Cities (12+) di DIM TV</desc>
+  </programme>
+  <programme start="20260912020000 +0700" stop="20260912050000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">A GAME ON NERVES (12+)</title>
+    <desc lang="id">Saksikan A GAME ON NERVES (12+) di DIM TV</desc>
+  </programme>
+  <programme start="20260912050000 +0700" stop="20260912053000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Popular history</title>
+    <desc lang="id">Saksikan Popular history di DIM TV</desc>
+  </programme>
+  <programme start="20260912053000 +0700" stop="20260912061500 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Breaking News</title>
+    <desc lang="id">Saksikan Breaking News di DIM TV</desc>
+  </programme>
+  <programme start="20260912061500 +0700" stop="20260912074000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">EVACUATION. BEYOND POSSIBLE (12+)</title>
+    <desc lang="id">Saksikan EVACUATION. BEYOND POSSIBLE (12+) di DIM TV</desc>
+  </programme>
+  <programme start="20260912074000 +0700" stop="20260912083000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Culture vs War (12+)</title>
+    <desc lang="id">Saksikan Culture vs War (12+) di DIM TV</desc>
+  </programme>
+  <programme start="20260912083000 +0700" stop="20260912101500 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Forgotten Paths (12+)</title>
+    <desc lang="id">Saksikan Forgotten Paths (12+) di DIM TV</desc>
+  </programme>
+  <programme start="20260912101500 +0700" stop="20260912110000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Breaking News</title>
+    <desc lang="id">Saksikan Breaking News di DIM TV</desc>
+  </programme>
+  <programme start="20260912110000 +0700" stop="20260912130000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">I Keep Waiting</title>
+    <desc lang="id">Saksikan I Keep Waiting di DIM TV</desc>
+  </programme>
+  <programme start="20260912130000 +0700" stop="20260912143000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Popular history</title>
+    <desc lang="id">Saksikan Popular history di DIM TV</desc>
+  </programme>
+  <programme start="20260912143000 +0700" stop="20260912151500 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Breaking News</title>
+    <desc lang="id">Saksikan Breaking News di DIM TV</desc>
+  </programme>
+  <programme start="20260912151500 +0700" stop="20260912160000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Field Kitchen with Khartiia</title>
+    <desc lang="id">Saksikan Field Kitchen with Khartiia di DIM TV</desc>
+  </programme>
+  <programme start="20260912160000 +0700" stop="20260912160100 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Minute of SÑ–lence</title>
+    <desc lang="id">Saksikan Minute of SÑ–lence di DIM TV</desc>
+  </programme>
+  <programme start="20260912160100 +0700" stop="20260912170000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Russia, Back off! (12+)</title>
+    <desc lang="id">Saksikan Russia, Back off! (12+) di DIM TV</desc>
+  </programme>
+  <programme start="20260912170000 +0700" stop="20260912183000 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">DISASTERS. CHANCE TO SURVIVE</title>
+    <desc lang="id">Saksikan DISASTERS. CHANCE TO SURVIVE di DIM TV</desc>
+  </programme>
+  <programme start="20260912183000 +0700" stop="20260912223500 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">Tour de Ukraine (12+)</title>
+    <desc lang="id">Saksikan Tour de Ukraine (12+) di DIM TV</desc>
+  </programme>
+  <programme start="20260912223500 +0700" stop="20260912235900 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">We Were Recruits (12+) (Premiere)</title>
+    <desc lang="id">Saksikan We Were Recruits (12+) (Premiere) di DIM TV</desc>
+  </programme>
+  <programme start="20260912235900 +0700" stop="20260913005900 +0700" channel="Dens_dim-tv.id">
+    <title lang="id">We Were Recruits (12+) (Premiere)</title>
+    <desc lang="id">Saksikan We Were Recruits (12+) (Premiere) di DIM TV</desc>
+  </programme>
   <programme start="20260912000000 +0700" stop="20260912010000 +0700" channel="Dens_tbn.id">
     <title lang="id">The Schedule Is Not Available</title>
     <desc lang="id">Saksikan The Schedule Is Not Available di TBN</desc>
@@ -5506,6 +5854,110 @@
   <programme start="20260912235900 +0700" stop="20260913005900 +0700" channel="Dens_cgtn-documentary.id">
     <title lang="id">Song Of The Yellow River, Ep 2</title>
     <desc lang="id">Saksikan Song Of The Yellow River, Ep 2 di CGTN Documentary</desc>
+  </programme>
+  <programme start="20260912000000 +0700" stop="20260912010000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912010000 +0700" stop="20260912013000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912013000 +0700" stop="20260912020000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912020000 +0700" stop="20260912030000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912030000 +0700" stop="20260912043000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912043000 +0700" stop="20260912053000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912053000 +0700" stop="20260912060000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912060000 +0700" stop="20260912063000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912063000 +0700" stop="20260912070000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912070000 +0700" stop="20260912080000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912080000 +0700" stop="20260912093000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912093000 +0700" stop="20260912100000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912100000 +0700" stop="20260912110000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912110000 +0700" stop="20260912113000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912113000 +0700" stop="20260912140000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912140000 +0700" stop="20260912150000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912150000 +0700" stop="20260912160000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912160000 +0700" stop="20260912170000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912170000 +0700" stop="20260912180000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912180000 +0700" stop="20260912183000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912183000 +0700" stop="20260912190000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912190000 +0700" stop="20260912210000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912210000 +0700" stop="20260912220000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912220000 +0700" stop="20260912230000 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912230000 +0700" stop="20260912235900 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
+  </programme>
+  <programme start="20260912235900 +0700" stop="20260913005900 +0700" channel="Dens_quran-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+    <desc lang="id">Saksikan The Schedule Is Not Available di Saudi Quran TV</desc>
   </programme>
   <programme start="20260912000000 +0700" stop="20260912010000 +0700" channel="Dens_sunna-tv.id">
     <title lang="id">The Schedule Is Not Available</title>
@@ -6127,10 +6579,6 @@
     <title lang="en">Pro motocross prodigy</title>
     <desc lang="en">Jett has a surprise meeting with a fellow former motocross prodigy: Travis Pastrana.</desc>
   </programme>
-  <programme start="20260912130010 +0000" stop="20260912132455 +0000" channel="RedBullPadel.global">
-    <title lang="en">Meet padel stars Coello, Sanchez, Chingotto and Salazar</title>
-    <desc lang="en">Four stars. Four cities. One sport. Hear emotional journeys from the padel court to the heart of the game.</desc>
-  </programme>
   <programme start="20260912132455 +0000" stop="20260912135100 +0000" channel="RedBullPadel.global">
     <title lang="en">Paris Major Premier Padel highlights</title>
     <desc lang="en">Watch the highlights from the Paris Major Premier Padel tournament held at Roland-Garros stadium.</desc>
@@ -6207,13 +6655,9 @@
     <title lang="en">Malaga Premier Padel P1 highlights</title>
     <desc lang="en">Watch the highlights from the Malaga Premier Padel P1 tournament.</desc>
   </programme>
-  <programme start="20260912130419 +0000" stop="20260912132102 +0000" channel="RedBullBike.global">
-    <title lang="en">Remy Morton: Seven Days and $7K</title>
-    <desc lang="en">Can Australian MTB freerider Remy Morton build his ultimate line in seven days and with a AUD$7,000 budget?</desc>
-  </programme>
-  <programme start="20260912132102 +0000" stop="20260912134512 +0000" channel="RedBullBike.global">
-    <title lang="en">Lesotho</title>
-    <desc lang="en">Mountain bikers Rob Warner and Matt Jones, head to Lesotho to experience a very different kind of racing.</desc>
+  <programme start="20260912213912 +0000" stop="20260912220516 +0000" channel="RedBullPadel.global">
+    <title lang="en">Bordeaux Premier Padel P2 highlights</title>
+    <desc lang="en">Watch the highlights from the Bordeaux Premier Padel P2 tournament.</desc>
   </programme>
   <programme start="20260912134512 +0000" stop="20260912135223 +0000" channel="RedBullBike.global">
     <title lang="en">The power of bikes</title>
@@ -6287,9 +6731,13 @@
     <title lang="en">Emerald Storm</title>
     <desc lang="en">Documenting the rise of Ireland’s top MTB riders from their grassroots beginnings to the global stage.</desc>
   </programme>
-  <programme start="20260912120157 +0000" stop="20260912134034 +0000" channel="RedBullAdventure.global">
-    <title lang="en">Valley Uprising</title>
-    <desc lang="en">Join Alex Honnold for an inside look into how climbers carved out a counterculture lifestyle in Yosemite.</desc>
+  <programme start="20260912220236 +0000" stop="20260912221919 +0000" channel="RedBullBike.global">
+    <title lang="en">Remy Morton: Seven Days and $7K</title>
+    <desc lang="en">Can Australian MTB freerider Remy Morton build his ultimate line in seven days and with a AUD$7,000 budget?</desc>
+  </programme>
+  <programme start="20260912221919 +0000" stop="20260912223202 +0000" channel="RedBullBike.global">
+    <title lang="en">Underdogs and overdogs</title>
+    <desc lang="en">MTB riders Kate Courtney and Loïc Bruni recall the highs and lows of their mountain biking careers.</desc>
   </programme>
   <programme start="20260912134034 +0000" stop="20260912144621 +0000" channel="RedBullAdventure.global">
     <title lang="en">K2 The Impossible Descent</title>
@@ -6367,17 +6815,9 @@
     <title lang="en">Filming free solo on Les Drus in France</title>
     <desc lang="en">Alex Honnold, Nico Hojac and team take on an epic climb and film shoot on Les Drus in the Mont Blanc massif.</desc>
   </programme>
-  <programme start="20260912130217 +0000" stop="20260912132052 +0000" channel="RedBullMotorsports.global">
-    <title lang="en">Bringing a 1993 Yamaha PW50 back to life</title>
-    <desc lang="en">It’s a nostalgia build as Aaron Colton restores the first motorcycle he ever rode.</desc>
-  </programme>
-  <programme start="20260912132052 +0000" stop="20260912133144 +0000" channel="RedBullMotorsports.global">
-    <title lang="en">The guy out front</title>
-    <desc lang="en">Jeffrey Herlings has surpassed Antonio Cairoli this season. Can he also be the sport's public face?</desc>
-  </programme>
-  <programme start="20260912133144 +0000" stop="20260912134755 +0000" channel="RedBullMotorsports.global">
-    <title lang="en">Wanting the win</title>
-    <desc lang="en">Toni Cairoli feels the pressure as he prepares to race in his home country at the competition in Trentino.</desc>
+  <programme start="20260912223025 +0000" stop="20260912225341 +0000" channel="RedBullAdventure.global">
+    <title lang="en">The high road part 1</title>
+    <desc lang="en">Follow the rise of Nina Williams as she astounds the climbing world with a series of spectacular ascents.</desc>
   </programme>
   <programme start="20260912134755 +0000" stop="20260912140130 +0000" channel="RedBullMotorsports.global">
     <title lang="en">Europeans vs Americans</title>
@@ -6447,9 +6887,17 @@
     <title lang="en">Ripping it up in Romania</title>
     <desc lang="en">Mani Lettenbichler and Paul Bolton get prepped to face the beast that is Red Bull Romaniacs.</desc>
   </programme>
-  <programme start="20260912130812 +0000" stop="20260912134439 +0000" channel="RedBullSurfing.global">
-    <title lang="en">Meet Kehu Butler in New Zealand</title>
-    <desc lang="en">The future of Kiwi surfing, Māori Kehu Butler, examines his culture’s past in Made In: New Zealand.</desc>
+  <programme start="20260912215530 +0000" stop="20260912224730 +0000" channel="RedBullMotorsports.global">
+    <title lang="en">Mint 400</title>
+    <desc lang="en">Off-road racers endure four battering 100-mile laps through the unrelenting desert outside Las Vegas, USA.</desc>
+  </programme>
+  <programme start="20260912224730 +0000" stop="20260912234057 +0000" channel="RedBullMotorsports.global">
+    <title lang="en">Red Bull Romaniacs</title>
+    <desc lang="en">Four days of brutal Transylvanian terrain and 24 hours in the saddle makes up Hard Enduro's longest race.</desc>
+  </programme>
+  <programme start="20260912234057 +0000" stop="20260913000204 +0000" channel="RedBullMotorsports.global">
+    <title lang="en">Motocross of Nations has arrived</title>
+    <desc lang="en">Motocross of Nations is an event where the top American and European riders compete against each other.</desc>
   </programme>
   <programme start="20260912134439 +0000" stop="20260912135957 +0000" channel="RedBullSurfing.global">
     <title lang="en">The legend of Nazaré</title>
@@ -6527,13 +6975,9 @@
     <title lang="en">Meet Kehu Butler in New Zealand</title>
     <desc lang="en">The future of Kiwi surfing, Māori Kehu Butler, examines his culture’s past in Made In: New Zealand.</desc>
   </programme>
-  <programme start="20260912131409 +0000" stop="20260912132432 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Inside Gustavo Ribeiro's skatepark</title>
-    <desc lang="en">This is your opportunity to take a tour of Gustavo Ribeiro's private indoor skatepark.</desc>
-  </programme>
-  <programme start="20260912132432 +0000" stop="20260912133519 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Skating the streets of Barcelona</title>
-    <desc lang="en">Gustavo Ribeiro and the Ementa crew try some tricks on the streets of skateboarding’s first city – Barcelona.</desc>
+  <programme start="20260913011900 +0000" stop="20260913013308 +0000" channel="RedBullSurfing.global">
+    <title lang="en">Aloha Mr Lenny</title>
+    <desc lang="en">Growing up among the world’s best watermen shaped him, but Kai Lenny is now taking it to the next level.</desc>
   </programme>
   <programme start="20260912133519 +0000" stop="20260912140431 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Madars Apse meets Mike Vallely</title>
@@ -6607,9 +7051,13 @@
     <title lang="en">Madars and the Fancy Lad crew</title>
     <desc lang="en">Madars Apse is in Massachusetts to meet the group of friends redefining what's possible in skateboarding.</desc>
   </programme>
-  <programme start="20260912125405 +0000" stop="20260912134053 +0000" channel="RedBullWinter.global">
-    <title lang="en">Roots</title>
-    <desc lang="en">Take a journey through Italy, Switzerland and Finland to explore the foundations of freeskiing.</desc>
+  <programme start="20260912185926 +0000" stop="20260912190747 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Larvikite Lines</title>
+    <desc lang="en">Torey Pudwill and friends create, shred and then donate ancient stone skate spots in Norway.</desc>
+  </programme>
+  <programme start="20260912190747 +0000" stop="20260912191509 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Pura Pura Skatepark, Bolivia</title>
+    <desc lang="en">It's the highest skatepark in the world and it was built in less than a month by more than 100 volunteers.</desc>
   </programme>
   <programme start="20260912134053 +0000" stop="20260912140406 +0000" channel="RedBullWinter.global">
     <title lang="en">Bang on Time</title>
@@ -6687,37 +7135,9 @@
     <title lang="en">Alaska</title>
     <desc lang="en">The snowboarding McMorris brothers have been around the world, but Alaska remained out of reach – until now.</desc>
   </programme>
-  <programme start="20260912131452 +0000" stop="20260912132437 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Wild phone chase</title>
-    <desc lang="en">Freerunner Jason Paul makes the impossible possible in the city of Hamburg as he searches for his lost phone.</desc>
-  </programme>
-  <programme start="20260912132437 +0000" stop="20260912132647 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Wake Crane</title>
-    <desc lang="en">Three top riders rip around a custom wakeboard park built from a crane and a bunch of cargo containers.</desc>
-  </programme>
-  <programme start="20260912132647 +0000" stop="20260912133153 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Dropping in on Dubai</title>
-    <desc lang="en">Watch Kriss Kyle jump from a helicopter onto the roof of Burj Al Arab in Dubai – on his BMX bike.</desc>
-  </programme>
-  <programme start="20260912133153 +0000" stop="20260912133432 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Uncontainable</title>
-    <desc lang="en">Always looking for bigger set-ups, Drew Bezanson built a custom BMX park using enormous shipping containers.</desc>
-  </programme>
-  <programme start="20260912133432 +0000" stop="20260912133749 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Keys to the track</title>
-    <desc lang="en">Travis Pastrana, Alexander Rossi and Gregg Duffy are not deterred by the plunging winter temps.</desc>
-  </programme>
-  <programme start="20260912133749 +0000" stop="20260912134117 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Realm featuring Brandon Semenuk</title>
-    <desc lang="en">We challenged Brandon Semenuk and Justin Wyper to build unique features. Here’s what they came up with.</desc>
-  </programme>
-  <programme start="20260912134117 +0000" stop="20260912134524 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Rhine Line</title>
-    <desc lang="en">FIM FMX World Champion and X Games gold medal winner Luc Ackermann unveils three world firsts.</desc>
-  </programme>
-  <programme start="20260912134524 +0000" stop="20260912134745 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Dancing in the lights</title>
-    <desc lang="en">Get your 2019 going in style with a celebratory dance performance on the roofs of Mumbai in India.</desc>
+  <programme start="20260912202446 +0000" stop="20260912203549 +0000" channel="RedBullWinter.global">
+    <title lang="en">No days off for Scotty James and Maddie Mastro</title>
+    <desc lang="en">Scotty James and Maddie Mastro get some laps in as they train with their coach, James Jackson.</desc>
   </programme>
   <programme start="20260912134745 +0000" stop="20260912135245 +0000" channel="RedBullActionReel.global">
     <title lang="en">Off-road</title>
@@ -6766,6 +7186,38 @@
   <programme start="20260912143343 +0000" stop="20260912143724 +0000" channel="RedBullActionReel.global">
     <title lang="en">Last call for Mr Paul</title>
     <desc lang="en">Pro freerunner Jason Paul is late for a flight and needs to use his athletic prowess to navigate the airport.</desc>
+  </programme>
+  <programme start="20260912143724 +0000" stop="20260912144119 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Project Istanbulls</title>
+    <desc lang="en">Pierre Gasly and Alex Albon took to the streets of Istanbul, Turkey, with a driving display through the city.</desc>
+  </programme>
+  <programme start="20260912144119 +0000" stop="20260912144341 +0000" channel="RedBullActionReel.global">
+    <title lang="en">The Soul Flyers</title>
+    <desc lang="en">In a world first, the Soul Flyers wingsuit pilots BASE jump off a mountain and land in a mid-air aeroplane.</desc>
+  </programme>
+  <programme start="20260912144341 +0000" stop="20260912150106 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Just the Tricks</title>
+    <desc lang="en">All-killer, no-filler; get a concentrated blast of just the snowboarding tricks from the film.</desc>
+  </programme>
+  <programme start="20260912150106 +0000" stop="20260912150228 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Petra BASE jump</title>
+    <desc lang="en">Watch as Miles Daisher, Red Bull Air Force pilot, BASE jumps to land in front of Petra's Treasury.</desc>
+  </programme>
+  <programme start="20260912150228 +0000" stop="20260912150910 +0000" channel="RedBullActionReel.global">
+    <title lang="en">From sim to reality</title>
+    <desc lang="en">Max Verstappen gets sucked into his simulator and needs to clear different levels to get to the Belgium GP.</desc>
+  </programme>
+  <programme start="20260912150910 +0000" stop="20260912151051 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Carson Storch</title>
+    <desc lang="en">Watch Carson Storch ride through a forest and take on a train and rail track in 100 seconds of raw MTB action.</desc>
+  </programme>
+  <programme start="20260912151051 +0000" stop="20260912151554 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Cracked</title>
+    <desc lang="en">Toby Price races through the Australian Outback with his rally bike to deliver a carton of eggs.</desc>
+  </programme>
+  <programme start="20260912151554 +0000" stop="20260912152051 +0000" channel="RedBullActionReel.global">
+    <title lang="en">First sessions = INSANE</title>
+    <desc lang="en">Practice + drone makes you feel like you're flying. This session embodies what freeriding is all about.</desc>
   </programme>
   <programme start="20260912002500 +0700" stop="20260912004000 +0700" channel="MNC_abc-australia-channel-350.id">
     <title lang="id">Play On</title>
@@ -19724,8 +20176,8 @@
     <desc lang="kk">Бағдарлама Prime Era</desc>
   </programme>
   <programme start="20260912122500 +0500" stop="20260912143500 +0500" channel="Qazaqstan.kz">
-    <title lang="kk">Мегажоба SuperStar KZ Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Мегажоба SuperStar KZ Онлайн көру</desc>
+    <title lang="kk">SuperStar KZ</title>
+    <desc lang="kk">Бағдарлама SuperStar KZ</desc>
   </programme>
   <programme start="20260912143500 +0500" stop="20260912152500 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Дисней ұсынады: Сақшы арыстан</title>
@@ -19735,21 +20187,21 @@
     <title lang="kk">Көркем фильмдер</title>
     <desc lang="kk">Бағдарлама Көркем фильмдер</desc>
   </programme>
-  <programme start="20260912174000 +0500" stop="20260912200000 +0500" channel="Qazaqstan.kz">
+  <programme start="20260912174000 +0500" stop="20260912180000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Құрылтай</title>
     <desc lang="kk">Бағдарлама Құрылтай</desc>
+  </programme>
+  <programme start="20260912180000 +0500" stop="20260912200000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Телехикая Мелек Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Телехикая Мелек Онлайн көру</desc>
   </programme>
   <programme start="20260912200000 +0500" stop="20260912201500 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Ақпарат</title>
     <desc lang="kk">Бағдарлама Ақпарат</desc>
   </programme>
-  <programme start="20260912201500 +0500" stop="20260912203000 +0500" channel="Qazaqstan.kz">
+  <programme start="20260912201500 +0500" stop="20260912223000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Әлем және біз</title>
     <desc lang="kk">Бағдарлама Әлем және біз</desc>
-  </programme>
-  <programme start="20260912203000 +0500" stop="20260912223000 +0500" channel="Qazaqstan.kz">
-    <title lang="kk">SuperStar KZ</title>
-    <desc lang="kk">Бағдарлама SuperStar KZ</desc>
   </programme>
   <programme start="20260912223000 +0500" stop="20260912233000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Соңғы хат</title>
@@ -20016,12 +20468,12 @@
     <desc lang="kk">Бағдарлама Ғылым мен ғалам</desc>
   </programme>
   <programme start="20260912180000 +0500" stop="20260912183000 +0500" channel="AbaiTV.kz">
-    <title lang="kk">Бағдарлама. Ақын Тынышбай Рақымды еске алу Ұмытпаймыз Онлайн қарау</title>
-    <desc lang="kk">Бағдарлама Бағдарлама. Ақын Тынышбай Рақымды еске алу Ұмытпаймыз Онлайн қарау</desc>
+    <title lang="kk">Ұмытпаймыз</title>
+    <desc lang="kk">Бағдарлама Ұмытпаймыз</desc>
   </programme>
   <programme start="20260912183000 +0500" stop="20260912190000 +0500" channel="AbaiTV.kz">
-    <title lang="kk">Жәдігер</title>
-    <desc lang="kk">Бағдарлама Жәдігер</desc>
+    <title lang="kk">Бағдарлама. Латиф Хамиди Жәдігер Онлайн қарау</title>
+    <desc lang="kk">Бағдарлама Бағдарлама. Латиф Хамиди Жәдігер Онлайн қарау</desc>
   </programme>
   <programme start="20260912190000 +0500" stop="20260912193000 +0500" channel="AbaiTV.kz">
     <title lang="kk">В ритме танца</title>
@@ -20038,10 +20490,6 @@
   <programme start="20260912210000 +0500" stop="20260912220000 +0500" channel="AbaiTV.kz">
     <title lang="kk">ЗАМАН-АРТ</title>
     <desc lang="kk">Бағдарлама ЗАМАН-АРТ</desc>
-  </programme>
-  <programme start="20260912001000 +0500" stop="20260912010000 +0500" channel="Qazsport.kz">
-    <title lang="kk">УЕФА Чемпиондар Лигасының шолуы</title>
-    <desc lang="kk">Бағдарлама УЕФА Чемпиондар Лигасының шолуы</desc>
   </programme>
   <programme start="20260912010000 +0500" stop="20260912075000 +0500" channel="Qazsport.kz">
     <title lang="kk">Әнұран</title>
@@ -20072,8 +20520,8 @@
     <desc lang="kk">Бағдарлама Доп дода бағдарламасы</desc>
   </programme>
   <programme start="20260912135000 +0500" stop="20260912144000 +0500" channel="Qazsport.kz">
-    <title lang="kk">Футбол УЕФА Чемпиондар Лигасының шолуы Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Футбол УЕФА Чемпиондар Лигасының шолуы Онлайн көру</desc>
+    <title lang="kk">УЕФА Чемпиондар Лигасының шолуы</title>
+    <desc lang="kk">Бағдарлама УЕФА Чемпиондар Лигасының шолуы</desc>
   </programme>
   <programme start="20260912144000 +0500" stop="20260912145000 +0500" channel="Qazsport.kz">
     <title lang="kk">Қарыштай бер, қазақ күресі</title>
@@ -20084,8 +20532,8 @@
     <desc lang="kk">Бағдарлама Қазақстан - Филиппин</desc>
   </programme>
   <programme start="20260912162500 +0500" stop="20260912185500 +0500" channel="Qazsport.kz">
-    <title lang="kk">Барыс (Астана) – Амур (Хабаровск)</title>
-    <desc lang="kk">Бағдарлама Барыс (Астана) – Амур (Хабаровск)</desc>
+    <title lang="kk">Хоккей. ҚХЛ Барыс (Астана) – Амур (Хабаровск) Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Хоккей. ҚХЛ Барыс (Астана) – Амур (Хабаровск) Онлайн көру</desc>
   </programme>
   <programme start="20260912185500 +0500" stop="20260912210000 +0500" channel="Qazsport.kz">
     <title lang="kk">Ордабасы – Астана</title>
@@ -20144,16 +20592,16 @@
     <desc lang="kk">Бағдарлама 14:00-17:00 Техникалық үзіліс</desc>
   </programme>
   <programme start="20260912170000 +0500" stop="20260912183000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">Концерттік бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Концерттік бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама Онлайн көру</desc>
+    <title lang="kk">"ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</title>
+    <desc lang="kk">Бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</desc>
   </programme>
   <programme start="20260912183000 +0500" stop="20260912183500 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"ЖАНСАРАЙ"</title>
     <desc lang="kk">Бағдарлама "ЖАНСАРАЙ"</desc>
   </programme>
   <programme start="20260912183500 +0500" stop="20260912185500 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">"ТОПЖАРҒАН". Танымдық бағдарлама</title>
-    <desc lang="kk">Бағдарлама "ТОПЖАРҒАН". Танымдық бағдарлама</desc>
+    <title lang="kk">Танымдық бағдарлама "ТОПЖАРҒАН". Танымдық бағдарлама Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Танымдық бағдарлама "ТОПЖАРҒАН". Танымдық бағдарлама Онлайн көру</desc>
   </programme>
   <programme start="20260912185500 +0500" stop="20260912193000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"АЛДАСПАН"</title>
@@ -20166,10 +20614,6 @@
   <programme start="20260912200000 +0500" stop="20260912210000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"САНА"</title>
     <desc lang="kk">Бағдарлама "САНА"</desc>
-  </programme>
-  <programme start="20260912210000 +0500" stop="20260912220000 +0500" channel="AqjaiyqTV.kz">
-    <title lang="kk">"ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</title>
-    <desc lang="kk">Бағдарлама "ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</desc>
   </programme>
   <programme start="20260912070000 +0500" stop="20260912070500 +0500" channel="AqtobeTV.kz">
     <title lang="kk">ӘНҰРАН</title>
@@ -20228,12 +20672,12 @@
     <desc lang="kk">Бағдарлама "АҚПАРАТТЫҚ САҒАТ"</desc>
   </programme>
   <programme start="20260912180000 +0500" stop="20260912183000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Танымдық хабар "ҰЛЫ ДАЛА МҰРАСЫ" Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Танымдық хабар "ҰЛЫ ДАЛА МҰРАСЫ" Онлайн көру</desc>
+    <title lang="kk">"ҰЛЫ ДАЛА МҰРАСЫ"</title>
+    <desc lang="kk">Бағдарлама "ҰЛЫ ДАЛА МҰРАСЫ"</desc>
   </programme>
   <programme start="20260912183000 +0500" stop="20260912190000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">«ЖАС STAR»</title>
-    <desc lang="kk">Бағдарлама «ЖАС STAR»</desc>
+    <title lang="kk">Танымдық хабар «ЖАС STAR» Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Танымдық хабар «ЖАС STAR» Онлайн көру</desc>
   </programme>
   <programme start="20260912190000 +0500" stop="20260912191000 +0500" channel="AqtobeTV.kz">
     <title lang="kk">"ТЕАТР ТЫНЫСЫ"</title>
@@ -20308,12 +20752,12 @@
     <desc lang="kk">Бағдарлама МУЛЬТИХИКАЯ</desc>
   </programme>
   <programme start="20260912172000 +0500" stop="20260912185000 +0500" channel="AltaiTV.kz">
-    <title lang="kk">Телехикая "ИНЕЛІК" 16,17 бөлім Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Телехикая "ИНЕЛІК" 16,17 бөлім Онлайн көру</desc>
+    <title lang="kk">Телехикая "ИНЕЛІК" 16,17 бөлім</title>
+    <desc lang="kk">Бағдарлама Телехикая "ИНЕЛІК" 16,17 бөлім</desc>
   </programme>
   <programme start="20260912185000 +0500" stop="20260912194000 +0500" channel="AltaiTV.kz">
-    <title lang="kk">"КӨНЕНІҢ КӨЗІ", "УНИКАЛЬНЫЙ ЭКСПОНАТ", "ҚЫЗЫҚ КӘСІП", "СЕН БІЛЕСІҢ БЕ?","ТАРИХИ ТҰЛҒАЛАР" ақпараттық-танымдық бағдарлама</title>
-    <desc lang="kk">Бағдарлама "КӨНЕНІҢ КӨЗІ", "УНИКАЛЬНЫЙ ЭКСПОНАТ", "ҚЫЗЫҚ КӘСІП", "СЕН БІЛЕСІҢ БЕ?","ТАРИХИ ТҰЛҒАЛАР" ақпараттық-танымдық бағдарлама</desc>
+    <title lang="kk">"КӨНЕНІҢ КӨЗІ", "УНИКАЛЬНЫЙ ЭКСПОНАТ", "ҚЫЗЫҚ КӘСІП", "СЕН БІЛЕСІҢ БЕ?","ТАРИХИ ТҰЛҒАЛАР" ақпараттық-танымдық бағдарлама Онлайн көру</title>
+    <desc lang="kk">Бағдарлама "КӨНЕНІҢ КӨЗІ", "УНИКАЛЬНЫЙ ЭКСПОНАТ", "ҚЫЗЫҚ КӘСІП", "СЕН БІЛЕСІҢ БЕ?","ТАРИХИ ТҰЛҒАЛАР" ақпараттық-танымдық бағдарлама Онлайн көру</desc>
   </programme>
   <programme start="20260912194000 +0500" stop="20260912220000 +0500" channel="AltaiTV.kz">
     <title lang="kk">"ДИАГНОЗ" /рус/ ақпараттық-танымдық бағдарлама</title>
@@ -20392,16 +20836,16 @@
     <desc lang="kk">Бағдарлама "ЭФИРДЕ 102.0 FM" - ақпаратты танымдық бағдарлама</desc>
   </programme>
   <programme start="20260912181000 +0500" stop="20260912182000 +0500" channel="AtyrauTV.kz">
-    <title lang="kk">"ЕРТЕГІЛЕР ЕЛІНДЕ" - анимациялық мультфильм. (Balapan телеарнасы, 20 ж.) Онлайн көру</title>
-    <desc lang="kk">Бағдарлама "ЕРТЕГІЛЕР ЕЛІНДЕ" - анимациялық мультфильм. (Balapan телеарнасы, 20 ж.) Онлайн көру</desc>
+    <title lang="kk">"ЕРТЕГІЛЕР ЕЛІНДЕ" - анимациялық мультфильм. (Balapan телеарнасы, 20 ж.)</title>
+    <desc lang="kk">Бағдарлама "ЕРТЕГІЛЕР ЕЛІНДЕ" - анимациялық мультфильм. (Balapan телеарнасы, 20 ж.)</desc>
   </programme>
   <programme start="20260912182000 +0500" stop="20260912184000 +0500" channel="AtyrauTV.kz">
     <title lang="kk">"ҚАРЖЫГЕР" - әлеуметтік, экономикалық бағдарлама</title>
     <desc lang="kk">Бағдарлама "ҚАРЖЫГЕР" - әлеуметтік, экономикалық бағдарлама</desc>
   </programme>
   <programme start="20260912184000 +0500" stop="20260912190000 +0500" channel="AtyrauTV.kz">
-    <title lang="kk">"ЖҰМЫСЫМ ОСЫНДАЙ" - танымдық бағдарлама, қайталау</title>
-    <desc lang="kk">Бағдарлама "ЖҰМЫСЫМ ОСЫНДАЙ" - танымдық бағдарлама, қайталау</desc>
+    <title lang="kk">"ЖҰМЫСЫМ ОСЫНДАЙ" - танымдық бағдарлама, қайталау Онлайн көру</title>
+    <desc lang="kk">Бағдарлама "ЖҰМЫСЫМ ОСЫНДАЙ" - танымдық бағдарлама, қайталау Онлайн көру</desc>
   </programme>
   <programme start="20260912190000 +0500" stop="20260912192500 +0500" channel="AtyrauTV.kz">
     <title lang="kk">"ҒЫЛЫМ МЕН ІЛІМ" - ақпаратты танымдық бағдарлама</title>
@@ -20480,12 +20924,12 @@
     <desc lang="kk">Бағдарлама Техникалық үзіліс</desc>
   </programme>
   <programme start="20260912180000 +0500" stop="20260912183000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Ақпараттық бағдарлама. Ertis ақпарат Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Ақпараттық бағдарлама. Ertis ақпарат Онлайн көру</desc>
-  </programme>
-  <programme start="20260912183000 +0500" stop="20260912190000 +0500" channel="ErtisTV.kz">
     <title lang="kk">Ertis ақпарат</title>
     <desc lang="kk">Бағдарлама Ertis ақпарат</desc>
+  </programme>
+  <programme start="20260912183000 +0500" stop="20260912190000 +0500" channel="ErtisTV.kz">
+    <title lang="kk">Информационная программа. Ertis ақпарат Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Информационная программа. Ertis ақпарат Онлайн көру</desc>
   </programme>
   <programme start="20260912190000 +0500" stop="20260912193000 +0500" channel="ErtisTV.kz">
     <title lang="kk">Талбесік</title>
@@ -20560,12 +21004,12 @@
     <desc lang="kk">Бағдарлама Аңдатпа</desc>
   </programme>
   <programme start="20260912180000 +0500" stop="20260912183000 +0500" channel="JambylTV.kz">
-    <title lang="kk">АПТА қорытындысы /ақпараттық бағдарлама QUM SAGAT Онлайн көру</title>
-    <desc lang="kk">Бағдарлама АПТА қорытындысы /ақпараттық бағдарлама QUM SAGAT Онлайн көру</desc>
-  </programme>
-  <programme start="20260912183000 +0500" stop="20260912190000 +0500" channel="JambylTV.kz">
     <title lang="kk">QUM SAGAT</title>
     <desc lang="kk">Бағдарлама QUM SAGAT</desc>
+  </programme>
+  <programme start="20260912183000 +0500" stop="20260912190000 +0500" channel="JambylTV.kz">
+    <title lang="kk">АПТА информационная программа QUM SAGAT Онлайн көру</title>
+    <desc lang="kk">Бағдарлама АПТА информационная программа QUM SAGAT Онлайн көру</desc>
   </programme>
   <programme start="20260912190000 +0500" stop="20260912193000 +0500" channel="JambylTV.kz">
     <title lang="kk">МҮМКІН ЕМЕС</title>
@@ -20643,13 +21087,13 @@
     <title lang="kk">"ДҮЛ ДҮЛ" м/х 1,2 бөлім</title>
     <desc lang="kk">Бағдарлама "ДҮЛ ДҮЛ" м/х 1,2 бөлім</desc>
   </programme>
-  <programme start="20260912140000 +0500" stop="20260912170000 +0500" channel="KoksheTV.kz">
+  <programme start="20260912140000 +0500" stop="20260912183000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"ТЕХНИКАЛЫҚ ҮЗІЛІС"</title>
     <desc lang="kk">Бағдарлама "ТЕХНИКАЛЫҚ ҮЗІЛІС"</desc>
   </programme>
-  <programme start="20260912170000 +0500" stop="20260912190000 +0500" channel="KoksheTV.kz">
-    <title lang="kk">"КОНЦЕРТ" Онлайн көру</title>
-    <desc lang="kk">Бағдарлама "КОНЦЕРТ" Онлайн көру</desc>
+  <programme start="20260912183000 +0500" stop="20260912190000 +0500" channel="KoksheTV.kz">
+    <title lang="kk">"ҒАЖАЙЫП ӨЛКЕ" 5,6,7,8 бөлім Онлайн көру</title>
+    <desc lang="kk">Бағдарлама "ҒАЖАЙЫП ӨЛКЕ" 5,6,7,8 бөлім Онлайн көру</desc>
   </programme>
   <programme start="20260912190000 +0500" stop="20260912192500 +0500" channel="KoksheTV.kz">
     <title lang="kk">"МУЗЫКА ВЕЛИКОЙ СТЕПИ" 8 бөлім. /Бағдарлама</title>
@@ -20796,12 +21240,12 @@
     <desc lang="kk">Бағдарлама «Iyirtimiz jamoli»</desc>
   </programme>
   <programme start="20260912180000 +0500" stop="20260912182500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">танымдық балалар бағдарламасы «Балдәурен» Онлайн көру</title>
-    <desc lang="kk">Бағдарлама танымдық балалар бағдарламасы «Балдәурен» Онлайн көру</desc>
+    <title lang="kk">«Балдәурен»</title>
+    <desc lang="kk">Бағдарлама «Балдәурен»</desc>
   </programme>
   <programme start="20260912182500 +0500" stop="20260912200000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">«Өнерлі өлке»</title>
-    <desc lang="kk">Бағдарлама «Өнерлі өлке»</desc>
+    <title lang="kk">танымдық бағдарлама «Өнерлі өлке» Онлайн көру</title>
+    <desc lang="kk">Бағдарлама танымдық бағдарлама «Өнерлі өлке» Онлайн көру</desc>
   </programme>
   <programme start="20260912200000 +0500" stop="20260912203500 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Апта айнасы»</title>
@@ -20868,12 +21312,12 @@
     <desc lang="kk">Бағдарлама «БІЗДІҢ СЫНЫП» телехикая (14 бөлім) («Qazaqstan» ҰТА, 2022 ж.)</desc>
   </programme>
   <programme start="20260912180000 +0500" stop="20260912183000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«ЕЛГЕ ҚЫЗМЕТ» (рус) (қоғамдық-ақпараттық бағдарлама) Онлайн көру</title>
-    <desc lang="kk">Бағдарлама «ЕЛГЕ ҚЫЗМЕТ» (рус) (қоғамдық-ақпараттық бағдарлама) Онлайн көру</desc>
+    <title lang="kk">«ЕЛГЕ ҚЫЗМЕТ» (рус) (қоғамдық-ақпараттық бағдарлама)</title>
+    <desc lang="kk">Бағдарлама «ЕЛГЕ ҚЫЗМЕТ» (рус) (қоғамдық-ақпараттық бағдарлама)</desc>
   </programme>
   <programme start="20260912183000 +0500" stop="20260912191000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«ЖОЛ ҮСТІНДЕ» (қоғамдық бағдарлама)</title>
-    <desc lang="kk">Бағдарлама «ЖОЛ ҮСТІНДЕ» (қоғамдық бағдарлама)</desc>
+    <title lang="kk">«ЖОЛ ҮСТІНДЕ» (қоғамдық бағдарлама) Онлайн көру</title>
+    <desc lang="kk">Бағдарлама «ЖОЛ ҮСТІНДЕ» (қоғамдық бағдарлама) Онлайн көру</desc>
   </programme>
   <programme start="20260912191000 +0500" stop="20260912193000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«ДАРЫН» (каз) (танымдық бағдарлама)</title>
@@ -21040,12 +21484,12 @@
     <desc lang="kk">Бағдарлама «Әділ Зере»</desc>
   </programme>
   <programme start="20260912175500 +0500" stop="20260912183500 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Ақпараттық-танымдық бағдарлама «АуылTIMES» Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Ақпараттық-танымдық бағдарлама «АуылTIMES» Онлайн көру</desc>
+    <title lang="kk">«АуылTIMES»</title>
+    <desc lang="kk">Бағдарлама «АуылTIMES»</desc>
   </programme>
   <programme start="20260912183500 +0500" stop="20260912190000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">«Арнайы жоба»</title>
-    <desc lang="kk">Бағдарлама «Арнайы жоба»</desc>
+    <title lang="kk">Деректі фильм «Арнайы жоба» Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Деректі фильм «Арнайы жоба» Онлайн көру</desc>
   </programme>
   <programme start="20260912190000 +0500" stop="20260912193000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Апта»</title>
@@ -21136,12 +21580,12 @@
     <desc lang="kk">Бағдарлама Қаладан ауылға</desc>
   </programme>
   <programme start="20260912170500 +0500" stop="20260912183500 +0500" channel="SemeiTV.kz">
-    <title lang="kk">"Топыраққа тамған тер" Телехикая "Топыраққа тамған тер" Телехикая Онлайн көру</title>
-    <desc lang="kk">Бағдарлама "Топыраққа тамған тер" Телехикая "Топыраққа тамған тер" Телехикая Онлайн көру</desc>
+    <title lang="kk">"Топыраққа тамған тер" Телехикая</title>
+    <desc lang="kk">Бағдарлама "Топыраққа тамған тер" Телехикая</desc>
   </programme>
   <programme start="20260912183500 +0500" stop="20260912193000 +0500" channel="SemeiTV.kz">
-    <title lang="kk">"Диагноз" бағдарламасы</title>
-    <desc lang="kk">Бағдарлама "Диагноз" бағдарламасы</desc>
+    <title lang="kk">"Диагноз" бағдарламасы "Диагноз" бағдарламасы Онлайн көру</title>
+    <desc lang="kk">Бағдарлама "Диагноз" бағдарламасы "Диагноз" бағдарламасы Онлайн көру</desc>
   </programme>
   <programme start="20260912193000 +0500" stop="20260912194500 +0500" channel="SemeiTV.kz">
     <title lang="kk">"Қызмет етемін" бағдарламасы</title>
