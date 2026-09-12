@@ -127,46 +127,23 @@ def discover_tivie_channels():
             channels.append(m_ch)
     return channels
 
+CF_WORKER_URL = "https://tivie-proxy.sulthan-pamenan.workers.dev/"
+
 def scrape_single_tivie_channel(ch):
     ch_id, ch_name = ch["id"], ch["name"]
-    url = f"https://tivie.id/channel/{ch_id}"
+    url = f"{CF_WORKER_URL}/channel/{ch_id}"
     programmes = []
     wib_tz = timezone(timedelta(hours=7))
     today_wib = datetime.now(timezone.utc).astimezone(wib_tz).date()
 
-    req_headers = HEADERS.copy()
-    req_headers.update({
-        "Referer": "https://tivie.id/",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-    })
-    
-    if TIVIE_VERSION_TOKEN:
-        req_headers["X-Inertia"] = "true"
-        req_headers["X-Inertia-Version"] = TIVIE_VERSION_TOKEN
-
     raw_list = []
     try:
-        res = HTTP_SESSION.get(url, headers=req_headers, timeout=10)
+        res = HTTP_SESSION.get(url, timeout=15)
         
-        # Opsi A: Respon Inertia JSON Direct
-        if res.status_code == 200 and ("application/json" in res.headers.get("Content-Type", "") or res.headers.get("X-Inertia")):
-            try:
-                data = res.json()
-                schedules = data.get('props', {}).get('schedules', []) or data.get('props', {}).get('epg', []) or data.get('props', {}).get('channel', {}).get('schedules', [])
-                for item in schedules:
-                    t_str = item.get('time') or item.get('start_time')
-                    title = item.get('title') or item.get('program_name') or item.get('name')
-                    if t_str and title:
-                        match = TIME_PATTERN_HM.search(str(t_str))
-                        if match:
-                            raw_list.append({"time": match.group(1).replace(".", ":").zfill(5)[:5], "title": clean_text_str(title)})
-            except Exception:
-                pass
-
-        # Opsi B: Respon HTML
-        if not raw_list and res.status_code == 200:
+        if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             app_div = soup.find('div', id='app')
+            
             if app_div and app_div.get('data-page'):
                 try:
                     page_json = json.loads(app_div['data-page'])
@@ -182,7 +159,6 @@ def scrape_single_tivie_channel(ch):
                 except Exception:
                     pass
 
-            # Opsi C: Standard DOM Text Parsing
             if not raw_list:
                 lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
                 i = 0
@@ -224,8 +200,8 @@ def scrape_single_tivie_channel(ch):
             
         if programmes:
             print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs!")
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"[!] Tivie Error [{ch_name}]: {e}")
 
     return {"id": f"Tivie_{ch_id}.id", "name": ch_name}, programmes
 
