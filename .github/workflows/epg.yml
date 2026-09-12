@@ -23,7 +23,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run EPG Generator
-        run: python test_tivie.py
+        run: python generate_epg.py
 
       - name: Commit and Push Changes
         run: |
