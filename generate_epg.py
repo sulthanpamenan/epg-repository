@@ -10,7 +10,7 @@ import requests
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
@@ -103,54 +103,28 @@ TIVIE_MASTER_FALLBACK = [
     {"id": "vtv", "name": "VTV"}, {"id": "sindonews", "name": "Sindonews TV"}
 ]
 
-TIVIE_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "id,en-US;q=0.9,en;q=0.8",
-    "Cache-Control": "max-age=0",
-    "Sec-Ch-Ua": '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
-    "Sec-Ch-Ua-Mobile": "?0",
-    "Sec-Ch-Ua-Platform": '"Windows"',
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-User": "?1",
-    "Upgrade-Insecure-Requests": "1",
-    "Referer": "https://tivie.id/",
-}
+TIVIE_VERSION_TOKEN = ""
 
-def discover_tivie_channels():
-    channels, added_ids = [], set()
+def init_tivie_session():
+    global TIVIE_VERSION_TOKEN
     try:
-        res = HTTP_SESSION.get("https://tivie.id/", headers=TIVIE_HEADERS, timeout=10)
+        res = HTTP_SESSION.get("https://tivie.id/", timeout=10)
         if res.status_code == 200:
-            ziggy_match = re.search(r'Ziggy\s*=\s*(\{.*?\});', res.text)
-            if ziggy_match:
-                routes = json.loads(ziggy_match.group(1)).get('routes', {})
-                for r_info in routes.values():
-                    uri = r_info.get('uri', '')
-                    if 'channel/' in uri:
-                        slug = uri.split('channel/')[1].replace('{channel}', '').strip('/')
-                        if slug and slug not in added_ids and not slug.startswith('{'):
-                            added_ids.add(slug)
-                            channels.append({"id": slug, "name": slug.replace('-', ' ').title()})
-
             soup = BeautifulSoup(res.text, 'html.parser')
-            for link in soup.find_all('a', href=re.compile(r'/channel/')):
-                match = re.search(r'/channel/([a-zA-Z0-9-]+)', link.get('href', ''))
-                if match:
-                    ch_id = match.group(1).lower().strip()
-                    if ch_id and len(ch_id) < 25 and ch_id not in added_ids and not re.search(r'(besok|kemarin|lusa|\d{8})', ch_id):
-                        added_ids.add(ch_id)
-                        channels.append({"id": ch_id, "name": link.get_text(strip=True) or ch_id.replace('-', ' ').title()})
+            app_div = soup.find('div', id='app')
+            if app_div and app_div.get('data-page'):
+                page_data = json.loads(app_div['data-page'])
+                TIVIE_VERSION_TOKEN = page_data.get('version', '')
     except Exception:
         pass
 
+def discover_tivie_channels():
+    init_tivie_session()
+    channels, added_ids = [], set()
     for m_ch in TIVIE_MASTER_FALLBACK:
         if m_ch["id"] not in added_ids:
             added_ids.add(m_ch["id"])
             channels.append(m_ch)
-            
     return channels
 
 def scrape_single_tivie_channel(ch):
@@ -160,54 +134,96 @@ def scrape_single_tivie_channel(ch):
     wib_tz = timezone(timedelta(hours=7))
     today_wib = datetime.now(timezone.utc).astimezone(wib_tz).date()
 
-    req_headers = TIVIE_HEADERS.copy()
-    req_headers["Referer"] = f"https://tivie.id/channel/{ch_id}"
+    req_headers = HEADERS.copy()
+    req_headers.update({
+        "Referer": "https://tivie.id/",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    })
+    
+    if TIVIE_VERSION_TOKEN:
+        req_headers["X-Inertia"] = "true"
+        req_headers["X-Inertia-Version"] = TIVIE_VERSION_TOKEN
 
+    raw_list = []
     try:
         res = HTTP_SESSION.get(url, headers=req_headers, timeout=10)
-        if res.status_code == 200:
+        
+        # Opsi A: Respon Inertia JSON Direct
+        if res.status_code == 200 and ("application/json" in res.headers.get("Content-Type", "") or res.headers.get("X-Inertia")):
+            try:
+                data = res.json()
+                schedules = data.get('props', {}).get('schedules', []) or data.get('props', {}).get('epg', []) or data.get('props', {}).get('channel', {}).get('schedules', [])
+                for item in schedules:
+                    t_str = item.get('time') or item.get('start_time')
+                    title = item.get('title') or item.get('program_name') or item.get('name')
+                    if t_str and title:
+                        match = TIME_PATTERN_HM.search(str(t_str))
+                        if match:
+                            raw_list.append({"time": match.group(1).replace(".", ":").zfill(5)[:5], "title": clean_text_str(title)})
+            except Exception:
+                pass
+
+        # Opsi B: Respon HTML
+        if not raw_list and res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
-            lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
+            app_div = soup.find('div', id='app')
+            if app_div and app_div.get('data-page'):
+                try:
+                    page_json = json.loads(app_div['data-page'])
+                    props = page_json.get('props', {})
+                    schedules = props.get('schedules', []) or props.get('epg', []) or props.get('channel', {}).get('schedules', [])
+                    for item in schedules:
+                        t_str = item.get('time') or item.get('start_time')
+                        title = item.get('title') or item.get('program_name') or item.get('name')
+                        if t_str and title:
+                            match = TIME_PATTERN_HM.search(str(t_str))
+                            if match:
+                                raw_list.append({"time": match.group(1).replace(".", ":").zfill(5)[:5], "title": clean_text_str(title)})
+                except Exception:
+                    pass
 
-            raw_list = []
-            i = 0
-            while i < len(lines):
-                line = lines[i]
-                match = re.match(r'^(\d{2}:\d{2})(?:\s*WIB)?$', line, re.I)
-                if match:
-                    time_str = match.group(1)
-                    if i + 1 < len(lines):
-                        next_line = lines[i + 1]
-                        title_candidate = lines[i + 2] if next_line.upper() in ["WIB", "LIVE"] and i + 2 < len(lines) else next_line
-                        clean_title = re.sub(r'^(?:WIB|LIVE)\s*', '', title_candidate, flags=re.I).strip()
-                        clean_title = re.sub(r'\s+LIVE$', '', clean_title, flags=re.I).strip()
+            # Opsi C: Standard DOM Text Parsing
+            if not raw_list:
+                lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
+                i = 0
+                while i < len(lines):
+                    line = lines[i]
+                    match = re.match(r'^(\d{2}:\d{2})(?:\s*WIB)?$', line, re.I)
+                    if match:
+                        time_str = match.group(1)
+                        if i + 1 < len(lines):
+                            next_line = lines[i + 1]
+                            title_candidate = lines[i + 2] if next_line.upper() in ["WIB", "LIVE"] and i + 2 < len(lines) else next_line
+                            clean_title = re.sub(r'^(?:WIB|LIVE)\s*', '', title_candidate, flags=re.I).strip()
+                            clean_title = re.sub(r'\s+LIVE$', '', clean_title, flags=re.I).strip()
 
-                        if clean_title and not re.match(r'^\d{2}:\d{2}', clean_title) and clean_title.upper() not in ["WIB", "LIVE"]:
-                            if not any(p['time'] == time_str and p['title'] == clean_title for p in raw_list):
-                                raw_list.append({"time": time_str, "title": clean_title})
-                i += 1
+                            if clean_title and not re.match(r'^\d{2}:\d{2}', clean_title) and clean_title.upper() not in ["WIB", "LIVE"]:
+                                if not any(p['time'] == time_str and p['title'] == clean_title for p in raw_list):
+                                    raw_list.append({"time": time_str, "title": clean_title})
+                    i += 1
 
-            for idx in range(len(raw_list)):
-                curr = raw_list[idx]
-                t_str = curr['time']
-                start_dt = datetime.strptime(f"{today_wib} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
-                if idx < len(raw_list) - 1:
-                    stop_time_str = raw_list[idx + 1]['time']
-                    stop_dt = datetime.strptime(f"{today_wib} {stop_time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
-                    if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                else:
-                    stop_dt = start_dt + timedelta(hours=1)
+        for idx in range(len(raw_list)):
+            curr = raw_list[idx]
+            t_str = curr['time']
+            start_dt = datetime.strptime(f"{today_wib} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
+            if idx < len(raw_list) - 1:
+                stop_time_str = raw_list[idx + 1]['time']
+                stop_dt = datetime.strptime(f"{today_wib} {stop_time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
+                if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+            else:
+                stop_dt = start_dt + timedelta(hours=1)
 
-                programmes.append({
-                    "channel": f"Tivie_{ch_id}.id",
-                    "start": format_xmltv_date(start_dt, "+0700"),
-                    "stop": format_xmltv_date(stop_dt, "+0700"),
-                    "title": curr["title"],
-                    "desc": f"Acara {curr['title']} di {ch_name}",
-                    "lang": "id"
-                })
-            if programmes:
-                print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs!")
+            programmes.append({
+                "channel": f"Tivie_{ch_id}.id",
+                "start": format_xmltv_date(start_dt, "+0700"),
+                "stop": format_xmltv_date(stop_dt, "+0700"),
+                "title": curr["title"],
+                "desc": f"Acara {curr['title']} di {ch_name}",
+                "lang": "id"
+            })
+            
+        if programmes:
+            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs!")
     except Exception:
         pass
 
@@ -218,7 +234,7 @@ def fetch_all_tivie_parallel():
     print(f"[*] Starting parallel EPG extraction for {len(channels)} Tivie.id channels...")
     all_channels, all_programmes = [], []
 
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=3) as executor:
         results = executor.map(scrape_single_tivie_channel, channels)
         for ch_info, progs in results:
             if progs:
