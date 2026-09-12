@@ -61,8 +61,9 @@ EPG_TARGET_SOURCES = [
 
 HTTP_SESSION = requests.Session()
 retries = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
-HTTP_SESSION.mount("https://", HTTPAdapter(max_retries=retries))
-HTTP_SESSION.mount("http://", HTTPAdapter(max_retries=retries))
+adapter = HTTPAdapter(max_retries=retries, pool_connections=50, pool_maxsize=50)
+HTTP_SESSION.mount("https://", adapter)
+HTTP_SESSION.mount("http://", adapter)
 HTTP_SESSION.headers.update(HEADERS)
 
 def format_xmltv_date(dt_obj, utc_offset="+0700"):
