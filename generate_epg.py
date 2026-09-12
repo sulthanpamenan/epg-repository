@@ -7,6 +7,8 @@ from datetime import datetime, timedelta, timezone
 from urllib.parse import quote
 from bs4 import BeautifulSoup
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
@@ -58,6 +60,9 @@ EPG_TARGET_SOURCES = [
 ]
 
 HTTP_SESSION = requests.Session()
+retries = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
+HTTP_SESSION.mount("https://", HTTPAdapter(max_retries=retries))
+HTTP_SESSION.mount("http://", HTTPAdapter(max_retries=retries))
 HTTP_SESSION.headers.update(HEADERS)
 
 def format_xmltv_date(dt_obj, utc_offset="+0700"):
@@ -70,7 +75,7 @@ def get_now_in_channel_tz(offset_str):
 
 def clean_text_str(val):
     if not val: return ""
-    text = re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", "", str(val)).strip()
+    text = re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F\xa0]", " ", str(val)).strip()
     return re.sub(r"\s+", " ", text)
 
 def decode_base64_json(data_b64):
@@ -103,23 +108,7 @@ TIVIE_MASTER_FALLBACK = [
     {"id": "vtv", "name": "VTV"}, {"id": "sindonews", "name": "Sindonews TV"}
 ]
 
-TIVIE_VERSION_TOKEN = ""
-
-def init_tivie_session():
-    global TIVIE_VERSION_TOKEN
-    try:
-        res = HTTP_SESSION.get("https://tivie.id/", timeout=10)
-        if res.status_code == 200:
-            soup = BeautifulSoup(res.text, 'html.parser')
-            app_div = soup.find('div', id='app')
-            if app_div and app_div.get('data-page'):
-                page_data = json.loads(app_div['data-page'])
-                TIVIE_VERSION_TOKEN = page_data.get('version', '')
-    except Exception:
-        pass
-
 def discover_tivie_channels():
-    init_tivie_session()
     channels, added_ids = [], set()
     for m_ch in TIVIE_MASTER_FALLBACK:
         if m_ch["id"] not in added_ids:
@@ -138,7 +127,7 @@ def scrape_single_tivie_channel(ch):
 
     raw_list = []
     try:
-        res = HTTP_SESSION.get(url, timeout=15)
+        res = HTTP_SESSION.get(url, timeout=10)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
@@ -191,7 +180,7 @@ def fetch_all_tivie_parallel():
     print(f"[*] Starting parallel EPG extraction for {len(channels)} Tivie.id channels...")
     all_channels, all_programmes = [], []
 
-    with ThreadPoolExecutor(max_workers=3) as executor:
+    with ThreadPoolExecutor(max_workers=8) as executor:
         results = executor.map(scrape_single_tivie_channel, channels)
         for ch_info, progs in results:
             if progs:
