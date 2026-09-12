@@ -127,7 +127,7 @@ def discover_tivie_channels():
             channels.append(m_ch)
     return channels
 
-CF_WORKER_URL = "https://tivie-proxy.sulthan-pamenan.workers.dev/"
+CF_WORKER_URL = "https://tivie-proxy.sulthan-pamenan.workers.dev"
 
 def scrape_single_tivie_channel(ch):
     ch_id, ch_name = ch["id"], ch["name"]
@@ -139,44 +139,25 @@ def scrape_single_tivie_channel(ch):
     raw_list = []
     try:
         res = HTTP_SESSION.get(url, timeout=15)
-        
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
-            app_div = soup.find('div', id='app')
-            
-            if app_div and app_div.get('data-page'):
-                try:
-                    page_json = json.loads(app_div['data-page'])
-                    props = page_json.get('props', {})
-                    schedules = props.get('schedules', []) or props.get('epg', []) or props.get('channel', {}).get('schedules', [])
-                    for item in schedules:
-                        t_str = item.get('time') or item.get('start_time')
-                        title = item.get('title') or item.get('program_name') or item.get('name')
-                        if t_str and title:
-                            match = TIME_PATTERN_HM.search(str(t_str))
-                            if match:
-                                raw_list.append({"time": match.group(1).replace(".", ":").zfill(5)[:5], "title": clean_text_str(title)})
-                except Exception:
-                    pass
+            lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
+            i = 0
+            while i < len(lines):
+                line = lines[i]
+                match = re.match(r'^(\d{2}:\d{2})(?:\s*WIB)?$', line, re.I)
+                if match:
+                    time_str = match.group(1)
+                    if i + 1 < len(lines):
+                        next_line = lines[i + 1]
+                        title_candidate = lines[i + 2] if next_line.upper() in ["WIB", "LIVE"] and i + 2 < len(lines) else next_line
+                        clean_title = re.sub(r'^(?:WIB|LIVE)\s*', '', title_candidate, flags=re.I).strip()
+                        clean_title = re.sub(r'\s+LIVE$', '', clean_title, flags=re.I).strip()
 
-            if not raw_list:
-                lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
-                i = 0
-                while i < len(lines):
-                    line = lines[i]
-                    match = re.match(r'^(\d{2}:\d{2})(?:\s*WIB)?$', line, re.I)
-                    if match:
-                        time_str = match.group(1)
-                        if i + 1 < len(lines):
-                            next_line = lines[i + 1]
-                            title_candidate = lines[i + 2] if next_line.upper() in ["WIB", "LIVE"] and i + 2 < len(lines) else next_line
-                            clean_title = re.sub(r'^(?:WIB|LIVE)\s*', '', title_candidate, flags=re.I).strip()
-                            clean_title = re.sub(r'\s+LIVE$', '', clean_title, flags=re.I).strip()
-
-                            if clean_title and not re.match(r'^\d{2}:\d{2}', clean_title) and clean_title.upper() not in ["WIB", "LIVE"]:
-                                if not any(p['time'] == time_str and p['title'] == clean_title for p in raw_list):
-                                    raw_list.append({"time": time_str, "title": clean_title})
-                    i += 1
+                        if clean_title and not re.match(r'^\d{2}:\d{2}', clean_title) and clean_title.upper() not in ["WIB", "LIVE"]:
+                            if not any(p['time'] == time_str and p['title'] == clean_title for p in raw_list):
+                                raw_list.append({"time": time_str, "title": clean_title})
+                i += 1
 
         for idx in range(len(raw_list)):
             curr = raw_list[idx]
