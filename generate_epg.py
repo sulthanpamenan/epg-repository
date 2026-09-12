@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import requests
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
 }
@@ -87,7 +87,127 @@ def parse_cltv36_day_matches(day_text, target_weekday_name, is_weekend):
     if ("MONDAY - SATURDAY" in dt or "MONDAY – SATURDAY" in dt) and t_day != "SUNDAY": return True
     return False
 
-# --- 1. DENS.TV MODULE ---
+# --- 1. TIVIE.ID MODULE ---
+TIVIE_MASTER_FALLBACK = [
+    {"id": "antv", "name": "ANTV"}, {"id": "btv", "name": "BTV"},
+    {"id": "cnnindonesia", "name": "CNN Indonesia"}, {"id": "garudatv", "name": "Garuda TV"},
+    {"id": "gtv", "name": "GTV"}, {"id": "indosiar", "name": "Indosiar"},
+    {"id": "inews", "name": "iNews"}, {"id": "kompastv", "name": "Kompas TV"},
+    {"id": "mdtv", "name": "MDTV"}, {"id": "mentaritv", "name": "Mentari TV"},
+    {"id": "metrotv", "name": "Metro TV"}, {"id": "mnctv", "name": "MNC TV"},
+    {"id": "moji", "name": "MOJI"}, {"id": "nusantaratv", "name": "Nusantara TV"},
+    {"id": "rcti", "name": "RCTI"}, {"id": "rtv", "name": "RTV"},
+    {"id": "sctv", "name": "SCTV"}, {"id": "sinpotv", "name": "Sin Po TV"},
+    {"id": "transtv", "name": "Trans TV"}, {"id": "trans7", "name": "Trans 7"},
+    {"id": "tvone", "name": "tvOne"}, {"id": "tvri", "name": "TVRI"},
+    {"id": "vtv", "name": "VTV"}, {"id": "sindonews", "name": "Sindonews TV"}
+]
+
+def discover_tivie_channels():
+    channels, added_ids = [], set()
+    try:
+        res = HTTP_SESSION.get("https://tivie.id/", timeout=8)
+        ziggy_match = re.search(r'Ziggy\s*=\s*(\{.*?\});', res.text)
+        if ziggy_match:
+            routes = json.loads(ziggy_match.group(1)).get('routes', {})
+            for r_info in routes.values():
+                uri = r_info.get('uri', '')
+                if 'channel/' in uri:
+                    slug = uri.split('channel/')[1].replace('{channel}', '').strip('/')
+                    if slug and slug not in added_ids and not slug.startswith('{'):
+                        added_ids.add(slug)
+                        channels.append({"id": slug, "name": slug.replace('-', ' ').title()})
+
+        soup = BeautifulSoup(res.text, 'html.parser')
+        for link in soup.find_all('a', href=re.compile(r'/channel/')):
+            match = re.search(r'/channel/([a-zA-Z0-9-]+)', link.get('href', ''))
+            if match:
+                ch_id = match.group(1).lower().strip()
+                if ch_id and len(ch_id) < 25 and ch_id not in added_ids and not re.search(r'(besok|kemarin|lusa|\d{8})', ch_id):
+                    added_ids.add(ch_id)
+                    channels.append({"id": ch_id, "name": link.get_text(strip=True) or ch_id.replace('-', ' ').title()})
+    except Exception:
+        pass
+
+    if len(channels) < 10:
+        for m_ch in TIVIE_MASTER_FALLBACK:
+            if m_ch["id"] not in added_ids:
+                added_ids.add(m_ch["id"])
+                channels.append(m_ch)
+    return channels
+
+def scrape_single_tivie_channel(ch):
+    ch_id, ch_name = ch["id"], ch["name"]
+    url = f"https://tivie.id/channel/{ch_id}"
+    programmes = []
+    wib_tz = timezone(timedelta(hours=7))
+    today_wib = datetime.now(timezone.utc).astimezone(wib_tz).date()
+
+    try:
+        res = HTTP_SESSION.get(url, timeout=8)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, 'html.parser')
+            lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
+
+            raw_list = []
+            i = 0
+            while i < len(lines):
+                line = lines[i]
+                match = re.match(r'^(\d{2}:\d{2})(?:\s*WIB)?$', line, re.I)
+                if match:
+                    time_str = match.group(1)
+                    if i + 1 < len(lines):
+                        next_line = lines[i + 1]
+                        title_candidate = lines[i + 2] if next_line.upper() in ["WIB", "LIVE"] and i + 2 < len(lines) else next_line
+                        clean_title = re.sub(r'^(?:WIB|LIVE)\s*', '', title_candidate, flags=re.I).strip()
+                        clean_title = re.sub(r'\s+LIVE$', '', clean_title, flags=re.I).strip()
+
+                        if clean_title and not re.match(r'^\d{2}:\d{2}', clean_title) and clean_title.upper() not in ["WIB", "LIVE"]:
+                            if not any(p['time'] == time_str and p['title'] == clean_title for p in raw_list):
+                                raw_list.append({"time": time_str, "title": clean_title})
+                i += 1
+
+            for idx in range(len(raw_list)):
+                curr = raw_list[idx]
+                t_str = curr['time']
+                start_dt = datetime.strptime(f"{today_wib} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
+                if idx < len(raw_list) - 1:
+                    stop_time_str = raw_list[idx + 1]['time']
+                    stop_dt = datetime.strptime(f"{today_wib} {stop_time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
+                    if stop_dt <= start_dt: stop_dt += timedelta(days=1)
+                else:
+                    stop_dt = start_dt + timedelta(hours=1)
+
+                programmes.append({
+                    "channel": f"Tivie_{ch_id}.id",
+                    "start": format_xmltv_date(start_dt, "+0700"),
+                    "stop": format_xmltv_date(stop_dt, "+0700"),
+                    "title": curr["title"],
+                    "desc": f"Acara {curr['title']} di {ch_name}",
+                    "lang": "id"
+                })
+            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs!")
+    except Exception:
+        pass
+
+    return {"id": f"Tivie_{ch_id}.id", "name": ch_name}, programmes
+
+def fetch_all_tivie_parallel():
+    channels = discover_tivie_channels()
+    print(f"[*] Starting parallel EPG extraction for {len(channels)} Tivie.id channels...")
+    all_channels, all_programmes = [], []
+
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        results = executor.map(scrape_single_tivie_channel, channels)
+        for ch_info, progs in results:
+            if progs:
+                all_channels.append(ch_info)
+                all_programmes.extend(progs)
+
+    print(f"[✓] Tivie.id: Successfully extracted {len(all_channels)} active channels & {len(all_programmes)} programs!")
+    return all_channels, all_programmes
+
+# --- 2. DENS.TV MODULE ---
 def get_official_dens_channels():
     return [
         {"id_num": "3", "slug": "live-streaming-1", "id": "Dens_live-streaming-1.id", "name": "Live Streaming 1", "cat": "tv-local"},
@@ -210,7 +330,7 @@ def fetch_all_dens_parallel():
     print(f"[✓] Dens.TV: Successfully extracted {len(all_channels)} active channels & {len(all_programmes)} programs!")
     return all_channels, all_programmes
 
-# --- 2. TP CHANNEL ---
+# --- 3. TP CHANNEL ---
 def fetch_epg_tpchannel(target):
     epg_id, offset = target["id"], target.get("utc_offset", "+0700")
     channels = [{"id": epg_id, "name": target["name"]}]
@@ -247,7 +367,7 @@ def fetch_epg_tpchannel(target):
     except Exception as e: print(f"[!] TP Channel Error: {e}")
     return channels, programmes
 
-# --- 3. CLTV36 ---
+# --- 4. CLTV36 ---
 def fetch_epg_cltv36(target):
     epg_id, offset = target["id"], target.get("utc_offset", "+0800")
     channels = [{"id": epg_id, "name": target["name"]}]
@@ -293,7 +413,7 @@ def fetch_epg_cltv36(target):
     except Exception as e: print(f"[!] CLTV36 Error: {e}")
     return channels, programmes
 
-# --- 4. MNC VISION ---
+# --- 5. MNC VISION ---
 def get_mnc_channel_options():
     url = "https://www.mncvision.id/schedule/table"
     channels = []
@@ -400,7 +520,7 @@ def fetch_all_mncvision_parallel():
     print(f"[✓] MNC Vision: Successfully extracted {len(all_channels)} active channels & {len(all_programmes)} programs!")
     return all_channels, all_programmes
 
-# --- 5. QAZAQSTAN NETWORK ---
+# --- 6. QAZAQSTAN NETWORK ---
 def fetch_epg_qazaqstan(target):
     epg_id, offset = target["id"], target.get("utc_offset", "+0500")
     channels = [{"id": epg_id, "name": target["name"]}]
@@ -459,7 +579,7 @@ def fetch_epg_qazaqstan(target):
         except Exception: continue
     return channels, programmes
 
-# --- 6. RED BULL TV ---
+# --- 7. RED BULL TV ---
 def fetch_epg_redbull_all(targets):
     channels = [{"id": t["id"], "name": t["name"]} for t in targets]
     programmes = []
@@ -477,7 +597,7 @@ def fetch_epg_redbull_all(targets):
 
     for t in targets:
         try:
-            res = requests.get(f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}", headers=HEADERS, timeout=8)
+            res = HTTP_SESSION.get(f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}", timeout=8)
             if res.status_code == 200:
                 for item in extract_raw_items(res.json()):
                     title, desc = item.get("title") or item.get("label"), item.get("description") or item.get("short_description")
@@ -506,41 +626,49 @@ def generate_xmltv():
     tv_elem = ET.Element("tv", {"generator-info-name": "Universal Master EPG Generator"})
     all_channels, all_programmes = [], []
 
-    # 1. Fetch Dens.TV Channels
+    # 1. Fetch Tivie.id Channels
+    tivie_channels, tivie_programmes = fetch_all_tivie_parallel()
+    all_channels.extend(tivie_channels)
+    all_programmes.extend(tivie_programmes)
+
+    # 2. Fetch Dens.TV Channels
     dens_channels, dens_programmes = fetch_all_dens_parallel()
     all_channels.extend(dens_channels)
     all_programmes.extend(dens_programmes)
 
-    # 2. Fetch Red Bull TV
+    # 3. Fetch Red Bull TV
     redbull_targets = [t for t in EPG_TARGET_SOURCES if "rrn" in t]
     if redbull_targets:
         rb_channels, rb_programmes = fetch_epg_redbull_all(redbull_targets)
         all_channels.extend(rb_channels)
         all_programmes.extend(rb_programmes)
 
-    # 3. MNC Vision Mass Precision Scan
+    # 4. MNC Vision Mass Precision Scan
     mnc_channels, mnc_programmes = fetch_all_mncvision_parallel()
     all_channels.extend(mnc_channels)
     all_programmes.extend(mnc_programmes)
 
-    # 4. Fetch Other Sources (TP Channel, CLTV36, Qazaqstan Network)
+    # 5. Fetch Other Sources (TP Channel, CLTV36, Qazaqstan Network)
     other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
     with ThreadPoolExecutor(max_workers=8) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
 
-    # 5. Write Channels to XML Element
+    # 6. Write Channels to XML Element (Deduplicated)
+    seen_channels = set()
     for ch in all_channels:
-        c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
-        ET.SubElement(c_elem, "display-name").text = ch["name"]
+        if ch["id"] not in seen_channels:
+            seen_channels.add(ch["id"])
+            c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
+            ET.SubElement(c_elem, "display-name").text = ch["name"]
 
-    # 6. Write Programs & Deduplicate
-    seen = set()
+    # 7. Write Programs & Deduplicate
+    seen_programmes = set()
     for p in all_programmes:
         key = (p["channel"], p["start"])
-        if key not in seen:
-            seen.add(key)
+        if key not in seen_programmes:
+            seen_programmes.add(key)
             p_elem = ET.SubElement(tv_elem, "programme", {"start": p["start"], "stop": p["stop"], "channel": p["channel"]})
             ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = p["title"]
             if p.get("desc"): ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
@@ -551,7 +679,7 @@ def generate_xmltv():
 
     ET.ElementTree(tv_elem).write("epg.xml", encoding="utf-8", xml_declaration=True)
     print("=" * 60)
-    print(f"[SUCCESS] Successfully generated `epg.xml` with {len(all_channels)} total channels & {len(seen)} programs!")
+    print(f"[SUCCESS] Successfully generated `epg.xml` with {len(seen_channels)} total channels & {len(seen_programmes)} programs!")
     print("=" * 60)
 
 if __name__ == "__main__":
