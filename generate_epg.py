@@ -350,23 +350,43 @@ def fetch_epg_tpchannel(target):
     epg_id, offset = target["id"], target.get("utc_offset", "+0700")
     channels = [{"id": epg_id, "name": target["name"]}]
     programmes = []
+    
     today_local = get_now_in_channel_tz(offset)
     date_param = f"{today_local.year + 543}-{today_local.strftime('%m-%d')}"
     today_str = today_local.strftime("%Y-%m-%d")
 
     api_url = f"https://www.tpchannel.org/tv/schedule/get-by-date?master_type_id=2&date={date_param}"
     try:
-        res = HTTP_SESSION.get(api_url, headers={"X-Requested-With": "XMLHttpRequest", "Referer": target["url"]}, timeout=12)
+        res = HTTP_SESSION.get(
+            api_url, 
+            headers={"X-Requested-With": "XMLHttpRequest", "Referer": target["url"]}, 
+            timeout=12
+        )
         if res.status_code == 200:
             data = res.json()
-            items = data if isinstance(data, list) else data.get("data", []) or data.get("result", [])
+            
+            items = []
+            if isinstance(data, list):
+                items = data
+            elif isinstance(data, dict):
+                items = data.get("data", []) or data.get("result", [])
+            
             extracted = []
             for item in items:
-                t_raw = item.get("time") or item.get("start_time")
-                title = item.get("title") or item.get("program_name")
+                t_raw = item.get("starttime") or item.get("time")
+                title = item.get("title_th") or item.get("title") or item.get("program_name")
+                
                 if t_raw and title:
-                    match = TIME_PATTERN_HM.search(str(t_raw))
-                    if match: extracted.append((match.group(1).replace(".", ":").zfill(5)[:5], clean_text_str(title)))
+                    t_str = str(t_raw).strip()
+                    if len(t_str) >= 5:
+                        clean_time = t_str.replace(".", ":")[:5]
+                        if re.match(r'^\d{2}:\d{2}$', clean_time):
+                            extracted.append((clean_time, clean_len := clean_text_str(title)))
+                            continue
+                    
+                    match = TIME_PATTERN_HM.search(t_str)
+                    if match:
+                        extracted.append((match.group(1).replace(".", ":").zfill(5)[:5], clean_text_str(title)))
 
             for i in range(len(extracted)):
                 t_str, title = extracted[i]
@@ -374,12 +394,26 @@ def fetch_epg_tpchannel(target):
                     start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
                     if i + 1 < len(extracted):
                         stop_dt = datetime.strptime(f"{today_str} {extracted[i+1][0]}", "%Y-%m-%d %H:%M")
-                        if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                    else: stop_dt = start_dt + timedelta(hours=1)
-                    programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": f"Watch {title}", "lang": "th"})
-                except Exception: continue
+                        if stop_dt <= start_dt: 
+                            stop_dt += timedelta(days=1)
+                    else: 
+                        stop_dt = start_dt + timedelta(hours=1)
+                        
+                    programmes.append({
+                        "channel": epg_id, 
+                        "start": format_xmltv_date(start_dt, offset), 
+                        "stop": format_xmltv_date(stop_dt, offset), 
+                        "title": title, 
+                        "desc": f"Watch {title} on TP Channel", 
+                        "lang": "th"
+                    })
+                except Exception: 
+                    continue
+                    
             print(f"[✓] TP Channel: Successfully loaded {len(programmes)} programs!")
-    except Exception as e: print(f"[!] TP Channel Error: {e}")
+    except Exception as e: 
+        print(f"[!] TP Channel Error: {e}")
+        
     return channels, programmes
 
 # --- 4. CLTV36 ---
