@@ -278,57 +278,67 @@ def get_official_dens_channels():
 def fetch_single_dens_channel(channel_info):
     programmes = []
     wib_tz = timezone(timedelta(hours=7))
-    today_wib = datetime.now(timezone.utc).astimezone(wib_tz).date()
+    
+    primary_cat = channel_info.get('cat', 'tv-local')
+    url = f"https://www.dens.tv/{primary_cat}/watch/{channel_info['id_num']}/{channel_info['slug']}"
+    
+    try:
+        res = HTTP_SESSION.get(url, timeout=10)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, "html.parser")
+            epg_list = []
 
-    categories_to_try = [channel_info['cat'], "tv-local", "tv-premium", "tv-international", "tv-free-streaming"]
-    categories_to_try = list(dict.fromkeys(categories_to_try))
+            for script in soup.find_all("script"):
+                if script.string and "tvEpg" in script.string:
+                    matches = re.findall(r"(tvEpg\w*)\s*=\s*(\[.*?\]);", script.string)
+                    for _, json_str in matches:
+                        try:
+                            parsed_data = json.loads(json_str)
+                            if isinstance(parsed_data, list):
+                                epg_list.extend(parsed_data)
+                        except json.JSONDecodeError:
+                            continue
 
-    for cat in categories_to_try:
-        url = f"https://www.dens.tv/{cat}/watch/{channel_info['id_num']}/{channel_info['slug']}"
-        try:
-            res = HTTP_SESSION.get(url, timeout=8)
-            if res.status_code == 200 and "item-schedule" in res.text:
-                soup = BeautifulSoup(res.text, "html.parser")
-                items = soup.select(".item-schedule[data-x-content]")
+            raw_progs = []
+            for item in epg_list:
+                title = item.get("title")
+                desc = item.get("description") or f"Saksikan {title} di {channel_info['name']}"
+                start_time_str = item.get("start_time")
 
-                raw_progs = []
-                for item in items:
-                    b64_str = item.get("data-x-content")
-                    if not b64_str: continue
-                    content = decode_base64_json(b64_str)
-                    if not content: continue
-
-                    title = content.get("title") or content.get("name") or item.get_text(strip=True)
-                    desc = content.get("description") or content.get("synopsis") or f"Saksikan {title} di {channel_info['name']}"
-                    start_time_str = content.get("start_time") or content.get("time")
-
-                    if start_time_str:
-                        match = re.search(r"(\d{1,2}:\d{2})", str(start_time_str))
-                        if match:
-                            t_str = match.group(1).zfill(5)
-                            start_dt = datetime.strptime(f"{today_wib} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
-                            raw_progs.append({"start_dt": start_dt, "title": clean_text_str(title), "desc": clean_text_str(desc)})
-
-                if raw_progs:
-                    raw_progs.sort(key=lambda x: x["start_dt"])
-                    for i in range(len(raw_progs)):
-                        curr, start_dt = raw_progs[i], raw_progs[i]["start_dt"]
-                        if i + 1 < len(raw_progs):
-                            stop_dt = raw_progs[i + 1]["start_dt"]
-                            if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                        else: stop_dt = start_dt + timedelta(hours=1)
-
-                        programmes.append({
-                            "channel": channel_info["id"],
-                            "start": format_xmltv_date(start_dt, "+0700"),
-                            "stop": format_xmltv_date(stop_dt, "+0700"),
-                            "title": curr["title"],
-                            "desc": curr["desc"],
-                            "lang": "id"
+                if start_time_str and title:
+                    try:
+                        start_dt = datetime.strptime(str(start_time_str).strip(), "%Y-%m-%d %H:%M:%S").replace(tzinfo=wib_tz)
+                        raw_progs.append({
+                            "start_dt": start_dt, 
+                            "title": clean_text_str(title), 
+                            "desc": clean_text_str(desc)
                         })
-                    print(f"[✓] Dens.TV [{channel_info['name']}]: Loaded {len(programmes)} programs!")
-                    break
-        except Exception: pass
+                    except ValueError:
+                        continue
+
+            if raw_progs:
+                raw_progs.sort(key=lambda x: x["start_dt"])
+                for i in range(len(raw_progs)):
+                    curr, start_dt = raw_progs[i], raw_progs[i]["start_dt"]
+                    if i + 1 < len(raw_progs):
+                        stop_dt = raw_progs[i + 1]["start_dt"]
+                        if stop_dt <= start_dt: 
+                            stop_dt += timedelta(days=1)
+                    else: 
+                        stop_dt = start_dt + timedelta(hours=1)
+
+                    programmes.append({
+                        "channel": channel_info["id"],
+                        "start": format_xmltv_date(start_dt, "+0700"),
+                        "stop": format_xmltv_date(stop_dt, "+0700"),
+                        "title": curr["title"],
+                        "desc": curr["desc"],
+                        "lang": "id"
+                    })
+                print(f"[✓] Dens.TV [{channel_info['name']}]: Loaded {len(programmes)} programs!")
+    except Exception: 
+        pass
+        
     return channel_info, programmes
 
 def fetch_all_dens_parallel():
@@ -336,7 +346,7 @@ def fetch_all_dens_parallel():
     print(f"[*] Starting parallel EPG extraction for {len(channels_list)} Dens.TV channels...")
     all_channels, all_programmes = [], []
 
-    with ThreadPoolExecutor(max_workers=15) as executor:
+    with ThreadPoolExecutor(max_workers=8) as executor:
         results = executor.map(fetch_single_dens_channel, channels_list)
         for ch_info, progs in results:
             if progs:
