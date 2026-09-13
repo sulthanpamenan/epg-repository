@@ -604,38 +604,40 @@ def fetch_epg_qazaqstan(target):
     for url in [direct_url, f"https://iptv-playlist.sulthan-pamenan.workers.dev/?url={quote(direct_url, safe='')}"]:
         try:
             res = HTTP_SESSION.get(url, timeout=15)
-            if res.status_code != 200: continue
+            res.raise_for_status()
             soup = BeautifulSoup(res.text, "html.parser")
             raw_progs = []
 
-            items_schema1 = soup.select(".program-item, a.program-item")
-            if items_schema1:
-                for item in items_schema1:
-                    text_content = item.get_text(" ", strip=True)
-                    match = TIME_PATTERN_HM.search(text_content)
-                    if match:
-                        t_str = match.group(1).replace(".", ":").zfill(5)[:5]
-                        title_elem = item.select_one(".program-title") or item.find(class_=re.compile(r"title|name", re.I))
-                        title = clean_text_str(title_elem.get_text(strip=True)) if title_elem else clean_text_str(text_content[match.end():].strip(" -–:\t\n\r"))
-                        if title and len(title) >= 2 and not any(r["title"] == title for r in raw_progs):
-                            try: raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M"), "title": title})
-                            except Exception: continue
-
-            if not raw_progs:
-                for card in soup.find_all("a", class_=re.compile(r"rounded-full|group", re.I)):
-                    text_content = card.get_text(" ", strip=True)
-                    match = TIME_PATTERN_HM.search(text_content)
-                    if match:
-                        title = ""
-                        for sdiv in card.find_all("div", class_=re.compile(r"drop-shadow|bg-white", re.I)):
-                            stext = sdiv.get_text(strip=True)
-                            if not TIME_PATTERN_HM.search(stext) and len(stext) >= 2:
-                                title = clean_text_str(stext)
-                                break
-                        if not title: title = clean_text_str(text_content[match.end():].strip(" -–:\t\n\r"))
-                        if title and len(title) >= 2 and not any(r["title"] == title for r in raw_progs):
-                            try: raw_progs.append({"start_dt": datetime.strptime(f"{today_str} {match.group(1).replace('.', ':').zfill(5)[:5]}", "%Y-%m-%d %H:%M"), "title": title})
-                            except Exception: continue
+            items = soup.select("div.flex.items-center.justify-between.w-full, .program-item")
+            
+            for item in items:
+                text_content = item.get_text(" ", strip=True)
+                match = TIME_PATTERN_HM.search(text_content)
+                if match:
+                    t_str = match.group(1).replace(".", ":").zfill(5)[:5]
+                    
+                    title_elem = item.select_one(".program-title, [class*='font-bold']")
+                    category_elem = item.select_one("div.text-xs, [class*='text-xs']")
+                    
+                    raw_title = title_elem.get_text(strip=True) if title_elem else text_content[match.end():]
+                    category = clean_text_str(category_elem.get_text(strip=True)) if category_elem else ""
+                    
+                    clean_title = re.sub(r"^[–\-\:\s\.\,]+|[–\-\:\s\.\,]+$", "", raw_title)
+                    clean_title = re.sub(r"\b(онлайн көру|live|эфирде)\b", "", clean_title, flags=re.IGNORECASE)
+                    clean_title = clean_text_str(clean_title)
+                    
+                    if clean_title and len(clean_title) >= 2:
+                        if not any(r["start_str"] == t_str and r["title"] == clean_title for r in raw_progs):
+                            try:
+                                desc_text = f"{category} - {clean_title}" if category and category != clean_title else f"Бағдарлама: {clean_title}"
+                                raw_progs.append({
+                                    "start_str": t_str,
+                                    "start_dt": datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M"),
+                                    "title": clean_title,
+                                    "desc": desc_text
+                                })
+                            except ValueError:
+                                continue
 
             if raw_progs:
                 raw_progs.sort(key=lambda x: x["start_dt"])
@@ -643,12 +645,31 @@ def fetch_epg_qazaqstan(target):
                     curr, start_dt = raw_progs[i], raw_progs[i]["start_dt"]
                     if i + 1 < len(raw_progs):
                         stop_dt = raw_progs[i + 1]["start_dt"]
-                        if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                    else: stop_dt = start_dt + timedelta(hours=1)
-                    programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": curr["title"], "desc": f"Бағдарлама {curr['title']}", "lang": "kk"})
+                        if stop_dt <= start_dt: 
+                            stop_dt += timedelta(days=1)
+                    else: 
+                        stop_dt = start_dt + timedelta(hours=1)
+                        
+                    programmes.append({
+                        "channel": epg_id, 
+                        "start": format_xmltv_date(start_dt, offset), 
+                        "stop": format_xmltv_date(stop_dt, offset), 
+                        "title": curr["title"], 
+                        "desc": curr["desc"], 
+                        "lang": "kk"
+                    })
                 print(f"[✓] Qazaqstan Network [{target['name']}]: Loaded {len(programmes)} programs!")
                 break
-        except Exception: continue
+
+        except requests.exceptions.Timeout:
+            print(f"[!] Qazaqstan Network [{target['name']}]: Timeout when connecting to {url}")
+        except requests.exceptions.HTTPError as err:
+            print(f"[!] Qazaqstan Network [{target['name']}]: Server Error HTTP {err.response.status_code}")
+        except requests.exceptions.RequestException as err:
+            print(f"[!] Qazaqstan Network [{target['name']}]: Failed to establish network connection ({err})")
+        except Exception as err:
+            print(f"[!] Qazaqstan Network [{target['name']}]: Unexpected error ({err})")
+
     return channels, programmes
 
 # --- 7. RED BULL TV ---
