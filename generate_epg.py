@@ -159,24 +159,24 @@ def scrape_single_tivie_channel(ch):
 
                         if len(collected_lines) == 2 and len(collected_lines[1]) < 15 and not any(kw in collected_lines[1].lower() for kw in ["vs", "ftv", "eps", "pagi", "malam", "hari"]):
                             main_title = f"{collected_lines[0]} {collected_lines[1]}"
-                            sub_desc = main_title
+                            sub_desc = ""
                         elif len(collected_lines) > 1:
                             if len(collected_lines) == 2 and collected_lines[1].lower() in ["malam", "hari", "pagi", "sore", "dini hari"]:
                                 main_title = f"{collected_lines[0]} {collected_lines[1]}"
-                                sub_desc = main_title
+                                sub_desc = ""
                             else:
                                 combined_tail = " ".join(collected_lines[1:])
                                 if any(keyword in " ".join(collected_lines).lower() for keyword in ["vs", "tottenham", "arsenal", "chelsea"]):
                                     combined_tail = re.sub(r'\s*-\s*', ' vs ', combined_tail)
                                 sub_desc = combined_tail
                         else:
-                            sub_desc = main_title
+                            sub_desc = ""
 
                         if not any(p['time'] == time_str and p['title'] == main_title for p in raw_list):
                             raw_list.append({
                                 "time": time_str, 
                                 "title": main_title, 
-                                "desc": sub_desc if sub_desc else main_title
+                                "desc": sub_desc
                             })
                 i += 1
 
@@ -685,8 +685,13 @@ def generate_xmltv():
         if key not in seen_programmes:
             seen_programmes.add(key)
             p_elem = ET.SubElement(tv_elem, "programme", {"start": p["start"], "stop": p["stop"], "channel": p["channel"]})
-            ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = p["title"]
-            if p.get("desc"): ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = p["desc"]
+            
+            title_val = str(p["title"]) if not isinstance(p["title"], (set, list, dict)) else " ".join(p["title"])
+            ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = clean_text_str(title_val)
+            
+            if p.get("desc") and str(p["desc"]).strip():
+                desc_val = str(p["desc"]) if not isinstance(p["desc"], (set, list, dict)) else " ".join(p["desc"])
+                ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = clean_text_str(desc_val)
 
     try:
         ET.indent(tv_elem, space="  ")
