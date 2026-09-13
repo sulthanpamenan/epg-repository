@@ -203,7 +203,7 @@ def scrape_single_tivie_channel(ch):
         if programmes:
             print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs with details!")
     except Exception as e:
-        print(f"[!] Tivie Error [{ch_name}]: {e}"]
+        print(f"[!] Tivie Error [{ch_name}]: {e}")
 
     return {"id": f"Tivie_{ch_id}.id", "name": ch_name}, programmes
 
