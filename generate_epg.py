@@ -658,9 +658,9 @@ def fetch_epg_qazaqstan(target):
                     if clean_title and len(clean_title) >= 2 and not TIME_PATTERN_HM.match(clean_title):
                         if not any(r["start_str"] == t_str and r["title"] == clean_title for r in raw_progs):
                             if category and category != clean_title:
-                                desc_text = f"{category} - {clean_title}"
+                                desc_text = category
                             else:
-                                desc_text = f"Бағдарлама: {clean_title}"
+                                desc_text = ""
                                 
                             raw_progs.append({
                                 "start_str": t_str,
