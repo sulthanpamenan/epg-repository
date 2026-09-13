@@ -432,11 +432,15 @@ def fetch_epg_cltv36(target):
             wrappers = soup.select(".elementor-widget-wrap.elementor-element-populated")
 
             for wrap in wrappers:
-                if retired_heading and retired_heading in wrap.parents: continue
+                if retired_heading and retired_heading in wrap.parents: 
+                    continue
                 h2_tag = wrap.find(["h2", "h3"], class_="elementor-heading-title")
-                if not h2_tag: continue
+                if not h2_tag: 
+                    continue
+                
                 title = clean_text_str(h2_tag.get_text(strip=True))
-                if "RETIRED" in title.upper(): continue
+                if "RETIRED" in title.upper(): 
+                    continue
 
                 desc_text = f"Watch {title} on CLTV36."
                 for p in wrap.find_all("p"):
@@ -447,19 +451,38 @@ def fetch_epg_cltv36(target):
 
                 for line in wrap.get_text("\n", strip=True).split("\n"):
                     line_clean = line.replace("NN", "PM").replace("nn", "pm")
-                    if not parse_cltv36_day_matches(line_clean, today_name, is_weekend): continue
+                    if not parse_cltv36_day_matches(line_clean, today_name, is_weekend): 
+                        continue
+                    
                     time_matches = TIME_PATTERN_AMPM.findall(line_clean)
                     for idx in range(0, len(time_matches) - 1, 2):
                         try:
-                            start_str, stop_str = time_matches[idx].upper().replace(" ", ""), time_matches[idx + 1].upper().replace(" ", "")
+                            start_str = time_matches[idx].upper().replace(" ", "")
+                            stop_str = time_matches[idx + 1].upper().replace(" ", "")
+                            
                             start_time = datetime.strptime(start_str.zfill(7), "%I:%M%p").time()
                             stop_time = datetime.strptime(stop_str.zfill(7), "%I:%M%p").time()
-                            start_dt, stop_dt = datetime.combine(today_local.date(), start_time), datetime.combine(today_local.date(), stop_time)
-                            if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                            programmes.append({"channel": epg_id, "start": format_xmltv_date(start_dt, offset), "stop": format_xmltv_date(stop_dt, offset), "title": title, "desc": desc_text, "lang": "en"})
-                        except Exception: continue
+                            
+                            start_dt = datetime.combine(today_local.date(), start_time)
+                            stop_dt = datetime.combine(today_local.date(), stop_time)
+                            
+                            if stop_dt <= start_dt: 
+                                stop_dt += timedelta(days=1)
+                                
+                            programmes.append({
+                                "channel": epg_id, 
+                                "start": format_xmltv_date(start_dt, offset), 
+                                "stop": format_xmltv_date(stop_dt, offset), 
+                                "title": title, 
+                                "desc": desc_text, 
+                                "lang": "en"
+                            })
+                        except Exception: 
+                            continue
             print(f"[✓] CLTV36: Successfully loaded {len(programmes)} programs!")
-    except Exception as e: print(f"[!] CLTV36 Error: {e}")
+    except Exception as e: 
+        print(f"[!] CLTV36 Error: {e}")
+        
     return channels, programmes
 
 # --- 5. MNC VISION ---
