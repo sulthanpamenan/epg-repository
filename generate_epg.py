@@ -159,24 +159,24 @@ def scrape_single_tivie_channel(ch):
 
                         if len(collected_lines) == 2 and len(collected_lines[1]) < 15 and not any(kw in collected_lines[1].lower() for kw in ["vs", "ftv", "eps", "pagi", "malam", "hari"]):
                             main_title = f"{collected_lines[0]} {collected_lines[1]}"
-                            sub_desc = {main_title}
+                            sub_desc = main_title
                         elif len(collected_lines) > 1:
                             if len(collected_lines) == 2 and collected_lines[1].lower() in ["malam", "hari", "pagi", "sore", "dini hari"]:
                                 main_title = f"{collected_lines[0]} {collected_lines[1]}"
-                                sub_desc = {main_title}
+                                sub_desc = main_title
                             else:
                                 combined_tail = " ".join(collected_lines[1:])
                                 if any(keyword in " ".join(collected_lines).lower() for keyword in ["vs", "tottenham", "arsenal", "chelsea"]):
                                     combined_tail = re.sub(r'\s*-\s*', ' vs ', combined_tail)
                                 sub_desc = combined_tail
                         else:
-                            sub_desc = {main_title}
+                            sub_desc = main_title
 
                         if not any(p['time'] == time_str and p['title'] == main_title for p in raw_list):
                             raw_list.append({
                                 "time": time_str, 
                                 "title": main_title, 
-                                "desc": sub_desc if sub_desc else {main_title}
+                                "desc": sub_desc if sub_desc else main_title
                             })
                 i += 1
 
