@@ -405,7 +405,7 @@ def fetch_epg_tpchannel(target):
                         "start": format_xmltv_date(start_dt, offset), 
                         "stop": format_xmltv_date(stop_dt, offset), 
                         "title": title, 
-                        "desc": f"Watch {title} on TP Channel", 
+                        "desc": "", 
                         "lang": "th"
                     })
                 except Exception: 
