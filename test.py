@@ -53,8 +53,11 @@ def scrape_single_tivie_channel(ch):
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            # Cari seluruh blok elemen jadwal yang biasanya dibungkus card/div waktu
-            # Kita ekstrak baris per baris, lalu gabungkan judul yang terpotong spasi/newline
+            # Cari elemen baris jadwal yang membungkus waktu dan program
+            # Berdasarkan struktur website tivie.id, kita cari elemen yang memuat pola waktu WIB
+            # Atau kita parse berdasarkan elemen card jadwal terstruktur
+            
+            # Alternatif: Cari semua blok teks yang berpasangan dengan waktu WIB
             text_blocks = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
             
             i = 0
@@ -73,26 +76,26 @@ def scrape_single_tivie_channel(ch):
                         if next_line.upper() not in ["WIB", "LIVE", "SELANJUTNYA"]:
                             clean_l = re.sub(r'^(?:WIB|LIVE)\s*', '', next_line, flags=re.I).strip()
                             clean_l = re.sub(r'\s+LIVE$', '', clean_l, flags=re.I).strip()
-                            if clean_l:
+                            if clean_l and clean_l not in collected_lines:
                                 collected_lines.append(clean_l)
                         j += 1
                     
                     if collected_lines:
-                        # Baris pertama adalah Judul Utama. 
-                        # Jika judul utama terpotong (misal "Point Of" dan baris berikutnya "View"), 
-                        # kita bisa deteksi apakah baris kedua pendek atau menyambung. 
-                        # Untuk amannya, kita gabungkan baris 1 dan 2 jika tidak ada deskripsi panjang.
+                        # Logika penyusunan judul dan deskripsi yang lebih rapi:
+                        # Baris 1: Kategori/Judul Utama (misal: "Mega Film Asia" atau "Premier League 2026/27")
+                        # Baris 2/seterusnya: Judul Spesifik / Detail (misal: "The Medallion" atau "Tottenham Hotspur vs Everton")
+                        
                         main_title = collected_lines[0]
                         sub_desc = ""
 
                         if len(collected_lines) > 1:
-                            # Cek apakah baris kedua adalah sambungan judul (biasanya singkat/tanpa spasi panjang)
-                            # atau benar-benar sebuah deskripsi/sub-acara.
-                            if len(collected_lines[1]) < 25 and not " - " in collected_lines[1] and len(collected_lines) == 2:
-                                main_title = f"{collected_lines[0]} {collected_lines[1]}"
-                                sub_desc = f"Acara {main_title} di {ch_name}"
+                            # Jika ada baris kedua, jadikan itu sebagai judul utama jika baris pertama adalah kategori umum,
+                            # atau gabungkan sebagai detail/deskripsi acara.
+                            if collected_lines[0] in ["Mega Film Asia", "Bioskop Indonesia", "Special Program"]:
+                                main_title = collected_lines[1]
+                                sub_desc = f"{collected_lines[0]} - " + " ".join(collected_lines[2:]) if len(collected_lines) > 2 else collected_lines[0]
                             else:
-                                sub_desc = " - ".join(collected_lines[1:])
+                                sub_desc = " ".join(collected_lines[1:])
                         else:
                             sub_desc = f"Acara {main_title} di {ch_name}"
 
@@ -100,7 +103,7 @@ def scrape_single_tivie_channel(ch):
                             raw_list.append({
                                 "time": time_str, 
                                 "title": main_title, 
-                                "desc": sub_desc
+                                "desc": sub_desc if sub_desc else f"Acara {main_title} di {ch_name}"
                             })
                 i += 1
 
