@@ -157,13 +157,16 @@ def scrape_single_tivie_channel(ch):
                         main_title = collected_lines[0]
                         sub_desc = ""
 
-                        if len(collected_lines) > 1:
-                            if len(collected_lines) == 2 and len(collected_lines[1]) < 10 and collected_lines[1].lower() in ["malam", "hari", "pagi", "sore"]:
+                        if len(collected_lines) == 2 and len(collected_lines[1]) < 15 and not any(kw in collected_lines[1].lower() for kw in ["vs", "ftv", "eps", "pagi", "malam", "hari"]):
+                            main_title = f"{collected_lines[0]} {collected_lines[1]}"
+                            sub_desc = f"Acara {main_title} di {ch_name}"
+                        elif len(collected_lines) > 1:
+                            if len(collected_lines) == 2 and collected_lines[1].lower() in ["malam", "hari", "pagi", "sore", "dini hari"]:
                                 main_title = f"{collected_lines[0]} {collected_lines[1]}"
                                 sub_desc = f"Acara {main_title} di {ch_name}"
                             else:
                                 combined_tail = " ".join(collected_lines[1:])
-                                if any(keyword in " ".join(collected_lines).lower() for keyword in ["vs", "tottenham", "arsenal", "chelsea", "mu", "milan"]):
+                                if any(keyword in " ".join(collected_lines).lower() for keyword in ["vs", "tottenham", "arsenal", "chelsea"]):
                                     combined_tail = re.sub(r'\s*-\s*', ' vs ', combined_tail)
                                 sub_desc = combined_tail
                         else:
@@ -200,7 +203,7 @@ def scrape_single_tivie_channel(ch):
         if programmes:
             print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs with details!")
     except Exception as e:
-        print(f"[!] Tivie Error [{ch_name}]: {e}")
+        print(f"[!] Tivie Error [{ch_name}]: {e}"]
 
     return {"id": f"Tivie_{ch_id}.id", "name": ch_name}, programmes
 
