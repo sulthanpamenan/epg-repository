@@ -52,6 +52,9 @@ def scrape_single_tivie_channel(ch):
         res = HTTP_SESSION.get(url, timeout=10)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
+            
+            # Cari seluruh blok elemen jadwal yang biasanya dibungkus card/div waktu
+            # Kita ekstrak baris per baris, lalu gabungkan judul yang terpotong spasi/newline
             text_blocks = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
             
             i = 0
@@ -60,7 +63,7 @@ def scrape_single_tivie_channel(ch):
                 match = re.match(r'^(\d{2}:\d{2})(?:\s*WIB)?$', line, re.I)
                 if match:
                     time_str = match.group(1)
-                    collected_titles = []
+                    collected_lines = []
                     
                     j = i + 1
                     while j < len(text_blocks):
@@ -70,19 +73,34 @@ def scrape_single_tivie_channel(ch):
                         if next_line.upper() not in ["WIB", "LIVE", "SELANJUTNYA"]:
                             clean_l = re.sub(r'^(?:WIB|LIVE)\s*', '', next_line, flags=re.I).strip()
                             clean_l = re.sub(r'\s+LIVE$', '', clean_l, flags=re.I).strip()
-                            if clean_l and clean_l not in collected_titles:
-                                collected_titles.append(clean_l)
+                            if clean_l:
+                                collected_lines.append(clean_l)
                         j += 1
                     
-                    if collected_titles:
-                        main_title = collected_titles[0]
-                        sub_desc = " - ".join(collected_titles[1:]) if len(collected_titles) > 1 else f"Acara {main_title} di {ch_name}"
-                        
+                    if collected_lines:
+                        # Baris pertama adalah Judul Utama. 
+                        # Jika judul utama terpotong (misal "Point Of" dan baris berikutnya "View"), 
+                        # kita bisa deteksi apakah baris kedua pendek atau menyambung. 
+                        # Untuk amannya, kita gabungkan baris 1 dan 2 jika tidak ada deskripsi panjang.
+                        main_title = collected_lines[0]
+                        sub_desc = ""
+
+                        if len(collected_lines) > 1:
+                            # Cek apakah baris kedua adalah sambungan judul (biasanya singkat/tanpa spasi panjang)
+                            # atau benar-benar sebuah deskripsi/sub-acara.
+                            if len(collected_lines[1]) < 25 and not " - " in collected_lines[1] and len(collected_lines) == 2:
+                                main_title = f"{collected_lines[0]} {collected_lines[1]}"
+                                sub_desc = f"Acara {main_title} di {ch_name}"
+                            else:
+                                sub_desc = " - ".join(collected_lines[1:])
+                        else:
+                            sub_desc = f"Acara {main_title} di {ch_name}"
+
                         if not any(p['time'] == time_str and p['title'] == main_title for p in raw_list):
                             raw_list.append({
                                 "time": time_str, 
                                 "title": main_title, 
-                                "desc": sub_desc if sub_desc else f"Acara {main_title} di {ch_name}"
+                                "desc": sub_desc
                             })
                 i += 1
 
