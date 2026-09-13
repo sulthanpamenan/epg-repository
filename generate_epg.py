@@ -302,7 +302,7 @@ def fetch_single_dens_channel(channel_info):
             raw_progs = []
             for item in epg_list:
                 title = item.get("title")
-                desc = item.get("description") or f"Saksikan {title} di {channel_info['name']}"
+                desc = item.get("description") or ""
                 start_time_str = item.get("start_time")
 
                 if start_time_str and title:
