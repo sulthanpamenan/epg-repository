@@ -131,22 +131,46 @@ def scrape_single_tivie_channel(ch):
         res = HTTP_SESSION.get(url, timeout=10)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
-            lines = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
+            text_blocks = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
+            
             i = 0
-            while i < len(lines):
-                line = lines[i]
+            while i < len(text_blocks):
+                line = text_blocks[i]
                 match = re.match(r'^(\d{2}:\d{2})(?:\s*WIB)?$', line, re.I)
                 if match:
                     time_str = match.group(1)
-                    if i + 1 < len(lines):
-                        next_line = lines[i + 1]
-                        title_candidate = lines[i + 2] if next_line.upper() in ["WIB", "LIVE"] and i + 2 < len(lines) else next_line
-                        clean_title = re.sub(r'^(?:WIB|LIVE)\s*', '', title_candidate, flags=re.I).strip()
-                        clean_title = re.sub(r'\s+LIVE$', '', clean_title, flags=re.I).strip()
+                    collected_lines = []
+                    
+                    j = i + 1
+                    while j < len(text_blocks):
+                        next_line = text_blocks[j]
+                        if re.match(r'^\d{2}:\d{2}', next_line) or not next_line:
+                            break
+                        if next_line.upper() not in ["WIB", "LIVE", "SELANJUTNYA"]:
+                            clean_l = re.sub(r'^(?:WIB|LIVE)\s*', '', next_line, flags=re.I).strip()
+                            clean_l = re.sub(r'\s+LIVE$', '', clean_l, flags=re.I).strip()
+                            if clean_l and clean_l not in collected_lines:
+                                collected_lines.append(clean_l)
+                        j += 1
+                    
+                    if collected_lines:
+                        main_title = collected_lines[0]
+                        sub_desc = ""
 
-                        if clean_title and not re.match(r'^\d{2}:\d{2}', clean_title) and clean_title.upper() not in ["WIB", "LIVE"]:
-                            if not any(p['time'] == time_str and p['title'] == clean_title for p in raw_list):
-                                raw_list.append({"time": time_str, "title": clean_title})
+                        if len(collected_lines) > 1:
+                            combined_tail = " ".join(collected_lines[1:])
+                            if any(keyword in " ".join(collected_lines).lower() for keyword in ["vs", "tottenham", "arsenal", "chelsea", "mu", "milan"]):
+                                combined_tail = re.sub(r'\s*-\s*', ' vs ', combined_tail)
+                            sub_desc = combined_tail
+                        else:
+                            sub_desc = f"Acara {main_title} di {ch_name}"
+
+                        if not any(p['time'] == time_str and p['title'] == main_title for p in raw_list):
+                            raw_list.append({
+                                "time": time_str, 
+                                "title": main_title, 
+                                "desc": sub_desc if sub_desc else f"Acara {main_title} di {ch_name}"
+                            })
                 i += 1
 
         for idx in range(len(raw_list)):
@@ -165,12 +189,12 @@ def scrape_single_tivie_channel(ch):
                 "start": format_xmltv_date(start_dt, "+0700"),
                 "stop": format_xmltv_date(stop_dt, "+0700"),
                 "title": curr["title"],
-                "desc": f"Acara {curr['title']} di {ch_name}",
+                "desc": curr["desc"],
                 "lang": "id"
             })
             
         if programmes:
-            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs!")
+            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs with details!")
     except Exception as e:
         print(f"[!] Tivie Error [{ch_name}]: {e}")
 
