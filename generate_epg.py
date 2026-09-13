@@ -158,10 +158,14 @@ def scrape_single_tivie_channel(ch):
                         sub_desc = ""
 
                         if len(collected_lines) > 1:
-                            combined_tail = " ".join(collected_lines[1:])
-                            if any(keyword in " ".join(collected_lines).lower() for keyword in ["vs", "tottenham", "arsenal", "chelsea", "mu", "milan"]):
-                                combined_tail = re.sub(r'\s*-\s*', ' vs ', combined_tail)
-                            sub_desc = combined_tail
+                            if len(collected_lines) == 2 and len(collected_lines[1]) < 10 and collected_lines[1].lower() in ["malam", "hari", "pagi", "sore"]:
+                                main_title = f"{collected_lines[0]} {collected_lines[1]}"
+                                sub_desc = f"Acara {main_title} di {ch_name}"
+                            else:
+                                combined_tail = " ".join(collected_lines[1:])
+                                if any(keyword in " ".join(collected_lines).lower() for keyword in ["vs", "tottenham", "arsenal", "chelsea", "mu", "milan"]):
+                                    combined_tail = re.sub(r'\s*-\s*', ' vs ', combined_tail)
+                                sub_desc = combined_tail
                         else:
                             sub_desc = f"Acara {main_title} di {ch_name}"
 
