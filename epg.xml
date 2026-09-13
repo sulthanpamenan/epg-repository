@@ -693,7 +693,6 @@
   </programme>
   <programme start="20260913010000 +0700" stop="20260913013000 +0700" channel="Tivie_antv.id">
     <title lang="id">Total Football</title>
-    <desc lang="id">Total Football</desc>
   </programme>
   <programme start="20260913013000 +0700" stop="20260913030000 +0700" channel="Tivie_antv.id">
     <title lang="id">Bioskop Asia</title>
@@ -701,11 +700,9 @@
   </programme>
   <programme start="20260913030000 +0700" stop="20260913040000 +0700" channel="Tivie_antv.id">
     <title lang="id">Karma</title>
-    <desc lang="id">Karma</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913060000 +0700" channel="Tivie_antv.id">
     <title lang="id">Bikin Mewek</title>
-    <desc lang="id">Bikin Mewek</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913093000 +0700" channel="Tivie_antv.id">
     <title lang="id">Mega Bollywood</title>
@@ -717,15 +714,12 @@
   </programme>
   <programme start="20260913130000 +0700" stop="20260913143000 +0700" channel="Tivie_antv.id">
     <title lang="id">Jhanak</title>
-    <desc lang="id">Jhanak</desc>
   </programme>
   <programme start="20260913143000 +0700" stop="20260913163000 +0700" channel="Tivie_antv.id">
     <title lang="id">Sayali</title>
-    <desc lang="id">Sayali</desc>
   </programme>
   <programme start="20260913163000 +0700" stop="20260913180000 +0700" channel="Tivie_antv.id">
     <title lang="id">Jaane Anjaane</title>
-    <desc lang="id">Jaane Anjaane</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913194500 +0700" channel="Tivie_antv.id">
     <title lang="id">Sinema Laga Klasik</title>
@@ -733,7 +727,6 @@
   </programme>
   <programme start="20260913194500 +0700" stop="20260913210000 +0700" channel="Tivie_antv.id">
     <title lang="id">Jodoh Wasiat Bapak Reborn</title>
-    <desc lang="id">Jodoh Wasiat Bapak Reborn</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913230000 +0700" channel="Tivie_antv.id">
     <title lang="id">Sinema Spesial</title>
@@ -745,123 +738,93 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913003000 +0700" channel="Tivie_btv.id">
     <title lang="id">Xtreme Barcelona World Class</title>
-    <desc lang="id">Xtreme Barcelona World Class</desc>
   </programme>
   <programme start="20260913003000 +0700" stop="20260913013000 +0700" channel="Tivie_btv.id">
     <title lang="id">Mitos Tengah Malam</title>
-    <desc lang="id">Mitos Tengah Malam</desc>
   </programme>
   <programme start="20260913013000 +0700" stop="20260913020000 +0700" channel="Tivie_btv.id">
     <title lang="id">Saksi Mata</title>
-    <desc lang="id">Saksi Mata</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913023000 +0700" channel="Tivie_btv.id">
     <title lang="id">Ekspos</title>
-    <desc lang="id">Ekspos</desc>
   </programme>
   <programme start="20260913023000 +0700" stop="20260913030000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Kriminal</title>
-    <desc lang="id">Berita Kriminal</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913033000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Satu Sore</title>
-    <desc lang="id">Berita Satu Sore</desc>
   </programme>
   <programme start="20260913033000 +0700" stop="20260913040000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Satu Malam</title>
-    <desc lang="id">Berita Satu Malam</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913043000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Satu Utama</title>
-    <desc lang="id">Berita Satu Utama</desc>
   </programme>
   <programme start="20260913043000 +0700" stop="20260913050000 +0700" channel="Tivie_btv.id">
     <title lang="id">Spot-On</title>
-    <desc lang="id">Spot-On</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913060000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Satu Pagi</title>
-    <desc lang="id">Berita Satu Pagi</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913070000 +0700" channel="Tivie_btv.id">
     <title lang="id">Saat Teduh</title>
-    <desc lang="id">Saat Teduh</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913073000 +0700" channel="Tivie_btv.id">
     <title lang="id">Jalan Dakwah</title>
-    <desc lang="id">Jalan Dakwah</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913080000 +0700" channel="Tivie_btv.id">
     <title lang="id">Pecah Telur</title>
-    <desc lang="id">Pecah Telur</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913081500 +0700" channel="Tivie_btv.id">
     <title lang="id">Selera Rasa</title>
-    <desc lang="id">Selera Rasa</desc>
   </programme>
   <programme start="20260913081500 +0700" stop="20260913084500 +0700" channel="Tivie_btv.id">
     <title lang="id">Kuyliner</title>
-    <desc lang="id">Kuyliner</desc>
   </programme>
   <programme start="20260913084500 +0700" stop="20260913093000 +0700" channel="Tivie_btv.id">
     <title lang="id">Galeri Rasa</title>
-    <desc lang="id">Galeri Rasa</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913103000 +0700" channel="Tivie_btv.id">
     <title lang="id">Monster Jam</title>
-    <desc lang="id">Monster Jam</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_btv.id">
     <title lang="id">Cuan Iki</title>
-    <desc lang="id">Cuan Iki</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913123000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Satu Siang</title>
-    <desc lang="id">Berita Satu Siang</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913133000 +0700" channel="Tivie_btv.id">
     <title lang="id">Jalan Dakwah</title>
-    <desc lang="id">Jalan Dakwah</desc>
   </programme>
   <programme start="20260913133000 +0700" stop="20260913143000 +0700" channel="Tivie_btv.id">
     <title lang="id">Pecah Telur</title>
-    <desc lang="id">Pecah Telur</desc>
   </programme>
   <programme start="20260913143000 +0700" stop="20260913150000 +0700" channel="Tivie_btv.id">
     <title lang="id">Meja Redaksi</title>
-    <desc lang="id">Meja Redaksi</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913153000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Kriminal</title>
-    <desc lang="id">Berita Kriminal</desc>
   </programme>
   <programme start="20260913153000 +0700" stop="20260913170000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Satu Sore</title>
-    <desc lang="id">Berita Satu Sore</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913174500 +0700" channel="Tivie_btv.id">
     <title lang="id">Dunia Binatang</title>
-    <desc lang="id">Dunia Binatang</desc>
   </programme>
   <programme start="20260913174500 +0700" stop="20260913183000 +0700" channel="Tivie_btv.id">
     <title lang="id">Dunia Alam</title>
-    <desc lang="id">Dunia Alam</desc>
   </programme>
   <programme start="20260913183000 +0700" stop="20260913190000 +0700" channel="Tivie_btv.id">
     <title lang="id">Persona</title>
-    <desc lang="id">Persona</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913200000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Satu Malam</title>
-    <desc lang="id">Berita Satu Malam</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913210000 +0700" channel="Tivie_btv.id">
     <title lang="id">Spot-On</title>
-    <desc lang="id">Spot-On</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913220000 +0700" channel="Tivie_btv.id">
     <title lang="id">Monster Jam</title>
-    <desc lang="id">Monster Jam</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913230000 +0700" channel="Tivie_btv.id">
     <title lang="id">Xtreme Barcelona World</title>
@@ -869,111 +832,84 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913004500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Prime News</title>
-    <desc lang="id">CNN Indonesia Prime News</desc>
   </programme>
   <programme start="20260913004500 +0700" stop="20260913011500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Redaksi Malam</title>
-    <desc lang="id">Redaksi Malam</desc>
   </programme>
   <programme start="20260913011500 +0700" stop="20260913024500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Newsroom</title>
-    <desc lang="id">CNN Indonesia Newsroom</desc>
   </programme>
   <programme start="20260913024500 +0700" stop="20260913041500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Prime News</title>
-    <desc lang="id">CNN Indonesia Prime News</desc>
   </programme>
   <programme start="20260913041500 +0700" stop="20260913050000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Redaksi Akhir Pekan</title>
-    <desc lang="id">Redaksi Akhir Pekan</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913053000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Gapai Kemuliaan</title>
-    <desc lang="id">Gapai Kemuliaan</desc>
   </programme>
   <programme start="20260913053000 +0700" stop="20260913063000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Redaksi Pagi Akhir Pekan</title>
-    <desc lang="id">Redaksi Pagi Akhir Pekan</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913073000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia New Day</title>
-    <desc lang="id">CNN Indonesia New Day</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913083000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Good Morning</title>
-    <desc lang="id">Good Morning</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913090000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Redaksi Pagi Akhir Pekan</title>
-    <desc lang="id">Redaksi Pagi Akhir Pekan</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913093000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Lacak Kriminal</title>
-    <desc lang="id">Lacak Kriminal</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913100000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Today</title>
-    <desc lang="id">CNN Indonesia Today</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913103000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia New Day</title>
-    <desc lang="id">CNN Indonesia New Day</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Heroes</title>
-    <desc lang="id">CNN Indonesia Heroes</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913124500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia News Hour</title>
-    <desc lang="id">CNN Indonesia News Hour</desc>
   </programme>
   <programme start="20260913124500 +0700" stop="20260913134500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">T.I.F - Talk is Fun</title>
-    <desc lang="id">T.I.F - Talk is Fun</desc>
   </programme>
   <programme start="20260913134500 +0700" stop="20260913141500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Sports</title>
-    <desc lang="id">CNN Indonesia Sports</desc>
   </programme>
   <programme start="20260913141500 +0700" stop="20260913150000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Redaksi Akhir Pekan</title>
-    <desc lang="id">Redaksi Akhir Pekan</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913160000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Lacak Kriminal</title>
-    <desc lang="id">Lacak Kriminal</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913181500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Newsroom</title>
-    <desc lang="id">CNN Indonesia Newsroom</desc>
   </programme>
   <programme start="20260913181500 +0700" stop="20260913190000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Redaksi Akhir Pekan</title>
-    <desc lang="id">Redaksi Akhir Pekan</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913203000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Prime News</title>
-    <desc lang="id">CNN Indonesia Prime News</desc>
   </programme>
   <programme start="20260913203000 +0700" stop="20260913210000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Redaksi Malam</title>
-    <desc lang="id">Redaksi Malam</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913213000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Lacak Kriminal</title>
-    <desc lang="id">Lacak Kriminal</desc>
   </programme>
   <programme start="20260913213000 +0700" stop="20260913220000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Tech</title>
-    <desc lang="id">CNN Indonesia Tech</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913223000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Sports</title>
-    <desc lang="id">CNN Indonesia Sports</desc>
   </programme>
   <programme start="20260913223000 +0700" stop="20260913231500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">Redaksi Akhir Pekan</title>
-    <desc lang="id">Redaksi Akhir Pekan</desc>
   </programme>
   <programme start="20260913231500 +0700" stop="20260914001500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Prime</title>
@@ -981,123 +917,93 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913010000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Xtra Show</title>
-    <desc lang="id">Xtra Show</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913020000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Amazing Syafaat</title>
-    <desc lang="id">Amazing Syafaat</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913030000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Misteri Hidup</title>
-    <desc lang="id">Misteri Hidup</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913033000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Kabarnya Viral</title>
-    <desc lang="id">Kabarnya Viral</desc>
   </programme>
   <programme start="20260913033000 +0700" stop="20260913040000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Orang Baik</title>
-    <desc lang="id">Orang Baik</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913050000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Kampung Geulis</title>
-    <desc lang="id">Kampung Geulis</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913060000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Harmoni Indonesia</title>
-    <desc lang="id">Harmoni Indonesia</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913070000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Laporan 8 Pagi</title>
-    <desc lang="id">Laporan 8 Pagi</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913073000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Sport 8</title>
-    <desc lang="id">Sport 8</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913080000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Gosip Panas Selebriti</title>
-    <desc lang="id">Gosip Panas Selebriti</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913083000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Klik 8</title>
-    <desc lang="id">Klik 8</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913090000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Kuliner Tanggal Tua</title>
-    <desc lang="id">Kuliner Tanggal Tua</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913100000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Waktu Indonesia Sehat</title>
-    <desc lang="id">Waktu Indonesia Sehat</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913110000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Misteri Hidup</title>
-    <desc lang="id">Misteri Hidup</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913120000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Kriminal +62</title>
-    <desc lang="id">Kriminal +62</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913130000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Laporan 8 Siang</title>
-    <desc lang="id">Laporan 8 Siang</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913133000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Garda Dunia</title>
-    <desc lang="id">Garda Dunia</desc>
   </programme>
   <programme start="20260913133000 +0700" stop="20260913140000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">In Militer</title>
-    <desc lang="id">In Militer</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913143000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Kick &amp; Rush</title>
-    <desc lang="id">Kick &amp; Rush</desc>
   </programme>
   <programme start="20260913143000 +0700" stop="20260913150000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Hoops Vibes</title>
-    <desc lang="id">Hoops Vibes</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913160000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Laporan 8 Update</title>
-    <desc lang="id">Laporan 8 Update</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913163000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Dunia Kita</title>
-    <desc lang="id">Dunia Kita</desc>
   </programme>
   <programme start="20260913163000 +0700" stop="20260913173000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">F to F</title>
-    <desc lang="id">F to F</desc>
   </programme>
   <programme start="20260913173000 +0700" stop="20260913180000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Jendela Istana</title>
-    <desc lang="id">Jendela Istana</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913190000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Laporan 8 Petang</title>
-    <desc lang="id">Laporan 8 Petang</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913193000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Klik 8</title>
-    <desc lang="id">Klik 8</desc>
   </programme>
   <programme start="20260913193000 +0700" stop="20260913200000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Kuliner Tanggal Tua</title>
-    <desc lang="id">Kuliner Tanggal Tua</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913210000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Misteri Hidup</title>
-    <desc lang="id">Misteri Hidup</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913220000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Kriminal +62</title>
-    <desc lang="id">Kriminal +62</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913230000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Laporan 8 Malam</title>
-    <desc lang="id">Laporan 8 Malam</desc>
   </programme>
   <programme start="20260913230000 +0700" stop="20260914000000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Misteri</title>
@@ -1105,47 +1011,36 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913003000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Kisah Viral</title>
-    <desc lang="id">Kisah Viral</desc>
   </programme>
   <programme start="20260913003000 +0700" stop="20260913020000 +0700" channel="Tivie_gtv.id">
     <title lang="id">1001 Kisah</title>
-    <desc lang="id">1001 Kisah</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913040000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Ragam Cerita</title>
-    <desc lang="id">Ragam Cerita</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913060000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Petualangan Fantasi</title>
-    <desc lang="id">Petualangan Fantasi</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913070000 +0700" channel="Tivie_gtv.id">
     <title lang="id">CoComelon dan Sahabat</title>
-    <desc lang="id">CoComelon dan Sahabat</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913080000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Bernard Bear</title>
-    <desc lang="id">Bernard Bear</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913123000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Pada Zaman Dahulu</title>
-    <desc lang="id">Pada Zaman Dahulu</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913140000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Kiko</title>
-    <desc lang="id">Kiko</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913163000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Entong</title>
-    <desc lang="id">Entong</desc>
   </programme>
   <programme start="20260913163000 +0700" stop="20260913193000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Pada Zaman Dahulu</title>
-    <desc lang="id">Pada Zaman Dahulu</desc>
   </programme>
   <programme start="20260913193000 +0700" stop="20260913203000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Entong</title>
-    <desc lang="id">Entong</desc>
   </programme>
   <programme start="20260913203000 +0700" stop="20260913223000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Big Movies</title>
@@ -1153,7 +1048,6 @@
   </programme>
   <programme start="20260913223000 +0700" stop="20260913233000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Bidadari</title>
-    <desc lang="id">Bidadari</desc>
   </programme>
   <programme start="20260913233000 +0700" stop="20260914003000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Kisah</title>
@@ -1173,11 +1067,9 @@
   </programme>
   <programme start="20260913043000 +0700" stop="20260913060000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Fokus Pagi</title>
-    <desc lang="id">Fokus Pagi</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913070000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Merangkai Kisah Indah</title>
-    <desc lang="id">Merangkai Kisah Indah</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913083000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Kisah Nyata Pagi</title>
@@ -1189,15 +1081,12 @@
   </programme>
   <programme start="20260913100000 +0700" stop="20260913110000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Best Kiss</title>
-    <desc lang="id">Best Kiss</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913113000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Patroli</title>
-    <desc lang="id">Patroli</desc>
   </programme>
   <programme start="20260913113000 +0700" stop="20260913120000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Fokus</title>
-    <desc lang="id">Fokus</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913133000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Kisah Nyata Siang</title>
@@ -1213,7 +1102,6 @@
   </programme>
   <programme start="20260913173000 +0700" stop="20260913183000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Merangkai Kisah Indah</title>
-    <desc lang="id">Merangkai Kisah Indah</desc>
   </programme>
   <programme start="20260913183000 +0700" stop="20260913210000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Super League 2026/27</title>
@@ -1225,71 +1113,54 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913004500 +0700" channel="Tivie_inews.id">
     <title lang="id">Breaking News</title>
-    <desc lang="id">Breaking News</desc>
   </programme>
   <programme start="20260913004500 +0700" stop="20260913013000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Room Weekend</title>
-    <desc lang="id">iNews Room Weekend</desc>
   </programme>
   <programme start="20260913013000 +0700" stop="20260913021500 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Malam</title>
-    <desc lang="id">iNews Malam</desc>
   </programme>
   <programme start="20260913021500 +0700" stop="20260913031500 +0700" channel="Tivie_inews.id">
     <title lang="id">Special Report</title>
-    <desc lang="id">Special Report</desc>
   </programme>
   <programme start="20260913031500 +0700" stop="20260913041500 +0700" channel="Tivie_inews.id">
     <title lang="id">Realita</title>
-    <desc lang="id">Realita</desc>
   </programme>
   <programme start="20260913041500 +0700" stop="20260913061000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Pagi</title>
-    <desc lang="id">iNews Pagi</desc>
   </programme>
   <programme start="20260913061000 +0700" stop="20260913063000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Sport</title>
-    <desc lang="id">iNews Sport</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913073000 +0700" channel="Tivie_inews.id">
     <title lang="id">Special Report</title>
-    <desc lang="id">Special Report</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913083000 +0700" channel="Tivie_inews.id">
     <title lang="id">Breaking News</title>
-    <desc lang="id">Breaking News</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913093000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Files</title>
-    <desc lang="id">iNews Files</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913102500 +0700" channel="Tivie_inews.id">
     <title lang="id">Breaking News</title>
-    <desc lang="id">Breaking News</desc>
   </programme>
   <programme start="20260913102500 +0700" stop="20260913115000 +0700" channel="Tivie_inews.id">
     <title lang="id">Cahaya Hati Indonesia</title>
-    <desc lang="id">Cahaya Hati Indonesia</desc>
   </programme>
   <programme start="20260913115000 +0700" stop="20260913125000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Siang</title>
-    <desc lang="id">iNews Siang</desc>
   </programme>
   <programme start="20260913125000 +0700" stop="20260913183000 +0700" channel="Tivie_inews.id">
     <title lang="id">Sirkuit Nasional A 2026: Yogyakarta</title>
-    <desc lang="id">Sirkuit Nasional A 2026: Yogyakarta</desc>
   </programme>
   <programme start="20260913183000 +0700" stop="20260913190000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Sore</title>
-    <desc lang="id">iNews Sore</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913203000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Room Weekend</title>
-    <desc lang="id">iNews Room Weekend</desc>
   </programme>
   <programme start="20260913203000 +0700" stop="20260913220000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Malam</title>
-    <desc lang="id">iNews Malam</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913230000 +0700" channel="Tivie_inews.id">
     <title lang="id">Rakyat</title>
@@ -1297,7 +1168,6 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913004500 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Berita Utama</title>
-    <desc lang="id">Berita Utama</desc>
   </programme>
   <programme start="20260913004500 +0700" stop="20260913030000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Eredivisie 2026/27</title>
@@ -1305,79 +1175,60 @@
   </programme>
   <programme start="20260913030000 +0700" stop="20260913040000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kompas Malam</title>
-    <desc lang="id">Kompas Malam</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913043000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Borgol</title>
-    <desc lang="id">Borgol</desc>
   </programme>
   <programme start="20260913043000 +0700" stop="20260913063000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kompas Pagi</title>
-    <desc lang="id">Kompas Pagi</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913070000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Jurnal Nusantara</title>
-    <desc lang="id">Jurnal Nusantara</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913093000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Sapa Indonesia Pagi</title>
-    <desc lang="id">Sapa Indonesia Pagi</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913103000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Berita Utama</title>
-    <desc lang="id">Berita Utama</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Jalan-Jalan</title>
-    <desc lang="id">Jalan-Jalan</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913120000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kompas Siang</title>
-    <desc lang="id">Kompas Siang</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913123000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Jurnal Nusantara</title>
-    <desc lang="id">Jurnal Nusantara</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913130000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Borgol</title>
-    <desc lang="id">Borgol</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913140000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kalam Hati</title>
-    <desc lang="id">Kalam Hati</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913160000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Malam Puncak Indonesia B15A</title>
-    <desc lang="id">Malam Puncak Indonesia B15A</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913170000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kompas Petang</title>
-    <desc lang="id">Kompas Petang</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913173000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kompas Sepekan</title>
-    <desc lang="id">Kompas Sepekan</desc>
   </programme>
   <programme start="20260913173000 +0700" stop="20260913183000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">60' Spesial Report</title>
-    <desc lang="id">60' Spesial Report</desc>
   </programme>
   <programme start="20260913183000 +0700" stop="20260913193000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Sapa Indonesia Malam</title>
-    <desc lang="id">Sapa Indonesia Malam</desc>
   </programme>
   <programme start="20260913193000 +0700" stop="20260913203000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Berita Utama</title>
-    <desc lang="id">Berita Utama</desc>
   </programme>
   <programme start="20260913203000 +0700" stop="20260913213000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kompas Malam</title>
-    <desc lang="id">Kompas Malam</desc>
   </programme>
   <programme start="20260913213000 +0700" stop="20260913234500 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Bola Liar</title>
-    <desc lang="id">Bola Liar</desc>
   </programme>
   <programme start="20260913234500 +0700" stop="20260914004500 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kilas</title>
@@ -1385,83 +1236,63 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913002000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Customs Protection</title>
-    <desc lang="id">Customs Protection</desc>
   </programme>
   <programme start="20260913002000 +0700" stop="20260913005500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">86</title>
-    <desc lang="id">86</desc>
   </programme>
   <programme start="20260913005500 +0700" stop="20260913030000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">To All The Guys Who Loved Me</title>
-    <desc lang="id">To All The Guys Who Loved Me</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913041000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Di Balik Mitos</title>
-    <desc lang="id">Di Balik Mitos</desc>
   </programme>
   <programme start="20260913041000 +0700" stop="20260913055500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Top Spot</title>
-    <desc lang="id">Top Spot</desc>
   </programme>
   <programme start="20260913055500 +0700" stop="20260913065000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Jelajah Masjid Nusantara</title>
-    <desc lang="id">Jelajah Masjid Nusantara</desc>
   </programme>
   <programme start="20260913065000 +0700" stop="20260913080500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Ada Apa dengan Dunia</title>
-    <desc lang="id">Ada Apa dengan Dunia</desc>
   </programme>
   <programme start="20260913080500 +0700" stop="20260913090000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Fakta +62 Weekend</title>
-    <desc lang="id">Fakta +62 Weekend</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913095500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">SensasiHot</title>
-    <desc lang="id">SensasiHot</desc>
   </programme>
   <programme start="20260913095500 +0700" stop="20260913110000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Main Drama Casting</title>
-    <desc lang="id">Main Drama Casting</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913120500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Suci</title>
-    <desc lang="id">Suci</desc>
   </programme>
   <programme start="20260913120500 +0700" stop="20260913130000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Resep Chef Devina</title>
-    <desc lang="id">Resep Chef Devina</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913143500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Makan Enak</title>
-    <desc lang="id">Makan Enak</desc>
   </programme>
   <programme start="20260913143500 +0700" stop="20260913160500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Laper Mata</title>
-    <desc lang="id">Laper Mata</desc>
   </programme>
   <programme start="20260913160500 +0700" stop="20260913170500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Masak, Gesss!!!</title>
-    <desc lang="id">Masak, Gesss!!!</desc>
   </programme>
   <programme start="20260913170500 +0700" stop="20260913173500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Adit Sopo Jarwo</title>
-    <desc lang="id">Adit Sopo Jarwo</desc>
   </programme>
   <programme start="20260913173500 +0700" stop="20260913183500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Marisol</title>
-    <desc lang="id">Marisol</desc>
   </programme>
   <programme start="20260913183500 +0700" stop="20260913201500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Maria Cinta yang Hilang</title>
-    <desc lang="id">Maria Cinta yang Hilang</desc>
   </programme>
   <programme start="20260913201500 +0700" stop="20260913221500 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Kupu Malam</title>
-    <desc lang="id">Kupu Malam</desc>
   </programme>
   <programme start="20260913221500 +0700" stop="20260913233000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Jatanras</title>
-    <desc lang="id">Jatanras</desc>
   </programme>
   <programme start="20260913233000 +0700" stop="20260914003000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Customs</title>
@@ -1469,91 +1300,69 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913010000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Plentis Kentus</title>
-    <desc lang="id">Plentis Kentus</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913020000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">BeDul</title>
-    <desc lang="id">BeDul</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913030000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Madun</title>
-    <desc lang="id">Madun</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913040000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Just for Laughs Gags</title>
-    <desc lang="id">Just for Laughs Gags</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913050000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Minibods</title>
-    <desc lang="id">Minibods</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913053000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Baby Zu</title>
-    <desc lang="id">Baby Zu</desc>
   </programme>
   <programme start="20260913053000 +0700" stop="20260913060000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Cocomelon</title>
-    <desc lang="id">Cocomelon</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913070000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">The Fixies</title>
-    <desc lang="id">The Fixies</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913080000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Morphle</title>
-    <desc lang="id">Morphle</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913083000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Wakakibo</title>
-    <desc lang="id">Wakakibo</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913093000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Titipo</title>
-    <desc lang="id">Titipo</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913110000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Katuri</title>
-    <desc lang="id">Katuri</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913130000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Eddy the Clever Fox</title>
-    <desc lang="id">Eddy the Clever Fox</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913143000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Bing</title>
-    <desc lang="id">Bing</desc>
   </programme>
   <programme start="20260913143000 +0700" stop="20260913160000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Bluey</title>
-    <desc lang="id">Bluey</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913170000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">TianTian</title>
-    <desc lang="id">TianTian</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913173000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Indonesia Cerdas</title>
-    <desc lang="id">Indonesia Cerdas</desc>
   </programme>
   <programme start="20260913173000 +0700" stop="20260913180000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Abang L The Explorer</title>
-    <desc lang="id">Abang L The Explorer</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913183000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Magic 5 the Animation</title>
-    <desc lang="id">Magic 5 the Animation</desc>
   </programme>
   <programme start="20260913183000 +0700" stop="20260913190000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">New Keluarga Somat</title>
-    <desc lang="id">New Keluarga Somat</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913200000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Katuri</title>
-    <desc lang="id">Katuri</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913223000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Bioskop Keluarga Indonesia</title>
-    <desc lang="id">Bioskop Keluarga Indonesia</desc>
   </programme>
   <programme start="20260913223000 +0700" stop="20260913233000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Keluarga</title>
@@ -1561,227 +1370,171 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913000500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913000500 +0700" stop="20260913010000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Primetime News</title>
-    <desc lang="id">Primetime News</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913010500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913010500 +0700" stop="20260913013000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Primetime News</title>
-    <desc lang="id">Primetime News</desc>
   </programme>
   <programme start="20260913013000 +0700" stop="20260913020000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Hari Ini</title>
-    <desc lang="id">Metro Hari Ini</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913020500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913020500 +0700" stop="20260913030000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Hari Ini</title>
-    <desc lang="id">Metro Hari Ini</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913030500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913030500 +0700" stop="20260913040000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Khazanah Islam</title>
-    <desc lang="id">Khazanah Islam</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913040500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913040500 +0700" stop="20260913050000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Top News</title>
-    <desc lang="id">Top News</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913050500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913050500 +0700" stop="20260913060000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Top News</title>
-    <desc lang="id">Top News</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913060500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913060500 +0700" stop="20260913063000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Sport</title>
-    <desc lang="id">Metro Sport</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913070000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Jendela Dunia: Inovator</title>
-    <desc lang="id">Jendela Dunia: Inovator</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913070500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913070500 +0700" stop="20260913073000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Menembus Batas</title>
-    <desc lang="id">Menembus Batas</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913080000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Selamat Pagi Indonesia</title>
-    <desc lang="id">Selamat Pagi Indonesia</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913080500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913080500 +0700" stop="20260913090000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Selamat Pagi Indonesia</title>
-    <desc lang="id">Selamat Pagi Indonesia</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913090500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913090500 +0700" stop="20260913093000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Selamat Pagi Indonesia</title>
-    <desc lang="id">Selamat Pagi Indonesia</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913100000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Go Healthy</title>
-    <desc lang="id">Go Healthy</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913100500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913100500 +0700" stop="20260913103000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Melihat Indonesia</title>
-    <desc lang="id">Melihat Indonesia</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Journey</title>
-    <desc lang="id">Journey</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913110500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913110500 +0700" stop="20260913120000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Siang</title>
-    <desc lang="id">Metro Siang</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913120500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913120500 +0700" stop="20260913130000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Siang</title>
-    <desc lang="id">Metro Siang</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913130500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913130500 +0700" stop="20260913140000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Showbiz</title>
-    <desc lang="id">Showbiz</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913140500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913140500 +0700" stop="20260913150000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Siang</title>
-    <desc lang="id">Metro Siang</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913150500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913150500 +0700" stop="20260913153000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Siang</title>
-    <desc lang="id">Metro Siang</desc>
   </programme>
   <programme start="20260913153000 +0700" stop="20260913160000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Realitas</title>
-    <desc lang="id">Realitas</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913160500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913160500 +0700" stop="20260913170000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Hari Ini</title>
-    <desc lang="id">Metro Hari Ini</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913170500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913170500 +0700" stop="20260913173000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Hari Ini</title>
-    <desc lang="id">Metro Hari Ini</desc>
   </programme>
   <programme start="20260913173000 +0700" stop="20260913180000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Primetime News</title>
-    <desc lang="id">Primetime News</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913180500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913180500 +0700" stop="20260913190000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Primetime News</title>
-    <desc lang="id">Primetime News</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913190500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913190500 +0700" stop="20260913193000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Primetime News</title>
-    <desc lang="id">Primetime News</desc>
   </programme>
   <programme start="20260913193000 +0700" stop="20260913200000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro This Week</title>
-    <desc lang="id">Metro This Week</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913200500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913200500 +0700" stop="20260913210000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Top News</title>
-    <desc lang="id">Top News</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913210500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913210500 +0700" stop="20260913220000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Q &amp; A</title>
-    <desc lang="id">Q &amp; A</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913220500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913220500 +0700" stop="20260913223000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro Sport</title>
-    <desc lang="id">Metro Sport</desc>
   </programme>
   <programme start="20260913223000 +0700" stop="20260913230000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Metro This Week</title>
-    <desc lang="id">Metro This Week</desc>
   </programme>
   <programme start="20260913230000 +0700" stop="20260913230500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Headline News</title>
-    <desc lang="id">Headline News</desc>
   </programme>
   <programme start="20260913230500 +0700" stop="20260914000500 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Kick</title>
@@ -1789,35 +1542,27 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913030000 +0700" channel="Tivie_mnctv.id">
     <title lang="id">Suparman Reborn</title>
-    <desc lang="id">Suparman Reborn</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913033000 +0700" channel="Tivie_mnctv.id">
     <title lang="id">Bimbingan Rohani Kristen</title>
-    <desc lang="id">Bimbingan Rohani Kristen</desc>
   </programme>
   <programme start="20260913033000 +0700" stop="20260913060000 +0700" channel="Tivie_mnctv.id">
     <title lang="id">Suparman Reborn</title>
-    <desc lang="id">Suparman Reborn</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913080000 +0700" channel="Tivie_mnctv.id">
     <title lang="id">Kiko in the Deep Sea</title>
-    <desc lang="id">Kiko in the Deep Sea</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913173000 +0700" channel="Tivie_mnctv.id">
     <title lang="id">Upin &amp; Ipin</title>
-    <desc lang="id">Upin &amp; Ipin</desc>
   </programme>
   <programme start="20260913173000 +0700" stop="20260913190000 +0700" channel="Tivie_mnctv.id">
     <title lang="id">Entong</title>
-    <desc lang="id">Entong</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913200000 +0700" channel="Tivie_mnctv.id">
     <title lang="id">Upin &amp; Ipin</title>
-    <desc lang="id">Upin &amp; Ipin</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913231500 +0700" channel="Tivie_mnctv.id">
     <title lang="id">DMD Panggung Rezeki</title>
-    <desc lang="id">DMD Panggung Rezeki</desc>
   </programme>
   <programme start="20260913231500 +0700" stop="20260914001500 +0700" channel="Tivie_mnctv.id">
     <title lang="id">Have a Nice</title>
@@ -1825,35 +1570,27 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913010000 +0700" channel="Tivie_moji.id">
     <title lang="id">One Friday Fights</title>
-    <desc lang="id">One Friday Fights</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913050000 +0700" channel="Tivie_moji.id">
     <title lang="id">Volleyball Nations League 2026</title>
-    <desc lang="id">Volleyball Nations League 2026</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913061500 +0700" channel="Tivie_moji.id">
     <title lang="id">Moji Sport</title>
-    <desc lang="id">Moji Sport</desc>
   </programme>
   <programme start="20260913061500 +0700" stop="20260913070000 +0700" channel="Tivie_moji.id">
     <title lang="id">Liputan 6 Pagi Moji</title>
-    <desc lang="id">Liputan 6 Pagi Moji</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913080000 +0700" channel="Tivie_moji.id">
     <title lang="id">Bisik Pagi</title>
-    <desc lang="id">Bisik Pagi</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913100000 +0700" channel="Tivie_moji.id">
     <title lang="id">Ungkap</title>
-    <desc lang="id">Ungkap</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913110000 +0700" channel="Tivie_moji.id">
     <title lang="id">Moji POS</title>
-    <desc lang="id">Moji POS</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913130000 +0700" channel="Tivie_moji.id">
     <title lang="id">Tercyduk</title>
-    <desc lang="id">Tercyduk</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913153000 +0700" channel="Tivie_moji.id">
     <title lang="id">AVC Men's Continental Championship 2026</title>
@@ -1861,7 +1598,6 @@
   </programme>
   <programme start="20260913153000 +0700" stop="20260913170000 +0700" channel="Tivie_moji.id">
     <title lang="id">SEA V Cup 2026</title>
-    <desc lang="id">SEA V Cup 2026</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913193000 +0700" channel="Tivie_moji.id">
     <title lang="id">AVC Men's Continental Championship 2026</title>
@@ -1873,95 +1609,72 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913010000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Soundcore Dangdut</title>
-    <desc lang="id">Soundcore Dangdut</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913020000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Celebrity Fresh</title>
-    <desc lang="id">Celebrity Fresh</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913030000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Soundcore Senandung Sunda</title>
-    <desc lang="id">Soundcore Senandung Sunda</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913040000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Ooh I See</title>
-    <desc lang="id">Ooh I See</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913060000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Prime</title>
-    <desc lang="id">NTV Prime</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913070000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Toplines</title>
-    <desc lang="id">NTV Toplines</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913080000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Sports</title>
-    <desc lang="id">NTV Sports</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913090000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Celebrity Fresh</title>
-    <desc lang="id">Celebrity Fresh</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913103000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Ibadah Online</title>
-    <desc lang="id">Ibadah Online</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Kok Bisa Viral</title>
-    <desc lang="id">Kok Bisa Viral</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913120000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Today</title>
-    <desc lang="id">NTV Today</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913123000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">100% Recommended</title>
-    <desc lang="id">100% Recommended</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913133000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Celebrity Fresh</title>
-    <desc lang="id">Celebrity Fresh</desc>
   </programme>
   <programme start="20260913133000 +0700" stop="20260913150000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Soundcore Dangdut</title>
-    <desc lang="id">Soundcore Dangdut</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913153000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Ooh I See</title>
-    <desc lang="id">Ooh I See</desc>
   </programme>
   <programme start="20260913153000 +0700" stop="20260913160000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">LOL</title>
-    <desc lang="id">LOL</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913170000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Highlights</title>
-    <desc lang="id">NTV Highlights</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913190000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Prime</title>
-    <desc lang="id">NTV Prime</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913200000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Crime Files</title>
-    <desc lang="id">Crime Files</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913203000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Ooh I See</title>
-    <desc lang="id">Ooh I See</desc>
   </programme>
   <programme start="20260913203000 +0700" stop="20260913213000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Sportcast</title>
-    <desc lang="id">NTV Sportcast</desc>
   </programme>
   <programme start="20260913213000 +0700" stop="20260913223000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Sports</title>
-    <desc lang="id">NTV Sports</desc>
   </programme>
   <programme start="20260913223000 +0700" stop="20260913230000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Checkpoint</title>
-    <desc lang="id">Checkpoint</desc>
   </programme>
   <programme start="20260913230000 +0700" stop="20260914000000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">Kok Bisa</title>
@@ -1969,7 +1682,6 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913001500 +0700" channel="Tivie_rcti.id">
     <title lang="id">Cinta dari Surga</title>
-    <desc lang="id">Cinta dari Surga</desc>
   </programme>
   <programme start="20260913001500 +0700" stop="20260913013000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Mega Film TV Malam</title>
@@ -1977,51 +1689,39 @@
   </programme>
   <programme start="20260913013000 +0700" stop="20260913030000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Mega Film TV Malam</title>
-    <desc lang="id">Mega Film TV Malam</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913033000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Mukjizat Itu Nyata</title>
-    <desc lang="id">Mukjizat Itu Nyata</desc>
   </programme>
   <programme start="20260913033000 +0700" stop="20260913060000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Preman Pensiun</title>
-    <desc lang="id">Preman Pensiun</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913080000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Upin &amp; Ipin</title>
-    <desc lang="id">Upin &amp; Ipin</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913103000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Entong</title>
-    <desc lang="id">Entong</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Kiko</title>
-    <desc lang="id">Kiko</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913113000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Titus The Detective</title>
-    <desc lang="id">Titus The Detective</desc>
   </programme>
   <programme start="20260913113000 +0700" stop="20260913130000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Terikat Janji Selamanya</title>
-    <desc lang="id">Terikat Janji Selamanya</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913173000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Ikatan Cinta Aldebaran &amp; Andin</title>
-    <desc lang="id">Ikatan Cinta Aldebaran &amp; Andin</desc>
   </programme>
   <programme start="20260913173000 +0700" stop="20260913190000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Ternyata Ini Cinta</title>
-    <desc lang="id">Ternyata Ini Cinta</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913203000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Terikat Janji</title>
-    <desc lang="id">Terikat Janji</desc>
   </programme>
   <programme start="20260913203000 +0700" stop="20260913220000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Terlanjur Mencintaimu</title>
-    <desc lang="id">Terlanjur Mencintaimu</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913230000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Microdrama+</title>
@@ -2033,103 +1733,78 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913010000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Kokom - Kompilasi Komedi</title>
-    <desc lang="id">Kokom - Kompilasi Komedi</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913013000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Terang Kasih</title>
-    <desc lang="id">Terang Kasih</desc>
   </programme>
   <programme start="20260913013000 +0700" stop="20260913030000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Movinesia</title>
-    <desc lang="id">Movinesia</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913033000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Ustadz On The Road</title>
-    <desc lang="id">Ustadz On The Road</desc>
   </programme>
   <programme start="20260913033000 +0700" stop="20260913043000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Kokom - Kompilasi Komedi</title>
-    <desc lang="id">Kokom - Kompilasi Komedi</desc>
   </programme>
   <programme start="20260913043000 +0700" stop="20260913050000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Superbook</title>
-    <desc lang="id">Superbook</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913063000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Bread Barbershop</title>
-    <desc lang="id">Bread Barbershop</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913070000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Beyblade X S2</title>
-    <desc lang="id">Beyblade X S2</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913073000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Beyblade X S3</title>
-    <desc lang="id">Beyblade X S3</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913080000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Gavan Infinity</title>
-    <desc lang="id">Gavan Infinity</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913083000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Adu Kelas</title>
-    <desc lang="id">Adu Kelas</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913090000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Cai Yoo - Cerita Anak Indonesia Yo Yo Yo</title>
-    <desc lang="id">Cai Yoo - Cerita Anak Indonesia Yo Yo Yo</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913103000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Bread Barbershop</title>
-    <desc lang="id">Bread Barbershop</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Abrakadabra</title>
-    <desc lang="id">Abrakadabra</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913130000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Smurf</title>
-    <desc lang="id">Smurf</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913143000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Boboiboy Galaxy</title>
-    <desc lang="id">Boboiboy Galaxy</desc>
   </programme>
   <programme start="20260913143000 +0700" stop="20260913150000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Papa Pipi</title>
-    <desc lang="id">Papa Pipi</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913153000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Dragonero</title>
-    <desc lang="id">Dragonero</desc>
   </programme>
   <programme start="20260913153000 +0700" stop="20260913163000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Tom &amp; Jerry</title>
-    <desc lang="id">Tom &amp; Jerry</desc>
   </programme>
   <programme start="20260913163000 +0700" stop="20260913170000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Bintang Arena</title>
-    <desc lang="id">Bintang Arena</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913193000 +0700" channel="Tivie_rtv.id">
     <title lang="id">BoBoiBoy</title>
-    <desc lang="id">BoBoiBoy</desc>
   </programme>
   <programme start="20260913193000 +0700" stop="20260913213000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Bread Barbershop</title>
-    <desc lang="id">Bread Barbershop</desc>
   </programme>
   <programme start="20260913213000 +0700" stop="20260913220000 +0700" channel="Tivie_rtv.id">
     <title lang="id">BOBA - Bombastis Banget</title>
-    <desc lang="id">BOBA - Bombastis Banget</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913223000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Check In - Check Informasi</title>
-    <desc lang="id">Check In - Check Informasi</desc>
   </programme>
   <programme start="20260913223000 +0700" stop="20260913230000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Obral - Obrolan Viral</title>
-    <desc lang="id">Obral - Obrolan Viral</desc>
   </programme>
   <programme start="20260913230000 +0700" stop="20260914000000 +0700" channel="Tivie_rtv.id">
     <title lang="id">STB - Sangat Tidak</title>
@@ -2141,35 +1816,27 @@
   </programme>
   <programme start="20260913013000 +0700" stop="20260913030000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Sinema Malam</title>
-    <desc lang="id">Sinema Malam</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913040000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Sinema Dini Hari</title>
-    <desc lang="id">Sinema Dini Hari</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913043000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Barakallah</title>
-    <desc lang="id">Barakallah</desc>
   </programme>
   <programme start="20260913043000 +0700" stop="20260913050000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Buser</title>
-    <desc lang="id">Buser</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913060000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Liputan 6 Pagi</title>
-    <desc lang="id">Liputan 6 Pagi</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913063000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Point Of View</title>
-    <desc lang="id">Point Of View</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913070000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Halo Selebriti</title>
-    <desc lang="id">Halo Selebriti</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913100000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Karnaval SCTV</title>
-    <desc lang="id">Karnaval SCTV</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913120000 +0700" channel="Tivie_sctv.id">
     <title lang="id">FTV Pagi</title>
@@ -2177,31 +1844,24 @@
   </programme>
   <programme start="20260913120000 +0700" stop="20260913123000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Liputan 6 Siang</title>
-    <desc lang="id">Liputan 6 Siang</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913140000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Samudra Cinta</title>
-    <desc lang="id">Samudra Cinta</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913170000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Karnaval SCTV</title>
-    <desc lang="id">Karnaval SCTV</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913183000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Asmara Gen Z New Era</title>
-    <desc lang="id">Asmara Gen Z New Era</desc>
   </programme>
   <programme start="20260913183000 +0700" stop="20260913194500 +0700" channel="Tivie_sctv.id">
     <title lang="id">Seindah Masa Remaja</title>
-    <desc lang="id">Seindah Masa Remaja</desc>
   </programme>
   <programme start="20260913194500 +0700" stop="20260913211500 +0700" channel="Tivie_sctv.id">
     <title lang="id">Wajah Cinta yang Lain</title>
-    <desc lang="id">Wajah Cinta yang Lain</desc>
   </programme>
   <programme start="20260913211500 +0700" stop="20260913230000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Biarkan Hati Bicara</title>
-    <desc lang="id">Biarkan Hati Bicara</desc>
   </programme>
   <programme start="20260913230000 +0700" stop="20260914000000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Arafta: Terbelenggu</title>
@@ -2209,71 +1869,54 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913010000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Bincang Spesial</title>
-    <desc lang="id">Bincang Spesial</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913020000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Ruang Parlemen</title>
-    <desc lang="id">Ruang Parlemen</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913033000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Menyapa Indonesia Petang</title>
-    <desc lang="id">Menyapa Indonesia Petang</desc>
   </programme>
   <programme start="20260913033000 +0700" stop="20260913043000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Mamah &amp; Aa</title>
-    <desc lang="id">Mamah &amp; Aa</desc>
   </programme>
   <programme start="20260913043000 +0700" stop="20260913050000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Islam Penuh Cinta</title>
-    <desc lang="id">Islam Penuh Cinta</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913060000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Kilas Sepekan</title>
-    <desc lang="id">Kilas Sepekan</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913070000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Ruang Kabinet</title>
-    <desc lang="id">Ruang Kabinet</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913073000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">LUV - Liputan Update Viral</title>
-    <desc lang="id">LUV - Liputan Update Viral</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913083000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Sorotan Dunia Sepekan</title>
-    <desc lang="id">Sorotan Dunia Sepekan</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913093000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Bincang Spesial</title>
-    <desc lang="id">Bincang Spesial</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913103000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Catatan Kriminal Sepekan</title>
-    <desc lang="id">Catatan Kriminal Sepekan</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913123000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Keluarga Gunarso</title>
-    <desc lang="id">Keluarga Gunarso</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913133000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Catatan Sinpo</title>
-    <desc lang="id">Catatan Sinpo</desc>
   </programme>
   <programme start="20260913133000 +0700" stop="20260913140000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Kisah Prajurit</title>
-    <desc lang="id">Kisah Prajurit</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913143000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">LUV - Liputan Update Viral</title>
-    <desc lang="id">LUV - Liputan Update Viral</desc>
   </programme>
   <programme start="20260913143000 +0700" stop="20260913150000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Ruang Tumbuh</title>
-    <desc lang="id">Ruang Tumbuh</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913152500 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Jagoan UMKM</title>
-    <desc lang="id">Jagoan UMKM</desc>
   </programme>
   <programme start="20260913152500 +0700" stop="20260913173000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Championship 2026/27</title>
@@ -2281,7 +1924,6 @@
   </programme>
   <programme start="20260913173000 +0700" stop="20260913185500 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Menyapa Indonesia Petang</title>
-    <desc lang="id">Menyapa Indonesia Petang</desc>
   </programme>
   <programme start="20260913185500 +0700" stop="20260913210000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Championship 2026/27</title>
@@ -2289,11 +1931,9 @@
   </programme>
   <programme start="20260913210000 +0700" stop="20260913220000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Ngulik Politik</title>
-    <desc lang="id">Ngulik Politik</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913230000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Sorotan Utama</title>
-    <desc lang="id">Sorotan Utama</desc>
   </programme>
   <programme start="20260913230000 +0700" stop="20260914000000 +0700" channel="Tivie_sinpotv.id">
     <title lang="id">Ruang</title>
@@ -2305,83 +1945,63 @@
   </programme>
   <programme start="20260913003000 +0700" stop="20260913010000 +0700" channel="Tivie_transtv.id">
     <title lang="id">CNN Indonesia Sports</title>
-    <desc lang="id">CNN Indonesia Sports</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913013000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Lacak Kriminal</title>
-    <desc lang="id">Lacak Kriminal</desc>
   </programme>
   <programme start="20260913013000 +0700" stop="20260913021500 +0700" channel="Tivie_transtv.id">
     <title lang="id">CNN Indonesia Prime News</title>
-    <desc lang="id">CNN Indonesia Prime News</desc>
   </programme>
   <programme start="20260913021500 +0700" stop="20260913031500 +0700" channel="Tivie_transtv.id">
     <title lang="id">Berchandya</title>
-    <desc lang="id">Berchandya</desc>
   </programme>
   <programme start="20260913031500 +0700" stop="20260913041500 +0700" channel="Tivie_transtv.id">
     <title lang="id">Bro &amp; Bray</title>
-    <desc lang="id">Bro &amp; Bray</desc>
   </programme>
   <programme start="20260913041500 +0700" stop="20260913050000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Perjalanan 3 Wanita</title>
-    <desc lang="id">Perjalanan 3 Wanita</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913063000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Islam Itu Indah</title>
-    <desc lang="id">Islam Itu Indah</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913073000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Insert Pagi</title>
-    <desc lang="id">Insert Pagi</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913090000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Kajian Hati</title>
-    <desc lang="id">Kajian Hati</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913100000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Arjuna Mencari Cinta</title>
-    <desc lang="id">Arjuna Mencari Cinta</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913113000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Ambyarin Weekend</title>
-    <desc lang="id">Ambyarin Weekend</desc>
   </programme>
   <programme start="20260913113000 +0700" stop="20260913123000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Insert</title>
-    <desc lang="id">Insert</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913133000 +0700" channel="Tivie_transtv.id">
     <title lang="id">The Little Talk Chow</title>
-    <desc lang="id">The Little Talk Chow</desc>
   </programme>
   <programme start="20260913133000 +0700" stop="20260913140000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Masak Anti Ribet</title>
-    <desc lang="id">Masak Anti Ribet</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913150000 +0700" channel="Tivie_transtv.id">
     <title lang="id">No Secret: Week Stories</title>
-    <desc lang="id">No Secret: Week Stories</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913160000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Insert Investigasi</title>
-    <desc lang="id">Insert Investigasi</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913170000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Spill DD Tea</title>
-    <desc lang="id">Spill DD Tea</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913180000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Bikin Laper</title>
-    <desc lang="id">Bikin Laper</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913191500 +0700" channel="Tivie_transtv.id">
     <title lang="id">Insert Story</title>
-    <desc lang="id">Insert Story</desc>
   </programme>
   <programme start="20260913191500 +0700" stop="20260913201500 +0700" channel="Tivie_transtv.id">
     <title lang="id">Monitor Ketua</title>
-    <desc lang="id">Monitor Ketua</desc>
   </programme>
   <programme start="20260913201500 +0700" stop="20260913223000 +0700" channel="Tivie_transtv.id">
     <title lang="id">Bioskop TransTV</title>
@@ -2393,7 +2013,6 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913004500 +0700" channel="Tivie_trans7.id">
     <title lang="id">FTV: Cintaku di Ujung Sorban</title>
-    <desc lang="id">FTV: Cintaku di Ujung Sorban</desc>
   </programme>
   <programme start="20260913004500 +0700" stop="20260913013000 +0700" channel="Tivie_trans7.id">
     <title lang="id">MotoGP 2026</title>
@@ -2401,75 +2020,57 @@
   </programme>
   <programme start="20260913013000 +0700" stop="20260913020000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Best Fishing</title>
-    <desc lang="id">Best Fishing</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913023000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Dracin</title>
-    <desc lang="id">Dracin</desc>
   </programme>
   <programme start="20260913023000 +0700" stop="20260913031500 +0700" channel="Tivie_trans7.id">
     <title lang="id">On The Spot</title>
-    <desc lang="id">On The Spot</desc>
   </programme>
   <programme start="20260913031500 +0700" stop="20260913040000 +0700" channel="Tivie_trans7.id">
     <title lang="id">LOL :) ComediHa!</title>
-    <desc lang="id">LOL :) ComediHa!</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913044500 +0700" channel="Tivie_trans7.id">
     <title lang="id">Ujung-Ujungnya Damkar</title>
-    <desc lang="id">Ujung-Ujungnya Damkar</desc>
   </programme>
   <programme start="20260913044500 +0700" stop="20260913053000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Jalur Langit</title>
-    <desc lang="id">Jalur Langit</desc>
   </programme>
   <programme start="20260913053000 +0700" stop="20260913063000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Redaksi Pagi Akhir Pekan</title>
-    <desc lang="id">Redaksi Pagi Akhir Pekan</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913073000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Spotlite</title>
-    <desc lang="id">Spotlite</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913083000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Selebrita Pagi On The Weekend</title>
-    <desc lang="id">Selebrita Pagi On The Weekend</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913091500 +0700" channel="Tivie_trans7.id">
     <title lang="id">Bikin Seneng</title>
-    <desc lang="id">Bikin Seneng</desc>
   </programme>
   <programme start="20260913091500 +0700" stop="20260913101500 +0700" channel="Tivie_trans7.id">
     <title lang="id">Heits Abis</title>
-    <desc lang="id">Heits Abis</desc>
   </programme>
   <programme start="20260913101500 +0700" stop="20260913111500 +0700" channel="Tivie_trans7.id">
     <title lang="id">OTW - Obrolan Tiap Waktu</title>
-    <desc lang="id">OTW - Obrolan Tiap Waktu</desc>
   </programme>
   <programme start="20260913111500 +0700" stop="20260913120000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Enaknya Mantul</title>
-    <desc lang="id">Enaknya Mantul</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913124500 +0700" channel="Tivie_trans7.id">
     <title lang="id">Jejak Petualang</title>
-    <desc lang="id">Jejak Petualang</desc>
   </programme>
   <programme start="20260913124500 +0700" stop="20260913133000 +0700" channel="Tivie_trans7.id">
     <title lang="id">The Explorer</title>
-    <desc lang="id">The Explorer</desc>
   </programme>
   <programme start="20260913133000 +0700" stop="20260913141500 +0700" channel="Tivie_trans7.id">
     <title lang="id">Mancing Mania Strike Back</title>
-    <desc lang="id">Mancing Mania Strike Back</desc>
   </programme>
   <programme start="20260913141500 +0700" stop="20260913150000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Redaksi Akhir Pekan</title>
-    <desc lang="id">Redaksi Akhir Pekan</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913160000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Makan Receh</title>
-    <desc lang="id">Makan Receh</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913170000 +0700" channel="Tivie_trans7.id">
     <title lang="id">MotoGP 2026</title>
@@ -2477,11 +2078,9 @@
   </programme>
   <programme start="20260913170000 +0700" stop="20260913180000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Selebrita On The Weekend</title>
-    <desc lang="id">Selebrita On The Weekend</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913184500 +0700" channel="Tivie_trans7.id">
     <title lang="id">POV - Pasti Obrolan Viral</title>
-    <desc lang="id">POV - Pasti Obrolan Viral</desc>
   </programme>
   <programme start="20260913184500 +0700" stop="20260913200000 +0700" channel="Tivie_trans7.id">
     <title lang="id">MotoGP 2026</title>
@@ -2489,15 +2088,12 @@
   </programme>
   <programme start="20260913200000 +0700" stop="20260913213000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Arisan</title>
-    <desc lang="id">Arisan</desc>
   </programme>
   <programme start="20260913213000 +0700" stop="20260913224500 +0700" channel="Tivie_trans7.id">
     <title lang="id">BTS - Bercanda Tapi Santai</title>
-    <desc lang="id">BTS - Bercanda Tapi Santai</desc>
   </programme>
   <programme start="20260913224500 +0700" stop="20260913233000 +0700" channel="Tivie_trans7.id">
     <title lang="id">The Police</title>
-    <desc lang="id">The Police</desc>
   </programme>
   <programme start="20260913233000 +0700" stop="20260914003000 +0700" channel="Tivie_trans7.id">
     <title lang="id">FTV: Tuah Botol Jamu</title>
@@ -2505,95 +2101,72 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913013000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Petang</title>
-    <desc lang="id">Kabar Petang</desc>
   </programme>
   <programme start="20260913013000 +0700" stop="20260913030000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Apa Kabar Indonesia Malam</title>
-    <desc lang="id">Apa Kabar Indonesia Malam</desc>
   </programme>
   <programme start="20260913030000 +0700" stop="20260913033000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Utama</title>
-    <desc lang="id">Kabar Utama</desc>
   </programme>
   <programme start="20260913033000 +0700" stop="20260913040000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Hari Ini</title>
-    <desc lang="id">Kabar Hari Ini</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913043000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Arena Pagi</title>
-    <desc lang="id">Kabar Arena Pagi</desc>
   </programme>
   <programme start="20260913043000 +0700" stop="20260913060000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Pagi</title>
-    <desc lang="id">Kabar Pagi</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913063000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Arena Pagi</title>
-    <desc lang="id">Kabar Arena Pagi</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913080000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Apa Kabar Indonesia Pagi</title>
-    <desc lang="id">Apa Kabar Indonesia Pagi</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913083000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Inspirasi Pagi</title>
-    <desc lang="id">Inspirasi Pagi</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913090000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Feature LKBN Antara</title>
-    <desc lang="id">Feature LKBN Antara</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913093000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Xpose</title>
-    <desc lang="id">Xpose</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913100000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Indonesia Plus</title>
-    <desc lang="id">Indonesia Plus</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913103000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Dunia dalam Kamera</title>
-    <desc lang="id">Dunia dalam Kamera</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Selalu Ada Hikmah</title>
-    <desc lang="id">Selalu Ada Hikmah</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913123000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Siang</title>
-    <desc lang="id">Kabar Siang</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913140000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Damai Indonesiaku</title>
-    <desc lang="id">Damai Indonesiaku</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913150000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Breaking News</title>
-    <desc lang="id">Breaking News</desc>
   </programme>
   <programme start="20260913150000 +0700" stop="20260913160000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Apa Kabar Indonesia Akhir Pekan</title>
-    <desc lang="id">Apa Kabar Indonesia Akhir Pekan</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913180000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Petang</title>
-    <desc lang="id">Kabar Petang</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913200000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Apa Kabar Indonesia Malam</title>
-    <desc lang="id">Apa Kabar Indonesia Malam</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913210000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Renungan Jiwa</title>
-    <desc lang="id">Renungan Jiwa</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913220000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Utama</title>
-    <desc lang="id">Kabar Utama</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913230000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Hari Ini</title>
-    <desc lang="id">Kabar Hari Ini</desc>
   </programme>
   <programme start="20260913230000 +0700" stop="20260914000000 +0700" channel="Tivie_tvone.id">
     <title lang="id">One Pride</title>
@@ -2601,55 +2174,42 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913003000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Soccer Spotlite</title>
-    <desc lang="id">Soccer Spotlite</desc>
   </programme>
   <programme start="20260913003000 +0700" stop="20260913043000 +0700" channel="Tivie_tvri.id">
     <title lang="id">FIFA World Cup 2026</title>
-    <desc lang="id">FIFA World Cup 2026</desc>
   </programme>
   <programme start="20260913043000 +0700" stop="20260913060000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Serambi Islami</title>
-    <desc lang="id">Serambi Islami</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913070000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Klik Indonesia Pagi</title>
-    <desc lang="id">Klik Indonesia Pagi</desc>
   </programme>
   <programme start="20260913070000 +0700" stop="20260913080000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Jendela Negeri</title>
-    <desc lang="id">Jendela Negeri</desc>
   </programme>
   <programme start="20260913080000 +0700" stop="20260913083000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Feature LKBN Antara</title>
-    <desc lang="id">Feature LKBN Antara</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913100000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Minggu Misa</title>
-    <desc lang="id">Minggu Misa</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913103000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Pesona Indonesia</title>
-    <desc lang="id">Pesona Indonesia</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913110000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Inspirasi Indonesia</title>
-    <desc lang="id">Inspirasi Indonesia</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913113000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Anak Indonesia</title>
-    <desc lang="id">Anak Indonesia</desc>
   </programme>
   <programme start="20260913113000 +0700" stop="20260913120000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Belajar Bersama</title>
-    <desc lang="id">Belajar Bersama</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913130000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Klik Indonesia Siang</title>
-    <desc lang="id">Klik Indonesia Siang</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913133000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Sentuhan Kasih</title>
-    <desc lang="id">Sentuhan Kasih</desc>
   </programme>
   <programme start="20260913133000 +0700" stop="20260913160000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Asian Games 2026 - Bola Basket Putra</title>
@@ -2657,43 +2217,33 @@
   </programme>
   <programme start="20260913160000 +0700" stop="20260913163000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Awas Sleding Tekel!</title>
-    <desc lang="id">Awas Sleding Tekel!</desc>
   </programme>
   <programme start="20260913163000 +0700" stop="20260913173000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Buah Hatiku Sayang</title>
-    <desc lang="id">Buah Hatiku Sayang</desc>
   </programme>
   <programme start="20260913173000 +0700" stop="20260913180000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Film Pendek</title>
-    <desc lang="id">Film Pendek</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913190000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Klik Indonesia Petang</title>
-    <desc lang="id">Klik Indonesia Petang</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913193000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Sobat Milenial</title>
-    <desc lang="id">Sobat Milenial</desc>
   </programme>
   <programme start="20260913193000 +0700" stop="20260913200000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Playlist</title>
-    <desc lang="id">Playlist</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913210000 +0700" channel="Tivie_tvri.id">
     <title lang="id">TVRI Klasik</title>
-    <desc lang="id">TVRI Klasik</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913213000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Dunia Dalam Berita</title>
-    <desc lang="id">Dunia Dalam Berita</desc>
   </programme>
   <programme start="20260913213000 +0700" stop="20260913223000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Kethoprak Milenial</title>
-    <desc lang="id">Kethoprak Milenial</desc>
   </programme>
   <programme start="20260913223000 +0700" stop="20260913233000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Kongkow on The Air</title>
-    <desc lang="id">Kongkow on The Air</desc>
   </programme>
   <programme start="20260913233000 +0700" stop="20260914003000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Klik Indonesia</title>
@@ -2701,83 +2251,63 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913010000 +0700" channel="Tivie_vtv.id">
     <title lang="id">The Owl &amp; Co</title>
-    <desc lang="id">The Owl &amp; Co</desc>
   </programme>
   <programme start="20260913010000 +0700" stop="20260913020000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Anak Pemberani</title>
-    <desc lang="id">Anak Pemberani</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913040000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Petualangan Superblox</title>
-    <desc lang="id">Petualangan Superblox</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913043000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Sunny Bunnies</title>
-    <desc lang="id">Sunny Bunnies</desc>
   </programme>
   <programme start="20260913043000 +0700" stop="20260913060000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Masha and The Bear</title>
-    <desc lang="id">Masha and The Bear</desc>
   </programme>
   <programme start="20260913060000 +0700" stop="20260913073000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Petualangan Superblox</title>
-    <desc lang="id">Petualangan Superblox</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913083000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Cilukbaa!</title>
-    <desc lang="id">Cilukbaa!</desc>
   </programme>
   <programme start="20260913083000 +0700" stop="20260913093000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Team S.T.E.A.M</title>
-    <desc lang="id">Team S.T.E.A.M</desc>
   </programme>
   <programme start="20260913093000 +0700" stop="20260913100000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Ozie Boo Save the Planet</title>
-    <desc lang="id">Ozie Boo Save the Planet</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913110000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Masha and The Bear</title>
-    <desc lang="id">Masha and The Bear</desc>
   </programme>
   <programme start="20260913110000 +0700" stop="20260913120000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Rabbids Invasion</title>
-    <desc lang="id">Rabbids Invasion</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913130000 +0700" channel="Tivie_vtv.id">
     <title lang="id">The Owl &amp; Co</title>
-    <desc lang="id">The Owl &amp; Co</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913140000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Sadie Sparks</title>
-    <desc lang="id">Sadie Sparks</desc>
   </programme>
   <programme start="20260913140000 +0700" stop="20260913160000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Petualangan Superblox</title>
-    <desc lang="id">Petualangan Superblox</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913170000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Taffy</title>
-    <desc lang="id">Taffy</desc>
   </programme>
   <programme start="20260913170000 +0700" stop="20260913180000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Droners</title>
-    <desc lang="id">Droners</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913190000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Rabbids Invasion</title>
-    <desc lang="id">Rabbids Invasion</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913210000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Petualangan Superblox</title>
-    <desc lang="id">Petualangan Superblox</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913220000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Mini Ninjas</title>
-    <desc lang="id">Mini Ninjas</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913233000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Nakee</title>
-    <desc lang="id">Nakee</desc>
   </programme>
   <programme start="20260913233000 +0700" stop="20260914003000 +0700" channel="Tivie_vtv.id">
     <title lang="id">Mr.</title>
@@ -2785,103 +2315,78 @@
   </programme>
   <programme start="20260913000000 +0700" stop="20260913003000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">OMG</title>
-    <desc lang="id">OMG</desc>
   </programme>
   <programme start="20260913003000 +0700" stop="20260913013000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">iNews Sore</title>
-    <desc lang="id">iNews Sore</desc>
   </programme>
   <programme start="20260913013000 +0700" stop="20260913020000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">iNews Sport</title>
-    <desc lang="id">iNews Sport</desc>
   </programme>
   <programme start="20260913020000 +0700" stop="20260913023000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Breaking News</title>
-    <desc lang="id">Breaking News</desc>
   </programme>
   <programme start="20260913023000 +0700" stop="20260913033000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Sindo Prime Weekend</title>
-    <desc lang="id">Sindo Prime Weekend</desc>
   </programme>
   <programme start="20260913033000 +0700" stop="20260913040000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">iNews Malam</title>
-    <desc lang="id">iNews Malam</desc>
   </programme>
   <programme start="20260913040000 +0700" stop="20260913050000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Sindo Sore</title>
-    <desc lang="id">Sindo Sore</desc>
   </programme>
   <programme start="20260913050000 +0700" stop="20260913053000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Ayat-Ayat Langit</title>
-    <desc lang="id">Ayat-Ayat Langit</desc>
   </programme>
   <programme start="20260913053000 +0700" stop="20260913063000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Realita</title>
-    <desc lang="id">Realita</desc>
   </programme>
   <programme start="20260913063000 +0700" stop="20260913073000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">iNews Files</title>
-    <desc lang="id">iNews Files</desc>
   </programme>
   <programme start="20260913073000 +0700" stop="20260913090000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Sindo Today</title>
-    <desc lang="id">Sindo Today</desc>
   </programme>
   <programme start="20260913090000 +0700" stop="20260913100000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Special Report</title>
-    <desc lang="id">Special Report</desc>
   </programme>
   <programme start="20260913100000 +0700" stop="20260913103000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Autotech</title>
-    <desc lang="id">Autotech</desc>
   </programme>
   <programme start="20260913103000 +0700" stop="20260913120000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Sindo Siang</title>
-    <desc lang="id">Sindo Siang</desc>
   </programme>
   <programme start="20260913120000 +0700" stop="20260913123000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Food Diary</title>
-    <desc lang="id">Food Diary</desc>
   </programme>
   <programme start="20260913123000 +0700" stop="20260913130000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">I Love Indonesia</title>
-    <desc lang="id">I Love Indonesia</desc>
   </programme>
   <programme start="20260913130000 +0700" stop="20260913143000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Sindo Today</title>
-    <desc lang="id">Sindo Today</desc>
   </programme>
   <programme start="20260913143000 +0700" stop="20260913153000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Buletin iNews Siang</title>
-    <desc lang="id">Buletin iNews Siang</desc>
   </programme>
   <programme start="20260913153000 +0700" stop="20260913160000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Special Report</title>
-    <desc lang="id">Special Report</desc>
   </programme>
   <programme start="20260913160000 +0700" stop="20260913180000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Sindo Sore</title>
-    <desc lang="id">Sindo Sore</desc>
   </programme>
   <programme start="20260913180000 +0700" stop="20260913190000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Arena Politik</title>
-    <desc lang="id">Arena Politik</desc>
   </programme>
   <programme start="20260913190000 +0700" stop="20260913200000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Sindo Prime Weekend</title>
-    <desc lang="id">Sindo Prime Weekend</desc>
   </programme>
   <programme start="20260913200000 +0700" stop="20260913210000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Realita</title>
-    <desc lang="id">Realita</desc>
   </programme>
   <programme start="20260913210000 +0700" stop="20260913220000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Interupsi</title>
-    <desc lang="id">Interupsi</desc>
   </programme>
   <programme start="20260913220000 +0700" stop="20260913230000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">Pemimpin Rakyat</title>
-    <desc lang="id">Pemimpin Rakyat</desc>
   </programme>
   <programme start="20260913230000 +0700" stop="20260914000000 +0700" channel="Tivie_sindonews.id">
     <title lang="id">iNews Room</title>
@@ -8807,10 +8312,6 @@
     <title lang="id">UIPM 2026 Pentathlon World Cup - S01:E01 - Cairo Highlights</title>
     <desc lang="id">Saksikan UIPM 2026 Pentathlon World Cup - S01:E01 - Cairo Highlights di wedoSports</desc>
   </programme>
-  <programme start="20260913122325 +0000" stop="20260913124641 +0000" channel="RedBullTV.global">
-    <title lang="en">The high road part 1</title>
-    <desc lang="en">Follow the rise of Nina Williams as she astounds the climbing world with a series of spectacular ascents.</desc>
-  </programme>
   <programme start="20260913124641 +0000" stop="20260913132511 +0000" channel="RedBullTV.global">
     <title lang="en">Reign and rise</title>
     <desc lang="en">At Red Bull Erzbergrodeo, 2023's winner – Manuel Lettenbichler – faces rising star Mitch Brightmore.</desc>
@@ -8887,9 +8388,9 @@
     <title lang="en">The return of the fastest MX racer on the planet</title>
     <desc lang="en">Jeffrey Herlings looks to get back to winning ways following a year filled with injuries and disappointments.</desc>
   </programme>
-  <programme start="20260913121914 +0000" stop="20260913124521 +0000" channel="RedBullPadel.global">
-    <title lang="en">Malaga Premier Padel P1 highlights</title>
-    <desc lang="en">Watch the highlights from the Malaga Premier Padel P1 tournament.</desc>
+  <programme start="20260913212047 +0000" stop="20260913214914 +0000" channel="RedBullTV.global">
+    <title lang="en">Jeffrey Herlings breaks the all-time wins record</title>
+    <desc lang="en">Jeffrey Herlings confirms his legendary status as he breaks the all-time MXGP wins record in Spain.</desc>
   </programme>
   <programme start="20260913124521 +0000" stop="20260913131112 +0000" channel="RedBullPadel.global">
     <title lang="en">Tarragona P1 Premier Padel highlights</title>
@@ -8931,11 +8432,11 @@
     <title lang="en">Bordeaux Premier Padel P2 highlights</title>
     <desc lang="en">Watch the highlights from the Bordeaux Premier Padel P2 tournament.</desc>
   </programme>
-  <programme start="20260913170313 +0000" stop="20260913172906 +0000" channel="RedBullPadel.global">
+  <programme start="20260913170313 +0000" stop="20260913172905 +0000" channel="RedBullPadel.global">
     <title lang="en">Germany Premier Padel P2 highlights</title>
     <desc lang="en">Watch the highlights from the Germany Premier Padel P2 tournament.</desc>
   </programme>
-  <programme start="20260913172906 +0000" stop="20260913175351 +0000" channel="RedBullPadel.global">
+  <programme start="20260913172905 +0000" stop="20260913175351 +0000" channel="RedBullPadel.global">
     <title lang="en">Meet padel stars Coello, Sanchez, Chingotto and Salazar</title>
     <desc lang="en">Four stars. Four cities. One sport. Hear emotional journeys from the padel court to the heart of the game.</desc>
   </programme>
@@ -8943,11 +8444,11 @@
     <title lang="en">Tarragona P1 Premier Padel highlights</title>
     <desc lang="en">Watch the highlights from Tarragona, Spain as the P1 Premier Padel took centre stage.</desc>
   </programme>
-  <programme start="20260913181941 +0000" stop="20260913184534 +0000" channel="RedBullPadel.global">
+  <programme start="20260913181941 +0000" stop="20260913184533 +0000" channel="RedBullPadel.global">
     <title lang="en">Germany Premier Padel P2 highlights</title>
     <desc lang="en">Watch the highlights from the Germany Premier Padel P2 tournament.</desc>
   </programme>
-  <programme start="20260913184534 +0000" stop="20260913191123 +0000" channel="RedBullPadel.global">
+  <programme start="20260913184533 +0000" stop="20260913191123 +0000" channel="RedBullPadel.global">
     <title lang="en">Italy Major Premier Padel highlights</title>
     <desc lang="en">Watch the highlights from the Italy Major Premier Padel tournament held at Foro Italico in Rome.</desc>
   </programme>
@@ -8967,9 +8468,9 @@
     <title lang="en">Bordeaux Premier Padel P2 highlights</title>
     <desc lang="en">Watch the highlights from the Bordeaux Premier Padel P2 tournament.</desc>
   </programme>
-  <programme start="20260913123134 +0000" stop="20260913125712 +0000" channel="RedBullBike.global">
-    <title lang="en">Asa Vermette's Ascent</title>
-    <desc lang="en">Follow Asa Vermette – one of mountain biking’s most exciting young riders – on his debut at Red Bull Hardline.</desc>
+  <programme start="20260913205409 +0000" stop="20260913212014 +0000" channel="RedBullPadel.global">
+    <title lang="en">Paris Major Premier Padel highlights</title>
+    <desc lang="en">Watch the highlights from the Paris Major Premier Padel tournament held at Roland-Garros stadium.</desc>
   </programme>
   <programme start="20260913125712 +0000" stop="20260913133357 +0000" channel="RedBullBike.global">
     <title lang="en">Brandon Semenuk – Steps to the Top</title>
@@ -9047,9 +8548,9 @@
     <title lang="en">Remy Morton: Seven Days and $7K</title>
     <desc lang="en">Can Australian MTB freerider Remy Morton build his ultimate line in seven days and with a AUD$7,000 budget?</desc>
   </programme>
-  <programme start="20260913115401 +0000" stop="20260913124201 +0000" channel="RedBullAdventure.global">
-    <title lang="en">360 Ascent</title>
-    <desc lang="en">Climbers Janja Garnbret and Domen Škofic scale the tallest artificial multi-pitch route in the world.</desc>
+  <programme start="20260913232309 +0000" stop="20260913234704 +0000" channel="RedBullBike.global">
+    <title lang="en">New Zealand</title>
+    <desc lang="en">Rob Warner and slopestyle genius Matt Jones make their way through New Zealand’s South Island trails.</desc>
   </programme>
   <programme start="20260913124201 +0000" stop="20260913142038 +0000" channel="RedBullAdventure.global">
     <title lang="en">Valley Uprising</title>
@@ -9059,11 +8560,11 @@
     <title lang="en">K2 The Impossible Descent</title>
     <desc lang="en">Andrzej Bargiel reaches Pakistan to descend K2, the world's second-highest peak after Mount Everest, on skis.</desc>
   </programme>
-  <programme start="20260913152625 +0000" stop="20260913154437 +0000" channel="RedBullAdventure.global">
+  <programme start="20260913152625 +0000" stop="20260913154436 +0000" channel="RedBullAdventure.global">
     <title lang="en">The VR experiment</title>
     <desc lang="en">Alex Honnold, Nico Hojac and team take on an iconic face in the Italian Dolomites while filming a VR film.</desc>
   </programme>
-  <programme start="20260913154437 +0000" stop="20260913160538 +0000" channel="RedBullAdventure.global">
+  <programme start="20260913154436 +0000" stop="20260913160538 +0000" channel="RedBullAdventure.global">
     <title lang="en">Fairy Flight</title>
     <desc lang="en">Valentin Delluc drops from a hot air balloon for a speedflying adventure in Turkey's magical Cappadocia.</desc>
   </programme>
@@ -9071,11 +8572,11 @@
     <title lang="en">Best moments from Copenhagen</title>
     <desc lang="en">These are the best moments from the third event of the 2022 Red Bull Cliff Diving World Series in Denmark.</desc>
   </programme>
-  <programme start="20260913165803 +0000" stop="20260913171705 +0000" channel="RedBullAdventure.global">
+  <programme start="20260913165803 +0000" stop="20260913171704 +0000" channel="RedBullAdventure.global">
     <title lang="en">The high road part 2</title>
     <desc lang="en">Nina Williams hones in on an outrageous new objective: a 15m-tall boulder called Too Big to Flail.</desc>
   </programme>
-  <programme start="20260913171705 +0000" stop="20260913173432 +0000" channel="RedBullAdventure.global">
+  <programme start="20260913171704 +0000" stop="20260913173432 +0000" channel="RedBullAdventure.global">
     <title lang="en">One Day, 4061m &amp; 4478m</title>
     <desc lang="en">Most people need several days to take on two alpine challenges. Can ultrarunner Fernanda Maciel do it in one?</desc>
   </programme>
@@ -9091,11 +8592,11 @@
     <title lang="en">K2 The Impossible Descent</title>
     <desc lang="en">Andrzej Bargiel reaches Pakistan to descend K2, the world's second-highest peak after Mount Everest, on skis.</desc>
   </programme>
-  <programme start="20260913191621 +0000" stop="20260913205459 +0000" channel="RedBullAdventure.global">
+  <programme start="20260913191621 +0000" stop="20260913205458 +0000" channel="RedBullAdventure.global">
     <title lang="en">Valley Uprising</title>
     <desc lang="en">Join Alex Honnold for an inside look into how climbers carved out a counterculture lifestyle in Yosemite.</desc>
   </programme>
-  <programme start="20260913205459 +0000" stop="20260913211557 +0000" channel="RedBullAdventure.global">
+  <programme start="20260913205458 +0000" stop="20260913211557 +0000" channel="RedBullAdventure.global">
     <title lang="en">The Nose speed record part 1</title>
     <desc lang="en">Alex Honnold and Tommy Caldwell introduce us to the speed record on The Nose route up El Capitan, California.</desc>
   </programme>
@@ -9127,9 +8628,9 @@
     <title lang="en">The Nose speed record part 3</title>
     <desc lang="en">After weeks of practice and more than a few mishaps, Alex Honnold and Tommy Caldwell attempt the record.</desc>
   </programme>
-  <programme start="20260913121949 +0000" stop="20260913123546 +0000" channel="RedBullMotorsports.global">
-    <title lang="en">Meet Honda HRC's newest rider</title>
-    <desc lang="en">Jett and Hunter put their design skills to the test, while brother Tate joins the Honda HRC team.</desc>
+  <programme start="20260913233330 +0000" stop="20260914001000 +0000" channel="RedBullAdventure.global">
+    <title lang="en">Red Bull Dual Ascent</title>
+    <desc lang="en">Sixteen world-class athletes on eight teams battle to be the fastest up a wall of six gruelling pitches.</desc>
   </programme>
   <programme start="20260913123546 +0000" stop="20260913133913 +0000" channel="RedBullMotorsports.global">
     <title lang="en">Crandon World Cup</title>
@@ -9207,9 +8708,9 @@
     <title lang="en">The Tactician: A Cody Webb Story</title>
     <desc lang="en">At the top of the American Hard Enduro food chain, there’s one man that everyone looks up to: Cody Webb.</desc>
   </programme>
-  <programme start="20260913122524 +0000" stop="20260913124322 +0000" channel="RedBullSurfing.global">
-    <title lang="en">Lucas 'Chumbo' Chianca</title>
-    <desc lang="en">Join Brazil’s Lucas 'Chumbo' Chianca as he tackles the biggest waves on Earth across two memorable winters.</desc>
+  <programme start="20260913235942 +0000" stop="20260914005142 +0000" channel="RedBullMotorsports.global">
+    <title lang="en">Red Bull Romaniacs</title>
+    <desc lang="en">Highlights from one of the year's toughest Hard Enduro events include the Graham Jarvis / Jonny Walker rivalry.</desc>
   </programme>
   <programme start="20260913124322 +0000" stop="20260913142558 +0000" channel="RedBullSurfing.global">
     <title lang="en">And Two If By Sea</title>
@@ -9287,13 +8788,9 @@
     <title lang="en">Meet Kehu Butler in New Zealand</title>
     <desc lang="en">The future of Kiwi surfing, Māori Kehu Butler, examines his culture’s past in Made In: New Zealand.</desc>
   </programme>
-  <programme start="20260913122144 +0000" stop="20260913125017 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Gose Gerald &amp; Uganda Skateboard Society</title>
-    <desc lang="en">Madars Apse meets Uganda Skateboard Society founder, Gose Gerald, and his crew who invent their own tricks.</desc>
-  </programme>
-  <programme start="20260913125017 +0000" stop="20260913125643 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Margielyn Didal</title>
-    <desc lang="en">Get a tour of Margielyn Didal's home, catch a sesh at her nearby skate spot and chill with the locals.</desc>
+  <programme start="20260913235750 +0000" stop="20260914004543 +0000" channel="RedBullSurfing.global">
+    <title lang="en">Shaping Jordy</title>
+    <desc lang="en">Ride along with Jordy Smith and Mikey February as they cruise the South African coast in search of waves.</desc>
   </programme>
   <programme start="20260913125643 +0000" stop="20260913130405 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Pura Pura Skatepark, Bolivia</title>
@@ -9367,9 +8864,13 @@
     <title lang="en">Joey Brezinski</title>
     <desc lang="en">See a day in the life of Joey Brezinski. Hit the road with his mobile skatepark to share the fun.</desc>
   </programme>
-  <programme start="20260913120341 +0000" stop="20260913124544 +0000" channel="RedBullWinter.global">
-    <title lang="en">Chasing Winter</title>
-    <desc lang="en">Pro snowboarder Mark McMorris and friends prepare for the upcoming high-stakes competition season.</desc>
+  <programme start="20260913181207 +0000" stop="20260913182505 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">TJ Rogers</title>
+    <desc lang="en">Get to know the daily life of pro skateboarder TJ Rogers, from what he eats, to how he lives and more.</desc>
+  </programme>
+  <programme start="20260913182505 +0000" stop="20260913183047 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Skatepark of Tampa</title>
+    <desc lang="en">Joey and Rip are in Skatepark of Tampa, Florida, home of the world famous Tampa Pro skate competition.</desc>
   </programme>
   <programme start="20260913124544 +0000" stop="20260913130803 +0000" channel="RedBullWinter.global">
     <title lang="en">Finland</title>
@@ -9447,33 +8948,9 @@
     <title lang="en">Dynamic Medium</title>
     <desc lang="en">Watch American freeskier Bobby Brown chase the dynamic medium that is snow around the globe.</desc>
   </programme>
-  <programme start="20260913123029 +0000" stop="20260913123443 +0000" channel="RedBullActionReel.global">
-    <title lang="en">CJ Collins FER DAYZ</title>
-    <desc lang="en">Abandoned pools, DIYs and even some street action from everyone's favourite all-terrain animal, CJ Collins.</desc>
-  </programme>
-  <programme start="20260913123443 +0000" stop="20260913123759 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Keys to the track</title>
-    <desc lang="en">Travis Pastrana, Alexander Rossi and Gregg Duffy are not deterred by the plunging winter temps.</desc>
-  </programme>
-  <programme start="20260913123759 +0000" stop="20260913124142 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Jack Robinson</title>
-    <desc lang="en">Filmer Kim Feast showcases Western Australia's most promising young surfer, Jack Robinson.</desc>
-  </programme>
-  <programme start="20260913124142 +0000" stop="20260913125034 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Ricciardo takes on the Outback</title>
-    <desc lang="en">The 'Honey Badger' in Oz – Red Bull Racing send driver Daniel Ricciardo to Melbourne's Albert Park circuit.</desc>
-  </programme>
-  <programme start="20260913125034 +0000" stop="20260913125241 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Freerunning illusions</title>
-    <desc lang="en">Jason Paul and Pasha Petkuns play mind tricks as they defy gravity with their freerunning illusions.</desc>
-  </programme>
-  <programme start="20260913125241 +0000" stop="20260913125423 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Nouria Newman kayaks in British Columbia</title>
-    <desc lang="en">Follow Nouria Newman as she visits Canada to kayak the white water of British Columbia's Spillimacheen River.</desc>
-  </programme>
-  <programme start="20260913125423 +0000" stop="20260913125927 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Warehouse paradise</title>
-    <desc lang="en">Mini ramp suspended from ceiling – challenge accepted by skateboarders Jaakko Ojanen, Philipp Schuster and co.</desc>
+  <programme start="20260913190424 +0000" stop="20260913192324 +0000" channel="RedBullWinter.global">
+    <title lang="en">BLOOOM</title>
+    <desc lang="en">Niels Schack's snowboard film features Burton team riders expressing themselves through creative riding.</desc>
   </programme>
   <programme start="20260913125927 +0000" stop="20260913130447 +0000" channel="RedBullActionReel.global">
     <title lang="en">Benny Milam’s snowmobile session with Levi LaVallee</title>
@@ -9515,17 +8992,45 @@
     <title lang="en">Cherry blossoms</title>
     <desc lang="en">Check out all the great spots skateboarder Simon Stricker found to shred on a trip to Taiwan.</desc>
   </programme>
-  <programme start="20260913133509 +0000" stop="20260913133751 +0000" channel="RedBullActionReel.global">
+  <programme start="20260913133509 +0000" stop="20260913133750 +0000" channel="RedBullActionReel.global">
     <title lang="en">Catching storm waves</title>
     <desc lang="en">As a big North Pacific storm bears down on the Hawaiian islands the guys take to the wild waves of Jaws.</desc>
   </programme>
-  <programme start="20260913133751 +0000" stop="20260913134011 +0000" channel="RedBullActionReel.global">
+  <programme start="20260913133750 +0000" stop="20260913134011 +0000" channel="RedBullActionReel.global">
     <title lang="en">Dancing in the lights</title>
     <desc lang="en">Get your 2019 going in style with a celebratory dance performance on the roofs of Mumbai in India.</desc>
   </programme>
-  <programme start="20260913134011 +0000" stop="20260913134653 +0000" channel="RedBullActionReel.global">
+  <programme start="20260913134011 +0000" stop="20260913134652 +0000" channel="RedBullActionReel.global">
     <title lang="en">From sim to reality</title>
     <desc lang="en">Max Verstappen gets sucked into his simulator and needs to clear different levels to get to the Belgium GP.</desc>
+  </programme>
+  <programme start="20260913134652 +0000" stop="20260913135100 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Rhine Line</title>
+    <desc lang="en">FIM FMX World Champion and X Games gold medal winner Luc Ackermann unveils three world firsts.</desc>
+  </programme>
+  <programme start="20260913135100 +0000" stop="20260913135250 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Brandon Semenuk unleashed in an abandoned mine</title>
+    <desc lang="en">For his sixth contribution to our Raw 100 series, Brandon Semenuk heads to Merritt, British Columbia.</desc>
+  </programme>
+  <programme start="20260913135250 +0000" stop="20260913135555 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Brandon Semenuk – Japan</title>
+    <desc lang="en">Brandon Semenuk and Revel Co head to Hakuba, Japan, for the latest instalment of MTB RAW.</desc>
+  </programme>
+  <programme start="20260913135555 +0000" stop="20260913135834 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Uncontainable</title>
+    <desc lang="en">Always looking for bigger set-ups, Drew Bezanson built a custom BMX park using enormous shipping containers.</desc>
+  </programme>
+  <programme start="20260913135834 +0000" stop="20260913140509 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Skate highlights</title>
+    <desc lang="en">Watch the best of an all-action eight-day skate demo mission through Europe with Ryan Sheckler and crew.</desc>
+  </programme>
+  <programme start="20260913140509 +0000" stop="20260913141010 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Kriss Kyle swaps BMX for MTB</title>
+    <desc lang="en">The wild woods of Wales bear witness to the bike-handling maestro, Kriss Kyle, in a classic British winter.</desc>
+  </programme>
+  <programme start="20260913141010 +0000" stop="20260913141237 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Martin Söderström and Emil Johansson</title>
+    <desc lang="en">See Martin Söderström and Emil Johansson put their style and excellency in focus at Järvsö, Sweden.</desc>
   </programme>
   <programme start="20260913000000 +0700" stop="20260913013000 +0700" channel="MNC_abc-australia-channel-350.id">
     <title lang="id">Facing Monsters</title>
@@ -22584,12 +22089,12 @@
     <desc lang="kk">Бағдарлама Концерт</desc>
   </programme>
   <programme start="20260913170000 +0500" stop="20260913180000 +0500" channel="AbaiTV.kz">
-    <title lang="kk">Бағдарлама. Тұрсын Жұртбайдың “Толық адам” зерттеу еңбегін талдау Үркер Онлайн қарау</title>
-    <desc lang="kk">Бағдарлама Бағдарлама. Тұрсын Жұртбайдың “Толық адам” зерттеу еңбегін талдау Үркер Онлайн қарау</desc>
+    <title lang="kk">Үркер</title>
+    <desc lang="kk">Бағдарлама Үркер</desc>
   </programme>
   <programme start="20260913180000 +0500" stop="20260913183000 +0500" channel="AbaiTV.kz">
-    <title lang="kk">Өрнек</title>
-    <desc lang="kk">Бағдарлама Өрнек</desc>
+    <title lang="kk">Бағдарлама. Гүлнәз Жұмажанқызы Өрнек Онлайн қарау</title>
+    <desc lang="kk">Бағдарлама Бағдарлама. Гүлнәз Жұмажанқызы Өрнек Онлайн қарау</desc>
   </programme>
   <programme start="20260913183000 +0500" stop="20260913193000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Пайым</title>
@@ -22756,12 +22261,12 @@
     <desc lang="kk">Бағдарлама 14:00-17:00 ТЕХНИКАЛЫҚ ҮЗІЛІС</desc>
   </programme>
   <programme start="20260913170000 +0500" stop="20260913180000 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">Ақпараттық-сазды хабар "БЕСТІҢ ШАЙЫ" Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Ақпараттық-сазды хабар "БЕСТІҢ ШАЙЫ" Онлайн көру</desc>
+    <title lang="kk">"БЕСТІҢ ШАЙЫ"</title>
+    <desc lang="kk">Бағдарлама "БЕСТІҢ ШАЙЫ"</desc>
   </programme>
   <programme start="20260913180000 +0500" stop="20260913181500 +0500" channel="AqtobeTV.kz">
-    <title lang="kk">"ҚАЙСАР"</title>
-    <desc lang="kk">Бағдарлама "ҚАЙСАР"</desc>
+    <title lang="kk">Әскери-патриоттық хабар "ҚАЙСАР" Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Әскери-патриоттық хабар "ҚАЙСАР" Онлайн көру</desc>
   </programme>
   <programme start="20260913181500 +0500" stop="20260913183000 +0500" channel="AqtobeTV.kz">
     <title lang="kk">"САЗДЫ СӘЛЕМ"</title>
@@ -22996,10 +22501,14 @@
     <desc lang="kk">Бағдарлама Мұра</desc>
   </programme>
   <programme start="20260913150000 +0500" stop="20260913180000 +0500" channel="ErtisTV.kz">
-    <title lang="kk">Техникалық үзіліс Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Техникалық үзіліс Онлайн көру</desc>
+    <title lang="kk">Техникалық үзіліс</title>
+    <desc lang="kk">Бағдарлама Техникалық үзіліс</desc>
   </programme>
-  <programme start="20260913180000 +0500" stop="20260913190000 +0500" channel="ErtisTV.kz">
+  <programme start="20260913180000 +0500" stop="20260913183000 +0500" channel="ErtisTV.kz">
+    <title lang="kk">Ақпаратық бағдарлама. Ertis ақпарат Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Ақпаратық бағдарлама. Ertis ақпарат Онлайн көру</desc>
+  </programme>
+  <programme start="20260913183000 +0500" stop="20260913190000 +0500" channel="ErtisTV.kz">
     <title lang="kk">Ertis ақпарат</title>
     <desc lang="kk">Бағдарлама Ertis ақпарат</desc>
   </programme>
@@ -23067,17 +22576,13 @@
     <title lang="kk">ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
     <desc lang="kk">Бағдарлама ТЕХНИКАЛЫҚ ҮЗІЛІС</desc>
   </programme>
-  <programme start="20260913170000 +0500" stop="20260913170500 +0500" channel="JambylTV.kz">
+  <programme start="20260913170000 +0500" stop="20260913180000 +0500" channel="JambylTV.kz">
     <title lang="kk">Аңдатпа</title>
     <desc lang="kk">Бағдарлама Аңдатпа</desc>
   </programme>
-  <programme start="20260913170500 +0500" stop="20260913180000 +0500" channel="JambylTV.kz">
-    <title lang="kk">телехикая 13-бөлімі ҮНСІЗ КҮРЕС Онлайн көру</title>
-    <desc lang="kk">Бағдарлама телехикая 13-бөлімі ҮНСІЗ КҮРЕС Онлайн көру</desc>
-  </programme>
   <programme start="20260913180000 +0500" stop="20260913183000 +0500" channel="JambylTV.kz">
-    <title lang="kk">САРАПТАЙМ</title>
-    <desc lang="kk">Бағдарлама САРАПТАЙМ</desc>
+    <title lang="kk">апта қорытындысы /ақпараттық бағдарлама САРАПТАЙМ Онлайн көру</title>
+    <desc lang="kk">Бағдарлама апта қорытындысы /ақпараттық бағдарлама САРАПТАЙМ Онлайн көру</desc>
   </programme>
   <programme start="20260913183000 +0500" stop="20260913190000 +0500" channel="JambylTV.kz">
     <title lang="kk">СОБЫТИЯ НЕДЕЛИ</title>
@@ -23236,12 +22741,12 @@
     <desc lang="kk">Бағдарлама AraLike</desc>
   </programme>
   <programme start="20260913140000 +0500" stop="20260913180000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Ақпараттық-сараптамалық "Өзекті мәселе" Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Ақпараттық-сараптамалық "Өзекті мәселе" Онлайн көру</desc>
+    <title lang="kk">"Өзекті мәселе"</title>
+    <desc lang="kk">Бағдарлама "Өзекті мәселе"</desc>
   </programme>
   <programme start="20260913180000 +0500" stop="20260913190000 +0500" channel="MangystauTV.kz">
-    <title lang="kk">Aқтау Life</title>
-    <desc lang="kk">Бағдарлама Aқтау Life</desc>
+    <title lang="kk">Aқтау Life Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Aқтау Life Онлайн көру</desc>
   </programme>
   <programme start="20260913190000 +0500" stop="20260913203000 +0500" channel="MangystauTV.kz">
     <title lang="kk">Арнайы репортаж</title>
@@ -23304,12 +22809,12 @@
     <desc lang="kk">Бағдарлама Арнаның ашылуы</desc>
   </programme>
   <programme start="20260913170500 +0500" stop="20260913175000 +0500" channel="OntustikTV.kz">
-    <title lang="kk">мәдени-танымдық бағдарлама «Күміс көмей» Онлайн көру</title>
-    <desc lang="kk">Бағдарлама мәдени-танымдық бағдарлама «Күміс көмей» Онлайн көру</desc>
+    <title lang="kk">«Күміс көмей»</title>
+    <desc lang="kk">Бағдарлама «Күміс көмей»</desc>
   </programme>
   <programme start="20260913175000 +0500" stop="20260913181500 +0500" channel="OntustikTV.kz">
-    <title lang="kk">«Жаңа қоғам»</title>
-    <desc lang="kk">Бағдарлама «Жаңа қоғам»</desc>
+    <title lang="kk">қоғамдық бағдарлама «Жаңа қоғам» Онлайн көру</title>
+    <desc lang="kk">Бағдарлама қоғамдық бағдарлама «Жаңа қоғам» Онлайн көру</desc>
   </programme>
   <programme start="20260913181500 +0500" stop="20260913190000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Ойна да, ойлан»</title>
@@ -23384,12 +22889,12 @@
     <desc lang="kk">Бағдарлама Техникалық үзіліс (14:00-17:00)</desc>
   </programme>
   <programme start="20260913170000 +0500" stop="20260913180000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«БІЗДІҢ СЫНЫП» телехикая (15 бөлім) («Qazaqstan» ҰТА, 2022 ж.) Онлайн көру</title>
-    <desc lang="kk">Бағдарлама «БІЗДІҢ СЫНЫП» телехикая (15 бөлім) («Qazaqstan» ҰТА, 2022 ж.) Онлайн көру</desc>
+    <title lang="kk">«БІЗДІҢ СЫНЫП» телехикая (15 бөлім) («Qazaqstan» ҰТА, 2022 ж.)</title>
+    <desc lang="kk">Бағдарлама «БІЗДІҢ СЫНЫП» телехикая (15 бөлім) («Qazaqstan» ҰТА, 2022 ж.)</desc>
   </programme>
   <programme start="20260913180000 +0500" stop="20260913183000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«ТУҒАН ЖЕР ТҰЛҒАЛАРЫ» (мәдени-танымдық бағдарлама )(қайталау)</title>
-    <desc lang="kk">Бағдарлама «ТУҒАН ЖЕР ТҰЛҒАЛАРЫ» (мәдени-танымдық бағдарлама )(қайталау)</desc>
+    <title lang="kk">«ТУҒАН ЖЕР ТҰЛҒАЛАРЫ» (мәдени-танымдық бағдарлама )(қайталау) Онлайн көру</title>
+    <desc lang="kk">Бағдарлама «ТУҒАН ЖЕР ТҰЛҒАЛАРЫ» (мәдени-танымдық бағдарлама )(қайталау) Онлайн көру</desc>
   </programme>
   <programme start="20260913183000 +0500" stop="20260913191000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«ЖОЛ ҮСТІНДЕ» (қоғамдық бағдарлама)(қайталау)</title>
@@ -23471,9 +22976,13 @@
     <title lang="kk">17:00-ге дейін техникалық үзіліс</title>
     <desc lang="kk">Бағдарлама 17:00-ге дейін техникалық үзіліс</desc>
   </programme>
-  <programme start="20260913170000 +0500" stop="20260913182000 +0500" channel="QyzylordaTV.kz">
-    <title lang="kk">"Ауыл мұғалімі" т/с. /4-сер./ Онлайн көру</title>
-    <desc lang="kk">Бағдарлама "Ауыл мұғалімі" т/с. /4-сер./ Онлайн көру</desc>
+  <programme start="20260913170000 +0500" stop="20260913180000 +0500" channel="QyzylordaTV.kz">
+    <title lang="kk">"Ауыл мұғалімі" т/с. /4-сер./</title>
+    <desc lang="kk">Бағдарлама "Ауыл мұғалімі" т/с. /4-сер./</desc>
+  </programme>
+  <programme start="20260913180000 +0500" stop="20260913182000 +0500" channel="QyzylordaTV.kz">
+    <title lang="kk">"АПТА АҒЫМЫНДА" /дайджест/ Онлайн көру</title>
+    <desc lang="kk">Бағдарлама "АПТА АҒЫМЫНДА" /дайджест/ Онлайн көру</desc>
   </programme>
   <programme start="20260913182000 +0500" stop="20260913184500 +0500" channel="QyzylordaTV.kz">
     <title lang="kk">"Syr travel"</title>
@@ -23556,12 +23065,12 @@
     <desc lang="kk">Бағдарлама ТЕХНИКАЛЫҚ ҮЗІЛІС</desc>
   </programme>
   <programme start="20260913170000 +0500" stop="20260913180000 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">Телехикая «Әділ Зере» Онлайн көру</title>
-    <desc lang="kk">Бағдарлама Телехикая «Әділ Зере» Онлайн көру</desc>
+    <title lang="kk">«Әділ Зере»</title>
+    <desc lang="kk">Бағдарлама «Әділ Зере»</desc>
   </programme>
   <programme start="20260913180000 +0500" stop="20260913183500 +0500" channel="SaryarqaTV.kz">
-    <title lang="kk">«Ізгілік іздері»</title>
-    <desc lang="kk">Бағдарлама «Ізгілік іздері»</desc>
+    <title lang="kk">Ақпараттық-танымдық бағдарлама «Ізгілік іздері» Онлайн көру</title>
+    <desc lang="kk">Бағдарлама Ақпараттық-танымдық бағдарлама «Ізгілік іздері» Онлайн көру</desc>
   </programme>
   <programme start="20260913183500 +0500" stop="20260913190000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Таза Қазақстан»</title>
