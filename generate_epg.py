@@ -595,35 +595,47 @@ def fetch_epg_qazaqstan(target):
     return channels, programmes
 
 # --- 7. RED BULL TV ---
-def fetch_epg_redbull_all(targets):
-    channels = [{"id": t["id"], "name": t["name"]} for t in targets]
+def fetch_single_redbull_channel(t):
+    api_url = f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}"
     programmes = []
-    
-    def extract_raw_items(data):
-        if isinstance(data, list): return data
-        if isinstance(data, dict):
-            if "items" in data and isinstance(data["items"], list): return data["items"]
-            if "cards" in data and isinstance(data["cards"], list): return data["cards"]
-            for key in ["data", "epg", "collection"]:
-                if key in data and isinstance(data[key], dict):
-                    res = extract_raw_items(data[key])
-                    if res: return res
-        return []
+    try:
+        res = HTTP_SESSION.get(api_url, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            cards = data.get("cards", [])
+            for item in cards:
+                title = item.get("title")
+                desc = item.get("short_description") or item.get("long_description") or f"Watch {title} on {t['name']}"
+                start_iso = item.get("start_time")
+                end_iso = item.get("end_time")
 
-    for t in targets:
-        try:
-            res = HTTP_SESSION.get(f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}", timeout=8)
-            if res.status_code == 200:
-                for item in extract_raw_items(res.json()):
-                    title, desc = item.get("title") or item.get("label"), item.get("description") or item.get("short_description")
-                    start_iso, end_iso = item.get("start_time") or item.get("startTime"), item.get("end_time") or item.get("endTime")
-                    if start_iso and title:
-                        start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
-                        end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")) if end_iso else start_dt + timedelta(hours=1)
-                        programmes.append({"channel": t["id"], "start": format_xmltv_date(start_dt, "+0000"), "stop": format_xmltv_date(end_dt, "+0000"), "title": clean_text_str(title), "desc": clean_text_str(desc), "lang": "en"})
-                print(f"[✓] Red Bull TV [{t['name']}]: Loaded programs!")
-        except Exception as e: print(f"[!] Red Bull API Error: {e}")
-    return channels, programmes
+                if start_iso and title:
+                    start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
+                    end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")) if end_iso else start_dt + timedelta(hours=1)
+
+                    programmes.append({
+                        "channel": t["id"], 
+                        "start": format_xmltv_date(start_dt, "+0000"), 
+                        "stop": format_xmltv_date(end_dt, "+0000"), 
+                        "title": clean_text_str(title), 
+                        "desc": clean_text_str(desc), 
+                        "lang": "en"
+                    })
+            print(f"[✓] Red Bull TV [{t['name']}]: Loaded {len(programmes)} programs successfully!")
+    except Exception as e:
+        print(f"[!] Red Bull TV Error [{t['name']}]: {e}")
+    return {"id": t["id"], "name": t["name"]}, programmes
+
+def fetch_epg_redbull_all(targets):
+    channels = []
+    all_programmes = []
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        results = executor.map(fetch_single_redbull_channel, targets)
+        for ch_info, progs in results:
+            if progs:
+                channels.append(ch_info)
+                all_programmes.extend(progs)
+    return channels, all_programmes
 
 # --- ROUTER & EXECUTION ---
 def process_single_target(target):
