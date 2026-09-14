@@ -510,15 +510,19 @@ def get_mnc_channel_options():
                     val = opt.get("value")
                     raw_name = clean_text_str(opt.get_text())
                     if val and str(val) != "0" and raw_name and "Pilih Channel" not in raw_name and "Toggle" not in raw_name:
-                        slug = re.sub(r'[-\s]+', '-', re.sub(r'[^\w\s-]', '', raw_name.lower().strip()))
-                        slug_id = f"MNC_{slug}.id"
+                        
+                        clean_channel_name = re.sub(r'\s*-\s*\[.*?\]', '', raw_name).strip()
+                        
+                        slug = re.sub(r'[-\s]+', '-', re.sub(r'[^\w\s-]', '', clean_channel_name.lower().strip()))
+                        slug_id = f"MNC_{slug}_{val}.id"
+                        
                         channels.append({
                             "code": str(val),
-                            "clean_name": raw_name,
+                            "clean_name": clean_channel_name,
                             "slug_id": slug_id
                         })
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"[!] Failed to retrieve the channel list: {e}")
     return channels
 
 def fetch_single_mnc_epg(ch_info):
@@ -545,41 +549,44 @@ def fetch_single_mnc_epg(ch_info):
             table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
             if table:
                 rows = table.find_all("tr")[1:]
-                raw_list = []
+                ch_id = ch_info["slug_id"]
+                ch_name = ch_info["clean_name"]
+                
                 for row in rows:
                     cols = row.find_all(["td", "th"])
                     if len(cols) >= 2:
                         time_str = clean_text_str(cols[0].get_text())
                         title_str = clean_text_str(cols[1].get_text())
+                        
+                        duration_str = clean_text_str(cols[2].get_text()) if len(cols) >= 3 else ""
+
                         if time_str and title_str and "Toggle navigation" not in title_str:
                             match = TIME_PATTERN_HM.search(time_str)
                             if match:
                                 t_clean = match.group(1).replace(".", ":").zfill(5)[:5]
-                                raw_list.append((t_clean, title_str))
+                                try:
+                                    start_dt = datetime.strptime(f"{today_str} {t_clean}", "%Y-%m-%d %H:%M")
+                                    
+                                    stop_dt = start_dt + timedelta(hours=1)
+                                    dur_match = re.search(r"(\d{2}):(\d{2})", duration_str)
+                                    if dur_match:
+                                        h_dur, m_dur = int(dur_match.group(1)), int(dur_match.group(2))
+                                        stop_dt = start_dt + timedelta(hours=h_dur, minutes=m_dur)
+                                        if stop_dt <= start_dt:
+                                            stop_dt += timedelta(days=1)
 
-                if raw_list:
-                    ch_id = ch_info["slug_id"]
-                    ch_name = ch_info["clean_name"]
-                    for i in range(len(raw_list)):
-                        t_str, title = raw_list[i]
-                        try:
-                            start_dt = datetime.strptime(f"{today_str} {t_str}", "%Y-%m-%d %H:%M")
-                            if i + 1 < len(raw_list):
-                                stop_dt = datetime.strptime(f"{today_str} {raw_list[i+1][0]}", "%Y-%m-%d %H:%M")
-                                if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-                            else:
-                                stop_dt = start_dt + timedelta(hours=1)
-
-                            programmes.append({
-                                "channel": ch_id,
-                                "start": format_xmltv_date(start_dt, "+0700"),
-                                "stop": format_xmltv_date(stop_dt, "+0700"),
-                                "title": title,
-                                "desc": f"Acara {title} di {ch_name}",
-                                "lang": "id"
-                            })
-                        except Exception:
-                            continue
+                                    programmes.append({
+                                         "channel": ch_id,
+                                         "start": format_xmltv_date(start_dt, "+0700"),
+                                         "stop": format_xmltv_date(stop_dt, "+0700"),
+                                         "title": title_str,
+                                         "desc": "",
+                                         "lang": "id"
+                                    })
+                                except Exception:
+                                    continue
+                                    
+                if programmes:
                     print(f"[✓] MNC Vision [{ch_name}]: Loaded {len(programmes)} programs!")
                     return [{"id": ch_id, "name": ch_name}], programmes
     except Exception:
