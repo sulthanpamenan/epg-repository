@@ -1,6 +1,7 @@
 import base64
 import json
 import re
+import html
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
@@ -826,11 +827,14 @@ def generate_xmltv():
             p_elem = ET.SubElement(tv_elem, "programme", {"start": p["start"], "stop": p["stop"], "channel": p["channel"]})
             
             title_val = str(p["title"]) if not isinstance(p["title"], (set, list, dict)) else " ".join(p["title"])
-            ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = clean_text_str(title_val)
+            
+            cleaned_title = html.unescape(clean_text_str(title_val))
+            ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = cleaned_title
             
             if p.get("desc") and str(p["desc"]).strip():
                 desc_val = str(p["desc"]) if not isinstance(p["desc"], (set, list, dict)) else " ".join(p["desc"])
-                ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = clean_text_str(desc_val)
+                cleaned_desc = html.unescape(clean_text_str(desc_val))
+                ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = cleaned_desc
 
     try:
         ET.indent(tv_elem, space="  ")
