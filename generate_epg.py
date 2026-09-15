@@ -137,60 +137,66 @@ def scrape_single_tivie_channel(ch):
             for unwanted in soup.select("footer, .footer, script, style, .ads, .cookie-banner"):
                 unwanted.decompose()
 
-            text_blocks = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
-            
-            i = 0
-            while i < len(text_blocks):
-                line = text_blocks[i]
-                match = re.match(r'^(\d{2}:\d{2})(?:\s*WIB)?$', line, re.I)
-                if match:
-                    time_str = match.group(1)
-                    collected_lines = []
-                    
-                    j = i + 1
-                    while j < len(text_blocks):
-                        next_line = text_blocks[j]
-                        if re.match(r'^\d{2}:\d{2}', next_line) or not next_line:
-                            break
-                        
-                        if any(junk in next_line.lower() for junk in [
-                            "jadwal dapat berubah", "temukan lebih banyak", "berlangganan", 
-                            "copyright", "sewaktu-waktu", "tivie -"
-                        ]):
-                            j += 1
-                            continue
+            event_items = soup.select("li[id^='event-']")
+            if not event_items:
+                event_items = [li for li in soup.find_all("li") if TIME_PATTERN_HM.search(li.get_text())]
 
-                        if next_line.upper() not in ["WIB", "LIVE", "SELANJUTNYA"]:
-                            clean_l = re.sub(r'^(?:WIB|LIVE)\s*', '', next_line, flags=re.I).strip()
-                            clean_l = re.sub(r'\s+LIVE$', '', clean_l, flags=re.I).strip()
-                            if clean_l and clean_l not in collected_lines:
-                                collected_lines.append(clean_l)
-                        j += 1
+            for item in event_items:
+                full_text = item.get_text(" ", strip=True)
+                time_match = TIME_PATTERN_HM.search(full_text)
+                if not time_match:
+                    continue
+                t_str = time_match.group(1).replace(".", ":").zfill(5)[:5]
+
+                cat_div = item.select_one("div.text-sm.tracking-wide")
+                cat_str = clean_text_str(cat_div.get_text()) if cat_div else ""
+
+                h_elem = item.select_one("h5, h4")
+                if h_elem:
+                    h_clone = BeautifulSoup(str(h_elem), 'html.parser')
+                    for sub in h_clone.select("div.text-sm.tracking-wide"):
+                        sub.decompose()
+                    for sub in h_clone.select("span.sr-only"):
+                        sub.decompose()
                     
-                    if collected_lines:
-                        main_title = collected_lines[0]
+                    texts = [clean_text_str(t) for t in h_clone.stripped_strings if t not in ["WIB", "LIVE"]]
+                    texts = [t for t in texts if t != cat_str]
+                    prog_title = " ".join(texts) if texts else ""
+                else:
+                    prog_title = ""
+
+                if not prog_title and cat_str:
+                    prog_title = cat_str
+                    cat_str = ""
+
+                if not prog_title:
+                    continue
+
+                slot_keywords = ["sinema", "bioskop", "mega", "serie", "liga", "ftv", "layar", "special", "spesial", "box office", "preset", "live"]
+                if any(kw in cat_str.lower() for kw in slot_keywords):
+                    category = cat_str
+                    title = prog_title
+                elif cat_str and prog_title:
+                    if len(cat_str.split()) <= 2 and len(prog_title.split()) <= 3:
+                        title = f"{cat_str} {prog_title}"
                         category = "General"
-                        sub_desc = ""
+                    else:
+                        category = cat_str
+                        title = prog_title
+                elif cat_str:
+                    title = cat_str
+                    category = "General"
+                else:
+                    title = prog_title
+                    category = "General"
 
-                        if len(collected_lines) >= 2:
-                            if len(collected_lines[0]) < 25 and not any(kw in collected_lines[0].lower() for kw in ["vs", "eps"]):
-                                category = collected_lines[0]
-                                main_title = collected_lines[1]
-                                if len(collected_lines) > 2:
-                                    sub_desc = " ".join(collected_lines[2:])
-                            else:
-                                sub_desc = " ".join(collected_lines[1:])
-
-                        main_title = re.sub(r'\s*[()\[\]]\s*', ' ', main_title).strip()
-
-                        if not any(p['time'] == time_str and p['title'] == main_title for p in raw_list):
-                            raw_list.append({
-                                "time": time_str, 
-                                "title": main_title, 
-                                "desc": sub_desc,
-                                "category": category
-                            })
-                i += 1
+                if not any(p['time'] == t_str and p['title'] == title for p in raw_list):
+                    raw_list.append({
+                        "time": t_str,
+                        "title": title,
+                        "desc": "",
+                        "category": category
+                    })
 
         for idx in range(len(raw_list)):
             curr = raw_list[idx]
