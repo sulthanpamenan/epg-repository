@@ -133,6 +133,10 @@ def scrape_single_tivie_channel(ch):
         res = HTTP_SESSION.get(url, timeout=10)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
+            
+            for unwanted in soup.select("footer, .footer, script, style, .ads, .cookie-banner"):
+                unwanted.decompose()
+
             text_blocks = [line.strip() for line in soup.get_text("\n", strip=True).split("\n") if line.strip()]
             
             i = 0
@@ -148,6 +152,14 @@ def scrape_single_tivie_channel(ch):
                         next_line = text_blocks[j]
                         if re.match(r'^\d{2}:\d{2}', next_line) or not next_line:
                             break
+                        
+                        if any(junk in next_line.lower() for junk in [
+                            "jadwal dapat berubah", "temukan lebih banyak", "berlangganan", 
+                            "copyright", "sewaktu-waktu", "tivie -"
+                        ]):
+                            j += 1
+                            continue
+
                         if next_line.upper() not in ["WIB", "LIVE", "SELANJUTNYA"]:
                             clean_l = re.sub(r'^(?:WIB|LIVE)\s*', '', next_line, flags=re.I).strip()
                             clean_l = re.sub(r'\s+LIVE$', '', clean_l, flags=re.I).strip()
@@ -157,28 +169,26 @@ def scrape_single_tivie_channel(ch):
                     
                     if collected_lines:
                         main_title = collected_lines[0]
+                        category = "General"
                         sub_desc = ""
 
-                        if len(collected_lines) == 2 and len(collected_lines[1]) < 15 and not any(kw in collected_lines[1].lower() for kw in ["vs", "ftv", "eps", "pagi", "malam", "hari"]):
-                            main_title = f"{collected_lines[0]} {collected_lines[1]}"
-                            sub_desc = ""
-                        elif len(collected_lines) > 1:
-                            if len(collected_lines) == 2 and collected_lines[1].lower() in ["malam", "hari", "pagi", "sore", "dini hari"]:
-                                main_title = f"{collected_lines[0]} {collected_lines[1]}"
-                                sub_desc = ""
+                        if len(collected_lines) >= 2:
+                            if len(collected_lines[0]) < 25 and not any(kw in collected_lines[0].lower() for kw in ["vs", "eps"]):
+                                category = collected_lines[0]
+                                main_title = collected_lines[1]
+                                if len(collected_lines) > 2:
+                                    sub_desc = " ".join(collected_lines[2:])
                             else:
-                                combined_tail = " ".join(collected_lines[1:])
-                                if any(keyword in " ".join(collected_lines).lower() for keyword in ["vs", "tottenham", "arsenal", "chelsea"]):
-                                    combined_tail = re.sub(r'\s*-\s*', ' vs ', combined_tail)
-                                sub_desc = combined_tail
-                        else:
-                            sub_desc = ""
+                                sub_desc = " ".join(collected_lines[1:])
+
+                        main_title = re.sub(r'\s*[()\[\]]\s*', ' ', main_title).strip()
 
                         if not any(p['time'] == time_str and p['title'] == main_title for p in raw_list):
                             raw_list.append({
                                 "time": time_str, 
                                 "title": main_title, 
-                                "desc": sub_desc
+                                "desc": sub_desc,
+                                "category": category
                             })
                 i += 1
 
@@ -199,11 +209,12 @@ def scrape_single_tivie_channel(ch):
                 "stop": format_xmltv_date(stop_dt, "+0700"),
                 "title": curr["title"],
                 "desc": curr["desc"],
+                "category": curr["category"],
                 "lang": "id"
             })
             
         if programmes:
-            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs with details!")
+            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs cleanly!")
     except Exception as e:
         print(f"[!] Tivie Error [{ch_name}]: {e}")
 
@@ -827,7 +838,6 @@ def generate_xmltv():
             p_elem = ET.SubElement(tv_elem, "programme", {"start": p["start"], "stop": p["stop"], "channel": p["channel"]})
             
             title_val = str(p["title"]) if not isinstance(p["title"], (set, list, dict)) else " ".join(p["title"])
-            
             cleaned_title = html.unescape(clean_text_str(title_val))
             ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = cleaned_title
             
@@ -835,6 +845,10 @@ def generate_xmltv():
                 desc_val = str(p["desc"]) if not isinstance(p["desc"], (set, list, dict)) else " ".join(p["desc"])
                 cleaned_desc = html.unescape(clean_text_str(desc_val))
                 ET.SubElement(p_elem, "desc", lang=p.get("lang", "en")).text = cleaned_desc
+
+            if p.get("category") and str(p["category"]).strip() and p.get("category") != "General":
+                cat_val = str(p["category"])
+                ET.SubElement(p_elem, "category", lang=p.get("lang", "en")).text = html.unescape(clean_text_str(cat_val))
 
     try:
         ET.indent(tv_elem, space="  ")
