@@ -105,6 +105,9 @@
   <channel id="Dens_rtv.id">
     <display-name>RTV</display-name>
   </channel>
+  <channel id="Dens_elshinta-tv.id">
+    <display-name>Elshinta TV</display-name>
+  </channel>
   <channel id="Dens_magna-channel.id">
     <display-name>Magna Channel</display-name>
   </channel>
@@ -162,6 +165,9 @@
   <channel id="Dens_freedom.id">
     <display-name>FreeDOM</display-name>
   </channel>
+  <channel id="Dens_al-jazeera-arabic.id">
+    <display-name>Al Jazeera Arabic</display-name>
+  </channel>
   <channel id="Dens_cctv-4.id">
     <display-name>CCTV-4</display-name>
   </channel>
@@ -170,6 +176,9 @@
   </channel>
   <channel id="Dens_tv5monde-asie.id">
     <display-name>TV5Monde Asie</display-name>
+  </channel>
+  <channel id="Dens_dw-tv.id">
+    <display-name>DW TV</display-name>
   </channel>
   <channel id="Dens_dim-tv.id">
     <display-name>DIM TV</display-name>
@@ -228,26 +237,29 @@
   <channel id="MNC_abc-australia_350.id">
     <display-name>ABC Australia</display-name>
   </channel>
-  <channel id="MNC_al-quran-al-kareem_93.id">
-    <display-name>Al Quran Al Kareem</display-name>
-  </channel>
-  <channel id="MNC_animax_157.id">
-    <display-name>Animax</display-name>
-  </channel>
   <channel id="MNC_antv_115.id">
     <display-name>ANTV</display-name>
+  </channel>
+  <channel id="MNC_arirang_351.id">
+    <display-name>Arirang</display-name>
+  </channel>
+  <channel id="MNC_axn_154.id">
+    <display-name>AXN</display-name>
+  </channel>
+  <channel id="MNC_axn-hd_447.id">
+    <display-name>AXN HD</display-name>
   </channel>
   <channel id="MNC_bbc-earth_200.id">
     <display-name>BBC Earth</display-name>
   </channel>
-  <channel id="MNC_bbc-world-news_332.id">
-    <display-name>BBC World News</display-name>
+  <channel id="MNC_bbc-earth-hd_461.id">
+    <display-name>BBC Earth HD</display-name>
   </channel>
   <channel id="MNC_bein-sports-1_309.id">
     <display-name>beIN Sports 1</display-name>
   </channel>
-  <channel id="MNC_bein-sports-2_310.id">
-    <display-name>beIN Sports 2</display-name>
+  <channel id="MNC_bein-sports-1-hd_417.id">
+    <display-name>beIN Sports 1 HD</display-name>
   </channel>
   <channel id="MNC_bein-sports-2-hd_418.id">
     <display-name>beIN Sports 2 HD</display-name>
@@ -255,14 +267,11 @@
   <channel id="MNC_bein-sports-3_311.id">
     <display-name>beIN Sports 3</display-name>
   </channel>
-  <channel id="MNC_bein-sports-3-hd_419.id">
-    <display-name>beIN Sports 3 HD</display-name>
-  </channel>
   <channel id="MNC_bein-sports-4_312.id">
     <display-name>beIN SPORTS 4</display-name>
   </channel>
-  <channel id="MNC_bein-sports-5_313.id">
-    <display-name>beIN SPORTS 5</display-name>
+  <channel id="MNC_bloomberg_338.id">
+    <display-name>Bloomberg</display-name>
   </channel>
   <channel id="MNC_btv_103.id">
     <display-name>BTV</display-name>
@@ -3138,6 +3147,84 @@
   <programme start="20260915235950 +0700" stop="20260916005950 +0700" channel="Dens_rtv.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
+  <programme start="20260915000000 +0700" stop="20260915010000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915010000 +0700" stop="20260915013000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915013000 +0700" stop="20260915020000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915020000 +0700" stop="20260915030000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915030000 +0700" stop="20260915043000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915043000 +0700" stop="20260915053000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915053000 +0700" stop="20260915060000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915060000 +0700" stop="20260915063000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915063000 +0700" stop="20260915070000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915070000 +0700" stop="20260915080000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915080000 +0700" stop="20260915093000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915093000 +0700" stop="20260915100000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915100000 +0700" stop="20260915110000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915110000 +0700" stop="20260915113000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915113000 +0700" stop="20260915140000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915140000 +0700" stop="20260915150000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915150000 +0700" stop="20260915160000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915160000 +0700" stop="20260915170000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915170000 +0700" stop="20260915180000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915180000 +0700" stop="20260915183000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915183000 +0700" stop="20260915190000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915190000 +0700" stop="20260915210000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915210000 +0700" stop="20260915220000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915220000 +0700" stop="20260915230000 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915230000 +0700" stop="20260915235950 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
+  <programme start="20260915235950 +0700" stop="20260916005950 +0700" channel="Dens_elshinta-tv.id">
+    <title lang="id">The Schedule Is Not Available</title>
+  </programme>
   <programme start="20260915000000 +0700" stop="20260915010000 +0700" channel="Dens_magna-channel.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
@@ -4944,6 +5031,99 @@
   <programme start="20260915235950 +0700" stop="20260916005950 +0700" channel="Dens_freedom.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
+  <programme start="20260915000000 +0700" stop="20260915003000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915003000 +0700" stop="20260915010000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">Behind the News</title>
+  </programme>
+  <programme start="20260915010000 +0700" stop="20260915020000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915020000 +0700" stop="20260915020500 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Summary</title>
+  </programme>
+  <programme start="20260915020500 +0700" stop="20260915030000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">Opposite Direction news</title>
+  </programme>
+  <programme start="20260915030000 +0700" stop="20260915040000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915040000 +0700" stop="20260915050000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915050000 +0700" stop="20260915060000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915060000 +0700" stop="20260915063000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915063000 +0700" stop="20260915070000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">Behind the News</title>
+  </programme>
+  <programme start="20260915070000 +0700" stop="20260915070500 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Summary</title>
+  </programme>
+  <programme start="20260915070500 +0700" stop="20260915080000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">Opposite Direction news</title>
+  </programme>
+  <programme start="20260915080000 +0700" stop="20260915090000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915090000 +0700" stop="20260915093000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915093000 +0700" stop="20260915100000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915100000 +0700" stop="20260915110000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915110000 +0700" stop="20260915120000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915120000 +0700" stop="20260915130000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915130000 +0700" stop="20260915140000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915140000 +0700" stop="20260915150000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915150000 +0700" stop="20260915160000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915160000 +0700" stop="20260915170000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915170000 +0700" stop="20260915180000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915180000 +0700" stop="20260915190000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915190000 +0700" stop="20260915200000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915200000 +0700" stop="20260915210000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915210000 +0700" stop="20260915220000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915220000 +0700" stop="20260915230000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915230000 +0700" stop="20260915233000 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915233000 +0700" stop="20260915235950 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
+  <programme start="20260915235950 +0700" stop="20260916005950 +0700" channel="Dens_al-jazeera-arabic.id">
+    <title lang="id">News Bulletin</title>
+  </programme>
   <programme start="20260915000000 +0700" stop="20260915010000 +0700" channel="Dens_cctv-4.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
@@ -5531,6 +5711,228 @@
   </programme>
   <programme start="20260915235950 +0700" stop="20260916005950 +0700" channel="Dens_tv5monde-asie.id">
     <title lang="id">DÃ‰MO DE MODE</title>
+  </programme>
+  <programme start="20260915000000 +0700" stop="20260915001500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915001500 +0700" stop="20260915003000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Planet A: Spain's Invisible War</title>
+  </programme>
+  <programme start="20260915003000 +0700" stop="20260915010000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Dip: Business Podcast</title>
+  </programme>
+  <programme start="20260915010000 +0700" stop="20260915013000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915013000 +0700" stop="20260915020000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Close Up: The Current Affairs</title>
+  </programme>
+  <programme start="20260915020000 +0700" stop="20260915020200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915020200 +0700" stop="20260915021500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915021500 +0700" stop="20260915023000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Planet A: Spain's Invisible War</title>
+  </programme>
+  <programme start="20260915023000 +0700" stop="20260915030000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Best Of DW Podcasts</title>
+  </programme>
+  <programme start="20260915030000 +0700" stop="20260915033000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915033000 +0700" stop="20260915040000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Day: News In Review</title>
+  </programme>
+  <programme start="20260915040000 +0700" stop="20260915040200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915040200 +0700" stop="20260915041500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915041500 +0700" stop="20260915050000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DocFilm</title>
+  </programme>
+  <programme start="20260915050000 +0700" stop="20260915050200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915050200 +0700" stop="20260915053000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Day: News In Review</title>
+  </programme>
+  <programme start="20260915053000 +0700" stop="20260915060000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Dip: Business Podcast</title>
+  </programme>
+  <programme start="20260915060000 +0700" stop="20260915060200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915060200 +0700" stop="20260915061500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915061500 +0700" stop="20260915063000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Planet A: Spain's Invisible War</title>
+  </programme>
+  <programme start="20260915063000 +0700" stop="20260915070000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Close Up: The Current Affairs</title>
+  </programme>
+  <programme start="20260915070000 +0700" stop="20260915070200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915070200 +0700" stop="20260915073000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Day: News In Review</title>
+  </programme>
+  <programme start="20260915073000 +0700" stop="20260915080000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Eco Africa: Seek Justice</title>
+  </programme>
+  <programme start="20260915080000 +0700" stop="20260915080300 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915080300 +0700" stop="20260915090000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DocFilm</title>
+  </programme>
+  <programme start="20260915090000 +0700" stop="20260915090200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915090200 +0700" stop="20260915093000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Day: News In Review</title>
+  </programme>
+  <programme start="20260915093000 +0700" stop="20260915100000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">REV: Legacy Industry In Crisis</title>
+  </programme>
+  <programme start="20260915100000 +0700" stop="20260915100200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915100200 +0700" stop="20260915101500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915101500 +0700" stop="20260915103000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Planet A: Spain's Invisible War</title>
+  </programme>
+  <programme start="20260915103000 +0700" stop="20260915110000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Close Up: The Current Affairs</title>
+  </programme>
+  <programme start="20260915110000 +0700" stop="20260915110300 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915110300 +0700" stop="20260915120000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DocFilm</title>
+  </programme>
+  <programme start="20260915120000 +0700" stop="20260915120200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915120200 +0700" stop="20260915123000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Day: News In Review</title>
+  </programme>
+  <programme start="20260915123000 +0700" stop="20260915130000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Dip: Business Podcast</title>
+  </programme>
+  <programme start="20260915130000 +0700" stop="20260915130200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915130200 +0700" stop="20260915131500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915131500 +0700" stop="20260915133000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Planet A: Spain's Invisible War</title>
+  </programme>
+  <programme start="20260915133000 +0700" stop="20260915140000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Arts Unveiled: The Art World</title>
+  </programme>
+  <programme start="20260915140000 +0700" stop="20260915140200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915140200 +0700" stop="20260915141500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915141500 +0700" stop="20260915150000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DocFilm</title>
+  </programme>
+  <programme start="20260915150000 +0700" stop="20260915150200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915150200 +0700" stop="20260915153000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Global Us: What Connects Us All</title>
+  </programme>
+  <programme start="20260915153000 +0700" stop="20260915160000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Eco Africa: Seek Justice</title>
+  </programme>
+  <programme start="20260915160000 +0700" stop="20260915160200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915160200 +0700" stop="20260915161500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915161500 +0700" stop="20260915164500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Close Up: The Current Affairs</title>
+  </programme>
+  <programme start="20260915164500 +0700" stop="20260915170000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Reporter: On Location</title>
+  </programme>
+  <programme start="20260915170000 +0700" stop="20260915170300 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915170300 +0700" stop="20260915180000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DocFilm</title>
+  </programme>
+  <programme start="20260915180000 +0700" stop="20260915180200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915180200 +0700" stop="20260915183000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Tomorrow Today: Science</title>
+  </programme>
+  <programme start="20260915183000 +0700" stop="20260915190000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">In Good Shape: The Health Show</title>
+  </programme>
+  <programme start="20260915190000 +0700" stop="20260915190200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915190200 +0700" stop="20260915191500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915191500 +0700" stop="20260915194500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Close Up: The Current Affairs</title>
+  </programme>
+  <programme start="20260915194500 +0700" stop="20260915200000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Shift: Living In Digital Age</title>
+  </programme>
+  <programme start="20260915200000 +0700" stop="20260915200200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915200200 +0700" stop="20260915201500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915201500 +0700" stop="20260915203000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Business Beyond</title>
+  </programme>
+  <programme start="20260915203000 +0700" stop="20260915210000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Eco India: Nature's Gifts</title>
+  </programme>
+  <programme start="20260915210000 +0700" stop="20260915210200 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915210200 +0700" stop="20260915211500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News Focus</title>
+  </programme>
+  <programme start="20260915211500 +0700" stop="20260915214500 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Close Up: The Current Affairs</title>
+  </programme>
+  <programme start="20260915214500 +0700" stop="20260915220000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Reporter: On Location</title>
+  </programme>
+  <programme start="20260915220000 +0700" stop="20260915223000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915223000 +0700" stop="20260915230000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">The Dip: Business Podcast</title>
+  </programme>
+  <programme start="20260915230000 +0700" stop="20260915233000 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">DW News</title>
+  </programme>
+  <programme start="20260915233000 +0700" stop="20260915235950 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Global Us: What Connects Us All</title>
+  </programme>
+  <programme start="20260915235950 +0700" stop="20260916005950 +0700" channel="Dens_dw-tv.id">
+    <title lang="id">Global Us: What Connects Us All</title>
   </programme>
   <programme start="20260915000000 +0700" stop="20260915005000 +0700" channel="Dens_dim-tv.id">
     <title lang="id">Uzol and Manko (12+)</title>
@@ -7113,186 +7515,6 @@
   <programme start="20260915235500 +0700" stop="20260916003000 +0700" channel="MNC_abc-australia_350.id">
     <title lang="id">Australian Story</title>
   </programme>
-  <programme start="20260915000000 +0700" stop="20260915020000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915020000 +0700" stop="20260915040000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915040000 +0700" stop="20260915060000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915060000 +0700" stop="20260915080000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915080000 +0700" stop="20260915100000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915100000 +0700" stop="20260915120000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915120000 +0700" stop="20260915140000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915140000 +0700" stop="20260915160000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915160000 +0700" stop="20260915180000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915180000 +0700" stop="20260915200000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915200000 +0700" stop="20260915220000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915220000 +0700" stop="20260916000000 +0700" channel="MNC_al-quran-al-kareem_93.id">
-    <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260915000000 +0700" stop="20260915003000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 17</title>
-  </programme>
-  <programme start="20260915003000 +0700" stop="20260915010000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 18</title>
-  </programme>
-  <programme start="20260915010000 +0700" stop="20260915013000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 80</title>
-  </programme>
-  <programme start="20260915013000 +0700" stop="20260915020000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 81</title>
-  </programme>
-  <programme start="20260915020000 +0700" stop="20260915023000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 6</title>
-  </programme>
-  <programme start="20260915023000 +0700" stop="20260915030000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 7</title>
-  </programme>
-  <programme start="20260915030000 +0700" stop="20260915033000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 39</title>
-  </programme>
-  <programme start="20260915033000 +0700" stop="20260915040000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 40</title>
-  </programme>
-  <programme start="20260915040000 +0700" stop="20260915043000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 17</title>
-  </programme>
-  <programme start="20260915043000 +0700" stop="20260915050000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 18</title>
-  </programme>
-  <programme start="20260915050000 +0700" stop="20260915053000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 80</title>
-  </programme>
-  <programme start="20260915053000 +0700" stop="20260915060000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 81</title>
-  </programme>
-  <programme start="20260915060000 +0700" stop="20260915063000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 39</title>
-  </programme>
-  <programme start="20260915063000 +0700" stop="20260915070000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 40</title>
-  </programme>
-  <programme start="20260915070000 +0700" stop="20260915073000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 6</title>
-  </programme>
-  <programme start="20260915073000 +0700" stop="20260915080000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 7</title>
-  </programme>
-  <programme start="20260915080000 +0700" stop="20260915083000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 80</title>
-  </programme>
-  <programme start="20260915083000 +0700" stop="20260915090000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 81</title>
-  </programme>
-  <programme start="20260915090000 +0700" stop="20260915093000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 17</title>
-  </programme>
-  <programme start="20260915093000 +0700" stop="20260915100000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 18</title>
-  </programme>
-  <programme start="20260915100000 +0700" stop="20260915103000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 39</title>
-  </programme>
-  <programme start="20260915103000 +0700" stop="20260915110000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 40</title>
-  </programme>
-  <programme start="20260915110000 +0700" stop="20260915113000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 6</title>
-  </programme>
-  <programme start="20260915113000 +0700" stop="20260915120000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 7</title>
-  </programme>
-  <programme start="20260915120000 +0700" stop="20260915123000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S3, Ep 25</title>
-  </programme>
-  <programme start="20260915123000 +0700" stop="20260915130000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S3, Ep 26</title>
-  </programme>
-  <programme start="20260915130000 +0700" stop="20260915133000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 17</title>
-  </programme>
-  <programme start="20260915133000 +0700" stop="20260915140000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 18</title>
-  </programme>
-  <programme start="20260915140000 +0700" stop="20260915143000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 39</title>
-  </programme>
-  <programme start="20260915143000 +0700" stop="20260915150000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 40</title>
-  </programme>
-  <programme start="20260915150000 +0700" stop="20260915153000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 80</title>
-  </programme>
-  <programme start="20260915153000 +0700" stop="20260915160000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 81</title>
-  </programme>
-  <programme start="20260915160000 +0700" stop="20260915163000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Haikyu!! S2, Ep 8</title>
-  </programme>
-  <programme start="20260915163000 +0700" stop="20260915170000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Haikyu!! S2, Ep 9</title>
-  </programme>
-  <programme start="20260915170000 +0700" stop="20260915173000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 81</title>
-  </programme>
-  <programme start="20260915173000 +0700" stop="20260915180000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">D.Gray-Man, Ep 82</title>
-  </programme>
-  <programme start="20260915180000 +0700" stop="20260915183000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 40</title>
-  </programme>
-  <programme start="20260915183000 +0700" stop="20260915190000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 41</title>
-  </programme>
-  <programme start="20260915190000 +0700" stop="20260915193000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 7</title>
-  </programme>
-  <programme start="20260915193000 +0700" stop="20260915200000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 8</title>
-  </programme>
-  <programme start="20260915200000 +0700" stop="20260915203000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 40</title>
-  </programme>
-  <programme start="20260915203000 +0700" stop="20260915210000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 41</title>
-  </programme>
-  <programme start="20260915210000 +0700" stop="20260915213000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 19</title>
-  </programme>
-  <programme start="20260915213000 +0700" stop="20260915220000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Tsukimichi S2, Ep 20</title>
-  </programme>
-  <programme start="20260915220000 +0700" stop="20260915223000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 7</title>
-  </programme>
-  <programme start="20260915223000 +0700" stop="20260915230000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Foolish Angel Dances..., Ep 8</title>
-  </programme>
-  <programme start="20260915230000 +0700" stop="20260915233000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 40</title>
-  </programme>
-  <programme start="20260915233000 +0700" stop="20260916000000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Black Clover S1, Ep 41</title>
-  </programme>
   <programme start="20260915013000 +0700" stop="20260915020000 +0700" channel="MNC_antv_115.id">
     <title lang="id">Total Football: Highlight</title>
   </programme>
@@ -7331,6 +7553,318 @@
   </programme>
   <programme start="20260915230000 +0700" stop="20260916003000 +0700" channel="MNC_antv_115.id">
     <title lang="id">Mismatched Couples</title>
+  </programme>
+  <programme start="20260915000000 +0700" stop="20260915010000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">PerformArts Reload</title>
+  </programme>
+  <programme start="20260915010000 +0700" stop="20260915013000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">K-Culture Dive</title>
+  </programme>
+  <programme start="20260915013000 +0700" stop="20260915020000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">SmartBiz Accelerators</title>
+  </programme>
+  <programme start="20260915020000 +0700" stop="20260915023000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Within The Frame</title>
+  </programme>
+  <programme start="20260915023000 +0700" stop="20260915025000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">K-Culture Minutes: K-Now</title>
+  </programme>
+  <programme start="20260915025000 +0700" stop="20260915030000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">The Living Sea Of Jeju</title>
+  </programme>
+  <programme start="20260915030000 +0700" stop="20260915033000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Countryside Escape</title>
+  </programme>
+  <programme start="20260915033000 +0700" stop="20260915035000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">The Grand Heritage ASMR</title>
+  </programme>
+  <programme start="20260915035000 +0700" stop="20260915040000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">The Grand Heritage</title>
+  </programme>
+  <programme start="20260915040000 +0700" stop="20260915050000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">PerformArts Reload</title>
+  </programme>
+  <programme start="20260915050000 +0700" stop="20260915053000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">With Science, We Live</title>
+  </programme>
+  <programme start="20260915053000 +0700" stop="20260915055000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">K-Arts Artists</title>
+  </programme>
+  <programme start="20260915055000 +0700" stop="20260915060000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Heritage Walks With Friend</title>
+  </programme>
+  <programme start="20260915060000 +0700" stop="20260915063000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Trip In Korea</title>
+  </programme>
+  <programme start="20260915063000 +0700" stop="20260915065000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">K-Culture Minutes: K-People</title>
+  </programme>
+  <programme start="20260915065000 +0700" stop="20260915070000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">The Living Sea Of Jeju</title>
+  </programme>
+  <programme start="20260915070000 +0700" stop="20260915073000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Diplomat's Archive: Hidden</title>
+  </programme>
+  <programme start="20260915073000 +0700" stop="20260915080000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Countryside Escape</title>
+  </programme>
+  <programme start="20260915080000 +0700" stop="20260915083000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">New Day At Arirang</title>
+  </programme>
+  <programme start="20260915083000 +0700" stop="20260915090000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">News Generation (L)</title>
+  </programme>
+  <programme start="20260915090000 +0700" stop="20260915100000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Culture Crunch (L)</title>
+  </programme>
+  <programme start="20260915100000 +0700" stop="20260915103000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Arirang News</title>
+  </programme>
+  <programme start="20260915103000 +0700" stop="20260915110000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Diplomat's Archive: Hidden</title>
+  </programme>
+  <programme start="20260915110000 +0700" stop="20260915120000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Gugak: The Music Of Korea</title>
+  </programme>
+  <programme start="20260915120000 +0700" stop="20260915123000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">K-Culture Dive (L)</title>
+  </programme>
+  <programme start="20260915123000 +0700" stop="20260915130000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">News Generation</title>
+  </programme>
+  <programme start="20260915130000 +0700" stop="20260915133000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Countryside Escape</title>
+  </programme>
+  <programme start="20260915133000 +0700" stop="20260915135000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">K-Culture Minutes: K-People</title>
+  </programme>
+  <programme start="20260915135000 +0700" stop="20260915140000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">SmartBiz Accelerators 2</title>
+  </programme>
+  <programme start="20260915140000 +0700" stop="20260915140500 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">AI Headline News</title>
+  </programme>
+  <programme start="20260915140500 +0700" stop="20260915143000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Arirang Special</title>
+  </programme>
+  <programme start="20260915143000 +0700" stop="20260915150000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Diplomat's Archive: Hidden</title>
+  </programme>
+  <programme start="20260915150000 +0700" stop="20260915153000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">The Daily Report</title>
+  </programme>
+  <programme start="20260915153000 +0700" stop="20260915160000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Press Perspective (L)</title>
+  </programme>
+  <programme start="20260915160000 +0700" stop="20260915170000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Gugak: The Music Of Korea</title>
+  </programme>
+  <programme start="20260915170000 +0700" stop="20260915173000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">With Science, We Live</title>
+  </programme>
+  <programme start="20260915173000 +0700" stop="20260915180000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Countryside Escape</title>
+  </programme>
+  <programme start="20260915180000 +0700" stop="20260915183000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">NewsCenter</title>
+  </programme>
+  <programme start="20260915183000 +0700" stop="20260915190000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Within The Frame (L)</title>
+  </programme>
+  <programme start="20260915190000 +0700" stop="20260915193000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">K-Culture Dive</title>
+  </programme>
+  <programme start="20260915193000 +0700" stop="20260915195000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">K-Culture Minutes: K-People</title>
+  </programme>
+  <programme start="20260915195000 +0700" stop="20260915200000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">SmartBiz Accelerators 2</title>
+  </programme>
+  <programme start="20260915200000 +0700" stop="20260915200500 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">AI Headline News</title>
+  </programme>
+  <programme start="20260915200500 +0700" stop="20260915203000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Arirang Special</title>
+  </programme>
+  <programme start="20260915203000 +0700" stop="20260915210000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Diplomat's Archive: Hidden</title>
+  </programme>
+  <programme start="20260915210000 +0700" stop="20260915213000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Press Perspective</title>
+  </programme>
+  <programme start="20260915213000 +0700" stop="20260915215000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">The Grand Heritage ASMR</title>
+  </programme>
+  <programme start="20260915215000 +0700" stop="20260915220000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Hanok Scene</title>
+  </programme>
+  <programme start="20260915220000 +0700" stop="20260915223000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">News Generation</title>
+  </programme>
+  <programme start="20260915223000 +0700" stop="20260915230000 +0700" channel="MNC_arirang_351.id">
+    <title lang="id">Trip In Korea</title>
+  </programme>
+  <programme start="20260915002500 +0700" stop="20260915012000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">Elsbeth S2, Ep 3</title>
+  </programme>
+  <programme start="20260915012000 +0700" stop="20260915021500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">The Rookie S6, Ep 9</title>
+  </programme>
+  <programme start="20260915021500 +0700" stop="20260915031000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">FBI S7, Ep 15</title>
+  </programme>
+  <programme start="20260915031000 +0700" stop="20260915040500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">NCIS: Origins S1, Ep 15</title>
+  </programme>
+  <programme start="20260915040500 +0700" stop="20260915050000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">The Rainmaker S1, Ep 4</title>
+  </programme>
+  <programme start="20260915050000 +0700" stop="20260915055000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">The Rookie S6, Ep 9</title>
+  </programme>
+  <programme start="20260915055000 +0700" stop="20260915063500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">CIA S1, Ep 2</title>
+  </programme>
+  <programme start="20260915063500 +0700" stop="20260915072000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">Elsbeth S2, Ep 3</title>
+  </programme>
+  <programme start="20260915072000 +0700" stop="20260915081500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">NCIS: Origins S1, Ep 16</title>
+  </programme>
+  <programme start="20260915081500 +0700" stop="20260915091000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">The Rainmaker S1, Ep 4</title>
+  </programme>
+  <programme start="20260915091000 +0700" stop="20260915100000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">CIA S1, Ep 2</title>
+  </programme>
+  <programme start="20260915100000 +0700" stop="20260915105500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">The Rookie S6, Ep 9</title>
+  </programme>
+  <programme start="20260915105500 +0700" stop="20260915114500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">Elsbeth S2, Ep 3</title>
+  </programme>
+  <programme start="20260915114500 +0700" stop="20260915124000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">The Rainmaker S1, Ep 4</title>
+  </programme>
+  <programme start="20260915124000 +0700" stop="20260915133500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">NCIS: Origins S1, Ep 16</title>
+  </programme>
+  <programme start="20260915133500 +0700" stop="20260915143000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">FBI S7, Ep 15</title>
+  </programme>
+  <programme start="20260915143000 +0700" stop="20260915152000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">Elsbeth S2, Ep 3</title>
+  </programme>
+  <programme start="20260915152000 +0700" stop="20260915161000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">CIA S1, Ep 2</title>
+  </programme>
+  <programme start="20260915161000 +0700" stop="20260915170500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">The Rainmaker S1, Ep 5</title>
+  </programme>
+  <programme start="20260915170500 +0700" stop="20260915180000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">FBI: International S4, Ep 8</title>
+  </programme>
+  <programme start="20260915180000 +0700" stop="20260915185500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">The Rookie S6, Ep 10</title>
+  </programme>
+  <programme start="20260915185500 +0700" stop="20260915195000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">FBI S7, Ep 16</title>
+  </programme>
+  <programme start="20260915195000 +0700" stop="20260915204500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">Elsbeth S2, Ep 4</title>
+  </programme>
+  <programme start="20260915204500 +0700" stop="20260915214000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">FBI S8, Ep 19</title>
+  </programme>
+  <programme start="20260915214000 +0700" stop="20260915223500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">S.W.A.T. S7, Ep 12</title>
+  </programme>
+  <programme start="20260915223500 +0700" stop="20260915233000 +0700" channel="MNC_axn_154.id">
+    <title lang="id">FBI S8, Ep 19</title>
+  </programme>
+  <programme start="20260915233000 +0700" stop="20260916002500 +0700" channel="MNC_axn_154.id">
+    <title lang="id">S.W.A.T. S7, Ep 12</title>
+  </programme>
+  <programme start="20260915002500 +0700" stop="20260915012000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">Elsbeth S2, Ep 3</title>
+  </programme>
+  <programme start="20260915012000 +0700" stop="20260915021500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">The Rookie S6, Ep 9</title>
+  </programme>
+  <programme start="20260915021500 +0700" stop="20260915031000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">FBI S7, Ep 15</title>
+  </programme>
+  <programme start="20260915031000 +0700" stop="20260915040500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">NCIS: Origins S1, Ep 15</title>
+  </programme>
+  <programme start="20260915040500 +0700" stop="20260915050000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">The Rainmaker S1, Ep 4</title>
+  </programme>
+  <programme start="20260915050000 +0700" stop="20260915055000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">The Rookie S6, Ep 9</title>
+  </programme>
+  <programme start="20260915055000 +0700" stop="20260915063500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">CIA S1, Ep 2</title>
+  </programme>
+  <programme start="20260915063500 +0700" stop="20260915072000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">Elsbeth S2, Ep 3</title>
+  </programme>
+  <programme start="20260915072000 +0700" stop="20260915081500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">NCIS: Origins S1, Ep 16</title>
+  </programme>
+  <programme start="20260915081500 +0700" stop="20260915091000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">The Rainmaker S1, Ep 4</title>
+  </programme>
+  <programme start="20260915091000 +0700" stop="20260915100000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">CIA S1, Ep 2</title>
+  </programme>
+  <programme start="20260915100000 +0700" stop="20260915105500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">The Rookie S6, Ep 9</title>
+  </programme>
+  <programme start="20260915105500 +0700" stop="20260915114500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">Elsbeth S2, Ep 3</title>
+  </programme>
+  <programme start="20260915114500 +0700" stop="20260915124000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">The Rainmaker S1, Ep 4</title>
+  </programme>
+  <programme start="20260915124000 +0700" stop="20260915133500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">NCIS: Origins S1, Ep 16</title>
+  </programme>
+  <programme start="20260915133500 +0700" stop="20260915143000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">FBI S7, Ep 15</title>
+  </programme>
+  <programme start="20260915143000 +0700" stop="20260915152000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">Elsbeth S2, Ep 3</title>
+  </programme>
+  <programme start="20260915152000 +0700" stop="20260915161000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">CIA S1, Ep 2</title>
+  </programme>
+  <programme start="20260915161000 +0700" stop="20260915170500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">The Rainmaker S1, Ep 5</title>
+  </programme>
+  <programme start="20260915170500 +0700" stop="20260915180000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">FBI: International S4, Ep 8</title>
+  </programme>
+  <programme start="20260915180000 +0700" stop="20260915185500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">The Rookie S6, Ep 10</title>
+  </programme>
+  <programme start="20260915185500 +0700" stop="20260915195000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">FBI S7, Ep 16</title>
+  </programme>
+  <programme start="20260915195000 +0700" stop="20260915204500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">Elsbeth S2, Ep 4</title>
+  </programme>
+  <programme start="20260915204500 +0700" stop="20260915214000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">FBI S8, Ep 19</title>
+  </programme>
+  <programme start="20260915214000 +0700" stop="20260915223500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">S.W.A.T. S7, Ep 12</title>
+  </programme>
+  <programme start="20260915223500 +0700" stop="20260915233000 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">FBI S8, Ep 19</title>
+  </programme>
+  <programme start="20260915233000 +0700" stop="20260916002500 +0700" channel="MNC_axn-hd_447.id">
+    <title lang="id">S.W.A.T. S7, Ep 12</title>
   </programme>
   <programme start="20260915003000 +0700" stop="20260915012000 +0700" channel="MNC_bbc-earth_200.id">
     <title lang="id">Running Wild S2, Ep 6</title>
@@ -7419,155 +7953,92 @@
   <programme start="20260915235500 +0700" stop="20260916003000 +0700" channel="MNC_bbc-earth_200.id">
     <title lang="id">Weekend Escapes S4, Ep 15</title>
   </programme>
-  <programme start="20260915000000 +0700" stop="20260915003000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">World Today With M. Moshiri</title>
+  <programme start="20260915003000 +0700" stop="20260915012000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Running Wild S2, Ep 6</title>
   </programme>
-  <programme start="20260915003000 +0700" stop="20260915010000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">World Today With M. Moshiri</title>
+  <programme start="20260915012000 +0700" stop="20260915021500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Where Wild Men Are S11, Ep 1</title>
   </programme>
-  <programme start="20260915010000 +0700" stop="20260915013000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">World Today With M. Moshiri</title>
+  <programme start="20260915021500 +0700" stop="20260915031000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Walking With Dinosaurs S1, Ep 6</title>
   </programme>
-  <programme start="20260915013000 +0700" stop="20260915020000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">World Today With M. Moshiri</title>
+  <programme start="20260915031000 +0700" stop="20260915040500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">S. Perkins Into Alaska S1, Ep 2</title>
   </programme>
-  <programme start="20260915020000 +0700" stop="20260915023000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">The Context USA</title>
+  <programme start="20260915040500 +0700" stop="20260915050000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Where Wild Men Are S11, Ep 1</title>
   </programme>
-  <programme start="20260915023000 +0700" stop="20260915030000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">The Context USA</title>
+  <programme start="20260915050000 +0700" stop="20260915055500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Asia S1, Ep 7</title>
   </programme>
-  <programme start="20260915030000 +0700" stop="20260915033000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">The Context</title>
+  <programme start="20260915055500 +0700" stop="20260915065000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">S. Perkins Into Alaska S1, Ep 2</title>
   </programme>
-  <programme start="20260915033000 +0700" stop="20260915040000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">The Context</title>
+  <programme start="20260915065000 +0700" stop="20260915074500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Running Wild S2, Ep 6</title>
   </programme>
-  <programme start="20260915040000 +0700" stop="20260915043000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC World News America</title>
+  <programme start="20260915074500 +0700" stop="20260915084000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Where Wild Men Are S11, Ep 1</title>
   </programme>
-  <programme start="20260915043000 +0700" stop="20260915050000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Newsnight</title>
+  <programme start="20260915084000 +0700" stop="20260915094000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Walking With Dinosaurs S1, Ep 6</title>
   </programme>
-  <programme start="20260915050000 +0700" stop="20260915060000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC World News America</title>
+  <programme start="20260915094000 +0700" stop="20260915104000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Asia S1, Ep 7</title>
   </programme>
-  <programme start="20260915060000 +0700" stop="20260915063000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
+  <programme start="20260915104000 +0700" stop="20260915113000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">S. Perkins Into Alaska S1, Ep 2</title>
   </programme>
-  <programme start="20260915063000 +0700" stop="20260915070000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Newscast</title>
+  <programme start="20260915113000 +0700" stop="20260915123000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Planet Earth S1, Ep 7</title>
   </programme>
-  <programme start="20260915070000 +0700" stop="20260915073000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
+  <programme start="20260915123000 +0700" stop="20260915132500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Walking With Dinosaurs S1, Ep 6</title>
   </programme>
-  <programme start="20260915073000 +0700" stop="20260915080000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Talking Business</title>
+  <programme start="20260915132500 +0700" stop="20260915142000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Where Wild Men Are S11, Ep 1</title>
   </programme>
-  <programme start="20260915080000 +0700" stop="20260915083000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Newsday</title>
+  <programme start="20260915142000 +0700" stop="20260915152000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Asia S1, Ep 7</title>
   </programme>
-  <programme start="20260915083000 +0700" stop="20260915084500 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today</title>
+  <programme start="20260915152000 +0700" stop="20260915161000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Running Wild S2, Ep 6</title>
   </programme>
-  <programme start="20260915084500 +0700" stop="20260915090000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC Sport</title>
+  <programme start="20260915161000 +0700" stop="20260915171000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Walking With Dinosaurs S1, Ep 6</title>
   </programme>
-  <programme start="20260915090000 +0700" stop="20260915093000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Newsday</title>
+  <programme start="20260915171000 +0700" stop="20260915180500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">S. Perkins Into Alaska S1, Ep 2</title>
   </programme>
-  <programme start="20260915093000 +0700" stop="20260915094500 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today</title>
+  <programme start="20260915180500 +0700" stop="20260915190000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Running Wild S2, Ep 7</title>
   </programme>
-  <programme start="20260915094500 +0700" stop="20260915100000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC Sport</title>
+  <programme start="20260915190000 +0700" stop="20260915193000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Deadly 60 S7, Ep 1</title>
   </programme>
-  <programme start="20260915100000 +0700" stop="20260915103000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Newsday</title>
+  <programme start="20260915193000 +0700" stop="20260915200000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Deadly 60 S7, Ep 2</title>
   </programme>
-  <programme start="20260915103000 +0700" stop="20260915104500 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today</title>
+  <programme start="20260915200000 +0700" stop="20260915203000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Weekend Escapes S4, Ep 15</title>
   </programme>
-  <programme start="20260915104500 +0700" stop="20260915110000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC Sport</title>
+  <programme start="20260915203000 +0700" stop="20260915210500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Weekend Escapes S4, Ep 1</title>
   </programme>
-  <programme start="20260915110000 +0700" stop="20260915113000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
+  <programme start="20260915210500 +0700" stop="20260915215500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Engineering Repurposed S1, Ep 4</title>
   </programme>
-  <programme start="20260915113000 +0700" stop="20260915120000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today</title>
+  <programme start="20260915215500 +0700" stop="20260915224500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Running Wild S2, Ep 7</title>
   </programme>
-  <programme start="20260915120000 +0700" stop="20260915123000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
+  <programme start="20260915224500 +0700" stop="20260915231500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Deadly 60 S7, Ep 1</title>
   </programme>
-  <programme start="20260915123000 +0700" stop="20260915130000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today</title>
+  <programme start="20260915231500 +0700" stop="20260915235500 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Deadly 60 S7, Ep 2</title>
   </programme>
-  <programme start="20260915130000 +0700" stop="20260915133000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915133000 +0700" stop="20260915140000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today</title>
-  </programme>
-  <programme start="20260915140000 +0700" stop="20260915143000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915143000 +0700" stop="20260915150000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915150000 +0700" stop="20260915153000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915153000 +0700" stop="20260915160000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915160000 +0700" stop="20260915163000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915163000 +0700" stop="20260915170000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915170000 +0700" stop="20260915173000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915173000 +0700" stop="20260915174500 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today</title>
-  </programme>
-  <programme start="20260915174500 +0700" stop="20260915180000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News</title>
-  </programme>
-  <programme start="20260915180000 +0700" stop="20260915183000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News Now</title>
-  </programme>
-  <programme start="20260915183000 +0700" stop="20260915190000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News Now</title>
-  </programme>
-  <programme start="20260915190000 +0700" stop="20260915193000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News Now</title>
-  </programme>
-  <programme start="20260915193000 +0700" stop="20260915200000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News Now</title>
-  </programme>
-  <programme start="20260915200000 +0700" stop="20260915203000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News Now</title>
-  </programme>
-  <programme start="20260915203000 +0700" stop="20260915204500 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today: NYSE</title>
-  </programme>
-  <programme start="20260915204500 +0700" stop="20260915210000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">BBC News Now</title>
-  </programme>
-  <programme start="20260915210000 +0700" stop="20260915213000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Verified Live</title>
-  </programme>
-  <programme start="20260915213000 +0700" stop="20260915220000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Verified Live</title>
-  </programme>
-  <programme start="20260915220000 +0700" stop="20260915223000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Verified Live</title>
-  </programme>
-  <programme start="20260915223000 +0700" stop="20260915224500 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Business Today</title>
+  <programme start="20260915235500 +0700" stop="20260916003000 +0700" channel="MNC_bbc-earth-hd_461.id">
+    <title lang="id">Weekend Escapes S4, Ep 15</title>
   </programme>
   <programme start="20260915012500 +0700" stop="20260915015500 +0700" channel="MNC_bein-sports-1_309.id">
     <title lang="id">Mini Match LaLiga: RSO Vs ATM</title>
@@ -7629,50 +8100,65 @@
   <programme start="20260915233500 +0700" stop="20260916012500 +0700" channel="MNC_bein-sports-1_309.id">
     <title lang="id">LaLiga 2026/27: CEL Vs MAL</title>
   </programme>
-  <programme start="20260915020000 +0700" stop="20260915021000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">Premier Padel Match HL 2026</title>
+  <programme start="20260915012500 +0700" stop="20260915015500 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">Mini Match LaLiga: RSO Vs ATM</title>
   </programme>
-  <programme start="20260915021000 +0700" stop="20260915040000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">World Rugby Junior: JPN Vs USA</title>
+  <programme start="20260915015500 +0700" stop="20260915040000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LaLiga 2026/27: VIL Vs BET (L)</title>
   </programme>
-  <programme start="20260915040000 +0700" stop="20260915050000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">FIA European Truck Racing 2026</title>
+  <programme start="20260915040000 +0700" stop="20260915050000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">FIA World Rally C'ship HL 2026</title>
   </programme>
-  <programme start="20260915050000 +0700" stop="20260915060000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">FIA European Truck Racing 2026</title>
+  <programme start="20260915050000 +0700" stop="20260915070000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LFCTV 2026/27: LIV Vs FUL</title>
   </programme>
-  <programme start="20260915060000 +0700" stop="20260915075000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">Pacific Nations Cup: FIJ Vs CAN</title>
+  <programme start="20260915070000 +0700" stop="20260915073000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LFC Trending 2026/27, Ep 4</title>
   </programme>
-  <programme start="20260915075000 +0700" stop="20260915094000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">Pacific Nations Cup: JPN Vs USA</title>
+  <programme start="20260915073000 +0700" stop="20260915080000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LFCTV HL 2026/27: LIV Vs ATM</title>
   </programme>
-  <programme start="20260915094000 +0700" stop="20260915095000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">Premier Padel Match HL 2026</title>
+  <programme start="20260915080000 +0700" stop="20260915100000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">F1 Main Race 2026: GP de Espana</title>
   </programme>
-  <programme start="20260915095000 +0700" stop="20260915114000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">WSL 2026/27: WHU Vs LCL</title>
+  <programme start="20260915100000 +0700" stop="20260915115000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LaLiga 2026/27: OSA Vs ESP</title>
   </programme>
-  <programme start="20260915114000 +0700" stop="20260915133000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">Super Lig 2026/27: GAZ Vs FEN</title>
+  <programme start="20260915115000 +0700" stop="20260915125000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">Ferrari Challenge Europe 2026</title>
   </programme>
-  <programme start="20260915133000 +0700" stop="20260915163000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">La Vuelta 2026: Stage 21</title>
+  <programme start="20260915125000 +0700" stop="20260915135000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">Ferrari Challenge Europe 2026</title>
   </programme>
-  <programme start="20260915163000 +0700" stop="20260915173000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">WSL Highlights 2026/27</title>
+  <programme start="20260915135000 +0700" stop="20260915154000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LaLiga 2026/27: ATH Vs ELC</title>
   </programme>
-  <programme start="20260915173000 +0700" stop="20260915192000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">Super Lig 2026/27: BJK Vs ERZ</title>
+  <programme start="20260915154000 +0700" stop="20260915173000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LaLiga 2026/27: LEV Vs BAR</title>
   </programme>
-  <programme start="20260915192000 +0700" stop="20260915211000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">WSL 2026/27: MUN Vs CHE</title>
+  <programme start="20260915173000 +0700" stop="20260915180500 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">F1 Highlights '26: GP de Espana</title>
   </programme>
-  <programme start="20260915211000 +0700" stop="20260915230000 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">Super Lig 2026/27: GAZ Vs FEN</title>
+  <programme start="20260915180500 +0700" stop="20260915195500 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LaLiga 2026/27: RSO Vs ATM</title>
   </programme>
-  <programme start="20260915230000 +0700" stop="20260916005500 +0700" channel="MNC_bein-sports-2_310.id">
-    <title lang="id">World Rugby Junior: FRA Vs AUS</title>
+  <programme start="20260915195500 +0700" stop="20260915210000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">FIA Formula 2 2026: Madrid</title>
+  </programme>
+  <programme start="20260915210000 +0700" stop="20260915213500 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LaLiga Highlights 2026/27</title>
+  </programme>
+  <programme start="20260915213500 +0700" stop="20260915221000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">Formula Regional European HL</title>
+  </programme>
+  <programme start="20260915221000 +0700" stop="20260915230000 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">Formula Regional European Race</title>
+  </programme>
+  <programme start="20260915230000 +0700" stop="20260915233500 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LaLiga Highlights 2026/27</title>
+  </programme>
+  <programme start="20260915233500 +0700" stop="20260916012500 +0700" channel="MNC_bein-sports-1-hd_417.id">
+    <title lang="id">LaLiga 2026/27: CEL Vs MAL</title>
   </programme>
   <programme start="20260915020000 +0700" stop="20260915021000 +0700" channel="MNC_bein-sports-2-hd_418.id">
     <title lang="id">Premier Padel Match HL 2026</title>
@@ -7785,72 +8271,6 @@
   <programme start="20260915235500 +0700" stop="20260916020000 +0700" channel="MNC_bein-sports-3_311.id">
     <title lang="id">LaLiga 2026/27: RAY Vs ESP (L)</title>
   </programme>
-  <programme start="20260915010000 +0700" stop="20260915030000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">CAF Confederation: SNP Vs OCS</title>
-  </programme>
-  <programme start="20260915030000 +0700" stop="20260915050000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">WAFCON 2026: BFA Vs TAN</title>
-  </programme>
-  <programme start="20260915050000 +0700" stop="20260915060000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UK Challenge</title>
-  </programme>
-  <programme start="20260915060000 +0700" stop="20260915070000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL Highlights 2026/27</title>
-  </programme>
-  <programme start="20260915070000 +0700" stop="20260915073000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">MUTV HL 2026/27: EVE Vs MUN</title>
-  </programme>
-  <programme start="20260915073000 +0700" stop="20260915093000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">MUTV 2026/27: MUN Vs MCI</title>
-  </programme>
-  <programme start="20260915093000 +0700" stop="20260915100000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">MUTV Match Day: MUN Vs MCI</title>
-  </programme>
-  <programme start="20260915100000 +0700" stop="20260915103000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UEL/UECL Magazine Show '26/27</title>
-  </programme>
-  <programme start="20260915103000 +0700" stop="20260915122000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL 2026/27: CLU Vs AVL</title>
-  </programme>
-  <programme start="20260915122000 +0700" stop="20260915123000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL Classic Matches: BAR Vs LYO</title>
-  </programme>
-  <programme start="20260915123000 +0700" stop="20260915133000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL Highlights 2026/27</title>
-  </programme>
-  <programme start="20260915133000 +0700" stop="20260915143000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL Highlights 2026/27</title>
-  </programme>
-  <programme start="20260915143000 +0700" stop="20260915150000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UEL/UECL Magazine Show '26/27</title>
-  </programme>
-  <programme start="20260915150000 +0700" stop="20260915151000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL Classic Matches: BAR Vs ARS</title>
-  </programme>
-  <programme start="20260915151000 +0700" stop="20260915170000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL 2026/27: POR Vs MCI</title>
-  </programme>
-  <programme start="20260915170000 +0700" stop="20260915173000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UEL/UECL Magazine Show '26/27</title>
-  </programme>
-  <programme start="20260915173000 +0700" stop="20260915192000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL 2026/27: LIV Vs ATM</title>
-  </programme>
-  <programme start="20260915192000 +0700" stop="20260915211000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL 2026/27: MUN Vs SAB</title>
-  </programme>
-  <programme start="20260915211000 +0700" stop="20260915230000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL 2026/27: NAP Vs ARS</title>
-  </programme>
-  <programme start="20260915230000 +0700" stop="20260915233000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">UCL Magazine Show 2026/27</title>
-  </programme>
-  <programme start="20260915233000 +0700" stop="20260915235500 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">MUTV One Love: For The Love...</title>
-  </programme>
-  <programme start="20260915235500 +0700" stop="20260916020000 +0700" channel="MNC_bein-sports-3-hd_419.id">
-    <title lang="id">LaLiga 2026/27: RAY Vs ESP (L)</title>
-  </programme>
   <programme start="20260915000000 +0700" stop="20260915020000 +0700" channel="MNC_bein-sports-4_312.id">
     <title lang="id">beIN Sports 4</title>
   </programme>
@@ -7887,41 +8307,59 @@
   <programme start="20260915220000 +0700" stop="20260916000000 +0700" channel="MNC_bein-sports-4_312.id">
     <title lang="id">beIN Sports 4</title>
   </programme>
-  <programme start="20260915000000 +0700" stop="20260915020000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915000000 +0700" stop="20260915010000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg: Balance Of Power</title>
   </programme>
-  <programme start="20260915020000 +0700" stop="20260915040000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915010000 +0700" stop="20260915020000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg BusinessWeek Daily</title>
   </programme>
-  <programme start="20260915040000 +0700" stop="20260915060000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915020000 +0700" stop="20260915040000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg The Close</title>
   </programme>
-  <programme start="20260915060000 +0700" stop="20260915080000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915040000 +0700" stop="20260915050000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg: Balance Of Power</title>
   </programme>
-  <programme start="20260915080000 +0700" stop="20260915100000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915050000 +0700" stop="20260915053000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Leaders With Francine Lacqua</title>
   </programme>
-  <programme start="20260915100000 +0700" stop="20260915120000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915053000 +0700" stop="20260915060000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Leaders With Francine Lacqua</title>
   </programme>
-  <programme start="20260915120000 +0700" stop="20260915140000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915060000 +0700" stop="20260915080000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg The Asia Trade</title>
   </programme>
-  <programme start="20260915140000 +0700" stop="20260915160000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915080000 +0700" stop="20260915100000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg: The China Show</title>
   </programme>
-  <programme start="20260915160000 +0700" stop="20260915180000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915100000 +0700" stop="20260915110000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Insight With Haslinda Amin</title>
   </programme>
-  <programme start="20260915180000 +0700" stop="20260915200000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915110000 +0700" stop="20260915120000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg Horizons</title>
   </programme>
-  <programme start="20260915200000 +0700" stop="20260915220000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915120000 +0700" stop="20260915130000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg Daybreak: Europe</title>
   </programme>
-  <programme start="20260915220000 +0700" stop="20260916000000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
+  <programme start="20260915130000 +0700" stop="20260915150000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg: The Opening Trade</title>
+  </programme>
+  <programme start="20260915150000 +0700" stop="20260915160000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">The Pulse With Francine Lacqua</title>
+  </programme>
+  <programme start="20260915160000 +0700" stop="20260915170000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg Brief</title>
+  </programme>
+  <programme start="20260915170000 +0700" stop="20260915200000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg Surveillance</title>
+  </programme>
+  <programme start="20260915200000 +0700" stop="20260915220000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg Open Interest</title>
+  </programme>
+  <programme start="20260915220000 +0700" stop="20260915230000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg Tech</title>
+  </programme>
+  <programme start="20260915230000 +0700" stop="20260916000000 +0700" channel="MNC_bloomberg_338.id">
+    <title lang="id">Bloomberg Crypto</title>
   </programme>
   <programme start="20260915000000 +0700" stop="20260915012700 +0700" channel="MNC_btv_103.id">
     <title lang="id">ONE Vault</title>
@@ -16167,13 +16605,17 @@
     <title lang="en">CLTV36 Teleskwela</title>
     <desc lang="en">Provides students in Pampanga, from Grade 1 to Grade 12, a safe place to continue their learning through innovative teaching modules using television as a medium.</desc>
   </programme>
-  <programme start="20260915060500 +0500" stop="20260915090000 +0500" channel="Qazaqstan.kz">
+  <programme start="20260915060500 +0500" stop="20260915070000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Жанталас</title>
     <desc lang="kk">Телехикая</desc>
   </programme>
+  <programme start="20260915070000 +0500" stop="20260915090000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Таңшолпан</title>
+    <desc lang="kk">Таңғы ақпаратты-сазды бағдарлама</desc>
+  </programme>
   <programme start="20260915090000 +0500" stop="20260915100000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Жоғалған жылдар</title>
-    <desc lang="kk">Телехикая</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260915100000 +0500" stop="20260915101000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Ақпарат</title>
@@ -16277,13 +16719,17 @@
     <title lang="kk">Ақпарат</title>
     <desc lang="kk">Жаңалықтар</desc>
   </programme>
-  <programme start="20260915060500 +0500" stop="20260915090000 +0500" channel="QazaqstanInt.kz">
+  <programme start="20260915060500 +0500" stop="20260915070000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Жанталас</title>
     <desc lang="kk">Телехикая</desc>
   </programme>
+  <programme start="20260915070000 +0500" stop="20260915090000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Таңшолпан</title>
+    <desc lang="kk">Таңғы ақпаратты-сазды бағдарлама</desc>
+  </programme>
   <programme start="20260915090000 +0500" stop="20260915100000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Жоғалған жылдар</title>
-    <desc lang="kk">Телехикая</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260915100000 +0500" stop="20260915101000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Ақпарат</title>
@@ -16482,19 +16928,15 @@
   </programme>
   <programme start="20260915070500 +0500" stop="20260915091500 +0500" channel="Qazsport.kz">
     <title lang="kk">Оңтүстік Корея – Аустралия</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Волейбол. Азия чемпионаты (Ерлер). 3 орын үшін матч.</desc>
   </programme>
   <programme start="20260915091500 +0500" stop="20260915094000 +0500" channel="Qazsport.kz">
     <title lang="kk">Sport Review</title>
-    <desc lang="kk">Ақпараттық-сараптамалық бағдарламасы</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
-  <programme start="20260915094000 +0500" stop="20260915100000 +0500" channel="Qazsport.kz">
+  <programme start="20260915094000 +0500" stop="20260915103000 +0500" channel="Qazsport.kz">
     <title lang="kk">УЕФА Чемпиондар Лигасының шолуы</title>
     <desc lang="kk">Футбол</desc>
-  </programme>
-  <programme start="20260915100000 +0500" stop="20260915103000 +0500" channel="Qazsport.kz">
-    <title lang="kk">Үстел теннисі</title>
-    <desc lang="kk">WTT Star Contender Astana 2026 – President's Cup. Іріктеу</desc>
   </programme>
   <programme start="20260915103000 +0500" stop="20260915110000 +0500" channel="Qazsport.kz">
     <title lang="kk">Программа Тур по туру</title>
@@ -16509,22 +16951,15 @@
     <desc lang="kk">Сұхбат</desc>
   </programme>
   <programme start="20260915134000 +0500" stop="20260915152000 +0500" channel="Qazsport.kz">
-    <title lang="kk">Дзюдо. Grand Slam</title>
+    <title lang="kk">Grand Slam</title>
+    <desc lang="kk">Дзюдо</desc>
   </programme>
-  <programme start="20260915152000 +0500" stop="20260915153500 +0500" channel="Qazsport.kz">
+  <programme start="20260915152000 +0500" stop="20260915154500 +0500" channel="Qazsport.kz">
     <title lang="kk">Sport Review</title>
     <desc lang="kk">Ақпараттық-сараптамалық бағдарламасы</desc>
   </programme>
-  <programme start="20260915153500 +0500" stop="20260915154500 +0500" channel="Qazsport.kz">
-    <title lang="kk">Pro Football</title>
-    <desc lang="kk">УЕФА Чемпиондар лигасы. 1 тур қорытындысы</desc>
-  </programme>
-  <programme start="20260915154500 +0500" stop="20260915161000 +0500" channel="Qazsport.kz">
+  <programme start="20260915154500 +0500" stop="20260915163500 +0500" channel="Qazsport.kz">
     <title lang="kk">УЕФА Чемпиондар Лигасының шолуы</title>
-    <desc lang="kk">Футбол</desc>
-  </programme>
-  <programme start="20260915161000 +0500" stop="20260915163500 +0500" channel="Qazsport.kz">
-    <title lang="kk">УЕФА Чемпиондар лигасының шолуы</title>
     <desc lang="kk">Футбол</desc>
   </programme>
   <programme start="20260915163500 +0500" stop="20260915164000 +0500" channel="Qazsport.kz">
@@ -17076,8 +17511,11 @@
   <programme start="20260915080000 +0500" stop="20260915093000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"KOKSHE NURY"</title>
   </programme>
-  <programme start="20260915093000 +0500" stop="20260915103000 +0500" channel="KoksheTV.kz">
+  <programme start="20260915093000 +0500" stop="20260915095000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"БІЛГІШБЕКТЕР" Мультхикая 1,2,3 бөлім</title>
+  </programme>
+  <programme start="20260915095000 +0500" stop="20260915103000 +0500" channel="KoksheTV.kz">
+    <title lang="kk">"ЕЛГЕ ҚЫЗМЕТ" Ақпараттық бағдарлама</title>
     <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260915103000 +0500" stop="20260915122500 +0500" channel="KoksheTV.kz">
@@ -17227,11 +17665,11 @@
   </programme>
   <programme start="20260915093000 +0500" stop="20260915095000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Құдіретті қылқалам»</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">мәдени-танымдық бағдарлама</desc>
   </programme>
   <programme start="20260915095000 +0500" stop="20260915100000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Ертемір»</title>
-    <desc lang="kk">балаларға базарлық</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260915100000 +0500" stop="20260915105000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Фазилет ханым»</title>
