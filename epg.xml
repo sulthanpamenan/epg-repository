@@ -3,4 +3,13 @@
   <channel id="tvri_1">
     <display-name>TVRI Nasional</display-name>
   </channel>
+  <channel id="tvri_2">
+    <display-name>TVRI DKI Jakarta</display-name>
+  </channel>
+  <channel id="tvri_3">
+    <display-name>TVRI Sport HD</display-name>
+  </channel>
+  <channel id="tvri_33">
+    <display-name>TVRI Riau</display-name>
+  </channel>
 </tv>
