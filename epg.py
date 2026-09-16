@@ -257,7 +257,7 @@ def get_official_dens_channels():
         {"id_num": "13", "slug": "mdtv", "id": "Dens_mdtv.id", "name": "MD Channel", "cat": "tv-local"},
         {"id_num": "94", "slug": "elshinta-tv", "id": "Dens_elshinta-tv.id", "name": "Elshinta TV", "cat": "tv-local"},
         {"id_num": "122", "slug": "magna-channel", "id": "Dens_magna-channel.id", "name": "Magna Channel", "cat": "tv-local"},
-        {"id_num": "17", "slug": "tvri", "id": "Dens_tvri.id", "name": "TVRI", "cat": "tv-local"},
+        {"id_num": "118", "slug": "tvri-sport", "id": "Dens_tvri-sport.id", "name": "TVRI Sport", "cat": "tv-local"},
         {"id_num": "112", "slug": "jak-tv", "id": "Dens_jak-tv.id", "name": "Jak TV", "cat": "tv-local"},
         {"id_num": "21", "slug": "rodjatv", "id": "Dens_rodjatv.id", "name": "Rodja TV", "cat": "tv-local"},
         {"id_num": "23", "slug": "daai-tv", "id": "Dens_daai-tv.id", "name": "DAAI TV", "cat": "tv-local"},
