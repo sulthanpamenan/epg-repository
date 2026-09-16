@@ -255,7 +255,6 @@ def get_official_dens_channels():
         {"id_num": "80", "slug": "btv", "id": "Dens_btv.id", "name": "BTV", "cat": "tv-local"},
         {"id_num": "131", "slug": "berita-satu", "id": "Dens_berita-satu.id", "name": "BeritaSatu World", "cat": "tv-local"},
         {"id_num": "13", "slug": "mdtv", "id": "Dens_mdtv.id", "name": "MD Channel", "cat": "tv-local"},
-        {"id_num": "22", "slug": "rtv", "id": "Dens_rtv.id", "name": "RTV", "cat": "tv-local"},
         {"id_num": "94", "slug": "elshinta-tv", "id": "Dens_elshinta-tv.id", "name": "Elshinta TV", "cat": "tv-local"},
         {"id_num": "122", "slug": "magna-channel", "id": "Dens_magna-channel.id", "name": "Magna Channel", "cat": "tv-local"},
         {"id_num": "118", "slug": "tvri-sport", "id": "Dens_tvri-sport.id", "name": "TVRI Sport", "cat": "tv-local"},
