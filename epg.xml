@@ -7102,10 +7102,6 @@
     <title lang="en">Lucas 'Chumbo' Chianca</title>
     <desc lang="en">Join Brazil’s Lucas 'Chumbo' Chianca as he tackles the biggest waves on Earth across two memorable winters.</desc>
   </programme>
-  <programme start="20260916141853 +0000" stop="20260916142434 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Skatepark of Tampa</title>
-    <desc lang="en">Joey and Rip are in Skatepark of Tampa, Florida, home of the world famous Tampa Pro skate competition.</desc>
-  </programme>
   <programme start="20260916142434 +0000" stop="20260916143928 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Beaver Fleming</title>
     <desc lang="en">Can Madars Apse take on the mini Megaramp with Beaver Fleming's help?</desc>
@@ -7182,9 +7178,9 @@
     <title lang="en">Alex Sorgente</title>
     <desc lang="en">We head down to Carlsbad, California, to tag along with skateboarder Alex Sorgente for a day in his life.</desc>
   </programme>
-  <programme start="20260916140420 +0000" stop="20260916142642 +0000" channel="RedBullWinter.global">
-    <title lang="en">Colorado</title>
-    <desc lang="en">Welcome to the land of Dumb &amp; Dumber jokes. Mark and Craig McMorris lead a crew of up-and-comers in Colorado.</desc>
+  <programme start="20260916191832 +0000" stop="20260916194400 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">ABC of... Skateboarding</title>
+    <desc lang="en">Take a look at the history of skateboarding, from the pioneers of sidewalk surfing to today's skateboarders.</desc>
   </programme>
   <programme start="20260916142642 +0000" stop="20260916151501 +0000" channel="RedBullWinter.global">
     <title lang="en">The Collective</title>
@@ -7262,9 +7258,9 @@
     <title lang="en">Chasing Winter</title>
     <desc lang="en">Pro snowboarder Mark McMorris and friends prepare for the upcoming high-stakes competition season.</desc>
   </programme>
-  <programme start="20260916142357 +0000" stop="20260916142556 +0000" channel="RedBullActionReel.global">
-    <title lang="en">GP Ice Race</title>
-    <desc lang="en">Watch Max Verstappen enjoy his first track action of 2022 with ice speedway star Franky Zorn.</desc>
+  <programme start="20260916224201 +0000" stop="20260916232850 +0000" channel="RedBullWinter.global">
+    <title lang="en">Roots</title>
+    <desc lang="en">Take a journey through Italy, Switzerland and Finland to explore the foundations of freeskiing.</desc>
   </programme>
   <programme start="20260916142556 +0000" stop="20260916143131 +0000" channel="RedBullActionReel.global">
     <title lang="en">Duct Out</title>
@@ -7341,6 +7337,10 @@
   <programme start="20260916153846 +0000" stop="20260916154041 +0000" channel="RedBullActionReel.global">
     <title lang="en">Infinity Cube</title>
     <desc lang="en">The Red Bull BC One All Stars show off their moves in a mirror cube that gives the illusion of infinity.</desc>
+  </programme>
+  <programme start="20260916154041 +0000" stop="20260916154204 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Petra BASE jump</title>
+    <desc lang="en">Watch as Miles Daisher, Red Bull Air Force pilot, BASE jumps to land in front of Petra's Treasury.</desc>
   </programme>
   <programme start="20260916003000 +0700" stop="20260916011500 +0700" channel="MNC_abc-australia_350.id">
     <title lang="id">Gardening Australia</title>
@@ -17197,13 +17197,17 @@
     <title lang="kk">Жоғалған есім</title>
     <desc lang="kk">Телехикая</desc>
   </programme>
-  <programme start="20260916170000 +0500" stop="20260916180000 +0500" channel="Qazaqstan.kz">
+  <programme start="20260916170000 +0500" stop="20260916172000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Ақпарат</title>
     <desc lang="kk">Жаңалықтар</desc>
   </programme>
+  <programme start="20260916172000 +0500" stop="20260916180000 +0500" channel="Qazaqstan.kz">
+    <title lang="kk">Қазір айтайық</title>
+    <desc lang="kk">Әлеуметтік ток-шоу</desc>
+  </programme>
   <programme start="20260916180000 +0500" stop="20260916200000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Мелек</title>
-    <desc lang="kk">Телехикая</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260916200000 +0500" stop="20260916203000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Ақпарат</title>
@@ -17316,13 +17320,17 @@
     <title lang="kk">Жоғалған есім</title>
     <desc lang="kk">Телехикая</desc>
   </programme>
-  <programme start="20260916170000 +0500" stop="20260916180000 +0500" channel="QazaqstanInt.kz">
+  <programme start="20260916170000 +0500" stop="20260916172000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Ақпарат</title>
     <desc lang="kk">Жаңалықтар</desc>
   </programme>
+  <programme start="20260916172000 +0500" stop="20260916180000 +0500" channel="QazaqstanInt.kz">
+    <title lang="kk">Қазір айтайық</title>
+    <desc lang="kk">Әлеуметтік ток-шоу</desc>
+  </programme>
   <programme start="20260916180000 +0500" stop="20260916200000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Мелек</title>
-    <desc lang="kk">Телехикая</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260916200000 +0500" stop="20260916203000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Ақпарат</title>
