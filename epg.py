@@ -515,32 +515,37 @@ def fetch_epg_cltv36(target):
 
 # --- 5. MNC VISION ---
 def get_mnc_channel_options():
-    url = "https://www.mncvision.id/schedule/table"
-    channels = []
-    try:
-        res = HTTP_SESSION.get(url, timeout=12)
-        if res.status_code == 200:
-            soup = BeautifulSoup(res.text, "html.parser")
-            select = soup.find("select", {"name": "fchannel"}) or soup.find("select", {"id": "fchannel"})
-            if select:
-                for opt in select.find_all("option"):
-                    val = opt.get("value")
-                    raw_name = clean_text_str(opt.get_text())
-                    if val and str(val) != "0" and raw_name and "Pilih Channel" not in raw_name and "Toggle" not in raw_name:
-                        
-                        clean_channel_name = re.sub(r'\s*-\s*\[.*?\]', '', raw_name).strip()
-                        
-                        slug = re.sub(r'[-\s]+', '-', re.sub(r'[^\w\s-]', '', clean_channel_name.lower().strip()))
-                        slug_id = f"MNC_{slug}_{val}.id"
-                        
-                        channels.append({
-                            "code": str(val),
-                            "clean_name": clean_channel_name,
-                            "slug_id": slug_id
-                        })
-    except Exception as e:
-        print(f"[!] Failed to retrieve the channel list: {e}")
-    return channels
+  url = "https://www.mncvision.id/schedule/table"
+  EXCLUDED_MNC_IDS = {"118"}
+  channels = []
+  try:
+    res = HTTP_SESSION.get(url, timeout=12)
+    if res.status_code == 200:
+      soup = BeautifulSoup(res.text, "html.parser")
+      select = soup.find("select", {"name": "fchannel"}) or soup.find("select", {"id": "fchannel"})
+      if select:
+        for opt in select.find_all("option"):
+          val = opt.get("value")
+          raw_name = clean_text_str(opt.get_text())
+          if val and str(val) != "0" and raw_name and "Pilih Channel" not in raw_name and "Toggle" not in raw_name:
+
+            if str(val) in EXCLUDED_MNC_IDS:
+              print(f"[-] MNC Vision: Excluding channel '{raw_name}' (ID:{val})")
+              continue
+
+            clean_channel_name = re.sub(r"\s*-\s*\[.*?\]", "", raw_name).strip()
+
+            slug = re.sub(r"[-\s]+", "-", re.sub(r"[^\w\s-]", "", clean_channel_name.lower().strip()))
+            slug_id = f"MNC_{slug}_{val}.id"
+
+            channels.append({
+                "code": str(val),
+                "clean_name": clean_channel_name,
+                "slug_id": slug_id,
+            })
+  except Exception as e:
+    print(f"[!] Failed to retrieve the channel list: {e}")
+  return channels
 
 def fetch_single_mnc_epg(ch_info):
     today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
