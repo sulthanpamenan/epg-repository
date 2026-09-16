@@ -1,15 +1,14 @@
-import json
 from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
-import requests
 import cloudscraper
 
 
 def fetch_tvri_epg():
-  # URL dasar endpoint jadwal TVRI
+  # Inisialisasi cloudscraper untuk melewati proteksi Cloudflare/WAF (mencegah error 468)
+  scraper = cloudscraper.create_scraper()
+
   base_url = "https://tvri.go.id/jadwal"
 
-  # Header wajib agar server merespons dengan data Inertia.js (JSON)
   headers = {
       "accept": "text/html, application/xhtml+xml, application/xml;q=0.9,*/*;q=0.8",
       "accept-language": "id,en-US;q=0.9,en;q=0.8",
@@ -23,19 +22,20 @@ def fetch_tvri_epg():
       "referer": "https://tvri.go.id/jadwal",
   }
 
-  # Anda bisa menyesuaikan jumlah channel (biasanya ID channel berupa angka: 1, 2, dst.)
-  # Serta rentang hari (day=1 sampai day=7, tergantung ketersediaan di web)
   channels = [
-      {"id": 1, "name": "TVRI Nasional"},
-      # Tambahkan ID channel lain jika ada di TVRI (misal: 2, 3, dll.)
+      {
+          "id": 1,
+          "name": "TVRI Nasional",
+      },
+      # Anda bisa menambahkan ID channel daerah lain di sini jika sudah menemukannya (misal: {"id": 2, "name": "TVRI Daerah"})
   ]
 
-  days = [1, 2, 3, 4, 5, 6, 7]  
+  days = [1, 2, 3, 4, 5, 6, 7]
 
   all_channels_data = {}
   all_programs = []
 
-  print("[*] Mengambil data EPG dari TVRI...")
+  print("[*] Mengambil data EPG dari TVRI menggunakan Cloudscraper...")
 
   for ch in channels:
     ch_id = ch["id"]
@@ -47,30 +47,24 @@ def fetch_tvri_epg():
     for day in days:
       url = f"{base_url}?channel={ch_id}&day={day}"
       try:
-        scraper = cloudscraper.create_scraper()
+        # Menggunakan scraper.get alih-alih requests.get
         response = scraper.get(url, headers=headers, timeout=15)
         if response.status_code == 200:
-          # Respon Inertia.js berupa JSON
           data = response.json()
-
-          # Navigasi ke props proporsional di dalam struktur Inertia response
-          # Biasanya terletak di data['props'] (sesuaikan dengan struktur JSON aktual TVRI)
           props = data.get("props", {})
-
-          # Contoh struktur props jadwal (biasanya berisi daftar jadwal atau tanggal)
-          # Mengambil data jadwal dari respons JSON
           schedules = props.get("schedules", []) or props.get("jadwal", [])
 
-          print(f"[+] Berhasil mengambil Channel {ch_name} (Hari ke-{day})")
+          print(
+              f"[+] Berhasil mengambil Channel {ch_name} (Hari ke-{day}), total"
+              f" jadwal: {len(schedules)}"
+          )
 
-          # Parsing struktur jadwal ke list program
-          # (Struktur disesuaikan dengan key JSON dari TVRI)
           for item in schedules:
             title = item.get("title") or item.get("nama_acara")
             description = item.get("description") or item.get("deskripsi", "")
-            date_str = item.get("date")  # Format tanggal YYYY-MM-DD
-            start_time = item.get("start")  # Format HH:MM
-            end_time = item.get("end")  # Format HH:MM
+            date_str = item.get("date")
+            start_time = item.get("start")
+            end_time = item.get("end")
 
             if title and date_str and start_time and end_time:
               start_dt = datetime.strptime(
@@ -80,7 +74,6 @@ def fetch_tvri_epg():
                   f"{date_str} {end_time}", "%Y-%m-%d %H:%M"
               )
 
-              # Menangani jika waktu 'end' lebih kecil dari 'start' (lewat tengah malam)
               if end_dt <= start_dt:
                 end_dt += timedelta(days=1)
 
@@ -104,13 +97,11 @@ def fetch_tvri_epg():
   print("[*] Membuat file epg.xml...")
   root = ET.Element("tv")
 
-  # Tambahkan informasi channel
   for ch_id, info in all_channels_data.items():
     ch_elem = ET.SubElement(root, "channel", id=f"tvri_{ch_id}")
     display_name = ET.SubElement(ch_elem, "display-name")
     display_name.text = info["name"]
 
-  # Tambahkan informasi program (acara)
   for prog in all_programs:
     prog_elem = ET.SubElement(
         root,
@@ -127,12 +118,11 @@ def fetch_tvri_epg():
       desc_elem = ET.SubElement(prog_elem, "desc", lang="id")
       desc_elem.text = prog["desc"]
 
-  # Simpan ke file epg.xml
   tree = ET.ElementTree(root)
   ET.indent(tree, space="  ", level=0)
   tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
-  print("[✓] File epg.xml berhasil dibuat!")
+  print("[✓] File epg.xml berhasil dibuat dengan data jadwal lengkap!")
 
 
 if __name__ == "__main__":
-  fetchri_epg = fetch_tvri_epg()
+  fetch_tvri_epg()
