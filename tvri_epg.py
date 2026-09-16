@@ -1,22 +1,28 @@
 from datetime import datetime, timedelta
-import json
 import xml.etree.ElementTree as ET
 from playwright.sync_api import sync_playwright
 
 
 def fetch_tvri_epg():
   base_url = "https://tvri.go.id/jadwal"
+
+  # Daftar channel TVRI (Nasional, Sport, dan Daerah seperti Riau dengan ID 33)
   channels = [
       {"id": 1, "name": "TVRI Nasional"},
+      {"id": 2, "name": "TVRI DKI Jakarta"},
+      {"id": 3, "name": "TVRI Sport HD"},
+      {"id": 33, "name": "TVRI Riau"},  # Contoh channel daerah
+      # Anda bisa menambahkan ID channel lain sesuai kebutuhan
   ]
-  days = [1, 2, 3, 4, 5, 6, 7]
 
-  all_channels_data = {1: {"name": "TVRI Nasional", "programs": []}}
+  # Hari di web TVRI menggunakan skala 0 (Minggu) sampai 6 (Sabtu)
+  days = [0, 1, 2, 3, 4, 5, 6]
+
+  all_channels_data = {}
   all_programs = []
 
   print(
-      "[*] Mengambil data EPG dari TVRI menggunakan Playwright (Network"
-      " Interception)..."
+      "[*] Memulai pengambilan data EPG TVRI melalui ekstraksi DOM Playwright..."
   )
 
   with sync_playwright() as p:
@@ -41,101 +47,73 @@ def fetch_tvri_epg():
       ch_id = ch["id"]
       ch_name = ch["name"]
 
+      if ch_id not in all_channels_data:
+        all_channels_data[ch_id] = {"name": ch_name}
+
       for day in days:
         url = f"{base_url}?channel={ch_id}&day={day}"
-        captured_data = []
-
-        # Menangkap respons JSON dari request XHR/Inertia
-        def handle_response(response):
-          if "tvri.go.id/jadwal" in response.url and response.status == 200:
-            try:
-              # Cek apakah respons berupa JSON (Inertia request)
-              if "application/json" in response.headers.get(
-                  "content-type", ""
-              ) or "text/json" in response.headers.get("content-type", ""):
-                json_data = response.json()
-                captured_data.append(json_data)
-            except Exception:
-              pass
-
-        page.on("response", handle_response)
-
         try:
           print(
-              f"[*] Membuka halaman Channel {ch_name} (Hari ke-{day})..."
+              f"[*] Mengakses {ch_name} (Channel ID: {ch_id}, Day Index: {day})..."
           )
-          # Mengirim header x-inertia agar server membalas dengan JSON
-          page.set_extra_http_headers({
-              "x-inertia": "true",
-              "x-requested-with": "XMLHttpRequest",
-          })
-          page.goto(url, timeout=45000, wait_until="networkidle")
+          page.goto(url, timeout=45000, wait_until="domcontentloaded")
+          page.wait_for_timeout(3000)  # Waktu tunggu render DOM Vue.js
 
-          schedules = []
-          # Cari data jadwal dari payload Inertia yang tertangkap
-          for data in captured_data:
-            props = data.get("props", {})
-            # Cek berbagai kemungkinan nama key jadwal
-            raw_schedules = (
-                props.get("schedules")
-                or props.get("jadwal")
-                or props.get("schedule", [])
-            )
-            if raw_schedules:
-              schedules = raw_schedules
-              break
+          # Ekstraksi elemen jadwal dari DOM HTML situs TVRI
+          schedules = page.evaluate("""() => {
+                        let items = [];
+                        let rows = document.querySelectorAll('div.group.relative.flex');
+                        
+                        rows.forEach(row => {
+                            let titleEl = row.querySelector('h3');
+                            let descEl = row.querySelector('p');
+                            let timeContainer = row.querySelectorAll('span.font-mono');
+                            let timeTexts = [];
+                            
+                            timeContainer.forEach(span => {
+                                timeTexts.push(span.innerText.trim());
+                            });
 
-          # Fallback jika tidak tertangkap di network, ambil dari tag div[data-page]
-          if not schedules:
-            page_content_json = page.evaluate("""() => {
-                            let appDiv = document.querySelector('div[data-page]');
-                            if (appDiv) {
-                                try {
-                                    return JSON.parse(appDiv.getAttribute('data-page'));
-                                } catch(e) {}
+                            if (timeTexts.length < 2) {
+                                let allSpans = row.querySelectorAll('span');
+                                allSpans.forEach(span => {
+                                    let txt = span.innerText.trim();
+                                    if (/^\\d{2}:\\d{2}$/.test(txt)) {
+                                        timeTexts.push(txt);
+                                    }
+                                });
                             }
-                            return null;
-                        }""")
-            if page_content_json:
-              props = page_content_json.get("props", {})
-              schedules = (
-                  props.get("schedules")
-                  or props.get("jadwal")
-                  or props.get("schedule", [])
-              )
+
+                            if (titleEl && timeTexts.length >= 2) {
+                                items.push({
+                                    title: titleEl.innerText.trim(),
+                                    description: descEl ? descEl.innerText.trim() : '',
+                                    start: timeTexts[0],
+                                    end: timeTexts[1]
+                                });
+                            }
+                        });
+                        return items;
+                    }""")
 
           print(
-              f"[+] Berhasil memproses Channel {ch_name} (Hari ke-{day}), total"
-              f" jadwal ditemukan: {len(schedules)}"
+              f"[+] Ditemukan {len(schedules)} jadwal untuk {ch_name} (Day:"
+              f" {day})"
           )
 
           for item in schedules:
-            title = (
-                item.get("title")
-                or item.get("nama_acara")
-                or item.get("program_title")
-            )
-            description = (
-                item.get("description")
-                or item.get("deskripsi")
-                or item.get("synopsis", "")
-            )
-            date_str = item.get("date") or item.get("tanggal")
-            start_time = (
-                item.get("start")
-                or item.get("jam_mulai")
-                or item.get("start_time")
-            )
-            end_time = (
-                item.get("end")
-                or item.get("jam_selesai")
-                or item.get("end_time")
-            )
+            title = item.get("title")
+            description = item.get("description", "")
+            start_time = item.get("start")
+            end_time = item.get("end")
 
             if title and start_time and end_time:
-              if not date_str:
-                target_date = datetime.now() + timedelta(days=(day - 1))
-                date_str = target_date.strftime("%Y-%m-%d")
+              # Penyesuaian tanggal berdasarkan indeks hari (0 = Minggu)
+              today = datetime.now()
+              current_weekday = (today.weekday() + 1) % 7
+              days_diff = (day - current_weekday) % 7
+              target_date = today + timedelta(days=days_diff)
+              date_str = target_date.strftime("%Y-%m-%d")
 
               try:
                 start_dt = datetime.strptime(
@@ -160,12 +138,12 @@ def fetch_tvri_epg():
                 continue
 
         except Exception as e:
-          print(f"[!] Error pada channel {ch_id} hari {day}: {e}")
+          print(f"[!] Gagal pada channel {ch_id} day {day}: {e}")
 
     browser.close()
 
-  # Generate XMLTV Format (epg.xml)
-  print("[*] Membuat file epg.xml...")
+  # Pembuatan format file XMLTV (epg.xml)
+  print("[*] Menyusun file epg.xml...")
   root = ET.Element("tv")
 
   for ch_id, info in all_channels_data.items():
@@ -192,7 +170,10 @@ def fetch_tvri_epg():
   tree = ET.ElementTree(root)
   ET.indent(tree, space="  ", level=0)
   tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
-  print("[✓] File epg.xml berhasil dibuat dengan jadwal lengkap TVRI!")
+  print(
+      "[✓] File epg.xml berhasil dibuat dengan data lengkap dari seluruh"
+      " channel TVRI!"
+  )
 
 
 if __name__ == "__main__":
