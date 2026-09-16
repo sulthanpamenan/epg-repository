@@ -6,13 +6,12 @@ from playwright.sync_api import sync_playwright
 def fetch_tvri_epg():
   base_url = "https://tvri.go.id/jadwal"
 
-  # Daftar channel TVRI (Nasional, Sport, dan Daerah seperti Riau dengan ID 33)
+  # Daftar channel TVRI (Sesuaikan ID channel sesuai kebutuhan Anda)
   channels = [
       {"id": 1, "name": "TVRI Nasional"},
       {"id": 2, "name": "TVRI DKI Jakarta"},
       {"id": 3, "name": "TVRI Sport HD"},
-      {"id": 33, "name": "TVRI Riau"},  # Contoh channel daerah
-      # Anda bisa menambahkan ID channel lain sesuai kebutuhan
+      {"id": 33, "name": "TVRI Riau"},
   ]
 
   # Hari di web TVRI menggunakan skala 0 (Minggu) sampai 6 (Sabtu)
@@ -21,9 +20,7 @@ def fetch_tvri_epg():
   all_channels_data = {}
   all_programs = []
 
-  print(
-      "[*] Memulai pengambilan data EPG TVRI melalui ekstraksi DOM Playwright..."
-  )
+  print("[*] Memulai pengambilan data EPG TVRI melalui DOM Playwright...")
 
   with sync_playwright() as p:
     browser = p.chromium.launch(
@@ -57,9 +54,14 @@ def fetch_tvri_epg():
               f"[*] Mengakses {ch_name} (Channel ID: {ch_id}, Day Index: {day})..."
           )
           page.goto(url, timeout=45000, wait_until="domcontentloaded")
-          page.wait_for_timeout(3000)  # Waktu tunggu render DOM Vue.js
 
-          # Ekstraksi elemen jadwal dari DOM HTML situs TVRI
+          # Menunggu elemen card jadwal muncul di DOM agar JavaScript selesai merender
+          try:
+            page.wait_for_selector("div.group.relative.flex", timeout=10000)
+          except Exception:
+            page.wait_for_timeout(4000)
+
+          # Ekstraksi akurat berdasarkan struktur HTML asli TVRI
           schedules = page.evaluate("""() => {
                         let items = [];
                         let rows = document.querySelectorAll('div.group.relative.flex');
@@ -67,18 +69,24 @@ def fetch_tvri_epg():
                         rows.forEach(row => {
                             let titleEl = row.querySelector('h3');
                             let descEl = row.querySelector('p');
-                            let timeContainer = row.querySelectorAll('span.font-mono');
+                            
+                            // Waktu mulai dan selesai berada di dalam elemen ber-class font-mono
+                            let timeSpans = row.querySelectorAll('span.font-mono');
                             let timeTexts = [];
                             
-                            timeContainer.forEach(span => {
-                                timeTexts.push(span.innerText.trim());
+                            timeSpans.forEach(span => {
+                                let txt = span.innerText.trim();
+                                if (/^\\d{2}:\\d{2}$/.test(txt)) {
+                                    timeTexts.push(txt);
+                                }
                             });
 
+                            // Jika tidak tertangkap spesifik, cari format jam umum dalam row
                             if (timeTexts.length < 2) {
                                 let allSpans = row.querySelectorAll('span');
                                 allSpans.forEach(span => {
                                     let txt = span.innerText.trim();
-                                    if (/^\\d{2}:\\d{2}$/.test(txt)) {
+                                    if (/^\\d{2}:\\d{2}$/.test(txt) && !timeTexts.includes(txt)) {
                                         timeTexts.push(txt);
                                     }
                                 });
@@ -97,8 +105,8 @@ def fetch_tvri_epg():
                     }""")
 
           print(
-              f"[+] Ditemukan {len(schedules)} jadwal untuk {ch_name} (Day:"
-              f" {day})"
+              f"[+] Berhasil mengambil {ch_name} (Day: {day}), jadwal"
+              f" ditemukan: {len(schedules)}"
           )
 
           for item in schedules:
@@ -108,7 +116,7 @@ def fetch_tvri_epg():
             end_time = item.get("end")
 
             if title and start_time and end_time:
-              # Penyesuaian tanggal berdasarkan indeks hari (0 = Minggu)
+              # Menghitung tanggal target berdasarkan indeks day (0 = Minggu)
               today = datetime.now()
               current_weekday = (today.weekday() + 1) % 7
               days_diff = (day - current_weekday) % 7
@@ -142,7 +150,7 @@ def fetch_tvri_epg():
 
     browser.close()
 
-  # Pembuatan format file XMLTV (epg.xml)
+  # Membuat file epg.xml dengan format XMLTV standar
   print("[*] Menyusun file epg.xml...")
   root = ET.Element("tv")
 
@@ -171,7 +179,7 @@ def fetch_tvri_epg():
   ET.indent(tree, space="  ", level=0)
   tree.write("epg.xml", encoding="utf-8", xml_declaration=True)
   print(
-      "[✓] File epg.xml berhasil dibuat dengan data lengkap dari seluruh"
+      "[✓] File epg.xml berhasil dibuat dengan jadwal lengkap dari seluruh"
       " channel TVRI!"
   )
 
