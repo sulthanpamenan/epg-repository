@@ -563,22 +563,25 @@ def fetch_single_mnc_epg(ch_info):
                     "fchannel": ch_info["code"],
                     "submit": "Cari",
                 }
-                res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=10)
+                res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=15)
             else:
                 get_url = f"https://www.mncvision.id/schedule/table/startno/{startno}"
-                res = HTTP_SESSION.get(get_url, headers=mnc_headers, timeout=10)
+                res = HTTP_SESSION.get(get_url, headers=mnc_headers, timeout=15)
 
             if res.status_code != 200:
+                print(f"[!] MNC Vision [{ch_name}] Page startno={startno} returned status {res.status_code}")
                 break
 
             soup = BeautifulSoup(res.text, "html.parser")
             table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
 
             if not table:
+                print(f"[!] MNC Vision [{ch_name}] Table not found on startno={startno}")
                 break
 
             rows = table.find_all("tr")[1:]
             if not rows:
+                print(f"[!] MNC Vision [{ch_name}] Rows empty on startno={startno}")
                 break
 
             page_added_count = 0
@@ -618,14 +621,17 @@ def fetch_single_mnc_epg(ch_info):
                             except Exception:
                                 continue
 
+            print(f"[i] MNC Vision [{ch_name}] startno={startno}: Added {page_added_count} programs (Total rows: {len(rows)})")
+
             if len(rows) < 50:
                 break
 
-        except Exception:
+        except Exception as e:
+            print(f"[!] MNC Vision Error [{ch_name}] at startno={startno}: {e}")
             break
 
     if programmes:
-        print(f"[✓] MNC Vision [{ch_name}]: Loaded {len(programmes)} programs (Full Day)!")
+        print(f"[✓] MNC Vision [{ch_name}]: Loaded {len(programmes)} programs total!")
         return [{"id": ch_id, "name": ch_name}], programmes
 
     return [], []
