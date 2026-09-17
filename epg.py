@@ -251,24 +251,19 @@ def get_official_dens_channels():
         {"id_num": "102", "slug": "densshowbiz", "id": "Dens_densshowbiz.id", "name": "Dens ShowBiz", "cat": "tv-local"},
         {"id_num": "1", "slug": "densknowledge", "id": "Dens_densknowledge.id", "name": "Dens Knowledge", "cat": "tv-local"},
         {"id_num": "137", "slug": "channel-jowo", "id": "Dens_channel-jowo.id", "name": "Channel Jowo", "cat": "tv-local"},
-        {"id_num": "6", "slug": "metro-tv", "id": "Dens_metro-tv.id", "name": "Metro TV", "cat": "tv-local"},
-        {"id_num": "80", "slug": "btv", "id": "Dens_btv.id", "name": "BTV", "cat": "tv-local"},
         {"id_num": "131", "slug": "berita-satu", "id": "Dens_berita-satu.id", "name": "BeritaSatu World", "cat": "tv-local"},
-        {"id_num": "13", "slug": "mdtv", "id": "Dens_mdtv.id", "name": "MD Channel", "cat": "tv-local"},
         {"id_num": "94", "slug": "elshinta-tv", "id": "Dens_elshinta-tv.id", "name": "Elshinta TV", "cat": "tv-local"},
         {"id_num": "122", "slug": "magna-channel", "id": "Dens_magna-channel.id", "name": "Magna Channel", "cat": "tv-local"},
         {"id_num": "118", "slug": "tvri-sport", "id": "Dens_tvri-sport.id", "name": "TVRI Sport", "cat": "tv-local"},
         {"id_num": "112", "slug": "jak-tv", "id": "Dens_jak-tv.id", "name": "Jak TV", "cat": "tv-local"},
         {"id_num": "21", "slug": "rodjatv", "id": "Dens_rodjatv.id", "name": "Rodja TV", "cat": "tv-local"},
         {"id_num": "23", "slug": "daai-tv", "id": "Dens_daai-tv.id", "name": "DAAI TV", "cat": "tv-local"},
-        {"id_num": "138", "slug": "nusantara-tv-ntv", "id": "Dens_nusantara-tv-ntv.id", "name": "Nusantara TV", "cat": "tv-local"},
         {"id_num": "92", "slug": "my-cinema-europe-hd", "id": "Dens_my-cinema-europe-hd.id", "name": "My Cinema Europe", "cat": "tv-premium"},
         {"id_num": "127", "slug": "crema-tv", "id": "Dens_crema-tv.id", "name": "Crema TV", "cat": "tv-premium"},
         {"id_num": "143", "slug": "qwest-tv", "id": "Dens_qwest-tv.id", "name": "Qwest TV", "cat": "tv-premium"},
         {"id_num": "128", "slug": "stingray-classica", "id": "Dens_stingray-classica.id", "name": "Stingray Classica", "cat": "tv-premium"},
         {"id_num": "130", "slug": "dance-tv", "id": "Dens_dance-tv.id", "name": "Dance TV", "cat": "tv-premium"},
         {"id_num": "98", "slug": "motorvision", "id": "Dens_motorvision.id", "name": "Motorvision+", "cat": "tv-premium"},
-        {"id_num": "61", "slug": "cna", "id": "Dens_cna.id", "name": "CNA", "cat": "tv-international"},
         {"id_num": "77", "slug": "nhk-world-japan", "id": "Dens_nhk-world-japan.id", "name": "NHK World Japan", "cat": "tv-international"},
         {"id_num": "56", "slug": "al-jazeera-english", "id": "Dens_al-jazeera-english.id", "name": "Al Jazeera English", "cat": "tv-international"},
         {"id_num": "41", "slug": "trt-world", "id": "Dens_trt-world.id", "name": "TRT World", "cat": "tv-international"},
@@ -282,7 +277,6 @@ def get_official_dens_channels():
         {"id_num": "81", "slug": "dw-tv", "id": "Dens_dw-tv.id", "name": "DW TV", "cat": "tv-international"},
         {"id_num": "132", "slug": "dim-tv", "id": "Dens_dim-tv.id", "name": "DIM TV", "cat": "tv-international"},
         {"id_num": "78", "slug": "tbn", "id": "Dens_tbn.id", "name": "TBN", "cat": "tv-international"},
-        {"id_num": "16", "slug": "cgtn-documentary", "id": "Dens_cgtn-documentary.id", "name": "CGTN Documentary", "cat": "tv-international"},
         {"id_num": "82", "slug": "quran-tv", "id": "Dens_quran-tv.id", "name": "Saudi Quran TV", "cat": "tv-international"},
         {"id_num": "88", "slug": "sunna-tv", "id": "Dens_sunna-tv.id", "name": "Saudi Sunnah TV", "cat": "tv-international"},
         {"id_num": "139", "slug": "wedotvmovies", "id": "Dens_wedotvmovies.id", "name": "wedo Movies", "cat": "tv-free-streaming"},
@@ -515,7 +509,10 @@ def fetch_epg_cltv36(target):
 # --- 5. MNC VISION ---
 def get_mnc_channel_options():
   url = "https://www.mncvision.id/schedule/table"
-  EXCLUDED_MNC_IDS = {"118"}
+  EXCLUDED_MNC_IDS = {
+	"78", "80", "81", "82", "83", "84", "87", "89", "97", "103", "106", "107", "110",
+	"115", "116", "118", "331", "430", "431", "432", "433", "434", "437", "438"}
+  
   channels = []
   try:
     res = HTTP_SESSION.get(url, timeout=12)
