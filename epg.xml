@@ -14873,7 +14873,7 @@
   </programme>
   <programme start="20260917090000 +0500" stop="20260917100000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Жоғалған жылдар</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Телехикая</desc>
   </programme>
   <programme start="20260917100000 +0500" stop="20260917101000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Ақпарат</title>
@@ -14901,7 +14901,7 @@
   </programme>
   <programme start="20260917145500 +0500" stop="20260917155500 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Көңіл толқыны</title>
-    <desc lang="kk">Бағдарлама</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260917155500 +0500" stop="20260917170000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Жоғалған есім</title>
@@ -14995,7 +14995,7 @@
   </programme>
   <programme start="20260917090000 +0500" stop="20260917100000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Жоғалған жылдар</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Телехикая</desc>
   </programme>
   <programme start="20260917100000 +0500" stop="20260917101000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Ақпарат</title>
@@ -15023,7 +15023,7 @@
   </programme>
   <programme start="20260917145500 +0500" stop="20260917155500 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Көңіл толқыны</title>
-    <desc lang="kk">Бағдарлама</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260917155500 +0500" stop="20260917170000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Жоғалған есім</title>
@@ -15155,11 +15155,11 @@
   </programme>
   <programme start="20260917141000 +0500" stop="20260917151000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Фильм</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">«Адам тәнінің ғажайыптары». 1-ші бөлім. Деректі фильм</desc>
   </programme>
   <programme start="20260917151000 +0500" stop="20260917154500 +0500" channel="AbaiTV.kz">
     <title lang="kk">Ұмытпаймыз</title>
-    <desc lang="kk">Бағдарлама. Сырбай Мәуленовты еске алу</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260917154500 +0500" stop="20260917161500 +0500" channel="AbaiTV.kz">
     <title lang="kk">АRT-ЭКСПЕРИМЕНТ</title>
