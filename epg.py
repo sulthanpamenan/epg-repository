@@ -541,98 +541,94 @@ def get_mnc_channel_options():
   return channels
 
 def fetch_single_mnc_epg(ch_info):
-  today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
-  mnc_headers = {
-      "User-Agent": HEADERS["User-Agent"],
-      "Origin": "https://www.mncvision.id",
-      "Referer": "https://www.mncvision.id/schedule/table",
-  }
-
-  programmes = []
-  ch_id = ch_info["slug_id"]
-  ch_name = ch_info["clean_name"]
-
-  for startno in [0, 50, 100, 150]:
-    post_url = (
-        "https://www.mncvision.id/schedule/table"
-        if startno == 0
-        else f"https://www.mncvision.id/schedule/table/startno/{startno}"
-    )
-
-    payload = {
-        "search_model": "channel",
-        "af0rmelement": "aformelement",
-        "fdate": today_str,
-        "fchannel": ch_info["code"],
-        "submit": "Cari",
+    today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
+    mnc_headers = {
+        "User-Agent": HEADERS["User-Agent"],
+        "Origin": "https://www.mncvision.id",
+        "Referer": "https://www.mncvision.id/schedule/table",
     }
 
-    try:
-      res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=10)
-      if res.status_code != 200:
-        res = HTTP_SESSION.get(post_url, params=payload, headers=mnc_headers, timeout=10)
+    programmes = []
+    ch_id = ch_info["slug_id"]
+    ch_name = ch_info["clean_name"]
 
-      if res.status_code != 200:
-        break
-
-      soup = BeautifulSoup(res.text, "html.parser")
-      table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
-
-      if not table:
-        break
-
-      rows = table.find_all("tr")[1:]
-      if not rows:
-        break
-
-      page_added_count = 0
-      for row in rows:
-        cols = row.find_all(["td", "th"])
-        if len(cols) >= 2:
-          time_str = clean_text_str(cols[0].get_text())
-          title_str = clean_text_str(cols[1].get_text())
-          duration_str = (clean_text_str(cols[2].get_text()) if len(cols) >= 3 else "")
-
-          if time_str and title_str and "Toggle navigation" not in title_str and "Jadwal Tidak Ditemukan" not in title_str:
-            match = TIME_PATTERN_HM.search(time_str)
-            if match:
-              t_clean = match.group(1).replace(".", ":").zfill(5)[:5]
-              try:
-                start_dt = datetime.strptime(f"{today_str} {t_clean}", "%Y-%m-%d %H:%M")
-                stop_dt = start_dt + timedelta(hours=1)
-                dur_match = re.search(r"(\d{2}):(\d{2})", duration_str)
-                if dur_match:
-                  h_dur, m_dur = int(dur_match.group(1)), int(dur_match.group(2))
-                  stop_dt = start_dt + timedelta(hours=h_dur, minutes=m_dur)
-                  if stop_dt <= start_dt:
-                    stop_dt += timedelta(days=1)
-
-                prog_item = {
-                    "channel": ch_id,
-                    "start": format_xmltv_date(start_dt, "+0700"),
-                    "stop": format_xmltv_date(stop_dt, "+0700"),
-                    "title": title_str,
-                    "desc": "",
-                    "lang": "id",
+    for startno in [0, 50]:
+        try:
+            if startno == 0:
+                post_url = "https://www.mncvision.id/schedule/table"
+                payload = {
+                    "search_model": "channel",
+                    "af0rmelement": "aformelement",
+                    "fdate": today_str,
+                    "fchannel": ch_info["code"],
+                    "submit": "Cari",
                 }
+                res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=10)
+            else:
+                get_url = f"https://www.mncvision.id/schedule/table/startno/{startno}"
+                res = HTTP_SESSION.get(get_url, headers=mnc_headers, timeout=10)
 
-                if prog_item not in programmes:
-                  programmes.append(prog_item)
-                  page_added_count += 1
-              except Exception:
-                continue
+            if res.status_code != 200:
+                break
 
-      if page_added_count < 50:
-        break
+            soup = BeautifulSoup(res.text, "html.parser")
+            table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
 
-    except Exception:
-      break
+            if not table:
+                break
 
-  if programmes:
-    print(f"[✓] MNC Vision [{ch_name}]: Loaded {len(programmes)} programs (Full Day)!")
-    return [{"id": ch_id, "name": ch_name}], programmes
+            rows = table.find_all("tr")[1:]
+            if not rows:
+                break
 
-  return [], []
+            page_added_count = 0
+            for row in rows:
+                cols = row.find_all(["td", "th"])
+                if len(cols) >= 2:
+                    time_str = clean_text_str(cols[0].get_text())
+                    title_str = clean_text_str(cols[1].get_text())
+                    duration_str = clean_text_str(cols[2].get_text()) if len(cols) >= 3 else ""
+
+                    if time_str and title_str and "Toggle navigation" not in title_str and "Jadwal Tidak Ditemukan" not in title_str:
+                        match = TIME_PATTERN_HM.search(time_str)
+                        if match:
+                            t_clean = match.group(1).replace(".", ":").zfill(5)[:5]
+                            try:
+                                start_dt = datetime.strptime(f"{today_str} {t_clean}", "%Y-%m-%d %H:%M")
+                                stop_dt = start_dt + timedelta(hours=1)
+                                dur_match = re.search(r"(\d{2}):(\d{2})", duration_str)
+                                if dur_match:
+                                    h_dur, m_dur = int(dur_match.group(1)), int(dur_match.group(2))
+                                    stop_dt = start_dt + timedelta(hours=h_dur, minutes=m_dur)
+                                    if stop_dt <= start_dt:
+                                        stop_dt += timedelta(days=1)
+
+                                prog_item = {
+                                    "channel": ch_id,
+                                    "start": format_xmltv_date(start_dt, "+0700"),
+                                    "stop": format_xmltv_date(stop_dt, "+0700"),
+                                    "title": title_str,
+                                    "desc": "",
+                                    "lang": "id",
+                                }
+
+                                if prog_item not in programmes:
+                                    programmes.append(prog_item)
+                                    page_added_count += 1
+                            except Exception:
+                                continue
+
+            if len(rows) < 50:
+                break
+
+        except Exception:
+            break
+
+    if programmes:
+        print(f"[✓] MNC Vision [{ch_name}]: Loaded {len(programmes)} programs (Full Day)!")
+        return [{"id": ch_id, "name": ch_name}], programmes
+
+    return [], []
 
 def fetch_all_mncvision_parallel():
     channels_list = get_mnc_channel_options()
