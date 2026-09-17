@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+import time
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
@@ -551,6 +552,7 @@ def fetch_single_mnc_epg(ch_info):
     programmes = []
     ch_id = ch_info["slug_id"]
     ch_name = ch_info["clean_name"]
+	time.sleep(1)
 
     for startno in [0, 50]:
         try:
@@ -563,7 +565,7 @@ def fetch_single_mnc_epg(ch_info):
                     "fchannel": ch_info["code"],
                     "submit": "Cari",
                 }
-                res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=15)
+                res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=25)
             else:
                 get_url = f"https://www.mncvision.id/schedule/table/startno/{startno}"
                 res = HTTP_SESSION.get(get_url, headers=mnc_headers, timeout=15)
