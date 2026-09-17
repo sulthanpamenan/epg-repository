@@ -552,89 +552,79 @@ def fetch_single_mnc_epg(ch_info):
   ch_id = ch_info["slug_id"]
   ch_name = ch_info["clean_name"]
 
-  startno = 0
-  max_pages = 5
-
-  for page in range(max_pages):
+  for startno in [0, 50, 100, 150]:
     post_url = (
         "https://www.mncvision.id/schedule/table"
         if startno == 0
         else f"https://www.mncvision.id/schedule/table/startno/{startno}"
     )
 
-    payload = {"search_model": "channel", "af0rmelement": "aformelement", "fdate": today_str, "fchannel": ch_info["code"], "submit": "Cari",}
+    payload = {
+        "search_model": "channel",
+        "af0rmelement": "aformelement",
+        "fdate": today_str,
+        "fchannel": ch_info["code"],
+        "submit": "Cari",
+    }
+
     try:
       res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=10)
       if res.status_code != 200:
         res = HTTP_SESSION.get(post_url, params=payload, headers=mnc_headers, timeout=10)
 
-      if res.status_code == 200:
-        soup = BeautifulSoup(res.text, "html.parser")
-        table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
-
-        if not table:
-          break
-
-        rows = table.find_all("tr")[1:]
-        if not rows:
-          break
-
-        page_added_count = 0
-        for row in rows:
-          cols = row.find_all(["td", "th"])
-          if len(cols) >= 2:
-            time_str = clean_text_str(cols[0].get_text())
-            title_str = clean_text_str(cols[1].get_text())
-            duration_str = (clean_text_str(cols[2].get_text()) if len(cols) >= 3 else "")
- 
-            if (
-                time_str
-                and title_str
-                and "Toggle navigation" not in title_str
-                and "Jadwal Tidak Ditemukan" not in title_str
-            ):
-              match = TIME_PATTERN_HM.search(time_str)
-              if match:
-                t_clean = match.group(1).replace(".", ":").zfill(5)[:5]
-                try:
-                  start_dt = datetime.strptime(f"{today_str} {t_clean}", "%Y-%m-%d %H:%M")
-                  stop_dt = start_dt + timedelta(hours=1)
-                  dur_match = re.search(r"(\d{2}):(\d{2})", duration_str)
-                  if dur_match:
-                    h_dur, m_dur = int(dur_match.group(1)), int(dur_match.group(2))
-                    stop_dt = start_dt + timedelta(hours=h_dur, minutes=m_dur)
-                    if stop_dt <= start_dt:
-                      stop_dt += timedelta(days=1)
-
-                  prog_item = {
-                      "channel": ch_id,
-                      "start": format_xmltv_date(start_dt, "+0700"),
-                      "stop": format_xmltv_date(stop_dt, "+0700"),
-                      "title": title_str,
-                      "desc": "",
-                      "lang": "id",
-                  }
-
-                  if prog_item not in programmes:
-                    programmes.append(prog_item)
-                    page_added_count += 1
-                except Exception:
-                  continue
-
-        pagination = soup.select(".pagination a, .dataTables_paginate a, div.page a")
-        has_next_page = False
-        for a in pagination:
-          if str(startno + 50) in a.get("href", "") or str(page + 2) in a.get_text():
-            has_next_page = True
-            break
-
-        if page_added_count == 0 or not has_next_page:
-          if page_added_count >= 50:
-            startno += 50
-          else:
-            break
-      else:
+      if res.status_code != 200:
         break
+
+      soup = BeautifulSoup(res.text, "html.parser")
+      table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
+
+      if not table:
+        break
+
+      rows = table.find_all("tr")[1:]
+      if not rows:
+        break
+
+      page_added_count = 0
+      for row in rows:
+        cols = row.find_all(["td", "th"])
+        if len(cols) >= 2:
+          time_str = clean_text_str(cols[0].get_text())
+          title_str = clean_text_str(cols[1].get_text())
+          duration_str = (clean_text_str(cols[2].get_text()) if len(cols) >= 3 else "")
+
+          if time_str and title_str and "Toggle navigation" not in title_str and "Jadwal Tidak Ditemukan" not in title_str:
+            match = TIME_PATTERN_HM.search(time_str)
+            if match:
+              t_clean = match.group(1).replace(".", ":").zfill(5)[:5]
+              try:
+                start_dt = datetime.strptime(f"{today_str} {t_clean}", "%Y-%m-%d %H:%M")
+                stop_dt = start_dt + timedelta(hours=1)
+                dur_match = re.search(r"(\d{2}):(\d{2})", duration_str)
+                if dur_match:
+                  h_dur, m_dur = int(dur_match.group(1)), int(dur_match.group(2))
+                  stop_dt = start_dt + timedelta(hours=h_dur, minutes=m_dur)
+                  if stop_dt <= start_dt:
+                    stop_dt += timedelta(days=1)
+
+                prog_item = {
+                    "channel": ch_id,
+                    "start": format_xmltv_date(start_dt, "+0700"),
+                    "stop": format_xmltv_date(stop_dt, "+0700"),
+                    "title": title_str,
+                    "desc": "",
+                    "lang": "id",
+                }
+
+                if prog_item not in programmes:
+                  programmes.append(prog_item)
+                  page_added_count += 1
+              except Exception:
+                continue
+
+      if page_added_count < 50:
+        break
+
     except Exception:
       break
 
