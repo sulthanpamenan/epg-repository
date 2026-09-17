@@ -10,7 +10,6 @@ from bs4 import BeautifulSoup
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-import time
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
@@ -379,7 +378,11 @@ def fetch_epg_tpchannel(target):
 
     api_url = f"https://www.tpchannel.org/tv/schedule/get-by-date?master_type_id=2&date={date_param}"
     try:
-        res = HTTP_SESSION.get(api_url, headers={"X-Requested-With": "XMLHttpRequest", "Referer": target["url"]}, timeout=12)
+        res = HTTP_SESSION.get(
+            api_url, 
+            headers={"X-Requested-With": "XMLHttpRequest", "Referer": target["url"]}, 
+            timeout=12
+        )
         if res.status_code == 200:
             data = res.json()
             
@@ -505,41 +508,39 @@ def fetch_epg_cltv36(target):
 
 # --- 5. MNC VISION ---
 def get_mnc_channel_options():
-  url = "https://www.mncvision.id/schedule/table"
-  EXCLUDED_MNC_IDS = {
-	"78", "80", "81", "82", "83", "84", "87", "89", "97", "103", "106", "107", "110",
-	"115", "116", "118", "331", "430", "431", "432", "433", "434", "437", "438"
-  }
-  
-  channels = []
-  try:
-    res = HTTP_SESSION.get(url, timeout=12)
-    if res.status_code == 200:
-      soup = BeautifulSoup(res.text, "html.parser")
-      select = soup.find("select", {"name": "fchannel"}) or soup.find("select", {"id": "fchannel"})
-      if select:
-        for opt in select.find_all("option"):
-          val = opt.get("value")
-          raw_name = clean_text_str(opt.get_text())
-          if val and str(val) != "0" and raw_name and "Pilih Channel" not in raw_name and "Toggle" not in raw_name:
+    url = "https://www.mncvision.id/schedule/table"
+    EXCLUDED_MNC_IDS = {
+        "78", "80", "81", "82", "83", "84", "87", "89", "97", "103", "106", "107", "110",
+        "115", "116", "118", "331", "430", "431", "432", "433", "434", "437", "438"
+    }
+    
+    channels = []
+    try:
+        res = HTTP_SESSION.get(url, timeout=25)
+        if res.status_code == 200:
+            soup = BeautifulSoup(res.text, "html.parser")
+            select = soup.find("select", {"name": "fchannel"}) or soup.find("select", {"id": "fchannel"})
+            if select:
+                for opt in select.find_all("option"):
+                    val = opt.get("value")
+                    raw_name = clean_text_str(opt.get_text())
+                    if val and str(val) != "0" and raw_name and "Pilih Channel" not in raw_name and "Toggle" not in raw_name:
 
-            if str(val) in EXCLUDED_MNC_IDS:
-              print(f"[-] MNC Vision: Excluding channel '{raw_name}' (ID:{val})")
-              continue
+                        if str(val) in EXCLUDED_MNC_IDS:
+                            continue
 
-            clean_channel_name = re.sub(r"\s*-\s*\[.*?\]", "", raw_name).strip()
+                        clean_channel_name = re.sub(r"\s*-\s*\[.*?\]", "", raw_name).strip()
+                        slug = re.sub(r"[-\s]+", "-", re.sub(r"[^\w\s-]", "", clean_channel_name.lower().strip()))
+                        slug_id = f"MNC_{slug}_{val}.id"
 
-            slug = re.sub(r"[-\s]+", "-", re.sub(r"[^\w\s-]", "", clean_channel_name.lower().strip()))
-            slug_id = f"MNC_{slug}_{val}.id"
-
-            channels.append({
-                "code": str(val),
-                "clean_name": clean_channel_name,
-                "slug_id": slug_id,
-            })
-  except Exception as e:
-    print(f"[!] Failed to retrieve the channel list: {e}")
-  return channels
+                        channels.append({
+                            "code": str(val),
+                            "clean_name": clean_channel_name,
+                            "slug_id": slug_id,
+                        })
+    except Exception as e:
+        print(f"[!] Failed to retrieve the channel list: {e}")
+    return channels
 
 def fetch_single_mnc_epg(ch_info):
     today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
@@ -550,9 +551,12 @@ def fetch_single_mnc_epg(ch_info):
     }
 
     programmes = []
+    seen_prog_keys = set()
     ch_id = ch_info["slug_id"]
     ch_name = ch_info["clean_name"]
-	time.sleep(1)
+    
+    local_session = requests.Session()
+    local_session.headers.update(HEADERS)
 
     for startno in [0, 50]:
         try:
@@ -563,30 +567,26 @@ def fetch_single_mnc_epg(ch_info):
                     "af0rmelement": "aformelement",
                     "fdate": today_str,
                     "fchannel": ch_info["code"],
-                    "submit": "Cari",
+                    "submit": "Cari"
                 }
-                res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=25)
+                res = local_session.post(post_url, data=payload, headers=mnc_headers, timeout=25)
             else:
                 get_url = f"https://www.mncvision.id/schedule/table/startno/{startno}"
-                res = HTTP_SESSION.get(get_url, headers=mnc_headers, timeout=15)
+                res = local_session.get(get_url, headers=mnc_headers, timeout=20)
 
             if res.status_code != 200:
-                print(f"[!] MNC Vision [{ch_name}] Page startno={startno} returned status {res.status_code}")
                 break
 
             soup = BeautifulSoup(res.text, "html.parser")
             table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
-
+            
             if not table:
-                print(f"[!] MNC Vision [{ch_name}] Table not found on startno={startno}")
                 break
 
             rows = table.find_all("tr")[1:]
             if not rows:
-                print(f"[!] MNC Vision [{ch_name}] Rows empty on startno={startno}")
                 break
-
-            page_added_count = 0
+            
             for row in rows:
                 cols = row.find_all(["td", "th"])
                 if len(cols) >= 2:
@@ -608,28 +608,26 @@ def fetch_single_mnc_epg(ch_info):
                                     if stop_dt <= start_dt:
                                         stop_dt += timedelta(days=1)
 
-                                prog_item = {
-                                    "channel": ch_id,
-                                    "start": format_xmltv_date(start_dt, "+0700"),
-                                    "stop": format_xmltv_date(stop_dt, "+0700"),
-                                    "title": title_str,
-                                    "desc": "",
-                                    "lang": "id",
-                                }
+                                start_formatted = format_xmltv_date(start_dt, "+0700")
+                                unique_key = (start_formatted, title_str)
 
-                                if prog_item not in programmes:
-                                    programmes.append(prog_item)
-                                    page_added_count += 1
+                                if unique_key not in seen_prog_keys:
+                                    seen_prog_keys.add(unique_key)
+                                    programmes.append({
+                                        "channel": ch_id,
+                                        "start": start_formatted,
+                                        "stop": format_xmltv_date(stop_dt, "+0700"),
+                                        "title": title_str,
+                                        "desc": "",
+                                        "lang": "id"
+                                    })
                             except Exception:
                                 continue
-
-            print(f"[i] MNC Vision [{ch_name}] startno={startno}: Added {page_added_count} programs (Total rows: {len(rows)})")
 
             if len(rows) < 50:
                 break
 
-        except Exception as e:
-            print(f"[!] MNC Vision Error [{ch_name}] at startno={startno}: {e}")
+        except Exception:
             break
 
     if programmes:
@@ -645,7 +643,7 @@ def fetch_all_mncvision_parallel():
 
     print(f"[*] Starting precision extraction for {len(channels_list)} MNC Vision channels...")
     all_channels, all_programmes = [], []
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         results = executor.map(fetch_single_mnc_epg, channels_list)
         for ch_list, progs in results:
             if progs:
@@ -671,8 +669,7 @@ def fetch_epg_qazaqstan(target):
             soup = BeautifulSoup(res.text, "html.parser")
             
             items = soup.select("div.flex.items-center.justify-between.w-full, .program-item")
-            print(f"[i] [{target['name']}] {len(items)} raw elements found on the page.")
-
+            
             raw_progs = []
             for item in items:
                 time_elem = item.select_one(".font-bold.text-h5, [class*='text-h5'], [class*='font-bold']")
@@ -689,8 +686,13 @@ def fetch_epg_qazaqstan(target):
                     title_text = clean_text_str(title_elem.get_text(strip=True)) if title_elem else ""
                     
                     genre_keywords = [
-                        "деректі фильм", "деректі фильмдер", "телехикая", "телехикаялар", "бағдарлама", "бағдарламалар", "мультхикая", 
-						"мультхикаялар", "мегажоба", "мегажобалар", "көркем фильм", "көркем фильмдер", "ақпараттық-саяси бағдарлама"
+                        "деректі фильм", "деректі фильмдер", 
+                        "телехикая", "телехикаялар", 
+                        "бағдарлама", "бағдарламалар", 
+                        "мультхикая", "мультхикаялар", 
+                        "мегажоба", "мегажобалар", 
+                        "көркем фильм", "көркем фильмдер",
+                        "ақпараттық-саяси бағдарлама"
                     ]
                     
                     if any(kw in title_text.lower() for kw in genre_keywords) and not any(kw in cat_text.lower() for kw in genre_keywords):
@@ -750,14 +752,8 @@ def fetch_epg_qazaqstan(target):
                         continue
                 print(f"[✓] {target['name']}: Successfully extracted {len(programmes)} valid programs!")
                 break
-        except requests.exceptions.Timeout:
-            print(f"[!] [{target['name']}] Connection timed out.")
-        except requests.exceptions.HTTPError as err:
-            print(f"[!] [{target['name']}] HTTP Error: {err.response.status_code}")
-        except requests.exceptions.RequestException as err:
-            print(f"[!] [{target['name']}] Network Error: {err}")
-        except Exception as err:
-            print(f"[!] [{target['name']}] Unexpected Error: {err}")
+        except Exception:
+            continue
 
     return channels, programmes
 
@@ -880,7 +876,8 @@ def generate_xmltv():
 
     try:
         ET.indent(tv_elem, space="  ")
-    except AttributeError: pass
+    except AttributeError: 
+        pass
 
     ET.ElementTree(tv_elem).write("epg.xml", encoding="utf-8", xml_declaration=True)
     print("=" * 60)
