@@ -356,7 +356,7 @@ def fetch_all_dens_parallel():
     print(f"[*] Starting parallel EPG extraction for {len(channels_list)} Dens.TV channels...")
     all_channels, all_programmes = [], []
 
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=9) as executor:
         results = executor.map(fetch_single_dens_channel, channels_list)
         for ch_info, progs in results:
             if progs:
@@ -643,7 +643,7 @@ def fetch_all_mncvision_parallel():
 
     print(f"[*] Starting precision extraction for {len(channels_list)} MNC Vision channels...")
     all_channels, all_programmes = [], []
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=20) as executor:
         results = executor.map(fetch_single_mnc_epg, channels_list)
         for ch_list, progs in results:
             if progs:
@@ -792,7 +792,7 @@ def fetch_single_redbull_channel(t):
 def fetch_epg_redbull_all(targets):
     channels = []
     all_programmes = []
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=9) as executor:
         results = executor.map(fetch_single_redbull_channel, targets)
         for ch_info, progs in results:
             if progs:
@@ -840,7 +840,7 @@ def generate_xmltv():
 
     # 5. Fetch Other Sources (TP Channel, CLTV36, Qazaqstan Network)
     other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=9) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
