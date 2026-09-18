@@ -137,6 +137,7 @@ def scrape_single_tivie_channel(ch):
             "Referer": "https://tivie.id/"
         }
         res = HTTP_SESSION.get(url, headers=tivie_headers, timeout=15)
+        
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             
@@ -144,30 +145,37 @@ def scrape_single_tivie_channel(ch):
                 unwanted.decompose()
 
             event_items = soup.select("li[id^='event-']")
-            if not event_items:
-                event_items = [li for li in soup.find_all("li") if TIME_PATTERN_HM.search(li.get_text())]
 
             for item in event_items:
-                full_text = item.get_text(" ", strip=True)
-                time_match = TIME_PATTERN_HM.search(full_text)
-                if not time_match:
+                time_div = item.select_one("div.w-13")
+                t_str = ""
+                if time_div:
+                    time_spans = time_div.find_all("span")
+                    time_parts = [s.get_text(strip=True) for s in time_spans if s.get_text(strip=True)]
+                    joined_time = "".join(time_parts)
+                    
+                    match_t = TIME_PATTERN_HM.search(joined_time) or TIME_PATTERN_HM.search(time_div.get_text())
+                    if match_t:
+                        t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
+
+                if not t_str:
+                    full_txt = item.get_text(" ", strip=True)
+                    match_fallback = TIME_PATTERN_HM.search(full_txt)
+                    if match_fallback:
+                        t_str = match_fallback.group(1).replace(".", ":").zfill(5)[:5]
+                
+                if not t_str:
                     continue
-                t_str = time_match.group(1).replace(".", ":").zfill(5)[:5]
 
                 cat_div = item.select_one("div.text-sm.tracking-wide")
                 cat_str = clean_text_str(cat_div.get_text()) if cat_div else ""
 
-                h_elem = item.select_one("h5, h4")
+                h_elem = item.select_one("h5[x-ref='title']")
                 if h_elem:
                     h_clone = BeautifulSoup(str(h_elem), 'html.parser')
                     for sub in h_clone.select("div.text-sm.tracking-wide"):
                         sub.decompose()
-                    for sub in h_clone.select("span.sr-only"):
-                        sub.decompose()
-                    
-                    texts = [clean_text_str(t) for t in h_clone.stripped_strings if t not in ["WIB", "LIVE"]]
-                    texts = [t for t in texts if t != cat_str]
-                    prog_title = " ".join(texts) if texts else ""
+                    prog_title = clean_text_str(h_clone.get_text())
                 else:
                     prog_title = ""
 
