@@ -127,32 +127,54 @@ def scrape_single_tivie_channel(ch):
     today_wib = datetime.now(timezone.utc).astimezone(wib_tz)
     date_str = today_wib.strftime("%Y-%m-%d")
     
-    api_url = f"{CF_WORKER_URL}/channel/{ch_id}?date={date_str}"
+    url = f"{CF_WORKER_URL}/channel/{ch_id}?date={date_str}"
     programmes = []
     
     try:
-        res = HTTP_SESSION.get(api_url, timeout=15)
+        res = HTTP_SESSION.get(url, timeout=15)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, "html.parser")
             raw_list = []
             
-            items = soup.select("li, .program-item, .schedule-item, .timeline-item, tr, div")
+            items = soup.find_all("li", attrs={"x-data": True})
             
             for item in items:
-                text = item.get_text(" ", strip=True)
-                match_t = TIME_PATTERN_HM.search(text)
-                if match_t:
+                x_data_str = item.get("x-data", "")
+                
+                title_elem = item.select_one("h4, .font-bold, [class*='font-medium']")
+                time_elem = item.select_one("span[before], span.text-xs, span[class*='leading']")
+                
+                title = ""
+                if title_elem:
+                    title = title_elem.get_text(strip=True)
+                
+                item_text = item.get_text(" ", strip=True)
+                match_t = TIME_PATTERN_HM.search(item_text)
+                
+                if match_t and title:
                     t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
-                    title_candidate = text.replace(match_t.group(0), "").strip()
-                    title_candidate = re.sub(r"^[-–:\s]+", "", title_candidate)
-                    
-                    if title_candidate and len(title_candidate) > 2 and len(title_candidate) < 150:
-                        raw_list.append({
-                            "time": t_str,
-                            "title": clean_text_str(title_candidate),
-                            "desc": ""
-                        })
+                    raw_list.append({
+                        "time": t_str,
+                        "title": clean_text_str(title),
+                        "desc": ""
+                    })
             
+            if not raw_list:
+                all_divs = soup.select("li, div")
+                for div in all_divs:
+                    text = div.get_text(" ", strip=True)
+                    match_t = TIME_PATTERN_HM.search(text)
+                    if match_t:
+                        t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
+                        title_cand = text.replace(match_t.group(0), "").strip()
+                        title_cand = re.sub(r"^[-–:\s]+", "", title_cand)
+                        if len(title_cand) > 2 and len(title_cand) < 150:
+                            raw_list.append({
+                                "time": t_str,
+                                "title": clean_text_str(title_cand),
+                                "desc": ""
+                            })
+
             seen_times = set()
             unique_raw = []
             for r in raw_list:
@@ -186,11 +208,11 @@ def scrape_single_tivie_channel(ch):
                 })
                 
         if programmes:
-            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs via Worker!")
+            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs!")
         else:
-            print(f"[!] Tivie.id [{ch_name}]: Worker returned 0 programs.")
+            print(f"[!] Tivie.id [{ch_name}]: Returned 0 programs.")
     except Exception as e:
-        print(f"[!] Tivie Worker Error [{ch_name}]: {e}")
+        print(f"[!] Tivie Error [{ch_name}]: {e}")
 
     return {"id": f"Tivie_{ch_id}.id", "name": ch_name}, programmes
 
