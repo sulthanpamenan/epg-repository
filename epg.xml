@@ -4269,18 +4269,6 @@
   <programme start="20260918235950 +0700" stop="20260919005950 +0700" channel="Dens_wedosports.id">
     <title lang="id">UIPM 2026 Pentathlon World Cup - S01:E01 - Cairo Highlights</title>
   </programme>
-  <programme start="20260918092307 +0000" stop="20260918093107 +0000" channel="RedBullTV.global">
-    <title lang="en">2014's best runs</title>
-    <desc lang="en">Which teams pushed the fear to one side and smashed the speed limits in 2014? Hit play and find out.</desc>
-  </programme>
-  <programme start="20260918093107 +0000" stop="20260918094021 +0000" channel="RedBullTV.global">
-    <title lang="en">2014's top car designs</title>
-    <desc lang="en">A fast racer is only part of the magic formula: it's also got to look good and these were 2014's best designs.</desc>
-  </programme>
-  <programme start="20260918094021 +0000" stop="20260918103039 +0000" channel="RedBullTV.global">
-    <title lang="en">A Biker's Ballad</title>
-    <desc lang="en">Traversing the history as well as the trails, 14 riders uncover the essence of MTB in Crested Butte, Colorado.</desc>
-  </programme>
   <programme start="20260918103039 +0000" stop="20260918105441 +0000" channel="RedBullTV.global">
     <title lang="en">Nepal</title>
     <desc lang="en">Rob Warner and downhill pro Olly Wilkins ride around the world's tallest mountain range.</desc>
@@ -4348,6 +4336,18 @@
   <programme start="20260918180737 +0000" stop="20260918183337 +0000" channel="RedBullTV.global">
     <title lang="en">Freerunning</title>
     <desc lang="en">Tony Hawk and influential figures like Jason Paul and Pasha Petkuns tell the story of competitive freerunning.</desc>
+  </programme>
+  <programme start="20260918183337 +0000" stop="20260918185937 +0000" channel="RedBullTV.global">
+    <title lang="en">Freestyle football</title>
+    <desc lang="en">Three athletes from three different backgrounds use freestyle football to showcase their athleticism.</desc>
+  </programme>
+  <programme start="20260918185937 +0000" stop="20260918192613 +0000" channel="RedBullTV.global">
+    <title lang="en">Breaking</title>
+    <desc lang="en">Uncover the evolution of breaking as it progressed from Bronx backyards to global stages like Red Bull BC One.</desc>
+  </programme>
+  <programme start="20260918192613 +0000" stop="20260918195213 +0000" channel="RedBullTV.global">
+    <title lang="en">From skateboarding out a plane to 180m wall climb</title>
+    <desc lang="en">Red Bull athletes do it all, from freerunning through an airport to building a skatepark in the forest.</desc>
   </programme>
   <programme start="20260918100824 +0000" stop="20260918103450 +0000" channel="RedBullPadel.global">
     <title lang="en">Meet padel stars Fernández, Triay, Lebrón and Yanguas</title>
@@ -4429,18 +4429,6 @@
     <title lang="en">Tarragona P1 Premier Padel highlights</title>
     <desc lang="en">Watch the highlights from Tarragona, Spain as the P1 Premier Padel took centre stage.</desc>
   </programme>
-  <programme start="20260918094406 +0000" stop="20260918100601 +0000" channel="RedBullBike.global">
-    <title lang="en">Dear 39th Street</title>
-    <desc lang="en">Justin Williams returns to 39th Street, LA to build L39ION – the world's first Black-owned cycling team.</desc>
-  </programme>
-  <programme start="20260918100601 +0000" stop="20260918101845 +0000" channel="RedBullBike.global">
-    <title lang="en">Underdogs and overdogs</title>
-    <desc lang="en">MTB riders Kate Courtney and Loïc Bruni recall the highs and lows of their mountain biking careers.</desc>
-  </programme>
-  <programme start="20260918101845 +0000" stop="20260918102328 +0000" channel="RedBullBike.global">
-    <title lang="en">Courage Adams in Soweto</title>
-    <desc lang="en">BMX street rider Courage Adams creates an electrifying inner-city line through the eclectic streets of Soweto.</desc>
-  </programme>
   <programme start="20260918102328 +0000" stop="20260918104756 +0000" channel="RedBullBike.global">
     <title lang="en">Nepal</title>
     <desc lang="en">Rob Warner and downhill pro Olly Wilkins ride around the world's tallest mountain range.</desc>
@@ -4509,21 +4497,17 @@
     <title lang="en">Chasing the Inca II</title>
     <desc lang="en">Take a journey into the Peruvian Andes with a group of pro mountain bikers searching for a lost Incan trail.</desc>
   </programme>
-  <programme start="20260918090433 +0000" stop="20260918092945 +0000" channel="RedBullAdventure.global">
-    <title lang="en">The Nose speed record part 2</title>
-    <desc lang="en">Alex Honnold knows the ropes and is pushing for perfection, but Tommy Caldwell is new to speed climbing.</desc>
+  <programme start="20260918161912 +0000" stop="20260918163204 +0000" channel="RedBullBike.global">
+    <title lang="en">French advantage</title>
+    <desc lang="en">MTB riders discuss the consistent success of French competitors and speculate about what gives them the edge.</desc>
   </programme>
-  <programme start="20260918092945 +0000" stop="20260918100615 +0000" channel="RedBullAdventure.global">
-    <title lang="en">Red Bull Dual Ascent</title>
-    <desc lang="en">Sixteen world-class athletes on eight teams battle to be the fastest up a wall of six gruelling pitches.</desc>
+  <programme start="20260918163204 +0000" stop="20260918164740 +0000" channel="RedBullBike.global">
+    <title lang="en">Norwegian freeride with Brage Vestavik</title>
+    <desc lang="en">Norway's Brage Vestavik has made a name for himself as the toughest freeride mountain biker to hit the scene.</desc>
   </programme>
-  <programme start="20260918100615 +0000" stop="20260918101901 +0000" channel="RedBullAdventure.global">
-    <title lang="en">Jason Paul’s Wild Ride</title>
-    <desc lang="en">Pro freerunner Jason Paul and friends head to Germany’s Mammut roller coaster for a unique parkour session.</desc>
-  </programme>
-  <programme start="20260918101901 +0000" stop="20260918102437 +0000" channel="RedBullAdventure.global">
-    <title lang="en">Dom-ination Cairo</title>
-    <desc lang="en">Australian freerunner Dominic Di Tommaso does his thing at a series of iconic locations across Cairo.</desc>
+  <programme start="20260918164740 +0000" stop="20260918171250 +0000" channel="RedBullBike.global">
+    <title lang="en">Kriss Kyle: Out of Season</title>
+    <desc lang="en">Kriss Kyle transitions from BMXer to all-around bike athlete in classic British winter weather.</desc>
   </programme>
   <programme start="20260918102437 +0000" stop="20260918103212 +0000" channel="RedBullAdventure.global">
     <title lang="en">City of Gold</title>
@@ -4541,11 +4525,11 @@
     <title lang="en">Best moments from Copenhagen</title>
     <desc lang="en">These are the best moments from the third event of the 2022 Red Bull Cliff Diving World Series in Denmark.</desc>
   </programme>
-  <programme start="20260918132630 +0000" stop="20260918141431 +0000" channel="RedBullAdventure.global">
+  <programme start="20260918132630 +0000" stop="20260918141430 +0000" channel="RedBullAdventure.global">
     <title lang="en">360 Ascent</title>
     <desc lang="en">Climbers Janja Garnbret and Domen Škofic scale the tallest artificial multi-pitch route in the world.</desc>
   </programme>
-  <programme start="20260918141431 +0000" stop="20260918143242 +0000" channel="RedBullAdventure.global">
+  <programme start="20260918141430 +0000" stop="20260918143242 +0000" channel="RedBullAdventure.global">
     <title lang="en">The VR experiment</title>
     <desc lang="en">Alex Honnold, Nico Hojac and team take on an iconic face in the Italian Dolomites while filming a VR film.</desc>
   </programme>
@@ -4557,15 +4541,15 @@
     <title lang="en">The Nose speed record part 3</title>
     <desc lang="en">After weeks of practice and more than a few mishaps, Alex Honnold and Tommy Caldwell attempt the record.</desc>
   </programme>
-  <programme start="20260918151838 +0000" stop="20260918155508 +0000" channel="RedBullAdventure.global">
+  <programme start="20260918151838 +0000" stop="20260918155507 +0000" channel="RedBullAdventure.global">
     <title lang="en">Red Bull Dual Ascent</title>
     <desc lang="en">Sixteen world-class athletes on eight teams battle to be the fastest up a wall of six gruelling pitches.</desc>
   </programme>
-  <programme start="20260918155508 +0000" stop="20260918161516 +0000" channel="RedBullAdventure.global">
+  <programme start="20260918155507 +0000" stop="20260918161515 +0000" channel="RedBullAdventure.global">
     <title lang="en">All You Need is a Ball</title>
     <desc lang="en">Enjoy a look into how the best freestyle footballers in the world are paving the way for a new generation.</desc>
   </programme>
-  <programme start="20260918161516 +0000" stop="20260918170741 +0000" channel="RedBullAdventure.global">
+  <programme start="20260918161515 +0000" stop="20260918170741 +0000" channel="RedBullAdventure.global">
     <title lang="en">Best moments from Copenhagen</title>
     <desc lang="en">These are the best moments from the third event of the 2022 Red Bull Cliff Diving World Series in Denmark.</desc>
   </programme>
@@ -4589,9 +4573,21 @@
     <title lang="en">The high road part 2</title>
     <desc lang="en">Nina Williams hones in on an outrageous new objective: a 15m-tall boulder called Too Big to Flail.</desc>
   </programme>
-  <programme start="20260918093830 +0000" stop="20260918102234 +0000" channel="RedBullMotorsports.global">
-    <title lang="en">Nitro Rallycross</title>
-    <desc lang="en">For the fourth year in a row, the best motorcycle athletes battle it out in Travis Pastrana's spectacular competition.</desc>
+  <programme start="20260918183203 +0000" stop="20260918185301 +0000" channel="RedBullAdventure.global">
+    <title lang="en">The Nose speed record part 1</title>
+    <desc lang="en">Alex Honnold and Tommy Caldwell introduce us to the speed record on The Nose route up El Capitan, California.</desc>
+  </programme>
+  <programme start="20260918185301 +0000" stop="20260918190548 +0000" channel="RedBullAdventure.global">
+    <title lang="en">Jason Paul’s Wild Ride</title>
+    <desc lang="en">Pro freerunner Jason Paul and friends head to Germany’s Mammut roller coaster for a unique parkour session.</desc>
+  </programme>
+  <programme start="20260918190548 +0000" stop="20260918191102 +0000" channel="RedBullAdventure.global">
+    <title lang="en">Wild freerun</title>
+    <desc lang="en">Freerunner Krystian Kowalewski explores Rudawy Landscape Park in his home country of Poland.</desc>
+  </programme>
+  <programme start="20260918191102 +0000" stop="20260918193716 +0000" channel="RedBullAdventure.global">
+    <title lang="en">The Nose speed record part 3</title>
+    <desc lang="en">After weeks of practice and more than a few mishaps, Alex Honnold and Tommy Caldwell attempt the record.</desc>
   </programme>
   <programme start="20260918102234 +0000" stop="20260918110638 +0000" channel="RedBullMotorsports.global">
     <title lang="en">Red Bull Drift Masters</title>
@@ -4669,17 +4665,9 @@
     <title lang="en">Tackling Red Bull TKO</title>
     <desc lang="en">Mani and Paul are in the USA for Red Bull TKO, chatting with drivers, scouting trails and checking out trucks.</desc>
   </programme>
-  <programme start="20260918090037 +0000" stop="20260918094357 +0000" channel="RedBullSurfing.global">
-    <title lang="en">Chapters</title>
-    <desc lang="en">Travel with surf star Kanoa Igarashi for insider access to the World Championship Tour.</desc>
-  </programme>
-  <programme start="20260918094357 +0000" stop="20260918100351 +0000" channel="RedBullSurfing.global">
-    <title lang="en">Redemption at Nazaré</title>
-    <desc lang="en">The Big Wave World Tour tow surfing event is on at Nazaré – Kai Lenny‘s last chance to get a win this winter.</desc>
-  </programme>
-  <programme start="20260918100351 +0000" stop="20260918103003 +0000" channel="RedBullSurfing.global">
-    <title lang="en">Leon Glatzer surfs Costa Rica</title>
-    <desc lang="en">Leon Glatzer unpacks the incredible history of Pavones and explores its thriving roots surf scene.</desc>
+  <programme start="20260918193513 +0000" stop="20260918195040 +0000" channel="RedBullMotorsports.global">
+    <title lang="en">Formula Schnitzeljagd – warming up in Austria</title>
+    <desc lang="en">F1 drivers travel over land, water and air, doing challenges along the way, as a warm-up for the Austrian GP.</desc>
   </programme>
   <programme start="20260918103003 +0000" stop="20260918104411 +0000" channel="RedBullSurfing.global">
     <title lang="en">Aloha Mr Lenny</title>
@@ -4749,21 +4737,17 @@
     <title lang="en">Shaka</title>
     <desc lang="en">From the slopes to the waves – snowboarding legend Mathieu Crépel surfs Jaws.</desc>
   </programme>
-  <programme start="20260918091629 +0000" stop="20260918093359 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Sergio Yuppie</title>
-    <desc lang="en">Travel to Brazil with Madars Apse to learn from downhill skateboarding legend Sergio Yuppie.</desc>
+  <programme start="20260918231251 +0000" stop="20260918233326 +0000" channel="RedBullSurfing.global">
+    <title lang="en">The beast awakens</title>
+    <desc lang="en">Surfer Kai heads to a Nazaré swell, but ends up fighting for his life after his biggest wipeout ever.</desc>
   </programme>
-  <programme start="20260918093359 +0000" stop="20260918100047 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Vibing with Felipe Nunes</title>
-    <desc lang="en">Madars Apse travels to Brazil to skate with double-amputee and Birdhouse Skateboards pro Felipe Nunes.</desc>
+  <programme start="20260918233326 +0000" stop="20260918235449 +0000" channel="RedBullSurfing.global">
+    <title lang="en">That’s Caroline</title>
+    <desc lang="en">Caroline Marks is just a normal young woman – who also happens to be the face of surfing’s future.</desc>
   </programme>
-  <programme start="20260918100047 +0000" stop="20260918101048 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Alex Sorgente</title>
-    <desc lang="en">We head down to Carlsbad, California, to tag along with skateboarder Alex Sorgente for a day in his life.</desc>
-  </programme>
-  <programme start="20260918101048 +0000" stop="20260918101909 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Larvikite Lines</title>
-    <desc lang="en">Torey Pudwill and friends create, shred and then donate ancient stone skate spots in Norway.</desc>
+  <programme start="20260918235449 +0000" stop="20260919001007 +0000" channel="RedBullSurfing.global">
+    <title lang="en">The legend of Nazaré</title>
+    <desc lang="en">Kai Lenny travels to Nazaré in Portugal to train with Brazilian big wave charger Lucas 'Chumbo' Chianca.</desc>
   </programme>
   <programme start="20260918101909 +0000" stop="20260918104724 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Unknown treasures</title>
@@ -4797,11 +4781,11 @@
     <title lang="en">Vibing with Felipe Nunes</title>
     <desc lang="en">Madars Apse travels to Brazil to skate with double-amputee and Birdhouse Skateboards pro Felipe Nunes.</desc>
   </programme>
-  <programme start="20260918130611 +0000" stop="20260918132516 +0000" channel="RedBullSkateboarding.global">
+  <programme start="20260918130611 +0000" stop="20260918132515 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Hometown skating in Lisbon</title>
     <desc lang="en">Ride with skater Gustavo Ribeiro as he shows us his hometown of Lisbon, Portugal.</desc>
   </programme>
-  <programme start="20260918132516 +0000" stop="20260918135331 +0000" channel="RedBullSkateboarding.global">
+  <programme start="20260918132515 +0000" stop="20260918135331 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Unknown treasures</title>
     <desc lang="en">Skate unexplored spots of Montenegro, Albania, Kosovo and North Macedonia with Wes Kremer’s crew.</desc>
   </programme>
@@ -4829,23 +4813,23 @@
     <title lang="en">Madars and Kilian Martin</title>
     <desc lang="en">Madars Apse meets professional freestyle skateboarder and fashion model Kilian Martin in Madrid.</desc>
   </programme>
-  <programme start="20260918092236 +0000" stop="20260918093218 +0000" channel="RedBullWinter.global">
-    <title lang="en">Spring training days with Scotty James</title>
-    <desc lang="en">The sun has set on Scotty James's 2021 competitive halfpipe season, but now there's spring training.</desc>
+  <programme start="20260918154319 +0000" stop="20260918160416 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Skate Ethiopia</title>
+    <desc lang="en">Madars Apse travels to Ethiopia to discover the growing, 150-strong skate scene in Addis Ababa.</desc>
   </programme>
-  <programme start="20260918093218 +0000" stop="20260918094253 +0000" channel="RedBullWinter.global">
-    <title lang="en">Drop in at X Games with Scotty James</title>
-    <desc lang="en">Scotty James arrives in Aspen ready to entertain under the lights, and hunting for his sixth X Games medal.</desc>
+  <programme start="20260918160416 +0000" stop="20260918163328 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Madars Apse meets Mike Vallely</title>
+    <desc lang="en">Madars Apse meets Mike Vallely – the pioneer of modern skateboard culture – in Des Moines, Iowa.</desc>
   </programme>
-  <programme start="20260918094253 +0000" stop="20260918095121 +0000" channel="RedBullWinter.global">
-    <title lang="en">How to capture perfect drone shots</title>
-    <desc lang="en">Loads of people have a drone – but how can you use them best for professional action shots?</desc>
+  <programme start="20260918163328 +0000" stop="20260918165233 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Hometown skating in Lisbon</title>
+    <desc lang="en">Ride with skater Gustavo Ribeiro as he shows us his hometown of Lisbon, Portugal.</desc>
   </programme>
-  <programme start="20260918095121 +0000" stop="20260918101631 +0000" channel="RedBullWinter.global">
-    <title lang="en">Dynamic Medium</title>
-    <desc lang="en">Watch American freeskier Bobby Brown chase the dynamic medium that is snow around the globe.</desc>
+  <programme start="20260918165233 +0000" stop="20260918170727 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Beaver Fleming</title>
+    <desc lang="en">Can Madars Apse take on the mini Megaramp with Beaver Fleming's help?</desc>
   </programme>
-  <programme start="20260918101631 +0000" stop="20260918103411 +0000" channel="RedBullWinter.global">
+  <programme start="20260918101630 +0000" stop="20260918103411 +0000" channel="RedBullWinter.global">
     <title lang="en">The making of Unrailistic 2.0</title>
     <desc lang="en">Most of the tricks in Unrailistic 2.0 look smooth and effortless. Don’t be fooled.</desc>
   </programme>
@@ -4909,65 +4893,21 @@
     <title lang="en">The Collective</title>
     <desc lang="en">Undiscovered peaks and midnight-raids on inner-city handrails – that's the Skiing is Collective spirit.</desc>
   </programme>
-  <programme start="20260918092450 +0000" stop="20260918092903 +0000" channel="RedBullActionReel.global">
-    <title lang="en">CJ Collins FER DAYZ</title>
-    <desc lang="en">Abandoned pools, DIYs and even some street action from everyone's favourite all-terrain animal, CJ Collins.</desc>
+  <programme start="20260918154254 +0000" stop="20260918155435 +0000" channel="RedBullWinter.global">
+    <title lang="en">Finale! On to the next one for Scotty James</title>
+    <desc lang="en">At the end of the halfpipe season, snowboarder Scotty James is already eyeing up what's next.</desc>
   </programme>
-  <programme start="20260918092903 +0000" stop="20260918093410 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Dropping in on Dubai</title>
-    <desc lang="en">Watch Kriss Kyle jump from a helicopter onto the roof of Burj Al Arab in Dubai – on his BMX bike.</desc>
+  <programme start="20260918155435 +0000" stop="20260918160538 +0000" channel="RedBullWinter.global">
+    <title lang="en">No days off for Scotty James and Maddie Mastro</title>
+    <desc lang="en">Scotty James and Maddie Mastro get some laps in as they train with their coach, James Jackson.</desc>
   </programme>
-  <programme start="20260918093410 +0000" stop="20260918094354 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Wild phone chase</title>
-    <desc lang="en">Freerunner Jason Paul makes the impossible possible in the city of Hamburg as he searches for his lost phone.</desc>
+  <programme start="20260918160538 +0000" stop="20260918162851 +0000" channel="RedBullWinter.global">
+    <title lang="en">Bang on Time</title>
+    <desc lang="en">Watch freeskiers perform tricks, while the Red Bull Skydive Team perform aerial acrobatics at the same time.</desc>
   </programme>
-  <programme start="20260918094354 +0000" stop="20260918094549 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Infinity Cube</title>
-    <desc lang="en">The Red Bull BC One All Stars show off their moves in a mirror cube that gives the illusion of infinity.</desc>
-  </programme>
-  <programme start="20260918094549 +0000" stop="20260918094932 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Jack Robinson</title>
-    <desc lang="en">Filmer Kim Feast showcases Western Australia's most promising young surfer, Jack Robinson.</desc>
-  </programme>
-  <programme start="20260918094932 +0000" stop="20260918095452 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Benny Milam’s snowmobile session with Levi LaVallee</title>
-    <desc lang="en">What do you do if you want to snowboard, but everything around you is flat? Benny Milam has an idea.</desc>
-  </programme>
-  <programme start="20260918095452 +0000" stop="20260918100511 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Markus Eder in The Ultimate Run</title>
-    <desc lang="en">Take a cinematic journey in this Emmy Award-winning ski film from the world's most renowned freestyle skier, Markus Eder.</desc>
-  </programme>
-  <programme start="20260918100511 +0000" stop="20260918100839 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Realm featuring Brandon Semenuk</title>
-    <desc lang="en">We challenged Brandon Semenuk and Justin Wyper to build unique features. Here’s what they came up with.</desc>
-  </programme>
-  <programme start="20260918100839 +0000" stop="20260918101059 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Dancing in the lights</title>
-    <desc lang="en">Get your 2019 going in style with a celebratory dance performance on the roofs of Mumbai in India.</desc>
-  </programme>
-  <programme start="20260918101059 +0000" stop="20260918101415 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Uncorked</title>
-    <desc lang="en">With a gorgeous sunset behind them, Mark McMorris and Seb Toots shred a perfectly manicured snowboard park.</desc>
-  </programme>
-  <programme start="20260918101415 +0000" stop="20260918101706 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Breaking in the elements</title>
-    <desc lang="en">Menno, dancing in water, and Lil G, dancing while on fire, stage the most visually stunning dance-off.</desc>
-  </programme>
-  <programme start="20260918101706 +0000" stop="20260918102258 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Running reverse</title>
-    <desc lang="en">Watch freerunner Jason Paul put things right with a series of breathtaking and high-stakes moves.</desc>
-  </programme>
-  <programme start="20260918102258 +0000" stop="20260918102552 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Emil Johansson in New Zealand</title>
-    <desc lang="en">During his downtime in New Zealand, here’s what stylish Swede Emil Johansson got up to with Hunt Cinema.</desc>
-  </programme>
-  <programme start="20260918102552 +0000" stop="20260918102823 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Caroline Marks</title>
-    <desc lang="en">Meet 2018 Rookie of the Year Caroline Marks in filmer Jacob Vanderwork’s stunning short film.</desc>
-  </programme>
-  <programme start="20260918102823 +0000" stop="20260918103109 +0000" channel="RedBullActionReel.global">
-    <title lang="en">360° of Jaxson Riddle</title>
-    <desc lang="en">See Jaxson Riddle’s tricks from every angle as he prepares to compete in his second Red Bull Rampage.</desc>
+  <programme start="20260918162851 +0000" stop="20260918165047 +0000" channel="RedBullWinter.global">
+    <title lang="en">The Regina monologues</title>
+    <desc lang="en">Mark and Craig have time for one more party before they head to the X Games in Aspen, Colorado, United States.</desc>
   </programme>
   <programme start="20260918103109 +0000" stop="20260918103504 +0000" channel="RedBullActionReel.global">
     <title lang="en">Project Istanbulls</title>
@@ -4988,6 +4928,66 @@
   <programme start="20260918105216 +0000" stop="20260918105537 +0000" channel="RedBullActionReel.global">
     <title lang="en">Pedro Burns</title>
     <desc lang="en">Pedro Burns goes for a ride across three wildly different Chilean terrains.</desc>
+  </programme>
+  <programme start="20260918105537 +0000" stop="20260918105741 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Best moments</title>
+    <desc lang="en">Watch the best moments from when freerunners turned the Athenian Riviera into their own personal playground.</desc>
+  </programme>
+  <programme start="20260918105741 +0000" stop="20260918105930 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Brandon Semenuk unleashed in an abandoned mine</title>
+    <desc lang="en">For his sixth contribution to our Raw 100 series, Brandon Semenuk heads to Merritt, British Columbia.</desc>
+  </programme>
+  <programme start="20260918105930 +0000" stop="20260918110337 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Freerunner's guide to the Sydney Opera House</title>
+    <desc lang="en">Nobody has ever freerun on the roof of the Sydney Opera House – until now. Watch Dominic Di Tommaso in action.</desc>
+  </programme>
+  <programme start="20260918110337 +0000" stop="20260918110846 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Follow Fabio</title>
+    <desc lang="en">Follow trials bike ace Fabio Wibmer with a racing drone to capture him shredding some iconic German landmarks.</desc>
+  </programme>
+  <programme start="20260918110846 +0000" stop="20260918111021 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Action from Fabio Wibmer's latest project</title>
+    <desc lang="en">Fabio Wibmer takes dicey situations and turns them into outstanding tricks for his film, Wibmer's Law.</desc>
+  </programme>
+  <programme start="20260918111021 +0000" stop="20260918111326 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Brandon Semenuk – Japan</title>
+    <desc lang="en">Brandon Semenuk and Revel Co head to Hakuba, Japan, for the latest instalment of MTB RAW.</desc>
+  </programme>
+  <programme start="20260918111326 +0000" stop="20260918111506 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Rob Warner and Matt Jones go riding in New Zealand</title>
+    <desc lang="en">Enjoy the raw sight and sound of Rob Warner and Matt Jones riding down a South Island mountainside.</desc>
+  </programme>
+  <programme start="20260918111506 +0000" stop="20260918111752 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Tahnée Seagrave tears up Lousã, Portugal</title>
+    <desc lang="en">British cyclist Tahnée Seagrave returns after serious injury to the UCI Downhill Mountain Bike World Cup.</desc>
+  </programme>
+  <programme start="20260918111752 +0000" stop="20260918111933 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Carson Storch</title>
+    <desc lang="en">Watch Carson Storch ride through a forest and take on a train and rail track in 100 seconds of raw MTB action.</desc>
+  </programme>
+  <programme start="20260918111933 +0000" stop="20260918112239 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Dreamland</title>
+    <desc lang="en">Two pro freerunners explore a shipping container-filled obstacle course through Turkey's Port of Haydarpaşa.</desc>
+  </programme>
+  <programme start="20260918112239 +0000" stop="20260918113223 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Wild phone chase</title>
+    <desc lang="en">Freerunner Jason Paul makes the impossible possible in the city of Hamburg as he searches for his lost phone.</desc>
+  </programme>
+  <programme start="20260918113223 +0000" stop="20260918113606 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Jack Robinson</title>
+    <desc lang="en">Filmer Kim Feast showcases Western Australia's most promising young surfer, Jack Robinson.</desc>
+  </programme>
+  <programme start="20260918113606 +0000" stop="20260918113801 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Infinity Cube</title>
+    <desc lang="en">The Red Bull BC One All Stars show off their moves in a mirror cube that gives the illusion of infinity.</desc>
+  </programme>
+  <programme start="20260918113801 +0000" stop="20260918114142 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Last call for Mr Paul</title>
+    <desc lang="en">Pro freerunner Jason Paul is late for a flight and needs to use his athletic prowess to navigate the airport.</desc>
+  </programme>
+  <programme start="20260918114142 +0000" stop="20260918114509 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Unrailistic 2.0</title>
+    <desc lang="en">This year freeski ace Jesper Tjäder is back with new trick ideas and creative, never-before-seen features.</desc>
   </programme>
   <programme start="20260918000000 +0700" stop="20260918001500 +0700" channel="MNC_abc-australia_350.id">
     <title lang="id">Media Watch</title>
@@ -5405,9 +5405,6 @@
   </programme>
   <programme start="20260918233000 +0700" stop="20260918235000 +0700" channel="MNC_arirang_351.id">
     <title lang="id">Drawing Diary</title>
-  </programme>
-  <programme start="20260918235000 +0700" stop="20260919000000 +0700" channel="MNC_arirang_351.id">
-    <title lang="id">Fishing In The Museum</title>
   </programme>
   <programme start="20260918001500 +0700" stop="20260918004500 +0700" channel="MNC_axn_154.id">
     <title lang="id">Twisted Metal S2, Ep 10</title>
@@ -5888,12 +5885,6 @@
   </programme>
   <programme start="20260918223000 +0700" stop="20260918230000 +0700" channel="MNC_bbc-world-news_332.id">
     <title lang="id">Verified Live</title>
-  </programme>
-  <programme start="20260918230000 +0700" stop="20260918233000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Verified Live</title>
-  </programme>
-  <programme start="20260918233000 +0700" stop="20260919000000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Focus On Africa</title>
   </programme>
   <programme start="20260918015500 +0700" stop="20260918040000 +0700" channel="MNC_bein-sports-1_309.id">
     <title lang="id">UEL 2026/27: CRY Vs LPO (L)</title>
@@ -6624,306 +6615,6 @@
   <programme start="20260918071500 +0700" stop="20260918073000 +0700" channel="MNC_cbeebies_41.id">
     <title lang="id">Andy's Dino Island S1, Ep 5</title>
   </programme>
-  <programme start="20260918073000 +0700" stop="20260918075500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Playtime Towers S1, Ep 25</title>
-  </programme>
-  <programme start="20260918075500 +0700" stop="20260918080200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 25</title>
-  </programme>
-  <programme start="20260918080200 +0700" stop="20260918080900 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 24</title>
-  </programme>
-  <programme start="20260918080900 +0700" stop="20260918081500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 23</title>
-  </programme>
-  <programme start="20260918081500 +0700" stop="20260918082500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S1, Ep 37</title>
-  </programme>
-  <programme start="20260918082500 +0700" stop="20260918084000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S1, Ep 36</title>
-  </programme>
-  <programme start="20260918084000 +0700" stop="20260918085000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Thomas &amp; Friends S24, Ep 7</title>
-  </programme>
-  <programme start="20260918085000 +0700" stop="20260918085700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Sarah And Duck S3, Ep 5</title>
-  </programme>
-  <programme start="20260918085700 +0700" stop="20260918090500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Sarah And Duck S3, Ep 6</title>
-  </programme>
-  <programme start="20260918090500 +0700" stop="20260918091100 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Stan Can S1, Ep 9</title>
-  </programme>
-  <programme start="20260918091100 +0700" stop="20260918092000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Stan Can S1, Ep 8</title>
-  </programme>
-  <programme start="20260918092000 +0700" stop="20260918092500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Funny Talking Animals S1, Ep 19</title>
-  </programme>
-  <programme start="20260918092500 +0700" stop="20260918093800 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Jojo &amp; Gran Gran S3, Ep 42</title>
-  </programme>
-  <programme start="20260918093800 +0700" stop="20260918094500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 5</title>
-  </programme>
-  <programme start="20260918094500 +0700" stop="20260918095000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 6</title>
-  </programme>
-  <programme start="20260918095000 +0700" stop="20260918100000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 7</title>
-  </programme>
-  <programme start="20260918100000 +0700" stop="20260918100700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 12</title>
-  </programme>
-  <programme start="20260918100700 +0700" stop="20260918101400 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 11</title>
-  </programme>
-  <programme start="20260918101400 +0700" stop="20260918102000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee's Squirrel..., Ep 2</title>
-  </programme>
-  <programme start="20260918102000 +0700" stop="20260918103000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S2, Ep 17</title>
-  </programme>
-  <programme start="20260918103000 +0700" stop="20260918103500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Roots &amp; Fruits S2, Ep 2</title>
-  </programme>
-  <programme start="20260918103500 +0700" stop="20260918104500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Roots &amp; Fruits S2, Ep 1</title>
-  </programme>
-  <programme start="20260918104500 +0700" stop="20260918105200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Supertato S2, Ep 22</title>
-  </programme>
-  <programme start="20260918105200 +0700" stop="20260918110000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Supertato S2, Ep 23</title>
-  </programme>
-  <programme start="20260918110000 +0700" stop="20260918111000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Teletubbies S1, Ep 75</title>
-  </programme>
-  <programme start="20260918111000 +0700" stop="20260918111500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Yakka Dee S2, Ep 3</title>
-  </programme>
-  <programme start="20260918111500 +0700" stop="20260918112500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Messy Goes To Okido S2, Ep 15</title>
-  </programme>
-  <programme start="20260918112500 +0700" stop="20260918114000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Mojo Swoptops S1, Ep 2</title>
-  </programme>
-  <programme start="20260918114000 +0700" stop="20260918114700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 12</title>
-  </programme>
-  <programme start="20260918114700 +0700" stop="20260918120000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 11</title>
-  </programme>
-  <programme start="20260918120000 +0700" stop="20260918120700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 20</title>
-  </programme>
-  <programme start="20260918120700 +0700" stop="20260918121500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 19</title>
-  </programme>
-  <programme start="20260918121500 +0700" stop="20260918122200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee's Squirrel..., Ep 10</title>
-  </programme>
-  <programme start="20260918122200 +0700" stop="20260918123000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee's Squirrel..., Ep 9</title>
-  </programme>
-  <programme start="20260918123000 +0700" stop="20260918124500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S2, Ep 32</title>
-  </programme>
-  <programme start="20260918124500 +0700" stop="20260918125200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S1, Ep 49</title>
-  </programme>
-  <programme start="20260918125200 +0700" stop="20260918130000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S2, Ep 52</title>
-  </programme>
-  <programme start="20260918130000 +0700" stop="20260918130700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 24</title>
-  </programme>
-  <programme start="20260918130700 +0700" stop="20260918131500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 25</title>
-  </programme>
-  <programme start="20260918131500 +0700" stop="20260918133000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Andy's Dino Island S1, Ep 5</title>
-  </programme>
-  <programme start="20260918133000 +0700" stop="20260918135500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Playtime Towers S1, Ep 25</title>
-  </programme>
-  <programme start="20260918135500 +0700" stop="20260918140200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 25</title>
-  </programme>
-  <programme start="20260918140200 +0700" stop="20260918140900 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 24</title>
-  </programme>
-  <programme start="20260918140900 +0700" stop="20260918141500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 23</title>
-  </programme>
-  <programme start="20260918141500 +0700" stop="20260918142500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S1, Ep 37</title>
-  </programme>
-  <programme start="20260918142500 +0700" stop="20260918144000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S1, Ep 36</title>
-  </programme>
-  <programme start="20260918144000 +0700" stop="20260918145000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Thomas &amp; Friends S24, Ep 7</title>
-  </programme>
-  <programme start="20260918145000 +0700" stop="20260918145700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Sarah And Duck S3, Ep 5</title>
-  </programme>
-  <programme start="20260918145700 +0700" stop="20260918150500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Sarah And Duck S3, Ep 6</title>
-  </programme>
-  <programme start="20260918150500 +0700" stop="20260918151100 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Stan Can S1, Ep 9</title>
-  </programme>
-  <programme start="20260918151100 +0700" stop="20260918152000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Stan Can S1, Ep 8</title>
-  </programme>
-  <programme start="20260918152000 +0700" stop="20260918152500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Funny Talking Animals S1, Ep 19</title>
-  </programme>
-  <programme start="20260918152500 +0700" stop="20260918153800 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Jojo &amp; Gran Gran S3, Ep 42</title>
-  </programme>
-  <programme start="20260918153800 +0700" stop="20260918154500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 5</title>
-  </programme>
-  <programme start="20260918154500 +0700" stop="20260918155000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 6</title>
-  </programme>
-  <programme start="20260918155000 +0700" stop="20260918160000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 7</title>
-  </programme>
-  <programme start="20260918160000 +0700" stop="20260918160700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 12</title>
-  </programme>
-  <programme start="20260918160700 +0700" stop="20260918161400 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 11</title>
-  </programme>
-  <programme start="20260918161400 +0700" stop="20260918162000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee's Squirrel..., Ep 2</title>
-  </programme>
-  <programme start="20260918162000 +0700" stop="20260918163000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S2, Ep 17</title>
-  </programme>
-  <programme start="20260918163000 +0700" stop="20260918163500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Roots &amp; Fruits S2, Ep 2</title>
-  </programme>
-  <programme start="20260918163500 +0700" stop="20260918164500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Roots &amp; Fruits S2, Ep 1</title>
-  </programme>
-  <programme start="20260918164500 +0700" stop="20260918165200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Supertato S2, Ep 22</title>
-  </programme>
-  <programme start="20260918165200 +0700" stop="20260918170000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Supertato S2, Ep 23</title>
-  </programme>
-  <programme start="20260918170000 +0700" stop="20260918171000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Teletubbies S1, Ep 75</title>
-  </programme>
-  <programme start="20260918171000 +0700" stop="20260918171500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Yakka Dee S2, Ep 3</title>
-  </programme>
-  <programme start="20260918171500 +0700" stop="20260918172500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Messy Goes To Okido S2, Ep 15</title>
-  </programme>
-  <programme start="20260918172500 +0700" stop="20260918174000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Mojo Swoptops S1, Ep 2</title>
-  </programme>
-  <programme start="20260918174000 +0700" stop="20260918174700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 12</title>
-  </programme>
-  <programme start="20260918174700 +0700" stop="20260918180000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 11</title>
-  </programme>
-  <programme start="20260918180000 +0700" stop="20260918180700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 20</title>
-  </programme>
-  <programme start="20260918180700 +0700" stop="20260918181500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 19</title>
-  </programme>
-  <programme start="20260918181500 +0700" stop="20260918182200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee's Squirrel..., Ep 10</title>
-  </programme>
-  <programme start="20260918182200 +0700" stop="20260918183000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee's Squirrel..., Ep 9</title>
-  </programme>
-  <programme start="20260918183000 +0700" stop="20260918184500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S2, Ep 32</title>
-  </programme>
-  <programme start="20260918184500 +0700" stop="20260918185200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S1, Ep 49</title>
-  </programme>
-  <programme start="20260918185200 +0700" stop="20260918190000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S2, Ep 52</title>
-  </programme>
-  <programme start="20260918190000 +0700" stop="20260918190700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 24</title>
-  </programme>
-  <programme start="20260918190700 +0700" stop="20260918191500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 25</title>
-  </programme>
-  <programme start="20260918191500 +0700" stop="20260918193000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Andy's Dino Island S1, Ep 5</title>
-  </programme>
-  <programme start="20260918193000 +0700" stop="20260918195500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Playtime Towers S1, Ep 25</title>
-  </programme>
-  <programme start="20260918195500 +0700" stop="20260918200200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 25</title>
-  </programme>
-  <programme start="20260918200200 +0700" stop="20260918200900 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 24</title>
-  </programme>
-  <programme start="20260918200900 +0700" stop="20260918201500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S4, Ep 23</title>
-  </programme>
-  <programme start="20260918201500 +0700" stop="20260918202500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S1, Ep 37</title>
-  </programme>
-  <programme start="20260918202500 +0700" stop="20260918204000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S1, Ep 36</title>
-  </programme>
-  <programme start="20260918204000 +0700" stop="20260918205000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Thomas &amp; Friends S24, Ep 7</title>
-  </programme>
-  <programme start="20260918205000 +0700" stop="20260918205700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Sarah And Duck S3, Ep 5</title>
-  </programme>
-  <programme start="20260918205700 +0700" stop="20260918210500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Sarah And Duck S3, Ep 6</title>
-  </programme>
-  <programme start="20260918210500 +0700" stop="20260918211100 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Stan Can S1, Ep 9</title>
-  </programme>
-  <programme start="20260918211100 +0700" stop="20260918212000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Stan Can S1, Ep 8</title>
-  </programme>
-  <programme start="20260918212000 +0700" stop="20260918212500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Funny Talking Animals S1, Ep 19</title>
-  </programme>
-  <programme start="20260918212500 +0700" stop="20260918213800 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Jojo &amp; Gran Gran S3, Ep 42</title>
-  </programme>
-  <programme start="20260918213800 +0700" stop="20260918214500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 5</title>
-  </programme>
-  <programme start="20260918214500 +0700" stop="20260918215000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 6</title>
-  </programme>
-  <programme start="20260918215000 +0700" stop="20260918220000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Bluey S3, Ep 7</title>
-  </programme>
-  <programme start="20260918220000 +0700" stop="20260918220700 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 12</title>
-  </programme>
-  <programme start="20260918220700 +0700" stop="20260918221400 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S5, Ep 11</title>
-  </programme>
-  <programme start="20260918221400 +0700" stop="20260918222000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee's Squirrel..., Ep 2</title>
-  </programme>
-  <programme start="20260918222000 +0700" stop="20260918223000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Go Jetters S2, Ep 17</title>
-  </programme>
   <programme start="20260918011000 +0700" stop="20260918030000 +0700" channel="MNC_ccm_22.id">
     <title lang="id">The Emperor And His Brother</title>
   </programme>
@@ -7587,39 +7278,6 @@
   <programme start="20260918191000 +0700" stop="20260918193500 +0700" channel="MNC_dreamworks_47.id">
     <title lang="id">Dragons: Race To The Edge</title>
   </programme>
-  <programme start="20260918193500 +0700" stop="20260918200000 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Dragons: Race To The Edge</title>
-  </programme>
-  <programme start="20260918200000 +0700" stop="20260918202500 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Kung Fu Panda: Paws Of Destiny</title>
-  </programme>
-  <programme start="20260918202500 +0700" stop="20260918205000 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Kung Fu Panda: Paws Of Destiny</title>
-  </programme>
-  <programme start="20260918205000 +0700" stop="20260918211500 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Kung Fu Panda: Paws Of Destiny</title>
-  </programme>
-  <programme start="20260918211500 +0700" stop="20260918214000 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Boss Baby: Back In The Crib</title>
-  </programme>
-  <programme start="20260918214000 +0700" stop="20260918220500 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Boss Baby: Back In The Crib</title>
-  </programme>
-  <programme start="20260918220500 +0700" stop="20260918223000 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Boss Baby: Back In The Crib</title>
-  </programme>
-  <programme start="20260918223000 +0700" stop="20260918225500 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Fast &amp; Furious: Spy Racers</title>
-  </programme>
-  <programme start="20260918225500 +0700" stop="20260918232000 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Fast &amp; Furious: Spy Racers</title>
-  </programme>
-  <programme start="20260918232000 +0700" stop="20260918234500 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Fast &amp; Furious: Spy Racers</title>
-  </programme>
-  <programme start="20260918234500 +0700" stop="20260919001000 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">The Croods: Family Tree</title>
-  </programme>
   <programme start="20260918001000 +0700" stop="20260918003500 +0700" channel="MNC_dreamworks-hd_473.id">
     <title lang="id">The Croods: Family Tree</title>
   </programme>
@@ -7769,39 +7427,6 @@
   </programme>
   <programme start="20260918191000 +0700" stop="20260918193500 +0700" channel="MNC_dreamworks-hd_473.id">
     <title lang="id">Dragons: Race To The Edge</title>
-  </programme>
-  <programme start="20260918193500 +0700" stop="20260918200000 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Dragons: Race To The Edge</title>
-  </programme>
-  <programme start="20260918200000 +0700" stop="20260918202500 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Kung Fu Panda: Paws Of Destiny</title>
-  </programme>
-  <programme start="20260918202500 +0700" stop="20260918205000 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Kung Fu Panda: Paws Of Destiny</title>
-  </programme>
-  <programme start="20260918205000 +0700" stop="20260918211500 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Kung Fu Panda: Paws Of Destiny</title>
-  </programme>
-  <programme start="20260918211500 +0700" stop="20260918214000 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Boss Baby: Back In The Crib</title>
-  </programme>
-  <programme start="20260918214000 +0700" stop="20260918220500 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Boss Baby: Back In The Crib</title>
-  </programme>
-  <programme start="20260918220500 +0700" stop="20260918223000 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Boss Baby: Back In The Crib</title>
-  </programme>
-  <programme start="20260918223000 +0700" stop="20260918225500 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Fast &amp; Furious: Spy Racers</title>
-  </programme>
-  <programme start="20260918225500 +0700" stop="20260918232000 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Fast &amp; Furious: Spy Racers</title>
-  </programme>
-  <programme start="20260918232000 +0700" stop="20260918234500 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Fast &amp; Furious: Spy Racers</title>
-  </programme>
-  <programme start="20260918234500 +0700" stop="20260919001000 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">The Croods: Family Tree</title>
   </programme>
   <programme start="20260918010000 +0700" stop="20260918020000 +0700" channel="MNC_entertainment_86.id">
     <title lang="id">Konon Katanya</title>
@@ -8002,96 +7627,6 @@
     <title lang="id">Wake Up Europe</title>
   </programme>
   <programme start="20260918144600 +0700" stop="20260918150000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The Ring</title>
-  </programme>
-  <programme start="20260918150000 +0700" stop="20260918153000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Europe Today</title>
-  </programme>
-  <programme start="20260918153000 +0700" stop="20260918160000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918160000 +0700" stop="20260918160700 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918160700 +0700" stop="20260918163000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">12 Minutes With</title>
-  </programme>
-  <programme start="20260918163000 +0700" stop="20260918164700 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918164700 +0700" stop="20260918170000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">News</title>
-  </programme>
-  <programme start="20260918170000 +0700" stop="20260918171500 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918171500 +0700" stop="20260918173000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918173000 +0700" stop="20260918180000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918180000 +0700" stop="20260918181400 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918181400 +0700" stop="20260918183000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918183000 +0700" stop="20260918183700 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918183700 +0700" stop="20260918184500 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Europe Conversation</title>
-  </programme>
-  <programme start="20260918184500 +0700" stop="20260918190000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">12 Minutes With</title>
-  </programme>
-  <programme start="20260918190000 +0700" stop="20260918191400 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918191400 +0700" stop="20260918192900 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918192900 +0700" stop="20260918195200 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The Ring</title>
-  </programme>
-  <programme start="20260918195200 +0700" stop="20260918200000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The Ring</title>
-  </programme>
-  <programme start="20260918200000 +0700" stop="20260918201500 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918201500 +0700" stop="20260918203000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918203000 +0700" stop="20260918210000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">Euronews Now</title>
-  </programme>
-  <programme start="20260918210000 +0700" stop="20260918213400 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The European Debrief</title>
-  </programme>
-  <programme start="20260918213400 +0700" stop="20260918220000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">12 Minutes With</title>
-  </programme>
-  <programme start="20260918220000 +0700" stop="20260918221500 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The European Debrief</title>
-  </programme>
-  <programme start="20260918221500 +0700" stop="20260918223000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The European Debrief</title>
-  </programme>
-  <programme start="20260918223000 +0700" stop="20260918230000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The European Debrief</title>
-  </programme>
-  <programme start="20260918230000 +0700" stop="20260918231400 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The European Debrief</title>
-  </programme>
-  <programme start="20260918231400 +0700" stop="20260918232900 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The European Debrief</title>
-  </programme>
-  <programme start="20260918232900 +0700" stop="20260918235200 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The Ring</title>
-  </programme>
-  <programme start="20260918235200 +0700" stop="20260919000000 +0700" channel="MNC_euronews_333.id">
     <title lang="id">The Ring</title>
   </programme>
   <programme start="20260918000000 +0700" stop="20260918020000 +0700" channel="MNC_fight-sports_304.id">
@@ -10467,36 +10002,6 @@
   <programme start="20260918190000 +0700" stop="20260918200000 +0700" channel="MNC_nhk-world-premium_354.id">
     <title lang="id">News Watch 9</title>
   </programme>
-  <programme start="20260918200000 +0700" stop="20260918203000 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">Document 72 Hours</title>
-  </programme>
-  <programme start="20260918203000 +0700" stop="20260918213000 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">Somewhere Street</title>
-  </programme>
-  <programme start="20260918213000 +0700" stop="20260918214000 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">News Commentary</title>
-  </programme>
-  <programme start="20260918214000 +0700" stop="20260918214500 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">News &amp; Weather</title>
-  </programme>
-  <programme start="20260918214500 +0700" stop="20260918222900 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">International News Report 2026</title>
-  </programme>
-  <programme start="20260918222900 +0700" stop="20260918223000 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">World Weather</title>
-  </programme>
-  <programme start="20260918223000 +0700" stop="20260918231300 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">Ooka Echizen S8, Ep 6</title>
-  </programme>
-  <programme start="20260918231300 +0700" stop="20260918231500 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">Mini Program</title>
-  </programme>
-  <programme start="20260918231500 +0700" stop="20260918234000 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">My Gardening</title>
-  </programme>
-  <programme start="20260918234000 +0700" stop="20260919001000 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">Go Focus</title>
-  </programme>
   <programme start="20260918000500 +0700" stop="20260918002500 +0700" channel="MNC_nick-jr-hd_472.id">
     <title lang="id">Santiago Of The Seas</title>
   </programme>
@@ -10646,99 +10151,6 @@
   </programme>
   <programme start="20260918162500 +0700" stop="20260918164500 +0700" channel="MNC_nick-jr-hd_472.id">
     <title lang="id">The Creature Cases</title>
-  </programme>
-  <programme start="20260918164500 +0700" stop="20260918171000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260918171000 +0700" stop="20260918173000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260918173000 +0700" stop="20260918175500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">PAW Patrol</title>
-  </programme>
-  <programme start="20260918175500 +0700" stop="20260918182000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">PAW Patrol</title>
-  </programme>
-  <programme start="20260918182000 +0700" stop="20260918184000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Barbapapa: Big Happy Family!</title>
-  </programme>
-  <programme start="20260918184000 +0700" stop="20260918190500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Barbapapa: Big Happy Family!</title>
-  </programme>
-  <programme start="20260918190500 +0700" stop="20260918192500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Santiago Of The Seas</title>
-  </programme>
-  <programme start="20260918192500 +0700" stop="20260918195000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Santiago Of The Seas</title>
-  </programme>
-  <programme start="20260918195000 +0700" stop="20260918201500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Deer Squad</title>
-  </programme>
-  <programme start="20260918201500 +0700" stop="20260918203500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">The Creature Cases</title>
-  </programme>
-  <programme start="20260918203500 +0700" stop="20260918204000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918204000 +0700" stop="20260918204500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918204500 +0700" stop="20260918205000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918205000 +0700" stop="20260918205500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918205500 +0700" stop="20260918210000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918210000 +0700" stop="20260918210500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918210500 +0700" stop="20260918211000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918211000 +0700" stop="20260918211500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918211500 +0700" stop="20260918212000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918212000 +0700" stop="20260918212500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918212500 +0700" stop="20260918213000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918213000 +0700" stop="20260918214000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Dora</title>
-  </programme>
-  <programme start="20260918214000 +0700" stop="20260918215000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Dora</title>
-  </programme>
-  <programme start="20260918215000 +0700" stop="20260918220000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Dora</title>
-  </programme>
-  <programme start="20260918220000 +0700" stop="20260918222500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Mr. Crocodile</title>
-  </programme>
-  <programme start="20260918222500 +0700" stop="20260918224500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Barbapapa: Big Happy Family!</title>
-  </programme>
-  <programme start="20260918224500 +0700" stop="20260918230000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Barbapapa: Big Happy Family!</title>
-  </programme>
-  <programme start="20260918230000 +0700" stop="20260918232000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260918232000 +0700" stop="20260918233000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260918233000 +0700" stop="20260918235000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">PAW Patrol</title>
-  </programme>
-  <programme start="20260918235000 +0700" stop="20260919000500 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">PAW Patrol</title>
   </programme>
   <programme start="20260918000000 +0700" stop="20260918002500 +0700" channel="MNC_nickelodeon_49.id">
     <title lang="id">That Girl Lay Lay</title>
@@ -10890,63 +10302,6 @@
   <programme start="20260918173500 +0700" stop="20260918180000 +0700" channel="MNC_nickelodeon_49.id">
     <title lang="id">Victorious</title>
   </programme>
-  <programme start="20260918180000 +0700" stop="20260918182000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">That Girl Lay Lay</title>
-  </programme>
-  <programme start="20260918182000 +0700" stop="20260918184500 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Loud House</title>
-  </programme>
-  <programme start="20260918184500 +0700" stop="20260918191000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Loud House</title>
-  </programme>
-  <programme start="20260918191000 +0700" stop="20260918193000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">Wylde Pak</title>
-  </programme>
-  <programme start="20260918193000 +0700" stop="20260918194500 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">SpongeBob SquarePants</title>
-  </programme>
-  <programme start="20260918194500 +0700" stop="20260918195500 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">SpongeBob SquarePants</title>
-  </programme>
-  <programme start="20260918195500 +0700" stop="20260918201500 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">SpongeBob SquarePants</title>
-  </programme>
-  <programme start="20260918201500 +0700" stop="20260918204000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Loud House</title>
-  </programme>
-  <programme start="20260918204000 +0700" stop="20260918205500 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Loud House</title>
-  </programme>
-  <programme start="20260918205500 +0700" stop="20260918211500 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Loud House</title>
-  </programme>
-  <programme start="20260918211500 +0700" stop="20260918214000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">Sonic Prime</title>
-  </programme>
-  <programme start="20260918214000 +0700" stop="20260918220000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Patrick Star Show</title>
-  </programme>
-  <programme start="20260918220000 +0700" stop="20260918221500 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">SpongeBob SquarePants</title>
-  </programme>
-  <programme start="20260918221500 +0700" stop="20260918223000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">SpongeBob SquarePants</title>
-  </programme>
-  <programme start="20260918223000 +0700" stop="20260918225000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Marsupilamis</title>
-  </programme>
-  <programme start="20260918225000 +0700" stop="20260918230000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Marsupilamis</title>
-  </programme>
-  <programme start="20260918230000 +0700" stop="20260918232500 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Loud House</title>
-  </programme>
-  <programme start="20260918232500 +0700" stop="20260918235000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Loud House</title>
-  </programme>
-  <programme start="20260918235000 +0700" stop="20260919000000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">The Loud House</title>
-  </programme>
   <programme start="20260918000500 +0700" stop="20260918002500 +0700" channel="MNC_nickelodeon-jr_37.id">
     <title lang="id">Santiago Of The Seas</title>
   </programme>
@@ -11096,99 +10451,6 @@
   </programme>
   <programme start="20260918162500 +0700" stop="20260918164500 +0700" channel="MNC_nickelodeon-jr_37.id">
     <title lang="id">The Creature Cases</title>
-  </programme>
-  <programme start="20260918164500 +0700" stop="20260918171000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260918171000 +0700" stop="20260918173000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260918173000 +0700" stop="20260918175500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">PAW Patrol</title>
-  </programme>
-  <programme start="20260918175500 +0700" stop="20260918182000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">PAW Patrol</title>
-  </programme>
-  <programme start="20260918182000 +0700" stop="20260918184000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Barbapapa: Big Happy Family!</title>
-  </programme>
-  <programme start="20260918184000 +0700" stop="20260918190500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Barbapapa: Big Happy Family!</title>
-  </programme>
-  <programme start="20260918190500 +0700" stop="20260918192500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Santiago Of The Seas</title>
-  </programme>
-  <programme start="20260918192500 +0700" stop="20260918195000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Santiago Of The Seas</title>
-  </programme>
-  <programme start="20260918195000 +0700" stop="20260918201500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Deer Squad</title>
-  </programme>
-  <programme start="20260918201500 +0700" stop="20260918203500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">The Creature Cases</title>
-  </programme>
-  <programme start="20260918203500 +0700" stop="20260918204000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918204000 +0700" stop="20260918204500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918204500 +0700" stop="20260918205000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918205000 +0700" stop="20260918205500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918205500 +0700" stop="20260918210000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918210000 +0700" stop="20260918210500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918210500 +0700" stop="20260918211000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918211000 +0700" stop="20260918211500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918211500 +0700" stop="20260918212000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918212000 +0700" stop="20260918212500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918212500 +0700" stop="20260918213000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Peppa Pig</title>
-  </programme>
-  <programme start="20260918213000 +0700" stop="20260918214000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Dora</title>
-  </programme>
-  <programme start="20260918214000 +0700" stop="20260918215000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Dora</title>
-  </programme>
-  <programme start="20260918215000 +0700" stop="20260918220000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Dora</title>
-  </programme>
-  <programme start="20260918220000 +0700" stop="20260918222500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Mr. Crocodile</title>
-  </programme>
-  <programme start="20260918222500 +0700" stop="20260918224500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Barbapapa: Big Happy Family!</title>
-  </programme>
-  <programme start="20260918224500 +0700" stop="20260918230000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Barbapapa: Big Happy Family!</title>
-  </programme>
-  <programme start="20260918230000 +0700" stop="20260918232000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260918232000 +0700" stop="20260918233000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260918233000 +0700" stop="20260918235000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">PAW Patrol</title>
-  </programme>
-  <programme start="20260918235000 +0700" stop="20260919000500 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">PAW Patrol</title>
   </programme>
   <programme start="20260918001100 +0700" stop="20260918014700 +0700" channel="MNC_originals_7.id">
     <title lang="id">My Fatal Social Following</title>
@@ -13083,222 +12345,6 @@
   <programme start="20260918081500 +0700" stop="20260918083000 +0700" channel="MNC_zoomoo_39.id">
     <title lang="id">ZooMoo's Got Brains S1, Ep 1</title>
   </programme>
-  <programme start="20260918083000 +0700" stop="20260918084500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">ZooMoo's Got Brains S1, Ep 2</title>
-  </programme>
-  <programme start="20260918084500 +0700" stop="20260918090000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">ZooMoo's Got Brains S1, Ep 3</title>
-  </programme>
-  <programme start="20260918090000 +0700" stop="20260918091500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal All Stars S1, Ep 43</title>
-  </programme>
-  <programme start="20260918091500 +0700" stop="20260918093000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal All Stars S1, Ep 44</title>
-  </programme>
-  <programme start="20260918093000 +0700" stop="20260918094500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal All Stars S1, Ep 45</title>
-  </programme>
-  <programme start="20260918094500 +0700" stop="20260918100000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal All Stars S1, Ep 46</title>
-  </programme>
-  <programme start="20260918100000 +0700" stop="20260918101500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Counting With Paula S5, Ep 5</title>
-  </programme>
-  <programme start="20260918101500 +0700" stop="20260918103000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Counting With Paula S5, Ep 6</title>
-  </programme>
-  <programme start="20260918103000 +0700" stop="20260918104500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Jelly Jamm S1, Ep 33</title>
-  </programme>
-  <programme start="20260918104500 +0700" stop="20260918105000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">ZooMooPedia S1, Ep 7</title>
-  </programme>
-  <programme start="20260918105000 +0700" stop="20260918105500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Lubinho S1, Ep 4</title>
-  </programme>
-  <programme start="20260918105500 +0700" stop="20260918110000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">ZooMoosic S1, Ep 22</title>
-  </programme>
-  <programme start="20260918110000 +0700" stop="20260918111500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 29</title>
-  </programme>
-  <programme start="20260918111500 +0700" stop="20260918113000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 30</title>
-  </programme>
-  <programme start="20260918113000 +0700" stop="20260918114500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 31</title>
-  </programme>
-  <programme start="20260918114500 +0700" stop="20260918120000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 32</title>
-  </programme>
-  <programme start="20260918120000 +0700" stop="20260918121500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 33</title>
-  </programme>
-  <programme start="20260918121500 +0700" stop="20260918123000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 34</title>
-  </programme>
-  <programme start="20260918123000 +0700" stop="20260918124500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 35</title>
-  </programme>
-  <programme start="20260918124500 +0700" stop="20260918130000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 36</title>
-  </programme>
-  <programme start="20260918130000 +0700" stop="20260918131500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 37</title>
-  </programme>
-  <programme start="20260918131500 +0700" stop="20260918133000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 38</title>
-  </programme>
-  <programme start="20260918133000 +0700" stop="20260918134500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 39</title>
-  </programme>
-  <programme start="20260918134500 +0700" stop="20260918140000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 40</title>
-  </programme>
-  <programme start="20260918140000 +0700" stop="20260918141500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 41</title>
-  </programme>
-  <programme start="20260918141500 +0700" stop="20260918143000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 42</title>
-  </programme>
-  <programme start="20260918143000 +0700" stop="20260918144500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 43</title>
-  </programme>
-  <programme start="20260918144500 +0700" stop="20260918150000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 44</title>
-  </programme>
-  <programme start="20260918150000 +0700" stop="20260918151500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 29</title>
-  </programme>
-  <programme start="20260918151500 +0700" stop="20260918153000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 30</title>
-  </programme>
-  <programme start="20260918153000 +0700" stop="20260918154500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 31</title>
-  </programme>
-  <programme start="20260918154500 +0700" stop="20260918160000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 32</title>
-  </programme>
-  <programme start="20260918160000 +0700" stop="20260918161500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 33</title>
-  </programme>
-  <programme start="20260918161500 +0700" stop="20260918163000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 34</title>
-  </programme>
-  <programme start="20260918163000 +0700" stop="20260918164500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 35</title>
-  </programme>
-  <programme start="20260918164500 +0700" stop="20260918170000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 36</title>
-  </programme>
-  <programme start="20260918170000 +0700" stop="20260918171500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 37</title>
-  </programme>
-  <programme start="20260918171500 +0700" stop="20260918173000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 38</title>
-  </programme>
-  <programme start="20260918173000 +0700" stop="20260918174500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 39</title>
-  </programme>
-  <programme start="20260918174500 +0700" stop="20260918180000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 40</title>
-  </programme>
-  <programme start="20260918180000 +0700" stop="20260918181500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 41</title>
-  </programme>
-  <programme start="20260918181500 +0700" stop="20260918183000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 42</title>
-  </programme>
-  <programme start="20260918183000 +0700" stop="20260918184500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 43</title>
-  </programme>
-  <programme start="20260918184500 +0700" stop="20260918190000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 44</title>
-  </programme>
-  <programme start="20260918190000 +0700" stop="20260918191500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Jelly Jamm S1, Ep 29</title>
-  </programme>
-  <programme start="20260918191500 +0700" stop="20260918193000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Jelly Jamm S1, Ep 30</title>
-  </programme>
-  <programme start="20260918193000 +0700" stop="20260918194500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Jelly Jamm S1, Ep 31</title>
-  </programme>
-  <programme start="20260918194500 +0700" stop="20260918200000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Jelly Jamm S1, Ep 32</title>
-  </programme>
-  <programme start="20260918200000 +0700" stop="20260918201000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S3, Ep 52</title>
-  </programme>
-  <programme start="20260918201000 +0700" stop="20260918202000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S3, Ep 53</title>
-  </programme>
-  <programme start="20260918202000 +0700" stop="20260918203000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S3, Ep 54</title>
-  </programme>
-  <programme start="20260918203000 +0700" stop="20260918204000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S3, Ep 55</title>
-  </programme>
-  <programme start="20260918204000 +0700" stop="20260918205000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S3, Ep 56</title>
-  </programme>
-  <programme start="20260918205000 +0700" stop="20260918210000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S3, Ep 57</title>
-  </programme>
-  <programme start="20260918210000 +0700" stop="20260918210500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal Alphabet S1, Ep 88</title>
-  </programme>
-  <programme start="20260918210500 +0700" stop="20260918211000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal Alphabet S1, Ep 89</title>
-  </programme>
-  <programme start="20260918211000 +0700" stop="20260918211500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal Alphabet S1, Ep 90</title>
-  </programme>
-  <programme start="20260918211500 +0700" stop="20260918212000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal Noises S1, Ep 54</title>
-  </programme>
-  <programme start="20260918212000 +0700" stop="20260918212500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal Noises S1, Ep 55</title>
-  </programme>
-  <programme start="20260918212500 +0700" stop="20260918213000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal Noises S1, Ep 56</title>
-  </programme>
-  <programme start="20260918213000 +0700" stop="20260918214500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Pop Safari S1, Ep 30</title>
-  </programme>
-  <programme start="20260918214500 +0700" stop="20260918215000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Guess The Animal S1, Ep 20</title>
-  </programme>
-  <programme start="20260918215000 +0700" stop="20260918215500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Guess The Animal S1, Ep 21</title>
-  </programme>
-  <programme start="20260918215500 +0700" stop="20260918220000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Guess The Animal S1, Ep 22</title>
-  </programme>
-  <programme start="20260918220000 +0700" stop="20260918221500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">ZooMoo's Got Brains S2, Ep 40</title>
-  </programme>
-  <programme start="20260918221500 +0700" stop="20260918223000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">ZooMoo's Got Brains S1, Ep 1</title>
-  </programme>
-  <programme start="20260918223000 +0700" stop="20260918224500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">ZooMoo's Got Brains S1, Ep 2</title>
-  </programme>
-  <programme start="20260918224500 +0700" stop="20260918230000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">ZooMoo's Got Brains S1, Ep 3</title>
-  </programme>
-  <programme start="20260918230000 +0700" stop="20260918231500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal All Stars S1, Ep 43</title>
-  </programme>
-  <programme start="20260918231500 +0700" stop="20260918233000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal All Stars S1, Ep 44</title>
-  </programme>
-  <programme start="20260918233000 +0700" stop="20260918234500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal All Stars S1, Ep 45</title>
-  </programme>
-  <programme start="20260918234500 +0700" stop="20260919000000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Animal All Stars S1, Ep 46</title>
-  </programme>
   <programme start="20260918060000 +0700" stop="20260918060500 +0700" channel="TPChannel.th">
     <title lang="th">สารคดีพระปกเกล้าธรรมราชา</title>
   </programme>
@@ -13702,11 +12748,11 @@
   </programme>
   <programme start="20260918150000 +0500" stop="20260918160000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Пайым</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Бағдарлама. Мемлекеттік қызмет: мүмкіндік пен жауапкершілік</desc>
   </programme>
   <programme start="20260918160000 +0500" stop="20260918170500 +0500" channel="AbaiTV.kz">
     <title lang="kk">Үркер</title>
-    <desc lang="kk">Бағдарлама. Тұрсын Жұртбайдың “Толық адам” зерттеу еңбегін талдау</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260918170500 +0500" stop="20260918173500 +0500" channel="AbaiTV.kz">
     <title lang="kk">«Алтын қордан концерт». Бақыт Әшімова</title>
