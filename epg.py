@@ -137,7 +137,6 @@ def scrape_single_tivie_channel(ch):
             "Referer": "https://tivie.id/"
         }
         res = HTTP_SESSION.get(url, headers=tivie_headers, timeout=15)
-        
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, 'html.parser')
             
@@ -228,8 +227,6 @@ def scrape_single_tivie_channel(ch):
             
         if programmes:
             print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs cleanly!")
-        else:
-            print(f"[!] Tivie.id [{ch_name}]: Response status {res.status_code}, but 0 programs found (possible block/empty).")
     except Exception as e:
         print(f"[!] Tivie Error [{ch_name}]: {e}")
 
