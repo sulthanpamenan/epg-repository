@@ -140,45 +140,64 @@ def scrape_single_tivie_channel(ch):
         res = HTTP_SESSION.get(api_url, headers=tivie_headers, timeout=15)
         
         if res.status_code == 200:
-            try:
-                data = res.json()
-            except Exception:
-                data = {}
-                
-            items = data if isinstance(data, list) else data.get("programs", data.get("data", []))
+            data = res.json()
+            
+            if isinstance(data, dict):
+                items = data.get("programs", data.get("data", [data] if "ttl" in data or "title" in data else []))
+            elif isinstance(data, list):
+                items = data
+            else:
+                items = []
             
             raw_list = []
             for item in items:
-                t_raw = item.get("time") or item.get("start_time") or item.get("jam")
-                title = item.get("title") or item.get("program_name")
-                desc = item.get("description", "") or ""
+                title = item.get("ttl") or item.get("title") or item.get("program_name")
+                desc = item.get("desc") or item.get("description") or ""
                 category = item.get("category", "General") or "General"
                 
-                if not t_raw or not title:
+                start_ts = item.get("str") or item.get("start_timestamp") or item.get("start_time")
+                
+                start_dt = None
+                if start_ts:
+                    try:
+                        if isinstance(start_ts, (int, float)) or (isinstance(start_ts, str) and start_ts.isdigit()):
+                            ts_sec = float(start_ts) / 1000.0 if float(start_ts) > 1e11 else float(start_ts)
+                            start_dt = datetime.fromtimestamp(ts_sec, tz=timezone.utc).astimezone(wib_tz)
+                        else:
+                            match_t = TIME_PATTERN_HM.search(str(start_ts))
+                            if match_t:
+                                t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
+                                start_dt = datetime.strptime(f"{date_str} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
+                    except Exception:
+                        pass
+                
+                if not start_dt and not title:
                     continue
                 
-                match_t = TIME_PATTERN_HM.search(str(t_raw))
-                if match_t:
-                    t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
+                if start_dt and title:
                     raw_list.append({
-                        "time": t_str,
+                        "start_dt": start_dt,
                         "title": clean_text_str(title),
                         "desc": clean_text_str(desc),
                         "category": clean_text_str(category)
                     })
 
+            raw_list.sort(key=lambda x: x["start_dt"])
+
             for idx in range(len(raw_list)):
                 curr = raw_list[idx]
-                t_str = curr['time']
-                start_dt = datetime.strptime(f"{date_str} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
+                start_dt = curr['start_dt']
                 
                 if idx < len(raw_list) - 1:
-                    stop_time_str = raw_list[idx + 1]['time']
-                    stop_dt = datetime.strptime(f"{date_str} {stop_time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
+                    stop_dt = raw_list[idx + 1]['start_dt']
                     if stop_dt <= start_dt: 
-                        stop_dt += timedelta(days=1)
+                        stop_dt = start_dt + timedelta(hours=1)
                 else:
-                    stop_dt = start_dt + timedelta(hours=1)
+                    duration_ms = items[idx].get("duration") if idx < len(items) else None
+                    if duration_ms and isinstance(duration_ms, (int, float)):
+                        stop_dt = start_dt + timedelta(milliseconds=duration_ms)
+                    else:
+                        stop_dt = start_dt + timedelta(hours=1)
 
                 programmes.append({
                     "channel": f"Tivie_{ch_id}.id",
@@ -193,7 +212,7 @@ def scrape_single_tivie_channel(ch):
         if programmes:
             print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs via API!")
         else:
-            print(f"[!] Tivie.id [{ch_name}]: API returned 0 programs (possibly blocked or empty date).")
+            print(f"[!] Tivie.id [{ch_name}]: API returned empty schedule data.")
     except Exception as e:
         print(f"[!] Tivie API Error [{ch_name}]: {e}")
 
