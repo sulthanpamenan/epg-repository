@@ -297,6 +297,9 @@
   <channel id="MNC_kix_161.id">
     <display-name>KIX</display-name>
   </channel>
+  <channel id="MNC_life_91.id">
+    <display-name>LIFE</display-name>
+  </channel>
   <channel id="MNC_lifetime_167.id">
     <display-name>Lifetime</display-name>
   </channel>
@@ -347,6 +350,12 @@
   </channel>
   <channel id="MNC_rock-entertainment_240.id">
     <display-name>Rock Entertainment</display-name>
+  </channel>
+  <channel id="MNC_soccer-channel_101.id">
+    <display-name>Soccer Channel</display-name>
+  </channel>
+  <channel id="MNC_soccer-channel-hd_420.id">
+    <display-name>Soccer Channel HD</display-name>
   </channel>
   <channel id="MNC_sportstars_102.id">
     <display-name>Sportstars</display-name>
@@ -4500,10 +4509,6 @@
     <title lang="en">It's all about the drama</title>
     <desc lang="en">MTB riders like Kate Courtney, Finn Iles and Loïc Bruni look back over Fast Life, remembering the good and tough moments.</desc>
   </programme>
-  <programme start="20260918074400 +0000" stop="20260918075647 +0000" channel="RedBullAdventure.global">
-    <title lang="en">Jason Paul’s Wild Ride</title>
-    <desc lang="en">Pro freerunner Jason Paul and friends head to Germany’s Mammut roller coaster for a unique parkour session.</desc>
-  </programme>
   <programme start="20260918075647 +0000" stop="20260918081548 +0000" channel="RedBullAdventure.global">
     <title lang="en">The high road part 2</title>
     <desc lang="en">Nina Williams hones in on an outrageous new objective: a 15m-tall boulder called Too Big to Flail.</desc>
@@ -4579,6 +4584,10 @@
   <programme start="20260918161516 +0000" stop="20260918170741 +0000" channel="RedBullAdventure.global">
     <title lang="en">Best moments from Copenhagen</title>
     <desc lang="en">These are the best moments from the third event of the 2022 Red Bull Cliff Diving World Series in Denmark.</desc>
+  </programme>
+  <programme start="20260918170741 +0000" stop="20260918172508 +0000" channel="RedBullAdventure.global">
+    <title lang="en">One Day, 4061m &amp; 4478m</title>
+    <desc lang="en">Most people need several days to take on two alpine challenges. Can ultrarunner Fernanda Maciel do it in one?</desc>
   </programme>
   <programme start="20260918065631 +0000" stop="20260918080406 +0000" channel="RedBullMotorsports.global">
     <title lang="en">Crandon World Cup</title>
@@ -4820,10 +4829,6 @@
     <title lang="en">Hometown skating in Lisbon</title>
     <desc lang="en">Ride with skater Gustavo Ribeiro as he shows us his hometown of Lisbon, Portugal.</desc>
   </programme>
-  <programme start="20260918074247 +0000" stop="20260918075357 +0000" channel="RedBullWinter.global">
-    <title lang="en">Scotty James is stoked to get back on the snow</title>
-    <desc lang="en">After six months of no snowboarding, an empty halfpipe was a sight for Scotty James's sore eyes.</desc>
-  </programme>
   <programme start="20260918075357 +0000" stop="20260918084217 +0000" channel="RedBullWinter.global">
     <title lang="en">The Collective</title>
     <desc lang="en">Undiscovered peaks and midnight-raids on inner-city handrails – that's the Skiing is Collective spirit.</desc>
@@ -4899,6 +4904,10 @@
   <programme start="20260918124512 +0000" stop="20260918130734 +0000" channel="RedBullWinter.global">
     <title lang="en">Alaska</title>
     <desc lang="en">The snowboarding McMorris brothers have been around the world, but Alaska remained out of reach – until now.</desc>
+  </programme>
+  <programme start="20260918130734 +0000" stop="20260918134936 +0000" channel="RedBullWinter.global">
+    <title lang="en">Chasing Winter</title>
+    <desc lang="en">Pro snowboarder Mark McMorris and friends prepare for the upcoming high-stakes competition season.</desc>
   </programme>
   <programme start="20260918074947 +0000" stop="20260918075932 +0000" channel="RedBullActionReel.global">
     <title lang="en">Wild phone chase</title>
@@ -9642,6 +9651,108 @@
   <programme start="20260918232000 +0700" stop="20260919010500 +0700" channel="MNC_kix_161.id">
     <title lang="id">The Grey Men</title>
   </programme>
+  <programme start="20260918003000 +0700" stop="20260918013000 +0700" channel="MNC_life_91.id">
+    <title lang="id">AnugerahNya</title>
+  </programme>
+  <programme start="20260918013000 +0700" stop="20260918020000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Rhema</title>
+  </programme>
+  <programme start="20260918020000 +0700" stop="20260918030000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Rumah CGN Keluarga</title>
+  </programme>
+  <programme start="20260918030000 +0700" stop="20260918040000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Bukan Untuk Orang Sempurna</title>
+  </programme>
+  <programme start="20260918040000 +0700" stop="20260918043000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Sentuhan Kasih</title>
+  </programme>
+  <programme start="20260918043000 +0700" stop="20260918050000 +0700" channel="MNC_life_91.id">
+    <title lang="id">The Art Of Church</title>
+  </programme>
+  <programme start="20260918050000 +0700" stop="20260918053000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Love Revolution</title>
+  </programme>
+  <programme start="20260918053000 +0700" stop="20260918060000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Praise And Worship</title>
+  </programme>
+  <programme start="20260918060000 +0700" stop="20260918070000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Rumah CGN Keluarga</title>
+  </programme>
+  <programme start="20260918070000 +0700" stop="20260918080000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Bukan Untuk Orang Sempurna</title>
+  </programme>
+  <programme start="20260918080000 +0700" stop="20260918090000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Semua Kitab Suci</title>
+  </programme>
+  <programme start="20260918090000 +0700" stop="20260918100000 +0700" channel="MNC_life_91.id">
+    <title lang="id">AnugerahNya</title>
+  </programme>
+  <programme start="20260918100000 +0700" stop="20260918103000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Smoketown</title>
+  </programme>
+  <programme start="20260918103000 +0700" stop="20260918110000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Bimbingan Rohani: Katolik</title>
+  </programme>
+  <programme start="20260918110000 +0700" stop="20260918120000 +0700" channel="MNC_life_91.id">
+    <title lang="id">GBI VIFA</title>
+  </programme>
+  <programme start="20260918120000 +0700" stop="20260918123000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Rhema</title>
+  </programme>
+  <programme start="20260918123000 +0700" stop="20260918130000 +0700" channel="MNC_life_91.id">
+    <title lang="id">The Art Of Church</title>
+  </programme>
+  <programme start="20260918130000 +0700" stop="20260918133000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Love Revolution</title>
+  </programme>
+  <programme start="20260918133000 +0700" stop="20260918140000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Praise And Worship</title>
+  </programme>
+  <programme start="20260918140000 +0700" stop="20260918143000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Today's Breakthrough</title>
+  </programme>
+  <programme start="20260918143000 +0700" stop="20260918150000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Mujizat Itu Nyata</title>
+  </programme>
+  <programme start="20260918150000 +0700" stop="20260918160000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Semua Kitab Suci</title>
+  </programme>
+  <programme start="20260918160000 +0700" stop="20260918163000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Superbook Kids Club</title>
+  </programme>
+  <programme start="20260918163000 +0700" stop="20260918173000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Rumah CGN Keluarga</title>
+  </programme>
+  <programme start="20260918173000 +0700" stop="20260918183000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Bukan Untuk Orang Sempurna</title>
+  </programme>
+  <programme start="20260918183000 +0700" stop="20260918193000 +0700" channel="MNC_life_91.id">
+    <title lang="id">AnugerahNya</title>
+  </programme>
+  <programme start="20260918193000 +0700" stop="20260918200000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Rhema</title>
+  </programme>
+  <programme start="20260918200000 +0700" stop="20260918203000 +0700" channel="MNC_life_91.id">
+    <title lang="id">The Art Of Church</title>
+  </programme>
+  <programme start="20260918203000 +0700" stop="20260918210000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Love Revolution</title>
+  </programme>
+  <programme start="20260918210000 +0700" stop="20260918220000 +0700" channel="MNC_life_91.id">
+    <title lang="id">GBI VIFA</title>
+  </programme>
+  <programme start="20260918220000 +0700" stop="20260918223000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Praise And Worship</title>
+  </programme>
+  <programme start="20260918223000 +0700" stop="20260918230000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Smoketown</title>
+  </programme>
+  <programme start="20260918230000 +0700" stop="20260918233000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Sentuhan Kasih</title>
+  </programme>
+  <programme start="20260918233000 +0700" stop="20260919003000 +0700" channel="MNC_life_91.id">
+    <title lang="id">Semua Kitab Suci</title>
+  </programme>
   <programme start="20260918000500 +0700" stop="20260918010500 +0700" channel="MNC_lifetime_167.id">
     <title lang="id">Zombie House Flipping S6, Ep 91</title>
   </programme>
@@ -11480,6 +11591,96 @@
   </programme>
   <programme start="20260918232500 +0700" stop="20260919001000 +0700" channel="MNC_rock-entertainment_240.id">
     <title lang="id">Real Housewives Of..., Ep 8</title>
+  </programme>
+  <programme start="20260918013000 +0700" stop="20260918020000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">The Ultimate Goals</title>
+  </programme>
+  <programme start="20260918020000 +0700" stop="20260918040000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">ACL Two 2026/27: SEO Vs PSB</title>
+  </programme>
+  <programme start="20260918040000 +0700" stop="20260918043000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">World Classic Soccer</title>
+  </programme>
+  <programme start="20260918043000 +0700" stop="20260918063000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Shopee Cup '25/26: KAS Vs MDG</title>
+  </programme>
+  <programme start="20260918063000 +0700" stop="20260918083000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Hyundai C'ship '26: THA Vs SIN</title>
+  </programme>
+  <programme start="20260918083000 +0700" stop="20260918103000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Sportacular Match: POR Vs CHI</title>
+  </programme>
+  <programme start="20260918103000 +0700" stop="20260918110000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">The Ultimate Goals</title>
+  </programme>
+  <programme start="20260918110000 +0700" stop="20260918130000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">ACL Two 2026/27: ARK Vs MUH</title>
+  </programme>
+  <programme start="20260918130000 +0700" stop="20260918150000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Hyundai C'ship '26: VIE Vs MAS</title>
+  </programme>
+  <programme start="20260918150000 +0700" stop="20260918170000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Sportacular Match: ROU Vs WAL</title>
+  </programme>
+  <programme start="20260918170000 +0700" stop="20260918180000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Sikat Tipis</title>
+  </programme>
+  <programme start="20260918180000 +0700" stop="20260918194500 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Shopee Cup '25/26: NDI Vs LCS</title>
+  </programme>
+  <programme start="20260918194500 +0700" stop="20260918213000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Timnas Spesial: KSA Vs IDN</title>
+  </programme>
+  <programme start="20260918213000 +0700" stop="20260918233000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Hyundai C'ship '26: VIE Vs MAS</title>
+  </programme>
+  <programme start="20260918233000 +0700" stop="20260919013000 +0700" channel="MNC_soccer-channel_101.id">
+    <title lang="id">Sportacular Match: ROU Vs WAL</title>
+  </programme>
+  <programme start="20260918013000 +0700" stop="20260918020000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">The Ultimate Goals</title>
+  </programme>
+  <programme start="20260918020000 +0700" stop="20260918040000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">ACL Two 2026/27: SEO Vs PSB</title>
+  </programme>
+  <programme start="20260918040000 +0700" stop="20260918043000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">World Classic Soccer</title>
+  </programme>
+  <programme start="20260918043000 +0700" stop="20260918063000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Shopee Cup '25/26: KAS Vs MDG</title>
+  </programme>
+  <programme start="20260918063000 +0700" stop="20260918083000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Hyundai C'ship '26: THA Vs SIN</title>
+  </programme>
+  <programme start="20260918083000 +0700" stop="20260918103000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Sportacular Match: POR Vs CHI</title>
+  </programme>
+  <programme start="20260918103000 +0700" stop="20260918110000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">The Ultimate Goals</title>
+  </programme>
+  <programme start="20260918110000 +0700" stop="20260918130000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">ACL Two 2026/27: ARK Vs MUH</title>
+  </programme>
+  <programme start="20260918130000 +0700" stop="20260918150000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Hyundai C'ship '26: VIE Vs MAS</title>
+  </programme>
+  <programme start="20260918150000 +0700" stop="20260918170000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Sportacular Match: ROU Vs WAL</title>
+  </programme>
+  <programme start="20260918170000 +0700" stop="20260918180000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Sikat Tipis</title>
+  </programme>
+  <programme start="20260918180000 +0700" stop="20260918194500 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Shopee Cup '25/26: NDI Vs LCS</title>
+  </programme>
+  <programme start="20260918194500 +0700" stop="20260918213000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Timnas Spesial: KSA Vs IDN</title>
+  </programme>
+  <programme start="20260918213000 +0700" stop="20260918233000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Hyundai C'ship '26: VIE Vs MAS</title>
+  </programme>
+  <programme start="20260918233000 +0700" stop="20260919013000 +0700" channel="MNC_soccer-channel-hd_420.id">
+    <title lang="id">Sportacular Match: ROU Vs WAL</title>
   </programme>
   <programme start="20260918000000 +0700" stop="20260918020000 +0700" channel="MNC_sportstars_102.id">
     <title lang="id">Pro Futsal League</title>
