@@ -127,11 +127,11 @@ def scrape_single_tivie_channel(ch):
     today_wib = datetime.now(timezone.utc).astimezone(wib_tz)
     date_str = today_wib.strftime("%Y-%m-%d")
     
-    url = f"https://tivie.id/channel/{ch_id}?date={date_str}"
+    api_url = f"{CF_WORKER_URL}/channel/{ch_id}?date={date_str}"
     programmes = []
     
     try:
-        res = HTTP_SESSION.get(url, timeout=15)
+        res = HTTP_SESSION.get(api_url, timeout=15)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, "html.parser")
             raw_list = []
@@ -186,11 +186,11 @@ def scrape_single_tivie_channel(ch):
                 })
                 
         if programmes:
-            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs via HTML!")
+            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs via Worker!")
         else:
-            print(f"[!] Tivie.id [{ch_name}]: HTML returned 0 programs.")
+            print(f"[!] Tivie.id [{ch_name}]: Worker returned 0 programs.")
     except Exception as e:
-        print(f"[!] Tivie HTML Error [{ch_name}]: {e}")
+        print(f"[!] Tivie Worker Error [{ch_name}]: {e}")
 
     return {"id": f"Tivie_{ch_id}.id", "name": ch_name}, programmes
 
