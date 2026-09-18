@@ -127,19 +127,24 @@ def scrape_single_tivie_channel(ch):
     today_wib = datetime.now(timezone.utc).astimezone(wib_tz)
     date_str = today_wib.strftime("%Y-%m-%d")
     
-    api_url = f"{CF_WORKER_URL}/api/channel?id={ch_id}&date={date_str}"
+    api_url = f"https://tivie.id/api/channel?id={ch_id}&date={date_str}"
     programmes = []
     
     try:
         tivie_headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
             "Accept": "application/json, text/plain, */*",
-            "Referer": f"https://tivie.id/channel/{ch_id}"
+            "Referer": f"https://tivie.id/channel/{ch_id}",
+            "X-Requested-With": "XMLHttpRequest"
         }
         res = HTTP_SESSION.get(api_url, headers=tivie_headers, timeout=15)
         
         if res.status_code == 200:
-            data = res.json()
+            try:
+                data = res.json()
+            except Exception:
+                data = {}
+                
             items = data if isinstance(data, list) else data.get("programs", data.get("data", []))
             
             raw_list = []
@@ -187,6 +192,8 @@ def scrape_single_tivie_channel(ch):
                 
         if programmes:
             print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs via API!")
+        else:
+            print(f"[!] Tivie.id [{ch_name}]: API returned 0 programs (possibly blocked or empty date).")
     except Exception as e:
         print(f"[!] Tivie API Error [{ch_name}]: {e}")
 
