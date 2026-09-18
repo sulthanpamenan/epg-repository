@@ -136,45 +136,25 @@ def scrape_single_tivie_channel(ch):
             soup = BeautifulSoup(res.text, "html.parser")
             raw_list = []
             
-            items = soup.find_all("li", attrs={"x-data": True})
-            
-            for item in items:
-                x_data_str = item.get("x-data", "")
+            # Cek semua elemen yang berpotensi memuat teks jadwal
+            for tag in soup.find_all(["li", "div", "p", "tr", "span", "article"]):
+                text = tag.get_text(" ", strip=True)
+                match_t = TIME_PATTERN_HM.search(text)
                 
-                title_elem = item.select_one("h4, .font-bold, [class*='font-medium']")
-                time_elem = item.select_one("span[before], span.text-xs, span[class*='leading']")
-                
-                title = ""
-                if title_elem:
-                    title = title_elem.get_text(strip=True)
-                
-                item_text = item.get_text(" ", strip=True)
-                match_t = TIME_PATTERN_HM.search(item_text)
-                
-                if match_t and title:
+                if match_t:
                     t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
-                    raw_list.append({
-                        "time": t_str,
-                        "title": clean_text_str(title),
-                        "desc": ""
-                    })
+                    # Ambil sisa teks setelah jam sebagai judul program
+                    title_cand = text.replace(match_t.group(0), "").strip()
+                    title_cand = re.sub(r"^[-–:\s]+", "", title_cand)
+                    
+                    if 2 < len(title_cand) < 120 and not any(k in title_cand.lower() for k in ["tivie", "jadwal", "copyright"]):
+                        raw_list.append({
+                            "time": t_str,
+                            "title": clean_text_str(title_cand),
+                            "desc": ""
+                        })
             
-            if not raw_list:
-                all_divs = soup.select("li, div")
-                for div in all_divs:
-                    text = div.get_text(" ", strip=True)
-                    match_t = TIME_PATTERN_HM.search(text)
-                    if match_t:
-                        t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
-                        title_cand = text.replace(match_t.group(0), "").strip()
-                        title_cand = re.sub(r"^[-–:\s]+", "", title_cand)
-                        if len(title_cand) > 2 and len(title_cand) < 150:
-                            raw_list.append({
-                                "time": t_str,
-                                "title": clean_text_str(title_cand),
-                                "desc": ""
-                            })
-
+            # Buang duplikat berdasarkan waktu
             seen_times = set()
             unique_raw = []
             for r in raw_list:
