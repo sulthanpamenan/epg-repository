@@ -127,77 +127,53 @@ def scrape_single_tivie_channel(ch):
     today_wib = datetime.now(timezone.utc).astimezone(wib_tz)
     date_str = today_wib.strftime("%Y-%m-%d")
     
-    api_url = f"https://tivie.id/api/channel?id={ch_id}&date={date_str}"
+    url = f"https://tivie.id/channel/{ch_id}?date={date_str}"
     programmes = []
     
     try:
-        tivie_headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            "Accept": "application/json, text/plain, */*",
-            "Referer": f"https://tivie.id/channel/{ch_id}",
-            "X-Requested-With": "XMLHttpRequest"
-        }
-        res = HTTP_SESSION.get(api_url, headers=tivie_headers, timeout=15)
-        
+        res = HTTP_SESSION.get(url, timeout=15)
         if res.status_code == 200:
-            data = res.json()
-            
-            if isinstance(data, dict):
-                items = data.get("programs", data.get("data", [data] if "ttl" in data or "title" in data else []))
-            elif isinstance(data, list):
-                items = data
-            else:
-                items = []
-            
+            soup = BeautifulSoup(res.text, "html.parser")
             raw_list = []
+            
+            items = soup.select("li, .program-item, .schedule-item, .timeline-item, tr, div")
+            
             for item in items:
-                title = item.get("ttl") or item.get("title") or item.get("program_name")
-                desc = item.get("desc") or item.get("description") or ""
-                category = item.get("category", "General") or "General"
+                text = item.get_text(" ", strip=True)
+                match_t = TIME_PATTERN_HM.search(text)
+                if match_t:
+                    t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
+                    title_candidate = text.replace(match_t.group(0), "").strip()
+                    title_candidate = re.sub(r"^[-–:\s]+", "", title_candidate)
+                    
+                    if title_candidate and len(title_candidate) > 2 and len(title_candidate) < 150:
+                        raw_list.append({
+                            "time": t_str,
+                            "title": clean_text_str(title_candidate),
+                            "desc": ""
+                        })
+            
+            seen_times = set()
+            unique_raw = []
+            for r in raw_list:
+                if r["time"] not in seen_times:
+                    seen_times.add(r["time"])
+                    unique_raw.append(r)
+            
+            unique_raw.sort(key=lambda x: x["time"])
+            
+            for idx in range(len(unique_raw)):
+                curr = unique_raw[idx]
+                t_str = curr['time']
+                start_dt = datetime.strptime(f"{date_str} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
                 
-                start_ts = item.get("str") or item.get("start_timestamp") or item.get("start_time")
-                
-                start_dt = None
-                if start_ts:
-                    try:
-                        if isinstance(start_ts, (int, float)) or (isinstance(start_ts, str) and start_ts.isdigit()):
-                            ts_sec = float(start_ts) / 1000.0 if float(start_ts) > 1e11 else float(start_ts)
-                            start_dt = datetime.fromtimestamp(ts_sec, tz=timezone.utc).astimezone(wib_tz)
-                        else:
-                            match_t = TIME_PATTERN_HM.search(str(start_ts))
-                            if match_t:
-                                t_str = match_t.group(1).replace(".", ":").zfill(5)[:5]
-                                start_dt = datetime.strptime(f"{date_str} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
-                    except Exception:
-                        pass
-                
-                if not start_dt and not title:
-                    continue
-                
-                if start_dt and title:
-                    raw_list.append({
-                        "start_dt": start_dt,
-                        "title": clean_text_str(title),
-                        "desc": clean_text_str(desc),
-                        "category": clean_text_str(category)
-                    })
-
-            raw_list.sort(key=lambda x: x["start_dt"])
-
-            for idx in range(len(raw_list)):
-                curr = raw_list[idx]
-                start_dt = curr['start_dt']
-                
-                if idx < len(raw_list) - 1:
-                    stop_dt = raw_list[idx + 1]['start_dt']
+                if idx < len(unique_raw) - 1:
+                    stop_time_str = unique_raw[idx + 1]['time']
+                    stop_dt = datetime.strptime(f"{date_str} {stop_time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
                     if stop_dt <= start_dt: 
-                        stop_dt = start_dt + timedelta(hours=1)
+                        stop_dt += timedelta(days=1)
                 else:
-                    duration_ms = items[idx].get("duration") if idx < len(items) else None
-                    if duration_ms and isinstance(duration_ms, (int, float)):
-                        stop_dt = start_dt + timedelta(milliseconds=duration_ms)
-                    else:
-                        stop_dt = start_dt + timedelta(hours=1)
+                    stop_dt = start_dt + timedelta(hours=1)
 
                 programmes.append({
                     "channel": f"Tivie_{ch_id}.id",
@@ -205,16 +181,16 @@ def scrape_single_tivie_channel(ch):
                     "stop": format_xmltv_date(stop_dt, "+0700"),
                     "title": curr["title"],
                     "desc": curr["desc"],
-                    "category": curr["category"],
+                    "category": "General",
                     "lang": "id"
                 })
                 
         if programmes:
-            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs via API!")
+            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs via HTML!")
         else:
-            print(f"[!] Tivie.id [{ch_name}]: API returned empty schedule data.")
+            print(f"[!] Tivie.id [{ch_name}]: HTML returned 0 programs.")
     except Exception as e:
-        print(f"[!] Tivie API Error [{ch_name}]: {e}")
+        print(f"[!] Tivie HTML Error [{ch_name}]: {e}")
 
     return {"id": f"Tivie_{ch_id}.id", "name": ch_name}, programmes
 
