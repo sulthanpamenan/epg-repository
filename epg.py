@@ -81,6 +81,13 @@ def clean_text_str(val):
     text = re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", " ", text).strip()
     return re.sub(r"\s+", " ", text)
 
+def decode_base64_json(data_b64):
+    try:
+        decoded_bytes = base64.b64decode(data_b64)
+        return json.loads(decoded_bytes.decode('utf-8'))
+    except Exception:
+        return None
+
 def parse_cltv36_day_matches(day_text, target_weekday_name, is_weekend):
     dt, t_day = day_text.upper(), target_weekday_name.upper()
     if t_day in dt or "DAILY" in dt: return True
@@ -244,17 +251,13 @@ def get_official_dens_channels():
         {"id_num": "102", "slug": "densshowbiz", "id": "Dens_densshowbiz.id", "name": "Dens ShowBiz", "cat": "tv-local"},
         {"id_num": "1", "slug": "densknowledge", "id": "Dens_densknowledge.id", "name": "Dens Knowledge", "cat": "tv-local"},
         {"id_num": "137", "slug": "channel-jowo", "id": "Dens_channel-jowo.id", "name": "Channel Jowo", "cat": "tv-local"},
-        {"id_num": "6", "slug": "metro-tv", "id": "Dens_metro-tv.id", "name": "Metro TV", "cat": "tv-local"},
-        {"id_num": "80", "slug": "btv", "id": "Dens_btv.id", "name": "BTV", "cat": "tv-local"},
         {"id_num": "131", "slug": "berita-satu", "id": "Dens_berita-satu.id", "name": "BeritaSatu World", "cat": "tv-local"},
-        {"id_num": "13", "slug": "mdtv", "id": "Dens_mdtv.id", "name": "MD Channel", "cat": "tv-local"},
         {"id_num": "94", "slug": "elshinta-tv", "id": "Dens_elshinta-tv.id", "name": "Elshinta TV", "cat": "tv-local"},
         {"id_num": "122", "slug": "magna-channel", "id": "Dens_magna-channel.id", "name": "Magna Channel", "cat": "tv-local"},
         {"id_num": "118", "slug": "tvri-sport", "id": "Dens_tvri-sport.id", "name": "TVRI Sport", "cat": "tv-local"},
         {"id_num": "112", "slug": "jak-tv", "id": "Dens_jak-tv.id", "name": "Jak TV", "cat": "tv-local"},
         {"id_num": "21", "slug": "rodjatv", "id": "Dens_rodjatv.id", "name": "Rodja TV", "cat": "tv-local"},
         {"id_num": "23", "slug": "daai-tv", "id": "Dens_daai-tv.id", "name": "DAAI TV", "cat": "tv-local"},
-        {"id_num": "138", "slug": "nusantara-tv-ntv", "id": "Dens_nusantara-tv-ntv.id", "name": "Nusantara TV", "cat": "tv-local"},
         {"id_num": "92", "slug": "my-cinema-europe-hd", "id": "Dens_my-cinema-europe-hd.id", "name": "My Cinema Europe", "cat": "tv-premium"},
         {"id_num": "127", "slug": "crema-tv", "id": "Dens_crema-tv.id", "name": "Crema TV", "cat": "tv-premium"},
         {"id_num": "143", "slug": "qwest-tv", "id": "Dens_qwest-tv.id", "name": "Qwest TV", "cat": "tv-premium"},
@@ -274,9 +277,8 @@ def get_official_dens_channels():
         {"id_num": "90", "slug": "tv5monde-asie", "id": "Dens_tv5monde-asie.id", "name": "TV5Monde Asie", "cat": "tv-international"},
         {"id_num": "81", "slug": "dw-tv", "id": "Dens_dw-tv.id", "name": "DW TV", "cat": "tv-international"},
         {"id_num": "132", "slug": "dim-tv", "id": "Dens_dim-tv.id", "name": "DIM TV", "cat": "tv-international"},
-        {"id_num": "78", "slug": "tbn", "id": "Dens_tbn.id", "name": "TBN", "cat": "tv-international"},
         {"id_num": "16", "slug": "cgtn-documentary", "id": "Dens_cgtn-documentary.id", "name": "CGTN Documentary", "cat": "tv-international"},
-        {"id_num": "82", "slug": "quran-tv", "id": "Dens_quran-tv.id", "name": "Saudi Quran TV", "cat": "tv-international"},
+        {"id_num": "78", "slug": "tbn", "id": "Dens_tbn.id", "name": "TBN", "cat": "tv-international"},
         {"id_num": "88", "slug": "sunna-tv", "id": "Dens_sunna-tv.id", "name": "Saudi Sunnah TV", "cat": "tv-international"},
         {"id_num": "139", "slug": "wedotvmovies", "id": "Dens_wedotvmovies.id", "name": "wedo Movies", "cat": "tv-free-streaming"},
         {"id_num": "142", "slug": "wedotvamor", "id": "Dens_wedotvamor.id", "name": "wedo Amor", "cat": "tv-free-streaming"},
@@ -355,7 +357,7 @@ def fetch_all_dens_parallel():
     print(f"[*] Starting parallel EPG extraction for {len(channels_list)} Dens.TV channels...")
     all_channels, all_programmes = [], []
 
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=9) as executor:
         results = executor.map(fetch_single_dens_channel, channels_list)
         for ch_info, progs in results:
             if progs:
@@ -508,7 +510,11 @@ def fetch_epg_cltv36(target):
 # --- 5. MNC VISION ---
 def get_mnc_channel_options():
     url = "https://www.mncvision.id/schedule/table"
-    EXCLUDED_MNC_IDS = {"118"}
+    EXCLUDED_MNC_IDS = {
+        "78", "80", "81", "82", "83", "84", "87", "89", "97", "103", "106", "107", "110", "113", "115", "116",
+        "118", "205", "330", "331", "352", "355", "357", "430", "431", "432", "433", "434", "437", "438"
+    }
+    
     channels = []
     try:
         res = HTTP_SESSION.get(url, timeout=12)
@@ -520,8 +526,8 @@ def get_mnc_channel_options():
                     val = opt.get("value")
                     raw_name = clean_text_str(opt.get_text())
                     if val and str(val) != "0" and raw_name and "Pilih Channel" not in raw_name and "Toggle" not in raw_name:
+
                         if str(val) in EXCLUDED_MNC_IDS:
-                            print(f"[-] MNC Vision: Excluding channel '{raw_name}' (ID:{val})")
                             continue
 
                         clean_channel_name = re.sub(r"\s*-\s*\[.*?\]", "", raw_name).strip()
@@ -539,14 +545,6 @@ def get_mnc_channel_options():
 
 def fetch_single_mnc_epg(ch_info):
     today_str = get_now_in_channel_tz("+0700").strftime("%Y-%m-%d")
-    post_url = "https://www.mncvision.id/schedule/table"
-    payload = {
-        "search_model": "channel",
-        "af0rmelement": "aformelement",
-        "fdate": today_str,
-        "fchannel": ch_info["code"],
-        "submit": "Cari"
-    }
     mnc_headers = {
         "User-Agent": HEADERS["User-Agent"],
         "Origin": "https://www.mncvision.id",
@@ -554,53 +552,89 @@ def fetch_single_mnc_epg(ch_info):
     }
 
     programmes = []
-    try:
-        res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=10)
-        if res.status_code == 200:
+    seen_prog_keys = set()
+    ch_id = ch_info["slug_id"]
+    ch_name = ch_info["clean_name"]
+    
+    local_session = requests.Session()
+    local_session.headers.update(HEADERS)
+
+    for startno in [0, 50, 100]:
+        try:
+            if startno == 0:
+                post_url = "https://www.mncvision.id/schedule/table"
+                payload = {
+                    "search_model": "channel",
+                    "af0rmelement": "aformelement",
+                    "fdate": today_str,
+                    "fchannel": ch_info["code"],
+                    "submit": "Cari"
+                }
+                res = local_session.post(post_url, data=payload, headers=mnc_headers, timeout=25)
+            else:
+                get_url = f"https://www.mncvision.id/schedule/table/startno/{startno}"
+                res = local_session.get(get_url, headers=mnc_headers, timeout=20)
+
+            if res.status_code != 200:
+                break
+
             soup = BeautifulSoup(res.text, "html.parser")
             table = soup.find("table", class_=re.compile(r"table", re.I)) or soup.find("table")
-            if table:
-                rows = table.find_all("tr")[1:]
-                ch_id = ch_info["slug_id"]
-                ch_name = ch_info["clean_name"]
-                
-                for row in rows:
-                    cols = row.find_all(["td", "th"])
-                    if len(cols) >= 2:
-                        time_str = clean_text_str(cols[0].get_text())
-                        title_str = clean_text_str(cols[1].get_text())
-                        duration_str = clean_text_str(cols[2].get_text()) if len(cols) >= 3 else ""
+            
+            if not table:
+                break
 
-                        if time_str and title_str and "Toggle navigation" not in title_str:
-                            match = TIME_PATTERN_HM.search(time_str)
-                            if match:
-                                t_clean = match.group(1).replace(".", ":").zfill(5)[:5]
-                                try:
-                                    start_dt = datetime.strptime(f"{today_str} {t_clean}", "%Y-%m-%d %H:%M")
-                                    stop_dt = start_dt + timedelta(hours=1)
-                                    dur_match = re.search(r"(\d{2}):(\d{2})", duration_str)
-                                    if dur_match:
-                                        h_dur, m_dur = int(dur_match.group(1)), int(dur_match.group(2))
-                                        stop_dt = start_dt + timedelta(hours=h_dur, minutes=m_dur)
-                                        if stop_dt <= start_dt:
-                                            stop_dt += timedelta(days=1)
+            rows = table.find_all("tr")[1:]
+            if not rows:
+                break
+            
+            for row in rows:
+                cols = row.find_all(["td", "th"])
+                if len(cols) >= 2:
+                    time_str = clean_text_str(cols[0].get_text())
+                    title_str = clean_text_str(cols[1].get_text())
+                    duration_str = clean_text_str(cols[2].get_text()) if len(cols) >= 3 else ""
 
+                    if time_str and title_str and "Toggle navigation" not in title_str and "Jadwal Tidak Ditemukan" not in title_str:
+                        match = TIME_PATTERN_HM.search(time_str)
+                        if match:
+                            t_clean = match.group(1).replace(".", ":").zfill(5)[:5]
+                            try:
+                                start_dt = datetime.strptime(f"{today_str} {t_clean}", "%Y-%m-%d %H:%M")
+                                stop_dt = start_dt + timedelta(hours=1)
+                                dur_match = re.search(r"(\d{2}):(\d{2})", duration_str)
+                                if dur_match:
+                                    h_dur, m_dur = int(dur_match.group(1)), int(dur_match.group(2))
+                                    stop_dt = start_dt + timedelta(hours=h_dur, minutes=m_dur)
+                                    if stop_dt <= start_dt:
+                                        stop_dt += timedelta(days=1)
+
+                                start_formatted = format_xmltv_date(start_dt, "+0700")
+                                unique_key = (start_formatted, title_str)
+
+                                if unique_key not in seen_prog_keys:
+                                    seen_prog_keys.add(unique_key)
                                     programmes.append({
-                                         "channel": ch_id,
-                                         "start": format_xmltv_date(start_dt, "+0700"),
-                                         "stop": format_xmltv_date(stop_dt, "+0700"),
-                                         "title": title_str,
-                                         "desc": "",
-                                         "lang": "id"
+                                        "channel": ch_id,
+                                        "start": start_formatted,
+                                        "stop": format_xmltv_date(stop_dt, "+0700"),
+                                        "title": title_str,
+                                        "desc": "",
+                                        "lang": "id"
                                     })
-                                except Exception:
-                                    continue
-                                    
-                if programmes:
-                    print(f"[✓] MNC Vision [{ch_name}]: Loaded {len(programmes)} programs!")
-                    return [{"id": ch_id, "name": ch_name}], programmes
-    except Exception:
-        pass
+                            except Exception:
+                                continue
+
+            if len(rows) < 50:
+                break
+
+        except Exception:
+            break
+
+    if programmes:
+        print(f"[✓] MNC Vision [{ch_name}]: Loaded {len(programmes)} programs total!")
+        return [{"id": ch_id, "name": ch_name}], programmes
+
     return [], []
 
 def fetch_all_mncvision_parallel():
@@ -636,8 +670,7 @@ def fetch_epg_qazaqstan(target):
             soup = BeautifulSoup(res.text, "html.parser")
             
             items = soup.select("div.flex.items-center.justify-between.w-full, .program-item")
-            print(f"[i] [{target['name']}] {len(items)} raw elements found on the page.")
-
+            
             raw_progs = []
             for item in items:
                 time_elem = item.select_one(".font-bold.text-h5, [class*='text-h5'], [class*='font-bold']")
@@ -654,13 +687,8 @@ def fetch_epg_qazaqstan(target):
                     title_text = clean_text_str(title_elem.get_text(strip=True)) if title_elem else ""
                     
                     genre_keywords = [
-                        "деректі фильм", "деректі фильмдер", 
-                        "телехикая", "телехикаялар", 
-                        "бағдарлама", "бағдарламалар", 
-                        "мультхикая", "мультхикаялар", 
-                        "мегажоба", "мегажобалар", 
-                        "көркем фильм", "көркем фильмдер",
-                        "ақпараттық-саяси бағдарлама"
+                        "деректі фильм", "деректі фильмдер", "телехикая", "телехикаялар", "бағдарлама", "бағдарламалар", "мультхикая", 
+						"мультхикаялар", "мегажоба", "мегажобалар", "көркем фильм", "көркем фильмдер", "ақпараттық-саяси бағдарлама"
                     ]
                     
                     if any(kw in title_text.lower() for kw in genre_keywords) and not any(kw in cat_text.lower() for kw in genre_keywords):
@@ -684,7 +712,11 @@ def fetch_epg_qazaqstan(target):
 
                     if clean_title and len(clean_title) >= 2 and not TIME_PATTERN_HM.match(clean_title):
                         if not any(r["start_str"] == t_str and r["title"] == clean_title for r in raw_progs):
-                            desc_text = category if (category and category != clean_title) else ""
+                            if category and category != clean_title:
+                                desc_text = category
+                            else:
+                                desc_text = ""
+                                
                             raw_progs.append({
                                 "start_str": t_str,
                                 "title": clean_title,
@@ -716,14 +748,8 @@ def fetch_epg_qazaqstan(target):
                         continue
                 print(f"[✓] {target['name']}: Successfully extracted {len(programmes)} valid programs!")
                 break
-        except requests.exceptions.Timeout:
-            print(f"[!] [{target['name']}] Connection timed out.")
-        except requests.exceptions.HTTPError as err:
-            print(f"[!] [{target['name']}] HTTP Error: {err.response.status_code}")
-        except requests.exceptions.RequestException as err:
-            print(f"[!] [{target['name']}] Network Error: {err}")
-        except Exception as err:
-            print(f"[!] [{target['name']}] Unexpected Error: {err}")
+        except Exception:
+            continue
 
     return channels, programmes
 
@@ -762,7 +788,7 @@ def fetch_single_redbull_channel(t):
 def fetch_epg_redbull_all(targets):
     channels = []
     all_programmes = []
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=9) as executor:
         results = executor.map(fetch_single_redbull_channel, targets)
         for ch_info, progs in results:
             if progs:
@@ -810,7 +836,7 @@ def generate_xmltv():
 
     # 5. Fetch Other Sources (TP Channel, CLTV36, Qazaqstan Network)
     other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=9) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
