@@ -264,6 +264,7 @@ def get_official_dens_channels():
         {"id_num": "128", "slug": "stingray-classica", "id": "Dens_stingray-classica.id", "name": "Stingray Classica", "cat": "tv-premium"},
         {"id_num": "130", "slug": "dance-tv", "id": "Dens_dance-tv.id", "name": "Dance TV", "cat": "tv-premium"},
         {"id_num": "98", "slug": "motorvision", "id": "Dens_motorvision.id", "name": "Motorvision+", "cat": "tv-premium"},
+        {"id_num": "61", "slug": "cna", "id": "Dens_cna.id", "name": "CNA", "cat": "tv-international"},
         {"id_num": "77", "slug": "nhk-world-japan", "id": "Dens_nhk-world-japan.id", "name": "NHK World Japan", "cat": "tv-international"},
         {"id_num": "56", "slug": "al-jazeera-english", "id": "Dens_al-jazeera-english.id", "name": "Al Jazeera English", "cat": "tv-international"},
         {"id_num": "41", "slug": "trt-world", "id": "Dens_trt-world.id", "name": "TRT World", "cat": "tv-international"},
@@ -276,8 +277,8 @@ def get_official_dens_channels():
         {"id_num": "90", "slug": "tv5monde-asie", "id": "Dens_tv5monde-asie.id", "name": "TV5Monde Asie", "cat": "tv-international"},
         {"id_num": "81", "slug": "dw-tv", "id": "Dens_dw-tv.id", "name": "DW TV", "cat": "tv-international"},
         {"id_num": "132", "slug": "dim-tv", "id": "Dens_dim-tv.id", "name": "DIM TV", "cat": "tv-international"},
+        {"id_num": "16", "slug": "cgtn-documentary", "id": "Dens_cgtn-documentary.id", "name": "CGTN Documentary", "cat": "tv-international"},
         {"id_num": "78", "slug": "tbn", "id": "Dens_tbn.id", "name": "TBN", "cat": "tv-international"},
-        {"id_num": "82", "slug": "quran-tv", "id": "Dens_quran-tv.id", "name": "Saudi Quran TV", "cat": "tv-international"},
         {"id_num": "88", "slug": "sunna-tv", "id": "Dens_sunna-tv.id", "name": "Saudi Sunnah TV", "cat": "tv-international"},
         {"id_num": "139", "slug": "wedotvmovies", "id": "Dens_wedotvmovies.id", "name": "wedo Movies", "cat": "tv-free-streaming"},
         {"id_num": "142", "slug": "wedotvamor", "id": "Dens_wedotvamor.id", "name": "wedo Amor", "cat": "tv-free-streaming"},
@@ -510,8 +511,8 @@ def fetch_epg_cltv36(target):
 def get_mnc_channel_options():
     url = "https://www.mncvision.id/schedule/table"
     EXCLUDED_MNC_IDS = {
-        "78", "80", "81", "82", "83", "84", "87", "89", "97", "103", "106", "107", "110",
-        "115", "116", "118", "331", "430", "431", "432", "433", "434", "437", "438"
+        "78", "80", "81", "82", "83", "84", "87", "89", "97", "103", "106", "107", "110", "113", "115", "116",
+        "118", "205", "330", "331", "352", "355", "357", "430", "431", "432", "433", "434", "437", "438"
     }
     
     channels = []
@@ -558,7 +559,7 @@ def fetch_single_mnc_epg(ch_info):
     local_session = requests.Session()
     local_session.headers.update(HEADERS)
 
-    for startno in [0, 50]:
+    for startno in [0, 50, 100]:
         try:
             if startno == 0:
                 post_url = "https://www.mncvision.id/schedule/table"
