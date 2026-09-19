@@ -60,6 +60,10 @@ EPG_TARGET_SOURCES = [
     {"id": "QyzylordaTV.kz", "name": "Qyzylorda TV", "url": "https://qyzylordatv.kz/kz/program", "utc_offset": "+0500"},
     {"id": "SaryarqaTV.kz", "name": "Saryarqa TV", "url": "https://saryarqatv.kz/kz/program", "utc_offset": "+0500"},
     {"id": "SemeiTV.kz", "name": "Semei TV", "url": "https://semeitv.kz/kz/program", "utc_offset": "+0500"},
+
+    # 5. INDONESIANA TV
+    {"id": "Indonesiana_MMF.id", "name": "Indonesiana TV MMF", "code": "MMF", "utc_offset": "+0700"},
+    {"id": "Indonesiana_MKU.id", "name": "Indonesiana TV MKU", "code": "MKU", "utc_offset": "+0700"},
 ]
 
 HTTP_SESSION = requests.Session()
@@ -364,7 +368,112 @@ def fetch_all_dens_parallel():
     print(f"[✓] Dens.TV: Successfully extracted {len(all_channels)} active channels & {len(all_programmes)} programs!")
     return all_channels, all_programmes
 
-# --- 3. TP CHANNEL ---
+# --- 3. INDONESIANA TV MODULE ---
+def fetch_epg_indonesiana(target):
+    epg_id = target["id"]
+    channel_code = target.get("code")
+    
+    if not channel_code:
+        print(f"[!] Indonesiana TV Error: Channel code not found for {target.get('name')}")
+        return [{"id": epg_id, "name": target["name"]}], []
+        
+    channels = [{"id": epg_id, "name": target["name"]}]
+    programmes = []
+    
+    auth_token = None
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-setuid-sandbox"])
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+                viewport={"width": 1280, "height": 800}
+            )
+            page = context.new_page()
+
+            def handle_response(response):
+                nonlocal auth_token
+                if "/v1/users/sessions/email" in response.url and response.status == 200:
+                    try:
+                        res_json = response.json()
+                        token = res_json.get("data", {}).get("accessSession", {}).get("token")
+                        if token:
+                            auth_token = token
+                    except Exception:
+                        pass
+
+            page.on("response", handle_response)
+
+            page.goto("https://indonesiana.tv/auth/login", timeout=60000)
+            page.wait_for_selector('input[type="email"]', timeout=15000)
+            
+            page.fill('input[type="email"]', "akun002fix@gmail.com")
+            page.fill('input[type="password"]', "Akun002x")
+            page.get_by_role("button", name="Masuk", exact=True).click()
+            
+            page.wait_for_timeout(6000)
+            page.goto("https://indonesiana.tv/live", timeout=30000)
+            page.wait_for_load_state("networkidle")
+            browser.close()
+    except Exception as e:
+        print(f"[!] Indonesiana TV Playwright Error: {e}")
+
+    if not auth_token:
+        print(f"[!] Indonesiana TV: Failed to obtain authorization token.")
+        return channels, programmes
+
+    wib_tz = timezone(timedelta(hours=7))
+    now_wib = datetime.now(timezone.utc).astimezone(wib_tz)
+
+    start_timestamp = int(now_wib.replace(hour=0, minute=0, second=0, microsecond=0).timestamp())
+    end_timestamp = int(now_wib.replace(hour=23, minute=59, second=59, microsecond=0).timestamp())
+
+    api_url = f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs"
+    params = {
+        "filters[startDate]": start_timestamp,
+        "filters[endDate]": end_timestamp,
+        "skip": 0,
+        "limit": 1000
+    }
+
+    headers = {
+        "accept": "application/json, text/plain, */*",
+        "authorization": f"Bearer {auth_token}",
+        "origin": "https://indonesiana.tv",
+        "referer": "https://indonesiana.tv/live",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    }
+
+    try:
+        prog_res = requests.get(api_url, params=params, headers=headers, timeout=15)
+        if prog_res.status_code == 200:
+            prog_data = prog_res.json()
+            if prog_data.get("success"):
+                items = prog_data.get("data", {}).get("items", [])
+                for item in items:
+                    title = item.get("name")
+                    start_str = item.get("startDate")
+                    end_str = item.get("endDate")
+
+                    if start_str and end_str and title:
+                        start_dt = datetime.fromtimestamp(int(start_str), wib_tz)
+                        stop_dt = datetime.fromtimestamp(int(end_str), wib_tz)
+
+                        programmes.append({
+                            "channel": epg_id,
+                            "start": format_xmltv_date(start_dt, "+0700"),
+                            "stop": format_xmltv_date(stop_dt, "+0700"),
+                            "title": clean_text_str(title),
+                            "desc": "",
+                            "lang": "id"
+                        })
+                print(f"[✓] Indonesiana TV [{target['name']}]: Loaded {len(programmes)} programs!")
+    except Exception as e:
+        print(f"[!] Indonesiana TV API Error: {e}")
+
+    return channels, programmes
+
+# --- 4. TP CHANNEL ---
 def fetch_epg_tpchannel(target):
     epg_id, offset = target["id"], target.get("utc_offset", "+0700")
     channels = [{"id": epg_id, "name": target["name"]}]
@@ -431,7 +540,7 @@ def fetch_epg_tpchannel(target):
         
     return channels, programmes
 
-# --- 4. CLTV36 ---
+# --- 5. CLTV36 ---
 def fetch_epg_cltv36(target):
     epg_id, offset = target["id"], target.get("utc_offset", "+0800")
     channels = [{"id": epg_id, "name": target["name"]}]
@@ -500,7 +609,7 @@ def fetch_epg_cltv36(target):
         
     return channels, programmes
 
-# --- 5. MNC VISION ---
+# --- 6. MNC VISION ---
 def get_mnc_channel_options():
     url = "https://www.mncvision.id/schedule/table"
     EXCLUDED_MNC_IDS = {
@@ -646,7 +755,7 @@ def fetch_all_mncvision_parallel():
     print(f"[✓] MNC Vision: Successfully extracted {len(all_channels)} active channels & {len(all_programmes)} programs!")
     return all_channels, all_programmes
 
-# --- 6. QAZAQSTAN NETWORK ---
+# --- 7. QAZAQSTAN NETWORK ---
 def fetch_epg_qazaqstan(target):
     epg_id, offset = target["id"], target.get("utc_offset", "+0500")
     channels = [{"id": epg_id, "name": target["name"]}]
@@ -745,7 +854,7 @@ def fetch_epg_qazaqstan(target):
 
     return channels, programmes
 
-# --- 7. RED BULL TV ---
+# --- 8. RED BULL TV ---
 def fetch_single_redbull_channel(t):
     api_url = f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}"
     programmes = []
@@ -793,6 +902,7 @@ def process_single_target(target):
     t_id = target["id"]
     if t_id == "TPChannel.th": return fetch_epg_tpchannel(target)
     elif t_id == "CLTV36.ph": return fetch_epg_cltv36(target)
+    elif t_id.startswith("Indonesiana_"): return fetch_epg_indonesiana(target)
     elif t_id.endswith(".kz"): return fetch_epg_qazaqstan(target)
     return [], []
 
