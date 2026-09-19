@@ -380,39 +380,105 @@ def fetch_epg_indonesiana(target):
         return channels, programmes
 
     auth_token = None
-    try:
-        from playwright.sync_api import sync_playwright
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-setuid-sandbox"])
-            context = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                viewport={"width": 1280, "height": 800}
-            )
-            page = context.new_page()
+    cache_dir = "Cache"
+    os.makedirs(cache_dir, exist_ok=True)
+    cache_file = os.path.join(cache_dir, "indonesiana_cache.json")
 
-            def handle_response(response):
-                nonlocal auth_token
-                if "/v1/users/sessions/email" in response.url and response.status == 200:
-                    try:
-                        res_json = response.json()
-                        token = res_json.get("data", {}).get("accessSession", {}).get("token")
-                        if token:
-                            auth_token = token
-                    except Exception:
-                        pass
+    gh_pat = os.environ.get("GH_PAT")
+    gist_id = os.environ.get("GIST_ID")
+    gist_filename = "indonesiana_token.json"
 
-            page.on("response", handle_response)
-            page.goto("https://indonesiana.tv/auth/login", timeout=60000)
-            page.wait_for_selector('input[type="email"]', timeout=15000)
-            
-            page.fill('input[type="email"]', "akun002fix@gmail.com")
-            page.fill('input[type="password"]', "Akun002x")
-            page.get_by_role("button", name="Masuk", exact=True).click()
-            
-            page.wait_for_timeout(5000)
-            browser.close()
-    except Exception as e:
-        print(f"[!] Indonesiana TV Playwright Error: {e}")
+    if gh_pat and gist_id:
+        try:
+            gist_url = f"https://api.github.com/gists/{gist_id}"
+            gist_headers = {"Authorization": f"Bearer {gh_pat}", "Accept": "application/vnd.github+json"}
+            gist_res = requests.get(gist_url, headers=gist_headers, timeout=10)
+            if gist_res.status_code == 200:
+                files = gist_res.json().get("files", {})
+                if gist_filename in files:
+                    content = json.loads(files[gist_filename]["content"])
+                    saved_token = content.get("token")
+                    
+                    test_headers = {"authorization": f"Bearer {saved_token}", "accept": "application/json"}
+                    test_res = requests.get(f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs?limit=1", headers=test_headers, timeout=10)
+                    
+                    if test_res.status_code == 200:
+                        auth_token = saved_token
+                        print(f"[✓] Indonesiana TV: A valid token was successfully retrieved automatically from GitHub Gist.")
+        except Exception as e:
+            print(f"[!] Gist Fetch Error: {e}")
+
+    if not auth_token and os.path.exists(cache_file):
+        try:
+            with open(cache_file, "r") as f:
+                cache_data = json.load(f)
+                saved_token = cache_data.get("token")
+                test_headers = {"authorization": f"Bearer {saved_token}", "accept": "application/json"}
+                test_res = requests.get(f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs?limit=1", headers=test_headers, timeout=10)
+                if test_res.status_code == 200:
+                    auth_token = saved_token
+                    print(f"[✓] Indonesiana TV: Valid token loaded from local cache.")
+        except Exception:
+            pass
+
+    if not auth_token:
+        print(f"[*] Indonesiana TV: Token expired/not found. Retrieving new token via Playwright...")
+        try:
+            from playwright.sync_api import sync_playwright
+            with sync_playwright() as p:
+                browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-setuid-sandbox"])
+                context = browser.new_context(
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+                    viewport={"width": 1280, "height": 800}
+                )
+                page = context.new_page()
+
+                def handle_response(response):
+                    nonlocal auth_token
+                    if "/v1/users/sessions/email" in response.url and response.status == 200:
+                        try:
+                            res_json = response.json()
+                            token = res_json.get("data", {}).get("accessSession", {}).get("token")
+                            if token:
+                                auth_token = token
+                        except Exception:
+                            pass
+
+                page.on("response", handle_response)
+                page.goto("https://indonesiana.tv/auth/login", timeout=60000)
+                page.wait_for_selector('input[type="email"]', timeout=15000)
+                
+                page.fill('input[type="email"]', "akun002fix@gmail.com")
+                page.fill('input[type="password"]', "Akun002x")
+                page.get_by_role("button", name="Masuk", exact=True).click()
+                
+                page.wait_for_timeout(5000)
+                browser.close()
+
+            if auth_token:
+                token_payload = {
+                    "token": auth_token,
+                    "timestamp": datetime.now(timezone.utc).isoformat()
+                }
+                
+                with open(cache_file, "w") as f:
+                    json.dump(token_payload, f)
+
+                if gh_pat and gist_id:
+                    update_payload = {
+                        "files": {
+                            gist_filename: {
+                                "content": json.dumps(token_payload, indent=2)
+                            }
+                        }
+                    }
+                    update_res = requests.patch(f"https://api.github.com/gists/{gist_id}", headers={"Authorization": f"Bearer {gh_pat}"}, json=update_payload, timeout=10)
+                    if update_res.status_code == 200:
+                        print(f"[✓] Indonesiana TV: The new token has been successfully updated automatically to GitHub Gist!")
+                    else:
+                        print(f"[!] Gist Update Failed: {update_res.status_code}")
+        except Exception as e:
+            print(f"[!] Indonesiana TV Playwright Error: {e}")
 
     if not auth_token:
         print(f"[!] Indonesiana TV [{target['name']}]: Failed to obtain authorization token.")
@@ -421,7 +487,7 @@ def fetch_epg_indonesiana(target):
     wib_tz = timezone(timedelta(hours=7))
     now_wib = datetime.now(timezone.utc).astimezone(wib_tz)
 
-    start_timestamp = int((now_wib - timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0).timestamp())
+    start_timestamp = int(now_wib.replace(hour=0, minute=0, second=0, microsecond=0).timestamp())
     end_timestamp = int((now_wib + timedelta(days=2)).replace(hour=23, minute=59, second=59, microsecond=0).timestamp())
 
     api_url = f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs"
@@ -429,7 +495,7 @@ def fetch_epg_indonesiana(target):
         "filters[startDate]": start_timestamp,
         "filters[endDate]": end_timestamp,
         "skip": 0,
-        "limit": 1000
+        "limit": 2000
     }
 
     headers = {
@@ -463,7 +529,7 @@ def fetch_epg_indonesiana(target):
                             "desc": "",
                             "lang": "id"
                         })
-                print(f"[✓] Indonesiana TV [{target['name']}]: Loaded {len(programmes)} programs!")
+                print(f"[✓] Indonesiana TV [{target['name']}]: Successfully loaded {len(programmes)} programs.")
     except Exception as e:
         print(f"[!] Indonesiana TV API Error: {e}")
 
