@@ -13614,11 +13614,11 @@
   </programme>
   <programme start="20260919134000 +0500" stop="20260919143500 +0500" channel="AbaiTV.kz">
     <title lang="kk">Концерт</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">«Ақ кербез» концерті</desc>
   </programme>
   <programme start="20260919143500 +0500" stop="20260919170000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Фильм</title>
-    <desc lang="kk">«Луис ван Бетховен». Көркем фильм</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919173000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Ашық академия</title>
@@ -13758,7 +13758,6 @@
   </programme>
   <programme start="20260919131000 +0500" stop="20260919170000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"ШЕТЕЛДЕГІ ҚАЗАҚ БАЛАЛАРЫ"</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919183000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"ШАЛҚАР ШАБЫТ". Концерттік бағдарлама</title>
@@ -13838,7 +13837,7 @@
   </programme>
   <programme start="20260919131500 +0500" stop="20260919170000 +0500" channel="AqtobeTV.kz">
     <title lang="kk">"ЫНТЫМАҚ АУЫЛЫ"</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Телехикая</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919180000 +0500" channel="AqtobeTV.kz">
     <title lang="kk">"АҚПАРАТТЫҚ САҒАТ"</title>
@@ -13889,15 +13888,12 @@
   <programme start="20260919110000 +0500" stop="20260919132000 +0500" channel="AltaiTV.kz">
     <title lang="kk">"ЕЛГЕ ҚЫЗМЕТ"/рус/ общественно-политическая программа</title>
   </programme>
-  <programme start="20260919132000 +0500" stop="20260919134000 +0500" channel="AltaiTV.kz">
+  <programme start="20260919132000 +0500" stop="20260919140000 +0500" channel="AltaiTV.kz">
     <title lang="kk">"ЭКОНОМИКА И ОБЩЕСТВО" ақпараттық бағдарлама</title>
-  </programme>
-  <programme start="20260919134000 +0500" stop="20260919140000 +0500" channel="AltaiTV.kz">
-    <title lang="kk">"ЕЛ ҚОРҒАНЫ" ақпараттық-танымдық бағдарлама</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919140000 +0500" stop="20260919170000 +0500" channel="AltaiTV.kz">
     <title lang="kk">Эфирдің күндізгі жабылуы</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919235700 +0500" channel="AltaiTV.kz">
     <title lang="kk">МУЛЬТИХИКАЯ</title>
@@ -13920,12 +13916,8 @@
   <programme start="20260919104500 +0500" stop="20260919123000 +0500" channel="AtyrauTV.kz">
     <title lang="kk">"КҮЙЕУ БАЛА", телехикая, 2 маусым, 17 бөлім (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
   </programme>
-  <programme start="20260919123000 +0500" stop="20260919133000 +0500" channel="AtyrauTV.kz">
+  <programme start="20260919123000 +0500" stop="20260919170000 +0500" channel="AtyrauTV.kz">
     <title lang="kk">"САНА" - әлеуметтік-қоғамдық ток шоу (Abaı ТВ)</title>
-  </programme>
-  <programme start="20260919133000 +0500" stop="20260919170000 +0500" channel="AtyrauTV.kz">
-    <title lang="kk">"АУЫЛЫМ" -ақпаратты-танымдық бағдарлама</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919180500 +0500" channel="AtyrauTV.kz">
     <title lang="kk">Аңдатпа</title>
@@ -13985,11 +13977,11 @@
   </programme>
   <programme start="20260919132000 +0500" stop="20260919143500 +0500" channel="ErtisTV.kz">
     <title lang="kk">Арманға 20 қадам</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Телехикая.</desc>
   </programme>
   <programme start="20260919143500 +0500" stop="20260919150000 +0500" channel="ErtisTV.kz">
     <title lang="kk">Мұра</title>
-    <desc lang="kk">Мәдени-танымдық бағдарлама.</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919150000 +0500" stop="20260919180000 +0500" channel="ErtisTV.kz">
     <title lang="kk">Техникалық үзіліс</title>
@@ -14064,10 +14056,11 @@
   </programme>
   <programme start="20260919133000 +0500" stop="20260919140000 +0500" channel="JambylTV.kz">
     <title lang="kk">ҰЛТ САУЛЫҒЫ</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">медициналық-сауықтыру бағдарлама</desc>
   </programme>
   <programme start="20260919140000 +0500" stop="20260919170000 +0500" channel="JambylTV.kz">
     <title lang="kk">ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919170500 +0500" channel="JambylTV.kz">
     <title lang="kk">Аңдатпа</title>
@@ -14150,10 +14143,10 @@
   </programme>
   <programme start="20260919134500 +0500" stop="20260919140000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"ДҮЛ ДҮЛ" м/х 5,6 бөлім</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919140000 +0500" stop="20260919170000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"ТЕХНИКАЛЫҚ ҮЗІЛІС"</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919183000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"КОНЦЕРТ"</title>
@@ -14345,15 +14338,8 @@
   <programme start="20260919070000 +0500" stop="20260919103000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«МЕН СҮЙЕМІН ХАЛҚЫМДЫ» (Кененнің әндері)</title>
   </programme>
-  <programme start="20260919103000 +0500" stop="20260919130000 +0500" channel="QostanaiTV.kz">
+  <programme start="20260919103000 +0500" stop="20260919184000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«НҰР АҒА» (Н.Тілендиевтің шығармашылығына арналған концерт)</title>
-  </programme>
-  <programme start="20260919130000 +0500" stop="20260919140000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«ҚАЛҚАНҚҰЛАҚ» телехикая («Balapan TV, 2017ж»)</title>
-    <desc lang="kk">Қазірэфирде</desc>
-  </programme>
-  <programme start="20260919140000 +0500" stop="20260919184000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">Техникалық үзіліс (14:00-17:00)</title>
   </programme>
   <programme start="20260919184000 +0500" stop="20260919191000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«СЫРЛЫ САХНА» (мәдени-танымдық бағдарлма)(«ABAI TV» 2021 ж.)</title>
@@ -14393,10 +14379,10 @@
   </programme>
   <programme start="20260919133000 +0500" stop="20260919140000 +0500" channel="QyzyljarTV.kz">
     <title lang="kk">БАЛ БАЛАЛАРЫ</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919140000 +0500" stop="20260919170000 +0500" channel="QyzyljarTV.kz">
     <title lang="kk">техникалық үзіліс</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919173000 +0500" channel="QyzyljarTV.kz">
     <title lang="kk">ПАРАСАТ</title>
@@ -14532,10 +14518,11 @@
   </programme>
   <programme start="20260919120000 +0500" stop="20260919140000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Таланттан тарту». Ақын Талант Арғынғалидың шығармашылық кеші</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Музыкалық бағдарлама</desc>
   </programme>
   <programme start="20260919140000 +0500" stop="20260919170000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">ТЕХНИКАЛЫҚ ҮЗІЛІС</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919170000 +0500" stop="20260919175000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Әділ Зере»</title>
@@ -14613,10 +14600,10 @@
   </programme>
   <programme start="20260919125500 +0500" stop="20260919143000 +0500" channel="SemeiTV.kz">
     <title lang="kk">"Замандастар" Телехикая</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919143000 +0500" stop="20260919145000 +0500" channel="SemeiTV.kz">
     <title lang="kk">"Уәде" бағдарламасы</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919145000 +0500" stop="20260919163000 +0500" channel="SemeiTV.kz">
     <title lang="kk">"Шежірелі Шымкенттен -Ұлы Абай еліне" концерті</title>
