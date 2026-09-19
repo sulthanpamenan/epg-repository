@@ -6273,10 +6273,6 @@
     <title lang="en">Paris Major Premier Padel highlights</title>
     <desc lang="en">Watch the highlights from the Paris Major Premier Padel tournament held at Roland-Garros stadium.</desc>
   </programme>
-  <programme start="20260919215703 +0000" stop="20260919224245 +0000" channel="RedBullBike.global">
-    <title lang="en">Gamble</title>
-    <desc lang="en">Raw speed, a heavy-hitting soundtrack and virgin locations – mountain bike riders show off their skills.</desc>
-  </programme>
   <programme start="20260919224245 +0000" stop="20260919225929 +0000" channel="RedBullBike.global">
     <title lang="en">Remy Morton: Seven Days and $7K</title>
     <desc lang="en">Can Australian MTB freerider Remy Morton build his ultimate line in seven days and with a AUD$7,000 budget?</desc>
@@ -6353,9 +6349,9 @@
     <title lang="en">Kriss Kyle: Out of Season</title>
     <desc lang="en">Kriss Kyle transitions from BMXer to all-around bike athlete in classic British winter weather.</desc>
   </programme>
-  <programme start="20260919221935 +0000" stop="20260919224036 +0000" channel="RedBullAdventure.global">
-    <title lang="en">Fairy Flight</title>
-    <desc lang="en">Valentin Delluc drops from a hot air balloon for a speedflying adventure in Turkey's magical Cappadocia.</desc>
+  <programme start="20260920070950 +0000" stop="20260920072227 +0000" channel="RedBullBike.global">
+    <title lang="en">Winning strategies</title>
+    <desc lang="en">Mountain bike racers talk about how having a winning strategy makes all the difference to their performance.</desc>
   </programme>
   <programme start="20260919224036 +0000" stop="20260919225938 +0000" channel="RedBullAdventure.global">
     <title lang="en">The high road part 2</title>
@@ -6432,6 +6428,10 @@
   <programme start="20260920070104 +0000" stop="20260920072112 +0000" channel="RedBullAdventure.global">
     <title lang="en">All You Need is a Ball</title>
     <desc lang="en">Enjoy a look into how the best freestyle footballers in the world are paving the way for a new generation.</desc>
+  </programme>
+  <programme start="20260920072112 +0000" stop="20260920082659 +0000" channel="RedBullAdventure.global">
+    <title lang="en">K2 The Impossible Descent</title>
+    <desc lang="en">Andrzej Bargiel reaches Pakistan to descend K2, the world's second-highest peak after Mount Everest, on skis.</desc>
   </programme>
   <programme start="20260919221150 +0000" stop="20260919231925 +0000" channel="RedBullMotorsports.global">
     <title lang="en">Kenda Tennessee Knockout</title>
@@ -6513,10 +6513,6 @@
     <title lang="en">Rallye du Maroc</title>
     <desc lang="en">See who came out on top of a monumental tussle across the five stages of the 2021 Rallye du Maroc.</desc>
   </programme>
-  <programme start="20260919215602 +0000" stop="20260919223922 +0000" channel="RedBullSurfing.global">
-    <title lang="en">Chapters</title>
-    <desc lang="en">Travel with surf star Kanoa Igarashi for insider access to the World Championship Tour.</desc>
-  </programme>
   <programme start="20260919223922 +0000" stop="20260919232859 +0000" channel="RedBullSurfing.global">
     <title lang="en">Ítalo Ferreira's Tales</title>
     <desc lang="en">Follow Brazilian surfer Ítalo Ferreira from Tokyo to the 2021 WSL Championship Tour.</desc>
@@ -6593,9 +6589,9 @@
     <title lang="en">Lucas 'Chumbo' Chianca</title>
     <desc lang="en">Join Brazil’s Lucas 'Chumbo' Chianca as he tackles the biggest waves on Earth across two memorable winters.</desc>
   </programme>
-  <programme start="20260919222119 +0000" stop="20260919224145 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Johannesburg</title>
-    <desc lang="en">Meet Brandon Valjalo and 30 more top dogs from South Africa's biggest skate scene in our super city report.</desc>
+  <programme start="20260920093555 +0000" stop="20260920102532 +0000" channel="RedBullSurfing.global">
+    <title lang="en">Ítalo Ferreira's Tales</title>
+    <desc lang="en">Follow Brazilian surfer Ítalo Ferreira from Tokyo to the 2021 WSL Championship Tour.</desc>
   </programme>
   <programme start="20260919224145 +0000" stop="20260919230411 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Madars and Kilian Martin</title>
@@ -6673,6 +6669,26 @@
     <title lang="en">TJ Rogers</title>
     <desc lang="en">Get to know the daily life of pro skateboarder TJ Rogers, from what he eats, to how he lives and more.</desc>
   </programme>
+  <programme start="20260920041747 +0000" stop="20260920044508 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Douglas Miles Jr and Apache Skateboards</title>
+    <desc lang="en">Madars Apse reveals the incredible story of the community skate company thriving on a reservation in Arizona.</desc>
+  </programme>
+  <programme start="20260919205001 +0000" stop="20260919210437 +0000" channel="RedBullWinter.global">
+    <title lang="en">Eileen Gu</title>
+    <desc lang="en">Witness the dazzling trajectory of a skier who's redefining what it means to be a modern champion.</desc>
+  </programme>
+  <programme start="20260919210437 +0000" stop="20260919212946 +0000" channel="RedBullWinter.global">
+    <title lang="en">Dynamic Medium</title>
+    <desc lang="en">Watch American freeskier Bobby Brown chase the dynamic medium that is snow around the globe.</desc>
+  </programme>
+  <programme start="20260919212946 +0000" stop="20260919213851 +0000" channel="RedBullWinter.global">
+    <title lang="en">World Championships glory</title>
+    <desc lang="en">Freeskier Eileen Gu wins two gold medals and a bronze at the FIS World Championships. All despite being injured.</desc>
+  </programme>
+  <programme start="20260919213851 +0000" stop="20260919222053 +0000" channel="RedBullWinter.global">
+    <title lang="en">Chasing Winter</title>
+    <desc lang="en">Pro snowboarder Mark McMorris and friends prepare for the upcoming high-stakes competition season.</desc>
+  </programme>
   <programme start="20260919222053 +0000" stop="20260919231103 +0000" channel="RedBullWinter.global">
     <title lang="en">She Who Flies</title>
     <desc lang="en">This cinematic journey charts the highs, lows and in-betweens of Freeski World Champion Mathilde Gremaud.</desc>
@@ -6725,49 +6741,17 @@
     <title lang="en">New York cover shoot</title>
     <desc lang="en">From the mountains to the runway, Eileen Gu finds her feet in the two worlds of skiing and modelling.</desc>
   </programme>
-  <programme start="20260920035516 +0000" stop="20260920040458 +0000" channel="RedBullWinter.global">
+  <programme start="20260920035516 +0000" stop="20260920040459 +0000" channel="RedBullWinter.global">
     <title lang="en">Spring training days with Scotty James</title>
     <desc lang="en">The sun has set on Scotty James's 2021 competitive halfpipe season, but now there's spring training.</desc>
   </programme>
-  <programme start="20260920040458 +0000" stop="20260920040725 +0000" channel="RedBullWinter.global">
+  <programme start="20260920040459 +0000" stop="20260920040725 +0000" channel="RedBullWinter.global">
     <title lang="en">Paddy Graham</title>
     <desc lang="en">Paddy Graham sits in the first chair and answers all our burning questions about his skiing career.</desc>
   </programme>
   <programme start="20260920040725 +0000" stop="20260920042201 +0000" channel="RedBullWinter.global">
     <title lang="en">Eileen Gu</title>
     <desc lang="en">Witness the dazzling trajectory of a skier who's redefining what it means to be a modern champion.</desc>
-  </programme>
-  <programme start="20260920042201 +0000" stop="20260920043235 +0000" channel="RedBullWinter.global">
-    <title lang="en">Drop in at X Games with Scotty James</title>
-    <desc lang="en">Scotty James arrives in Aspen ready to entertain under the lights, and hunting for his sixth X Games medal.</desc>
-  </programme>
-  <programme start="20260920043235 +0000" stop="20260920044346 +0000" channel="RedBullWinter.global">
-    <title lang="en">Scotty James is stoked to get back on the snow</title>
-    <desc lang="en">After six months of no snowboarding, an empty halfpipe was a sight for Scotty James's sore eyes.</desc>
-  </programme>
-  <programme start="20260920044346 +0000" stop="20260920045316 +0000" channel="RedBullWinter.global">
-    <title lang="en">Scotty James returns to Aspen to compete</title>
-    <desc lang="en">A last-minute change has Scotty James back in Colorado to compete in the FIS Snowboard World Championships.</desc>
-  </programme>
-  <programme start="20260920045316 +0000" stop="20260920050308 +0000" channel="RedBullWinter.global">
-    <title lang="en">Back in Switzerland with Scotty James</title>
-    <desc lang="en">It's spring break in Switzerland for Scotty James and there's nothing but blue skies and empty halfpipes.</desc>
-  </programme>
-  <programme start="20260919223328 +0000" stop="20260919223510 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Nouria Newman kayaks in British Columbia</title>
-    <desc lang="en">Follow Nouria Newman as she visits Canada to kayak the white water of British Columbia's Spillimacheen River.</desc>
-  </programme>
-  <programme start="20260919223510 +0000" stop="20260919223918 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Rhine Line</title>
-    <desc lang="en">FIM FMX World Champion and X Games gold medal winner Luc Ackermann unveils three world firsts.</desc>
-  </programme>
-  <programme start="20260919223918 +0000" stop="20260919224154 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Downhill drone chase</title>
-    <desc lang="en">The talented FPV drone pilots chase Tomáš Slavík down the iconic Red Bull Valparaíso track.</desc>
-  </programme>
-  <programme start="20260919224154 +0000" stop="20260919224511 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Keys to the track</title>
-    <desc lang="en">Travis Pastrana, Alexander Rossi and Gregg Duffy are not deterred by the plunging winter temps.</desc>
   </programme>
   <programme start="20260919224511 +0000" stop="20260919224750 +0000" channel="RedBullActionReel.global">
     <title lang="en">Uncontainable</title>
@@ -6832,6 +6816,22 @@
   <programme start="20260919234445 +0000" stop="20260919235337 +0000" channel="RedBullActionReel.global">
     <title lang="en">Ricciardo takes on the Outback</title>
     <desc lang="en">The 'Honey Badger' in Oz – Red Bull Racing send driver Daniel Ricciardo to Melbourne's Albert Park circuit.</desc>
+  </programme>
+  <programme start="20260919235337 +0000" stop="20260920001102 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Just the Tricks</title>
+    <desc lang="en">All-killer, no-filler; get a concentrated blast of just the snowboarding tricks from the film.</desc>
+  </programme>
+  <programme start="20260920001102 +0000" stop="20260920001407 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Dreamland</title>
+    <desc lang="en">Two pro freerunners explore a shipping container-filled obstacle course through Turkey's Port of Haydarpaşa.</desc>
+  </programme>
+  <programme start="20260920001407 +0000" stop="20260920001735 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Unrailistic 2.0</title>
+    <desc lang="en">This year freeski ace Jesper Tjäder is back with new trick ideas and creative, never-before-seen features.</desc>
+  </programme>
+  <programme start="20260920001735 +0000" stop="20260920002754 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Markus Eder in The Ultimate Run</title>
+    <desc lang="en">Take a cinematic journey in this Emmy Award-winning ski film from the world's most renowned freestyle skier, Markus Eder.</desc>
   </programme>
   <programme start="20260920000000 +0700" stop="20260920012500 +0700" channel="MNC_abc-australia_350.id">
     <title lang="id">Rose Gold</title>
