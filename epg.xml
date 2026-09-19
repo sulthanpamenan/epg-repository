@@ -14197,7 +14197,7 @@
   </programme>
   <programme start="20260919180000 +0500" stop="20260919200000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Мелек</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Телехикая</desc>
   </programme>
   <programme start="20260919200000 +0500" stop="20260919220500 +0500" channel="Qazaqstan.kz">
     <title lang="kk">SuperStar KZ</title>
@@ -14209,7 +14209,7 @@
   </programme>
   <programme start="20260919230000 +0500" stop="20260920020000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Александр</title>
-    <desc lang="kk">Көркем фильм</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919020000 +0500" stop="20260919021500 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Әлем және біз</title>
@@ -14289,7 +14289,7 @@
   </programme>
   <programme start="20260919180000 +0500" stop="20260919200000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Мелек</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Телехикая</desc>
   </programme>
   <programme start="20260919200000 +0500" stop="20260919220500 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">SuperStar KZ</title>
@@ -14301,7 +14301,7 @@
   </programme>
   <programme start="20260919230000 +0500" stop="20260920020000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Александр</title>
-    <desc lang="kk">Көркем фильм</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919020000 +0500" stop="20260919021500 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Әлем және біз</title>
@@ -14422,11 +14422,11 @@
   </programme>
   <programme start="20260919220000 +0500" stop="20260919232000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Фильм</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">«ҚОШТАСҚЫМ КЕЛМЕЙДІ». Көркем фильм</desc>
   </programme>
   <programme start="20260919232000 +0500" stop="20260920001000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Фильм</title>
-    <desc lang="kk">«Адам тәнінің ғажайыптары». 3-ші бөлім. Деректі фильм</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919001000 +0500" stop="20260919011000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Әнұран</title>
@@ -14463,9 +14463,13 @@
     <title lang="kk">ХХ жазғы Азия ойындары</title>
     <desc lang="kk">Ашылу салтанаты</desc>
   </programme>
-  <programme start="20260919160000 +0500" stop="20260919213000 +0500" channel="Qazsport.kz">
+  <programme start="20260919160000 +0500" stop="20260919163000 +0500" channel="Qazsport.kz">
     <title lang="kk">Жазғы Азия ойындары-2026</title>
     <desc lang="kk">Студиялық бағдарлама</desc>
+  </programme>
+  <programme start="20260919163000 +0500" stop="20260919213000 +0500" channel="Qazsport.kz">
+    <title lang="kk">Үстел теннисі</title>
+    <desc lang="kk">WTT Star Contender Astana 2026 – President's Cup. Финал</desc>
   </programme>
   <programme start="20260919213000 +0500" stop="20260919225500 +0500" channel="Qazsport.kz">
     <title lang="kk">Малайзия - Қазақстан</title>
@@ -14477,21 +14481,17 @@
   </programme>
   <programme start="20260919230500 +0500" stop="20260920011500 +0500" channel="Qazsport.kz">
     <title lang="kk">Қазақстан - Филиппин</title>
-    <desc lang="kk">ХХ жазғы Азия ойындары. Волейбол (Әйелдер)</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
-  <programme start="20260919011500 +0500" stop="20260919045000 +0500" channel="Qazsport.kz">
+  <programme start="20260919011500 +0500" stop="20260919055000 +0500" channel="Qazsport.kz">
     <title lang="kk">Әнұран</title>
   </programme>
-  <programme start="20260919045000 +0500" stop="20260919045500 +0500" channel="Qazsport.kz">
+  <programme start="20260919055000 +0500" stop="20260919055500 +0500" channel="Qazsport.kz">
     <title lang="kk">Әнұран</title>
   </programme>
-  <programme start="20260919045500 +0500" stop="20260919054500 +0500" channel="Qazsport.kz">
-    <title lang="kk">Велоспорт (Әйелдер). Финал</title>
+  <programme start="20260919055500 +0500" stop="20260919065500 +0500" channel="Qazsport.kz">
+    <title lang="kk">Үстел теннисі (Ерлер/Әйелдер). Командалық жарыс. Іріктеу</title>
     <desc lang="kk">ХХ Жазғы Азия ойындары</desc>
-  </programme>
-  <programme start="20260919054500 +0500" stop="20260919064500 +0500" channel="Qazsport.kz">
-    <title lang="kk">УЕФА Чемпиондар лигасының шолуы</title>
-    <desc lang="kk">Футбол</desc>
   </programme>
   <programme start="20260919070000 +0500" stop="20260919070500 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">ӘНҰРАН</title>
@@ -14940,18 +14940,15 @@
   <programme start="20260919202000 +0500" stop="20260919213000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"КӨКШЕ ӘУЕНДЕРІ"</title>
   </programme>
-  <programme start="20260919213000 +0500" stop="20260919213500 +0500" channel="KoksheTV.kz">
+  <programme start="20260919213000 +0500" stop="20260919231500 +0500" channel="KoksheTV.kz">
     <title lang="kk">"ТЕЛЕМАРКЕТ"</title>
-  </programme>
-  <programme start="20260919213500 +0500" stop="20260919231500 +0500" channel="KoksheTV.kz">
-    <title lang="kk">"ҚАШҚЫН". Телехикая 3,4 бөлім</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919231500 +0500" stop="20260919232000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"ТЕЛЕМАРКЕТ"</title>
   </programme>
   <programme start="20260919232000 +0500" stop="20260920000000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"КӨКШЕ ӘУЕНДЕРІ"</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919000000 +0500" stop="20260919010000 +0500" channel="KoksheTV.kz">
     <title lang="kk">Әнұран</title>
@@ -15126,15 +15123,12 @@
   <programme start="20260919184000 +0500" stop="20260919191000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«СЫРЛЫ САХНА» (мәдени-танымдық бағдарлма)(«ABAI TV» 2021 ж.)</title>
   </programme>
-  <programme start="20260919191000 +0500" stop="20260919221000 +0500" channel="QostanaiTV.kz">
+  <programme start="20260919191000 +0500" stop="20260919231500 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«НҰР АҒА» (Н.Тілендиевтің шығармашылығына арналған концерт)</title>
-  </programme>
-  <programme start="20260919221000 +0500" stop="20260919231500 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«КЕК ЖОЛЫНДА» телехикая 68 бөлім (Түркия, 2025 ж.)</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919231500 +0500" stop="20260920001500 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«МЕН СҮЙЕМІН ХАЛҚЫМДЫ» (Кененнің әндері)</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919070000 +0500" stop="20260919070500 +0500" channel="QyzyljarTV.kz">
     <title lang="kk">Әнұран</title>
@@ -15256,10 +15250,10 @@
   </programme>
   <programme start="20260919223500 +0500" stop="20260919232000 +0500" channel="QyzylordaTV.kz">
     <title lang="kk">"Топырақ пен Хауа" т/с. /145-сер., 2-маусым/</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919232000 +0500" stop="20260919235500 +0500" channel="QyzylordaTV.kz">
     <title lang="kk">"Күй-керуен"</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260919235500 +0500" stop="20260920005500 +0500" channel="QyzylordaTV.kz">
     <title lang="kk">Әнұран</title>
@@ -15413,5 +15407,164 @@
   <programme start="20260919214000 +0500" stop="20260920000000 +0500" channel="SemeiTV.kz">
     <title lang="kk">Гүлдана Ноғайбаеваның шығармашылық кеші</title>
     <desc lang="kk">Қазірэфирде</desc>
+  </programme>
+  <programme start="20260920000000 +0700" stop="20260920001500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS1 WULAN DAN DUNIA KECILNYA</title>
+  </programme>
+  <programme start="20260920001500 +0700" stop="20260920003000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY EPS5 BAWANG MERAH DAN BAWANG PUTIH</title>
+  </programme>
+  <programme start="20260920003000 +0700" stop="20260920010000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">TELISIK SENI - SENI TEATER - PRAKTIK KEAKTORAN DALAM TEATER EPS 3</title>
+  </programme>
+  <programme start="20260920010000 +0700" stop="20260920011500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA RAMA - EPS2 SNACK SAMA NASIB TAK SAMA</title>
+  </programme>
+  <programme start="20260920011500 +0700" stop="20260920013000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PESONA MINANG - EPS6 MINANG DAN KERINCI</title>
+  </programme>
+  <programme start="20260920013000 +0700" stop="20260920020000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA - EPS3 PERTEMUAN TAK TERDUGA</title>
+  </programme>
+  <programme start="20260920020000 +0700" stop="20260920024500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER KEBUDAYAAN - GAWAI NGAMIK SEMEMAT PADI</title>
+  </programme>
+  <programme start="20260920024500 +0700" stop="20260920030000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - WASTRA - KEBAYA</title>
+  </programme>
+  <programme start="20260920030000 +0700" stop="20260920033000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - GANDRUNG REYOG</title>
+  </programme>
+  <programme start="20260920033000 +0700" stop="20260920040000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">NUSANTARA KIE GAM LAMO - EPS5 MARIMOI</title>
+  </programme>
+  <programme start="20260920040000 +0700" stop="20260920043000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK RASA - EPS3 KANJI RUMBI</title>
+  </programme>
+  <programme start="20260920043000 +0700" stop="20260920050000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK LANGKAH JALAN KEBUDAYAAN - EPS3 PETIK LAUT BUDAYA MARITIM BANYUWANGI</title>
+  </programme>
+  <programme start="20260920050000 +0700" stop="20260920060000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RITUS NUSANTARA - SUMATRA BARAT</title>
+  </programme>
+  <programme start="20260920060000 +0700" stop="20260920061500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS1 WULAN DAN DUNIA KECILNYA</title>
+  </programme>
+  <programme start="20260920061500 +0700" stop="20260920063000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY - EPS5 BAWANG MERAH DAN BAWANG PUTIH</title>
+  </programme>
+  <programme start="20260920063000 +0700" stop="20260920070000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">TELISIK SENI - SENI TEATER - PRAKTIK KEAKTORAN DALAM TEATER EPS 3</title>
+  </programme>
+  <programme start="20260920070000 +0700" stop="20260920071500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA RAMA - EPS2 SNACK SAMA NASIB TAK SAMA</title>
+  </programme>
+  <programme start="20260920071500 +0700" stop="20260920073000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PESONA MINANG - EPS6 MINANG DAN KERINCI</title>
+  </programme>
+  <programme start="20260920073000 +0700" stop="20260920080000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA - EPS3 PERTEMUAN TAK TERDUGA</title>
+  </programme>
+  <programme start="20260920080000 +0700" stop="20260920081500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS2 PAGI DI BALI</title>
+  </programme>
+  <programme start="20260920081500 +0700" stop="20260920083000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY - EPS6 AKO DAN TELOR PENYU</title>
+  </programme>
+  <programme start="20260920083000 +0700" stop="20260920093000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RANA UKO MOVIE</title>
+  </programme>
+  <programme start="20260920093000 +0700" stop="20260920100000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA - EPS4 MISI PALING SULIT</title>
+  </programme>
+  <programme start="20260920100000 +0700" stop="20260920101500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS1 WULAN DAN DUNIA KECILNYA</title>
+  </programme>
+  <programme start="20260920101500 +0700" stop="20260920103000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY - EPS5 BAWANG MERAH DAN BAWANG PUTIH</title>
+  </programme>
+  <programme start="20260920103000 +0700" stop="20260920110000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">TELISIK SENI - SENI TEATER - PRAKTIK KEAKTORAN DALAM TEATER EPS 3</title>
+  </programme>
+  <programme start="20260920110000 +0700" stop="20260920111500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA RAMA - EPS2 SNACK SAMA NASIB TAK SAMA</title>
+  </programme>
+  <programme start="20260920111500 +0700" stop="20260920113000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PESONA MINANG - EPS6 MINANG DAN KERINCI</title>
+  </programme>
+  <programme start="20260920113000 +0700" stop="20260920120000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA - EPS3 PERTEMUAN TAK TERDUGA</title>
+  </programme>
+  <programme start="20260920120000 +0700" stop="20260920124500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER KEBUDAYAAN - GAWAI NGAMIK SEMEMAT PADI</title>
+  </programme>
+  <programme start="20260920124500 +0700" stop="20260920130000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - WASTRA KEBAYA</title>
+  </programme>
+  <programme start="20260920130000 +0700" stop="20260920133000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - GANDRUNG REYOG</title>
+  </programme>
+  <programme start="20260920133000 +0700" stop="20260920140000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">NUSANTARA KIE GAM LAMO - EPS5 MARIMOI</title>
+  </programme>
+  <programme start="20260920140000 +0700" stop="20260920143000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK RASA - EPS3 KANJI RUMBI</title>
+  </programme>
+  <programme start="20260920143000 +0700" stop="20260920150000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK LANGKAH JALAN KEBUDAYAAN - EPS3 PETIK LAUT BUDAYA MARITIM BANYUWANGI</title>
+  </programme>
+  <programme start="20260920150000 +0700" stop="20260920160000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RITUS NUSANTARA - SUMATRA BARAT</title>
+  </programme>
+  <programme start="20260920160000 +0700" stop="20260920161500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS1 WULAN DAN DUNIA KECILNYA</title>
+  </programme>
+  <programme start="20260920161500 +0700" stop="20260920163000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY - EPS5 BAWANG MERAH DAN BAWANG PUTIH</title>
+  </programme>
+  <programme start="20260920163000 +0700" stop="20260920170000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">TELISIK SENI - SENI TEATER - PRAKTIK KEAKTORAN DALAM TEATER EPS 3</title>
+  </programme>
+  <programme start="20260920170000 +0700" stop="20260920171500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA RAMA - EPS2 SNACK SAMA NASIB TAK SAMA</title>
+  </programme>
+  <programme start="20260920171500 +0700" stop="20260920173000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PESONA MINANG - EPS6 MINANG DAN KERINCI</title>
+  </programme>
+  <programme start="20260920173000 +0700" stop="20260920180000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA - EPS3 PERTEMUAN TAK TERDUGA</title>
+  </programme>
+  <programme start="20260920180000 +0700" stop="20260920183000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JANJI CINTA MUSEUM NASIONAL (REV)</title>
+  </programme>
+  <programme start="20260920183000 +0700" stop="20260920190000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">YUPA AKSARA PERTAMA</title>
+  </programme>
+  <programme start="20260920190000 +0700" stop="20260920193000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - SUARA LIRIH AGAMA LOKAL</title>
+  </programme>
+  <programme start="20260920193000 +0700" stop="20260920200000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">NUSANTARA KIE GAM LAMO - EPS6 SOYA SOYA</title>
+  </programme>
+  <programme start="20260920200000 +0700" stop="20260920203000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK RASA - EPS2 MIE ACEH</title>
+  </programme>
+  <programme start="20260920203000 +0700" stop="20260920210000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK LANGKAH JALAN KEBUDAYAAN - EPS4 MENCARI AKAR SEJARAH DESA</title>
+  </programme>
+  <programme start="20260920210000 +0700" stop="20260920220000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER PERMAINAN RAKYAT - EPS3 ENGKLEK</title>
+  </programme>
+  <programme start="20260920220000 +0700" stop="20260920221500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS2 PAGI DI BALI</title>
+  </programme>
+  <programme start="20260920221500 +0700" stop="20260920223000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY - EPS6 AKO DAN TELOR PENYU</title>
+  </programme>
+  <programme start="20260920223000 +0700" stop="20260920233000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RANA UKO MOVIE</title>
+  </programme>
+  <programme start="20260920233000 +0700" stop="20260921000000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA - EPS4 MISI PALING SULIT</title>
   </programme>
 </tv>
