@@ -510,7 +510,7 @@ def get_mnc_channel_options():
     
     channels = []
     try:
-        res = HTTP_SESSION.get(url, timeout=12)
+        res = HTTP_SESSION.get(url, timeout=25)
         if res.status_code == 200:
             soup = BeautifulSoup(res.text, "html.parser")
             select = soup.find("select", {"name": "fchannel"}) or soup.find("select", {"id": "fchannel"})
@@ -562,10 +562,10 @@ def fetch_single_mnc_epg(ch_info):
                     "fchannel": ch_info["code"],
                     "submit": "Cari"
                 }
-                res = local_session.post(post_url, data=payload, headers=mnc_headers, timeout=25)
+                res = HTTP_SESSION.post(post_url, data=payload, headers=mnc_headers, timeout=35)
             else:
                 get_url = f"https://www.mncvision.id/schedule/table/startno/{startno}"
-                res = local_session.get(get_url, headers=mnc_headers, timeout=20)
+                res = local_session.get(get_url, headers=mnc_headers, timeout=25)
 
             if res.status_code != 200:
                 break
