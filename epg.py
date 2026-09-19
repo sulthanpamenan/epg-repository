@@ -1,7 +1,7 @@
 import base64
+import html
 import json
 import re
-import html
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
@@ -95,7 +95,7 @@ def parse_cltv36_day_matches(day_text, target_weekday_name, is_weekend):
     if ("MONDAY - SATURDAY" in dt or "MONDAY – SATURDAY" in dt) and t_day != "SUNDAY": return True
     return False
 
-# --- 1. TIVIE.ID MODULE ---
+# --- 1. TIVIE.ID MODULE (UPDATED & INTEGRATED) ---
 TIVIE_MASTER_FALLBACK = [
     {"id": "antv", "name": "ANTV"}, {"id": "btv", "name": "BTV"},
     {"id": "cnnindonesia", "name": "CNN Indonesia"}, {"id": "garudatv", "name": "Garuda TV"},
@@ -116,115 +116,69 @@ def discover_tivie_channels():
     for m_ch in TIVIE_MASTER_FALLBACK:
         if m_ch["id"] not in added_ids:
             added_ids.add(m_ch["id"])
-            channels.append(m_ch)
+            channels.append({
+                "id": f"Tivie_{m_ch['id']}.id",
+                "real_id": m_ch["id"],
+                "name": m_ch["name"]
+            })
     return channels
 
-CF_WORKER_URL = "https://tivie-proxy.sulthan-pamenan.workers.dev"
-
 def scrape_single_tivie_channel(ch):
-    ch_id, ch_name = ch["id"], ch["name"]
-    url = f"{CF_WORKER_URL}/channel/{ch_id}"
+    ch_id, real_id, ch_name = ch["id"], ch["real_id"], ch["name"]
+    today_wib_str = get_now_in_channel_tz("+0700").strftime('%Y-%m-%d')
+    url = f"https://tivie.id/api/channel?id={real_id}&date={today_wib_str}"
     programmes = []
     wib_tz = timezone(timedelta(hours=7))
     today_wib = datetime.now(timezone.utc).astimezone(wib_tz).date()
 
-    raw_list = []
     try:
-        res = HTTP_SESSION.get(url, timeout=10)
-        if res.status_code == 200:
-            soup = BeautifulSoup(res.text, 'html.parser')
-            
-            for unwanted in soup.select("footer, .footer, script, style, .ads, .cookie-banner"):
-                unwanted.decompose()
-
-            event_items = soup.select("li[id^='event-']")
-            if not event_items:
-                event_items = [li for li in soup.find_all("li") if TIME_PATTERN_HM.search(li.get_text())]
-
-            for item in event_items:
-                full_text = item.get_text(" ", strip=True)
-                time_match = TIME_PATTERN_HM.search(full_text)
-                if not time_match:
-                    continue
-                t_str = time_match.group(1).replace(".", ":").zfill(5)[:5]
-
-                cat_div = item.select_one("div.text-sm.tracking-wide")
-                cat_str = clean_text_str(cat_div.get_text()) if cat_div else ""
-
-                h_elem = item.select_one("h5, h4")
-                if h_elem:
-                    h_clone = BeautifulSoup(str(h_elem), 'html.parser')
-                    for sub in h_clone.select("div.text-sm.tracking-wide"):
-                        sub.decompose()
-                    for sub in h_clone.select("span.sr-only"):
-                        sub.decompose()
+        req = urllib.request.Request(
+            url,
+            headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36',
+                'Accept': '*/*',
+                'Accept-Language': 'id,en-US;q=0.9,en;q=0.8',
+                'Referer': f'https://tivie.id/channel/{real_id}',
+                'Sec-Fetch-Dest': 'empty',
+                'Sec-Fetch-Mode': 'cors',
+                'Sec-Fetch-Site': 'same-origin'
+            }
+        )
+        with urllib.request.urlopen(req, timeout=10) as response:
+            if response.status == 200:
+                data = json.loads(response.read().decode('utf-8'))
+                # Handle single object API response from tivie.id
+                if isinstance(data, dict) and data.get("ttl"):
+                    title = clean_text_str(data.get("ttl"))
+                    desc = clean_text_str(data.get("desc", ""))
                     
-                    texts = [clean_text_str(t) for t in h_clone.stripped_strings if t not in ["WIB", "LIVE"]]
-                    texts = [t for t in texts if t != cat_str]
-                    prog_title = " ".join(texts) if texts else ""
-                else:
-                    prog_title = ""
-
-                if not prog_title and cat_str:
-                    prog_title = cat_str
-                    cat_str = ""
-
-                if not prog_title:
-                    continue
-
-                slot_keywords = ["sinema", "bioskop", "mega", "serie", "liga", "ftv", "layar", "special", "spesial", "box office", "preset", "live"]
-                if any(kw in cat_str.lower() for kw in slot_keywords):
-                    category = cat_str
-                    title = prog_title
-                elif cat_str and prog_title:
-                    if len(cat_str.split()) <= 2 and len(prog_title.split()) <= 3:
-                        title = f"{cat_str} {prog_title}"
-                        category = "General"
+                    # Calculate start/stop based on timestamp 'str' or duration
+                    start_ts = data.get("str")
+                    duration = data.get("duration", 3600000) # Default 1 hour in ms
+                    
+                    if start_ts:
+                        start_dt = datetime.fromtimestamp(start_ts / 1000.0, tz=wib_tz)
                     else:
-                        category = cat_str
-                        title = prog_title
-                elif cat_str:
-                    title = cat_str
-                    category = "General"
-                else:
-                    title = prog_title
-                    category = "General"
+                        start_dt = datetime.now(wib_tz)
+                        
+                    stop_dt = start_dt + timedelta(milliseconds=duration)
+                    if stop_dt <= start_dt:
+                        stop_dt = start_dt + timedelta(hours=1)
 
-                if not any(p['time'] == t_str and p['title'] == title for p in raw_list):
-                    raw_list.append({
-                        "time": t_str,
+                    programmes.append({
+                        "channel": ch_id,
+                        "start": format_xmltv_date(start_dt, "+0700"),
+                        "stop": format_xmltv_date(stop_dt, "+0700"),
                         "title": title,
-                        "desc": "",
-                        "category": category
+                        "desc": desc,
+                        "category": "General",
+                        "lang": "id"
                     })
-
-        for idx in range(len(raw_list)):
-            curr = raw_list[idx]
-            t_str = curr['time']
-            start_dt = datetime.strptime(f"{today_wib} {t_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
-            if idx < len(raw_list) - 1:
-                stop_time_str = raw_list[idx + 1]['time']
-                stop_dt = datetime.strptime(f"{today_wib} {stop_time_str}", "%Y-%m-%d %H:%M").replace(tzinfo=wib_tz)
-                if stop_dt <= start_dt: stop_dt += timedelta(days=1)
-            else:
-                stop_dt = start_dt + timedelta(hours=1)
-
-            programmes.append({
-                "channel": f"Tivie_{ch_id}.id",
-                "start": format_xmltv_date(start_dt, "+0700"),
-                "stop": format_xmltv_date(stop_dt, "+0700"),
-                "title": curr["title"],
-                "desc": curr["desc"],
-                "category": curr["category"],
-                "lang": "id"
-            })
-            
-        if programmes:
-            print(f"[✓] Tivie.id [{ch_name}]: Loaded {len(programmes)} programs cleanly!")
+                    print(f"[✓] Tivie.id [{ch_name}]: Loaded active show -> {title}")
     except Exception as e:
         print(f"[!] Tivie Error [{ch_name}]: {e}")
 
-    return {"id": f"Tivie_{ch_id}.id", "name": ch_name}, programmes
+    return {"id": ch_id, "name": ch_name}, programmes
 
 def fetch_all_tivie_parallel():
     channels = discover_tivie_channels()
@@ -526,7 +480,6 @@ def get_mnc_channel_options():
                     val = opt.get("value")
                     raw_name = clean_text_str(opt.get_text())
                     if val and str(val) != "0" and raw_name and "Pilih Channel" not in raw_name and "Toggle" not in raw_name:
-
                         if str(val) in EXCLUDED_MNC_IDS:
                             continue
 
@@ -688,7 +641,7 @@ def fetch_epg_qazaqstan(target):
                     
                     genre_keywords = [
                         "деректі фильм", "деректі фильмдер", "телехикая", "телехикаялар", "бағдарлама", "бағдарламалар", "мультхикая", 
-						"мультхикаялар", "мегажоба", "мегажобалар", "көркем фильм", "көркем фильмдер", "ақпараттық-саяси бағдарлама"
+                        "мультхикаялар", "мегажоба", "мегажобалар", "көркем фильм", "көркем фильмдер", "ақпараттық-саяси бағдарлама"
                     ]
                     
                     if any(kw in title_text.lower() for kw in genre_keywords) and not any(kw in cat_text.lower() for kw in genre_keywords):
@@ -812,7 +765,7 @@ def generate_xmltv():
     tv_elem = ET.Element("tv", {"generator-info-name": "Universal Master EPG Generator"})
     all_channels, all_programmes = [], []
 
-    # 1. Fetch Tivie.id Channels
+    # 1. Fetch Tivie.id Channels (Updated & Integrated)
     tivie_channels, tivie_programmes = fetch_all_tivie_parallel()
     all_channels.extend(tivie_channels)
     all_programmes.extend(tivie_programmes)
