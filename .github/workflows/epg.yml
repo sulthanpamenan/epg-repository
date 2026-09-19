@@ -30,6 +30,9 @@ jobs:
         run: playwright install chromium
 
       - name: Run EPG Generator
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GIST_ID: ${{ secrets.GIST_ID }}
         run: python epg.py
 
       - name: Commit and Push Changes
