@@ -26,6 +26,9 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install requests beautifulsoup4 playwright
 
+      - name: Install Playwright Browsers
+        run: playwright install chromium
+
       - name: Run EPG Generator
         run: python epg.py
 
