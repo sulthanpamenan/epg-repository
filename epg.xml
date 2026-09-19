@@ -1,5 +1,77 @@
 <?xml version='1.0' encoding='utf-8'?>
 <tv generator-info-name="Universal Master EPG Generator">
+  <channel id="Tivie_antv.id">
+    <display-name>ANTV</display-name>
+  </channel>
+  <channel id="Tivie_btv.id">
+    <display-name>BTV</display-name>
+  </channel>
+  <channel id="Tivie_cnnindonesia.id">
+    <display-name>CNN Indonesia</display-name>
+  </channel>
+  <channel id="Tivie_garudatv.id">
+    <display-name>Garuda TV</display-name>
+  </channel>
+  <channel id="Tivie_gtv.id">
+    <display-name>GTV</display-name>
+  </channel>
+  <channel id="Tivie_indosiar.id">
+    <display-name>Indosiar</display-name>
+  </channel>
+  <channel id="Tivie_inews.id">
+    <display-name>iNews</display-name>
+  </channel>
+  <channel id="Tivie_kompastv.id">
+    <display-name>Kompas TV</display-name>
+  </channel>
+  <channel id="Tivie_mdtv.id">
+    <display-name>MDTV</display-name>
+  </channel>
+  <channel id="Tivie_mentaritv.id">
+    <display-name>Mentari TV</display-name>
+  </channel>
+  <channel id="Tivie_metrotv.id">
+    <display-name>Metro TV</display-name>
+  </channel>
+  <channel id="Tivie_mnctv.id">
+    <display-name>MNC TV</display-name>
+  </channel>
+  <channel id="Tivie_moji.id">
+    <display-name>MOJI</display-name>
+  </channel>
+  <channel id="Tivie_nusantaratv.id">
+    <display-name>Nusantara TV</display-name>
+  </channel>
+  <channel id="Tivie_rcti.id">
+    <display-name>RCTI</display-name>
+  </channel>
+  <channel id="Tivie_rtv.id">
+    <display-name>RTV</display-name>
+  </channel>
+  <channel id="Tivie_sctv.id">
+    <display-name>SCTV</display-name>
+  </channel>
+  <channel id="Tivie_sinpotv.id">
+    <display-name>Sin Po TV</display-name>
+  </channel>
+  <channel id="Tivie_transtv.id">
+    <display-name>Trans TV</display-name>
+  </channel>
+  <channel id="Tivie_trans7.id">
+    <display-name>Trans 7</display-name>
+  </channel>
+  <channel id="Tivie_tvone.id">
+    <display-name>tvOne</display-name>
+  </channel>
+  <channel id="Tivie_tvri.id">
+    <display-name>TVRI</display-name>
+  </channel>
+  <channel id="Tivie_vtv.id">
+    <display-name>VTV</display-name>
+  </channel>
+  <channel id="Tivie_sindonews.id">
+    <display-name>Sindonews TV</display-name>
+  </channel>
   <channel id="Dens_densplay.id">
     <display-name>DensPlay</display-name>
   </channel>
@@ -504,6 +576,84 @@
   <channel id="SemeiTV.kz">
     <display-name>Semei TV</display-name>
   </channel>
+  <programme start="20260919163000 +0700" stop="20260919180000 +0700" channel="Tivie_antv.id">
+    <title lang="id">Jaane Anjaane</title>
+  </programme>
+  <programme start="20260919170000 +0700" stop="20260919174500 +0700" channel="Tivie_btv.id">
+    <title lang="id">Dunia Binatang</title>
+  </programme>
+  <programme start="20260919160000 +0700" stop="20260919181500 +0700" channel="Tivie_cnnindonesia.id">
+    <title lang="id">CNN Indonesia Newsroom</title>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919180000 +0700" channel="Tivie_garudatv.id">
+    <title lang="id">Jendela Istana</title>
+  </programme>
+  <programme start="20260919163000 +0700" stop="20260919193000 +0700" channel="Tivie_gtv.id">
+    <title lang="id">Pada Zaman Dahulu</title>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919183000 +0700" channel="Tivie_indosiar.id">
+    <title lang="id">Merangkai Kisah Indah</title>
+    <desc lang="id">Kisah Mutiara yang mencari orang tua kandungnya karena sewaktu bayi ditukar oleh orang tua angkatnya. Nasib membawa dirinya bertemu Kenzo dan keluarga yang ternyata adalah orang tua kandungnya.</desc>
+  </programme>
+  <programme start="20260919164500 +0700" stop="20260919190000 +0700" channel="Tivie_inews.id">
+    <title lang="id">iNews Sore</title>
+  </programme>
+  <programme start="20260919160000 +0700" stop="20260919180000 +0700" channel="Tivie_kompastv.id">
+    <title lang="id">Kompas Petang</title>
+  </programme>
+  <programme start="20260919173500 +0700" stop="20260919183500 +0700" channel="Tivie_mdtv.id">
+    <title lang="id">Marisol</title>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919180000 +0700" channel="Tivie_mentaritv.id">
+    <title lang="id">Abang L The Explorer</title>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919180000 +0700" channel="Tivie_metrotv.id">
+    <title lang="id">Primetime News</title>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919190000 +0700" channel="Tivie_mnctv.id">
+    <title lang="id">Entong</title>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919190000 +0700" channel="Tivie_moji.id">
+    <title lang="id">Grand Prix</title>
+  </programme>
+  <programme start="20260919170000 +0700" stop="20260919190000 +0700" channel="Tivie_nusantaratv.id">
+    <title lang="id">NTV Prime</title>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919190000 +0700" channel="Tivie_rcti.id">
+    <title lang="id">Ternyata Ini Cinta</title>
+    <desc lang="id">Usai kecelakaan yang merenggut nyawa ayahnya, Luna kembali ke dunia balap jalanan. Persaingannya dengan Marco berubah menjadi cinta, hingga rahasia adopsi dan geng Spider mengungkap kebenaran kematian sang ayah.</desc>
+  </programme>
+  <programme start="20260919170000 +0700" stop="20260919180000 +0700" channel="Tivie_rtv.id">
+    <title lang="id">Mechamato</title>
+    <desc lang="id">Seorang anak laki-laki bernama Amato dalam menemukan sebuah pesawat ruang angkasa penjara berisi robot-robot jahat yang telah jatuh ke bumi.</desc>
+  </programme>
+  <programme start="20260919170000 +0700" stop="20260919183000 +0700" channel="Tivie_sctv.id">
+    <title lang="id">Putri Pewaris</title>
+    <desc lang="id">Aina, mahasiswi sekaligus SPG, tak sengaja berkonflik dengan Darel setelah mengunggah aksinya yang viral di media sosial. Tanpa mereka sadari, Darel adalah anak Ferdi, pria yang merebut perusahaan sekaligus membunuh ayah Aina 20 tahun lalu.</desc>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919185500 +0700" channel="Tivie_sinpotv.id">
+    <title lang="id">Menyapa Indonesia Petang</title>
+  </programme>
+  <programme start="20260919170000 +0700" stop="20260919180000 +0700" channel="Tivie_transtv.id">
+    <title lang="id">Bikin Laper</title>
+    <desc lang="id">Duo pembawa acara berkunjung ke berbagai tempat untuk mencicipi dan mengulas aneka kuliner yang menggugah selera.</desc>
+  </programme>
+  <programme start="20260919170000 +0700" stop="20260919180000 +0700" channel="Tivie_trans7.id">
+    <title lang="id">Selebrita On The Weekend</title>
+    <desc lang="id">Beragam kabar terhangat dari dunia hiburan yang mengungkap sisi lain kehidupan para selebritis kondang tanah air.</desc>
+  </programme>
+  <programme start="20260919160000 +0700" stop="20260919180000 +0700" channel="Tivie_tvone.id">
+    <title lang="id">Kabar Petang</title>
+  </programme>
+  <programme start="20260919173000 +0700" stop="20260919180000 +0700" channel="Tivie_tvri.id">
+    <title lang="id">Film Pendek</title>
+  </programme>
+  <programme start="20260919170000 +0700" stop="20260919180000 +0700" channel="Tivie_vtv.id">
+    <title lang="id">Droners</title>
+  </programme>
+  <programme start="20260919160000 +0700" stop="20260919180000 +0700" channel="Tivie_sindonews.id">
+    <title lang="id">Sindo Sore</title>
+  </programme>
   <programme start="20260919060000 +0700" stop="20260919080000 +0700" channel="Dens_densplay.id">
     <title lang="id">Game On By Bewokin</title>
   </programme>
