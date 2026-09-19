@@ -6113,6 +6113,10 @@
   <programme start="20260920235950 +0700" stop="20260921005950 +0700" channel="Dens_wedosports.id">
     <title lang="id">E1 Champions of the Water - S03:E02 - Lake Como</title>
   </programme>
+  <programme start="20260919200423 +0000" stop="20260919202524 +0000" channel="RedBullTV.global">
+    <title lang="en">Takahiro Morita</title>
+    <desc lang="en">Madars Apse meets the Japanese skateboarder who shaped an alternative skate movement.</desc>
+  </programme>
   <programme start="20260919202524 +0000" stop="20260919204537 +0000" channel="RedBullTV.global">
     <title lang="en">Vitória Mendonça</title>
     <desc lang="en">Inspirational Brazilian Vitória Mendonça is changing the face of pro skateboarding culture.</desc>
@@ -6188,10 +6192,6 @@
   <programme start="20260920063009 +0000" stop="20260920064042 +0000" channel="RedBullTV.global">
     <title lang="en">2015's fan-favourite teams</title>
     <desc lang="en">How do win over a Red Bull Soapbox Race crowd? Destroying your racer and the course itself certainly helps.</desc>
-  </programme>
-  <programme start="20260920064042 +0000" stop="20260920072444 +0000" channel="RedBullTV.global">
-    <title lang="en">Mumbai, India</title>
-    <desc lang="en">Thousands of frenzied fans swarmed to Mumbai, India, to watch brave soapbox racers compete all day and night.</desc>
   </programme>
   <programme start="20260919201249 +0000" stop="20260919203853 +0000" channel="RedBullPadel.global">
     <title lang="en">Bordeaux Premier Padel P2 highlights</title>
@@ -6513,6 +6513,10 @@
     <title lang="en">Red Bull Straight Rhythm</title>
     <desc lang="en">Supercross's elite riders go head to head on a half-mile 'unwound' track of jumps and doubles in California.</desc>
   </programme>
+  <programme start="20260919201624 +0000" stop="20260919203142 +0000" channel="RedBullSurfing.global">
+    <title lang="en">The legend of Nazaré</title>
+    <desc lang="en">Kai Lenny travels to Nazaré in Portugal to train with Brazilian big wave charger Lucas 'Chumbo' Chianca.</desc>
+  </programme>
   <programme start="20260919203142 +0000" stop="20260919210810 +0000" channel="RedBullSurfing.global">
     <title lang="en">Meet Kehu Butler in New Zealand</title>
     <desc lang="en">The future of Kiwi surfing, Māori Kehu Butler, examines his culture’s past in Made In: New Zealand.</desc>
@@ -6589,9 +6593,9 @@
     <title lang="en">Leon Glatzer surfs Costa Rica</title>
     <desc lang="en">Leon Glatzer unpacks the incredible history of Pavones and explores its thriving roots surf scene.</desc>
   </programme>
-  <programme start="20260920083758 +0000" stop="20260920085722 +0000" channel="RedBullSurfing.global">
-    <title lang="en">Showdown at Peahi</title>
-    <desc lang="en">Kai Lenny competes in the WSL Big Wave World Tour event at his home break of Peahi (Jaws) in Maui.</desc>
+  <programme start="20260919200202 +0000" stop="20260919202923 +0000" channel="RedBullSkateboarding.global">
+    <title lang="en">Douglas Miles Jr and Apache Skateboards</title>
+    <desc lang="en">Madars Apse reveals the incredible story of the community skate company thriving on a reservation in Arizona.</desc>
   </programme>
   <programme start="20260919202923 +0000" stop="20260919205757 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Gose Gerald &amp; Uganda Skateboard Society</title>
@@ -6668,10 +6672,6 @@
   <programme start="20260920021319 +0000" stop="20260920024006 +0000" channel="RedBullSkateboarding.global">
     <title lang="en">Vibing with Felipe Nunes</title>
     <desc lang="en">Madars Apse travels to Brazil to skate with double-amputee and Birdhouse Skateboards pro Felipe Nunes.</desc>
-  </programme>
-  <programme start="20260920024006 +0000" stop="20260920025007 +0000" channel="RedBullSkateboarding.global">
-    <title lang="en">Alex Sorgente</title>
-    <desc lang="en">We head down to Carlsbad, California, to tag along with skateboarder Alex Sorgente for a day in his life.</desc>
   </programme>
   <programme start="20260919200545 +0000" stop="20260919202807 +0000" channel="RedBullWinter.global">
     <title lang="en">Alaska</title>
@@ -6753,30 +6753,6 @@
     <title lang="en">New York cover shoot</title>
     <desc lang="en">From the mountains to the runway, Eileen Gu finds her feet in the two worlds of skiing and modelling.</desc>
   </programme>
-  <programme start="20260919203024 +0000" stop="20260919203540 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Tyler Bereman</title>
-    <desc lang="en">Watch as a drone captures FMX rider Tyler Bereman on one epic ride from start to finish.</desc>
-  </programme>
-  <programme start="20260919203540 +0000" stop="20260919203808 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Martin Söderström and Emil Johansson</title>
-    <desc lang="en">See Martin Söderström and Emil Johansson put their style and excellency in focus at Järvsö, Sweden.</desc>
-  </programme>
-  <programme start="20260919203808 +0000" stop="20260919204053 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Tahnée Seagrave tears up Lousã, Portugal</title>
-    <desc lang="en">British cyclist Tahnée Seagrave returns after serious injury to the UCI Downhill Mountain Bike World Cup.</desc>
-  </programme>
-  <programme start="20260919204053 +0000" stop="20260919204334 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Catching storm waves</title>
-    <desc lang="en">As a big North Pacific storm bears down on the Hawaiian islands the guys take to the wild waves of Jaws.</desc>
-  </programme>
-  <programme start="20260919204334 +0000" stop="20260919204544 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Wake Crane</title>
-    <desc lang="en">Three top riders rip around a custom wakeboard park built from a crane and a bunch of cargo containers.</desc>
-  </programme>
-  <programme start="20260919204544 +0000" stop="20260919205048 +0000" channel="RedBullActionReel.global">
-    <title lang="en">Cracked</title>
-    <desc lang="en">Toby Price races through the Australian Outback with his rally bike to deliver a carton of eggs.</desc>
-  </programme>
   <programme start="20260919205048 +0000" stop="20260919210106 +0000" channel="RedBullActionReel.global">
     <title lang="en">Markus Eder in The Ultimate Run</title>
     <desc lang="en">Take a cinematic journey in this Emmy Award-winning ski film from the world's most renowned freestyle skier, Markus Eder.</desc>
@@ -6832,6 +6808,30 @@
   <programme start="20260919214932 +0000" stop="20260919215429 +0000" channel="RedBullActionReel.global">
     <title lang="en">First sessions = INSANE</title>
     <desc lang="en">Practice + drone makes you feel like you're flying. This session embodies what freeriding is all about.</desc>
+  </programme>
+  <programme start="20260919215429 +0000" stop="20260919215618 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Brandon Semenuk unleashed in an abandoned mine</title>
+    <desc lang="en">For his sixth contribution to our Raw 100 series, Brandon Semenuk heads to Merritt, British Columbia.</desc>
+  </programme>
+  <programme start="20260919215618 +0000" stop="20260919215824 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Freerunning illusions</title>
+    <desc lang="en">Jason Paul and Pasha Petkuns play mind tricks as they defy gravity with their freerunning illusions.</desc>
+  </programme>
+  <programme start="20260919215824 +0000" stop="20260919220118 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Emil Johansson in New Zealand</title>
+    <desc lang="en">During his downtime in New Zealand, here’s what stylish Swede Emil Johansson got up to with Hunt Cinema.</desc>
+  </programme>
+  <programme start="20260919220118 +0000" stop="20260919220653 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Duct Out</title>
+    <desc lang="en">Tyler Bereman and Robbie Maddison escape LA's gridlock and turn the city into a personal MX playground.</desc>
+  </programme>
+  <programme start="20260919220653 +0000" stop="20260919221021 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Unrailistic 2.0</title>
+    <desc lang="en">This year freeski ace Jesper Tjäder is back with new trick ideas and creative, never-before-seen features.</desc>
+  </programme>
+  <programme start="20260919221021 +0000" stop="20260919221538 +0000" channel="RedBullActionReel.global">
+    <title lang="en">Tyler Bereman</title>
+    <desc lang="en">Watch as a drone captures FMX rider Tyler Bereman on one epic ride from start to finish.</desc>
   </programme>
   <programme start="20260920000000 +0700" stop="20260920012500 +0700" channel="MNC_abc-australia_350.id">
     <title lang="id">Rose Gold</title>
