@@ -1018,13 +1018,21 @@ def generate_xmltv():
     all_programmes.extend(mnc_programmes)
 
     # 5. Fetch Other Sources (TP Channel, CLTV36, Qazaqstan Network)
-    other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t]
+    other_targets = [t for t in EPG_TARGET_SOURCES if "rrn" not in t and not t["id"].startswith("Indonesiana_")]
     with ThreadPoolExecutor(max_workers=9) as executor:
         for ch_list, progs in executor.map(process_single_target, other_targets):
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
 
-    # 6. Write Channels to XML Element (Deduplicated)
+    # 6. Fetch Indonesiana TV sequentially
+    indonesiana_targets = [t for t in EPG_TARGET_SOURCES if t["id"].startswith("Indonesiana_")]
+    for target in indonesiana_targets:
+        ch_list, progs = fetch_epg_indonesiana(target)
+        if ch_list:
+            all_channels.extend(ch_list)
+            all_programmes.extend(progs)
+
+    # 7. Write Channels to XML Element (Deduplicated)
     seen_channels = set()
     for ch in all_channels:
         if ch["id"] not in seen_channels:
@@ -1032,7 +1040,7 @@ def generate_xmltv():
             c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
             ET.SubElement(c_elem, "display-name").text = ch["name"]
 
-    # 7. Write Programs & Deduplicate
+    # 8. Write Programs & Deduplicate
     seen_programmes = set()
     for p in all_programmes:
         key = (p["channel"], p["start"])
