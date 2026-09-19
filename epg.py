@@ -2,6 +2,8 @@ import base64
 import html
 import json
 import os
+from dotenv import load_dotenv
+load_dotenv()
 import re
 import traceback
 import urllib.request
