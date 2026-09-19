@@ -2,6 +2,8 @@ import base64
 import html
 import json
 import re
+import urllib.request
+import urllib.error
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
