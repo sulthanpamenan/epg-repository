@@ -372,14 +372,13 @@ def fetch_all_dens_parallel():
 def fetch_epg_indonesiana(target):
     epg_id = target["id"]
     channel_code = target.get("code")
-    
-    if not channel_code:
-        print(f"[!] Indonesiana TV Error: Channel code not found for {target.get('name')}")
-        return [{"id": epg_id, "name": target["name"]}], []
-        
     channels = [{"id": epg_id, "name": target["name"]}]
     programmes = []
     
+    if not channel_code:
+        print(f"[!] Indonesiana TV Error: Channel code not found for {target.get('name')}")
+        return channels, programmes
+
     auth_token = None
     try:
         from playwright.sync_api import sync_playwright
@@ -403,7 +402,6 @@ def fetch_epg_indonesiana(target):
                         pass
 
             page.on("response", handle_response)
-
             page.goto("https://indonesiana.tv/auth/login", timeout=60000)
             page.wait_for_selector('input[type="email"]', timeout=15000)
             
@@ -411,22 +409,20 @@ def fetch_epg_indonesiana(target):
             page.fill('input[type="password"]', "Akun002x")
             page.get_by_role("button", name="Masuk", exact=True).click()
             
-            page.wait_for_timeout(6000)
-            page.goto("https://indonesiana.tv/live", timeout=30000)
-            page.wait_for_load_state("networkidle")
+            page.wait_for_timeout(5000)
             browser.close()
     except Exception as e:
         print(f"[!] Indonesiana TV Playwright Error: {e}")
 
     if not auth_token:
-        print(f"[!] Indonesiana TV: Failed to obtain authorization token.")
+        print(f"[!] Indonesiana TV [{target['name']}]: Failed to obtain authorization token.")
         return channels, programmes
 
     wib_tz = timezone(timedelta(hours=7))
     now_wib = datetime.now(timezone.utc).astimezone(wib_tz)
 
-    start_timestamp = int(now_wib.replace(hour=0, minute=0, second=0, microsecond=0).timestamp())
-    end_timestamp = int(now_wib.replace(hour=23, minute=59, second=59, microsecond=0).timestamp())
+    start_timestamp = int((now_wib - timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0).timestamp())
+    end_timestamp = int((now_wib + timedelta(days=2)).replace(hour=23, minute=59, second=59, microsecond=0).timestamp())
 
     api_url = f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs"
     params = {
