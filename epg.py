@@ -390,6 +390,7 @@ def fetch_epg_indonesiana(target):
     gist_id = os.environ.get("GIST_ID")
     gist_filename = "indonesiana_token.json"
 
+    # a. Try getting a token from GitHub Gist
     if gh_pat and gist_id:
         try:
             gist_url = f"https://api.github.com/gists/{gist_id}"
@@ -409,15 +410,14 @@ def fetch_epg_indonesiana(target):
                             auth_token = saved_token
                             print(f"[✓] Indonesiana TV: A valid token was successfully retrieved automatically from GitHub Gist.")
                         else:
-                            print(f"[!] Gist Token Test Failed. Status Code: {test_res.status_code}, Response: {test_res.text}")
+                            print(f"[!] Gist Token Test Failed. Status Code: {test_res.status_code}")
                     else:
                         print(f"[!] Gist token value is empty string.")
-            else:
-                print(f"[!] Failed to fetch Gist. Status Code: {gist_res.status_code}, Response: {gist_res.text}")
         except Exception as e:
-            print(f"[!] Gist Fetch Error Detailed Exception: {e}")
-            traceback.print_exc()
+            print(f"[!] Gist Fetch Error: {e}")
+            # traceback.print_exc() # Can be enabled if detailed debugging is required
 
+    # 2. Fallback to local cache if Gist fails or is empty
     if not auth_token and os.path.exists(cache_file):
         try:
             with open(cache_file, "r") as f:
@@ -431,6 +431,7 @@ def fetch_epg_indonesiana(target):
         except Exception as e:
             print(f"[!] Local Cache Load Error: {e}")
 
+    # 3. The final fallback uses Playwright if the token is completely missing
     if not auth_token:
         print(f"[*] Indonesiana TV: Token expired/not found. Retrieving new token via Playwright...")
         try:
@@ -487,11 +488,9 @@ def fetch_epg_indonesiana(target):
                     if update_res.status_code == 200:
                         print(f"[✓] Indonesiana TV: The new token has been successfully updated automatically to GitHub Gist!")
                     else:
-                        print(f"[!] Gist Update Failed. Status Code: {update_res.status_code}, Response: {update_res.text}")
-            else:
-                print(f"[!] Playwright finished, but failed to intercept the authorization token.")
+                        print(f"[!] Gist Update Failed. Status Code: {update_res.status_code}")
         except Exception as e:
-            print(f"[!] Indonesiana TV Playwright Error Detailed Exception: {e}")
+            print(f"[!] Indonesiana TV Playwright Error: {e}")
             traceback.print_exc()
 
     if not auth_token:
@@ -533,7 +532,7 @@ def fetch_epg_indonesiana(target):
 
                     if start_str and end_str and title:
                         start_dt = datetime.fromtimestamp(int(start_str), wib_tz)
-                        stop_dt = datetime.fromtimestamp(int(end_str), wIB_tz if 'wIB_tz' in locals() else wib_tz)
+                        stop_dt = datetime.fromtimestamp(int(end_str), wib_tz)
 
                         programmes.append({
                             "channel": epg_id,
@@ -544,12 +543,8 @@ def fetch_epg_indonesiana(target):
                             "lang": "id"
                         })
                 print(f"[✓] Indonesiana TV [{target['name']}]: Successfully loaded {len(programmes)} programs.")
-            else:
-                print(f"[!] Indonesiana API returned unsuccessful response: {prog_data}")
-        else:
-            print(f"[!] Indonesiana API Failed. Status Code: {prog_res.status_code}, Response: {prog_res.text}")
     except Exception as e:
-        print(f"[!] Indonesiana TV API Error Detailed Exception: {e}")
+        print(f"[!] Indonesiana TV API Error: {e}")
         traceback.print_exc()
 
     return channels, programmes
