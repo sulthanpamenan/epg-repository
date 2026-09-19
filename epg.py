@@ -3,6 +3,7 @@ import html
 import json
 import os
 import re
+import traceback
 import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
@@ -400,14 +401,22 @@ def fetch_epg_indonesiana(target):
                     content = json.loads(files[gist_filename]["content"])
                     saved_token = content.get("token")
                     
-                    test_headers = {"authorization": f"Bearer {saved_token}", "accept": "application/json"}
-                    test_res = requests.get(f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs?limit=1", headers=test_headers, timeout=10)
-                    
-                    if test_res.status_code == 200:
-                        auth_token = saved_token
-                        print(f"[✓] Indonesiana TV: A valid token was successfully retrieved automatically from GitHub Gist.")
+                    if saved_token:
+                        test_headers = {"authorization": f"Bearer {saved_token}", "accept": "application/json"}
+                        test_res = requests.get(f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs?limit=1", headers=test_headers, timeout=10)
+                        
+                        if test_res.status_code == 200:
+                            auth_token = saved_token
+                            print(f"[✓] Indonesiana TV: A valid token was successfully retrieved automatically from GitHub Gist.")
+                        else:
+                            print(f"[!] Gist Token Test Failed. Status Code: {test_res.status_code}, Response: {test_res.text}")
+                    else:
+                        print(f"[!] Gist token value is empty string.")
+            else:
+                print(f"[!] Failed to fetch Gist. Status Code: {gist_res.status_code}, Response: {gist_res.text}")
         except Exception as e:
-            print(f"[!] Gist Fetch Error: {e}")
+            print(f"[!] Gist Fetch Error Detailed Exception: {e}")
+            traceback.print_exc()
 
     if not auth_token and os.path.exists(cache_file):
         try:
@@ -419,8 +428,8 @@ def fetch_epg_indonesiana(target):
                 if test_res.status_code == 200:
                     auth_token = saved_token
                     print(f"[✓] Indonesiana TV: Valid token loaded from local cache.")
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"[!] Local Cache Load Error: {e}")
 
     if not auth_token:
         print(f"[*] Indonesiana TV: Token expired/not found. Retrieving new token via Playwright...")
@@ -442,8 +451,9 @@ def fetch_epg_indonesiana(target):
                             token = res_json.get("data", {}).get("accessSession", {}).get("token")
                             if token:
                                 auth_token = token
-                        except Exception:
-                            pass
+                                print(f"[✓] Playwright successfully intercepted access token!")
+                        except Exception as ex:
+                            print(f"[!] Error parsing response JSON: {ex}")
 
                 page.on("response", handle_response)
                 page.goto("https://indonesiana.tv/auth/login", timeout=60000)
@@ -477,9 +487,12 @@ def fetch_epg_indonesiana(target):
                     if update_res.status_code == 200:
                         print(f"[✓] Indonesiana TV: The new token has been successfully updated automatically to GitHub Gist!")
                     else:
-                        print(f"[!] Gist Update Failed: {update_res.status_code}")
+                        print(f"[!] Gist Update Failed. Status Code: {update_res.status_code}, Response: {update_res.text}")
+            else:
+                print(f"[!] Playwright finished, but failed to intercept the authorization token.")
         except Exception as e:
-            print(f"[!] Indonesiana TV Playwright Error: {e}")
+            print(f"[!] Indonesiana TV Playwright Error Detailed Exception: {e}")
+            traceback.print_exc()
 
     if not auth_token:
         print(f"[!] Indonesiana TV [{target['name']}]: Failed to obtain authorization token.")
@@ -520,7 +533,7 @@ def fetch_epg_indonesiana(target):
 
                     if start_str and end_str and title:
                         start_dt = datetime.fromtimestamp(int(start_str), wib_tz)
-                        stop_dt = datetime.fromtimestamp(int(end_str), wib_tz)
+                        stop_dt = datetime.fromtimestamp(int(end_str), wIB_tz if 'wIB_tz' in locals() else wib_tz)
 
                         programmes.append({
                             "channel": epg_id,
@@ -531,8 +544,13 @@ def fetch_epg_indonesiana(target):
                             "lang": "id"
                         })
                 print(f"[✓] Indonesiana TV [{target['name']}]: Successfully loaded {len(programmes)} programs.")
+            else:
+                print(f"[!] Indonesiana API returned unsuccessful response: {prog_data}")
+        else:
+            print(f"[!] Indonesiana API Failed. Status Code: {prog_res.status_code}, Response: {prog_res.text}")
     except Exception as e:
-        print(f"[!] Indonesiana TV API Error: {e}")
+        print(f"[!] Indonesiana TV API Error Detailed Exception: {e}")
+        traceback.print_exc()
 
     return channels, programmes
 
