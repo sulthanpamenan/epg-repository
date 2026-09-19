@@ -141,7 +141,7 @@ def scrape_single_tivie_channel(ch):
             headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                'Accept-Language': 'id,en-US;q=0.9,en;q=0.8',
+                'Accept-Language': 'id,en-US;q=0.9,en-US;q=0.8',
             }
         )
         with urllib.request.urlopen(req, timeout=15) as response:
@@ -167,6 +167,7 @@ def scrape_single_tivie_channel(ch):
                     cat_str = clean_text_str(cat_div.get_text()) if cat_div else ""
 
                     h_elem = item.select_one("h5, h4")
+                    prog_title = ""
                     if h_elem:
                         h_clone = BeautifulSoup(str(h_elem), 'html.parser')
                         for sub in h_clone.select("div.text-sm.tracking-wide, span.sr-only"):
@@ -174,8 +175,6 @@ def scrape_single_tivie_channel(ch):
                         texts = [clean_text_str(t) for t in h_clone.stripped_strings if t not in ["WIB", "LIVE"]]
                         texts = [t for t in texts if t != cat_str]
                         prog_title = " ".join(texts) if texts else ""
-                    else:
-                        prog_title = ""
 
                     if not prog_title and cat_str:
                         prog_title = cat_str
@@ -184,13 +183,15 @@ def scrape_single_tivie_channel(ch):
                     if not prog_title:
                         continue
 
-                    title = prog_title if not cat_str else f"{cat_str} {prog_title}"
+                    title = prog_title
+                    category = cat_str if cat_str else "General"
+
                     if not any(p['time'] == t_str and p['title'] == title for p in raw_list):
                         raw_list.append({
                             "time": t_str,
                             "title": title,
                             "desc": "",
-                            "category": "General"
+                            "category": category
                         })
 
         for idx in range(len(raw_list)):
