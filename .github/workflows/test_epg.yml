@@ -1,7 +1,7 @@
-name: Test Tivie API
+name: Test EPG
 
 on:
-  workflow_dispatch: # Eksekusi manual untuk hemat kuota
+  workflow_dispatch:
 
 jobs:
   run-test:
@@ -22,4 +22,4 @@ jobs:
           pip install beautifulsoup4 requests
 
       - name: Run Test Script
-        run: python test_tivie.py
+        run: python test_epg.py
