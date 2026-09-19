@@ -1,7 +1,7 @@
 name: Test Tivie API
 
 on:
-  workflow_dispatch: # Memungkinkan eksekusi manual agar kuota hemat
+  workflow_dispatch: # Eksekusi manual untuk hemat kuota
 
 jobs:
   run-test:
