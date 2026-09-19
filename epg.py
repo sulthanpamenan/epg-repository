@@ -136,53 +136,62 @@ def scrape_single_tivie_channel(ch):
 
     raw_list = []
     try:
-        res = HTTP_SESSION.get(url, timeout=12)
-        if res.status_code == 200:
-            soup = BeautifulSoup(res.text, 'html.parser')
-            
-            for unwanted in soup.select("footer, .footer, script, style, .ads, .cookie-banner"):
-                unwanted.decompose()
+        req = urllib.request.Request(
+            url,
+            headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'id,en-US;q=0.9,en;q=0.8',
+            }
+        )
+        with urllib.request.urlopen(req, timeout=15) as response:
+            if response.status == 200:
+                html_content = response.read().decode('utf-8')
+                soup = BeautifulSoup(html_content, 'html.parser')
+                
+                for unwanted in soup.select("footer, .footer, script, style, .ads, .cookie-banner"):
+                    unwanted.decompose()
 
-            event_items = soup.select("li[id^='event-']")
-            if not event_items:
-                event_items = [li for li in soup.find_all("li") if TIME_PATTERN_HM.search(li.get_text())]
+                event_items = soup.select("li[id^='event-']")
+                if not event_items:
+                    event_items = [li for li in soup.find_all("li") if TIME_PATTERN_HM.search(li.get_text())]
 
-            for item in event_items:
-                full_text = item.get_text(" ", strip=True)
-                time_match = TIME_PATTERN_HM.search(full_text)
-                if not time_match:
-                    continue
-                t_str = time_match.group(1).replace(".", ":").zfill(5)[:5]
+                for item in event_items:
+                    full_text = item.get_text(" ", strip=True)
+                    time_match = TIME_PATTERN_HM.search(full_text)
+                    if not time_match:
+                        continue
+                    t_str = time_match.group(1).replace(".", ":").zfill(5)[:5]
 
-                cat_div = item.select_one("div.text-sm.tracking-wide")
-                cat_str = clean_text_str(cat_div.get_text()) if cat_div else ""
+                    cat_div = item.select_one("div.text-sm.tracking-wide")
+                    cat_str = clean_text_str(cat_div.get_text()) if cat_div else ""
 
-                h_elem = item.select_one("h5, h4")
-                if h_elem:
-                    h_clone = BeautifulSoup(str(h_elem), 'html.parser')
-                    for sub in h_clone.select("div.text-sm.tracking-wide, span.sr-only"):
-                        sub.decompose()
-                    texts = [clean_text_str(t) for t in h_clone.stripped_strings if t not in ["WIB", "LIVE"]]
-                    texts = [t for t in texts if t != cat_str]
-                    prog_title = " ".join(texts) if texts else ""
-                else:
-                    prog_title = ""
+                    h_elem = item.select_one("h5, h4")
+                    if h_elem:
+                        h_clone = BeautifulSoup(str(h_elem), 'html.parser')
+                        for sub in h_clone.select("div.text-sm.tracking-wide, span.sr-only"):
+                            sub.decompose()
+                        texts = [clean_text_str(t) for t in h_clone.stripped_strings if t not in ["WIB", "LIVE"]]
+                        texts = [t for t in texts if t != cat_str]
+                        prog_title = " ".join(texts) if texts else ""
+                    else:
+                        prog_title = ""
 
-                if not prog_title and cat_str:
-                    prog_title = cat_str
-                    cat_str = ""
+                    if not prog_title and cat_str:
+                        prog_title = cat_str
+                        cat_str = ""
 
-                if not prog_title:
-                    continue
+                    if not prog_title:
+                        continue
 
-                title = prog_title if not cat_str else f"{cat_str} {prog_title}"
-                if not any(p['time'] == t_str and p['title'] == title for p in raw_list):
-                    raw_list.append({
-                        "time": t_str,
-                        "title": title,
-                        "desc": "",
-                        "category": "General"
-                    })
+                    title = prog_title if not cat_str else f"{cat_str} {prog_title}"
+                    if not any(p['time'] == t_str and p['title'] == title for p in raw_list):
+                        raw_list.append({
+                            "time": t_str,
+                            "title": title,
+                            "desc": "",
+                            "category": "General"
+                        })
 
         for idx in range(len(raw_list)):
             curr = raw_list[idx]
