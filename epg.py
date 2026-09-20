@@ -934,6 +934,7 @@ def fetch_epg_qazaqstan(target):
 def fetch_single_redbull_channel(t):
     api_url = f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}"
     programmes = []
+    wib_tz = timezone(timedelta(hours=7))
     try:
         res = HTTP_SESSION.get(api_url, timeout=10)
         if res.status_code == 200:
@@ -946,13 +947,13 @@ def fetch_single_redbull_channel(t):
                 end_iso = item.get("end_time")
 
                 if start_iso and title:
-                    start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00"))
-                    end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")) if end_iso else start_dt + timedelta(hours=1)
+                    start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00")).astimezone(wib_tz)
+                    end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")).astimezone(wib_tz) if end_iso else start_dt + timedelta(hours=1)
 
                     programmes.append({
                         "channel": t["id"], 
-                        "start": format_xmltv_date(start_dt, "+0000"), 
-                        "stop": format_xmltv_date(end_dt, "+0000"), 
+                        "start": format_xmltv_date(start_dt, "+0700"), 
+                        "stop": format_xmltv_date(end_dt, "+0700"), 
                         "title": clean_text_str(title), 
                         "desc": clean_text_str(desc), 
                         "lang": "en"
