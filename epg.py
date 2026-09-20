@@ -935,6 +935,10 @@ def fetch_single_redbull_channel(t):
     api_url = f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}"
     programmes = []
     wib_tz = timezone(timedelta(hours=7))
+    
+    now_wib = datetime.now(timezone.utc).astimezone(wib_tz)
+    day_start = now_wib.replace(hour=0, minute=0, second=0, microsecond=0)
+    day_end = now_wib.replace(hour=23, minute=59, second=59, microsecond=999999)
     try:
         res = HTTP_SESSION.get(api_url, timeout=10)
         if res.status_code == 200:
@@ -950,14 +954,15 @@ def fetch_single_redbull_channel(t):
                     start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00")).astimezone(wib_tz)
                     end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")).astimezone(wib_tz) if end_iso else start_dt + timedelta(hours=1)
 
-                    programmes.append({
-                        "channel": t["id"], 
-                        "start": format_xmltv_date(start_dt, "+0700"), 
-                        "stop": format_xmltv_date(end_dt, "+0700"), 
-                        "title": clean_text_str(title), 
-                        "desc": clean_text_str(desc), 
-                        "lang": "en"
-                    })
+                    if end_dt >= day_start and start_dt <= day_end:
+                        programmes.append({
+                            "channel": t["id"],
+                            "start": format_xmltv_date(start_dt, "+0700"),
+                            "stop": format_xmltv_date(end_dt, "+0700"),
+                            "title": clean_text_str(title),
+                            "desc": clean_text_str(desc),
+                            "lang": "en"
+                        })
             print(f"[✓] Red Bull TV [{t['name']}]: Loaded {len(programmes)} programs successfully!")
     except Exception as e:
         print(f"[!] Red Bull TV Error [{t['name']}]: {e}")
