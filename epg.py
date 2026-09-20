@@ -1036,14 +1036,25 @@ def generate_xmltv():
             c_elem = ET.SubElement(tv_elem, "channel", id=ch["id"])
             ET.SubElement(c_elem, "display-name").text = ch["name"]
 
-    # 8. Write Programs & Deduplicate
-    seen_programmes = set()
+    # 8. Filter & Write Programs & Deduplicate
+    now_utc = datetime.now(timezone.utc)
+    valid_programmes = []
     for p in all_programmes:
+        try:
+            stop_str_dt = p["stop"].split(" ")[0]
+            stop_dt = datetime.strptime(stop_str_dt, "%Y%m%d%H%M%S").replace(tzinfo=timezone.utc)
+            if stop_dt >= (now_utc - timedelta(hours=12)):
+                valid_programmes.append(p)
+        except Exception:
+            valid_programmes.append(p)
+
+    seen_programmes = set()
+    for p in valid_programmes:
         key = (p["channel"], p["start"])
         if key not in seen_programmes:
             seen_programmes.add(key)
             p_elem = ET.SubElement(tv_elem, "programme", {"start": p["start"], "stop": p["stop"], "channel": p["channel"]})
-            
+
             title_val = str(p["title"]) if not isinstance(p["title"], (set, list, dict)) else " ".join(p["title"])
             cleaned_title = html.unescape(clean_text_str(title_val))
             ET.SubElement(p_elem, "title", lang=p.get("lang", "en")).text = cleaned_title
