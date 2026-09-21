@@ -371,16 +371,7 @@ def fetch_all_dens_parallel():
     return all_channels, all_programmes
 
 # --- 3. INDONESIANA TV MODULE ---
-def fetch_epg_indonesiana(target):
-    epg_id = target["id"]
-    channel_code = target.get("code")
-    channels = [{"id": epg_id, "name": target["name"]}]
-    programmes = []
-    
-    if not channel_code:
-        print(f"[!] Indonesiana TV Error: Channel code not found for {target.get('name')}")
-        return channels, programmes
-
+def get_or_refresh_indonesiana_token(channel_code):
     auth_token = None
     cache_dir = "Cache"
     os.makedirs(cache_dir, exist_ok=True)
@@ -390,7 +381,7 @@ def fetch_epg_indonesiana(target):
     gist_id = os.environ.get("GIST_ID")
     gist_filename = "indonesiana_token.json"
 
-    # 1. Try getting a token from GitHub Gist
+    # 1. Check the gist
     if gh_pat and gist_id:
         try:
             gist_url = f"https://api.github.com/gists/{gist_id}"
@@ -405,33 +396,26 @@ def fetch_epg_indonesiana(target):
                         try:
                             test_headers = {"authorization": f"Bearer {saved_token}", "accept": "application/json"}
                             test_res = requests.get(f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs?limit=1", headers=test_headers, timeout=8)
-                            
                             if test_res.status_code == 200 and test_res.json().get("success"):
-                                auth_token = saved_token
                                 print(f"[✓] Indonesiana TV: Token valid loaded from GitHub Gist.")
-                            else:
-                                print(f"[!] Indonesiana TV: Token in Gist is expired or invalid. Re-authenticating...")
-                                auth_token = None
+                                return saved_token
                         except Exception:
-                            print(f"[!] Indonesiana TV: Token test timed out or failed. Re-authenticating...")
-                            auth_token = None
-        except Exception as e:
-            print(f"[!] Gist Fetch Error: {e}")
+                            pass
+        except Exception:
+            pass
 
-    # 2. Fallback to local cache if Gist is empty or fails
+    # 2. Check Local Cache
     if not auth_token and os.path.exists(cache_file):
         try:
             with open(cache_file, "r") as f:
                 cache_data = json.load(f)
                 auth_token = cache_data.get("token")
-                if auth_token:
-                    print(f"[✓] Indonesiana TV: Token successfully loaded from local cache.")
-        except Exception as e:
-            print(f"[!] Local Cache Load Error: {e}")
+        except Exception:
+            pass
 
-    # 3. If the token does not yet exist, execute the Pure API 2-Step Authentication with Retry
+    # 3. If not already in place, implement Incremental API Authorization
     if not auth_token:
-        print(f"[*] Indonesiana TV: Token not found. Performing staged API authentication...")
+        print(f"[*] Indonesiana TV: Performing staged API authentication...")
         for attempt in range(3):
             try:
                 session = requests.Session()
@@ -443,7 +427,6 @@ def fetch_epg_indonesiana(target):
                     "user-agent": HEADERS["User-Agent"]
                 })
 
-                # Step A: Request an anonymous token
                 anon_url = "https://api.indonesianatv.app/v1/users/anon/sessions"
                 anon_headers = {
                     "authorization": "Basic RjI5Q1c2NzY6dEZGNzJmNVNLN2lYbFFPTWNVYmFEVHpS",
@@ -452,11 +435,8 @@ def fetch_epg_indonesiana(target):
                 anon_res = session.post(anon_url, headers=anon_headers, json={}, timeout=25)
                 
                 if anon_res.status_code == 200:
-                    anon_data = anon_res.json()
-                    anon_token = anon_data.get("data", {}).get("session", {}).get("token")
-                    
+                    anon_token = anon_res.json().get("data", {}).get("session", {}).get("token")
                     if anon_token:
-                        # Step B: Send email credentials using anonymous token
                         email_url = "https://api.indonesianatv.app/v1/users/sessions/email"
                         email_headers = {
                             "authorization": f"Bearer {anon_token}",
@@ -467,46 +447,35 @@ def fetch_epg_indonesiana(target):
                             "email": "akun002fix@gmail.com",
                             "password": "Akun002x"
                         }
-                        
                         email_res = session.post(email_url, headers=email_headers, json=email_payload, timeout=25)
-                        if email_res.status_code == 200:
-                            email_data = email_res.json()
-                            if email_data.get("success"):
-                                auth_token = email_data.get("data", {}).get("accessSession", {}).get("token")
-                                print(f"[✓] Successfully obtained the Primary Access Token via API!")
-                                break
-                print(f"[!] Auth attempt {attempt + 1} failed/timed out, retrying...")
+                        if email_res.status_code == 200 and email_res.json().get("success"):
+                            auth_token = email_res.json().get("data", {}).get("accessSession", {}).get("token")
+                            print(f"[✓] Successfully obtained the Primary Access Token via API!")
+                            break
             except Exception as e:
                 print(f"[!] API Auth Exception (Attempt {attempt + 1}/3): {e}")
+            
+            import time
+            time.sleep(2)
 
-        # Save the new token to the local cache and synchronize it with GitHub Gist
         if auth_token:
-            token_payload = {
-                "token": auth_token,
-                "timestamp": datetime.now(timezone.utc).isoformat()
-            }
+            token_payload = {"token": auth_token, "timestamp": datetime.now(timezone.utc).isoformat()}
             with open(cache_file, "w") as f:
                 json.dump(token_payload, f)
-
             if gh_pat and gist_id:
-                update_payload = {
-                    "files": {
-                        gist_filename: {
-                            "content": json.dumps(token_payload, indent=2)
-                        }
-                    }
-                }
                 try:
-                    requests.patch(f"https://api.github.com/gists/{gist_id}", headers={"Authorization": f"Bearer {gh_pat}"}, json=update_payload, timeout=10)
-                    print(f"[✓] The new token has been successfully updated automatically to GitHub Gist!")
-                except Exception as e:
-                    print(f"[!] Gist Update Error: {e}")
+                    requests.patch(f"https://api.github.com/gists/{gist_id}", headers={"Authorization": f"Bearer {gh_pat}"}, json={"files": {gist_filename: {"content": json.dumps(token_payload, indent=2)}}}, timeout=10)
+                except Exception:
+                    pass
 
-    if not auth_token:
-        print(f"[!] Indonesiana TV [{target['name']}]: Complete failure to obtain the token.")
-        return channels, programmes
+    return auth_token
 
-    # 4. Retrieve EPG data using a valid token
+def fetch_epg_indonesiana_with_token(target, auth_token):
+    epg_id = target["id"]
+    channel_code = target.get("code")
+    channels = [{"id": epg_id, "name": target["name"]}]
+    programmes = []
+
     wib_tz = timezone(timedelta(hours=7))
     now_wib = datetime.now(timezone.utc).astimezone(wib_tz)
 
@@ -514,12 +483,7 @@ def fetch_epg_indonesiana(target):
     end_timestamp = int((now_wib + timedelta(days=2)).replace(hour=23, minute=59, second=59, microsecond=0).timestamp())
 
     api_url = f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs"
-    params = {
-        "filters[startDate]": start_timestamp,
-        "filters[endDate]": end_timestamp,
-        "skip": 0,
-        "limit": 2000
-    }
+    params = {"filters[startDate]": start_timestamp, "filters[endDate]": end_timestamp, "skip": 0, "limit": 2000}
     headers = {
         "accept": "application/json, text/plain, */*",
         "authorization": f"Bearer {auth_token}",
@@ -538,11 +502,9 @@ def fetch_epg_indonesiana(target):
                     title = item.get("name")
                     start_str = item.get("startDate")
                     end_str = item.get("endDate")
-
                     if start_str and end_str and title:
                         start_dt = datetime.fromtimestamp(int(start_str), wib_tz)
                         stop_dt = datetime.fromtimestamp(int(end_str), wib_tz)
-
                         programmes.append({
                             "channel": epg_id,
                             "start": format_xmltv_date(start_dt, "+0700"),
@@ -553,7 +515,7 @@ def fetch_epg_indonesiana(target):
                         })
                 print(f"[✓] Indonesiana TV [{target['name']}]: Successfully loaded {len(programmes)} programs.")
     except Exception as e:
-        print(f"[!] Indonesiana TV API Error: {e}")
+        print(f"[!] Indonesiana TV API Error [{target['name']}]: {e}")
 
     return channels, programmes
 
@@ -1036,13 +998,24 @@ def generate_xmltv():
             all_channels.extend(ch_list)
             all_programmes.extend(progs)
 
-    # 6. Fetch Indonesiana TV sequentially
+    # 6. Fetch Indonesiana TV
     indonesiana_targets = [t for t in EPG_TARGET_SOURCES if t["id"].startswith("Indonesiana_")]
-    for target in indonesiana_targets:
-        ch_list, progs = fetch_epg_indonesiana(target)
-        if ch_list:
-            all_channels.extend(ch_list)
-            all_programmes.extend(progs)
+    if indonesiana_targets:
+        print("[*] Starting Indonesiana TV batch extraction...")
+        shared_auth_token = None
+        for target in indonesiana_targets:
+            shared_auth_token = get_or_refresh_indonesiana_token(target.get("code"))
+            if shared_auth_token:
+                break
+        
+        if shared_auth_token:
+            for target in indonesiana_targets:
+                ch_list, progs = fetch_epg_indonesiana_with_token(target, shared_auth_token)
+                if ch_list:
+                    all_channels.extend(ch_list)
+                    all_programmes.extend(progs)
+        else:
+            print("[!] Indonesiana TV: Failed to obtain shared token for all channels.")
 
     # 7. Write Channels to XML Element (Deduplicated)
     seen_channels = set()
