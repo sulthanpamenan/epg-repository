@@ -942,45 +942,30 @@ def fetch_single_redbull_channel(t):
             data = res.json()
             cards = data.get("cards", [])
             
-            now_wib = datetime.now(wib_tz)
-            base_date = now_wib.date() - timedelta(days=1)
-            
-            raw_items = []
             for item in cards:
                 title = item.get("title")
                 desc = item.get("short_description") or item.get("long_description") or ""
-                if title:
-                    raw_items.append({
-                        "title": clean_text_str(title),
-                        "desc": clean_text_str(desc)
+                start_iso = item.get("start_time")
+                end_iso = item.get("end_time")
+
+                if start_iso and title:
+                    start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00")).astimezone(wib_tz)
+                    
+                    if end_iso:
+                        end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")).astimezone(wib_tz)
+                    else:
+                        end_dt = start_dt + timedelta(hours=1)
+
+                    programmes.append({
+                        "channel": t["id"], 
+                        "start": format_xmltv_date(start_dt, "+0700"), 
+                        "stop": format_xmltv_date(end_dt, "+0700"), 
+                        "title": clean_text_str(title), 
+                        "desc": clean_text_str(desc), 
+                        "lang": "en"
                     })
             
-            if not raw_items:
-                raw_items = [{"title": t["name"], "desc": f"Enjoy streaming on {t['name']}"}]
-
-            slot_duration_hours = 2
-            current_dt = datetime.combine(base_date, datetime.min.time()).replace(tzinfo=wib_tz)
-            end_limit_dt = current_dt + timedelta(days=4)
-            
-            item_idx = 0
-            while current_dt < end_limit_dt:
-                prog = raw_items[item_idx % len(raw_items)]
-                start_dt = current_dt
-                stop_dt = start_dt + timedelta(hours=slot_duration_hours)
-                
-                programmes.append({
-                    "channel": t["id"], 
-                    "start": format_xmltv_date(start_dt, "+0700"), 
-                    "stop": format_xmltv_date(stop_dt, "+0700"), 
-                    "title": prog["title"], 
-                    "desc": prog["desc"], 
-                    "lang": "en"
-                })
-                
-                current_dt = stop_dt
-                item_idx += 1
-                
-            print(f"[✓] Red Bull TV [{t['name']}]: Generated extended timeline with {len(programmes)} programs successfully!")
+            print(f"[✓] Red Bull TV [{t['name']}]: Loaded {len(programmes)} programs successfully!")
     except Exception as e:
         print(f"[!] Red Bull TV Error [{t['name']}]: {e}")
         
