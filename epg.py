@@ -429,52 +429,55 @@ def fetch_epg_indonesiana(target):
         except Exception as e:
             print(f"[!] Local Cache Load Error: {e}")
 
-    # 3. If the token does not yet exist, execute the Pure API 2-Step Authentication
+    # 3. If the token does not yet exist, execute the Pure API 2-Step Authentication with Retry
     if not auth_token:
         print(f"[*] Indonesiana TV: Token not found. Performing staged API authentication...")
-        try:
-            session = requests.Session()
-            session.headers.update({
-                "accept": "application/json, text/plain, */*",
-                "accept-language": "id,en-US;q=0.9,en-US;q=0.8",
-                "origin": "https://indonesiana.tv",
-                "referer": "https://indonesiana.tv/",
-                "user-agent": HEADERS["User-Agent"]
-            })
+        for attempt in range(3):
+            try:
+                session = requests.Session()
+                session.headers.update({
+                    "accept": "application/json, text/plain, */*",
+                    "accept-language": "id,en-US;q=0.9,en-US;q=0.8",
+                    "origin": "https://indonesiana.tv",
+                    "referer": "https://indonesiana.tv/",
+                    "user-agent": HEADERS["User-Agent"]
+                })
 
-            # Step A: Request an anonymous token
-            anon_url = "https://api.indonesianatv.app/v1/users/anon/sessions"
-            anon_headers = {
-                "authorization": "Basic RjI5Q1c2NzY6dEZGNzJmNVNLN2lYbFFPTWNVYmFEVHpS",
-                "content-type": "application/json"
-            }
-            anon_res = session.post(anon_url, headers=anon_headers, json={}, timeout=15)
-            
-            if anon_res.status_code == 200:
-                anon_data = anon_res.json()
-                anon_token = anon_data.get("data", {}).get("session", {}).get("token")
+                # Step A: Request an anonymous token
+                anon_url = "https://api.indonesianatv.app/v1/users/anon/sessions"
+                anon_headers = {
+                    "authorization": "Basic RjI5Q1c2NzY6dEZGNzJmNVNLN2lYbFFPTWNVYmFEVHpS",
+                    "content-type": "application/json"
+                }
+                anon_res = session.post(anon_url, headers=anon_headers, json={}, timeout=25)
                 
-                if anon_token:
-                    # Step B: Send email credentials and password using an anonymous token
-                    email_url = "https://api.indonesianatv.app/v1/users/sessions/email"
-                    email_headers = {
-                        "authorization": f"Bearer {anon_token}",
-                        "content-type": "application/json"
-                    }
-                    email_payload = {
-                        "notification": {"channel": 0, "token": ""},
-                        "email": "akun002fix@gmail.com",
-                        "password": "Akun002x"
-                    }
+                if anon_res.status_code == 200:
+                    anon_data = anon_res.json()
+                    anon_token = anon_data.get("data", {}).get("session", {}).get("token")
                     
-                    email_res = session.post(email_url, headers=email_headers, json=email_payload, timeout=15)
-                    if email_res.status_code == 200:
-                        email_data = email_res.json()
-                        if email_data.get("success"):
-                            auth_token = email_data.get("data", {}).get("accessSession", {}).get("token")
-                            print(f"[✓] Successfully obtained the Primary Access Token via API!")
-        except Exception as e:
-            print(f"[!] API Auth Exception: {e}")
+                    if anon_token:
+                        # Step B: Send email credentials using anonymous token
+                        email_url = "https://api.indonesianatv.app/v1/users/sessions/email"
+                        email_headers = {
+                            "authorization": f"Bearer {anon_token}",
+                            "content-type": "application/json"
+                        }
+                        email_payload = {
+                            "notification": {"channel": 0, "token": ""},
+                            "email": "akun002fix@gmail.com",
+                            "password": "Akun002x"
+                        }
+                        
+                        email_res = session.post(email_url, headers=email_headers, json=email_payload, timeout=25)
+                        if email_res.status_code == 200:
+                            email_data = email_res.json()
+                            if email_data.get("success"):
+                                auth_token = email_data.get("data", {}).get("accessSession", {}).get("token")
+                                print(f"[✓] Successfully obtained the Primary Access Token via API!")
+                                break
+                print(f"[!] Auth attempt {attempt + 1} failed/timed out, retrying...")
+            except Exception as e:
+                print(f"[!] API Auth Exception (Attempt {attempt + 1}/3): {e}")
 
         # Save the new token to the local cache and synchronize it with GitHub Gist
         if auth_token:
