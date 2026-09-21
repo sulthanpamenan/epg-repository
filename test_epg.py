@@ -68,8 +68,7 @@ def test_fetch_indonesiana():
         try:
             from playwright.sync_api import sync_playwright
             with sync_playwright() as p:
-                # Ubah ke headless=True jika dijalankan di server tanpa layar
-                browser = p.chromium.launch(headless=False, args=["--no-sandbox", "--disable-setuid-sandbox"])
+                browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-setuid-sandbox"])
                 context = browser.new_context(
                     user_agent=HEADERS["User-Agent"],
                     viewport={"width": 1280, "height": 800}
