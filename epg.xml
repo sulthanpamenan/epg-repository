@@ -6078,14 +6078,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_wedosports.id">
     <title lang="id">Clubland - S01:E26 - Villareal, Olympique Lyon</title>
   </programme>
-  <programme start="20260921174401 +0700" stop="20260921180940 +0700" channel="RedBullTV.global">
-    <title lang="en">House of the gods part 1</title>
-    <desc lang="en">Leo Houlding, Anna Taylor and Waldo Etherington attempt a new route up Mount Roraima in the Amazonian Jungle.</desc>
-  </programme>
-  <programme start="20260921180940 +0700" stop="20260921183039 +0700" channel="RedBullTV.global">
-    <title lang="en">House of the gods part 2</title>
-    <desc lang="en">Anna Taylor must battle the hardest pitch yet to achieve the team's goal of a fully free ascent.</desc>
-  </programme>
   <programme start="20260921183039 +0700" stop="20260921185004 +0700" channel="RedBullTV.global">
     <title lang="en">The Hurt: Alex Honnold in Nevada Part 2</title>
     <desc lang="en">Alex Honnold gears up for the hardest section of his Red Rock Canyon climb so far just in time for nightfall.</desc>
@@ -6158,9 +6150,13 @@
     <title lang="en">From a paper plane contest to diving off ruins</title>
     <desc lang="en">Red Bull athletes do it all, from diving off ancient ruins to acing a paper plane competition.</desc>
   </programme>
-  <programme start="20260921174124 +0700" stop="20260921180731 +0700" channel="RedBullPadel.global">
-    <title lang="en">Madrid P1 Premier Padel highlights</title>
-    <desc lang="en">Watch the highlights from the Madrid P1 Premier Padel tournament.</desc>
+  <programme start="20260922044333 +0700" stop="20260922051009 +0700" channel="RedBullTV.global">
+    <title lang="en">From F1 desert racing to a skatepark in the sky</title>
+    <desc lang="en">Red Bull athletes do it all, from riding a skatepark under a hot air balloon to F1 drivers racing on water.</desc>
+  </programme>
+  <programme start="20260922051009 +0700" stop="20260922053609 +0700" channel="RedBullTV.global">
+    <title lang="en">From skateboarding out a plane to 180m wall climb</title>
+    <desc lang="en">Red Bull athletes do it all, from freerunning through an airport to building a skatepark in the forest.</desc>
   </programme>
   <programme start="20260921180731 +0700" stop="20260921183336 +0700" channel="RedBullPadel.global">
     <title lang="en">Paris Major Premier Padel highlights</title>
@@ -6198,11 +6194,11 @@
     <title lang="en">Meet padel stars Coello, Sanchez, Chingotto and Salazar</title>
     <desc lang="en">Four stars. Four cities. One sport. Hear emotional journeys from the padel court to the heart of the game.</desc>
   </programme>
-  <programme start="20260921220111 +0700" stop="20260921222702 +0700" channel="RedBullPadel.global">
+  <programme start="20260921220111 +0700" stop="20260921222701 +0700" channel="RedBullPadel.global">
     <title lang="en">Tarragona P1 Premier Padel highlights</title>
     <desc lang="en">Watch the highlights from Tarragona, Spain as the P1 Premier Padel took centre stage.</desc>
   </programme>
-  <programme start="20260921222702 +0700" stop="20260921225328 +0700" channel="RedBullPadel.global">
+  <programme start="20260921222701 +0700" stop="20260921225328 +0700" channel="RedBullPadel.global">
     <title lang="en">Meet padel stars Fernández, Triay, Lebrón and Yanguas</title>
     <desc lang="en">Four padel players give an inside look into their lives and what makes the sport a global phenomenon.</desc>
   </programme>
@@ -6237,6 +6233,10 @@
   <programme start="20260922015411 +0700" stop="20260922021857 +0700" channel="RedBullPadel.global">
     <title lang="en">Meet padel stars Coello, Sanchez, Chingotto and Salazar</title>
     <desc lang="en">Four stars. Four cities. One sport. Hear emotional journeys from the padel court to the heart of the game.</desc>
+  </programme>
+  <programme start="20260922021857 +0700" stop="20260922024504 +0700" channel="RedBullPadel.global">
+    <title lang="en">Malaga Premier Padel P1 highlights</title>
+    <desc lang="en">Watch the highlights from the Malaga Premier Padel P1 tournament.</desc>
   </programme>
   <programme start="20260921172244 +0700" stop="20260921184630 +0700" channel="RedBullBike.global">
     <title lang="en">The Engine Inside</title>
@@ -6290,11 +6290,11 @@
     <title lang="en">Emerald Storm</title>
     <desc lang="en">Documenting the rise of Ireland’s top MTB riders from their grassroots beginnings to the global stage.</desc>
   </programme>
-  <programme start="20260921232149 +0700" stop="20260921233701 +0700" channel="RedBullBike.global">
+  <programme start="20260921232149 +0700" stop="20260921233700 +0700" channel="RedBullBike.global">
     <title lang="en">Erik Fedko checks out Emil Johansson's home spots</title>
     <desc lang="en">After 2020 Crankworx Rotorua, Erik Fedko heads to Sweden to see Emil Johansson’s favourite mountain biking spots.</desc>
   </programme>
-  <programme start="20260921233701 +0700" stop="20260921234412 +0700" channel="RedBullBike.global">
+  <programme start="20260921233700 +0700" stop="20260921234412 +0700" channel="RedBullBike.global">
     <title lang="en">The power of bikes</title>
     <desc lang="en">Endurance athlete Rebecca Rusch and adventurer Patrick Sweeney cycled up and down Mount Kilimanjaro, Tanzania.</desc>
   </programme>
@@ -6302,11 +6302,11 @@
     <title lang="en">Underdogs and overdogs</title>
     <desc lang="en">MTB riders Kate Courtney and Loïc Bruni recall the highs and lows of their mountain biking careers.</desc>
   </programme>
-  <programme start="20260921235655 +0700" stop="20260922001457 +0700" channel="RedBullBike.global">
+  <programme start="20260921235655 +0700" stop="20260922001456 +0700" channel="RedBullBike.global">
     <title lang="en">EMIL – Every Mystery I've Lived: The Next Chapter</title>
     <desc lang="en">Despite autoimmune illness, MTB slopestyle champ Emil Johansson fights to regain his mountain bike title.</desc>
   </programme>
-  <programme start="20260922001457 +0700" stop="20260922003926 +0700" channel="RedBullBike.global">
+  <programme start="20260922001456 +0700" stop="20260922003926 +0700" channel="RedBullBike.global">
     <title lang="en">Ecuador</title>
     <desc lang="en">Rob Warner travels to Ecuador with rising mountain biking star Finn Iles to take on the Cotopaxi in the Andes.</desc>
   </programme>
@@ -6317,14 +6317,6 @@
   <programme start="20260922010352 +0700" stop="20260922011846 +0700" channel="RedBullBike.global">
     <title lang="en">It's all about the drama</title>
     <desc lang="en">MTB riders like Kate Courtney, Finn Iles and Loïc Bruni look back over Fast Life, remembering the good and tough moments.</desc>
-  </programme>
-  <programme start="20260921171709 +0700" stop="20260921180509 +0700" channel="RedBullAdventure.global">
-    <title lang="en">360 Ascent</title>
-    <desc lang="en">Climbers Janja Garnbret and Domen Škofic scale the tallest artificial multi-pitch route in the world.</desc>
-  </programme>
-  <programme start="20260921180509 +0700" stop="20260921182610 +0700" channel="RedBullAdventure.global">
-    <title lang="en">Fairy Flight</title>
-    <desc lang="en">Valentin Delluc drops from a hot air balloon for a speedflying adventure in Turkey's magical Cappadocia.</desc>
   </programme>
   <programme start="20260921182610 +0700" stop="20260921184258 +0700" channel="RedBullAdventure.global">
     <title lang="en">Beneath the Ice</title>
@@ -6390,17 +6382,21 @@
     <title lang="en">The Nose speed record part 2</title>
     <desc lang="en">Alex Honnold knows the ropes and is pushing for perfection, but Tommy Caldwell is new to speed climbing.</desc>
   </programme>
-  <programme start="20260922002219 +0700" stop="20260922004121 +0700" channel="RedBullAdventure.global">
+  <programme start="20260922002219 +0700" stop="20260922004120 +0700" channel="RedBullAdventure.global">
     <title lang="en">The high road part 2</title>
     <desc lang="en">Nina Williams hones in on an outrageous new objective: a 15m-tall boulder called Too Big to Flail.</desc>
   </programme>
-  <programme start="20260922004121 +0700" stop="20260922010452 +0700" channel="RedBullAdventure.global">
+  <programme start="20260922004120 +0700" stop="20260922010452 +0700" channel="RedBullAdventure.global">
     <title lang="en">Filming free solo on Les Drus in France</title>
     <desc lang="en">Alex Honnold, Nico Hojac and team take on an epic climb and film shoot on Les Drus in the Mont Blanc massif.</desc>
   </programme>
-  <programme start="20260921172616 +0700" stop="20260921175730 +0700" channel="RedBullMotorsports.global">
-    <title lang="en">In the Wings</title>
-    <desc lang="en">Formula One driver Liam Lawson builds his F1 resume in his busiest season yet in 2023.</desc>
+  <programme start="20260922010452 +0700" stop="20260922012550 +0700" channel="RedBullAdventure.global">
+    <title lang="en">The Nose speed record part 1</title>
+    <desc lang="en">Alex Honnold and Tommy Caldwell introduce us to the speed record on The Nose route up El Capitan, California.</desc>
+  </programme>
+  <programme start="20260922012550 +0700" stop="20260922014401 +0700" channel="RedBullAdventure.global">
+    <title lang="en">The VR experiment</title>
+    <desc lang="en">Alex Honnold, Nico Hojac and team take on an iconic face in the Italian Dolomites while filming a VR film.</desc>
   </programme>
   <programme start="20260921175730 +0700" stop="20260921190059 +0700" channel="RedBullMotorsports.global">
     <title lang="en">Red Bull Straight Rhythm</title>
@@ -6478,19 +6474,19 @@
     <title lang="en">The view from the top</title>
     <desc lang="en">Tony Cairoli is the most successful rider in the championship. Can he still compete at the top?</desc>
   </programme>
-  <programme start="20260921163331 +0700" stop="20260921181608 +0700" channel="RedBullSurfing.global">
-    <title lang="en">And Two If By Sea</title>
-    <desc lang="en">Twin surfers. Rival careers. Pro surfers and identical twins CJ and Damien Hobgood battle sibling rivalry.</desc>
+  <programme start="20260922043115 +0700" stop="20260922044701 +0700" channel="RedBullMotorsports.global">
+    <title lang="en">The next generation</title>
+    <desc lang="en">Can world champion Antonio Cairoli win a 10th title before he's overtaken by the next generation of riders?</desc>
   </programme>
   <programme start="20260921181608 +0700" stop="20260921183642 +0700" channel="RedBullSurfing.global">
     <title lang="en">The beast awakens</title>
     <desc lang="en">Surfer Kai heads to a Nazaré swell, but ends up fighting for his life after his biggest wipeout ever.</desc>
   </programme>
-  <programme start="20260921183642 +0700" stop="20260921185201 +0700" channel="RedBullSurfing.global">
+  <programme start="20260921183642 +0700" stop="20260921185200 +0700" channel="RedBullSurfing.global">
     <title lang="en">The legend of Nazaré</title>
     <desc lang="en">Kai Lenny travels to Nazaré in Portugal to train with Brazilian big wave charger Lucas 'Chumbo' Chianca.</desc>
   </programme>
-  <programme start="20260921185201 +0700" stop="20260921191323 +0700" channel="RedBullSurfing.global">
+  <programme start="20260921185200 +0700" stop="20260921191323 +0700" channel="RedBullSurfing.global">
     <title lang="en">That’s Caroline</title>
     <desc lang="en">Caroline Marks is just a normal young woman – who also happens to be the face of surfing’s future.</desc>
   </programme>
@@ -6558,21 +6554,9 @@
     <title lang="en">And Two If By Sea</title>
     <desc lang="en">Twin surfers. Rival careers. Pro surfers and identical twins CJ and Damien Hobgood battle sibling rivalry.</desc>
   </programme>
-  <programme start="20260921173918 +0700" stop="20260921180445 +0700" channel="RedBullSkateboarding.global">
-    <title lang="en">ABC of... Skateboarding</title>
-    <desc lang="en">Take a look at the history of skateboarding, from the pioneers of sidewalk surfing to today's skateboarders.</desc>
-  </programme>
-  <programme start="20260921180445 +0700" stop="20260921181208 +0700" channel="RedBullSkateboarding.global">
-    <title lang="en">Pura Pura Skatepark, Bolivia</title>
-    <desc lang="en">It's the highest skatepark in the world and it was built in less than a month by more than 100 volunteers.</desc>
-  </programme>
-  <programme start="20260921181208 +0700" stop="20260921182255 +0700" channel="RedBullSkateboarding.global">
-    <title lang="en">Skating the streets of Barcelona</title>
-    <desc lang="en">Gustavo Ribeiro and the Ementa crew try some tricks on the streets of skateboarding’s first city – Barcelona.</desc>
-  </programme>
-  <programme start="20260921182255 +0700" stop="20260921182837 +0700" channel="RedBullSkateboarding.global">
-    <title lang="en">Skatepark of Tampa</title>
-    <desc lang="en">Joey and Rip are in Skatepark of Tampa, Florida, home of the world famous Tampa Pro skate competition.</desc>
+  <programme start="20260922050400 +0700" stop="20260922053012 +0700" channel="RedBullSurfing.global">
+    <title lang="en">Leon Glatzer surfs Costa Rica</title>
+    <desc lang="en">Leon Glatzer unpacks the incredible history of Pavones and explores its thriving roots surf scene.</desc>
   </programme>
   <programme start="20260921182837 +0700" stop="20260921184016 +0700" channel="RedBullSkateboarding.global">
     <title lang="en">How a skateboard gets made</title>
@@ -6606,11 +6590,11 @@
     <title lang="en">Torey Pudwill</title>
     <desc lang="en">Roll along with us as we chill with Grizzly Griptape and Thank You Skateboards' very own Torey Pudwill.</desc>
   </programme>
-  <programme start="20260921201925 +0700" stop="20260921204720 +0700" channel="RedBullSkateboarding.global">
+  <programme start="20260921201925 +0700" stop="20260921204719 +0700" channel="RedBullSkateboarding.global">
     <title lang="en">Madars and the Fancy Lad crew</title>
     <desc lang="en">Madars Apse is in Massachusetts to meet the group of friends redefining what's possible in skateboarding.</desc>
   </programme>
-  <programme start="20260921204720 +0700" stop="20260921210624 +0700" channel="RedBullSkateboarding.global">
+  <programme start="20260921204719 +0700" stop="20260921210624 +0700" channel="RedBullSkateboarding.global">
     <title lang="en">Hometown skating in Lisbon</title>
     <desc lang="en">Ride with skater Gustavo Ribeiro as he shows us his hometown of Lisbon, Portugal.</desc>
   </programme>
@@ -6637,6 +6621,22 @@
   <programme start="20260921223907 +0700" stop="20260921225401 +0700" channel="RedBullSkateboarding.global">
     <title lang="en">Beaver Fleming</title>
     <desc lang="en">Can Madars Apse take on the mini Megaramp with Beaver Fleming's help?</desc>
+  </programme>
+  <programme start="20260921225401 +0700" stop="20260921230659 +0700" channel="RedBullSkateboarding.global">
+    <title lang="en">TJ Rogers</title>
+    <desc lang="en">Get to know the daily life of pro skateboarder TJ Rogers, from what he eats, to how he lives and more.</desc>
+  </programme>
+  <programme start="20260921230659 +0700" stop="20260921231520 +0700" channel="RedBullSkateboarding.global">
+    <title lang="en">Larvikite Lines</title>
+    <desc lang="en">Torey Pudwill and friends create, shred and then donate ancient stone skate spots in Norway.</desc>
+  </programme>
+  <programme start="20260921231520 +0700" stop="20260921232242 +0700" channel="RedBullSkateboarding.global">
+    <title lang="en">Pura Pura Skatepark, Bolivia</title>
+    <desc lang="en">It's the highest skatepark in the world and it was built in less than a month by more than 100 volunteers.</desc>
+  </programme>
+  <programme start="20260921232242 +0700" stop="20260921234810 +0700" channel="RedBullSkateboarding.global">
+    <title lang="en">ABC of... Skateboarding</title>
+    <desc lang="en">Take a look at the history of skateboarding, from the pioneers of sidewalk surfing to today's skateboarders.</desc>
   </programme>
   <programme start="20260921175053 +0700" stop="20260921190803 +0700" channel="RedBullWinter.global">
     <title lang="en">The Art of Flight</title>
@@ -6718,46 +6718,6 @@
     <title lang="en">World Championships glory</title>
     <desc lang="en">Freeskier Eileen Gu wins two gold medals and a bronze at the FIS World Championships. All despite being injured.</desc>
   </programme>
-  <programme start="20260921175440 +0700" stop="20260921175952 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Eli Hanneman 2020</title>
-    <desc lang="en">Eli Hanneman's RAW edit brings you his finest work from the past Pacific winter.</desc>
-  </programme>
-  <programme start="20260921175952 +0700" stop="20260921180219 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Martin Söderström and Emil Johansson</title>
-    <desc lang="en">See Martin Söderström and Emil Johansson put their style and excellency in focus at Järvsö, Sweden.</desc>
-  </programme>
-  <programme start="20260921180219 +0700" stop="20260921180425 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Freerunning illusions</title>
-    <desc lang="en">Jason Paul and Pasha Petkuns play mind tricks as they defy gravity with their freerunning illusions.</desc>
-  </programme>
-  <programme start="20260921180425 +0700" stop="20260921180621 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Infinity Cube</title>
-    <desc lang="en">The Red Bull BC One All Stars show off their moves in a mirror cube that gives the illusion of infinity.</desc>
-  </programme>
-  <programme start="20260921180621 +0700" stop="20260921180942 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Pedro Burns</title>
-    <desc lang="en">Pedro Burns goes for a ride across three wildly different Chilean terrains.</desc>
-  </programme>
-  <programme start="20260921180942 +0700" stop="20260921181408 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Skate Intersection – Lost in Shanghai</title>
-    <desc lang="en">Fancy skating the world in a day? Let Maxim Habanec, Vladik Scholz and Angelo Caro skate you around the themed towns of Shanghai, China.</desc>
-  </programme>
-  <programme start="20260921181408 +0700" stop="20260921181943 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Duct Out</title>
-    <desc lang="en">Tyler Bereman and Robbie Maddison escape LA's gridlock and turn the city into a personal MX playground.</desc>
-  </programme>
-  <programme start="20260921181943 +0700" stop="20260921182625 +0700" channel="RedBullActionReel.global">
-    <title lang="en">From sim to reality</title>
-    <desc lang="en">Max Verstappen gets sucked into his simulator and needs to clear different levels to get to the Belgium GP.</desc>
-  </programme>
-  <programme start="20260921182625 +0700" stop="20260921182840 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Adrenaline Spike</title>
-    <desc lang="en">VALORANT and freerunning unite as Krystian Kowalewski takes on agent Jett's abilities and races through Berlin streets.</desc>
-  </programme>
-  <programme start="20260921182840 +0700" stop="20260921183116 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Downhill drone chase</title>
-    <desc lang="en">The talented FPV drone pilots chase Tomáš Slavík down the iconic Red Bull Valparaíso track.</desc>
-  </programme>
   <programme start="20260921183116 +0700" stop="20260921184135 +0700" channel="RedBullActionReel.global">
     <title lang="en">Markus Eder in The Ultimate Run</title>
     <desc lang="en">Take a cinematic journey in this Emmy Award-winning ski film from the world's most renowned freestyle skier, Markus Eder.</desc>
@@ -6797,6 +6757,46 @@
   <programme start="20260921192333 +0700" stop="20260921192650 +0700" channel="RedBullActionReel.global">
     <title lang="en">Uncorked</title>
     <desc lang="en">With a gorgeous sunset behind them, Mark McMorris and Seb Toots shred a perfectly manicured snowboard park.</desc>
+  </programme>
+  <programme start="20260921192650 +0700" stop="20260921193015 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Wakeskate reflection</title>
+    <desc lang="en">Wakeskaters Brian Grubb and Matti Buys hit some iconic beachfront landmarks in Durban, South Africa.</desc>
+  </programme>
+  <programme start="20260921193015 +0700" stop="20260921193300 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Tahnée Seagrave tears up Lousã, Portugal</title>
+    <desc lang="en">British cyclist Tahnée Seagrave returns after serious injury to the UCI Downhill Mountain Bike World Cup.</desc>
+  </programme>
+  <programme start="20260921193300 +0700" stop="20260921193510 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Wake Crane</title>
+    <desc lang="en">Three top riders rip around a custom wakeboard park built from a crane and a bunch of cargo containers.</desc>
+  </programme>
+  <programme start="20260921193510 +0700" stop="20260921193918 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Freerunner's guide to the Sydney Opera House</title>
+    <desc lang="en">Nobody has ever freerun on the roof of the Sydney Opera House – until now. Watch Dominic Di Tommaso in action.</desc>
+  </programme>
+  <programme start="20260921193918 +0700" stop="20260921194223 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Brandon Semenuk – Japan</title>
+    <desc lang="en">Brandon Semenuk and Revel Co head to Hakuba, Japan, for the latest instalment of MTB RAW.</desc>
+  </programme>
+  <programme start="20260921194223 +0700" stop="20260921194443 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Dancing in the lights</title>
+    <desc lang="en">Get your 2019 going in style with a celebratory dance performance on the roofs of Mumbai in India.</desc>
+  </programme>
+  <programme start="20260921194443 +0700" stop="20260921194733 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Kolohe Andino</title>
+    <desc lang="en">Filmer Jacob Vanderwork brings us his best Kolohe Andino clips from their work together over the winter.</desc>
+  </programme>
+  <programme start="20260921194733 +0700" stop="20260921194916 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Mathieu Rebeaud in Switzerland</title>
+    <desc lang="en">Freeride motocross rider Mathieu Rebeaud takes us on an (almost) silent ride in his own backyard.</desc>
+  </programme>
+  <programme start="20260921194916 +0700" stop="20260921195120 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Best moments</title>
+    <desc lang="en">Watch the best moments from when freerunners turned the Athenian Riviera into their own personal playground.</desc>
+  </programme>
+  <programme start="20260921195120 +0700" stop="20260921195359 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Uncontainable</title>
+    <desc lang="en">Always looking for bigger set-ups, Drew Bezanson built a custom BMX park using enormous shipping containers.</desc>
   </programme>
   <programme start="20260921001500 +0700" stop="20260921003000 +0700" channel="MNC_abc-australia_350.id">
     <title lang="id">ABC News Overnight</title>
@@ -14098,15 +14098,15 @@
     <desc lang="kk">Сараптамалық бағдарлама</desc>
   </programme>
   <programme start="20260921150000 +0500" stop="20260921152500 +0500" channel="Qazaqstan.kz">
-    <title lang="kk">Деректі фильм</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <title lang="kk">Астана – Сеул: Мүмкіндіктер одағы</title>
+    <desc lang="kk">Деректі фильм</desc>
   </programme>
   <programme start="20260921152500 +0500" stop="20260921155500 +0500" channel="Qazaqstan.kz">
     <title lang="kk">ХХ жазғы Азия ойындарына шолу</title>
   </programme>
   <programme start="20260921155500 +0500" stop="20260921170000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Жоғалған есім</title>
-    <desc lang="kk">Телехикая</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921170000 +0500" stop="20260921172000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Ақпарат</title>
@@ -14217,15 +14217,15 @@
     <desc lang="kk">Сараптамалық бағдарлама</desc>
   </programme>
   <programme start="20260921150000 +0500" stop="20260921152500 +0500" channel="QazaqstanInt.kz">
-    <title lang="kk">Деректі фильм</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <title lang="kk">Астана – Сеул: Мүмкіндіктер одағы</title>
+    <desc lang="kk">Деректі фильм</desc>
   </programme>
   <programme start="20260921152500 +0500" stop="20260921155500 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">ХХ жазғы Азия ойындарына шолу</title>
   </programme>
   <programme start="20260921155500 +0500" stop="20260921170000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Жоғалған есім</title>
-    <desc lang="kk">Телехикая</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921170000 +0500" stop="20260921172000 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Ақпарат</title>
@@ -14427,11 +14427,11 @@
   </programme>
   <programme start="20260921142000 +0500" stop="20260921151500 +0500" channel="Qazsport.kz">
     <title lang="kk">Нысана көздеу (Ерлер). Финал</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">ХХ Жазғы Азия ойындары</desc>
   </programme>
   <programme start="20260921151500 +0500" stop="20260921170000 +0500" channel="Qazsport.kz">
     <title lang="kk">Жапония – Оңтүстік Корея</title>
-    <desc lang="kk">Волейбол (Әйелдер)</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921170000 +0500" stop="20260921173000 +0500" channel="Qazsport.kz">
     <title lang="kk">ХХ Жазғы Азия ойындары</title>
