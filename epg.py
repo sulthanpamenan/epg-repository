@@ -457,8 +457,8 @@ def fetch_epg_indonesiana(target):
                             print(f"[!] Error parsing response JSON: {ex}")
 
                 page.on("response", handle_response)
-                page.goto("https://indonesiana.tv/auth/login", timeout=60000)
-                page.wait_for_selector('input[type="email"]', timeout=15000)
+                page.goto("https://indonesiana.tv/auth/login", timeout=60000, wait_until="networkidle")
+                page.wait_for_selector('input[type="email"]', timeout=30000)
                 
                 page.fill('input[type="email"]', "akun002fix@gmail.com")
                 page.fill('input[type="password"]', "Akun002x")
