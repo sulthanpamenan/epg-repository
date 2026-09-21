@@ -88,7 +88,7 @@ def test_fetch_indonesiana():
                             print(f"[!] Gagal parsing JSON response: {ex}")
 
                 page.on("response", handle_response)
-                page.goto("https://indonesiana.tv/auth/login", timeout=60000, wait_until="networkidle")
+                page.goto("https://indonesiana.tv/auth/login", timeout=60000, wait_until="domcontentloaded")
                 
                 email_sel = 'input[placeholder="Masukkan alamat e-mail Anda"]'
                 page.wait_for_selector(email_sel, timeout=30000, state="visible")
