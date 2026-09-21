@@ -9,9 +9,9 @@ HEADERS = {
     "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
-def test_api_login():
+def test_api_login_step_by_step():
     print("=" * 60)
-    print("[*] Memulai Uji Coba API Login Indonesiana TV")
+    print("[*] Memulai Uji Coba Autentikasi Bertahap Indonesiana TV")
     print("=" * 60)
 
     auth_token = None
@@ -52,36 +52,69 @@ def test_api_login():
         except Exception as e:
             print(f"[!] Cache Error: {e}")
 
-    # 3. Jika belum ada, lakukan Login API POST murni
+    # 3. Jika belum ada, jalankan 2 Langkah Autentikasi API
     if not auth_token:
-        print("[*] Token tidak ditemukan. Melakukan login otomatis via API POST...")
+        print("[*] Token tidak ditemukan. Menjalankan autentikasi bertahap...")
         try:
-            login_url = "https://api.indonesianatv.app/v1/users/sessions/email"
-            login_headers = {
+            session = requests.Session()
+            session.headers.update({
                 "accept": "application/json, text/plain, */*",
-                "content-type": "application/json",
+                "accept-language": "id,en-US;q=0.9,en-US;q=0.8",
                 "origin": "https://indonesiana.tv",
                 "referer": "https://indonesiana.tv/",
                 "user-agent": HEADERS["User-Agent"]
-            }
-            login_payload = {
-                "notification": {"channel": 0, "token": ""},
-                "email": "akun002fix@gmail.com",
-                "password": "Akun002x"
-            }
-            
-            res = requests.post(login_url, headers=login_headers, json=login_payload, timeout=15)
-            print(f"[+] Status Code Login API: {res.status_code}")
-            if res.status_code == 200:
-                res_json = res.json()
-                if res_json.get("success"):
-                    auth_token = res_json.get("data", {}).get("accessSession", {}).get("token")
-                    print("[✓] Login API berhasil mendapatkan token baru!")
-            else:
-                print(f"[!] Login API Gagal: {res.text}")
-        except Exception as e:
-            print(f"[!] API Login Exception: {e}")
+            })
 
+            # Langkah A: Request token anonim
+            anon_url = "https://api.indonesianatv.app/v1/users/anon/sessions"
+            anon_headers = {
+                "authorization": "Basic RjI5Q1c2NzY6dEZGNzJmNVNLN2lYbFFPTWNVYmFEVHpS",
+                "content-type": "application/json"
+            }
+            print("[*] Mengirim request ke anon/sessions...")
+            anon_res = session.post(anon_url, headers=anon_headers, json={}, timeout=15)
+            print(f"[+] Status Code Anon Session: {anon_res.status_code}")
+            
+            if anon_res.status_code == 200:
+                anon_data = anon_res.json()
+                anon_token = anon_data.get("data", {}).get("session", {}).get("token")
+                
+                if anon_token:
+                    print("[✓] Berhasil mendapatkan token anonim!")
+                    
+                    # Langkah B: Kirim email & password menggunakan token anonim
+                    email_url = "https://api.indonesianatv.app/v1/users/sessions/email"
+                    email_headers = {
+                        "authorization": f"Bearer {anon_token}",
+                        "content-type": "application/json"
+                    }
+                    email_payload = {
+                        "notification": {"channel": 0, "token": ""},
+                        "email": "akun002fix@gmail.com",
+                        "password": "Akun002x"
+                    }
+                    
+                    print("[*] Mengirim kredensial email ke sessions/email...")
+                    email_res = session.post(email_url, headers=email_headers, json=email_payload, timeout=15)
+                    print(f"[+] Status Code Email Login: {email_res.status_code}")
+                    
+                    if email_res.status_code == 200:
+                        email_data = email_res.json()
+                        if email_data.get("success"):
+                            auth_token = email_data.get("data", {}).get("accessSession", {}).get("token")
+                            print("[✓] Sukses mendapatkan Access Token Utama!")
+                        else:
+                            print(f"[!] Login API gagal merespon sukses: {email_res.text}")
+                    else:
+                        print(f"[!] Login Email Error: {email_res.text}")
+                else:
+                    print(f"[!] Token anonim tidak ditemukan di response: {anon_res.text}")
+            else:
+                print(f"[!] Gagal mengambil session anonim: {anon_res.text}")
+        except Exception as e:
+            print(f"[!] Exception pada proses autentikasi: {e}")
+
+        # Simpan token baru jika berhasil
         if auth_token:
             token_payload = {
                 "token": auth_token,
@@ -108,8 +141,8 @@ def test_api_login():
         print("[!] Gagal total mendapatkan token.")
         return
 
-    # 4. Tes Fetch EPG API
-    print("[*] Menguji pengambilan data EPG menggunakan token...")
+    # 4. Tes Fetch Data EPG
+    print("[*] Menguji pengambilan data EPG menggunakan token baru...")
     channel_code = "MMF"
     wib_tz = timezone(timedelta(hours=7))
     now_wib = datetime.now(timezone.utc).astimezone(wib_tz)
@@ -152,4 +185,4 @@ def test_api_login():
     print("=" * 60)
 
 if __name__ == "__main__":
-    test_api_login()
+    test_api_login_step_by_step()
