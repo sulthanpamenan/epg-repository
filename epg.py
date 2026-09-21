@@ -402,8 +402,19 @@ def fetch_epg_indonesiana(target):
                     content = json.loads(files[gist_filename]["content"])
                     saved_token = content.get("token")
                     if saved_token:
-                        auth_token = saved_token
-                        print(f"[✓] Indonesiana TV: Token successfully loaded from GitHub Gist.")
+                        try:
+                            test_headers = {"authorization": f"Bearer {saved_token}", "accept": "application/json"}
+                            test_res = requests.get(f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs?limit=1", headers=test_headers, timeout=8)
+                            
+                            if test_res.status_code == 200 and test_res.json().get("success"):
+                                auth_token = saved_token
+                                print(f"[✓] Indonesiana TV: Token valid loaded from GitHub Gist.")
+                            else:
+                                print(f"[!] Indonesiana TV: Token in Gist is expired or invalid. Re-authenticating...")
+                                auth_token = None
+                        except Exception:
+                            print(f"[!] Indonesiana TV: Token test timed out or failed. Re-authenticating...")
+                            auth_token = None
         except Exception as e:
             print(f"[!] Gist Fetch Error: {e}")
 
