@@ -498,6 +498,11 @@ def fetch_epg_indonesiana_with_token(target, auth_token):
             prog_data = prog_res.json()
             if prog_data.get("success"):
                 items = prog_data.get("data", {}).get("items", [])
+                
+                if not items:
+                    print(f"[!] Indonesiana TV [{target['name']}]: No schedule items found for this date range.")
+                    return channels, programmes
+                    
                 for item in items:
                     title = item.get("name")
                     start_str = item.get("startDate")
