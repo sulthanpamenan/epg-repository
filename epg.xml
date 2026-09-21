@@ -621,9 +621,6 @@
     <title lang="id">Rio Sang Juara</title>
     <category lang="id">Sinema Laga Klasik</category>
   </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="Tivie_btv.id">
-    <title lang="id">Berita Kriminal</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="Tivie_btv.id">
     <title lang="id">Berita Satu Sore</title>
   </programme>
@@ -702,9 +699,6 @@
   <programme start="20260921230000 +0700" stop="20260922000000 +0700" channel="Tivie_btv.id">
     <title lang="id">Mitos Tengah Malam</title>
   </programme>
-  <programme start="20260921011500 +0700" stop="20260921024500 +0700" channel="Tivie_cnnindonesia.id">
-    <title lang="id">CNN Indonesia Newsroom</title>
-  </programme>
   <programme start="20260921024500 +0700" stop="20260921041500 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Prime News</title>
   </programme>
@@ -779,9 +773,6 @@
   </programme>
   <programme start="20260921230000 +0700" stop="20260922000000 +0700" channel="Tivie_cnnindonesia.id">
     <title lang="id">CNN Indonesia Prime News</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Tivie_garudatv.id">
-    <title lang="id">Misteri Hidup</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="Tivie_garudatv.id">
     <title lang="id">Kabarnya Viral</title>
@@ -904,10 +895,6 @@
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="Tivie_gtv.id">
     <title lang="id">Kisah Viral</title>
   </programme>
-  <programme start="20260921011500 +0700" stop="20260921030000 +0700" channel="Tivie_indosiar.id">
-    <title lang="id">Flash Point</title>
-    <category lang="id">Mega Film Asia</category>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Tivie_indosiar.id">
     <title lang="id">Martial Arts of Shaolin</title>
     <category lang="id">Mega Film Asia</category>
@@ -1014,9 +1001,6 @@
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="Tivie_inews.id">
     <title lang="id">iNews Sport</title>
   </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="Tivie_kompastv.id">
-    <title lang="id">Kompas Sepekan</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kalam Hati</title>
   </programme>
@@ -1080,9 +1064,6 @@
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="Tivie_kompastv.id">
     <title lang="id">Kilas Kompas</title>
   </programme>
-  <programme start="20260921010000 +0700" stop="20260921030000 +0700" channel="Tivie_mdtv.id">
-    <title lang="id">I See Dead People</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921041000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">Di Balik Mitos</title>
   </programme>
@@ -1136,9 +1117,6 @@
   </programme>
   <programme start="20260921235000 +0700" stop="20260922005000 +0700" channel="Tivie_mdtv.id">
     <title lang="id">86</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Tivie_mentaritv.id">
-    <title lang="id">Madun</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Just for Laughs Gags</title>
@@ -1196,12 +1174,6 @@
   </programme>
   <programme start="20260921223000 +0700" stop="20260921233000 +0700" channel="Tivie_mentaritv.id">
     <title lang="id">Keluarga Somat</title>
-  </programme>
-  <programme start="20260921020500 +0700" stop="20260921030000 +0700" channel="Tivie_metrotv.id">
-    <title lang="id">Primetime News</title>
-  </programme>
-  <programme start="20260921030000 +0700" stop="20260921030500 +0700" channel="Tivie_metrotv.id">
-    <title lang="id">Headline News</title>
   </programme>
   <programme start="20260921030500 +0700" stop="20260921033000 +0700" channel="Tivie_metrotv.id">
     <title lang="id">Primetime News</title>
@@ -1417,9 +1389,6 @@
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="Tivie_moji.id">
     <title lang="id">Volleyball Nations League 2026</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Tivie_nusantaratv.id">
-    <title lang="id">NTV Toplines</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Sports</title>
   </programme>
@@ -1486,10 +1455,6 @@
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="Tivie_nusantaratv.id">
     <title lang="id">NTV Headlines</title>
   </programme>
-  <programme start="20260921013000 +0700" stop="20260921030000 +0700" channel="Tivie_rcti.id">
-    <title lang="id">From Paris to Ciamis</title>
-    <category lang="id">Mega Film TV Malam</category>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921051500 +0700" channel="Tivie_rcti.id">
     <title lang="id">Preman Pensiun</title>
   </programme>
@@ -1529,9 +1494,6 @@
   </programme>
   <programme start="20260921230000 +0700" stop="20260922000000 +0700" channel="Tivie_rcti.id">
     <title lang="id">Cinta dari Surga</title>
-  </programme>
-  <programme start="20260921013000 +0700" stop="20260921030000 +0700" channel="Tivie_rtv.id">
-    <title lang="id">Movinesia</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Ustadz On The Road</title>
@@ -1595,9 +1557,6 @@
   </programme>
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="Tivie_rtv.id">
     <title lang="id">Abrakadabra</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Tivie_sctv.id">
-    <title lang="id">Sinema Malam</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Tivie_sctv.id">
     <title lang="id">Sinema Dini Hari</title>
@@ -1754,9 +1713,6 @@
     <title lang="id">Crank: High Voltage</title>
     <category lang="id">Bioskop TransTV</category>
   </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="Tivie_trans7.id">
-    <title lang="id">Best Fishing</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Amazing Trip</title>
   </programme>
@@ -1828,9 +1784,6 @@
   </programme>
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="Tivie_trans7.id">
     <title lang="id">Misteri Dunia</title>
-  </programme>
-  <programme start="20260921013000 +0700" stop="20260921030000 +0700" channel="Tivie_tvone.id">
-    <title lang="id">Apa Kabar Indonesia Malam</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="Tivie_tvone.id">
     <title lang="id">Kabar Utama</title>
@@ -1967,8 +1920,11 @@
   <programme start="20260921210000 +0700" stop="20260921213000 +0700" channel="Tivie_tvri.id">
     <title lang="id">Dunia Dalam Berita</title>
   </programme>
-  <programme start="20260921213000 +0700" stop="20260921223000 +0700" channel="Tivie_tvri.id">
-    <title lang="id">Music Hub</title>
+  <programme start="20260921213000 +0700" stop="20260921220000 +0700" channel="Tivie_tvri.id">
+    <title lang="id">Inspirasi Indonesia</title>
+  </programme>
+  <programme start="20260921220000 +0700" stop="20260921223000 +0700" channel="Tivie_tvri.id">
+    <title lang="id">Monitor Olahraga</title>
   </programme>
   <programme start="20260921223000 +0700" stop="20260921233000 +0700" channel="Tivie_tvri.id">
     <title lang="id">COD - Canda of the Day</title>
@@ -2414,9 +2370,6 @@
   <programme start="20260921230000 +0700" stop="20260922000000 +0700" channel="Dens_densknowledge.id">
     <title lang="id">Scenic Relaxation</title>
   </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="Dens_channel-jowo.id">
-    <title lang="id">KI CAHYO KUNTADI # BABAT ALAS WONOMOTO 2-4</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Dens_channel-jowo.id">
     <title lang="id">Guyon Gayeng # Eps 67</title>
   </programme>
@@ -2504,9 +2457,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_channel-jowo.id">
     <title lang="id">KI Dwijo Kangko # Kresno Dhuto1</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_berita-satu.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_berita-satu.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
@@ -2573,9 +2523,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_berita-satu.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_elshinta-tv.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_elshinta-tv.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
@@ -2640,9 +2587,6 @@
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_elshinta-tv.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_magna-channel.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_magna-channel.id">
@@ -2786,9 +2730,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_jak-tv.id">
     <title lang="id">Euromaxx</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_rodjatv.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_rodjatv.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
@@ -2853,9 +2794,6 @@
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_rodjatv.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_daai-tv.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_daai-tv.id">
@@ -2924,9 +2862,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_daai-tv.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
-  <programme start="20260921022000 +0700" stop="20260921030500 +0700" channel="Dens_my-cinema-europe-hd.id">
-    <title lang="id">Spotlight Murder, episode 6</title>
-  </programme>
   <programme start="20260921030500 +0700" stop="20260921045000 +0700" channel="Dens_my-cinema-europe-hd.id">
     <title lang="id">Sicilian Holiday</title>
   </programme>
@@ -2968,9 +2903,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_my-cinema-europe-hd.id">
     <title lang="id">In Tranzit</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_crema-tv.id">
-    <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_crema-tv.id">
     <title lang="id">The Schedule Is Not Available</title>
@@ -3037,9 +2969,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_crema-tv.id">
     <title lang="id">The Schedule Is Not Available</title>
-  </programme>
-  <programme start="20260921015300 +0700" stop="20260921024500 +0700" channel="Dens_qwest-tv.id">
-    <title lang="id">Best of Jazz Festival de Cannes 1</title>
   </programme>
   <programme start="20260921024500 +0700" stop="20260921042300 +0700" channel="Dens_qwest-tv.id">
     <title lang="id">Cory Wong</title>
@@ -3329,9 +3258,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_motorvision.id">
     <title lang="id">Perfect Ride Far East Bargains</title>
   </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="Dens_cna.id">
-    <title lang="id">On The Red Dot, Ep 15</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="Dens_cna.id">
     <title lang="id">Asia Tonight</title>
   </programme>
@@ -3400,12 +3326,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_cna.id">
     <title lang="id">East Asia Tonight</title>
-  </programme>
-  <programme start="20260921021000 +0700" stop="20260921030000 +0700" channel="Dens_nhk-world-japan.id">
-    <title lang="id">Mt. Kitadake: The Epic Ridge</title>
-  </programme>
-  <programme start="20260921030000 +0700" stop="20260921031000 +0700" channel="Dens_nhk-world-japan.id">
-    <title lang="id">NHK Newsline</title>
   </programme>
   <programme start="20260921031000 +0700" stop="20260921034000 +0700" channel="Dens_nhk-world-japan.id">
     <title lang="id">Anime Manga Explosion</title>
@@ -3671,9 +3591,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_nhk-world-japan.id">
     <title lang="id">Sumopedia</title>
   </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="Dens_al-jazeera-english.id">
-    <title lang="id">Talk To Al Jazeera</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Dens_al-jazeera-english.id">
     <title lang="id">Shootout In Glenville</title>
   </programme>
@@ -3772,9 +3689,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_al-jazeera-english.id">
     <title lang="id">Earthrise: We Are Nature</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_trt-world.id">
-    <title lang="id">NEWSHOUR - LONDON</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="Dens_trt-world.id">
     <title lang="id">NEWS - LONDON</title>
@@ -3895,9 +3809,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_trt-world.id">
     <title lang="id">NEWSHOUR</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="Dens_russia-today-rt.id">
-    <title lang="id">Documentary</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="Dens_russia-today-rt.id">
     <title lang="id">Headline News</title>
@@ -4028,9 +3939,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_russia-today-rt.id">
     <title lang="id">Going Underground</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_wion.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_wion.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
@@ -4095,9 +4003,6 @@
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_wion.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_freedom.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_freedom.id">
@@ -4165,9 +4070,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_freedom.id">
     <title lang="id">The Schedule Is Not Available</title>
-  </programme>
-  <programme start="20260921020500 +0700" stop="20260921030000 +0700" channel="Dens_al-jazeera-arabic.id">
-    <title lang="id">A Story and Follow Up</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Dens_al-jazeera-arabic.id">
     <title lang="id">News Bulletin</title>
@@ -4247,9 +4149,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_al-jazeera-arabic.id">
     <title lang="id">News Bulletin</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_cctv-4.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_cctv-4.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
@@ -4315,15 +4214,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_cctv-4.id">
     <title lang="id">The Schedule Is Not Available</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921024500 +0700" channel="Dens_france-24.id">
-    <title lang="id">News (L)</title>
-  </programme>
-  <programme start="20260921024500 +0700" stop="20260921030000 +0700" channel="Dens_france-24.id">
-    <title lang="id">The Reporter's Week</title>
-  </programme>
-  <programme start="20260921030000 +0700" stop="20260921031000 +0700" channel="Dens_france-24.id">
-    <title lang="id">News (L)</title>
   </programme>
   <programme start="20260921031000 +0700" stop="20260921033000 +0700" channel="Dens_france-24.id">
     <title lang="id">Revisited</title>
@@ -4652,12 +4542,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_france-24.id">
     <title lang="id">Sports (L)</title>
   </programme>
-  <programme start="20260921022600 +0700" stop="20260921025000 +0700" channel="Dens_tv5monde-asie.id">
-    <title lang="id">64' DÃ‰BAT</title>
-  </programme>
-  <programme start="20260921025000 +0700" stop="20260921030000 +0700" channel="Dens_tv5monde-asie.id">
-    <title lang="id">INVITE TV5MONDE (L') 2026 (SEPT-DECEMBRE)</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Dens_tv5monde-asie.id">
     <title lang="id">COUSU</title>
   </programme>
@@ -4774,9 +4658,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_tv5monde-asie.id">
     <title lang="id">LE THÃ‰ORÃˆME DE MARGUERITE</title>
-  </programme>
-  <programme start="20260921021500 +0700" stop="20260921030000 +0700" channel="Dens_dw-tv.id">
-    <title lang="id">DocFilm</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921031500 +0700" channel="Dens_dw-tv.id">
     <title lang="id">DW News</title>
@@ -4982,9 +4863,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_dw-tv.id">
     <title lang="id">DocFilm</title>
   </programme>
-  <programme start="20260921000000 +0700" stop="20260921030000 +0700" channel="Dens_dim-tv.id">
-    <title lang="id">F s Callsign Tamada (12+)</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921035500 +0700" channel="Dens_dim-tv.id">
     <title lang="id">I Will Never Forget (Premiere)</title>
   </programme>
@@ -5023,9 +4901,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_dim-tv.id">
     <title lang="id">Uzol and Manko (12+)</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_cgtn-documentary.id">
-    <title lang="id">The Zhongshan State, Ep 6</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="Dens_cgtn-documentary.id">
     <title lang="id">The Legend Of Su Shi, Ep 2</title>
@@ -5123,9 +4998,6 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_cgtn-documentary.id">
     <title lang="id">In Footsteps Of M. Polo, Ep 2</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_tbn.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_tbn.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
@@ -5190,9 +5062,6 @@
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_tbn.id">
-    <title lang="id">The Schedule Is Not Available</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="Dens_sunna-tv.id">
     <title lang="id">The Schedule Is Not Available</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="Dens_sunna-tv.id">
@@ -5303,9 +5172,6 @@
   <programme start="20260921000000 +0700" stop="20260922000000 +0700" channel="Dens_wedotvamor.id">
     <title lang="id">El Desprecio</title>
   </programme>
-  <programme start="20260921005900 +0700" stop="20260921025300 +0700" channel="Dens_wedotvamor.id">
-    <title lang="id">Late Blossom Blues, Leo Bud Welch</title>
-  </programme>
   <programme start="20260921025300 +0700" stop="20260921034500 +0700" channel="Dens_wedotvamor.id">
     <title lang="id">Best of Jazz Festival de Cannes 1</title>
   </programme>
@@ -5344,12 +5210,6 @@
   </programme>
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_wedotvamor.id">
     <title lang="id">Its Showtime! by Qwest TV</title>
-  </programme>
-  <programme start="20260921021247 +0700" stop="20260921024000 +0700" channel="Dens_wedotvbig-stories.id">
-    <title lang="id">Wardens - S05:E17 - True Lies</title>
-  </programme>
-  <programme start="20260921024000 +0700" stop="20260921030616 +0700" channel="Dens_wedotvbig-stories.id">
-    <title lang="id">Wardens - S05:E18 - Head Case</title>
   </programme>
   <programme start="20260921030616 +0700" stop="20260921033331 +0700" channel="Dens_wedotvbig-stories.id">
     <title lang="id">Hollywood Weapons - S01:E03 - The Good, The Bad and Terry</title>
@@ -5573,6 +5433,14 @@
   <programme start="20260921235950 +0700" stop="20260922005950 +0700" channel="Dens_wedosports.id">
     <title lang="id">Clubland - S01:E26 - Villareal, Olympique Lyon</title>
   </programme>
+  <programme start="20260921201719 +0700" stop="20260921204319 +0700" channel="RedBullTV.global">
+    <title lang="en">Kiteboarding</title>
+    <desc lang="en">Explore the evolution of kiteboarding and see how events like Red Bull King of the Air push its progression.</desc>
+  </programme>
+  <programme start="20260921204319 +0700" stop="20260921212407 +0700" channel="RedBullTV.global">
+    <title lang="en">How Luke Czepiela Landed a Plane on a Tiny Helipad</title>
+    <desc lang="en">See rare BTS footage of an aviation marvel: landing a plane on Dubai’s Burj Al Arab tiny helipad.</desc>
+  </programme>
   <programme start="20260921212407 +0700" stop="20260921215007 +0700" channel="RedBullTV.global">
     <title lang="en">Freeride mountain biking</title>
     <desc lang="en">Learn how Red Bull Red Bull Rampage and Formation have pushed the boundaries of progression in freeride MTB.</desc>
@@ -5645,13 +5513,13 @@
     <title lang="en">Milestone</title>
     <desc lang="en">Follow snowboarder Eero Ettala behind the scenes as he works on a video part while balancing family life.</desc>
   </programme>
-  <programme start="20260922090851 +0700" stop="20260922093549 +0700" channel="RedBullTV.global">
-    <title lang="en">Highlights from Red Bull Erzbergrodeo 2025</title>
-    <desc lang="en">Catch up on the highlights of the toughest Hard Enduro race on the planet - Red Bull Erzbergrodeo.</desc>
+  <programme start="20260921201803 +0700" stop="20260921204352 +0700" channel="RedBullPadel.global">
+    <title lang="en">Italy Major Premier Padel highlights</title>
+    <desc lang="en">Watch the highlights from the Italy Major Premier Padel tournament held at Foro Italico in Rome.</desc>
   </programme>
-  <programme start="20260922093549 +0700" stop="20260922100114 +0700" channel="RedBullTV.global">
-    <title lang="en">Moto Rider vs Enduro Race</title>
-    <desc lang="en">Carson Brown returns to Red Bull Erzbergrodeo in 2025. Join his epic ride over rock faces and sharp sections.</desc>
+  <programme start="20260921204352 +0700" stop="20260921211018 +0700" channel="RedBullPadel.global">
+    <title lang="en">Meet padel stars Fernández, Triay, Lebrón and Yanguas</title>
+    <desc lang="en">Four padel players give an inside look into their lives and what makes the sport a global phenomenon.</desc>
   </programme>
   <programme start="20260921211018 +0700" stop="20260921213626 +0700" channel="RedBullPadel.global">
     <title lang="en">Malaga Premier Padel P1 highlights</title>
@@ -5725,13 +5593,9 @@
     <title lang="en">Malaga Premier Padel P1 highlights</title>
     <desc lang="en">Watch the highlights from the Malaga Premier Padel P1 tournament.</desc>
   </programme>
-  <programme start="20260922045449 +0700" stop="20260922051934 +0700" channel="RedBullPadel.global">
-    <title lang="en">Meet padel stars Coello, Sanchez, Chingotto and Salazar</title>
-    <desc lang="en">Four stars. Four cities. One sport. Hear emotional journeys from the padel court to the heart of the game.</desc>
-  </programme>
-  <programme start="20260922051934 +0700" stop="20260922054600 +0700" channel="RedBullPadel.global">
-    <title lang="en">Meet padel stars Fernández, Triay, Lebrón and Yanguas</title>
-    <desc lang="en">Four padel players give an inside look into their lives and what makes the sport a global phenomenon.</desc>
+  <programme start="20260921202240 +0700" stop="20260921210822 +0700" channel="RedBullBike.global">
+    <title lang="en">Gamble</title>
+    <desc lang="en">Raw speed, a heavy-hitting soundtrack and virgin locations – mountain bike riders show off their skills.</desc>
   </programme>
   <programme start="20260921210822 +0700" stop="20260921213250 +0700" channel="RedBullBike.global">
     <title lang="en">Nepal</title>
@@ -5809,19 +5673,23 @@
     <title lang="en">Full recap from Red Bull Formation 2022</title>
     <desc lang="en">Here’s what went down at the third edition of the women’s freeride MTB progression event at Virgin, Utah, USA.</desc>
   </programme>
-  <programme start="20260922040918 +0700" stop="20260922042602 +0700" channel="RedBullBike.global">
-    <title lang="en">Remy Morton: Seven Days and $7K</title>
-    <desc lang="en">Can Australian MTB freerider Remy Morton build his ultimate line in seven days and with a AUD$7,000 budget?</desc>
+  <programme start="20260921202522 +0700" stop="20260921204423 +0700" channel="RedBullAdventure.global">
+    <title lang="en">The high road part 2</title>
+    <desc lang="en">Nina Williams hones in on an outrageous new objective: a 15m-tall boulder called Too Big to Flail.</desc>
+  </programme>
+  <programme start="20260921204423 +0700" stop="20260921210111 +0700" channel="RedBullAdventure.global">
+    <title lang="en">Beneath the Ice</title>
+    <desc lang="en">Will Gadd uses his unmatched ice climbing skills and knowledge to lead a scientific expedition into a previously unexplored territory beneath the Greenland ice sheet.</desc>
   </programme>
   <programme start="20260921210111 +0700" stop="20260921214911 +0700" channel="RedBullAdventure.global">
     <title lang="en">360 Ascent</title>
     <desc lang="en">Climbers Janja Garnbret and Domen Škofic scale the tallest artificial multi-pitch route in the world.</desc>
   </programme>
-  <programme start="20260921214911 +0700" stop="20260921223411 +0700" channel="RedBullAdventure.global">
+  <programme start="20260921214911 +0700" stop="20260921223412 +0700" channel="RedBullAdventure.global">
     <title lang="en">The Last Ascent</title>
     <desc lang="en">Will Gadd embarks on a mission to have one last shot at climbing the glaciers of Mount Kilimanjaro.</desc>
   </programme>
-  <programme start="20260921223411 +0700" stop="20260921231041 +0700" channel="RedBullAdventure.global">
+  <programme start="20260921223412 +0700" stop="20260921231041 +0700" channel="RedBullAdventure.global">
     <title lang="en">Red Bull Dual Ascent</title>
     <desc lang="en">Sixteen world-class athletes on eight teams battle to be the fastest up a wall of six gruelling pitches.</desc>
   </programme>
@@ -5849,11 +5717,11 @@
     <title lang="en">Filming free solo on Les Drus in France</title>
     <desc lang="en">Alex Honnold, Nico Hojac and team take on an epic climb and film shoot on Les Drus in the Mont Blanc massif.</desc>
   </programme>
-  <programme start="20260922010451 +0700" stop="20260922012549 +0700" channel="RedBullAdventure.global">
+  <programme start="20260922010451 +0700" stop="20260922012550 +0700" channel="RedBullAdventure.global">
     <title lang="en">The Nose speed record part 1</title>
     <desc lang="en">Alex Honnold and Tommy Caldwell introduce us to the speed record on The Nose route up El Capitan, California.</desc>
   </programme>
-  <programme start="20260922012549 +0700" stop="20260922014401 +0700" channel="RedBullAdventure.global">
+  <programme start="20260922012550 +0700" stop="20260922014401 +0700" channel="RedBullAdventure.global">
     <title lang="en">The VR experiment</title>
     <desc lang="en">Alex Honnold, Nico Hojac and team take on an iconic face in the Italian Dolomites while filming a VR film.</desc>
   </programme>
@@ -5885,13 +5753,13 @@
     <title lang="en">Beneath the Ice</title>
     <desc lang="en">Will Gadd uses his unmatched ice climbing skills and knowledge to lead a scientific expedition into a previously unexplored territory beneath the Greenland ice sheet.</desc>
   </programme>
-  <programme start="20260922045257 +0700" stop="20260922053757 +0700" channel="RedBullAdventure.global">
-    <title lang="en">The Last Ascent</title>
-    <desc lang="en">Will Gadd embarks on a mission to have one last shot at climbing the glaciers of Mount Kilimanjaro.</desc>
+  <programme start="20260921200325 +0700" stop="20260921210627 +0700" channel="RedBullMotorsports.global">
+    <title lang="en">Crandon World Cup</title>
+    <desc lang="en">The first-ever off-road World Cup is here, and top racers from each pro-level class compete for the title.</desc>
   </programme>
-  <programme start="20260922053757 +0700" stop="20260922055043 +0700" channel="RedBullAdventure.global">
-    <title lang="en">Jason Paul’s Wild Ride</title>
-    <desc lang="en">Pro freerunner Jason Paul and friends head to Germany’s Mammut roller coaster for a unique parkour session.</desc>
+  <programme start="20260921210627 +0700" stop="20260921211710 +0700" channel="RedBullMotorsports.global">
+    <title lang="en">The drive to compete</title>
+    <desc lang="en">Riders discuss how they got started and the rivalry between Antonio Cairoli and Jeffrey Herlings.</desc>
   </programme>
   <programme start="20260921211710 +0700" stop="20260921220910 +0700" channel="RedBullMotorsports.global">
     <title lang="en">Red Bull Romaniacs</title>
@@ -5965,13 +5833,13 @@
     <title lang="en">Making a mark</title>
     <desc lang="en">Rene Hofer is the first Austrian this century to represent the most successful team in the MX World Champs.</desc>
   </programme>
-  <programme start="20260922050446 +0700" stop="20260922052043 +0700" channel="RedBullMotorsports.global">
-    <title lang="en">Meet Honda HRC's newest rider</title>
-    <desc lang="en">Jett and Hunter put their design skills to the test, while brother Tate joins the Honda HRC team.</desc>
+  <programme start="20260921201707 +0700" stop="20260921205748 +0700" channel="RedBullSurfing.global">
+    <title lang="en">RISS</title>
+    <desc lang="en">Ride with surfer Carissa Moore around the 2019 World Surf League Championship Tour.</desc>
   </programme>
-  <programme start="20260922052043 +0700" stop="20260922055157 +0700" channel="RedBullMotorsports.global">
-    <title lang="en">In the Wings</title>
-    <desc lang="en">Formula One driver Liam Lawson builds his F1 resume in his busiest season yet in 2023.</desc>
+  <programme start="20260921205748 +0700" stop="20260921211547 +0700" channel="RedBullSurfing.global">
+    <title lang="en">Lucas 'Chumbo' Chianca</title>
+    <desc lang="en">Join Brazil’s Lucas 'Chumbo' Chianca as he tackles the biggest waves on Earth across two memorable winters.</desc>
   </programme>
   <programme start="20260921211547 +0700" stop="20260921225045 +0700" channel="RedBullSurfing.global">
     <title lang="en">For the Dream</title>
@@ -6045,13 +5913,17 @@
     <title lang="en">Lucas 'Chumbo' Chianca</title>
     <desc lang="en">Join Brazil’s Lucas 'Chumbo' Chianca as he tackles the biggest waves on Earth across two memorable winters.</desc>
   </programme>
-  <programme start="20260922074114 +0700" stop="20260922085835 +0700" channel="RedBullSurfing.global">
-    <title lang="en">Shaka</title>
-    <desc lang="en">From the slopes to the waves – snowboarding legend Mathieu Crépel surfs Jaws.</desc>
+  <programme start="20260921201925 +0700" stop="20260921204719 +0700" channel="RedBullSkateboarding.global">
+    <title lang="en">Madars and the Fancy Lad crew</title>
+    <desc lang="en">Madars Apse is in Massachusetts to meet the group of friends redefining what's possible in skateboarding.</desc>
   </programme>
-  <programme start="20260922085835 +0700" stop="20260922093502 +0700" channel="RedBullSurfing.global">
-    <title lang="en">Meet Kehu Butler in New Zealand</title>
-    <desc lang="en">The future of Kiwi surfing, Māori Kehu Butler, examines his culture’s past in Made In: New Zealand.</desc>
+  <programme start="20260921204719 +0700" stop="20260921210624 +0700" channel="RedBullSkateboarding.global">
+    <title lang="en">Hometown skating in Lisbon</title>
+    <desc lang="en">Ride with skater Gustavo Ribeiro as he shows us his hometown of Lisbon, Portugal.</desc>
+  </programme>
+  <programme start="20260921210624 +0700" stop="20260921211712 +0700" channel="RedBullSkateboarding.global">
+    <title lang="en">Skating the streets of Barcelona</title>
+    <desc lang="en">Gustavo Ribeiro and the Ementa crew try some tricks on the streets of skateboarding’s first city – Barcelona.</desc>
   </programme>
   <programme start="20260921211712 +0700" stop="20260921214359 +0700" channel="RedBullSkateboarding.global">
     <title lang="en">Vibing with Felipe Nunes</title>
@@ -6121,17 +5993,17 @@
     <title lang="en">Johannesburg</title>
     <desc lang="en">Meet Brandon Valjalo and 30 more top dogs from South Africa's biggest skate scene in our super city report.</desc>
   </programme>
-  <programme start="20260922020008 +0700" stop="20260922022729 +0700" channel="RedBullSkateboarding.global">
-    <title lang="en">Douglas Miles Jr and Apache Skateboards</title>
-    <desc lang="en">Madars Apse reveals the incredible story of the community skate company thriving on a reservation in Arizona.</desc>
+  <programme start="20260921203005 +0700" stop="20260921204906 +0700" channel="RedBullWinter.global">
+    <title lang="en">BLOOOM</title>
+    <desc lang="en">Niels Schack's snowboard film features Burton team riders expressing themselves through creative riding.</desc>
   </programme>
-  <programme start="20260922022729 +0700" stop="20260922024634 +0700" channel="RedBullSkateboarding.global">
-    <title lang="en">Hometown skating in Lisbon</title>
-    <desc lang="en">Ride with skater Gustavo Ribeiro as he shows us his hometown of Lisbon, Portugal.</desc>
+  <programme start="20260921204906 +0700" stop="20260921211102 +0700" channel="RedBullWinter.global">
+    <title lang="en">The Regina monologues</title>
+    <desc lang="en">Mark and Craig have time for one more party before they head to the X Games in Aspen, Colorado, United States.</desc>
   </programme>
-  <programme start="20260922024634 +0700" stop="20260922025216 +0700" channel="RedBullSkateboarding.global">
-    <title lang="en">Skatepark of Tampa</title>
-    <desc lang="en">Joey and Rip are in Skatepark of Tampa, Florida, home of the world famous Tampa Pro skate competition.</desc>
+  <programme start="20260921211102 +0700" stop="20260921212205 +0700" channel="RedBullWinter.global">
+    <title lang="en">No days off for Scotty James and Maddie Mastro</title>
+    <desc lang="en">Scotty James and Maddie Mastro get some laps in as they train with their coach, James Jackson.</desc>
   </programme>
   <programme start="20260921212205 +0700" stop="20260921214714 +0700" channel="RedBullWinter.global">
     <title lang="en">Dynamic Medium</title>
@@ -6201,17 +6073,65 @@
     <title lang="en">Dynamic Medium</title>
     <desc lang="en">Watch American freeskier Bobby Brown chase the dynamic medium that is snow around the globe.</desc>
   </programme>
-  <programme start="20260922032052 +0700" stop="20260922033036 +0700" channel="RedBullWinter.global">
-    <title lang="en">Splitboarding in the Swiss Alps with Scotty James</title>
-    <desc lang="en">Earn some turns with Scotty James as the crew climb into the Swiss backcountry for a splitboarding adventure.</desc>
+  <programme start="20260921202836 +0700" stop="20260921203518 +0700" channel="RedBullActionReel.global">
+    <title lang="en">From sim to reality</title>
+    <desc lang="en">Max Verstappen gets sucked into his simulator and needs to clear different levels to get to the Belgium GP.</desc>
   </programme>
-  <programme start="20260922033036 +0700" stop="20260922034111 +0700" channel="RedBullWinter.global">
-    <title lang="en">Drop in at X Games with Scotty James</title>
-    <desc lang="en">Scotty James arrives in Aspen ready to entertain under the lights, and hunting for his sixth X Games medal.</desc>
+  <programme start="20260921203518 +0700" stop="20260921203807 +0700" channel="RedBullActionReel.global">
+    <title lang="en">The mighty waves of Nazaré</title>
+    <desc lang="en">Enjoy big-wave surfers taking on the monstrous slabs at Nazaré.</desc>
   </programme>
-  <programme start="20260922034111 +0700" stop="20260922035120 +0700" channel="RedBullWinter.global">
-    <title lang="en">The mountains are calling and Scotty James must go</title>
-    <desc lang="en">Kicking off in Australia last September, we join Scotty James as he packs his bags and heads to Switzerland.</desc>
+  <programme start="20260921203807 +0700" stop="20260921204053 +0700" channel="RedBullActionReel.global">
+    <title lang="en">360° of Jaxson Riddle</title>
+    <desc lang="en">See Jaxson Riddle’s tricks from every angle as he prepares to compete in his second Red Bull Rampage.</desc>
+  </programme>
+  <programme start="20260921204053 +0700" stop="20260921204436 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Jack Robinson</title>
+    <desc lang="en">Filmer Kim Feast showcases Western Australia's most promising young surfer, Jack Robinson.</desc>
+  </programme>
+  <programme start="20260921204436 +0700" stop="20260921204940 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Warehouse paradise</title>
+    <desc lang="en">Mini ramp suspended from ceiling – challenge accepted by skateboarders Jaakko Ojanen, Philipp Schuster and co.</desc>
+  </programme>
+  <programme start="20260921204940 +0700" stop="20260921205115 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Action from Fabio Wibmer's latest project</title>
+    <desc lang="en">Fabio Wibmer takes dicey situations and turns them into outstanding tricks for his film, Wibmer's Law.</desc>
+  </programme>
+  <programme start="20260921205115 +0700" stop="20260921205749 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Skate highlights</title>
+    <desc lang="en">Watch the best of an all-action eight-day skate demo mission through Europe with Ryan Sheckler and crew.</desc>
+  </programme>
+  <programme start="20260921205749 +0700" stop="20260921210250 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Off-road</title>
+    <desc lang="en">Watch off-roaders Seth Quintero and Mitch Guthrie Jr carve their lines in the King of the Hammers desert.</desc>
+  </programme>
+  <programme start="20260921210250 +0700" stop="20260921210514 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Matt Jones</title>
+    <desc lang="en">Step inside Matt Jones’s secret compound to find out just what it takes to take on the best in MTB.</desc>
+  </programme>
+  <programme start="20260921210514 +0700" stop="20260921211533 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Markus Eder in The Ultimate Run</title>
+    <desc lang="en">Take a cinematic journey in this Emmy Award-winning ski film from the world's most renowned freestyle skier, Markus Eder.</desc>
+  </programme>
+  <programme start="20260921211533 +0700" stop="20260921211755 +0700" channel="RedBullActionReel.global">
+    <title lang="en">The Soul Flyers</title>
+    <desc lang="en">In a world first, the Soul Flyers wingsuit pilots BASE jump off a mountain and land in a mid-air aeroplane.</desc>
+  </programme>
+  <programme start="20260921211755 +0700" stop="20260921212101 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Brandon Semenuk – Japan</title>
+    <desc lang="en">Brandon Semenuk and Revel Co head to Hakuba, Japan, for the latest instalment of MTB RAW.</desc>
+  </programme>
+  <programme start="20260921212101 +0700" stop="20260921212307 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Freerunning illusions</title>
+    <desc lang="en">Jason Paul and Pasha Petkuns play mind tricks as they defy gravity with their freerunning illusions.</desc>
+  </programme>
+  <programme start="20260921212307 +0700" stop="20260921212557 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Cherry blossoms</title>
+    <desc lang="en">Check out all the great spots skateboarder Simon Stricker found to shred on a trip to Taiwan.</desc>
+  </programme>
+  <programme start="20260921212557 +0700" stop="20260921212738 +0700" channel="RedBullActionReel.global">
+    <title lang="en">Carson Storch</title>
+    <desc lang="en">Watch Carson Storch ride through a forest and take on a train and rail track in 100 seconds of raw MTB action.</desc>
   </programme>
   <programme start="20260921212738 +0700" stop="20260921212945 +0700" channel="RedBullActionReel.global">
     <title lang="en">The Folgefonna session</title>
@@ -6232,69 +6152,6 @@
   <programme start="20260921214320 +0700" stop="20260921214733 +0700" channel="RedBullActionReel.global">
     <title lang="en">CJ Collins FER DAYZ</title>
     <desc lang="en">Abandoned pools, DIYs and even some street action from everyone's favourite all-terrain animal, CJ Collins.</desc>
-  </programme>
-  <programme start="20260921214733 +0700" stop="20260921215027 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Emil Johansson in New Zealand</title>
-    <desc lang="en">During his downtime in New Zealand, here’s what stylish Swede Emil Johansson got up to with Hunt Cinema.</desc>
-  </programme>
-  <programme start="20260921215027 +0700" stop="20260921215547 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Benny Milam’s snowmobile session with Levi LaVallee</title>
-    <desc lang="en">What do you do if you want to snowboard, but everything around you is flat? Benny Milam has an idea.</desc>
-  </programme>
-  <programme start="20260921215547 +0700" stop="20260921215915 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Realm featuring Brandon Semenuk</title>
-    <desc lang="en">We challenged Brandon Semenuk and Justin Wyper to build unique features. Here’s what they came up with.</desc>
-  </programme>
-  <programme start="20260921215915 +0700" stop="20260921220232 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Keys to the track</title>
-    <desc lang="en">Travis Pastrana, Alexander Rossi and Gregg Duffy are not deterred by the plunging winter temps.</desc>
-  </programme>
-  <programme start="20260921220232 +0700" stop="20260921220522 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Kolohe Andino</title>
-    <desc lang="en">Filmer Jacob Vanderwork brings us his best Kolohe Andino clips from their work together over the winter.</desc>
-  </programme>
-  <programme start="20260921220522 +0700" stop="20260921221156 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Skate highlights</title>
-    <desc lang="en">Watch the best of an all-action eight-day skate demo mission through Europe with Ryan Sheckler and crew.</desc>
-  </programme>
-  <programme start="20260921221156 +0700" stop="20260921221352 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Infinity Cube</title>
-    <desc lang="en">The Red Bull BC One All Stars show off their moves in a mirror cube that gives the illusion of infinity.</desc>
-  </programme>
-  <programme start="20260921221352 +0700" stop="20260921221852 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Off-road</title>
-    <desc lang="en">Watch off-roaders Seth Quintero and Mitch Guthrie Jr carve their lines in the King of the Hammers desert.</desc>
-  </programme>
-  <programme start="20260921221852 +0700" stop="20260921222355 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Cracked</title>
-    <desc lang="en">Toby Price races through the Australian Outback with his rally bike to deliver a carton of eggs.</desc>
-  </programme>
-  <programme start="20260921222355 +0700" stop="20260921222632 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Downhill drone chase</title>
-    <desc lang="en">The talented FPV drone pilots chase Tomáš Slavík down the iconic Red Bull Valparaíso track.</desc>
-  </programme>
-  <programme start="20260921222632 +0700" stop="20260921223136 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Warehouse paradise</title>
-    <desc lang="en">Mini ramp suspended from ceiling – challenge accepted by skateboarders Jaakko Ojanen, Philipp Schuster and co.</desc>
-  </programme>
-  <programme start="20260921223136 +0700" stop="20260921223531 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Project Istanbulls</title>
-    <desc lang="en">Pierre Gasly and Alex Albon took to the streets of Istanbul, Turkey, with a driving display through the city.</desc>
-  </programme>
-  <programme start="20260921223531 +0700" stop="20260921223720 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Brandon Semenuk unleashed in an abandoned mine</title>
-    <desc lang="en">For his sixth contribution to our Raw 100 series, Brandon Semenuk heads to Merritt, British Columbia.</desc>
-  </programme>
-  <programme start="20260921223720 +0700" stop="20260921224025 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Dreamland</title>
-    <desc lang="en">Two pro freerunners explore a shipping container-filled obstacle course through Turkey's Port of Haydarpaşa.</desc>
-  </programme>
-  <programme start="20260921224025 +0700" stop="20260921224311 +0700" channel="RedBullActionReel.global">
-    <title lang="en">Tahnée Seagrave tears up Lousã, Portugal</title>
-    <desc lang="en">British cyclist Tahnée Seagrave returns after serious injury to the UCI Downhill Mountain Bike World Cup.</desc>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_abc-australia_350.id">
-    <title lang="id">Offsiders</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_abc-australia_350.id">
     <title lang="id">News Breakfast</title>
@@ -6418,9 +6275,6 @@
   </programme>
   <programme start="20260921220000 +0700" stop="20260922000000 +0700" channel="MNC_al-quran-al-kareem_93.id">
     <title lang="id">Live From Mekkah</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_animax_157.id">
-    <title lang="id">Konosuba S2, Ep 8</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_animax_157.id">
     <title lang="id">One Piece: Marineford, Ep 502</title>
@@ -6547,9 +6401,6 @@
   </programme>
   <programme start="20260921233000 +0700" stop="20260922000000 +0700" channel="MNC_animax_157.id">
     <title lang="id">Black Clover S1, Ep 43</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_arirang_351.id">
-    <title lang="id">Arirang Prime</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_arirang_351.id">
     <title lang="id">Moo No Plan</title>
@@ -6689,9 +6540,6 @@
   <programme start="20260921232000 +0700" stop="20260921233000 +0700" channel="MNC_arirang_351.id">
     <title lang="id">Heritage Walks With Friend</title>
   </programme>
-  <programme start="20260921021500 +0700" stop="20260921031000 +0700" channel="MNC_axn_154.id">
-    <title lang="id">CIA S1, Ep 2</title>
-  </programme>
   <programme start="20260921031000 +0700" stop="20260921040500 +0700" channel="MNC_axn_154.id">
     <title lang="id">The Rainmaker S1, Ep 7</title>
   </programme>
@@ -6763,9 +6611,6 @@
   </programme>
   <programme start="20260921233000 +0700" stop="20260922002500 +0700" channel="MNC_axn_154.id">
     <title lang="id">CIA S1, Ep 3</title>
-  </programme>
-  <programme start="20260921021500 +0700" stop="20260921031000 +0700" channel="MNC_axn-hd_447.id">
-    <title lang="id">CIA S1, Ep 2</title>
   </programme>
   <programme start="20260921031000 +0700" stop="20260921040500 +0700" channel="MNC_axn-hd_447.id">
     <title lang="id">The Rainmaker S1, Ep 7</title>
@@ -6839,9 +6684,6 @@
   <programme start="20260921233000 +0700" stop="20260922002500 +0700" channel="MNC_axn-hd_447.id">
     <title lang="id">CIA S1, Ep 3</title>
   </programme>
-  <programme start="20260921021000 +0700" stop="20260921030000 +0700" channel="MNC_bbc-earth_200.id">
-    <title lang="id">Extreme Treks S4, Ep 1</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921033500 +0700" channel="MNC_bbc-earth_200.id">
     <title lang="id">Deadly 60 S7, Ep 1</title>
   </programme>
@@ -6914,9 +6756,6 @@
   <programme start="20260921234000 +0700" stop="20260922003500 +0700" channel="MNC_bbc-earth_200.id">
     <title lang="id">S. Perkins Into Alaska S1, Ep 3</title>
   </programme>
-  <programme start="20260921021000 +0700" stop="20260921030000 +0700" channel="MNC_bbc-earth-hd_461.id">
-    <title lang="id">Extreme Treks S4, Ep 1</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921033500 +0700" channel="MNC_bbc-earth-hd_461.id">
     <title lang="id">Deadly 60 S7, Ep 1</title>
   </programme>
@@ -6988,9 +6827,6 @@
   </programme>
   <programme start="20260921234000 +0700" stop="20260922003500 +0700" channel="MNC_bbc-earth-hd_461.id">
     <title lang="id">S. Perkins Into Alaska S1, Ep 3</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_bbc-world-news_332.id">
-    <title lang="id">Why The World Loved Dolly</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_bbc-world-news_332.id">
     <title lang="id">BBC News</title>
@@ -7460,9 +7296,6 @@
   <programme start="20260921230000 +0700" stop="20260922010000 +0700" channel="MNC_bein-sports-3-hd_419.id">
     <title lang="id">CAF Champions: MLS Vs LUP</title>
   </programme>
-  <programme start="20260921000000 +0700" stop="20260921030000 +0700" channel="MNC_bein-sports-4_312.id">
-    <title lang="id">beIN Sports 4</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921050000 +0700" channel="MNC_bein-sports-4_312.id">
     <title lang="id">beIN Sports 4</title>
   </programme>
@@ -7493,9 +7326,6 @@
   <programme start="20260921220000 +0700" stop="20260922000000 +0700" channel="MNC_bein-sports-4_312.id">
     <title lang="id">beIN Sports 4</title>
   </programme>
-  <programme start="20260921000000 +0700" stop="20260921030000 +0700" channel="MNC_bein-sports-5_313.id">
-    <title lang="id">beIN Sports 5</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921050000 +0700" channel="MNC_bein-sports-5_313.id">
     <title lang="id">beIN Sports 5</title>
   </programme>
@@ -7525,9 +7355,6 @@
   </programme>
   <programme start="20260921220000 +0700" stop="20260922000000 +0700" channel="MNC_bein-sports-5_313.id">
     <title lang="id">beIN Sports 5</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_bloomberg_338.id">
-    <title lang="id">The Mishal Husain Show</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_bloomberg_338.id">
     <title lang="id">The Mishal Husain Show</title>
@@ -7580,9 +7407,6 @@
   <programme start="20260921230000 +0700" stop="20260922000000 +0700" channel="MNC_bloomberg_338.id">
     <title lang="id">Bloomberg ETF IQ</title>
   </programme>
-  <programme start="20260921011000 +0700" stop="20260921025100 +0700" channel="MNC_buddy-stars_9.id">
-    <title lang="id">Antboy 3</title>
-  </programme>
   <programme start="20260921025100 +0700" stop="20260921042700 +0700" channel="MNC_buddy-stars_9.id">
     <title lang="id">Space Racers</title>
   </programme>
@@ -7622,9 +7446,6 @@
   <programme start="20260921231700 +0700" stop="20260922004800 +0700" channel="MNC_buddy-stars_9.id">
     <title lang="id">Space Racers</title>
   </programme>
-  <programme start="20260921011000 +0700" stop="20260921025100 +0700" channel="MNC_buddy-stars-hd_403.id">
-    <title lang="id">Antboy 3</title>
-  </programme>
   <programme start="20260921025100 +0700" stop="20260921042700 +0700" channel="MNC_buddy-stars-hd_403.id">
     <title lang="id">Space Racers</title>
   </programme>
@@ -7663,27 +7484,6 @@
   </programme>
   <programme start="20260921231700 +0700" stop="20260922004800 +0700" channel="MNC_buddy-stars-hd_403.id">
     <title lang="id">Space Racers</title>
-  </programme>
-  <programme start="20260921022100 +0700" stop="20260921023500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Mojo Swoptops S1, Ep 43</title>
-  </programme>
-  <programme start="20260921023500 +0700" stop="20260921024200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Supertato S2, Ep 38</title>
-  </programme>
-  <programme start="20260921024200 +0700" stop="20260921025000 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Supertato S2, Ep 37</title>
-  </programme>
-  <programme start="20260921025000 +0700" stop="20260921025200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Supertato Songs S1, Ep 4</title>
-  </programme>
-  <programme start="20260921025200 +0700" stop="20260921025500 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Supertato Songs S1, Ep 5</title>
-  </programme>
-  <programme start="20260921025500 +0700" stop="20260921030200 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S2, Ep 42</title>
-  </programme>
-  <programme start="20260921030200 +0700" stop="20260921030900 +0700" channel="MNC_cbeebies_41.id">
-    <title lang="id">Hey Duggee S2, Ep 43</title>
   </programme>
   <programme start="20260921030900 +0700" stop="20260921031600 +0700" channel="MNC_cbeebies_41.id">
     <title lang="id">Hey Duggee S2, Ep 44</title>
@@ -7771,9 +7571,6 @@
   </programme>
   <programme start="20260921070700 +0700" stop="20260921071500 +0700" channel="MNC_cbeebies_41.id">
     <title lang="id">Bluey S3, Ep 26</title>
-  </programme>
-  <programme start="20260921011000 +0700" stop="20260921025000 +0700" channel="MNC_ccm_22.id">
-    <title lang="id">New Tales Of The Flying Fox</title>
   </programme>
   <programme start="20260921025000 +0700" stop="20260921043500 +0700" channel="MNC_ccm_22.id">
     <title lang="id">The Golden Knight</title>
@@ -7889,9 +7686,6 @@
   <programme start="20260921233000 +0700" stop="20260922010000 +0700" channel="MNC_celebrities-tv_96.id">
     <title lang="id">Gara-Gara Cempaka</title>
   </programme>
-  <programme start="20260921010500 +0700" stop="20260921024000 +0700" channel="MNC_celestial-movies_20.id">
-    <title lang="id">Girl With The Diamond Slipper</title>
-  </programme>
   <programme start="20260921024000 +0700" stop="20260921043000 +0700" channel="MNC_celestial-movies_20.id">
     <title lang="id">Iceman</title>
   </programme>
@@ -7930,9 +7724,6 @@
   </programme>
   <programme start="20260921231000 +0700" stop="20260922005000 +0700" channel="MNC_celestial-movies_20.id">
     <title lang="id">Prince Charming</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_cgtn_353.id">
-    <title lang="id">Inheritors</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_cgtn_353.id">
     <title lang="id">The World Today</title>
@@ -8183,9 +7974,6 @@
   <programme start="20260921230000 +0700" stop="20260922000000 +0700" channel="MNC_cnbc_337.id">
     <title lang="id">Halftime Report</title>
   </programme>
-  <programme start="20260921021500 +0700" stop="20260921030500 +0700" channel="MNC_crime-investigation_207.id">
-    <title lang="id">Hoarders S15, Ep 7</title>
-  </programme>
   <programme start="20260921030500 +0700" stop="20260921040000 +0700" channel="MNC_crime-investigation_207.id">
     <title lang="id">Hoarders S15, Ep 8</title>
   </programme>
@@ -8266,15 +8054,6 @@
   </programme>
   <programme start="20260921232500 +0700" stop="20260922002000 +0700" channel="MNC_crime-investigation_207.id">
     <title lang="id">Spellbound: Crimes Of The Mind</title>
-  </programme>
-  <programme start="20260921021500 +0700" stop="20260921024000 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">Abominable &amp; The Invisible City</title>
-  </programme>
-  <programme start="20260921024000 +0700" stop="20260921025200 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">My Life Me</title>
-  </programme>
-  <programme start="20260921025200 +0700" stop="20260921030500 +0700" channel="MNC_dreamworks_47.id">
-    <title lang="id">My Life Me</title>
   </programme>
   <programme start="20260921030500 +0700" stop="20260921031700 +0700" channel="MNC_dreamworks_47.id">
     <title lang="id">My Life Me</title>
@@ -8402,15 +8181,6 @@
   <programme start="20260921191000 +0700" stop="20260921193500 +0700" channel="MNC_dreamworks_47.id">
     <title lang="id">Dragons: Race To The Edge</title>
   </programme>
-  <programme start="20260921021500 +0700" stop="20260921024000 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">Abominable &amp; The Invisible City</title>
-  </programme>
-  <programme start="20260921024000 +0700" stop="20260921025200 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">My Life Me</title>
-  </programme>
-  <programme start="20260921025200 +0700" stop="20260921030500 +0700" channel="MNC_dreamworks-hd_473.id">
-    <title lang="id">My Life Me</title>
-  </programme>
   <programme start="20260921030500 +0700" stop="20260921031700 +0700" channel="MNC_dreamworks-hd_473.id">
     <title lang="id">My Life Me</title>
   </programme>
@@ -8537,9 +8307,6 @@
   <programme start="20260921191000 +0700" stop="20260921193500 +0700" channel="MNC_dreamworks-hd_473.id">
     <title lang="id">Dragons: Race To The Edge</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_entertainment_86.id">
-    <title lang="id">Masihkah Kau Mencintaiku</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921050000 +0700" channel="MNC_entertainment_86.id">
     <title lang="id">White</title>
   </programme>
@@ -8581,18 +8348,6 @@
   </programme>
   <programme start="20260921223000 +0700" stop="20260922010000 +0700" channel="MNC_entertainment_86.id">
     <title lang="id">Kontes Swara Bintang</title>
-  </programme>
-  <programme start="20260921022900 +0700" stop="20260921023400 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">5 Minutes</title>
-  </programme>
-  <programme start="20260921023400 +0700" stop="20260921024800 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">The Ring</title>
-  </programme>
-  <programme start="20260921024800 +0700" stop="20260921030000 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">News</title>
-  </programme>
-  <programme start="20260921030000 +0700" stop="20260921030500 +0700" channel="MNC_euronews_333.id">
-    <title lang="id">5 Minutes</title>
   </programme>
   <programme start="20260921030500 +0700" stop="20260921033000 +0700" channel="MNC_euronews_333.id">
     <title lang="id">12 Minutes With</title>
@@ -8699,9 +8454,6 @@
   <programme start="20260921104800 +0700" stop="20260921110000 +0700" channel="MNC_euronews_333.id">
     <title lang="id">News</title>
   </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_fight-sports_304.id">
-    <title lang="id">Wide World Of Fights S3, Ep 39</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_fight-sports_304.id">
     <title lang="id">Knockouts!: Hopkins Vs Wright</title>
   </programme>
@@ -8770,9 +8522,6 @@
   </programme>
   <programme start="20260921230000 +0700" stop="20260922000000 +0700" channel="MNC_fight-sports_304.id">
     <title lang="id">FS MMA: Du Plessis Vs Haratyk</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_food-travel_95.id">
-    <title lang="id">Tukang Makan</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_food-travel_95.id">
     <title lang="id">Dapur Panik</title>
@@ -8882,9 +8631,6 @@
   <programme start="20260921233000 +0700" stop="20260922000000 +0700" channel="MNC_food-travel_95.id">
     <title lang="id">Explorazi</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_food-travel-hd_459.id">
-    <title lang="id">Tukang Makan</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_food-travel-hd_459.id">
     <title lang="id">Dapur Panik</title>
   </programme>
@@ -8993,9 +8739,6 @@
   <programme start="20260921233000 +0700" stop="20260922000000 +0700" channel="MNC_food-travel-hd_459.id">
     <title lang="id">Explorazi</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_fox-news_335.id">
-    <title lang="id">Fox Report With Jon Scott</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_fox-news_335.id">
     <title lang="id">Fox Report With Jon Scott</title>
   </programme>
@@ -9058,9 +8801,6 @@
   </programme>
   <programme start="20260921230000 +0700" stop="20260922000000 +0700" channel="MNC_fox-news_335.id">
     <title lang="id">Outnumbered</title>
-  </programme>
-  <programme start="20260921013000 +0700" stop="20260921030000 +0700" channel="MNC_galaxy_13.id">
-    <title lang="id">The Super</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="MNC_galaxy_13.id">
     <title lang="id">The Housekeeper</title>
@@ -9146,9 +8886,6 @@
   <programme start="20260921225500 +0700" stop="20260922010000 +0700" channel="MNC_galaxy-premium_12.id">
     <title lang="id">Spider-Man: Homecoming</title>
   </programme>
-  <programme start="20260921020500 +0700" stop="20260921030500 +0700" channel="MNC_global-trekker_201.id">
-    <title lang="id">Iceland: The Puffin Sanctuary</title>
-  </programme>
   <programme start="20260921030500 +0700" stop="20260921040500 +0700" channel="MNC_global-trekker_201.id">
     <title lang="id">The Humboldt Current, Ep 2</title>
   </programme>
@@ -9232,9 +8969,6 @@
   </programme>
   <programme start="20260921235000 +0700" stop="20260922005000 +0700" channel="MNC_global-trekker_201.id">
     <title lang="id">Into The Cosmos: Space Race...</title>
-  </programme>
-  <programme start="20260921020500 +0700" stop="20260921030500 +0700" channel="MNC_global-trekker-hd_462.id">
-    <title lang="id">Iceland: The Puffin Sanctuary</title>
   </programme>
   <programme start="20260921030500 +0700" stop="20260921040500 +0700" channel="MNC_global-trekker-hd_462.id">
     <title lang="id">The Humboldt Current, Ep 2</title>
@@ -9464,9 +9198,6 @@
   <programme start="20260921234000 +0700" stop="20260922003500 +0700" channel="MNC_history_206.id">
     <title lang="id">Pawn Stars S24, Ep 627</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_hits_160.id">
-    <title lang="id">T.J. Hooker S3, Ep 19</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_hits_160.id">
     <title lang="id">Mission Impossible S2, Ep 13</title>
   </programme>
@@ -9605,9 +9336,6 @@
   <programme start="20260921234500 +0700" stop="20260922014500 +0700" channel="MNC_hits-movies-hd_409.id">
     <title lang="id">The Fast And The Furious</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_idx_100.id">
-    <title lang="id">New Top Files</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_idx_100.id">
     <title lang="id">OMG IDX</title>
   </programme>
@@ -9690,9 +9418,6 @@
     <title lang="id">Technobizz</title>
   </programme>
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="MNC_idx_100.id">
-    <title lang="id">New Top Files</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_idx-hd_436.id">
     <title lang="id">New Top Files</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_idx-hd_436.id">
@@ -9779,9 +9504,6 @@
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="MNC_idx-hd_436.id">
     <title lang="id">New Top Files</title>
   </programme>
-  <programme start="20260921015500 +0700" stop="20260921031000 +0700" channel="MNC_imc_14.id">
-    <title lang="id">Pelet Kuntilanak</title>
-  </programme>
   <programme start="20260921031000 +0700" stop="20260921045500 +0700" channel="MNC_imc_14.id">
     <title lang="id">Arie Hanggara</title>
   </programme>
@@ -9820,9 +9542,6 @@
   </programme>
   <programme start="20260921232000 +0700" stop="20260922004000 +0700" channel="MNC_imc_14.id">
     <title lang="id">Kutukan Arwah Santet</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_kids-tv_46.id">
-    <title lang="id">Morphle</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_kids-tv_46.id">
     <title lang="id">Backkom S5</title>
@@ -9937,9 +9656,6 @@
   </programme>
   <programme start="20260921233000 +0700" stop="20260922000000 +0700" channel="MNC_kids-tv_46.id">
     <title lang="id">Kiko S4</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_kids-tv-hd_471.id">
-    <title lang="id">Morphle</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_kids-tv-hd_471.id">
     <title lang="id">Backkom S5</title>
@@ -10103,9 +9819,6 @@
   <programme start="20260921232500 +0700" stop="20260922004000 +0700" channel="MNC_kix_161.id">
     <title lang="id">Blood Hunters: Rise Of Hybrids</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_life_91.id">
-    <title lang="id">Suara Alfa Omega</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_life_91.id">
     <title lang="id">Saat Teduh Bersama</title>
   </programme>
@@ -10268,9 +9981,6 @@
   <programme start="20260921223500 +0700" stop="20260922000500 +0700" channel="MNC_lifetime_167.id">
     <title lang="id">MasterChef Australia S18, Ep 56</title>
   </programme>
-  <programme start="20260921021500 +0700" stop="20260921031000 +0700" channel="MNC_love-nature_204.id">
-    <title lang="id">Wildest New Zealand S1, Ep 3</title>
-  </programme>
   <programme start="20260921031000 +0700" stop="20260921040500 +0700" channel="MNC_love-nature_204.id">
     <title lang="id">Wildest New Zealand S1, Ep 4</title>
   </programme>
@@ -10343,9 +10053,6 @@
   <programme start="20260921233500 +0700" stop="20260922002500 +0700" channel="MNC_love-nature_204.id">
     <title lang="id">Wildlife ER S2, Ep 5</title>
   </programme>
-  <programme start="20260921021500 +0700" stop="20260921031000 +0700" channel="MNC_love-nature-hd_463.id">
-    <title lang="id">Wildest New Zealand S1, Ep 3</title>
-  </programme>
   <programme start="20260921031000 +0700" stop="20260921040500 +0700" channel="MNC_love-nature-hd_463.id">
     <title lang="id">Wildest New Zealand S1, Ep 4</title>
   </programme>
@@ -10417,9 +10124,6 @@
   </programme>
   <programme start="20260921233500 +0700" stop="20260922002500 +0700" channel="MNC_love-nature-hd_463.id">
     <title lang="id">Wildlife ER S2, Ep 5</title>
-  </programme>
-  <programme start="20260921005900 +0700" stop="20260921030000 +0700" channel="MNC_moonbug_40.id">
-    <title lang="id">Little Baby Bum: Lullabies</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_moonbug_40.id">
     <title lang="id">Digley &amp; Dazey</title>
@@ -10658,9 +10362,6 @@
   <programme start="20260921233000 +0700" stop="20260922020000 +0700" channel="MNC_music-tv-hd_444.id">
     <title lang="id">Indonesian Idol X</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_muslim-tv_92.id">
-    <title lang="id">Cahaya Lentera Hati</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_muslim-tv_92.id">
     <title lang="id">99 Nama Cinta</title>
   </programme>
@@ -10723,12 +10424,6 @@
   </programme>
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="MNC_muslim-tv_92.id">
     <title lang="id">Titik Balik</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921023500 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">World Weather</title>
-  </programme>
-  <programme start="20260921023500 +0700" stop="20260921030000 +0700" channel="MNC_nhk-world-premium_354.id">
-    <title lang="id">Grand Sumo 2026 Highlights</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921034500 +0700" channel="MNC_nhk-world-premium_354.id">
     <title lang="id">Brothers In Arms, Ep 36</title>
@@ -10859,12 +10554,6 @@
   <programme start="20260921161000 +0700" stop="20260921162000 +0700" channel="MNC_nhk-world-premium_354.id">
     <title lang="id">Fun With Japanese</title>
   </programme>
-  <programme start="20260921021500 +0700" stop="20260921024000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260921024000 +0700" stop="20260921030000 +0700" channel="MNC_nick-jr-hd_472.id">
-    <title lang="id">Dora</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921032500 +0700" channel="MNC_nick-jr-hd_472.id">
     <title lang="id">Dora</title>
   </programme>
@@ -10978,12 +10667,6 @@
   </programme>
   <programme start="20260921162500 +0700" stop="20260921164500 +0700" channel="MNC_nick-jr-hd_472.id">
     <title lang="id">The Creature Cases</title>
-  </programme>
-  <programme start="20260921022500 +0700" stop="20260921025000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">iCarly</title>
-  </programme>
-  <programme start="20260921025000 +0700" stop="20260921031000 +0700" channel="MNC_nickelodeon_49.id">
-    <title lang="id">Victorious</title>
   </programme>
   <programme start="20260921031000 +0700" stop="20260921033500 +0700" channel="MNC_nickelodeon_49.id">
     <title lang="id">Sam &amp; Cat</title>
@@ -11110,12 +10793,6 @@
   </programme>
   <programme start="20260921180000 +0700" stop="20260921182000 +0700" channel="MNC_nickelodeon_49.id">
     <title lang="id">That Girl Lay Lay</title>
-  </programme>
-  <programme start="20260921021500 +0700" stop="20260921024000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Rubble &amp; Crew</title>
-  </programme>
-  <programme start="20260921024000 +0700" stop="20260921030000 +0700" channel="MNC_nickelodeon-jr_37.id">
-    <title lang="id">Dora</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921032500 +0700" channel="MNC_nickelodeon-jr_37.id">
     <title lang="id">Dora</title>
@@ -11303,9 +10980,6 @@
   <programme start="20260921232200 +0700" stop="20260922010100 +0700" channel="MNC_originals-hd_401.id">
     <title lang="id">Concrete Plans</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_outdoor-channel_202.id">
-    <title lang="id">Running Wild S1, Ep 6</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_outdoor-channel_202.id">
     <title lang="id">Running Wild S2, Ep 1</title>
   </programme>
@@ -11380,9 +11054,6 @@
   </programme>
   <programme start="20260921233000 +0700" stop="20260922000000 +0700" channel="MNC_outdoor-channel_202.id">
     <title lang="id">Dead Meat S6, Ep 4</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_outdoor-channel-hd_460.id">
-    <title lang="id">Running Wild S1, Ep 6</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_outdoor-channel-hd_460.id">
     <title lang="id">Running Wild S2, Ep 1</title>
@@ -11459,9 +11130,6 @@
   <programme start="20260921233000 +0700" stop="20260922000000 +0700" channel="MNC_outdoor-channel-hd_460.id">
     <title lang="id">Dead Meat S6, Ep 4</title>
   </programme>
-  <programme start="20260921011500 +0700" stop="20260921030000 +0700" channel="MNC_rock-action_248.id">
-    <title lang="id">Assassin's Creed</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921043000 +0700" channel="MNC_rock-action_248.id">
     <title lang="id">Rambo: First Blood</title>
   </programme>
@@ -11500,9 +11168,6 @@
   </programme>
   <programme start="20260921233000 +0700" stop="20260922011000 +0700" channel="MNC_rock-action_248.id">
     <title lang="id">Doomsday</title>
-  </programme>
-  <programme start="20260921014500 +0700" stop="20260921024000 +0700" channel="MNC_rock-entertainment_240.id">
-    <title lang="id">Real Housewives Of..., Ep 14</title>
   </programme>
   <programme start="20260921024000 +0700" stop="20260921033500 +0700" channel="MNC_rock-entertainment_240.id">
     <title lang="id">Real Housewives Of..., Ep 1</title>
@@ -12119,9 +11784,6 @@
   <programme start="20260921233000 +0700" stop="20260922003000 +0700" channel="MNC_spotv-hd_427.id">
     <title lang="id">KPMG Women's Irish Open HL</title>
   </programme>
-  <programme start="20260921004500 +0700" stop="20260921024000 +0700" channel="MNC_studio-universal_26.id">
-    <title lang="id">Patch Adams</title>
-  </programme>
   <programme start="20260921024000 +0700" stop="20260921042000 +0700" channel="MNC_studio-universal_26.id">
     <title lang="id">Kicking &amp; Screaming</title>
   </programme>
@@ -12157,9 +11819,6 @@
   </programme>
   <programme start="20260921222500 +0700" stop="20260922000000 +0700" channel="MNC_studio-universal_26.id">
     <title lang="id">Shrek The Third</title>
-  </programme>
-  <programme start="20260921004500 +0700" stop="20260921024000 +0700" channel="MNC_studio-universal-hd_406.id">
-    <title lang="id">Patch Adams</title>
   </programme>
   <programme start="20260921024000 +0700" stop="20260921042000 +0700" channel="MNC_studio-universal-hd_406.id">
     <title lang="id">Kicking &amp; Screaming</title>
@@ -12268,9 +11927,6 @@
   </programme>
   <programme start="20260921224800 +0700" stop="20260922004300 +0700" channel="MNC_superrix-hd_404.id">
     <title lang="id">Gold Of Rio Bravo: Sheriff...</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921030000 +0700" channel="MNC_tawaf-tv_105.id">
-    <title lang="id">DMI TV</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_tawaf-tv_105.id">
     <title lang="id">DMI TV</title>
@@ -12434,9 +12090,6 @@
   <programme start="20260921230000 +0700" stop="20260922003500 +0700" channel="MNC_thrill_19.id">
     <title lang="id">Mulu Nakru</title>
   </programme>
-  <programme start="20260921004000 +0700" stop="20260921024000 +0700" channel="MNC_tvn_158.id">
-    <title lang="id">Fresh Off The Sea S3, Ep 6</title>
-  </programme>
   <programme start="20260921024000 +0700" stop="20260921044000 +0700" channel="MNC_tvn_158.id">
     <title lang="id">Fresh Off The Sea S3, Ep 7</title>
   </programme>
@@ -12493,9 +12146,6 @@
   </programme>
   <programme start="20260921235000 +0700" stop="20260922014000 +0700" channel="MNC_tvn_158.id">
     <title lang="id">Abra-Ca Empty, Ep 3</title>
-  </programme>
-  <programme start="20260921004000 +0700" stop="20260921024000 +0700" channel="MNC_tvn-hd_446.id">
-    <title lang="id">Fresh Off The Sea S3, Ep 6</title>
   </programme>
   <programme start="20260921024000 +0700" stop="20260921044000 +0700" channel="MNC_tvn-hd_446.id">
     <title lang="id">Fresh Off The Sea S3, Ep 7</title>
@@ -12704,9 +12354,6 @@
   <programme start="20260921235400 +0700" stop="20260922013500 +0700" channel="MNC_uniques-hd_405.id">
     <title lang="id">The Short History Of Long Road</title>
   </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_vision-prime_94.id">
-    <title lang="id">Cinta Yasmin</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_vision-prime_94.id">
     <title lang="id">Ternyata Ini Cinta</title>
   </programme>
@@ -12751,9 +12398,6 @@
   </programme>
   <programme start="20260921220000 +0700" stop="20260922000000 +0700" channel="MNC_vision-prime_94.id">
     <title lang="id">Critical Eleven</title>
-  </programme>
-  <programme start="20260921020000 +0700" stop="20260921030000 +0700" channel="MNC_vision-prime-hd_1.id">
-    <title lang="id">Cinta Yasmin</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921040000 +0700" channel="MNC_vision-prime-hd_1.id">
     <title lang="id">Ternyata Ini Cinta</title>
@@ -12800,9 +12444,6 @@
   <programme start="20260921220000 +0700" stop="20260922000000 +0700" channel="MNC_vision-prime-hd_1.id">
     <title lang="id">Critical Eleven</title>
   </programme>
-  <programme start="20260921000000 +0700" stop="20260921030000 +0700" channel="MNC_zee-bioskop_23.id">
-    <title lang="id">Kisi Ka Bhai Kisi Ki Jaan</title>
-  </programme>
   <programme start="20260921030000 +0700" stop="20260921060000 +0700" channel="MNC_zee-bioskop_23.id">
     <title lang="id">Gangubai Kathiawadi</title>
   </programme>
@@ -12826,12 +12467,6 @@
   </programme>
   <programme start="20260921210000 +0700" stop="20260922000000 +0700" channel="MNC_zee-bioskop_23.id">
     <title lang="id">Veere Di Wedding</title>
-  </programme>
-  <programme start="20260921023000 +0700" stop="20260921024500 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 43</title>
-  </programme>
-  <programme start="20260921024500 +0700" stop="20260921030000 +0700" channel="MNC_zoomoo_39.id">
-    <title lang="id">Leo: Wildlife Ranger S2, Ep 44</title>
   </programme>
   <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="MNC_zoomoo_39.id">
     <title lang="id">Splash And Bubbles S1, Ep 38</title>
@@ -13020,13 +12655,9 @@
     <title lang="kk">Қазір айтайық</title>
     <desc lang="kk">Әлеуметтік ток-шоу</desc>
   </programme>
-  <programme start="20260921180000 +0500" stop="20260921200000 +0500" channel="Qazaqstan.kz">
+  <programme start="20260921180000 +0500" stop="20260921203000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Мелек</title>
-    <desc lang="kk">Қазірэфирде</desc>
-  </programme>
-  <programme start="20260921200000 +0500" stop="20260921203000 +0500" channel="Qazaqstan.kz">
-    <title lang="kk">Ақпарат</title>
-    <desc lang="kk">Жаңалықтар</desc>
+    <desc lang="kk">Телехикая</desc>
   </programme>
   <programme start="20260921203000 +0500" stop="20260921213000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Соңғы хат</title>
@@ -13043,10 +12674,6 @@
   <programme start="20260921232000 +0500" stop="20260922002000 +0500" channel="Qazaqstan.kz">
     <title lang="kk">1001 түн</title>
     <desc lang="kk">Ойын-сауықтық бағдарлама</desc>
-  </programme>
-  <programme start="20260921014500 +0500" stop="20260921025000 +0500" channel="Qazaqstan.kz">
-    <title lang="kk">Ашық алаң</title>
-    <desc lang="kk">Қоғамдық-саяси ток-шоу</desc>
   </programme>
   <programme start="20260921025000 +0500" stop="20260921033500 +0500" channel="Qazaqstan.kz">
     <title lang="kk">Қызық екен</title>
@@ -13155,10 +12782,6 @@
     <title lang="kk">1001 түн</title>
     <desc lang="kk">Ойын-сауықтық бағдарлама</desc>
   </programme>
-  <programme start="20260921014500 +0500" stop="20260921025000 +0500" channel="QazaqstanInt.kz">
-    <title lang="kk">Ашық алаң</title>
-    <desc lang="kk">Қоғамдық-саяси ток-шоу</desc>
-  </programme>
   <programme start="20260921025000 +0500" stop="20260921033500 +0500" channel="QazaqstanInt.kz">
     <title lang="kk">Қызық екен</title>
     <desc lang="kk">Бағдарлама</desc>
@@ -13258,7 +12881,7 @@
   </programme>
   <programme start="20260921190000 +0500" stop="20260921193000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Ғылым тілімен</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Бағдарлама. Ағза трансплантологиясы саласындағы жаңа әдістер</desc>
   </programme>
   <programme start="20260921193000 +0500" stop="20260921200000 +0500" channel="AbaiTV.kz">
     <title lang="kk">ӘндіGround</title>
@@ -13266,7 +12889,7 @@
   </programme>
   <programme start="20260921200000 +0500" stop="20260921210000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Сарасөз</title>
-    <desc lang="kk">Бағдарлама. Лаура Палман</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921210000 +0500" stop="20260921213000 +0500" channel="AbaiTV.kz">
     <title lang="kk">Дала дәмі</title>
@@ -13418,11 +13041,11 @@
   </programme>
   <programme start="20260921190000 +0500" stop="20260921194500 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"ЗАҢ МЕН ТӘРТІП" Тікелей эфир</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Тікелей эфир</desc>
   </programme>
   <programme start="20260921194500 +0500" stop="20260921203000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"ФАЗИЛЕТ" ТЕЛЕХИКАЯСЫ</title>
-    <desc lang="kk">ТЕЛЕХИКАЯСЫ</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921203000 +0500" stop="20260921210000 +0500" channel="AqjaiyqTV.kz">
     <title lang="kk">"AQJAIYQ AQPARAT". Ақпараттық бағдарлама. (Түпнұсқа сурдоаудармамен)</title>
@@ -13473,10 +13096,10 @@
   </programme>
   <programme start="20260921192000 +0500" stop="20260921194000 +0500" channel="AtyrauTV.kz">
     <title lang="kk">«НОВОСТИ» - информационная программа. Прямой эфир</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921194000 +0500" stop="20260921210500 +0500" channel="AtyrauTV.kz">
     <title lang="kk">"КҮЙЕУ БАЛА", телехикая, 2 маусым, 18 бөлім (Qazaqstan Ұлттық телеарнасы, 2021 ж.)</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921210500 +0500" stop="20260921231000 +0500" channel="AtyrauTV.kz">
     <title lang="kk">«НОВОСТИ» - информационная программа. Прямой эфир</title>
@@ -13559,7 +13182,7 @@
   </programme>
   <programme start="20260921192000 +0500" stop="20260921193500 +0500" channel="ErtisTV.kz">
     <title lang="kk">Бір құжаттың тарихы</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Мәдени-танымдық бағдарлама.</desc>
   </programme>
   <programme start="20260921193500 +0500" stop="20260921200000 +0500" channel="ErtisTV.kz">
     <title lang="kk">1 студия</title>
@@ -13567,7 +13190,7 @@
   </programme>
   <programme start="20260921200000 +0500" stop="20260921204500 +0500" channel="ErtisTV.kz">
     <title lang="kk">Үнсіз күрес</title>
-    <desc lang="kk">Телехикая.</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921204500 +0500" stop="20260921210000 +0500" channel="ErtisTV.kz">
     <title lang="kk">Саяхат</title>
@@ -13657,7 +13280,7 @@
   </programme>
   <programme start="20260921191000 +0500" stop="20260921193000 +0500" channel="JambylTV.kz">
     <title lang="kk">ЕЛГЕ ҚЫЗМЕТ</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">ақпараттық бағдарлама</desc>
   </programme>
   <programme start="20260921193000 +0500" stop="20260921200000 +0500" channel="JambylTV.kz">
     <title lang="kk">СПОРТ</title>
@@ -13665,7 +13288,7 @@
   </programme>
   <programme start="20260921200000 +0500" stop="20260921203000 +0500" channel="JambylTV.kz">
     <title lang="kk">ҰМЫТПАЙМЫЗ</title>
-    <desc lang="kk">мәдени-танымдық бағдарлама</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921203000 +0500" stop="20260921210000 +0500" channel="JambylTV.kz">
     <title lang="kk">AIQYN AQPARAT</title>
@@ -13730,11 +13353,11 @@
   <programme start="20260921174500 +0500" stop="20260921185500 +0500" channel="KoksheTV.kz">
     <title lang="kk">"KÓKSHE AQPARAT" Информационная программа</title>
   </programme>
-  <programme start="20260921185500 +0500" stop="20260921192000 +0500" channel="KoksheTV.kz">
+  <programme start="20260921185500 +0500" stop="20260921194000 +0500" channel="KoksheTV.kz">
     <title lang="kk">"ТЕЛЕМАРКЕТ"</title>
   </programme>
-  <programme start="20260921192000 +0500" stop="20260921213000 +0500" channel="KoksheTV.kz">
-    <title lang="kk">"ШАМШЫРАҚ" балаларға арналған бағдарлама</title>
+  <programme start="20260921194000 +0500" stop="20260921213000 +0500" channel="KoksheTV.kz">
+    <title lang="kk">"47 БАЛАНЫҢ АНАСЫ" Телехикая. 6 бөлім</title>
     <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921213000 +0500" stop="20260921220000 +0500" channel="KoksheTV.kz">
@@ -13806,11 +13429,11 @@
   </programme>
   <programme start="20260921190000 +0500" stop="20260921200000 +0500" channel="MangystauTV.kz">
     <title lang="kk">"Экспертное мнение"</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Ақпараттық-сараптамалық сұхбат. Тікелей эфир</desc>
   </programme>
   <programme start="20260921200000 +0500" stop="20260921203000 +0500" channel="MangystauTV.kz">
     <title lang="kk">"Арнайы репортаж"</title>
-    <desc lang="kk">Ақпараттық</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921203000 +0500" stop="20260921210000 +0500" channel="MangystauTV.kz">
     <title lang="kk">"MAŃǴYSTAU AQPARAT"</title>
@@ -13926,7 +13549,7 @@
   </programme>
   <programme start="20260921192000 +0500" stop="20260921195000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Депутат мінбері»</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">қоғамдық-саяси бағдарлама</desc>
   </programme>
   <programme start="20260921195000 +0500" stop="20260921201000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Еңбек адамы»</title>
@@ -13934,7 +13557,7 @@
   </programme>
   <programme start="20260921201000 +0500" stop="20260921210000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Топырақ пен Хауа»</title>
-    <desc lang="kk">телехикая. 99-бөлім</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921210000 +0500" stop="20260921220000 +0500" channel="OntustikTV.kz">
     <title lang="kk">«Jańalyqtar»</title>
@@ -13965,11 +13588,11 @@
   <programme start="20260921090000 +0500" stop="20260921140000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">«АPTA-АQPARAT» (Ақпараттық -қорытынды шығарылым/қайталау) (каз/рус)</title>
   </programme>
-  <programme start="20260921140000 +0500" stop="20260921190000 +0500" channel="QostanaiTV.kz">
+  <programme start="20260921140000 +0500" stop="20260921193000 +0500" channel="QostanaiTV.kz">
     <title lang="kk">Техникалық үзіліс (14:00-17:00)</title>
   </programme>
-  <programme start="20260921190000 +0500" stop="20260921200000 +0500" channel="QostanaiTV.kz">
-    <title lang="kk">«1 СТУДИЯ» (каз) (қоғамдық - саяси бағдарлама)</title>
+  <programme start="20260921193000 +0500" stop="20260921203000 +0500" channel="QostanaiTV.kz">
+    <title lang="kk">«ШАБДАЛЫ 18» телехикая (18 бөлім) («Qazaqstan» ҰТА, 2020 ж.)</title>
     <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921070000 +0500" stop="20260921070500 +0500" channel="QyzyljarTV.kz">
@@ -14022,10 +13645,10 @@
   </programme>
   <programme start="20260921183000 +0500" stop="20260921194500 +0500" channel="QyzyljarTV.kz">
     <title lang="kk">БАҚЫТТЫҢ КІЛТІ</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921194500 +0500" stop="20260921203000 +0500" channel="QyzyljarTV.kz">
     <title lang="kk">АНАМ АНКАРА</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921203000 +0500" stop="20260921210000 +0500" channel="QyzyljarTV.kz">
     <title lang="kk">ESIL-АҚПАРАТ</title>
@@ -14089,10 +13712,10 @@
   </programme>
   <programme start="20260921180000 +0500" stop="20260921200000 +0500" channel="QyzylordaTV.kz">
     <title lang="kk">ЖАҢА МАУСЫМ: OPEN AIR ПРЕЗИДЕНТ САЯБАҒЫНДА /тікелей эфир/</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921200000 +0500" stop="20260921204500 +0500" channel="QyzylordaTV.kz">
     <title lang="kk">"Фазилет ханым" т/с. /140-сер./</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921204500 +0500" stop="20260921205500 +0500" channel="QyzylordaTV.kz">
     <title lang="kk">"102"</title>
@@ -14183,11 +13806,11 @@
   </programme>
   <programme start="20260921192000 +0500" stop="20260921194000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Большой регион»</title>
-    <desc lang="kk">Қазірэфирде</desc>
+    <desc lang="kk">Общественно-политическая программа</desc>
   </programme>
   <programme start="20260921194000 +0500" stop="20260921203000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Гауһар»</title>
-    <desc lang="kk">Телехикая</desc>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921203000 +0500" stop="20260921205000 +0500" channel="SaryarqaTV.kz">
     <title lang="kk">«Арқа ақпарат»</title>
@@ -14248,18 +13871,18 @@
   <programme start="20260921182000 +0500" stop="20260921184000 +0500" channel="SemeiTV.kz">
     <title lang="kk">НОВОСТИ - информационная выпуск. Прямой эфир</title>
   </programme>
-  <programme start="20260921184000 +0500" stop="20260921190000 +0500" channel="SemeiTV.kz">
+  <programme start="20260921184000 +0500" stop="20260921194000 +0500" channel="SemeiTV.kz">
     <title lang="kk">Тележаршы</title>
-  </programme>
-  <programme start="20260921190000 +0500" stop="20260921194000 +0500" channel="SemeiTV.kz">
-    <title lang="kk">«DIALOG» бағдарламасы интервью</title>
-    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921194000 +0500" stop="20260921194500 +0500" channel="SemeiTV.kz">
     <title lang="kk">Тележаршы</title>
   </programme>
-  <programme start="20260921194500 +0500" stop="20260921205500 +0500" channel="SemeiTV.kz">
+  <programme start="20260921194500 +0500" stop="20260921200500 +0500" channel="SemeiTV.kz">
     <title lang="kk">"Кәсіпкер бол" подкаст</title>
+  </programme>
+  <programme start="20260921200500 +0500" stop="20260921205500 +0500" channel="SemeiTV.kz">
+    <title lang="kk">«Топырақ пен Хауа» 96-бөлімі Телехикая</title>
+    <desc lang="kk">Қазірэфирде</desc>
   </programme>
   <programme start="20260921205500 +0500" stop="20260921210000 +0500" channel="SemeiTV.kz">
     <title lang="kk">Тележаршы</title>
@@ -14278,5 +13901,611 @@
   </programme>
   <programme start="20260921232500 +0500" stop="20260922004000 +0500" channel="SemeiTV.kz">
     <title lang="kk">НОВОСТИ - информационная выпуск. /повтор/</title>
+  </programme>
+  <programme start="20260921030000 +0700" stop="20260921033000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - SUARA LIRIH AGAMA LOKAL</title>
+  </programme>
+  <programme start="20260921033000 +0700" stop="20260921040000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">NUSANTARA KIE GAM LAMO - EPS6 SOYA SOYA</title>
+  </programme>
+  <programme start="20260921040000 +0700" stop="20260921043000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK RASA - EPS4 KARI MASAK ACEH</title>
+  </programme>
+  <programme start="20260921043000 +0700" stop="20260921050000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK LANGKAH JALAN KEBUDAYAAN - EPS4 MENCARI AKAR SEJARAH DESA</title>
+  </programme>
+  <programme start="20260921050000 +0700" stop="20260921060000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER PERMAINAN RAKYAT - EPS3 ENGKLEK</title>
+  </programme>
+  <programme start="20260921060000 +0700" stop="20260921061500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS2 PAGI DI BALI</title>
+  </programme>
+  <programme start="20260921061500 +0700" stop="20260921063000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY - EPS6 AKO DAN TELOR PENYU</title>
+  </programme>
+  <programme start="20260921063000 +0700" stop="20260921073000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RANA UKO MOVIE</title>
+  </programme>
+  <programme start="20260921073000 +0700" stop="20260921080000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA EPS4 MISI PALING SULIT</title>
+  </programme>
+  <programme start="20260921080000 +0700" stop="20260921081500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS1 GEMA DAN BATU KUNO</title>
+  </programme>
+  <programme start="20260921081500 +0700" stop="20260921083000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS4 DUATA</title>
+  </programme>
+  <programme start="20260921083000 +0700" stop="20260921084500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS4</title>
+  </programme>
+  <programme start="20260921084500 +0700" stop="20260921090000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JAGA SAGARA - EPS1 TEMAN LAUT</title>
+  </programme>
+  <programme start="20260921090000 +0700" stop="20260921091500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS3 BAYANGAN YANG HILANG</title>
+  </programme>
+  <programme start="20260921091500 +0700" stop="20260921094500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BUDA KECAPI</title>
+  </programme>
+  <programme start="20260921094500 +0700" stop="20260921100000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER MUSIK - SASANDO</title>
+  </programme>
+  <programme start="20260921100000 +0700" stop="20260921101500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS2 PAGI DI BALI</title>
+  </programme>
+  <programme start="20260921101500 +0700" stop="20260921103000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY - EPS6 AKO DAN TELOR PENYU</title>
+  </programme>
+  <programme start="20260921103000 +0700" stop="20260921113000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RANA UKO MOVIE</title>
+  </programme>
+  <programme start="20260921113000 +0700" stop="20260921120000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA EPS4 MISI PALING SULIT</title>
+  </programme>
+  <programme start="20260921120000 +0700" stop="20260921123000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JANJI CINTA MUSEUM NASIONAL (REV)</title>
+  </programme>
+  <programme start="20260921123000 +0700" stop="20260921130000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">YUPA AKSARA PERTAMA</title>
+  </programme>
+  <programme start="20260921130000 +0700" stop="20260921133000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - SUARA LIRIH AGAMA LOKAL</title>
+  </programme>
+  <programme start="20260921133000 +0700" stop="20260921140000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">NUSANTARA KIE GAM LAMO - EPS6 SOYA SOYA</title>
+  </programme>
+  <programme start="20260921140000 +0700" stop="20260921143000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK RASA - EPS4 KARI MASAK ACEH</title>
+  </programme>
+  <programme start="20260921143000 +0700" stop="20260921150000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JEJAK LANGKAH JALAN KEBUDAYAAN - EPS4 MENCARI AKAR SEJARAH DESA</title>
+  </programme>
+  <programme start="20260921150000 +0700" stop="20260921160000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER PERMAINAN RAKYAT - EPS3 ENGKLEK</title>
+  </programme>
+  <programme start="20260921160000 +0700" stop="20260921161500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS2 PAGI DI BALI</title>
+  </programme>
+  <programme start="20260921161500 +0700" stop="20260921163000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">WAHANA DONGENG PAMAN GERRY - EPS6 AKO DAN TELOR PENYU</title>
+  </programme>
+  <programme start="20260921163000 +0700" stop="20260921173000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RANA UKO MOVIE</title>
+  </programme>
+  <programme start="20260921173000 +0700" stop="20260921180000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">AGASTYA EPS4 MISI PALING SULIT</title>
+  </programme>
+  <programme start="20260921180000 +0700" stop="20260921181500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR CERITA PEREMPUAN 2024 - ALTAR SANG DEWI</title>
+  </programme>
+  <programme start="20260921181500 +0700" stop="20260921183000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR ANAK INDONESIANA 2023 - SUARA RINDU</title>
+  </programme>
+  <programme start="20260921183000 +0700" stop="20260921190000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">MENJEJAK TALA - EPS6 ANGKLUNG PAGLAK</title>
+  </programme>
+  <programme start="20260921190000 +0700" stop="20260921191500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PARADE INDONESIANA - LOMBA KONTEN VIDEO KREATIF 2026</title>
+  </programme>
+  <programme start="20260921191500 +0700" stop="20260921193000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SERIES TINGGAL - EPS5 SAMBATAN</title>
+  </programme>
+  <programme start="20260921193000 +0700" stop="20260921200000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SPESIAL JALUR REMPAH AKHIR PEKAN - GEMALAMA TERNATE</title>
+  </programme>
+  <programme start="20260921200000 +0700" stop="20260921201500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DATUK BETAWI - HUSEIN</title>
+  </programme>
+  <programme start="20260921201500 +0700" stop="20260921203000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - WASTRA - SONGKET WARISAN BUDAYA ANG INDAH DAN MEWAH</title>
+  </programme>
+  <programme start="20260921203000 +0700" stop="20260921210000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SANG GILANG - EPS1</title>
+  </programme>
+  <programme start="20260921210000 +0700" stop="20260921213000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER LAYAR LAYAR NUSANTARA DOKUMENTER ARSITEKTURA - EPS1 RUMAH PANJANG KALIMANTAN</title>
+  </programme>
+  <programme start="20260921213000 +0700" stop="20260921220000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - HARMONI DUA DUNIA</title>
+  </programme>
+  <programme start="20260921220000 +0700" stop="20260921221500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS1 GEMA DAN BATU KUNO</title>
+  </programme>
+  <programme start="20260921221500 +0700" stop="20260921223000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS4 DUATA</title>
+  </programme>
+  <programme start="20260921223000 +0700" stop="20260921224500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS4</title>
+  </programme>
+  <programme start="20260921224500 +0700" stop="20260921230000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JAGA SAGARA - EPS1 TEMAN LAUT</title>
+  </programme>
+  <programme start="20260921230000 +0700" stop="20260921231500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS3 BAYANGAN YANG HILANG</title>
+  </programme>
+  <programme start="20260921231500 +0700" stop="20260921234500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BUDA KECAPI</title>
+  </programme>
+  <programme start="20260921234500 +0700" stop="20260922000000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER MUSIK - SASANDO</title>
+  </programme>
+  <programme start="20260922000000 +0700" stop="20260922001500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS1 GEMA DAN BATU KUNO</title>
+  </programme>
+  <programme start="20260922001500 +0700" stop="20260922003000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS4 DUATA</title>
+  </programme>
+  <programme start="20260922003000 +0700" stop="20260922004500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS4</title>
+  </programme>
+  <programme start="20260922004500 +0700" stop="20260922010000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JAGA SAGARA - EPS1 TEMAN LAUT</title>
+  </programme>
+  <programme start="20260922010000 +0700" stop="20260922011500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS3 BAYANGAN YANG HILANG</title>
+  </programme>
+  <programme start="20260922011500 +0700" stop="20260922014500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BUDA KECAPI</title>
+  </programme>
+  <programme start="20260922014500 +0700" stop="20260922020000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER MUSIK - SASANDO</title>
+  </programme>
+  <programme start="20260922020000 +0700" stop="20260922021500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR CERITA PEREMPUAN 2024 - ALTAR SANG DEWI</title>
+  </programme>
+  <programme start="20260922021500 +0700" stop="20260922023000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR ANAK INDONESIANA 2023 - SUARA RINDU</title>
+  </programme>
+  <programme start="20260922023000 +0700" stop="20260922030000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">MENJEJAK TALA - EPS6 ANGKLUNG PAGLAK</title>
+  </programme>
+  <programme start="20260922030000 +0700" stop="20260922031500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PARADE INDONESIANA - LOMBA KONTEN VIDEO KREATIF 2026</title>
+  </programme>
+  <programme start="20260922031500 +0700" stop="20260922033000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SERIES TINGGAL - EPS5 SAMBATAN</title>
+  </programme>
+  <programme start="20260922033000 +0700" stop="20260922040000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SPESIAL JALUR REMPAH AKHIR PEKAN - GEMALAMA TERNATE</title>
+  </programme>
+  <programme start="20260922040000 +0700" stop="20260922041500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DATUK BETAWI - HUSEIN</title>
+  </programme>
+  <programme start="20260922041500 +0700" stop="20260922043000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - WASTRA - SONGKET WARISAN BUDAYA ANG INDAH DAN MEWAH</title>
+  </programme>
+  <programme start="20260922043000 +0700" stop="20260922050000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SANG GILANG - EPS1</title>
+  </programme>
+  <programme start="20260922050000 +0700" stop="20260922053000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER LAYAR LAYAR NUSANTARA DOKUMENTER ARSITEKTURA - EPS1 RUMAH PANJANG KALIMANTAN</title>
+  </programme>
+  <programme start="20260922053000 +0700" stop="20260922060000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - HARMONI DUA DUNIA</title>
+  </programme>
+  <programme start="20260922060000 +0700" stop="20260922061500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS1 GEMA DAN BATU KUNO</title>
+  </programme>
+  <programme start="20260922061500 +0700" stop="20260922063000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS4 DUATA</title>
+  </programme>
+  <programme start="20260922063000 +0700" stop="20260922064500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS4</title>
+  </programme>
+  <programme start="20260922064500 +0700" stop="20260922070000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JAGA SAGARA - EPS1 TEMAN LAUT</title>
+  </programme>
+  <programme start="20260922070000 +0700" stop="20260922071500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS3 BAYANGAN YANG HILANG</title>
+  </programme>
+  <programme start="20260922071500 +0700" stop="20260922074500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BUDA KECAPI</title>
+  </programme>
+  <programme start="20260922074500 +0700" stop="20260922080000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER MUSIK - SASANDO</title>
+  </programme>
+  <programme start="20260922080000 +0700" stop="20260922081500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS2 SANDI SWARA PURBA</title>
+  </programme>
+  <programme start="20260922081500 +0700" stop="20260922083000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS5 PANEN RUMPUT LAUT</title>
+  </programme>
+  <programme start="20260922083000 +0700" stop="20260922084500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS5</title>
+  </programme>
+  <programme start="20260922084500 +0700" stop="20260922090000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS3 BOCAH BANJAR</title>
+  </programme>
+  <programme start="20260922090000 +0700" stop="20260922091500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS4 KAIN YANG BERCINTA</title>
+  </programme>
+  <programme start="20260922091500 +0700" stop="20260922093000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS1 BAKSO DAN SAMBAL LIDAHKU MENARI</title>
+  </programme>
+  <programme start="20260922093000 +0700" stop="20260922100000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BERDIALOG LEWAT DAWAI - EPS5 TALINDO BUGIS</title>
+  </programme>
+  <programme start="20260922100000 +0700" stop="20260922101500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS1 GEMA DAN BATU KUNO</title>
+  </programme>
+  <programme start="20260922101500 +0700" stop="20260922103000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS4 DUATA</title>
+  </programme>
+  <programme start="20260922103000 +0700" stop="20260922104500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS4</title>
+  </programme>
+  <programme start="20260922104500 +0700" stop="20260922110000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JAGA SAGARA - EPS1 TEMAN LAUT</title>
+  </programme>
+  <programme start="20260922110000 +0700" stop="20260922111500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS3 BAYANGAN YANG HILANG</title>
+  </programme>
+  <programme start="20260922111500 +0700" stop="20260922114500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BUDA KECAPI</title>
+  </programme>
+  <programme start="20260922114500 +0700" stop="20260922120000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER MUSIK - SASANDO</title>
+  </programme>
+  <programme start="20260922120000 +0700" stop="20260922121500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR CERITA PEREMPUAN 2024 - ALTAR SANG DEWI</title>
+  </programme>
+  <programme start="20260922121500 +0700" stop="20260922123000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR ANAK INDONESIANA 2023 - SUARA RINDU</title>
+  </programme>
+  <programme start="20260922123000 +0700" stop="20260922130000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">MENJEJAK TALA - EPS6 ANGKLUNG PAGLAK</title>
+  </programme>
+  <programme start="20260922130000 +0700" stop="20260922131500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PARADE INDONESIANA - LOMBA KONTEN VIDEO KREATIF 2026</title>
+  </programme>
+  <programme start="20260922131500 +0700" stop="20260922133000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SERIES TINGGAL - EPS5 SAMBATAN</title>
+  </programme>
+  <programme start="20260922133000 +0700" stop="20260922140000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SPESIAL JALUR REMPAH AKHIR PEKAN - GEMALAMA TERNATE</title>
+  </programme>
+  <programme start="20260922140000 +0700" stop="20260922141500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DATUK BETAWI - HUSEIN</title>
+  </programme>
+  <programme start="20260922141500 +0700" stop="20260922143000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - WASTRA - SONGKET WARISAN BUDAYA ANG INDAH DAN MEWAH</title>
+  </programme>
+  <programme start="20260922143000 +0700" stop="20260922150000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SANG GILANG - EPS1</title>
+  </programme>
+  <programme start="20260922150000 +0700" stop="20260922153000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER LAYAR LAYAR NUSANTARA DOKUMENTER ARSITEKTURA - EPS1 RUMAH PANJANG KALIMANTAN</title>
+  </programme>
+  <programme start="20260922153000 +0700" stop="20260922160000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - HARMONI DUA DUNIA</title>
+  </programme>
+  <programme start="20260922160000 +0700" stop="20260922161500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS1 GEMA DAN BATU KUNO</title>
+  </programme>
+  <programme start="20260922161500 +0700" stop="20260922163000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS4 DUATA</title>
+  </programme>
+  <programme start="20260922163000 +0700" stop="20260922164500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS4</title>
+  </programme>
+  <programme start="20260922164500 +0700" stop="20260922170000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">JAGA SAGARA - EPS1 TEMAN LAUT</title>
+  </programme>
+  <programme start="20260922170000 +0700" stop="20260922171500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS3 BAYANGAN YANG HILANG</title>
+  </programme>
+  <programme start="20260922171500 +0700" stop="20260922174500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BUDA KECAPI</title>
+  </programme>
+  <programme start="20260922174500 +0700" stop="20260922180000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER MUSIK - SASANDO</title>
+  </programme>
+  <programme start="20260922180000 +0700" stop="20260922181500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR CERITA PEREMPUAN 2024 - LEGIT</title>
+  </programme>
+  <programme start="20260922181500 +0700" stop="20260922183000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR ANAK INDONESIANA 2023 - MELANTING: TUBUH YANG DIHATURKAN</title>
+  </programme>
+  <programme start="20260922183000 +0700" stop="20260922190000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">MENJEJAK TALA - EPS7 CALUNG</title>
+  </programme>
+  <programme start="20260922190000 +0700" stop="20260922191500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA ONDEL - EPS1 PASANGAN ONDEL ONDEL</title>
+  </programme>
+  <programme start="20260922191500 +0700" stop="20260922193000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SUDUT PANDANG - RUMAH CINWA</title>
+  </programme>
+  <programme start="20260922193000 +0700" stop="20260922200000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SPESIAL JALUR REMPAH AKHIR PEKAN - LAGUNA TELUK SAMAWI</title>
+  </programme>
+  <programme start="20260922200000 +0700" stop="20260922201500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DATUK BETAWI - MUJIB</title>
+  </programme>
+  <programme start="20260922201500 +0700" stop="20260922203000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - WASTRA - SONGKET PANDAI SIKEK</title>
+  </programme>
+  <programme start="20260922203000 +0700" stop="20260922210000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SANG GILANG - EPS2</title>
+  </programme>
+  <programme start="20260922210000 +0700" stop="20260922211500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER LAYAR LAYAR NUSANTARA - RAJAMALA</title>
+  </programme>
+  <programme start="20260922211500 +0700" stop="20260922213000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PARADE PERTUNJUKAN SENI MEDIA BARU - MORDANA</title>
+  </programme>
+  <programme start="20260922213000 +0700" stop="20260922220000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - DOA UNTUK LELUHUR</title>
+  </programme>
+  <programme start="20260922220000 +0700" stop="20260922221500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS2 SANDI SWARA PURBA</title>
+  </programme>
+  <programme start="20260922221500 +0700" stop="20260922223000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS5 PANEN RUMPUT LAUT</title>
+  </programme>
+  <programme start="20260922223000 +0700" stop="20260922224500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS5</title>
+  </programme>
+  <programme start="20260922224500 +0700" stop="20260922230000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS3 BOCAH BANJAR</title>
+  </programme>
+  <programme start="20260922230000 +0700" stop="20260922231500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS4 KAIN YANG BERCINTA</title>
+  </programme>
+  <programme start="20260922231500 +0700" stop="20260922233000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS1 BAKSO DAN SAMBAL LIDAHKU MENARI</title>
+  </programme>
+  <programme start="20260922233000 +0700" stop="20260923000000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BERDIALOG LEWAT DAWAI - EPS5 TALINDO BUGIS</title>
+  </programme>
+  <programme start="20260923000000 +0700" stop="20260923001500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS2 SANDI SWARA PURBA</title>
+  </programme>
+  <programme start="20260923001500 +0700" stop="20260923003000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS5 PANEN RUMPUT LAUT</title>
+  </programme>
+  <programme start="20260923003000 +0700" stop="20260923004500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS5</title>
+  </programme>
+  <programme start="20260923004500 +0700" stop="20260923010000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS3 BOCAH BANJAR</title>
+  </programme>
+  <programme start="20260923010000 +0700" stop="20260923011500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS4 KAIN YANG BERCINTA</title>
+  </programme>
+  <programme start="20260923011500 +0700" stop="20260923013000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS1 BAKSO DAN SAMBAL LIDAHKU MENARI</title>
+  </programme>
+  <programme start="20260923013000 +0700" stop="20260923020000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BERDIALOG LEWAT DAWAI - EPS5 TALINDO BUGIS</title>
+  </programme>
+  <programme start="20260923020000 +0700" stop="20260923021500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR CERITA PEREMPUAN 2024 - LEGIT</title>
+  </programme>
+  <programme start="20260923021500 +0700" stop="20260923023000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR ANAK INDONESIANA 2023 - MELANTING: TUBUH YANG DIHATURKAN</title>
+  </programme>
+  <programme start="20260923023000 +0700" stop="20260923030000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">MENJEJAK TALA - EPS7 CALUNG</title>
+  </programme>
+  <programme start="20260923030000 +0700" stop="20260923031500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA ONDEL ONDEL - EPS1 PASANGAN ONDEL ONDEL</title>
+  </programme>
+  <programme start="20260923031500 +0700" stop="20260923033000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SUDUT PANDANG - RUMAH CINWA</title>
+  </programme>
+  <programme start="20260923033000 +0700" stop="20260923040000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SPESIAL JALUR REMPAH AKHIR PEKAN - LAGUNA TELUK SAMAWI</title>
+  </programme>
+  <programme start="20260923040000 +0700" stop="20260923041500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DATUK BETAWI - MUJIB</title>
+  </programme>
+  <programme start="20260923041500 +0700" stop="20260923043000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - WASTRA - SONGKET PANDAI SIKEK</title>
+  </programme>
+  <programme start="20260923043000 +0700" stop="20260923050000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SANG GILANG - EPS2</title>
+  </programme>
+  <programme start="20260923050000 +0700" stop="20260923051500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER LAYAR LAYAR NUSANTARA - RAJAMALA</title>
+  </programme>
+  <programme start="20260923051500 +0700" stop="20260923053000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PARADE PERTUNJUKAN SENI MEDIA BARU - MORDANA</title>
+  </programme>
+  <programme start="20260923053000 +0700" stop="20260923060000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - DOA UNTUK LELUHUR</title>
+  </programme>
+  <programme start="20260923060000 +0700" stop="20260923061500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS2 SANDI SWARA PURBA</title>
+  </programme>
+  <programme start="20260923061500 +0700" stop="20260923063000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS5 PANEN RUMPUT LAUT</title>
+  </programme>
+  <programme start="20260923063000 +0700" stop="20260923064500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS5</title>
+  </programme>
+  <programme start="20260923064500 +0700" stop="20260923070000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS3 BOCAH BANJAR</title>
+  </programme>
+  <programme start="20260923070000 +0700" stop="20260923071500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS4 KAIN YANG BERCINTA</title>
+  </programme>
+  <programme start="20260923071500 +0700" stop="20260923073000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS1 BAKSO DAN SAMBAL LIDAHKU MENARI</title>
+  </programme>
+  <programme start="20260923073000 +0700" stop="20260923080000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BERDIALOG LEWAT DAWAI - EPS5 TALINDO BUGIS</title>
+  </programme>
+  <programme start="20260923080000 +0700" stop="20260923081500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA RAMA - EPS3 PEKERJAAN RUMAH NISA</title>
+  </programme>
+  <programme start="20260923081500 +0700" stop="20260923083000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS6 BIDOK PANGOCOR</title>
+  </programme>
+  <programme start="20260923083000 +0700" stop="20260923084500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS6</title>
+  </programme>
+  <programme start="20260923084500 +0700" stop="20260923090000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS4 BARONG DAN RAHASIA TOPENG SAKTI</title>
+  </programme>
+  <programme start="20260923090000 +0700" stop="20260923091500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RAGA RASA - EPS5 ASAP DARI TANAH TIMUR</title>
+  </programme>
+  <programme start="20260923091500 +0700" stop="20260923093000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS2 LANGIT PENUH WARNA DI BALI</title>
+  </programme>
+  <programme start="20260923093000 +0700" stop="20260923100000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BERDIALOG LEWAT DAWAI - EPS6 JUNGGA SUMBA</title>
+  </programme>
+  <programme start="20260923100000 +0700" stop="20260923101500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS2 SANDI SWARA PURBA</title>
+  </programme>
+  <programme start="20260923101500 +0700" stop="20260923103000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS5 PANEN RUMPUT LAUT</title>
+  </programme>
+  <programme start="20260923103000 +0700" stop="20260923104500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS5</title>
+  </programme>
+  <programme start="20260923104500 +0700" stop="20260923110000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS3 BOCAH BANJAR</title>
+  </programme>
+  <programme start="20260923110000 +0700" stop="20260923111500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS4 KAIN YANG BERCINTA</title>
+  </programme>
+  <programme start="20260923111500 +0700" stop="20260923113000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS1 BAKSO DAN SAMBAL LIDAHKU MENARI</title>
+  </programme>
+  <programme start="20260923113000 +0700" stop="20260923120000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BERDIALOG LEWAT DAWAI - EPS5 TALINDO BUGIS</title>
+  </programme>
+  <programme start="20260923120000 +0700" stop="20260923121500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR CERITA PEREMPUAN 2024 - LEGIT</title>
+  </programme>
+  <programme start="20260923121500 +0700" stop="20260923123000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">LAYAR ANAK INDONESIANA 2023 - MELANTING: TUBUH YANG DIHATURKAN</title>
+  </programme>
+  <programme start="20260923123000 +0700" stop="20260923130000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">MENJEJAK TALA - EPS7 CALUNG</title>
+  </programme>
+  <programme start="20260923130000 +0700" stop="20260923131500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA ONDEL ONDEL - EPS1 PASANGAN ONDEL ONDEL</title>
+  </programme>
+  <programme start="20260923131500 +0700" stop="20260923133000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SUDUT PANDANG - RUMAH CINWA</title>
+  </programme>
+  <programme start="20260923133000 +0700" stop="20260923140000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SPESIAL JALUR REMPAH AKHIR PEKAN - LAGUNA TELUK SAMAWI</title>
+  </programme>
+  <programme start="20260923140000 +0700" stop="20260923141500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DATUK BETAWI - MUJIB</title>
+  </programme>
+  <programme start="20260923141500 +0700" stop="20260923143000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - WASTRA - SONGKET PANDAI SIKEK</title>
+  </programme>
+  <programme start="20260923143000 +0700" stop="20260923150000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SANG GILANG - EPS2</title>
+  </programme>
+  <programme start="20260923150000 +0700" stop="20260923151500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER LAYAR LAYAR NUSANTARA - RAJAMALA</title>
+  </programme>
+  <programme start="20260923151500 +0700" stop="20260923153000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PARADE PERTUNJUKAN SENI MEDIA BARU - MORDANA</title>
+  </programme>
+  <programme start="20260923153000 +0700" stop="20260923160000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - DOA UNTUK LELUHUR</title>
+  </programme>
+  <programme start="20260923160000 +0700" stop="20260923161500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">ANIMASI SARPAGENI - EPS2 SANDI SWARA PURBA</title>
+  </programme>
+  <programme start="20260923161500 +0700" stop="20260923163000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS5 PANEN RUMPUT LAUT</title>
+  </programme>
+  <programme start="20260923163000 +0700" stop="20260923164500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS5</title>
+  </programme>
+  <programme start="20260923164500 +0700" stop="20260923170000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS3 BOCAH BANJAR</title>
+  </programme>
+  <programme start="20260923170000 +0700" stop="20260923171500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BANTI DAN RENGGO - EPS4 KAIN YANG BERCINTA</title>
+  </programme>
+  <programme start="20260923171500 +0700" stop="20260923173000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS1 BAKSO DAN SAMBAL LIDAHKU MENARI</title>
+  </programme>
+  <programme start="20260923173000 +0700" stop="20260923180000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BERDIALOG LEWAT DAWAI - EPS5 TALINDO BUGIS</title>
+  </programme>
+  <programme start="20260923180000 +0700" stop="20260923181500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PRESERVASI DIGITAL SENI GERAK NUSANTARA - EPS4 PANGLIPUR SILAT TIM</title>
+  </programme>
+  <programme start="20260923181500 +0700" stop="20260923183000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS1 BAKSO DAN SAMBAL LIDAHKU MENARI</title>
+  </programme>
+  <programme start="20260923183000 +0700" stop="20260923190000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">MENJEJAK TALA - EPS8 KONGAHYAN</title>
+  </programme>
+  <programme start="20260923190000 +0700" stop="20260923191500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA ONDEL ONDEL - EPS2 JODOH ONDEL ONDEL</title>
+  </programme>
+  <programme start="20260923191500 +0700" stop="20260923193000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SUDUT PANDANG - PESTA ADAT MILIK TEMPILANG</title>
+  </programme>
+  <programme start="20260923193000 +0700" stop="20260923200000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SPESIAL JALUR REMPAH AKHIR PEKAN - AKESOU TIDORE</title>
+  </programme>
+  <programme start="20260923200000 +0700" stop="20260923204500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER - KULINER</title>
+  </programme>
+  <programme start="20260923204500 +0700" stop="20260923210000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SANG GILANG - EPS3</title>
+  </programme>
+  <programme start="20260923210000 +0700" stop="20260923211500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">DOKUMENTER LAYAR LAYAR NUSANTARA - LANCANG KUNING</title>
+  </programme>
+  <programme start="20260923211500 +0700" stop="20260923213000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">PARADE PERTUNJUKAN SENI MEDIA BARU - STORY OF TAPA MALENGGANG</title>
+  </programme>
+  <programme start="20260923213000 +0700" stop="20260923220000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">EAGLE INSTITUTE - DERU HARAPAN DI KOTA HUJAN</title>
+  </programme>
+  <programme start="20260923220000 +0700" stop="20260923221500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELUARGA RAMA - EPS3 PEKERJAAN RUMAH NISA</title>
+  </programme>
+  <programme start="20260923221500 +0700" stop="20260923223000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KELANA NUSANTARA KEBUDAYAAN BAJO - EPS6 BIDOK PANGOCOR</title>
+  </programme>
+  <programme start="20260923223000 +0700" stop="20260923224500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">HOUSE OF INDONESIANA - BANYU - EPS6</title>
+  </programme>
+  <programme start="20260923224500 +0700" stop="20260923230000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">KSATRIA KECILKU - EPS4 BARONG DAN RAHASIA TOPENG SAKTI</title>
+  </programme>
+  <programme start="20260923230000 +0700" stop="20260923231500 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">RAGA RASA - EPS5 ASAP DARI TANAH TIMUR</title>
+  </programme>
+  <programme start="20260923231500 +0700" stop="20260923233000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">SARI JELAJAH NUSANTARA - EPS2 LANGIT PENUH WARNA DI BALI</title>
+  </programme>
+  <programme start="20260923233000 +0700" stop="20260924000000 +0700" channel="Indonesiana_MMF.id">
+    <title lang="id">BERDIALOG LEWAT DAWAI - EPS6 JUNGGA SUMBA</title>
   </programme>
 </tv>
