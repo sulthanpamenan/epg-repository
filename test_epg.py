@@ -1,157 +1,162 @@
-from datetime import datetime, timezone, timedelta
-from playwright.sync_api import sync_playwright
+import os
+import json
 import requests
-import xml.etree.ElementTree as ET
-from xml.dom import minidom
+from datetime import datetime, timezone, timedelta
+from bs4 import BeautifulSoup
 
-def clean_text_str(text):
-    if not text:
-        return ""
-    return str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&apos;")
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+}
 
-def format_xmltv_date(dt, tz_str="+0700"):
-    return dt.strftime(f"%Y%m%d%H%M%S {tz_str}")
+def clean_text_str(val):
+    if not val: return ""
+    text = str(val).replace("\xa0", " ")
+    text = re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]", " ", text).strip()
+    return re.sub(r"\s+", " ", text)
 
-def fetch_epg_indonesiana(target):
-    epg_id, channel_code = target["id"], target["code"]
-    channels = [{"id": epg_id, "name": target["name"]}]
-    programmes = []
+def test_fetch_indonesiana():
+    print("=" * 60)
+    print("[*] Memulai Uji Coba Independen Indonesiana TV")
+    print("=" * 60)
 
+    target = {"id": "Indonesiana_MMF.id", "name": "Indonesiana TV MMF", "code": "MMF", "utc_offset": "+0700"}
+    channel_code = target["code"]
     auth_token = None
-    print(f"[*] Indonesiana TV [{target['name']}]: Mengambil token via Playwright...")
+    
+    cache_dir = "Cache"
+    os.makedirs(cache_dir, exist_ok=True)
+    cache_file = os.path.join(cache_dir, "indonesiana_cache.json")
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, args=["--no-sandbox", "--disable-setuid-sandbox"])
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            viewport={"width": 1280, "height": 800}
-        )
-        page = context.new_page()
+    gh_pat = os.environ.get("GH_PAT")
+    gist_id = os.environ.get("GIST_ID")
+    gist_filename = "indonesiana_token.json"
 
-        def handle_response(response):
-            nonlocal auth_token
-            if "/v1/users/sessions/email" in response.url and response.status == 200:
-                try:
-                    res_json = response.json()
-                    token = res_json.get("data", {}).get("accessSession", {}).get("token")
-                    if token:
-                        auth_token = token
-                except Exception:
-                    pass
-
-        page.on("response", handle_response)
-
+    # 1. Cek Gist
+    if gh_pat and gist_id:
         try:
-            page.goto("https://indonesiana.tv/auth/login", timeout=60000)
-            page.wait_for_selector('input[type="email"]', timeout=15000)
-            
-            page.fill('input[type="email"]', "akun002fix@gmail.com")
-            page.fill('input[type="password"]', "Akun002x")
-            page.get_by_role("button", name="Masuk", exact=True).click()
-            
-            page.wait_for_timeout(6000)
-            page.goto("https://indonesiana.tv/live", timeout=30000)
-            page.wait_for_load_state("networkidle")
+            print("[*] Mencoba mengambil token dari GitHub Gist...")
+            gist_url = f"https://api.github.com/gists/{gist_id}"
+            gist_headers = {"Authorization": f"Bearer {gh_pat}", "Accept": "application/vnd.github+json"}
+            gist_res = requests.get(gist_url, headers=gist_headers, timeout=10)
+            if gist_res.status_code == 200:
+                files = gist_res.json().get("files", {})
+                if gist_filename in files:
+                    content = json.loads(files[gist_filename]["content"])
+                    auth_token = content.get("token")
+                    if auth_token:
+                        print("[✓] Token berhasil didapatkan dari GitHub Gist!")
         except Exception as e:
-            print(f"[!] Browser Error [{target['name']}]: {e}")
-        finally:
-            browser.close()
+            print(f"[!] Gist Error: {e}")
+
+    # 2. Cek Cache Lokal
+    if not auth_token and os.path.exists(cache_file):
+        try:
+            print("[*] Mencoba mengambil token dari cache lokal...")
+            with open(cache_file, "r") as f:
+                cache_data = json.load(f)
+                auth_token = cache_data.get("token")
+                if auth_token:
+                    print("[✓] Token berhasil didapatkan dari cache lokal!")
+        except Exception as e:
+            print(f"[!] Cache Error: {e}")
+
+    # 3. Fallback Playwright Lokal (Headless=False agar Anda bisa melihat prosesnya jika mau)
+    if not auth_token:
+        print("[*] Token tidak ditemukan. Menjalankan Playwright lokal...")
+        try:
+            from playwright.sync_api import sync_playwright
+            with sync_playwright() as p:
+                # Ubah ke headless=True jika dijalankan di server tanpa layar
+                browser = p.chromium.launch(headless=False, args=["--no-sandbox", "--disable-setuid-sandbox"])
+                context = browser.new_context(
+                    user_agent=HEADERS["User-Agent"],
+                    viewport={"width": 1280, "height": 800}
+                )
+                page = context.new_page()
+
+                def handle_response(response):
+                    nonlocal auth_token
+                    if "/v1/users/sessions/email" in response.url and response.status == 200:
+                        try:
+                            res_json = response.json()
+                            token = res_json.get("data", {}).get("accessSession", {}).get("token")
+                            if token:
+                                auth_token = token
+                                print("[✓] Playwright sukses menangkap Access Token!")
+                        except Exception as ex:
+                            print(f"[!] Gagal parsing JSON response: {ex}")
+
+                page.on("response", handle_response)
+                page.goto("https://indonesiana.tv/auth/login", timeout=60000, wait_until="networkidle")
+                
+                email_sel = 'input[placeholder="Masukkan alamat e-mail Anda"]'
+                page.wait_for_selector(email_sel, timeout=30000, state="visible")
+                
+                page.fill(email_sel, "akun002fix@gmail.com")
+                page.fill('input[placeholder="Masukkan password Anda"]', "Akun002x")
+                page.get_by_role("button", name="Masuk", exact=True).click()
+                
+                page.wait_for_timeout(5000)
+                browser.close()
+
+            if auth_token:
+                token_payload = {
+                    "token": auth_token,
+                    "timestamp": datetime.now(timezone.utc).isoformat()
+                }
+                with open(cache_file, "w") as f:
+                    json.dump(token_payload, f)
+                print("[✓] Token baru berhasil disimpan ke cache lokal.")
+        except Exception as e:
+            print(f"[!] Playwright Error: {e}")
 
     if not auth_token:
-        print(f"[!] Gagal mendapatkan token untuk {target['name']}.")
-        return channels, programmes
+        print("[!] Gagal total mendapatkan token Indonesiana TV.")
+        return
 
+    # 4. Tes Fetch API EPG Indonesiana
+    print("[*] Mengambil data jadwal siaran (EPG) dari API Indonesiana TV...")
     wib_tz = timezone(timedelta(hours=7))
     now_wib = datetime.now(timezone.utc).astimezone(wib_tz)
 
     start_timestamp = int(now_wib.replace(hour=0, minute=0, second=0, microsecond=0).timestamp())
-    end_timestamp = int(now_wib.replace(hour=23, minute=59, second=59, microsecond=0).timestamp())
+    end_timestamp = int((now_wib + timedelta(days=2)).replace(hour=23, minute=59, second=59, microsecond=0).timestamp())
 
     api_url = f"https://api.indonesianatv.app/v1/users/live-streams/{channel_code}/programs"
     params = {
         "filters[startDate]": start_timestamp,
         "filters[endDate]": end_timestamp,
         "skip": 0,
-        "limit": 1000
+        "limit": 50 # Ambil 50 data awal untuk pengujian
     }
-
     headers = {
         "accept": "application/json, text/plain, */*",
         "authorization": f"Bearer {auth_token}",
         "origin": "https://indonesiana.tv",
         "referer": "https://indonesiana.tv/live",
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        "user-agent": HEADERS["User-Agent"]
     }
 
     try:
-        prog_res = requests.get(api_url, params=params, headers=headers, timeout=15)
-        if prog_res.status_code == 200:
-            prog_data = prog_res.json()
-            if prog_data.get("success"):
-                items = prog_data.get("data", {}).get("items", [])
-                for item in items:
-                    title = item.get("name")
-                    start_str = item.get("startDate")
-                    end_str = item.get("endDate")
-
-                    if start_str and end_str and title:
-                        start_dt = datetime.fromtimestamp(int(start_str), wib_tz)
-                        stop_dt = datetime.fromtimestamp(int(end_str), wib_tz)
-
-                        programmes.append({
-                            "channel": epg_id,
-                            "start": format_xmltv_date(start_dt, "+0700"),
-                            "stop": format_xmltv_date(stop_dt, "+0700"),
-                            "title": clean_text_str(title),
-                            "desc": "",
-                            "lang": "id"
-                        })
-                print(f"[✓] Berhasil memuat {len(programmes)} program untuk {target['name']}.")
+        res = requests.get(api_url, params=params, headers=headers, timeout=15)
+        print(f"[+] Status Code API: {res.status_code}")
+        if res.status_code == 200:
+            data = res.json()
+            items = data.get("data", {}).get("items", [])
+            print(f"[✓] Berhasil memuat {len(items)} program siaran!")
+            for idx, item in enumerate(items[:5]): # Tampilkan 5 program pertama
+                print(f"    - [{idx+1}] {item.get('name')} (Mulai: {item.get('startDate')})")
+        else:
+            print(f"[!] Respon API Error: {res.text}")
     except Exception as e:
-        print(f"[!] Error saat mengambil program: {e}")
+        print(f"[!] Koneksi API Error: {e}")
 
-    return channels, programmes
-
-def generate_xml_file():
-    targets = [
-        {"id": "Indonesiana_MMF.id", "name": "Indonesiana MMF", "code": "MMF"},
-        {"id": "Indonesiana_MKU.id", "name": "Indonesiana MKU", "code": "MKU"}
-    ]
-
-    all_channels = []
-    all_programmes = []
-
-    for t in targets:
-        ch, pr = fetch_epg_indonesiana(t)
-        all_channels.extend(ch)
-        all_programmes.extend(pr)
-
-    # Membangun struktur XMLTV
-    root = ET.Element("tv")
-    root.set("generator-info-name", "Indonesiana EPG Generator Local Test")
-
-    for ch in all_channels:
-        channel_elem = ET.SubElement(root, "channel", id=ch["id"])
-        display_name = ET.SubElement(channel_elem, "display-name")
-        display_name.text = ch["name"]
-
-    for pr in all_programmes:
-        prog_elem = ET.SubElement(root, "programme", start=pr["start"], stop=pr["stop"], channel=pr["channel"])
-        title_elem = ET.SubElement(prog_elem, "title", lang=pr["lang"])
-        title_elem.text = pr["title"]
-        desc_elem = ET.SubElement(prog_elem, "desc", lang=pr["lang"])
-        desc_elem.text = pr["desc"]
-
-    # Pretty-print XML agar mudah dibaca
-    rough_string = ET.tostring(root, encoding="utf-8")
-    parsed = minidom.parseString(rough_string)
-    pretty_xml = parsed.toprettyxml(indent="  ")
-
-    output_filename = "epg_test.xml"
-    with open(output_filename, "w", encoding="utf-8") as f:
-        f.write(pretty_xml)
-
-    print(f"\n[✓] Berhasil! File XML lokal tersimpan sebagai '{output_filename}'.")
+    print("=" * 60)
+    print("[*] Uji Coba Selesai")
+    print("=" * 60)
 
 if __name__ == "__main__":
-    generate_xml_file()
+    import re
+    test_fetch_indonesiana()
