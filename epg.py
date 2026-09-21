@@ -932,7 +932,7 @@ def fetch_epg_qazaqstan(target):
 
 # --- 8. RED BULL TV ---
 def fetch_single_redbull_channel(t):
-    api_url = f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}"
+    api_url = f"https://tv-api.redbull.com/guides/v5.1/rbtv/id_ID/id/{t['rrn']}?limit=100"
     programmes = []
     wib_tz = timezone(timedelta(hours=7))
     try:
@@ -948,7 +948,10 @@ def fetch_single_redbull_channel(t):
 
                 if start_iso and title:
                     start_dt = datetime.fromisoformat(str(start_iso).replace("Z", "+00:00")).astimezone(wib_tz)
-                    end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")).astimezone(wib_tz) if end_iso else start_dt + timedelta(hours=1)
+                    if end_iso:
+                        end_dt = datetime.fromisoformat(str(end_iso).replace("Z", "+00:00")).astimezone(wib_tz)
+                    else:
+                        end_dt = start_dt + timedelta(hours=2)
 
                     programmes.append({
                         "channel": t["id"], 
