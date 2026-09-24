@@ -2,7 +2,7 @@ name: EPG XMLTV
 
 on:
   repository_dispatch:
-    types: [run-playlist]
+    types: [run-epg]
   workflow_dispatch:
 
 permissions:
