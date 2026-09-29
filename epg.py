@@ -277,6 +277,7 @@ def get_official_dens_channels():
         {"id_num": "27", "slug": "al-jazeera-arabic", "id": "Dens_al-jazeera-arabic.id", "name": "Al Jazeera Arabic", "cat": "tv-international"},
         {"id_num": "85", "slug": "cctv-4", "id": "Dens_cctv-4.id", "name": "CCTV-4", "cat": "tv-international"},
         {"id_num": "69", "slug": "france-24", "id": "Dens_france-24.id", "name": "France 24", "cat": "tv-international"},
+        {"id_num": "146", "slug": "france-24-english", "id": "Dens_france-english-24.id", "name": "France 24 English", "cat": "tv-international"},
         {"id_num": "90", "slug": "tv5monde-asie", "id": "Dens_tv5monde-asie.id", "name": "TV5Monde Asie", "cat": "tv-international"},
         {"id_num": "81", "slug": "dw-tv", "id": "Dens_dw-tv.id", "name": "DW TV", "cat": "tv-international"},
         {"id_num": "132", "slug": "dim-tv", "id": "Dens_dim-tv.id", "name": "DIM TV", "cat": "tv-international"},
